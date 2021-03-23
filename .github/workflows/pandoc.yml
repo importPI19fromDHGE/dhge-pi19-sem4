@@ -1,0 +1,87 @@
+name: Create PDF release from markdown
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  convert_via_pandoc_and_release:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir .old &&
+          rsync -vr ./* .old/ --exclude .old &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/ABWL-LEDER/README.md > ABWL-LEDER/README.md &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/ASM-GUENTHER/README.md > ASM-GUENTHER/README.md &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/DBS-DORENDORF/README.md > DBS-DORENDORF/README.md &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/PRO-KASCHE/README.md > PRO-KASCHE/README.md &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWE-KASCHE/README.md > SWE-KASCHE/README.md
+      - run: |
+          mkdir output
+      - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
+        with:
+          args: --output=output/ABWL-LEDER.pdf --resource-path=ABWL-LEDER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ABWL-LEDER/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate ASM-GUENTHER pdf
+        with:
+          args: --output=output/ASM-GUENTHER.pdf --resource-path=ASM-GUENTHER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ASM-GUENTHER/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate DBS-DORENDORF pdf
+        with:
+          args: --output=output/DBS-DORENDORF.pdf --resource-path=DBS-DORENDORF/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose DBS-DORENDORF/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate PRO-KASCHE pdf
+        with:
+          args: --output=output/PRO-KASCHE.pdf --resource-path=PRO-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose PRO-KASCHE/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
+        with:
+          args: --output=output/SWE-KASCHE.pdf --resource-path=SWE-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/README.md
+      - uses: actions/upload-artifact@master # upload pdfs as an artifact
+        with:
+          name: output
+          path: output
+      - uses: meeDamian/github-release@2.0 # create/override a release and attach a pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/ABWL-LEDER.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/DBS-DORENDORF.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/ASM-GUENTHER.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/SWE-KASCHE.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/PRO-KASCHE.pdf
+          allow_override: true
