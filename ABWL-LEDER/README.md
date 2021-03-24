@@ -3,6 +3,23 @@ Allgemeine Betriebswirtschaftslehre
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
+
+- [Unternehmensführung](#unternehmensf%C3%BChrung)
+- [Produktionsfaktoren, betriebliche Funktionsbereiche](#produktionsfaktoren-betriebliche-funktionsbereiche)
+  - [Begriffe](#begriffe)
+  - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
+  - [Wirtschaftliches System](#wirtschaftliches-system)
+  - [Rechtsformen](#rechtsformen)
+  - [Marktbeurteilung](#marktbeurteilung)
+  - [Einflussfaktoren](#einflussfaktoren)
+  - [Unternehmensführung](#unternehmensf%C3%BChrung-1)
+- [Personalplanung, -Bedarf, -Deckung, -Entwicklung](#personalplanung--bedarf--deckung--entwicklung)
+- [Externes Rechnungswesen](#externes-rechnungswesen)
+- [Internes Rechnungswesen](#internes-rechnungswesen)
+- [Investition und Finanzierung](#investition-und-finanzierung)
+- [Protektionswirtschaft](#protektionswirtschaft)
+- [Marketing](#marketing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
