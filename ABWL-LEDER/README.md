@@ -57,7 +57,7 @@ Allgemeine Betriebswirtschaftslehre
 
 **Personengesellschaften**
 
-- meist Eigentümer geführte Unternehmen
+- meist Eigentümer-geführte Unternehmen
 - Einzelkaufmann, GbR, OHG
 
 **Kapitalgesellschaften**
