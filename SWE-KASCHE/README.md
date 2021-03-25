@@ -3,6 +3,16 @@ Systemanalyse
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
+
+- [Präambel](#pr%C3%A4ambel)
+  - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
+    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+  - [Entwicklungskonzepte](#entwicklungskonzepte)
+- [1. Entwicklungs-Konzepte](#1-entwicklungs-konzepte)
+  - [1.1 Software-Entwurf](#11-software-entwurf)
+  - [1.2 Gliederung des Entwurfsprozesses](#12-gliederung-des-entwurfsprozesses)
+  - [1.3 Beispiel](#13-beispiel)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
