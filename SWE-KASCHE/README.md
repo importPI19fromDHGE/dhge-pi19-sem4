@@ -9,10 +9,10 @@ Systemanalyse
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
     - [Kostenschätzungen](#kostensch%C3%A4tzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
-- [Entwicklungs-Konzepte](#1-entwicklungs-konzepte)
-  - [Software-Entwurf](#11-software-entwurf)
-  - [Gliederung des Entwurfsprozesses](#12-gliederung-des-entwurfsprozesses)
-  - [Beispiel](#13-beispiel)
+- [Entwicklungs-Konzepte](#entwicklungs-konzepte)
+  - [Software-Entwurf](#software-entwurf)
+  - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
+  - [1.3 Beispiel](#13-beispiel)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
