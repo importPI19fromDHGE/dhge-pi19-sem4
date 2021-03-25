@@ -9,10 +9,10 @@ Systemanalyse
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
     - [Kostenschätzungen](#kostensch%C3%A4tzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
-- [1. Entwicklungs-Konzepte](#1-entwicklungs-konzepte)
-  - [1.1 Software-Entwurf](#11-software-entwurf)
-  - [1.2 Gliederung des Entwurfsprozesses](#12-gliederung-des-entwurfsprozesses)
-  - [1.3 Beispiel](#13-beispiel)
+- [Entwicklungs-Konzepte](#1-entwicklungs-konzepte)
+  - [Software-Entwurf](#11-software-entwurf)
+  - [Gliederung des Entwurfsprozesses](#12-gliederung-des-entwurfsprozesses)
+  - [Beispiel](#13-beispiel)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -22,34 +22,18 @@ Systemanalyse
 
 Qualitäts-Verbesserung durch: 
 - **Kompetenz der Entwickler**
-- **Prozess** (Testen) (*System-Analyse*)
-- **Tooling** (Automatisierung) (Testen) (*System-Entwurf*)
+- **Prozess** (Testen -> *System-Analyse*)
+- **Tooling** (Automatisierung, Testen -> *System-Entwurf*)
 - **Wiederverwendung** (*System-Entwurf*)
 
 ## Entwurf-Herangehensweise (Wiederholung System-Analyse)
 
-Phasen (jedes Modells):
-- Anforderungen
-- Analyse
-- Entwurf
-- Implementierung
-- Test
-- Übergabe
-- Wartung
+- **Phasen (jedes Modells):** Anforderungen, Analyse, Entwurf, Implementierung, Test, Übergabe, Wartung
+- Schwergewichtige/klassische Modelle: Wasserfall, V-Modell, V-Modell XT
+- Agile Modelle: XP, SCRUM
+- MVP: **M**inimal **V**iable **P**roduct
+- Story Board
 
-Schwergewichtig / klassisch:
-- Wasserfall
-- V-Modell
-- V-Modell XT
-
-Agile:
-- XP
-- SCRUM
-
-> MVP: Minimal Viable Product
->
-> Story Board
->
 > User Story Format ("Als ... möchte ich ... um ... zu erreichen")
 >
 > Kommunikation
@@ -59,92 +43,46 @@ Agile:
 ### Kostenschätzungen
 
 - OO Sicht
-- UML
-  - strukturelle Ansichten
-  - Verhaltensansichten
-
+- UML: strukturelle Ansichten, Verhaltensansichten
 
 ## Entwicklungskonzepte
 
 > *Was* ist bekannt, wie kommen wir zum *Wie*?
 
-OO-Entwurf & OO-Komponenten:
+**OO-Entwurf & OO-Komponenten:**
+
 - zeitlicher Verlauf
-- Architekturen (bspw. GUI $\rightarrow$ Fkt $\rightarrow$ Daten...)
+- Architekturen (bspw. GUI $\rightarrow$ Funktionen $\rightarrow$ Daten, ...)
 - Verteildiagramme
 - Verhaltensdiagramme
-
-Entwurfsmuster:
-- MVC
-- Singleton
-- Factory
-- Proxy
-- Command
-- Iterator
-- Interpreter
-
-Automatisierung
-
-XML, JSON, CSV
-
-allg. Begriffe $\rightarrow$ Bsp $\rightarrow$ Strukturelle-, Physikalische-, Ablauf-, Logische-Sicht
-
+- Entwurfsmuster: MVC, Singleton, Factory, Proxy, Command, Iterator, Interpreter
+- Automatisierung
+- Datenformate: XML, JSON, CSV
+- allg. Begriffe $\rightarrow$ z.B. strukturelle-, physikalische-, Ablauf-, logische Sicht:
 - Erfolgsfaktoren
 - Grundsatzentscheidungen
-- Ziele...Aufgaben des Entwurfs
+- Ziele ... Aufgaben des Entwurfs
 
-# 1. Entwicklungs-Konzepte
-## 1.1 Software-Entwurf
+# Entwicklungs-Konzepte
 
-WAS:
-- Anforderung
-  - Analyse
+## Software-Entwurf
 
-WIE:
-- Design
-- Umsetzung
-- Test
-- ausl.
-- Wartung
+- **WAS:** Anforderung $\rightarrow$ Analyse
+- **WIE:** Design, Umsetzung, Test, Auslieferung,  Wartung
+- Hauptaufgabe des System-Entwurfs: Zerlegung, Strukturierung, Komponenten in Beziehungen bringen (Voraussetzung: Anforderungen sind benannt)
+- Software-Architektur $\rightarrow$ Spezifikation von System-Komponenten
+- **Subsystem:** abgeschlossene, eigenständig funktionsfähige Einheit; definiert Schnittstellen; besteht wieder aus Komponenten
+- **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ mehrere Klassen/Module)
+	- benutzt andere Komponenten
+	- wird von anderen Komponenten benutzt
+	- besteht aus Unterkomponenten
 
-$\Rightarrow$ Hauptaufgabe des System-Entwurfs
+## Gliederung des Entwurfsprozesses
 
-(Voraussetzung: Die Anforderungen sind benannt)
-
-- Zerlegung
-- Strukturierung
-- Komponenten in Beziehungen bringen
-
-$\Rightarrow$ Software-Architektur
-$\rightarrow$ Spezifikation für System-Komponenten
-
-**Subsystem**
-
-> Handy-App Vergleich passt gut
->
-> OO Programm: Klasse / Instanz
-
-- abgeschlossene Einheit
-- eigenständig funktionsfähig
-- definiert Schnitt
-- besteht wieder aus Komponenten
-
-**Komponenten**
-
-- Bausteine für Software-System (Pakete (mehrere Klassen/Modulen))
-
-1. benutzt andere Komponenten
-2. wird von anderen Komponenten benutzt
-3. besteht aus Unterkomponenten
-
-## 1.2 Gliederung des Entwurfsprozesses
-
-**Grobentwurf**
+**Grobentwurf** (unabhängig von der Implementierungs-Sprache)
 - (1) Architektur-Entwurf
 - (2) Subsystem-Entwurf
 - (3) Schnittstellen-Entwurf
-
-> unabhängig von der Implementierungs-Sprache
 
 **Feinentwurf**
 - (4) Komponenten
@@ -163,13 +101,12 @@ $\rightarrow$ Spezifikation für System-Komponenten
 Entwickeln Sie eine Software-Architektur!
 
 **A**
-- Service-Techniker : mobiles Gerät oder Web-Aufruf $\rightarrow$ 
-  1. Auftragsschein ausfüllen 
-  2. unterschreiben
-
+- Service-Techniker : mobiles Gerät oder Web-Aufruf 
+- Auftragsschein ausfüllen $\rightarrow$  unterschreiben
 - Ziel: DB Ablage
 
 **B**
+
 - aus Reihe von Dienstleistungen aussuchen können
 - vor Ort Grobpreis-Aussage machen können
 - ggf. Angebotserstellung beauftragen
