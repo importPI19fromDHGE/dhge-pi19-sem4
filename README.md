@@ -27,8 +27,8 @@ Alle Skripte in diesem Repository sind im `markdown`-Format verfasst. Für diese
 ### Bildgröße
 
 ```md
-![Bildbeschreibung](img/a.png)<!--width=200px-->
-![Bildbeschreibung](img/b.png)<!--height=200px-->
+![Bildbeschreibung](assets/a.png)<!--width=200px-->
+![Bildbeschreibung](assets/b.png)<!--height=200px-->
 ```
 
 ### Pagebreaks usw.
