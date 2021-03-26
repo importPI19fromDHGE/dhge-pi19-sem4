@@ -42,7 +42,7 @@ Qualitäts-Verbesserung durch:
 
 ### Kostenschätzungen
 
-- OO Sicht
+- objektorientierte Sicht (OO-Sicht)
 - UML: strukturelle Ansichten, Verhaltensansichten
 
 ## Entwicklungskonzepte
