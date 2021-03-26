@@ -87,6 +87,74 @@ Allgemeine Betriebswirtschaftslehre
 - Hauptaufgabe: Definition und Überwachung (Controlling) der betrieblichen Zielsetzungen (Gewinn) = **Autonomieprinzip**
 - Führen als Entscheidungskonzept der Organisation
 
+## Aufgaben eines Unternehmens
+
+- **strategisches Ziel:** Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
+- **Position des Unternehmens:** Strategieentwicklung und Positionierung; SWOT-Analyse $\rightarrow$ Platz am Markt bestimmen
+- **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlich räumlichen Rahmen
+- **Ökologie des Unternehmens:** Lebenszykluskontrolle der Produkte und Dienstleistungen auf Basis ökologischer Notwendigkeiten
+- **Kundenorientierung:** Ermittlung des Nutzen für den Kunden der Produkte und Dienstleistungen im strategischen Zeitraum ("Kunden das Gefühl geben, wichtig zu sein")
+- **persönliche Entwicklung:** permanente Entwicklung der unternehmerischen Persönlichkeit
+
+> Leitbild = formuliert kurz und prägnant die strategischen Zieles und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
+
+### Kurzfristige Auffassungen (operativ)
+
+- **Verkauf:** Vertrieb
+- **Finanzierungsplanung:** Geschäftsführer
+- **Finanzielle Förderung:** Finanzbereich
+- **Kunden ansprechen:** Marketing und Vertrieb
+- **Jahresabschluss:** Geschäftsführer und Finanzbereich
+- **Konflikte mit Kunden austragen:** Geschäftsführung
+- **Innerbetriebliche Organisation:** Management
+- **Systeme schaffen:** Geschäftsführung und Management
+
+## Management
+
+> Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
+
+- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellen (*Organigram*)
+- **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
+- **Funktionales Management** = Kreislauf aus: Planing, Organizing, Staffing, Directing, Controlling
+
+## Kontrolle vs Controlling
+
+- **Kontrolle** der Aufgabe/Zielstellung
+- **Controlling:** Einflussnahme/Lenkung/Steuerung $\rightarrow$ Differenz zum erreichenden Ziel $\rightarrow$ Rückkoppelung zur Einflussnahme
+
+## Teilaufgaben der Unternehmensführung
+
+Gewinnmaximierung durch:
+
+- Liquidität: Erwirtschaften von FR
+- Nachfrage: Bedarf für Produkte/DL
+- Absatz: Verkauf der Produkte/DL
+- Wachstum: kontinuierliche Verbesserung
+- Beschäftigung: Sicherung von AP
+
+## Führung und Leitung
+
+- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
+- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
+
+## Organisationsformen
+
+- Aufbau/Struktur des Unternehmens
+- Instanzen: Stellen mit Leitungsfunktion
+- Hierarchien: Ebenen im Unternehmen mit gleichen oder ähnlichen Befugnissen
+- Formelle Beziehungen: <!--???-->
+
+Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
+- Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+
+### Inhalt einer Stelle
+
+- Ausführungsfunktion
+- Leitungsfunktion: Zeit- und Selbstmanagement
+	- Anforderungen: fachlich, methodisch, persönlich Kenntnisse
+- Kompetenz (befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
+
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
 
 # Externes Rechnungswesen
