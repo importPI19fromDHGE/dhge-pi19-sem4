@@ -16,7 +16,7 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 
 # Java und Make
 
-- mit ``javac`` kompiliert man eine ``.java``-Datei zu Bytecode kompilieren
+- mit ``javac`` kompiliert man eine ``.java``-Datei zu Bytecode
 - mit ``java klassenname`` kann man ausführen
 - ``make -n`` macht einen Dry-Run
 
