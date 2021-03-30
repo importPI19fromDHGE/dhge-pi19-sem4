@@ -43,7 +43,6 @@ run: $(OUTPUT)
 - make misst am Timestamp einer Datei, ob sie ggf. neu kompiliert o.ä. werden muss
 - Vorteil von Make: bei ungeänderten Quellcode wird für ``make run`` nicht neu kompiliert
 - ``make -j X`` mit X Prozessorkernen führt Aufgaben parallel aus
-- 
 
 Beispiel-Makefile:
 
@@ -79,3 +78,7 @@ aufgabe2:
     sleep 5
     echo "a2 end"
 ```
+
+# Mögliche Prüfungsaufgaben
+
+- wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
