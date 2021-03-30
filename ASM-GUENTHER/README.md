@@ -3,7 +3,13 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-undefined
+**Inhaltsverzeichnis**
+
+- [Java und Make](#java-und-make)
+- [C und Make](#c-und-make)
+- [C++ und Make](#c-und-make)
+- [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
