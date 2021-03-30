@@ -53,10 +53,12 @@ COMPILER=gcc
 
 C-COMP-PARAM=--std=gnu99 -Wall -Wextra #C99 mit lang exts.
 
+OUTFILE=asdf
+
 all: $(COMPILER-OUTPUT)
 
 $(COMPILER-OUTPUT): $(SOURCE) Makefile
-        $(COMPILER) $(C-COMP-PARAM) $(SOURCE) -o $(COMPILER-OUTPU)
+        $(COMPILER) $(C-COMP-PARAM) $(SOURCE) -o $(OUTFILE)
 
 clean:
     rm -rvf $(COMPILER-OUTPUT)
@@ -77,6 +79,28 @@ aufgabe2:
     echo "a2 start"
     sleep 5
     echo "a2 end"
+```
+
+# C++ und Make
+
+Aufgabe: jetzt sollen wir ein Makefile schreiben
+
+```make
+SOURCE=main.cpp
+COMPILER=g++
+CPPARAM=-Wall -Wextra
+OUTFILE=asdf
+
+all: $(COMPOUT)
+
+COMPOUT: $(COMPOUT): $(SOURCE) Makefile
+    $(COMPILER) $(CPPARAM) $(SOURCE) -o $(OUTFILE)
+
+clean:
+    rm -rvf $(OUTFILE)
+
+run $(COMPOUT):
+    ./$(OUTFILE)
 ```
 
 # Mögliche Prüfungsaufgaben
