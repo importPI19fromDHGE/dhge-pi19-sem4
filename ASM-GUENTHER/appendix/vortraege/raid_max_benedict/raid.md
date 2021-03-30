@@ -132,6 +132,8 @@ Fehlertypen nach \[tho15b\]:
 
 ### Demo
 
+vgl. \[ell16\], \[baj19\]
+
 Vorbereitung:
 
 - disks nullen: ``sudo dd if=/dev/zero of=/dev/sdX``
@@ -163,3 +165,7 @@ Live:
 \[tld21\] The Linux Documentation Project: RAID-HOWTO, 2021. https://tldp.org/HOWTO/Software-RAID-HOWTO-6.html#ss6.1 Abruf: 28.03.2021
 
 \[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z Abruf: 28.03.2021
+
+\[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016. https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04 Abruf: 30.03.2021
+
+\[baj19\] Bajrami, Valentin: Replacing a failed RAID 6 drive with mdadm, 2019. https://www.redhat.com/sysadmin/raid-drive-mdadm Abruf: 30.03.2021
