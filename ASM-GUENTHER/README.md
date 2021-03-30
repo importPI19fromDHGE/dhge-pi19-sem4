@@ -86,21 +86,41 @@ aufgabe2:
 Aufgabe: jetzt sollen wir ein Makefile schreiben
 
 ```make
-SOURCE=main.cpp
-COMPILER=g++
+CPPSOURCE=main.cpp
+CSOURCE=main.c
+CPPCOMPILER=g++
+CCOMPILER=gcc
 CPPARAM=-Wall -Wextra
-OUTFILE=asdf
+OUTFILE_CPP=asdf
+OUTFILE_C=xyz
+CPARAM=--std=gnu99 -Wall -Wextra #C99 mit lang exts.
 
-all: $(COMPOUT)
 
-COMPOUT: $(COMPOUT): $(SOURCE) Makefile
-    $(COMPILER) $(CPPARAM) $(SOURCE) -o $(OUTFILE)
+compile-cpp: $(CPPSOURCE) Makefile
+	$(CPPCOMPILER) $(CPPARAM) $(CPPSOURCE) -o $(OUTFILE_CPP)
 
-clean:
-    rm -rvf $(OUTFILE)
+compile-c: $(CSOURCE) Makefile
+	$(CCOMPILER) $(CPARAM) $(CSOURCE) -o $(OUTFILE_C)
 
-run $(COMPOUT):
-    ./$(OUTFILE)
+compile-all: compile-cpp compile-c
+
+clean-all: clean-c clean-cpp
+
+clean-c:
+	rm -rvf $(OUTFILE_C)
+
+clean-cpp:
+	rm -rvf $(OUTFILE_CPP)
+
+# run unterstützt kein on-demand-kompilieren
+
+run-all: run-c run-cpp
+
+run-c: $(OUTFILE_C)
+	./$(OUTFILE_C)
+
+run-cpp: $(OUTFILE_CPP)
+	./$(OUTFILE_CPP)
 ```
 
 # Mögliche Prüfungsaufgaben
