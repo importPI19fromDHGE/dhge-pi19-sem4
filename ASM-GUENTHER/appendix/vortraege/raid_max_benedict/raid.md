@@ -112,7 +112,7 @@ Fehlertypen nach \[tho15b\]:
 - Annahme: Daten auf den verbleibenden Platten korrekt
   - Konsistenzprüfung, ggf. Korrektur bei intakten Platten mit Resync-Prozedur
 - Ablauf:
-  - defekte Platte(n) durch intekte ersetzen
+  - defekte Platte(n) durch intakte ersetzen
   - Rebuild starten
   - verbleibende Platten werden Sektorweise gelesen
   - zu schreibende Daten werden sektorweise für neue Platte berechnet und geschrieben
@@ -129,6 +129,24 @@ Fehlertypen nach \[tho15b\]:
 - falscher Datenträger getauscht
 - Firmware-Update löscht Konfiguration
 - "Festplattenroulette" (\[tho15b\]): wahlloses Tauschen von Datenträgern
+
+### Demo
+
+Vorbereitung:
+
+- disks nullen: ``sudo dd if=/dev/zero of=/dev/sdX``
+- Superblock nullen: ``sudo mdadm --zero-superblock /dev/sdX``
+- RAID init: ``sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc``
+- Status auslesen: ``cat /proc/mdstat``
+- Formatieren: ``sudo mkfs.ext4 -F /dev/md0``
+
+Live:
+
+- ``sudo mount /dev/md0 /mnt/``
+- VHDX failen: ``mdadm /dev/md0 -f /dev/sdc``
+- Array-Status auslesen: ``mdadm -–query -–detail /dev/md0``
+- failed VHDX removen: ``mdadm -–manage /dev/md0 -–remove /dev/sdc``
+- Spare hinzufügen: ``mdadm -–manage /dev/md0 -–add /dev/sdd``
 
 ## Quellen
 
