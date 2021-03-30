@@ -4,20 +4,22 @@ von Max und Benedict
 
 ## HW-Raid vs. SW-Raid
 
-<!--Max-->
-
-- RAID erfordert Paritäts-Kalkulationen (s. Kapitel Raid-Algorithmen)
+- Frage: RAID erzeugt zusätzlichen Rechenaufwand - warum?
+  - komplexes RAID erfordert Paritäts-Kalkulationen (s. Kapitel Raid-Algorithmen)
+  - Daten müssen ggf. mehrfach geschrieben werden
 - können von CPU oder hardwarebeschleunigt berechnet werden
 
 ### SW-RAID
 
-Software-RAID ist eine rein software-seitig umgesetzte RAID-Lösung
+Software-RAID ist eine rein software-seitig umgesetzte RAID-Lösung.
+
+Es gibt RAID-Implementierungen, die nicht als Hardware-RAID umgesetzt werden können, z.B. die von ZFS (vgl. \[bou06\])
 
 Vorteile:
 
 - keine Zusatzkosten für RAID-Karte oder HBA (Host Bus Adapter) (vgl. \[ada06\])
 - auf moderner Hardware mit wenigen Datenträgern kaum Performance-Verlust, v.a. auf CISC-Prozessoren, da diese ggf. Rechenwerke für RAID typische Aufgaben haben
-- sind zwischen kompatiblen Lösungen migrierbar, z.B. unter Linux: dort wird immer ``mdadm`` eingesetzt
+- sind zwischen kompatiblen Lösungen migrierbar, z.B. unter Linux: dort wird immer ``mdadm`` eingesetzt; ZFS immer migrierbar, wenn Software den Standard unterstützt
 - kein hardwareseitiger Vendor-Lock-in
 
 Nachteile:
@@ -28,7 +30,7 @@ Nachteile:
 - möglicherweise nicht auf andere Betriebssysteme migrierbar, wenn spez. Implementierung nicht unterstützt wird (vgl. \[ada06\]), wobei sich diese Situation verglichen mit der Vergangenheit deutlich verbessert hat (z.B. Linux hat einheitliche Software-RAID-Lösung ``mdadm``)
 - RAID-Software kann durch Malware übernommen oder beschädigt werden (vgl. \[ada06\])
 - Abstürze gefährden Integrität (vgl. \[ada06\]); ZFS kann aber durchaus einen Power-loss überleben (Erfahrung von Max)
-- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15\])
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15a\])
 - kein Booten von RAID-Array, da für das BIOS nicht lesbar
 
 ## Hybrid-RAID
@@ -86,6 +88,47 @@ Bildquelle: [Jacob Elektronik](https://direkt.jacob.de/produkte/LSI-MEGARAID-SAS
 - HW-Raid eignet sich für viele Festplatten, um den Overhead auszulagern
 - Software-RAID eignet sich für kleinere Arrays (4-6), v.a. als (Home-)Lab bzw. Low-Cost Lösung und temporäre Setups
 - SW-RAID wenn möglich als Hybrid-RAID
+- ZFS bietet optimierte SW-RAID-Implementierung, auch für sehr große Arrays optimiert
+
+## RAID-Fehlererkennung
+
+Quelle: \[tld21\]
+
+- Linux-Kernel beobachtet SMART-Werte
+- Lesefehler werden protokolliert
+- bei Fehlern wird RAID-Software oder -Treiber informiert
+
+Fehlertypen nach \[tho15b\]:
+
+- RAID degraded: ein oder mehrere Datenträgerdefekte liegen vor, aber das RAID kann noch ohne Datenverlust arbeiten.
+  - mit intakten Platten Backup machen
+  - defekte Platten ersetzen und ggf. Rebuild starten bzw. neues RAID und Backup einspielen
+- RAID offline: ein oder mehrere Datenträgerdefekte liegen vor und das Array ist nicht mehr lesbar.
+  - Datenrettung beauftragen oder neues RAID mit intakten Platten machen
+
+## RAID-Rebuild
+
+- wird durchgeführt, um degraded Array wieder online zu bringen
+- Annahme: Daten auf den verbleibenden Platten korrekt
+  - Konsistenzprüfung, ggf. Korrektur bei intakten Platten mit Resync-Prozedur
+- Ablauf:
+  - defekte Platte(n) durch intekte ersetzen
+  - Rebuild starten
+  - verbleibende Platten werden Sektorweise gelesen
+  - zu schreibende Daten werden sektorweise für neue Platte berechnet und geschrieben
+- RAID 0: kein Rebuild möglich
+- RAID 1: gespiegelte Daten werden kopiert, keine Möglichkeit zur Integritätsprüfung
+- Raid 5/6: verlorengegangene Paritäten + verlorengegangene Daten werden berechnet
+
+### Risiko
+
+- Platten einer Charge haben eine ähnliche Lebenserwartung - Risiko eines weiteren Ausfalls erhöht
+- hohe Last der intakten Platten während eines Rebuilds
+- RAID-1 schützt nicht vor korrupten Daten (z.B. Bit-Rot, Myonen)
+- während des Rebuilds fällt eine weitere Platte aus
+- falscher Datenträger getauscht
+- Firmware-Update löscht Konfiguration
+- "Festplattenroulette" (\[tho15b\]): wahlloses Tauschen von Datenträgern
 
 ## Quellen
 
@@ -93,4 +136,12 @@ Bildquelle: [Jacob Elektronik](https://direkt.jacob.de/produkte/LSI-MEGARAID-SAS
 
 \[ada06\] Adaptec, Inc.: Hardware RAID vs. Software RAID: Which Implementation is Best for my Application?, 2021. https://www.adaptec.com/nr/rdonlyres/14b2fd84-f7a0-4ac5-a07a-214123ea3dd6/0/4423_sw_hwraid_10.pdf Abruf: 27.03.2021
 
-\[tho15\] Thomas-Krenn: RAID, 2015. https://www.thomas-krenn.com/de/wiki/RAID Abruf: 27.03.2021
+\[tho15a\] Thomas-Krenn: RAID, 2015. https://www.thomas-krenn.com/de/wiki/RAID Abruf: 27.03.2021
+
+\[tho15b\] Thomas-Krenn: RAID Datenrettung, 2015. https://www.thomas-krenn.com/de/wiki/RAID_Datenrettung Abruf: 28.03.2021
+
+\[tho18\] Thomas-Krenn: Mdadm recovery und resync, 2018. https://www.thomas-krenn.com/de/wiki/Mdadm_recovery_und_resync Abruf: 29.03.2021
+
+\[tld21\] The Linux Documentation Project: RAID-HOWTO, 2021. https://tldp.org/HOWTO/Software-RAID-HOWTO-6.html#ss6.1 Abruf: 28.03.2021
+
+\[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z Abruf: 28.03.2021
