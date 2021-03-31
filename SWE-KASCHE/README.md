@@ -96,7 +96,7 @@ Qualitäts-Verbesserung durch:
 - (4) Die Subsysteme werden in Komponenten unterteilt
 - (5) Die Datenstrukturen und (6) Algorithmen werden definiert
 
-## 1.3 Beispiel
+## Beispiel
 
 Entwickeln Sie eine Software-Architektur!
 
@@ -110,3 +110,61 @@ Entwickeln Sie eine Software-Architektur!
 - aus Reihe von Dienstleistungen aussuchen können
 - vor Ort Grobpreis-Aussage machen können
 - ggf. Angebotserstellung beauftragen
+
+> Grundlegendes Vorgehen: Zerlegung, Strukturierung, Beziehungen bilden
+>
+> Wichtig: Für WEN wird die Architektur entwickelt (dargestellt)? (einen User interessieren andere Dinge als einen Entwickler)
+
+- Ist die Ausführung korrekt, vollständig und präzise?
+- Gruppierung $\rightarrow$ (Zusammengehörigkeit)
+- ausreichende Trennung?
+
+## Software Architektur 
+> beschreibt die grundlegende Organisation des Systems
+
+- verkörpert durch seine Komponenten, seine Beziehungen zur Umgebung und seine Komponenten-Beziehungen
+- verwendet werden Diagramme für verschiedene Sichten
+
+beruht auf:
+- allgemeinen Entwicklungs-Prinzipien
+- Heuristiken
+- Architektur-Muster ("Kostproben von Möglichkeiten")
+
+$\Rightarrow$ Dokumentation wird erzeugt
+
+**Szenarien (Sichten):**
+  - Strukturelle Sicht $\rightarrow$ Physische Sicht
+  - Ablaufsicht
+  - Logische Sicht ("Nutzer-Sicht")
+  
+> Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
+
+## Kriterien für einen guten Entwurf
+1. Verständlichkeit und Präzision
+   - dem Leser "muss ein Licht aufgehen"
+   - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
+2. Anpassbarkeit/Erweiterbarkeit
+   - Trennung in Module
+   - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
+3. Korrektheit
+   - Sind die Anforderungen erfüllt?
+   - Existieren alle Funktionen des System-Modells?
+   - Checkliste, ...
+4. hohe Kohäsion 
+    > Maß für Zusammengehörigkeit
+    - Früher: ähnliche Funktionen zusammenfassen
+    - Heute: Objekt-Orientierung
+      - Paketbildung
+      - geeignete Muster (später)
+      - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
+5. Schwache Kopplung
+  > Maß für die Abhängigkeit zwischen Komponenten
+  - Arten der Kopplungen:
+    1. Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
+    2. Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
+    3. Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
+  - $\Rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
+  - Änderungen wirken nur lokal
+  - Performance kann jedoch darunter leiden
+  - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
+6. Wiederverwendbarkeit 
