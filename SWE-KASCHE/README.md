@@ -12,7 +12,9 @@ Systemanalyse
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
-  - [1.3 Beispiel](#13-beispiel)
+  - [Beispiel](#beispiel)
+  - [Software Architektur](#software-architektur)
+  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
