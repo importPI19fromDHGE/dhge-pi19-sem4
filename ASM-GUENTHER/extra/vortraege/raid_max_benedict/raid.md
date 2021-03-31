@@ -137,7 +137,6 @@ vgl. \[ell16\], \[baj19\]
 
 Vorbereitung:
 
-- Superblock nullen: ``sudo mdadm --zero-superblock /dev/sdX``
 - RAID init: ``sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc``
 - Status auslesen: ``cat /proc/mdstat``
 - Formatieren: ``sudo mkfs.ext4 -F /dev/md0``
