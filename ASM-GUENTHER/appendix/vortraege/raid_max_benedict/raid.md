@@ -87,6 +87,7 @@ Bildquelle: [Jacob Elektronik](https://direkt.jacob.de/produkte/LSI-MEGARAID-SAS
 
 - HW-Raid eignet sich für viele Festplatten, um den Overhead auszulagern
 - Software-RAID eignet sich für kleinere Arrays (4-6), v.a. als (Home-)Lab bzw. Low-Cost Lösung und temporäre Setups
+- für RAID0 / RAID 1 ist Software-RAID geeignet
 - SW-RAID wenn möglich als Hybrid-RAID
 - ZFS bietet optimierte SW-RAID-Implementierung, auch für sehr große Arrays optimiert
 
@@ -136,7 +137,6 @@ vgl. \[ell16\], \[baj19\]
 
 Vorbereitung:
 
-- disks nullen: ``sudo dd if=/dev/zero of=/dev/sdX``
 - Superblock nullen: ``sudo mdadm --zero-superblock /dev/sdX``
 - RAID init: ``sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc``
 - Status auslesen: ``cat /proc/mdstat``
