@@ -174,7 +174,7 @@ $\Rightarrow$ Dokumentation wird erzeugt
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
 6. Wiederverwendbarkeit 
    - Maß für Ausnutzung von Gemeinsamkeiten
-   - Verringerung der Redunanz
+   - Verringerung der Redundanz
    - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
    - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
