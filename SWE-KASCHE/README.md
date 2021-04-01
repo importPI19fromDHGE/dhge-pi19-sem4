@@ -15,6 +15,9 @@ Systemanalyse
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
   - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
+    - [Szenarien](#szenarien)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
