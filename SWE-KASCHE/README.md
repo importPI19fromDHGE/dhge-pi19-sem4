@@ -170,3 +170,57 @@ $\Rightarrow$ Dokumentation wird erzeugt
   - Performance kann jedoch darunter leiden
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
 6. Wiederverwendbarkeit 
+   - Maß für Ausnutzung von Gemeinsamkeiten
+   - Verringerung der Redunanz
+   - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
+   - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
+
+## Software-Architekturen und deren Sichten
+**"4+1 Sichten" (Szenarien)**
+- Strukturelle Sicht $\rightarrow$ Blick vom Entwickler
+  - Softwaremodule, Bibliotheken, Schnittstellen
+- Physische Sicht $\rightarrow$ Service-Mitarbeiter
+  - PCs, Netze, Eingebettete Systeme
+- Ablauf-Sicht $\rightarrow$ Integrator
+  - Prozesse, Threads, Synchronisation
+- Logische Sicht $\rightarrow$ Benutzer
+
+> Grob-Entwurf: Strukturelle Sicht, mit teilen der physischen Sicht
+> Fein-Entwurf: Rest der physischen Sicht, Ablauf-Sicht und Logische Sicht
+
+### Szenarien
+- Verbindung zwischen Sichten
+- zeigen Laufzeitverhalten
+- keine extra-Sicht ("4+1")
+- Kriterium für Architektur-Bewertungen
+  - welche Architektur-Muster scheinen besser zu sein?
+- Qualitätssicherungswerkzeug (Review)
+  - **direkte** Szenarien: auf der Architektur gut realisierbar
+  - **indirekte** Szenarien: erst nach Erweiterung realisierbar
+- Bewertung mittels: 
+  1.  Anzahl direkte Szenarien
+  2.  Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
+  
+  $\Rightarrow$ Abschätzung der Effizienz
+
+### Architektur-Muster für strukturelle Sicht
+- Zerlegung in eigenständige Funktionalitäten
+- *keine* Aussage über ihre physische Verteilung
+- Blockdiagramme (kein UML-Bestandteil)
+- Komponentendiagramm (im UML)
+
+> An dieser Stelle kam eine Erklärung, wie ein Komponentendiagramm aussieht.
+> Hier eine externe Übersicht: [Klick](https://www.uml-diagrams.org/component-diagrams.html)  
+> Hier sind die Pfeile und Symbole nochmal besser erklärt: [Klick](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/)
+
+- **Kette**
+  1. Abfolge von Transformationen von Eingabedaten
+  2. Pipes, Filter
+     - Daten werden nicht im Block transformiert, sondern inkrementell
+     - $\Rightarrow$ Pipes sind zustandslos
+     - Filter arbeiten nach Pull-Prinzip
+     > @UML Unterschied nicht darstellbar
+  3. gut wiederverwendbar
+- **Repository**
+- **Schichten**
+- **Interpreter**
