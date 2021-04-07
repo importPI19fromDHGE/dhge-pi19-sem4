@@ -3,7 +3,13 @@ Datenbankentwurf
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-undefined
+**Inhaltsverzeichnis**
+
+- [Überblick über den Datenbankentwurfsprozess](#%C3%BCberblick-%C3%BCber-den-datenbankentwurfsprozess)
+  - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
+  - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
+  - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
