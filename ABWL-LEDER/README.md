@@ -158,11 +158,11 @@ Allgemeine Betriebswirtschaftslehre
 
 Gewinnmaximierung durch:
 
-- Liquidität: Erwirtschaften von FR
-- Nachfrage: Bedarf für Produkte/DL
-- Absatz: Verkauf der Produkte/DL
+- Liquidität: Erwirtschaften von Financial Resources
+- Nachfrage: Bedarf für Produkte/Dienstleistungen
+- Absatz: Verkauf der Produkte/Dienstleistungen
 - Wachstum: kontinuierliche Verbesserung
-- Beschäftigung: Sicherung von AP
+- Beschäftigung: Sicherung von Arbeitsplätzen
 
 ## Führung und Leitung
 
