@@ -145,9 +145,9 @@ Allgemeine Betriebswirtschaftslehre
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellen (*Organigram*)
+- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigram*)
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
-- **Funktionales Management** = Kreislauf aus: Planing, Organizing, Staffing, Directing, Controlling
+- **Funktionales Management** = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
 
 ## Kontrolle vs Controlling
 
@@ -184,16 +184,16 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Ausführungsfunktion
 - Leitungsfunktion: Zeit- und Selbstmanagement
-	- Anforderungen: fachlich, methodisch, persönlich Kenntnisse
+	- Anforderungen: fachliche, methodische, persönliche Kenntnisse
 - Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
-- Stellen mit gleicher Befugniss = Hierarchieebene
+- Stellen mit gleicher Befugnis = Hierarchieebene
 
 ### Möglichkeiten der Führungshierarchie
 
 - **Zentralität:** von einer Stelle für alle Unternehmensteile verbindlich festgelegt
   - schnelle, einheitliche Führung und Entscheidung; ohne Differenzierung auf individuelle Gegebenheiten; geringe Akzeptanz vor Ort
 - **Dezentralität:** an der Stelle entschieden, die die höchste Kompetenz hat
-  - Führung und Entscheidung vor Ort $\rightarrow$ hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit auonomer Gruppen
+  - Führung und Entscheidung vor Ort \rightarrow\rightarrow hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit autonomer Gruppen
 
 #### Zentralität
 
@@ -210,7 +210,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ### Moderne Stellenbeschreibung
 
 - Rahmen für Mitarbeiter in der Organisation
-- Anforderungsprofil: Fachlich, Methodisch, Persönlich
+- Anforderungsprofil: fachlich, methodisch, persönlich
 - Aufgabenbeschreibung: Bezeichnung, Über-/Unterstellung, wesentliche Aufgaben, Ziele, Befugnisse, Verantwortung, Vertretung
 
 ### Organigramm
@@ -257,7 +257,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ## Personalbedarfsplanung
 
 - **strategisch:** > 5 Jahre; langfristig, grundlegende Ziele
-- **taktisch:** > 1 bis 5 Jahre; Mittelfristig, Teilziele (Ausbildung)
+- **taktisch:** > 1 bis 5 Jahre; mittelfristig, Teilziele (Ausbildung)
 - **operativ:** kurzfristig; Prozesssteuerung (Urlaubsplan)
 - je länger der Planungshorizont umso weniger Planungssicherheiten
 
@@ -281,7 +281,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 ### Verfahren der Personalplanung
 
-- **Vergangenheitsorientiert:** Trendexploration
+- **vergangenheitsorientiert:** Trendexploration
 - **Schätzmethoden:** Schätzverfahren
 - **organisatorisch:** Stellenplanmethode
 - **Personalbemessungsmethoden:** REFA-Methode (Zerlegung in Arbeitsschritte)
