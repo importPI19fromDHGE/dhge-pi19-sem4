@@ -16,7 +16,7 @@ Datenbankentwurf
 
 # Überblick über den Datenbankentwurfsprozess
 
-Der Entwurf eines Datenbank aufwendiger Prozess, der mit großer Sorgfalt vorgenommen werden sollte, da Fehler später nur mit hohem Aufwand beseitigt werden können.
+Der Entwurf einer Datenbank ist ein aufwendiger Prozess, der mit großer Sorgfalt vorgenommen werden sollte, da Fehler später nur mit hohem Aufwand beseitigt werden können.
 
 Folgende Anforderungen sollten daher im Entwurfsprozess berücksichtigt werden:
 
@@ -28,11 +28,11 @@ Folgende Anforderungen sollten daher im Entwurfsprozess berücksichtigt werden:
 ## Entwicklung von Datenbankschemata
 
 - Berücksichtigung zweier Entwurfsphasen, bei der Entwicklung datenbankgestützter IT-Lösungen
-  - einmalliger Datenbankentwurfsprozess (DEP)
+  - einmaliger Datenbankentwurfsprozess (DEP)
   - n-maliger Softwareentwicklungsprozess (SEP) für Anwendungen, die auf die zentrale DB zugreifen
-- der DEP bildet mit Hilfe von Daten- und Beschreibungsmodellen ein Umweltausschnitt (Miniwelt) auf ein Schema ab
+- der DEP bildet mit Hilfe von Daten- und Beschreibungsmodellen einen Umweltausschnitt (Miniwelt) auf ein Schema ab
 - jeder SEP hat meist eigene Sicht auf Datenbank $\rightarrow$ zusammenfassen zu einem konzeptuellen Informationschema
-- durch Transformationsregeln kann das konzeptuelle in ein datenbankspezifische Schema umgewandelt werden
+- durch Transformationsregeln kann das konzeptuelle in ein datenbankspezifisches Schema umgewandelt werden
 
 ## Phasen des Entwurfprozesses
 
@@ -76,8 +76,8 @@ Ableiten einer Informationsstruktur $\rightarrow$ Abbildung von Objekten und Bez
 
 **Physischer Entwurf**
 
-- Anpassung des abgeleiteten Schemas an das konrekt zu verwendende DBMS und die dazugehörige Datenbasis
+- Anpassung des abgeleiteten Schemas an das konkrekt zu verwendende DBMS und die dazugehörige Datenbasis
 - Zuordnung einzelner Attribute zu bestimmten Datentypen
 - Festlegung von Integritätsbedingungen und referenziellen Integritäten
-- Betrachtung von Forderungen nach Datenschutz und Datensicherheit (u.a. vergabe von Zugriffsrechten)
-- Nach dieser Phase erfolt die implementierung der Datenbank auf einem konkreten Rechnersystem
+- Betrachtung von Forderungen nach Datenschutz und Datensicherheit (u.a. Vergabe von Zugriffsrechten)
+- Nach dieser Phase erfolgt die Implementierung der Datenbank auf einem konkreten Rechnersystem
