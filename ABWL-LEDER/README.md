@@ -121,7 +121,7 @@ Allgemeine Betriebswirtschaftslehre
 
 ## Aufgaben eines Unternehmens
 
-- **strategisches Ziel:** Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
+- **strategisches Ziel:** langfristige (\geq\geq 5y) Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
 - **Position des Unternehmens:** Strategieentwicklung und Positionierung; SWOT-Analyse $\rightarrow$ Platz am Markt bestimmen
 - **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlich räumlichen Rahmen
 - **Ökologie des Unternehmens:** Lebenszykluskontrolle der Produkte und Dienstleistungen auf Basis ökologischer Notwendigkeiten
@@ -129,6 +129,11 @@ Allgemeine Betriebswirtschaftslehre
 - **persönliche Entwicklung:** permanente Entwicklung der unternehmerischen Persönlichkeit
 
 > Leitbild = formuliert kurz und prägnant die strategischen Zieles und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
+
+- Unternehmenskultur stellt den Ist-Zustand dar
+  - Know-How: Forschung und Entwicklung; **KVP** (kontinuierlicher Verbesserungs-Prozess)
+  - Ökonomie: Verhältnis zw. Eigen- und Fremd-Kapital
+  - (positive) soziale Beziehungen: Kundengefühl; Mitarbeiter als Bestandteil der Leistungsfähigkeit
 
 ### Kurzfristige Auffassungen (operativ)
 
@@ -162,7 +167,7 @@ Gewinnmaximierung durch:
 - Nachfrage: Bedarf für Produkte/Dienstleistungen
 - Absatz: Verkauf der Produkte/Dienstleistungen
 - Wachstum: kontinuierliche Verbesserung
-- Beschäftigung: Sicherung von Arbeitsplätzen
+- Beschäftigung: Sicherung von Arbeitsplätzen, inkl. Arbeitsmoral
 
 ## Führung und Leitung
 
