@@ -115,7 +115,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 **Attribute (Eigenschaten, Merkmale)**
 
-- beschrieben Eigenschaften der einzelner Objekte oder Beziehungen
+- beschreiben Eigenschaften der einzelner Objekte oder Beziehungen
 - aus Gründen der Übersichtlichkeit wird meist in grafischer Darstellung auf Angabe verzichtet
 
 ![Beispiel für Atribute von Objekten und Beziehungen](assets/erd-attributes.png)<!--width=400px-->
