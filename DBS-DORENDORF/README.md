@@ -9,6 +9,10 @@ Datenbankentwurf
   - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
   - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
   - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)
+- [Logischer Datenbankentwurf](#logischer-datenbankentwurf)
+  - [Entity-Relationship-Modell](#entity-relationship-modell)
+    - [Komponenten von ERDs](#komponenten-von-erds)
+    - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -81,3 +85,48 @@ Ableiten einer Informationsstruktur $\rightarrow$ Abbildung von Objekten und Bez
 - Festlegung von Integritätsbedingungen und referenziellen Integritäten
 - Betrachtung von Forderungen nach Datenschutz und Datensicherheit (u.a. Vergabe von Zugriffsrechten)
 - Nach dieser Phase erfolgt die Implementierung der Datenbank auf einem konkreten Rechnersystem
+
+# Logischer Datenbankentwurf
+
+## Entity-Relationship-Modell
+
+- unabhängiges Modell zur Darstellung von Objektklassen und deren Beziehungen
+- einfache grafische Darstellung durch Entity-Relationship-Diagramme
+
+### Komponenten von ERDs
+
+**Entities (Objekte/Entitäten)**
+
+![Darstellung einer Entität in einem ERD](assets/erd-entity.png)<!--width=400px-->
+
+**Relationships (Beziehungen)**
+
+Durch Bezehungen werden die Verbindungen und Abhängigkeiten zwischen den einzelnen Objekten dargestellt.
+
+![Darstellung einer Beziehung in einem ERD](assets/erd-relationship.png)<!--width=400px-->
+
+Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
+
+![eindeutige Beziehung](assets/erd-relationship-1-1.png)<!--width=400px-->
+
+![einseitig eindeutige Beziehung](assets/erd-relationship-1-n.png)<!--width=400px-->
+
+![komplexe Beziehung](assets/erd-relationship-m-n.png)<!--width=400px-->
+
+**Attribute (Eigenschaten, Merkmale)**
+
+- beschreiben Eigenschaften der einzelner Objekte oder Beziehungen
+- aus Gründen der Übersichtlichkeit wird meist in grafischer Darstellung auf Angabe verzichtet
+
+![Beispiel für Atribute von Objekten und Beziehungen](assets/erd-attributes.png)<!--width=400px-->
+
+### Regeln für die Ableitung eines relationalen Schemas
+
+- Für jede im ERD modellierte Objektklasse ist eine Relation zu bilden (Primärschlüssel + alle weiteren Attribute)
+- im relationalen Datenmodell werden Beziehungen durch übereinstimmende Werte in Schlüsselfeldern dargestellt
+  - Primärschlüssel einer Tabelle wird durch Attribut in anderer Tabelle (Fremdschlüssel) referenziert
+  - Objektklassen mit $1:1$-Beziehungen können normalerweise ohne Informationsverluste zu einer Objektklasse zusammengefasst werden (Datenschutz/-verteilung!)
+  - bei Objektklassen mit $1:n$-Beziehungen wird der Objektklasse, die mehrfach mit einem Objekt der anderen in Beziehung stehen kann, ein Fremdschlüssel als Attribut hinzugefügt
+    - Attribute der Beziehung werden in die Objektklasse mit dem Fremdschlüssel aufgenommen
+  - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet 
+    - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung
