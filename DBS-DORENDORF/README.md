@@ -9,6 +9,10 @@ Datenbankentwurf
   - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
   - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
   - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)
+- [Logischer Datenbankentwurf](#logischer-datenbankentwurf)
+  - [Entity-Relationship-Modell](#entity-relationship-modell)
+    - [Komponenten von ERDs](#komponenten-von-erds)
+    - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
