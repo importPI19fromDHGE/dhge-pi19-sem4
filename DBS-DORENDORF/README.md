@@ -9,6 +9,10 @@ Datenbankentwurf
   - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
   - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
   - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)
+- [Logischer Datenbankentwurf](#logischer-datenbankentwurf)
+  - [Entity-Relationship-Modell](#entity-relationship-modell)
+    - [Komponenten von ERDs](#komponenten-von-erds)
+    - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -111,7 +115,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 **Attribute (Eigenschaten, Merkmale)**
 
-- beschrieben Eigenschaften der einzelner Objekte oder Beziehungen
+- beschreiben Eigenschaften der einzelner Objekte oder Beziehungen
 - aus Gründen der Übersichtlichkeit wird meist in grafischer Darstellung auf Angabe verzichtet
 
 ![Beispiel für Atribute von Objekten und Beziehungen](assets/erd-attributes.png)<!--width=400px-->
@@ -126,20 +130,3 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
     - Attribute der Beziehung werden in die Objektklasse mit dem Fremdschlüssel aufgenommen
   - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet 
     - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung
-
-### Normalformen für relationale Datenbanken
-
-- Fehler/Ungenauigkeiten beim Datenbankentwurf können zu Mehrdeutigkeiten oder Inkonsistenzen im relationalen Schema führen
-- müssen vor Implementation beseitigt werden und Redundanzen und Anomalien und damit inkonsistente Datenbankzustände zu vermeiden
-
-**1. Normalform**
-
-xxx
-
-**2. Normalform**
-
-xxx
-
-**3. Normalform**
-
-xxx
