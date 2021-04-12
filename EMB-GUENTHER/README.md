@@ -3,6 +3,20 @@ Embedded Systems
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
+
+- [Grundlagen](#grundlagen)
+  - [Definition](#definition)
+  - [Bauteile](#bauteile)
+    - [Potentiometer](#potentiometer)
+    - [LEDs](#leds)
+    - [Ohmscher Widerstand](#ohmscher-widerstand)
+    - [Kondensator](#kondensator)
+    - [Taster](#taster)
+    - [Servomotor](#servomotor)
+    - [Sonstige Bauteile](#sonstige-bauteile)
+  - [Messgeräte](#messger%C3%A4te)
+  - [PWM](#pwm)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
