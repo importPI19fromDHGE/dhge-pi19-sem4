@@ -18,7 +18,8 @@ jobs:
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/ASM-GUENTHER/README.md > ASM-GUENTHER/README.md &&
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/DBS-DORENDORF/README.md > DBS-DORENDORF/README.md &&
           awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/PRO-KASCHE/README.md > PRO-KASCHE/README.md &&
-          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWE-KASCHE/README.md > SWE-KASCHE/README.md
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWE-KASCHE/README.md > SWE-KASCHE/README.md &&
+          awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/SWS-KUSCHE/README.md > SWS-KUSCHE/README.md
       - run: |
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
@@ -36,6 +37,9 @@ jobs:
       - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
         with:
           args: --output=output/SWE-KASCHE.pdf --resource-path=SWE-KASCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWE-KASCHE/README.md
+      - uses: docker://rstropek/pandoc-latex:latest # generate SWE-KASCHE pdf
+        with:
+          args: --output=output/SWS-KUSCHE.pdf --resource-path=SWS-KUSCHE/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose SWS-KUSCHE/README.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
@@ -75,6 +79,15 @@ jobs:
           body: Automated release
           gzip: false
           files: output/SWE-KASCHE.pdf
+          allow_override: true
+      - uses: meeDamian/github-release@2.0 # override release to attach another pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Automated release
+          gzip: false
+          files: output/SWS-KUSCHE.pdf
           allow_override: true
       - uses: meeDamian/github-release@2.0 # override release to attach another pdf
         with:
