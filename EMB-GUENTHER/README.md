@@ -46,7 +46,7 @@ Begrenzt den Stromfluss in einem Schaltkreis. Beispielsweise als Vorwiderstand f
 
 ### Kondensator
 
-Passives elektrisches Bauelement zur Speicherung elektrischer Ladungen in einem Magnetfeld. Werden in der Regel zum Glätten von Spannungen oder für Verzögerungsschaltungen eingestzt.
+Passives elektrisches Bauelement zur Speicherung elektrischer Ladungen in einem Magnetfeld. Werden in der Regel zum Glätten von Spannungen oder für Verzögerungsschaltungen eingesetzt.
 
 ### Taster
 
@@ -73,5 +73,5 @@ Elektromotor, der zusätzlich mit einem Sensor zur Positionsbestimmung ausgestat
 ## PWM
 
 - = **P**ulse**W**idth**M**odulation (Pulsbreitenmodulation)
-- Schnelles Ein- und Ausschaltend der Spannung (=Rechteckpuls)$\rightarrow$ Verhältnis zwischen Ein- und Ausschaltzeit wird variiert
+- Schnelles Ein- und Ausschalten der Spannung (=Rechteckpuls)\rightarrow\rightarrow Verhältnis zwischen Ein- und Ausschaltzeit wird variiert
 - Verwendung: z.B. Dimmen von LEDs, Ansteuerung von Servos
