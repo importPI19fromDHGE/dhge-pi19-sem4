@@ -3,6 +3,32 @@ Kryptographie und Softwaresicherheit
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
+
+- [Prüfungen](#pr%C3%BCfungen)
+- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Symmetrische Verfahren](#symmetrische-verfahren)
+- [Asymmetrische Verfahren](#asymmetrische-verfahren)
+  - [...SA vs ...DH](#sa-vs-dh)
+- [Hybride Verfahren](#hybride-verfahren)
+- [Krypto-Analyse](#krypto-analyse)
+- [Anforderungen](#anforderungen)
+  - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
+- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
+  - [EDB (Electronic Code Book Mode)](#edb-electronic-code-book-mode)
+  - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
+  - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
+  - [CTR (Counter Mode)](#ctr-counter-mode)
+  - [OFB (Output Feedback Mode)](#ofb-output-feedback-mode)
+  - [GCM (Galois/Counter Mode)](#gcm-galoiscounter-mode)
+- [Hashes & Signatur](#hashes--signatur)
+  - [Kollisionen Fall 1](#kollisionen-fall-1)
+  - [Kollision Fall 2](#kollision-fall-2)
+  - [Hash-Verfahren](#hash-verfahren)
+  - [Anwendung](#anwendung)
+  - [Signaturen](#signaturen)
+    - [Voraussetzungen](#voraussetzungen)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
