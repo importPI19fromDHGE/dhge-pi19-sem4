@@ -1,12 +1,19 @@
-# Kryptographie und Softwaresicherheit
+Kryptographie und Softwaresicherheit
+====================================
 
-## Prüfungen
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<!--newpage-->
+
+# Prüfungen
 
 - Klausur wäre bevorzugt
 - Alternativ: Referate über freies Thema, was zu SWS passt
 - MPP1: Krypto wird sehr gern geprüft
 
-## Einführung und Inhalt
+# Einführung und Inhalt
 
 - Kryptographie = Lehre der Verschlüsselung
 - dieses Modul umfasst weiterhin:
@@ -31,7 +38,7 @@
 - Krypto-Algorithmen nie selbst einprogrammieren
 - lieber auf für gut befundene Implementierungen nutzen, bevorzugt Open-Source
 
-## Symmetrische Verfahren
+# Symmetrische Verfahren
 
 - **selber Schlüssel zum Ver- und Ent-schlüsseln**
 - manchmal auch denselben Algorithmus
@@ -54,7 +61,7 @@
 - Problem: Sender und Empfänger braucht denselben Schlüssel
   - Schlüsseltausch - wie wird der Schlüssel sicher übertragen (z.B. über Internet), ohne dass Dritter abfangen kann
 
-## Asymmetrische Verfahren
+# Asymmetrische Verfahren
 
 - Verwendung eines Schlüssel-Paars
   - "öffentlicher" Schlüssel zum Verschlüsseln
@@ -86,7 +93,7 @@
   - Rechenschritte schwieriger, schlechter auf HW optimierbar, aber kürzere Schlüssel ausreichend
   - Bsp.: ECDSA für Signaturen, ECDH für Schlüsseltausch; Curve25519 gilt als bestes Verfahren
 
-### ...SA vs ...DH
+## ...SA vs ...DH
 
 - DH verwendet zusätzlich Zufallszahlen
   - bietet "Forward secrecy"; RSA nicht
@@ -97,18 +104,18 @@
 - Kennntnis d. sym. Keys einer Session heißt nicht, dass andere Sessions geknackt werden können
 - DH heißt, es wird innerhalb einer asym. Verschlüsselung eine sym. Verschlüsselung verwendet, der mit jeder neuen Session neu generiert wird
 
-## Hybride Verfahren
+# Hybride Verfahren
 
 - Prxis: Kombination beider Verfahren, z.B. SSL / TLS, IPsec, PGP,...
 - zuerst asym. Verfahren zum Schlüsseltausch, damit symmetrisch verschlüsselt
 
-## Krypto-Analyse
+# Krypto-Analyse
 
 - Ziel: Angriff auf Kryptographie
   - Klartext herausfinden, Schlüssel herausfinden
 - **Ein Verschlüsselungsverfahren ist gebrochen, wenn das mit deutlich weniger Aufwand als *Brute Force* gelingt**
 
-## Anforderungen
+# Anforderungen
 
 - kein statistischer / struktureller Zusammenhang zw. Klartext und Chiffrat: **"pseudo-zufälliger Output"**
 - keine erkennbare Zusammenhänge *bestimmte Bits im Input / Schlüssel* <==> *Bestimmte Bits im Output*
@@ -128,17 +135,17 @@
   - Analyse der Funk-Abstrahlung
   - **Der Algorithmus muss für Beobachter von außen für alle Inputs + Schlüssel *gleich* rechnen**
 
-### Anforderungen an Zukunft
+## Anforderungen an Zukunft
 
 - "Quantencomputer-feste" Algorithmen
   - bei AES wird effektive Schlüssellänge halbiert
   - faktorisieren / logarithmieren in polynomialer Zeit
 
-## Verschlüsselung langer Daten
+# Verschlüsselung langer Daten
 
 - Problemstellung: wie bisherige Verfahren für lange Datenströme nutzen? (Blockchiffre zu Stromchiffre)
 
-### EDB (Electronic Code Book Mode)
+## EDB (Electronic Code Book Mode)
 
 - Datenstrom in Blöcke teilen
 - Jeden Block separat verschlüsseln
@@ -147,7 +154,7 @@
   - Block-Reihenfolge evtl. unbemerkt verfälschbar
 - Vorteil: Wiederaufsetzen nach Fehlern / Verlusten (wenn nur ein Block kaputt)
 
-### CBC (Cipher Block Chaining Mode)
+## CBC (Cipher Block Chaining Mode)
 
 - bei jedem Block vor Verschlüsselung wird XOR mit vorigem Chiffrat durchgeführt
 - Beim ersten Block XOR mit Initialisierungsvektor, z.B. Zufalllszahl
@@ -155,13 +162,13 @@
 - Vertauschung d. Reihenfolge fällt auf
 - bei Fehler gehen 2 Blöcke verloren
 
-### CFB (Cipher Feedback Mode)
+## CFB (Cipher Feedback Mode)
 
 - Verkettung ähnlich CBC
 - XOR mit Plaintext nach Verschlüsselung des vorigen Chiffrats
 - selten verwendet
 
-### CTR (Counter Mode)
+## CTR (Counter Mode)
 
 - arbeitet Pro Block, ohne Verkettung
 - Verschlüsselung: Zufallszahl + fortlfd. Zähler
@@ -174,11 +181,11 @@
 - Bei Bitfehlern nur genau entsprechende Bits betroffen
   - d.h. verfälschbar
 
-### OFB (Output Feedback Mode)
+## OFB (Output Feedback Mode)
 
 - s.o., aber statt Zähler wird Output verwendet
 
-### GCM (Galois/Counter Mode)
+## GCM (Galois/Counter Mode)
 
 - wie CTR, aber mit zusätzlicher Auth-Tag-Berechnung
 - gilt als derzeit bestes Verfahren
@@ -187,7 +194,7 @@
   - fälschungssicher
 - "GMAC": Nur Auth-Tag-Berechnung, unverschlüsselt
 
-## Hashes & Signatur
+# Hashes & Signatur
 
 - bei Dateien, Mails: nur Unverfälschtheit
 - Hash + Signatur + Zertifikats-Infrastruktur: Unverfälschtheit, Authentizität, Vertrauenswürdigkeit, Nicht-Abstreitbarkeit
@@ -202,7 +209,7 @@
   - Einweg-Funktion: darf nie *rückrechenbar* sein
 - Hash gilt als gebrochen, wenn schneller als Brute-Force lösbar
 
-### Kollisionen Fall 1
+## Kollisionen Fall 1
 
 - gegeben, fix:
   - nur Hashwert
@@ -213,21 +220,21 @@
   - einer kleinen, gezielten Veränderung zu A
   - beliebig dazukonstruierte, möglichst unauffällige Veränderung zur "Korrektur" des Hashes
 
-### Kollision Fall 2
+## Kollision Fall 2
 
 - gegeben: gewünschte Nachrichten-Schnipsel (z.B. Anfang)
 - gesucht: 2 verschiedene Nachrichten, die den Schnipsel enthalten und denselben, aber nicht vorgegebenen Hash enthalten
 - Verschicke B, aber behaupte, A wäre echte Nachricht
 - meist leichter als Fall 1
 
-### Hash-Verfahren
+## Hash-Verfahren
 
 - MD4 / MD5: "Message Digest"; seit >10y geknackt
 - SHA, SHA1: "Secure Hash Algorithm"; seit 2005 theoretisch geknackt
 - SHA-2 = SHA-256, SHA-384, SHA-512: längere SHA-Varianten, noch sicher
 - SHA-3
 
-### Anwendung
+## Anwendung
 
 - Unverfälschtheit garantieren
 - Speicherung Passwörter
