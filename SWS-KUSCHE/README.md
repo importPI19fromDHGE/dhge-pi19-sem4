@@ -144,7 +144,7 @@ Kryptographie und Softwaresicherheit
 
 - kein statistischer / struktureller Zusammenhang zw. Klartext und Chiffrat: **"pseudo-zufälliger Output"**
 - keine erkennbare Zusammenhänge *bestimmte Bits im Input / Schlüssel* $\leftrightarrow$ *Bestimmte Bits im Output*
-- keine Beschreibung durh ein algebraisches Gleichungssystem
+- keine Beschreibung durch ein algebraisches Gleichungssystem
   - verhindert u.a. statistische Analysen (z.B. Zeichenhäufigkeit)
 - Beständigkeit gegen **"Known Plaintext"-Attacken**:
   - Klartext und Chiffrat bekannt (zumindest in Teilen)
