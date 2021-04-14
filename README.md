@@ -19,6 +19,9 @@ Alle Kommilitonen sind dazu eingeladen, ihre eigenen Beiträge zu diesem Projekt
 - [ASM - Rechnerarchitekturen/hardwarenahe Programmierung](./ASM-GUENTHER)
 - [SWE - Systemanalyse](./SWE-KASCHE)
 - [PRO - IT-Trends](./PRO-KASCHE)
+- [EMB - WPM 1 Embedded Systems](./EMB-GUENTHER)
+- [OOP - WPM 1 Objektorientierte Programmierung / Java](./OOP-CASSELT)
+- [SWS - WPM 1 Kryptographie und Softwaresicherheit](./SWS-KUSCHE)
 
 ## Markdown-Erweiterungen
 
