@@ -94,7 +94,7 @@ Kryptographie und Softwaresicherheit
 - Daher auch: Public-Key-Verfahren
 - Private Key und Public Key können auch Rollen tauschen, z.B. beim Signieren
 - Empfänger berechnet einmalig persönliches Schlüsselpaar, veröffentlicht öff. Schlüssel und verwahrt priv. Schlüssel sicher
-- arbeiten ebenfalls blockweise, aber größeren Block- und Schlüssel-Längen: 2048 bis 4096, darunter evtl. zu wenig
+- arbeiten ebenfalls blockweise, aber mit größeren Block- und Schlüssel-Längen: 2048 bis 4096, darunter evtl. zu wenig
 - Arbeiten intern mit 2048-Bit-Ints, also etwa 600 Dezimalstellen, Multiplikation, Restrechnung,...
 - aufwändiger, langsamer
 - schlecht durch Hardware- oder Vektor-Befehle zu beschleunigen
