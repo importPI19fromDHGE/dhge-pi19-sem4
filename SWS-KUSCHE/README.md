@@ -197,7 +197,7 @@ Kryptographie und Softwaresicherheit
 - arbeitet pro Block, ohne Verkettung
 - Verschlüsselung: Zufallszahl + fortlfd. Zähler
   - erzeugt jedes mal einen anderen pseudo-zufälligen Bitstrom
-- Klartext wird danach dazu verschlüsselt: XOR mit diesem Bitstrom
+- Klartext wird danach damit verschlüsselt: XOR mit diesem Bitstrom
 - Verschlüsselung + Entschlüsselung ident
 - parallelisierbar
 - vorausrechenbar (Verschlüsselungs-Berechnung hängt nicht vom Klartext ab)
@@ -271,7 +271,7 @@ Kryptographie und Softwaresicherheit
 
 ## Signaturen
 
-- Sender / Ersteller berechnet Hashwert, verschlüsselt Hash mit Private Key, verschickt Originaldaten plus Signatur (**enthält** verschlüsselter Hash)
+- Sender / Ersteller berechnet Hashwert, verschlüsselt Hash mit Private Key, verschickt Originaldaten plus Signatur (**enthält** verschlüsselten Hash)
 - Empfänger entschlüsselt Signatur mit Public Key, berechnet Hash der Originaldaten + vergleicht
 - jeder kann also Signatur prüfen
 
