@@ -58,7 +58,7 @@ Kryptographie und Softwaresicherheit
 - Ziele / Anwendung krypt. Verfahren
   - Geheimhaltung, Vertraulichkeit, Zugriffsschutz: Verschlüsselungsverfahren
   - Integrität: Datensicherheit, krypt. Hash-Funktionen
-  - Authentizität: Nichtabstreitbarkeit, Sicherstellung Senders: Signaturen und Zertifikate
+  - Authentizität: Nichtabstreitbarkeit, Sicherstellung des Senders: Signaturen und Zertifikate
   - Authentifizierung und Passwörter
 - Krypto-Algorithmen nie selbst programmieren
 - lieber für gut befundene Implementierungen nutzen, bevorzugt Open-Source
