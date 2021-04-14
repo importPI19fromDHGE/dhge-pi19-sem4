@@ -61,8 +61,8 @@ Kryptographie und Softwaresicherheit
   - Integrität: Datensicherheit, krypt. Hash-Funktionen
   - Authentizität: Nichtabstreitbarkeit, Sicherstellung Senders: Signaturen und Zertifikate
   - Authentifizierung und Passwörter
-- Krypto-Algorithmen nie selbst einprogrammieren
-- lieber auf für gut befundene Implementierungen nutzen, bevorzugt Open-Source
+- Krypto-Algorithmen nie selbst programmieren
+- lieber für gut befundene Implementierungen nutzen, bevorzugt Open-Source
 
 # Symmetrische Verfahren
 
@@ -99,20 +99,20 @@ Kryptographie und Softwaresicherheit
 - Arbeiten intern mit 2048-Bit-Ints, also etwa 600 Dezimalstellen, Multiplikation, Restrechnung,...
 - aufwändiger, langsamer
 - schlecht durch Hardware- oder Vektor-Befehle zu beschleunigen
-- unterschiedliche Algorithmen zum Ver- + Ent-schlüsseln
+- unterschiedliche Algorithmen zum Ver- + Entschlüsseln
 - basieren auf Problemen der diskreten Mathematik
   - in einer Richtung schnell (Schlüsselgenerierung)
   - in anderer Richtung extrem aufwändig (berechnen d. priv. Schlüssels mit öff.)
   - **"Einweg-Funktionen"**
 - Bsp. 1: Faktorisierung großer Zahlen
-  - für zwei große Primzahlen p und q
-  - ``n = p * q`` leicht zu berechnen
-  - Berechnung von p und q aus n praktisch unmöglich
+  - für zwei große Primzahlen $p$ und $q$
+  - $n = p * q$ leicht zu berechnen
+  - Berechnung von $p$ und $q$ aus $n$ praktisch unmöglich
 - Bsp. 2: Diskreter Logarithmus
-  - a^x kongruent m mod p <!--TODO: MathJax-->
-  - für a,x,m,p ganzzahlig
-  - leicht für m gesucht, a,x,p gegeben
-  - sehr schwer für a,m,p gegeben und kleinstes lösendes x gesucht
+  - $a^x \text{kongruent} m \text{mod} p$
+  - für $a,x,m,p$ ganzzahlig
+  - leicht für $m$ gesucht, $a,x,p$ gegeben
+  - sehr schwer für $a,m,p$ gegeben und kleinstes lösendes $x$ gesucht
   - Anwendung: **Diffie-Hellman, DSH, Elgamal**
 - ähnliche Idee: ECC = **elliptische Kurven**
 - im Wesentlichen auch diskreter Logarithmus, aber nicht mit ganzen Zahlen, sondern Punkten auf Kurven
@@ -132,19 +132,19 @@ Kryptographie und Softwaresicherheit
 
 # Hybride Verfahren
 
-- Prxis: Kombination beider Verfahren, z.B. SSL / TLS, IPsec, PGP,...
-- zuerst asym. Verfahren zum Schlüsseltausch, damit symmetrisch verschlüsselt
+- Praxis: Kombination beider Verfahren, z.B. SSL/TLS, IPsec, PGP,...
+- zuerst asym. Verfahren zum Schlüsseltausch, dann symmetrisch verschlüsselt
 
 # Krypto-Analyse
 
-- Ziel: Angriff auf Kryptographie
-  - Klartext herausfinden, Schlüssel herausfinden
-- **Ein Verschlüsselungsverfahren ist gebrochen, wenn das mit deutlich weniger Aufwand als *Brute Force* gelingt**
+- Ziel: Angriff auf Kryptographie $\rightarrow$ Klartext herausfinden, Schlüssel herausfinden
+
+> **Ein Verschlüsselungsverfahren ist gebrochen, wenn das mit deutlich weniger Aufwand als *Brute Force* gelingt**
 
 # Anforderungen
 
 - kein statistischer / struktureller Zusammenhang zw. Klartext und Chiffrat: **"pseudo-zufälliger Output"**
-- keine erkennbare Zusammenhänge *bestimmte Bits im Input / Schlüssel* <==> *Bestimmte Bits im Output*
+- keine erkennbare Zusammenhänge *bestimmte Bits im Input / Schlüssel* $\leftrightarrow$ *Bestimmte Bits im Output*
 - keine Beschreibung durh ein algebraisches Gleichungssystem
   - verhindert u.a. statistische Analysen (z.B. Zeichenhäufigkeit)
 - Beständigkeit gegen **"Known Plaintext"-Attacken**:
@@ -153,8 +153,7 @@ Kryptographie und Softwaresicherheit
   - Extremfall: Krypto-Box in Händen des Angreifers
 - Sonderfall **Differenzielle Analyse**
   - kleine Änderung im Original - Rückschluss auf Schlüsselteile aus resultierenden Änderungen im Chiffrat?
-  - Anforderung **Lawinen-Effekt = Diffusion**:
-    - kleine Änderungen im Klartext bewirken große Änderungen im Chiffrat; sollte immer 50% sein
+  - Anforderung **Lawinen-Effekt = Diffusion**: kleine Änderungen im Klartext bewirken große Änderungen im Chiffrat; sollte immer 50% sein
 - Beständigkeit gegen **Seitenkanal-Attacken**
   - Timing- und Stromverbrauchs-Analyse
   - Rückschlüsse aus Sprung- und Cache-Verhalten
@@ -196,7 +195,7 @@ Kryptographie und Softwaresicherheit
 
 ## CTR (Counter Mode)
 
-- arbeitet Pro Block, ohne Verkettung
+- arbeitet pro Block, ohne Verkettung
 - Verschlüsselung: Zufallszahl + fortlfd. Zähler
   - erzeugt jedes mal einen anderen pseudo-zufälligen Bitstrom
 - Klartext wird danach dazu verschlüsselt: XOR mit diesem Bitstrom
@@ -216,8 +215,7 @@ Kryptographie und Softwaresicherheit
 - wie CTR, aber mit zusätzlicher Auth-Tag-Berechnung
 - gilt als derzeit bestes Verfahren
 - in vielen Standards verwendet
-- Auth-Tag = Prüfsumme
-  - fälschungssicher
+- Auth-Tag = Prüfsumme $\rightarrow$ fälschungssicher
 - "GMAC": Nur Auth-Tag-Berechnung, unverschlüsselt
 
 # Hashes & Signatur
@@ -235,7 +233,9 @@ Kryptographie und Softwaresicherheit
   - Einweg-Funktion: darf nie *rückrechenbar* sein
 - Hash gilt als gebrochen, wenn schneller als Brute-Force lösbar
 
-## Kollisionen Fall 1
+## Kollisionen 
+
+**Fall 1**
 
 - gegeben, fix:
   - nur Hashwert
@@ -246,7 +246,7 @@ Kryptographie und Softwaresicherheit
   - einer kleinen, gezielten Veränderung zu A
   - beliebig dazukonstruierte, möglichst unauffällige Veränderung zur "Korrektur" des Hashes
 
-## Kollision Fall 2
+**Fall 2**
 
 - gegeben: gewünschte Nachrichten-Schnipsel (z.B. Anfang)
 - gesucht: 2 verschiedene Nachrichten, die den Schnipsel enthalten und denselben, aber nicht vorgegebenen Hash enthalten
@@ -268,7 +268,6 @@ Kryptographie und Softwaresicherheit
 - OTP (One Time Passwords)
 - Challenge-Response-Verfahren
 - Blockchain
-
 - wenn Hash-Funktion geknackt, werden Krypto-Zertifikate wertlos
 
 ## Signaturen
