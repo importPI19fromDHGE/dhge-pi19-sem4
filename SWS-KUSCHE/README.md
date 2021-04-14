@@ -127,7 +127,7 @@ Kryptographie und Softwaresicherheit
   - symm. Keys nicht nachträglich knackbar
   - alte Sessions nicht nachträglich knackbar
 - Kennntnis d. sym. Keys einer Session heißt nicht, dass andere Sessions geknackt werden können
-- DH heißt, es wird innerhalb einer asym. Verschlüsselung eine sym. Verschlüsselung verwendet, der mit jeder neuen Session neu generiert wird
+- DH heißt, es wird innerhalb einer asym. Verschlüsselung eine sym. Verschlüsselung verwendet, für die mit jeder neuen Session ein neuer Schlüssel generiert wird
 
 # Hybride Verfahren
 
