@@ -148,7 +148,7 @@ Kryptographie und Softwaresicherheit
   - verhindert u.a. statistische Analysen (z.B. Zeichenhäufigkeit)
 - Beständigkeit gegen **"Known Plaintext"-Attacken**:
   - Klartext und Chiffrat bekannt (zumindest in Teilen)
-  - Schlüsselgesucht
+  - Schlüssel gesucht
   - Extremfall: Krypto-Box in Händen des Angreifers
 - Sonderfall **Differenzielle Analyse**
   - kleine Änderung im Original - Rückschluss auf Schlüsselteile aus resultierenden Änderungen im Chiffrat?
