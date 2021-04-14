@@ -91,7 +91,7 @@ Kryptographie und Softwaresicherheit
 - Verwendung eines Schlüssel-Paars
   - "öffentlicher" Schlüssel zum Verschlüsseln
   - "privater" Schlüssel zum Entschlüsseln
-- Daher auch: Pubic-Key-Verfahren
+- Daher auch: Public-Key-Verfahren
 - Private Key und Public Key können auch Rollen tauschen, z.B. beim Signieren
 - Empfänger berechnet einmalig persönliches Schlüsselpaar, veröffentlicht öff. Schlüssel und verwahrt priv. Schlüssel sicher
 - arbeiten ebenfalls blockweise, aber größeren Block- und Schlüssel-Längen: 2048 bis 4096, darunter evtl. zu wenig
