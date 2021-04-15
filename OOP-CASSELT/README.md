@@ -31,7 +31,7 @@
 - einzeilige Kommentare am Zeilenende mit ``//``
 - Blockkommentar: Start mit ``/*``, Ende mit ``*/``
 - Bezeichner **müssen** mit `_`, `$`, oder einem Unicode-Buchstaben beginnen, aber nicht mit einer Ziffer, einem reservierten Wort oder ungültigen Zeichen (???) wie dem `!`
-- Bezeihner sind case-sensitiv
+- Bezeichner sind case-sensitiv
 - Namenskonventionen:
   - Klassennamen mit großem CamelCase: ``KlassenName``
   - Variablen- und Methoden-Namen mit kleinem camelCase: ``compSumme()``
@@ -41,7 +41,7 @@
 - Literale: Ganzzahlen, Fließkommazahlen, Zeichen, null, Strings, Konstanten
 - Im Gegensatz zu C / C++ dürfen in Java Methoden und Membervariablen durcheinander geschrieben werden, ohne Abhängigkeiten zu berücksichtigen. Der Compiler wird diese automatisch sortieren
 - Es gibt die Zugriffsmodifier ``private``, ``protected`` und ``public``, wobei **``protected``** der **Standard** ist
-- alle primitiven Datentypen existieren auch in Wrapperklassen objetorientiert
+- alle primitiven Datentypen existieren auch in Wrapperklassen objektorientiert
 - Für zwei Referenzvariablen ``a1`` und ``a2`` kann ausgeführt werden: ``a2 = a1``, wobei die Referenz geändert wird, das Objekt wird nicht kopiert. Entsprechend verweisen beide Variablen auf dasselbe Objekt
 
 ### Methoden
@@ -68,9 +68,9 @@ returntyp methodenName(parameterliste) {
 ## Basiskonzepte der OOP & Java
 
 - 4 Grundkonzepte:
-  - Abstraktion: Gemeinsame Eigenschaften und Fähigkeit werden zusammengefasst beschrieben
+  - Abstraktion: Gemeinsame Eigenschaften und Fähigkeiten werden zusammengefasst beschrieben
   - Datenkapselung: Zustandsänderungen nur über dafür vorgesehene Operationen (Methoden)
-  - Vererbung: Erweiterung vorhandener Objekte mit zusätzlichen Eigenschaften + Operationen bei bleibender Kompatibilität zum Urpsrungstyp
+  - Vererbung: Erweiterung vorhandener Objekte mit zusätzlichen Eigenschaften + Operationen bei bleibender Kompatibilität zum Ursprungstyp
   - Polymorphie: Laufzeitprüfung, wie auf vererbte Objekte reagiert wird
 - Klassen und Objekte $\rightarrow$ setze ich mal voraus
 - Unterschied Operationen und Methoden:
