@@ -5,17 +5,16 @@ Objektorientierte Programmierung mit Java
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [WPM1 Objektorientierte Programmierung mit Java](#wpm1-objektorientierte-programmierung-mit-java)
-  - [Einleitung](#einleitung)
-    - [Java-Sprachelemente](#java-sprachelemente)
-    - [Methoden](#methoden)
-    - [Strings](#strings)
-  - [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
-    - [Packages](#packages)
-    - [Überladen](#%C3%BCberladen)
-    - [Konstruktoren](#konstruktoren)
-    - [statische Member und Methoden](#statische-member-und-methoden)
-    - [innere Klassen](#innere-klassen)
+- [Einleitung](#einleitung)
+  - [Java-Sprachelemente](#java-sprachelemente)
+  - [Methoden](#methoden)
+  - [Strings](#strings)
+- [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
+  - [Packages](#packages)
+  - [Überladen](#%C3%BCberladen)
+  - [Konstruktoren](#konstruktoren)
+  - [statische Member und Methoden](#statische-member-und-methoden)
+  - [innere Klassen](#innere-klassen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
