@@ -1,3 +1,6 @@
+Objektorientierte Programmierung mit Java
+=========================================
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -16,9 +19,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# WPM1 Objektorientierte Programmierung mit Java
-
-## Einleitung
+# Einleitung
 
 - Bauen eines JARs von einer Klassensammlung: ``jar cmf Manifest.txt name.jar *.class``
   - mit Programm ``jar``
@@ -26,7 +27,7 @@
 - Java ist eine interpretierbare, objektorientierte Sprache
 - Java-Quellcode wird mit ``javac`` in Bytecode kompiliert und mit einer JVM interpretiert
 
-### Java-Sprachelemente
+## Java-Sprachelemente
 
 - einzeilige Kommentare am Zeilenende mit ``//``
 - Blockkommentar: Start mit ``/*``, Ende mit ``*/``
@@ -44,7 +45,7 @@
 - alle primitiven Datentypen existieren auch in Wrapperklassen objektorientiert
 - Für zwei Referenzvariablen ``a1`` und ``a2`` kann ausgeführt werden: ``a2 = a1``, wobei die Referenz geändert wird, das Objekt wird nicht kopiert. Entsprechend verweisen beide Variablen auf dasselbe Objekt
 
-### Methoden
+## Methoden
 
 Deklaration:
 
@@ -55,7 +56,7 @@ returntyp methodenName(parameterliste) {
 }
 ```
 
-### Strings
+## Strings
 
 - Gleichheit von Strings: Wir betrachten folgenden Code:
 
@@ -65,7 +66,7 @@ returntyp methodenName(parameterliste) {
   - ``s1 == s2`` ergibt ``true``, aber ``s1 == s3`` ``false``
   - **Daher immer ``s1.equals()`` verwenden!**
 
-## Basiskonzepte der OOP & Java
+# Basiskonzepte der OOP & Java
 
 - 4 Grundkonzepte:
   - Abstraktion: Gemeinsame Eigenschaften und Fähigkeiten werden zusammengefasst beschrieben
@@ -78,31 +79,31 @@ returntyp methodenName(parameterliste) {
   - Methode: wie wird gemacht?
 - in Java werden keine Prototypen gebraucht
 
-### Packages
+## Packages
 
 - Verwalten Klassen und Zugriffsrechte
 - erste Anweisung **muss** ``package paketname;`` sein
 - ohne Zugriffsmodifier an Klasse: nur für eigenes Package sichtbar
 - Modifier ``public`` an Klasse: Klasse für alle Packages sichtbar
 
-### Überladen
+## Überladen
 
 - in einer Klasse können mehrere Methoden desselben Namens existieren, die aber verschiedene Signaturen haben
 - Ein Aspekt der statischen Polymorphie - Methoden haben in Abhängigkeit ihrer Signaturen die gleiche Funktionalität
 - siehe auch: C++ (3. Semester)
 - **Achtung**: wir sehen den Returntyp hier nicht als Bestandteil der Signatur
 
-### Konstruktoren
+## Konstruktoren
 
 - Konstruktoren sind Initialisierer für Objekte und werden von dem ``new``-Operator benutzt
 - wird ein impliziter Konstruktor genutzt, werden Membervariablen mit ``null``, ``0`` oder ``false`` gefüllt
 
-### statische Member und Methoden
+## statische Member und Methoden
 
 - existieren nur einmal pro Klasse
 - statische Methoden können nicht auf non-statische Methoden zugreifen
 
-### innere Klassen
+## innere Klassen
 
 - innerhalb eines Blockes deklariert und nur dort sichtbar
 - haben Zugriff auf Member und Methoden der äußeren Klasse
