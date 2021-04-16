@@ -3,7 +3,19 @@ IT-Trends
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-undefined
+**Inhaltsverzeichnis**
+
+- [Docker](#docker)
+- [Microservices](#microservices)
+- [Blockchain und Verschlüsselung](#blockchain-und-verschl%C3%BCsselung)
+  - [Hashing](#hashing)
+    - [Hashes knacken](#hashes-knacken)
+  - [Verschlüsselung](#verschl%C3%BCsselung)
+    - [Digitale Signaturen](#digitale-signaturen)
+    - [Digitale Zertifikat](#digitale-zertifikat)
+  - [Blockchain](#blockchain)
+    - [Bitcoin (Kryptowährungen)](#bitcoin-kryptow%C3%A4hrungen)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
