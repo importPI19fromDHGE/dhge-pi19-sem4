@@ -32,7 +32,7 @@ IT-Trends
 
 ## Hashing
 
-- **Hashfunktion** = Zuordnung von großen Eingabemenge (Schlüssel) auf eine kleinere Zielmenge fester länge (Hashwerte)
+- **Hashfunktion** = Zuordnung von großen Eingabemenge (Schlüssel) auf eine kleinere Zielmenge fester Länge (Hashwerte)
 - Hashwerte sind einfach zu berechnen
 - Umkehroperation sehr komplex (Rekonstruktion der Eingabe unmöglich)
 
@@ -54,9 +54,9 @@ IT-Trends
 
 ## Verschlüsselung
 
-- **symetrische Verschlüsselung:** gleicher Schlüssel zum ver- und entschlüsseln
+- **symmetrische Verschlüsselung:** gleicher Schlüssel zum ver- und entschlüsseln
   - schnell, effizient durch Hardwarebeschleunigung ausführbar
-- **asymetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Ent-/verschlüsseln)
+- **asymmetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Ent-/verschlüsseln)
   - z.B. End-to-End verschlüsselte Chat-Programme, PGP, Digitale Signaturen
 
 ### Digitale Signaturen
@@ -70,7 +70,7 @@ IT-Trends
 ### Digitale Zertifikat
 
 - wird benötigt um zu garantieren, dass ein öffentlicher Schlüssel von einer bestimmten Quelle stammt
-- Wir öffentlicher Schlüssel durch Mittelmann manipuliert, wird die Nachricht für verschlüsselte Nachricht für diesen lesbar
+- wird öffentlicher Schlüssel durch Mittelsmann manipuliert, wird die verschlüsselte Nachricht für diesen lesbar
 - digitale Signatur = Unterschrift $\rightarrow$ digitales Zertifikat = Personalausweis
 - öffentlicher Schlüssel ist echt, wenn er durch andere Instanz (= Vertrauenswürdigkeit bestätigt durch vorhergehende Instanz) bestätigt wird $\rightarrow$ Baumstruktur
 
@@ -86,7 +86,7 @@ IT-Trends
 - Blockchain ist die zentrale Technologie hinter vielen Kryptowährungen wie Bitcoin
 - Verteilung der Blockchain in einem Peer-to-Peer Netzwerk (jeder Peer besitzt vollständige Kopie, vgl. dezentrale Datenbank)
 - Miner fassen Transaktionen zu Blöcken zusammen und propagieren diese im Peer-to-Peer Netzwerk
-- Damit ein Block akzeptiert wird, muss dieser ein Hash besitzen, der eine bestimmte Bedingung erfüllt (= Mining-Schwierigkeit, sehr rechenintensiv)
+- Damit ein Block akzeptiert wird, muss dieser einen Hash besitzen, der eine bestimmte Bedingung erfüllt (= Mining-Schwierigkeit, sehr rechenintensiv)
 - Anpassung des Schwierigkeitsgrad des Minings erfolgt alle zwei Wochen (je mehr Peers, umso schwieriger wird das Mining)
 - diejenige Node die zuerst einen Block mit einem passenden Hash generiert und der vom Netzwerk validiert wird, wird mit 'neuen' Bitcoin belohnt (Belohnung halbiert sich alle 4 Jahre - aktuell 6,25 BTC)
 - Neue Blöcke werden etwa alle 10 Minuten erzeugt
