@@ -71,8 +71,6 @@ undefined
 
 ### Bitcoin (Kryptowährungen)
 
-<!--The Times 03/Jan/2009 Chancellor on brink of second bailout for banks-->
-
 - Blockchain ist die zentrale Technologie hinter vielen Kryptowährungen wie Bitcoin
 - Verteilung der Blockchain in einem Peer-to-Peer Netzwerk (jeder Peer besitzt vollständige Kopie, vgl. dezentrale Datenbank)
 - Miner fassen Transaktionen zu Blöcken zusammen und propagieren diese im Peer-to-Peer Netzwerk
