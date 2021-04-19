@@ -5,8 +5,9 @@ Kryptographie und Softwaresicherheit
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungen](#pr%C3%BCfungen)
-- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Kryptographie und Softwaresicherheit](#kryptographie-und-softwaresicherheit)
+- [Prüfungen](#prüfungen)
+- [Einführung und Inhalt](#einführung-und-inhalt)
 - [Symmetrische Verfahren](#symmetrische-verfahren)
 - [Asymmetrische Verfahren](#asymmetrische-verfahren)
   - [...SA vs ...DH](#sa-vs-dh)
@@ -14,8 +15,8 @@ Kryptographie und Softwaresicherheit
 - [Krypto-Analyse](#krypto-analyse)
 - [Anforderungen](#anforderungen)
   - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
-- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
-  - [EDB (Electronic Code Book Mode)](#edb-electronic-code-book-mode)
+- [Verschlüsselung langer Daten](#verschlüsselung-langer-daten)
+  - [ECB (Electronic Code Book Mode)](#ecb-electronic-code-book-mode)
   - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
   - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
   - [CTR (Counter Mode)](#ctr-counter-mode)
@@ -27,6 +28,9 @@ Kryptographie und Softwaresicherheit
   - [Anwendung](#anwendung)
   - [Signaturen](#signaturen)
     - [Voraussetzungen](#voraussetzungen)
+- [PKI](#pki)
+  - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
+  - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -133,6 +137,7 @@ Kryptographie und Softwaresicherheit
 
 - Praxis: Kombination beider Verfahren, z.B. SSL/TLS, IPsec, PGP,...
 - zuerst asym. Verfahren zum Schlüsseltausch, dann symmetrisch verschlüsselt
+- asym. Verfahren sorgt also für die sichere Übertragung des symmetrischen Schlüssels, da symmetrische Verschlüsselungsverfahren wesentlich schneller sind
 
 # Krypto-Analyse
 
@@ -169,14 +174,16 @@ Kryptographie und Softwaresicherheit
 
 - Problemstellung: wie bisherige Verfahren für lange Datenströme nutzen? (Blockchiffre zu Stromchiffre)
 
-## EDB (Electronic Code Book Mode)
+## ECB (Electronic Code Book Mode)
 
 - Datenstrom in Blöcke teilen
 - Jeden Block separat verschlüsseln
 - Nachteile
-  - Gleicher Block = gleiches Chiffrat
+  - Gleicher Block = gleiches Chiffrat (Rückschlüsse möglich)
   - Block-Reihenfolge evtl. unbemerkt verfälschbar
 - Vorteil: Wiederaufsetzen nach Fehlern / Verlusten (wenn nur ein Block kaputt)
+
+![ECB-Verschlüsselung](assets/ecb_encryption.png)<!--width=600px-->
 
 ## CBC (Cipher Block Chaining Mode)
 
@@ -185,6 +192,8 @@ Kryptographie und Softwaresicherheit
 - Problem mit gleichen Blöcken behoben
 - Vertauschung d. Reihenfolge fällt auf
 - bei Fehler gehen 2 Blöcke verloren
+
+![CBC-Verschlüsselung](assets/cbc_encryption.png)<!--width=600px-->
 
 ## CFB (Cipher Feedback Mode)
 
@@ -205,6 +214,8 @@ Kryptographie und Softwaresicherheit
 - Bei Bitfehlern nur genau entsprechende Bits betroffen
   - d.h. verfälschbar
 
+![CTR-Verschlüsselung](assets/ctr_encryption.png)<!--width=601px-->
+
 ## OFB (Output Feedback Mode)
 
 - s.o., aber statt Zähler wird Output verwendet
@@ -216,6 +227,8 @@ Kryptographie und Softwaresicherheit
 - in vielen Standards verwendet
 - Auth-Tag = Prüfsumme $\rightarrow$ fälschungssicher
 - "GMAC": Nur Auth-Tag-Berechnung, unverschlüsselt
+
+![GCM-Verschlüsselung](assets/gcm_encryption.png)<!--width=1080px-->
 
 # Hashes & Signatur
 
@@ -289,3 +302,37 @@ zu 1.:
 - **Qualifizierte elektronische Signatur**: privater Key auf Chipkarte gespeichert, verlässt Karte nie
 - aktive Karte, kann rechnen, Signatur auf Karte berechnet
 - CA darf keine Kopie des Private Key haben
+
+zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
+
+- Sicherstellung der Vertrauenswürdigkeit von Public Keys
+- Sicherstellung ihrer Zuordnung zu Person / Firma / Webserver / ...
+- sichere Identifizierung
+
+# PKI
+
+- PKIs basieren auf Zertifikaten
+- CA-Hierarchie
+- Zertifikat ist Public Key + Zusatzdaten (z.B. Eigentümer)
+- Zertifikat signiert mit **Key der CA**
+  - d.h. überprüfbar, manipulatiossicher,...
+
+## Informationen in einem Zertifikat
+
+- z.B. im genormten X.509-Format
+- Public Key
+- Eigentümer (Person, Firma, Domain,...)
+- Zulässigkeit, z.B. für Domains bei HTTPS
+- Austeller (=CA)
+- Gültigkeitsbereich (Zeitraum)
+- Versions- und Algorithmus-Informationen
+
+## Überprüfung eines Zertifikates
+
+- Signatur korrekt? / Daten unverfälscht?
+- zeitlich noch gültig?
+- oft: richtiges Zertifikat? / Richtige Domain?
+- wurde Zertifikat widerrufen? (Anfrage mittels OCSP oder CRL)
+  - entspricht Blacklist
+- Zertifikat vertrauenswürdig? / Zertifikatskette bis zur Root-CA OK?
+  - entspricht Whitelist
