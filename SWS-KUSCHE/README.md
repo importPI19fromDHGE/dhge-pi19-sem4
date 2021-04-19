@@ -187,9 +187,8 @@ Kryptographie und Softwaresicherheit
 
 ## ECB (Electronic Code Book Mode)
 
-- Datenstrom in Blöcke teilen
-- Jeden Block separat verschlüsseln
-- Nachteile
+- Datenstrom in Blöcke teilen \rightarrow\rightarrow jeden Block separat verschlüsseln
+- Nachteile:
   - Gleicher Block = gleiches Chiffrat (Rückschlüsse möglich)
   - Block-Reihenfolge evtl. unbemerkt verfälschbar
 - Vorteil: Wiederaufsetzen nach Fehlern / Verlusten (wenn nur ein Block kaputt)
@@ -198,7 +197,7 @@ Kryptographie und Softwaresicherheit
 
 ## CBC (Cipher Block Chaining Mode)
 
-- bei jedem Block vor Verschlüsselung wird XOR mit vorigem Chiffrat durchgeführt
+- bei jedem Block wird vor der Verschlüsselung `XOR` mit vorherigem Chiffrat durchgeführt
 - Beim ersten Block XOR mit Initialisierungsvektor, z.B. Zufalllszahl
 - Problem mit gleichen Blöcken behoben
 - Vertauschung d. Reihenfolge fällt auf
@@ -239,7 +238,7 @@ Kryptographie und Softwaresicherheit
 - Auth-Tag = Prüfsumme $\rightarrow$ fälschungssicher
 - "GMAC": Nur Auth-Tag-Berechnung, unverschlüsselt
 
-![GCM-Verschlüsselung](assets/gcm_encryption.png)<!--width=1080px-->
+![GCM-Verschlüsselung](assets/gcm_encryption.png)<!--width=600px-->
 
 # Hashes & Signatur
 
@@ -312,7 +311,7 @@ zu 1.:
 
 - **Qualifizierte elektronische Signatur**: privater Key auf Chipkarte gespeichert, verlässt Karte nie
 - aktive Karte, kann rechnen, Signatur auf Karte berechnet
-- CA darf keine Kopie des Private Key haben
+- Certificate Authority (CA) darf keine Kopie des Private Key haben
 
 zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
@@ -320,13 +319,13 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Sicherstellung ihrer Zuordnung zu Person / Firma / Webserver / ...
 - sichere Identifizierung
 
-# PKI
+## Public-Key-Infrastruktur
 
 - PKIs basieren auf Zertifikaten
 - CA-Hierarchie
 - Zertifikat ist Public Key + Zusatzdaten (z.B. Eigentümer)
 - Zertifikat signiert mit **Key der CA**
-  - d.h. überprüfbar, manipulatiossicher,...
+  - d.h. überprüfbar, manipulationssicher,...
 
 ## Informationen in einem Zertifikat
 
@@ -342,13 +341,13 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 - Signatur korrekt? / Daten unverfälscht?
 - zeitlich noch gültig?
-- oft: richtiges Zertifikat? / Richtige Domain?
+- oft: richtiges Zertifikat? / richtige Domain?
 - wurde Zertifikat widerrufen? (Anfrage mittels OCSP oder CRL)
   - entspricht Blacklist
 - Zertifikat vertrauenswürdig? / Zertifikatskette bis zur Root-CA OK?
   - entspricht Whitelist
 - **Problem: wie prüft man den Key der CA?**
-  - hierarchisches System - übergeordnete CA signiert untergeordnete
+  - hierarchisches System \rightarrow\rightarrow übergeordnete CA signiert untergeordnete
   - **Root-CA** (es existieren ein paar hundert) werden von Betriebssystem / Browser gespeichert und gelten **ohne weitere Prüfung** als vertrauenswürdig
   - Bsp. Root-CAs: DigiCert, D-Trust,... (kosten viel Geld); LetsEncrypt, CaCert als Community-CAs
 
@@ -356,7 +355,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 - prüfen Korrektheit und Identität / Berechtigungen des Antragstellers
 - erzeugt Schlüsselpaar
-- stellt Zertifikat für Public Key aus, übermittelt Private Key geheim an Antragsteller (und löscht ihn dann hoffentlich)
+- stellt Zertifikat für Public Key aus, übermittelt Private Key geheim an Antragsteller *(und löscht ihn dann hoffentlich)*
 - führt Liste ihrer ausgestellten Zertifikate
 - verwaltet Sperrliste
 
@@ -393,9 +392,8 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 ## Web of Trust
 
-- nicht-hierarchische Alternative zu CAs
-- z.B. für PGP
-- 2 Beziehungen zwischen Teilnehmern
+- nicht-hierarchische Alternative zu CAs (z.B. für PGP)
+- zwei Beziehungen zwischen Teilnehmern
   - X **kennt** Y (persönlich)
     - X signiert Schlüssel von Y
   - X **vertraut** Y, dass Y nur Schlüssel von Personen signiert, die er tatsächlich kennt
@@ -406,9 +404,10 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - kann weniger streng sein: auch indirekt über mehrere vertrauende Personen hinweg
 - kann strenger sein: mehrere vertrauenswürdige Y müssen Z signiert haben
 - Dazu notwendig: **Schlüsselserver**
-  - enthalten Public Keys der Teilnehmer
-  - Gegenseitig ausgestellte Signaturen
+  - enthalten Public Keys der Teilnehmer, gegenseitig ausgestellte Signaturen
 - Datenschutz-relevant: Namen, Mail-Adressen, "kennt" und "vertraut"-Informationen sind sensible Informationen
+
+# Anwendung: PGP, De-Mail
 
 ## Email-Verschlüsselung
 
@@ -424,23 +423,21 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Header sind "Schall und Rauch": weder Verschlüsselung noch Prüfsumme möglich
 - Header können schon beim Absender, aber auch von jedem Zwischenserver gefälscht werden
 
-
 ## PGP
 
 - Lösungsansatz für die beiden obigen Kapitel
 - "Pretty Good Privacy"
-- RFC4880
-- freie Implementierungen: OpenPGP und GPG
+- durch RFC4880 standardisiert \rightarrow\rightarrow freie Implementierungen: OpenPGP und GPG
 - Kombination aus sym. + asym. Verschlüsselung
 - falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
 - mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
-- sym. Schlüssel asym. verschlüsselt mit Elgamal
+- sym. Schlüssel wird asym. mit Elgamal verschlüsselt 
 - aufgrund technischer Beschränkungen wird Base64 kodiert
 
-## Probleme von PGP
+### Probleme von PGP
 
 - Sicherheit des Schlüsselrings
-- wer garantiert die Authentizität
+- Authentizität: Wer garantiert die Zuordnung zwischen Schlüsseln und Personen?
 
 ## De-Mail
 
@@ -460,30 +457,28 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
   - großzügiger Zugriff auf Personendaten, Mails und De-Mail-**Passwort** durch BKA <!--hmm wie werden die Passwörter dann wohl gespeichert?-->
 - daher nicht vertraulich / geheim und daher zu vermeiden
 
-## Bitcoin
+# Anwendung: Bitcoin (Blockchain)
 
 - ist Blockchain-basierte Speicherug von Transaktionen zwischen Wallets
 - ist P2P-Netzwerk, die Daten über Transaktionen und Blöcke in der Blockchain austauschen
 - ist ein Protokoll und den Implementierungen
 - Erzeugung und Unverfälschbarkeit: Hashing mit SHA-256
-- Absicherung des Wallets
+- Absicherung der Wallets
 - Signatur mit 256 Bit ECDSA
 - jeder Block enthält kryptografischen Hash des **vorigen** Blocks, Zeitstempel, *beliebige Nutzdaten*
 - jede nachträgliche Veränderung ist erkennbar
-- Verwendung für alles, was fälschungssicher protokolliert werden muss
-- alle Blöcke vorher müssen erhalten bleiben, daher ist Bitcoin derzeit 200GB steigend groß
-- Nutzdaten hier: Transaktionsdaten (mehrere)
-- jeder Block enthält variaable Zusatzbits, die durch "Mining" bestimmt werden
+- Verwendung für Alles, was fälschungssicher protokolliert werden muss (Prüfprotokolle, Lieferketten, Transaktionen, ...)
+- alle Blöcke vorher müssen erhalten bleiben \rightarrow\rightarrow Bitcoin-Blockchain derzeit 340GB (stetig wachsend)
+- ```
+- jeder Block enthält variable Zusatzbits (Nonce), die durch "Mining" bestimmt werden
 - dezentral gespeichert $\rightarrow$ viele gleichberechtigte Kopien auf der Welt verteilt
-- asynchrone Kommunikation
-- d.h. langsam, verzögert, unzuverlässig
+- asynchrone Kommunikation (d.h. langsam, verzögert, unzuverlässig)
 
-### Konsensproblem
+## Konsensproblem
 
-- Wer darf anhängen?
-- Welcher neue Block wird unter den konkurrierenden akzeptiert?
+- Wer darf anhängen? Welcher neue Block wird unter Konkurrierenden akzeptiert?
 - Kollisionsbehandlung mit Proof of Work und Regelwerk
   - Warten, bis ein weiterer Block angehängt wird
   - längste Kette gewinnt
   - Blöcke der Verlierer wandern zurück in den Pool der unbestätigten Transaktionen
-- System bricht zusammen, wenn ein Teilnehmer >50% der Rechenleistung kontrolliert
+- Manipulationssicherheit des System bricht zusammen, wenn ein Teilnehmer >50% der Rechenleistung kontrolliert
