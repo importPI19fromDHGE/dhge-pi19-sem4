@@ -5,16 +5,18 @@ Objektorientierte Programmierung mit Java
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Objektorientierte Programmierung mit Java](#objektorientierte-programmierung-mit-java)
 - [Einleitung](#einleitung)
   - [Java-Sprachelemente](#java-sprachelemente)
   - [Methoden](#methoden)
   - [Strings](#strings)
 - [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
   - [Packages](#packages)
-  - [Überladen](#%C3%BCberladen)
+  - [Überladen](#überladen)
   - [Konstruktoren](#konstruktoren)
   - [statische Member und Methoden](#statische-member-und-methoden)
   - [innere Klassen](#innere-klassen)
+- [Vererbung](#vererbung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -77,6 +79,7 @@ returntyp methodenName(parameterliste) {
   - Operation: was wird gemacht?
   - Methode: wie wird gemacht?
 - in Java werden keine Prototypen gebraucht
+- wer mehrere Klassen in eine ``.java``-Datei packt, kommt in die Hölle
 
 ## Packages
 
@@ -108,3 +111,26 @@ returntyp methodenName(parameterliste) {
 - haben Zugriff auf Member und Methoden der äußeren Klasse
 - Nutzen: Implementierung von Funktionalität, die nur für diese Klasse gültig sein soll / relevant ist
 - Anwendung folgt im Kapitel Grafische Oberflächen
+
+# Vererbung
+
+- Schaffung neuer Klassen basierend auf existierenden Klassen
+- Beziehung ist dauerhaft
+- i.d.R. eine Erweiterung oder Spezialisierung der urspr. Klasse
+- erbt alle Member der "Superklasse"
+- Java-Syntax: ``class Unterklasse extends Oberklasse {}``
+- UML: nicht ausgefüllter Pfeil von Unterklasse zu Oberklasse
+- Vorteile:
+  - Vermeidung von Quelltextduplizierung
+  - einfachere Wartung
+  - Erweiterbarkeit von Klassenfunktionalität
+- eine überschriebene Methode der Superklasse ist dennoch erreichbar via ``super.methode()``
+- finale Klassen können nicht abgeleitet werden
+- finale Methoden können nicht überschrieben werden
+- Liskovsches Substitutionsprinzip: jede Unterklasse ist auch als ihre Oberklasse verwendbar
+- Analog zu C++ kann man ein Array einer Oberklasse auch mit einer Instanz einer Unterklasse befüllen, wobei zur Laufzeit erkannt wird, dass überschriebene Methoden der Unterklassen auszuführen sind
+- man darf die Sichtbarkeit von Methoden in Unterklassen erweitern, aber nicht weiter einschränken
+- **soll eine Instanz einer Unterklasse niemals auf eine überschriebene Methode der Oberklassse zurückgreifen, muss ``@Override`` über die Methode geschrieben werden**
+- Jeder Konstruktor einer abgeleiteten Klasse ruft zuerst den Konstruktor der Superklasse auf
+  - implizit, wenn nicht parametrisiert
+  - muss explizit aufgerufen werden, wenn parametrisierter Konstruktor
