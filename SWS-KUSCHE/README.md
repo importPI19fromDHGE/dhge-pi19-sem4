@@ -31,6 +31,18 @@ Kryptographie und Softwaresicherheit
 - [PKI](#pki)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
   - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
+  - [Aufgaben einer CA](#aufgaben-einer-ca)
+  - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
+  - [Probleme beim CA-System](#probleme-beim-ca-system)
+  - [Web of Trust](#web-of-trust)
+  - [Email-Verschlüsselung](#email-verschlüsselung)
+  - [Email-Authentizität](#email-authentizität)
+  - [PGP](#pgp)
+  - [Probleme von PGP](#probleme-von-pgp)
+  - [De-Mail](#de-mail)
+    - [Sicherheit von De-Mail](#sicherheit-von-de-mail)
+  - [Bitcoin](#bitcoin)
+    - [Konsensproblem](#konsensproblem)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -336,3 +348,143 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
   - entspricht Blacklist
 - Zertifikat vertrauenswürdig? / Zertifikatskette bis zur Root-CA OK?
   - entspricht Whitelist
+- **Problem: wie prüft man den Key der CA?**
+  - hierarchisches System - übergeordnete CA signiert untergeordnete
+  - **Root-CA** (es existieren ein paar hundert) werden von Betriebssystem / Browser gespeichert und gelten **ohne weitere Prüfung** als vertrauenswürdig
+  - Bsp. Root-CAs: DigiCert, D-Trust,... (kosten viel Geld); LetsEncrypt, CaCert als Community-CAs
+
+## Aufgaben einer CA
+
+- prüfen Korrektheit und Identität / Berechtigungen des Antragstellers
+- erzeugt Schlüsselpaar
+- stellt Zertifikat für Public Key aus, übermittelt Private Key geheim an Antragsteller (und löscht ihn dann hoffentlich)
+- führt Liste ihrer ausgestellten Zertifikate
+- verwaltet Sperrliste
+
+## Sperrungen von Zertifikaten
+
+- wenn...
+  - Private Key gestohlen
+  - Daten des Beantragers stimmen nicht mehr
+  - Kriminelle Aktivitäten des Beantragers
+- Ungültigkeitserklärung vor Ablauf der Gültigkeit
+- CRL = Certificate Revocation List oder Online-Zertifikats-Prüfdienst (OCSP)
+- Browser / OS speichert CRL lokal
+- auch: Sperre einer CA ($\rightarrow$ Sperre aller ausgestellten Zertifikate)
+  - CA stellt Zertifikate an Unberechtigte aus
+    - insb. Sub-CA-Zertifikate
+  - privater Schlüssel wird kompromittiert
+  - Angreifer bricht in CA ein
+  - CA arbeitet unsicher, z.B. *verliert* Private Keys
+
+## Probleme beim CA-System
+
+- Kette kann irgendwo unterbrochen werden
+  - alle darunterliegenden Elemente plötzlich ungültig
+- Behebung für SSL-Zertifikate, ID-Karten,...: neue Zertifikate, hoher Aufwand
+- Behebung bei signierten Dokumenten: **Keine!**
+- Angriffspunkt lokale Root-CA-Liste: Manipulation
+  - lokaler Rechner vertraut dann Angreifer
+  - *böse* SSL-Server werden vertrauenswürdig
+  - MITM-Angriffe möglich
+- Erweiterung der Root-CA-Liste üblich für Corporate Virenscanner, SW-Auto-Update,...
+  - **Just don't!**
+- Beantragung von Zertifikaten kostet **Zeit, Aufwand, teilweise Geld**
+  - Konsequenz: es werden Self-Signed Zertifikate verwendet $\rightarrow$ nicht gut
+
+## Web of Trust
+
+- nicht-hierarchische Alternative zu CAs
+- z.B. für PGP
+- 2 Beziehungen zwischen Teilnehmern
+  - X **kennt** Y (persönlich)
+    - X signiert Schlüssel von Y
+  - X **vertraut** Y, dass Y nur Schlüssel von Personen signiert, die er tatsächlich kennt
+- d.h.
+  - X vertraut von Y signierten Schlüsseln
+  - Y hat Schlüssel von Z als "bekannt" signiert
+  - X betrachtet daher Schlüssel von Z als gültig
+- kann weniger streng sein: auch indirekt über mehrere vertrauende Personen hinweg
+- kann strenger sein: mehrere vertrauenswürdige Y müssen Z signiert haben
+- Dazu notwendig: **Schlüsselserver**
+  - enthalten Public Keys der Teilnehmer
+  - Gegenseitig ausgestellte Signaturen
+- Datenschutz-relevant: Namen, Mail-Adressen, "kennt" und "vertraut"-Informationen sind sensible Informationen
+
+## Email-Verschlüsselung
+
+- Standardmäßig keine End-to-End-Verschlüsselung
+- Mails liegen in Klartext auf Hops
+- Verschlüsselung **bestenfalls** Host-to-Host
+  - Zwischen zwei Servern
+  - Zwischen Server und Client
+- Prinzip: kleinster gemeinsamer Nenner: verschlüsselungs-unwilliger Server heißt, dass Klartext genutzt wird
+
+## Email-Authentizität
+
+- Header sind "Schall und Rauch": weder Verschlüsselung noch Prüfsumme möglich
+- Header können schon beim Absender, aber auch von jedem Zwischenserver gefälscht werden
+
+
+## PGP
+
+- Lösungsansatz für die beiden obigen Kapitel
+- "Pretty Good Privacy"
+- RFC4880
+- freie Implementierungen: OpenPGP und GPG
+- Kombination aus sym. + asym. Verschlüsselung
+- falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
+- mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
+- sym. Schlüssel asym. verschlüsselt mit Elgamal
+- aufgrund technischer Beschränkungen wird Base64 kodiert
+
+## Probleme von PGP
+
+- Sicherheit des Schlüsselrings
+- wer garantiert die Authentizität
+
+## De-Mail
+
+- technisch normales Mail-Format mit TLS, IMAP/POP, SMTP
+- Zwei-Faktor-Authentifizierung, aber qualifizierte Signatur keine Pflicht
+- Sende-/Empfangs-Nachweise vom Dienstanbieter signiert
+- organisatorisch nur von zertifizierten Anbietern; durch Ausweisprüfung identifizierte Benutzerkonten
+
+### Sicherheit von De-Mail
+
+- verpflichtend: Host-to-Host-**Inhalts**-Verschlüsselung
+  - ergibt keinen Sinn, da Inhalt auf Servern entschlüsselt
+- End-to-End ist optional, muss vom Sender / Empfänger mit z.B. PGP erfolgen, aber **zentraler Keyserver**
+- Hashwert für Integrität optional: Signatur am ersten / letzten Server, nicht am Client
+- Viele Datenschutz-Aspekte offen:
+  - Vorratsdatenspeicherung?
+  - großzügiger Zugriff auf Personendaten, Mails und De-Mail-**Passwort** durch BKA <!--hmm wie werden die Passwörter dann wohl gespeichert?-->
+- daher nicht vertraulich / geheim und daher zu vermeiden
+
+## Bitcoin
+
+- ist Blockchain-basierte Speicherug von Transaktionen zwischen Wallets
+- ist P2P-Netzwerk, die Daten über Transaktionen und Blöcke in der Blockchain austauschen
+- ist ein Protokoll und den Implementierungen
+- Erzeugung und Unverfälschbarkeit: Hashing mit SHA-256
+- Absicherung des Wallets
+- Signatur mit 256 Bit ECDSA
+- jeder Block enthält kryptografischen Hash des **vorigen** Blocks, Zeitstempel, *beliebige Nutzdaten*
+- jede nachträgliche Veränderung ist erkennbar
+- Verwendung für alles, was fälschungssicher protokolliert werden muss
+- alle Blöcke vorher müssen erhalten bleiben, daher ist Bitcoin derzeit 200GB steigend groß
+- Nutzdaten hier: Transaktionsdaten (mehrere)
+- jeder Block enthält variaable Zusatzbits, die durch "Mining" bestimmt werden
+- dezentral gespeichert $\rightarrow$ viele gleichberechtigte Kopien auf der Welt verteilt
+- asynchrone Kommunikation
+- d.h. langsam, verzögert, unzuverlässig
+
+### Konsensproblem
+
+- Wer darf anhängen?
+- Welcher neue Block wird unter den konkurrierenden akzeptiert?
+- Kollisionsbehandlung mit Proof of Work und Regelwerk
+  - Warten, bis ein weiterer Block angehängt wird
+  - längste Kette gewinnt
+  - Blöcke der Verlierer wandern zurück in den Pool der unbestätigten Transaktionen
+- System bricht zusammen, wenn ein Teilnehmer >50% der Rechenleistung kontrolliert
