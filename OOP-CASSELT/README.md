@@ -5,14 +5,13 @@ Objektorientierte Programmierung mit Java
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Objektorientierte Programmierung mit Java](#objektorientierte-programmierung-mit-java)
 - [Einleitung](#einleitung)
   - [Java-Sprachelemente](#java-sprachelemente)
   - [Methoden](#methoden)
   - [Strings](#strings)
 - [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
   - [Packages](#packages)
-  - [Überladen](#überladen)
+  - [Überladen](#%C3%BCberladen)
   - [Konstruktoren](#konstruktoren)
   - [statische Member und Methoden](#statische-member-und-methoden)
   - [innere Klassen](#innere-klassen)
