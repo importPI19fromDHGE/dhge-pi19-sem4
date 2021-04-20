@@ -5,13 +5,14 @@ Objektorientierte Programmierung mit Java
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Objektorientierte Programmierung mit Java](#objektorientierte-programmierung-mit-java)
 - [Einleitung](#einleitung)
   - [Java-Sprachelemente](#java-sprachelemente)
   - [Methoden](#methoden)
   - [Strings](#strings)
 - [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
   - [Packages](#packages)
-  - [Überladen](#%C3%BCberladen)
+  - [Überladen](#überladen)
   - [Konstruktoren](#konstruktoren)
   - [statische Member und Methoden](#statische-member-und-methoden)
   - [innere Klassen](#innere-klassen)
@@ -133,3 +134,4 @@ returntyp methodenName(parameterliste) {
 - Jeder Konstruktor einer abgeleiteten Klasse ruft zuerst den Konstruktor der Superklasse auf
   - implizit, wenn nicht parametrisiert
   - muss explizit aufgerufen werden, wenn parametrisierter Konstruktor
+- jede Klasse erbt von ``Object``, auch implizit $\rightarrow$ also hat jede Klasse eine ``toString()``-Methode
