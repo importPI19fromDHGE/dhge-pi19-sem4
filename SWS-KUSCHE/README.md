@@ -5,8 +5,9 @@ Kryptographie und Softwaresicherheit
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungen](#pr%C3%BCfungen)
-- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Kryptographie und Softwaresicherheit](#kryptographie-und-softwaresicherheit)
+- [Prüfungen](#prüfungen)
+- [Einführung und Inhalt](#einführung-und-inhalt)
 - [Symmetrische Verfahren](#symmetrische-verfahren)
 - [Asymmetrische Verfahren](#asymmetrische-verfahren)
   - [...SA vs ...DH](#sa-vs-dh)
@@ -14,7 +15,7 @@ Kryptographie und Softwaresicherheit
 - [Krypto-Analyse](#krypto-analyse)
 - [Anforderungen](#anforderungen)
   - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
-- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
+- [Verschlüsselung langer Daten](#verschlüsselung-langer-daten)
   - [ECB (Electronic Code Book Mode)](#ecb-electronic-code-book-mode)
   - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
   - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
@@ -29,20 +30,31 @@ Kryptographie und Softwaresicherheit
     - [Voraussetzungen](#voraussetzungen)
   - [Public-Key-Infrastruktur](#public-key-infrastruktur)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
-  - [Überprüfung eines Zertifikates](#%C3%BCberpr%C3%BCfung-eines-zertifikates)
+  - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
   - [Aufgaben einer CA](#aufgaben-einer-ca)
   - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
   - [Probleme beim CA-System](#probleme-beim-ca-system)
   - [Web of Trust](#web-of-trust)
 - [Anwendung: PGP, De-Mail](#anwendung-pgp-de-mail)
-  - [Email-Verschlüsselung](#email-verschl%C3%BCsselung)
-  - [Email-Authentizität](#email-authentizit%C3%A4t)
+  - [Email-Verschlüsselung](#email-verschlüsselung)
+  - [Email-Authentizität](#email-authentizität)
   - [PGP](#pgp)
     - [Probleme von PGP](#probleme-von-pgp)
   - [De-Mail](#de-mail)
     - [Sicherheit von De-Mail](#sicherheit-von-de-mail)
 - [Anwendung: Bitcoin (Blockchain)](#anwendung-bitcoin-blockchain)
   - [Konsensproblem](#konsensproblem)
+- [Kryptographische Zufallszahlen](#kryptographische-zufallszahlen)
+  - [normale Zufallszahlen](#normale-zufallszahlen)
+  - [physikalischer Zufall](#physikalischer-zufall)
+  - [Berechnung von Zufallszahlen](#berechnung-von-zufallszahlen)
+  - [Zufallszahlen-Fails](#zufallszahlen-fails)
+- [Passwort-Speicherung](#passwort-speicherung)
+  - [Passwort online knacken](#passwort-online-knacken)
+  - [Passwort offline knacken](#passwort-offline-knacken)
+  - [Passwort setzen](#passwort-setzen)
+- [Programmierung](#programmierung)
+- [Mehr-Faktor-Authentifizierung](#mehr-faktor-authentifizierung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -209,7 +221,7 @@ Kryptographie und Softwaresicherheit
 ## CFB (Cipher Feedback Mode)
 
 - Verkettung ähnlich CBC
-- XOR mit Plaintext nach Verschlüsselung des vorigen Chiffrats
+- XOR mit Plaintext nach Verschlüsselung des vorherigen Chiffrats
 - selten verwendet
 
 ## CTR (Counter Mode)
@@ -466,13 +478,17 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Erzeugung und Unverfälschbarkeit: Hashing mit SHA-256
 - Absicherung der Wallets
 - Signatur mit 256 Bit ECDSA
-- jeder Block enthält kryptografischen Hash des **vorigen** Blocks, Zeitstempel, *beliebige Nutzdaten*
+- jeder Block enthält kryptografischen Hash des **vorherigen** Blocks, Zeitstempel, *beliebige Nutzdaten*
 - jede nachträgliche Veränderung ist erkennbar
 - Verwendung für Alles, was fälschungssicher protokolliert werden muss (Prüfprotokolle, Lieferketten, Transaktionen, ...)
 - alle Blöcke vorher müssen erhalten bleiben $\rightarrow$ Bitcoin-Blockchain derzeit 340GB (stetig wachsend)
 - jeder Block enthält variable Zusatzbits (Nonce), die durch "Mining" bestimmt werden
 - dezentral gespeichert $\rightarrow$ viele gleichberechtigte Kopien auf der Welt verteilt
 - asynchrone Kommunikation (d.h. langsam, verzögert, unzuverlässig)
+- Proof of Work (Mining) reguliert durch:
+  - Höhe der Block-Belohnungen
+  - Anpassung der benötigten führenden Nullen im Hash
+- Transaktionen werden mit Private Key des Wallets signiert $\rightarrow$ nur der Besitzer des Wallets kann ausgehende Transaktionen erzeugen
 
 ## Konsensproblem
 
@@ -482,3 +498,85 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
   - längste Kette gewinnt
   - Blöcke der Verlierer wandern zurück in den Pool der unbestätigten Transaktionen
 - Manipulationssicherheit des System bricht zusammen, wenn ein Teilnehmer >50% der Rechenleistung kontrolliert
+
+# Kryptographische Zufallszahlen
+
+- Verwendung: Schlüsselgenerierung, Initialisierungsvektor für Stromverschlüsselungen
+- Challenge-Response-Abfragen
+- Passwort-Salt
+- wichtigste Eigenschaft: die vorherige / nächste Zufallszahl darf nicht vorhersagbar sein
+
+## normale Zufallszahlen
+
+- auch Pseudo-Zufallszahlen genannt
+- sind berechnet und damit vorhersagbar
+- zyklisch $\rightarrow$ ein "Kreis" von Zahlen; je länger der Zyklus desto besser
+- nicht für Kryptographie geeignet
+- Generator wird mit "Seed" gestartet
+  - Bsp. für Seeds: externe Quellen wie Tastatur-/Mauseingaben und interne Quellen wie Netzwerklast, Zeit zwischen empfangenen WLAN-Paketen, freilaufender Zähler mit Prozessortakt
+
+## physikalischer Zufall
+
+- meist Zeitabstände zwischen Interrupts
+- nur in endlicher Menge + Datenrate verfügbar, besonders kurz nach dem Bootvorgang
+- bei Servern und Embedded Devices besonders kritisch, da oft die Quellen fehlen
+- schneller besser: Hardware-Zufallsgenerator mittels thermischen (weißem) Rauschen von Halbleitern, Analogsignalen, radioaktiver Zerfall, Hintergrundrauschen
+
+## Berechnung von Zufallszahlen
+
+- im einfachsten Fall Physische Inputs auf Qualität prüfen und zusammenhängen $\rightarrow$ Kryptographische Hashfunktion
+- Linux: Nutzung eines Pseudozufallgenerators mit langer Periode; wird regelmäßig mit physikalischer Zufallszahl
+- Alternative: BBS-Generator (Blum-Blum-Shub-Generator), der auf Faktorisierungsproblem basiert
+
+## Zufallszahlen-Fails
+
+- Ergebnismenge ist kleiner als erwartet $\rightarrow$ Brute-Force geht schneller
+- Berechnen des internen Status einfacher als erwartet
+- NSA standardisierte geschwächten Generator ``Dual_EC_DRBG``: für bestimmte Parameter plötzlich schlecht verteilte Zufallszahlen
+- versehentlicher Implementierungsfehler in OpenSSL in Debian, damit nur 2^15 <!--TODO: wie mache ich Potenzen in MathJax?-->Zufallszahlen
+- MIFARE-Hack (u.a. schlechter Random Seed)
+
+# Passwort-Speicherung
+
+- Klartext-Passwort sollte **nie** gebrauchen
+- Nutzung von Einweg-Verschlüsselung: Hashing $\rightarrow$ sichere Speicherung
+- evtl. wird mehrere tausend Mal gehasht, z.B. mit Argon2, scrypt, bcrypt und sollten **langsam** sein
+- Beim Hashen nicht vergessen: Salts ("Salzen")
+  - wird bei jedem Ändern des Passworts neu erzeugt
+  - mit Hash kombiniert und Klartext gespeichert
+  - für n Möglichkeiten des Salts ver-n-fachen sich die Rainbow-Tables
+
+## Passwort online knacken
+
+- Brute-Force-Bremsen einbauen, z.B. mit Wartezeiten, Account-Sperren, Fehlermeldungen dürfen keine Informationen leaken $\rightarrow$ quadriert Anzahl der Versuche bei unbekanntem User
+
+## Passwort offline knacken
+
+- gestohlene Passwort-Datei liegt vor
+- zu testende Passwort-Kandidaten werden gehasht und es wird geprüft, ob dieser Hash in der Datei vorkommt $\rightarrow$ dauert zu lange
+- Wörterbuchattaken: häufig genutzte Passwörter, Worte, 13375p34k, umgedreht,...
+  - kann vorberechnet werden, um Angriff zu beschleunigen
+  - kann aber TB-groß bis PB-groß werden $\rightarrow$ Datenstruktur "Rainbow Table" entwickelt, um das zu lösen; praktikabel für einfache Hash-Algorithmen ohne Salz und max. 10 Zeichen
+
+## Passwort setzen
+
+- fordern: mind. 12 Zeichen, großer Zeichensatz
+- Passwörter bereits auf Wörterbuch-Attacken und andere "Blödheiten" prüfen
+- regelmäßige Passwortänderungen sind kontraproduktiv, hilf nur gegen heimlich geklaute Klartext-Passwörter
+  - Nutzer verwenden einfachere Passwörter, notieren sich eher, ändern Teile systematisch
+- Gefahr: selbes Passwort für viele Dienste verwendet $\rightarrow$ kein technisches Problem; Dienstanweisung etc. helfen evtl.
+- Für Hochsicherheit: Passwörter nur aus Generator erlauben, müssen gut merkbar sein (aus Silben besthend, lange Phrasen), Auswahl aus mehreren Vorschlägen, nach außen hin unbekannte Generator-Logik
+
+# Programmierung
+
+- alle Passwort-Änderungen, alle Anmeldungen im Systemlog; evtl im Frontend: Zeitpunkt letzter Anmeldung
+- Passwort-Änderungen: immer doppelt fordern, gegen Tippfehler
+- kein Betrieb ohne oder mit Default-Passwort ermöglichen; vorgegebene Passwörter müssen sofort geändert werden und müssen für jeden Nutzer anders sein
+- in C-Strings: jedes Passwort nach Nutzung mit gleich langem String ersetzen; in nicht-auslagerbaren Speicher speichern; kein Debugging; keine Coredumps erlauben
+- kein 100%iger Schutz möglich
+
+# Mehr-Faktor-Authentifizierung
+
+- etwas, das man hat: Handy, Chipkarte, Token, Biometrie,...
+- etwas, das man weiß: Passwort
+- etwas, das sich immer ändert: Zeit, zufällige Challenge, die jedes Mal für dieselben Nutzdaten ein anderes Ergebnis liefert
