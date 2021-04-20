@@ -169,7 +169,7 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 - auch benannte Schnittstellen genannt
 - spezifizieren Menge von Operationen, aber keine Implementierungen $\rightarrow$ abstrakte Methoden
 - Definition von Konstanten möglich
-- können als Typ verwendet werden, wobei alle Klassen, die dieses Interface implementieren, dafür qualifiziert sind $\rightarrow$ diese Klassen werden **dynamsiche Datentypen** genannt
+- können als Typ verwendet werden, wobei alle Klassen, die dieses Interface implementieren, dafür qualifiziert sind $\rightarrow$ diese Klassen werden **dynamische Datentypen** genannt
 
 ## Vererbung vs. abstrakte Klassen vs. Interfaces
 
