@@ -470,7 +470,6 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - jede nachträgliche Veränderung ist erkennbar
 - Verwendung für Alles, was fälschungssicher protokolliert werden muss (Prüfprotokolle, Lieferketten, Transaktionen, ...)
 - alle Blöcke vorher müssen erhalten bleiben $\rightarrow$ Bitcoin-Blockchain derzeit 340GB (stetig wachsend)
-- ```
 - jeder Block enthält variable Zusatzbits (Nonce), die durch "Mining" bestimmt werden
 - dezentral gespeichert $\rightarrow$ viele gleichberechtigte Kopien auf der Welt verteilt
 - asynchrone Kommunikation (d.h. langsam, verzögert, unzuverlässig)
