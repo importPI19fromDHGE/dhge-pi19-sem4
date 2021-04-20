@@ -81,6 +81,8 @@ returntyp methodenName(parameterliste) {
 - in Java werden keine Prototypen gebraucht
 - wer mehrere Klassen in eine ``.java``-Datei packt, kommt in die Hölle
 
+![Member-Zugriffe und Sichtbarkeit](assets/member_zugriff_sichtbarkeit.jpg)<!--width=600px-->
+
 ## Packages
 
 - Verwalten Klassen und Zugriffsrechte
