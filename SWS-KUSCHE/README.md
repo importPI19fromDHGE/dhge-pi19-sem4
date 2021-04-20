@@ -354,7 +354,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 ## Aufgaben einer CA
 
-- prüfen Korrektheit und Identität / Berechtigungen des Antragstellers
+- prüfen Korrektheit, Identität und Berechtigungen des Antragstellers
 - erzeugt Schlüsselpaar
 - stellt Zertifikat für Public Key aus, übermittelt Private Key geheim an Antragsteller *(und löscht ihn dann hoffentlich)*
 - führt Liste ihrer ausgestellten Zertifikate
