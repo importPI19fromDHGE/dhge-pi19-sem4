@@ -182,3 +182,5 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 
 - Szenario: Klasse A nutzt eine Referenzvariable vom Typ ``IB``; mehrere Klassen ``B1``, ``B2``, ... implementieren ``IB``
 - Zur Laufzeit kann entschieden werden, welche Klasse genutzt werden soll
+
+![Lose Kopplung](assets/lose_kopplung.jpg)<!--width=600px-->
