@@ -460,16 +460,16 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 # Anwendung: Bitcoin (Blockchain)
 
-- ist Blockchain-basierte Speicherug von Transaktionen zwischen Wallets
-- ist P2P-Netzwerk, die Daten über Transaktionen und Blöcke in der Blockchain austauschen
-- ist ein Protokoll und den Implementierungen
+- Blockchain-basierte Speicherung von Transaktionen zwischen Wallets
+- P2P-Netzwerk, in dem Daten über Transaktionen und Blöcke in der Blockchain ausgetauscht werden
+- Bitcoin-Regelwerk: Protokoll und dessen Implementierung
 - Erzeugung und Unverfälschbarkeit: Hashing mit SHA-256
 - Absicherung der Wallets
 - Signatur mit 256 Bit ECDSA
 - jeder Block enthält kryptografischen Hash des **vorigen** Blocks, Zeitstempel, *beliebige Nutzdaten*
 - jede nachträgliche Veränderung ist erkennbar
 - Verwendung für Alles, was fälschungssicher protokolliert werden muss (Prüfprotokolle, Lieferketten, Transaktionen, ...)
-- alle Blöcke vorher müssen erhalten bleiben \rightarrow\rightarrow Bitcoin-Blockchain derzeit 340GB (stetig wachsend)
+- alle Blöcke vorher müssen erhalten bleiben $\rightarrow$ Bitcoin-Blockchain derzeit 340GB (stetig wachsend)
 - ```
 - jeder Block enthält variable Zusatzbits (Nonce), die durch "Mining" bestimmt werden
 - dezentral gespeichert $\rightarrow$ viele gleichberechtigte Kopien auf der Welt verteilt
