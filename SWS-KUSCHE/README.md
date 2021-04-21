@@ -542,7 +542,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 ## Berechnung von Zufallszahlen
 
-- im einfachsten Fall Physische Inputs auf Qualität prüfen und zusammenhängen $\rightarrow$ Kryptographische Hashfunktion
+- im einfachsten Fall physische Inputs auf Qualität prüfen und zusammenhängen \rightarrow\rightarrow Kryptographische Hashfunktion
 - Linux: Nutzung eines Pseudozufallgenerators mit langer Periode; wird regelmäßig mit physikalischer Zufallszahl
 - Alternative: BBS-Generator (Blum-Blum-Shub-Generator), der auf Faktorisierungsproblem basiert
 
@@ -551,7 +551,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Ergebnismenge ist kleiner als erwartet $\rightarrow$ Brute-Force geht schneller
 - Berechnen des internen Status einfacher als erwartet
 - NSA standardisierte geschwächten Generator ``Dual_EC_DRBG``: für bestimmte Parameter plötzlich schlecht verteilte Zufallszahlen
-- versehentlicher Implementierungsfehler in OpenSSL in Debian, damit nur 2^15 <!--TODO: wie mache ich Potenzen in MathJax?-->Zufallszahlen
+- versehentlicher Implementierungsfehler in OpenSSL in Debian, damit nur $2^{15}$ Zufallszahlen
 - MIFARE-Hack (u.a. schlechter Random Seed)
 
 # Passwort-Speicherung
@@ -582,8 +582,8 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Passwörter bereits auf Wörterbuch-Attacken und andere "Blödheiten" prüfen
 - regelmäßige Passwortänderungen sind kontraproduktiv, hilf nur gegen heimlich geklaute Klartext-Passwörter
   - Nutzer verwenden einfachere Passwörter, notieren sich eher, ändern Teile systematisch
-- Gefahr: selbes Passwort für viele Dienste verwendet $\rightarrow$ kein technisches Problem; Dienstanweisung etc. helfen evtl.
-- Für Hochsicherheit: Passwörter nur aus Generator erlauben, müssen gut merkbar sein (aus Silben besthend, lange Phrasen), Auswahl aus mehreren Vorschlägen, nach außen hin unbekannte Generator-Logik
+- Gefahr: selbes Passwort wird für viele Dienste verwendet \rightarrow\rightarrow kein technisches Problem; Dienstanweisung etc. helfen evtl.
+- Für Hochsicherheit: Passwörter nur aus Generator erlauben, müssen gut merkbar sein (aus Silben bestehend, lange Phrasen), Auswahl aus mehreren Vorschlägen, nach außen hin unbekannte Generator-Logik
 
 # Programmierung
 
@@ -591,7 +591,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Passwort-Änderungen: immer doppelt fordern, gegen Tippfehler
 - kein Betrieb ohne oder mit Default-Passwort ermöglichen; vorgegebene Passwörter müssen sofort geändert werden und müssen für jeden Nutzer anders sein
 - in C-Strings: jedes Passwort nach Nutzung mit gleich langem String ersetzen; in nicht-auslagerbaren Speicher speichern; kein Debugging; keine Coredumps erlauben
-- kein 100%iger Schutz möglich
+- kein 100%iger Schutz möglich (besonders in VMs)
 
 # Mehr-Faktor-Authentifizierung
 
