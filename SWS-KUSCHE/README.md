@@ -199,7 +199,7 @@ Kryptographie und Softwaresicherheit
 
 ## ECB (Electronic Code Book Mode)
 
-- Datenstrom in Blöcke teilen \rightarrow\rightarrow jeden Block separat verschlüsseln
+- Datenstrom in Blöcke teilen $\rightarrow$ jeden Block separat verschlüsseln
 - Nachteile:
   - Gleicher Block = gleiches Chiffrat (Rückschlüsse möglich)
   - Block-Reihenfolge evtl. unbemerkt verfälschbar
@@ -359,7 +359,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Zertifikat vertrauenswürdig? / Zertifikatskette bis zur Root-CA OK?
   - entspricht Whitelist
 - **Problem: wie prüft man den Key der CA?**
-  - hierarchisches System \rightarrow\rightarrow übergeordnete CA signiert untergeordnete
+  - hierarchisches System $\rightarrow$ übergeordnete CA signiert untergeordnete
   - **Root-CA** (es existieren ein paar hundert) werden von Betriebssystem / Browser gespeichert und gelten **ohne weitere Prüfung** als vertrauenswürdig
   - Bsp. Root-CAs: DigiCert, D-Trust,... (kosten viel Geld); LetsEncrypt, CaCert als Community-CAs
 
@@ -439,7 +439,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 - Lösungsansatz für die beiden obigen Kapitel
 - "Pretty Good Privacy"
-- durch RFC4880 standardisiert \rightarrow\rightarrow freie Implementierungen: OpenPGP und GPG
+- durch RFC4880 standardisiert $\rightarrow$ freie Implementierungen: OpenPGP und GPG
 - Kombination aus sym. + asym. Verschlüsselung
 - falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
 - mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
