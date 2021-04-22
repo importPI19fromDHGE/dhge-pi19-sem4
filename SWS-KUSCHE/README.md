@@ -523,7 +523,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 ## Berechnung von Zufallszahlen
 
-- im einfachsten Fall physische Inputs auf Qualität prüfen und zusammenhängen \rightarrow\rightarrow Kryptographische Hashfunktion
+- im einfachsten Fall physische Inputs auf Qualität prüfen und zusammenhängen $\rightarrow$ Kryptographische Hashfunktion
 - Linux: Nutzung eines Pseudozufallgenerators mit langer Periode; wird regelmäßig mit physikalischer Zufallszahl
 - Alternative: BBS-Generator (Blum-Blum-Shub-Generator), der auf Faktorisierungsproblem basiert
 
@@ -563,7 +563,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Passwörter bereits auf Wörterbuch-Attacken und andere "Blödheiten" prüfen
 - regelmäßige Passwortänderungen sind kontraproduktiv, hilf nur gegen heimlich geklaute Klartext-Passwörter
   - Nutzer verwenden einfachere Passwörter, notieren sich eher, ändern Teile systematisch
-- Gefahr: selbes Passwort wird für viele Dienste verwendet \rightarrow\rightarrow kein technisches Problem; Dienstanweisung etc. helfen evtl.
+- Gefahr: selbes Passwort wird für viele Dienste verwendet $\rightarrow$ kein technisches Problem; Dienstanweisung etc. helfen evtl.
 - Für Hochsicherheit: Passwörter nur aus Generator erlauben, müssen gut merkbar sein (aus Silben bestehend, lange Phrasen), Auswahl aus mehreren Vorschlägen, nach außen hin unbekannte Generator-Logik
 
 # Programmierung
