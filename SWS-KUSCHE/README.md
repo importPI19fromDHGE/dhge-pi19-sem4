@@ -218,7 +218,7 @@ Kryptographie und Softwaresicherheit
 
 ## ECB (Electronic Code Book Mode)
 
-- Datenstrom in Blöcke teilen \rightarrow\rightarrow jeden Block separat verschlüsseln
+- Datenstrom in Blöcke teilen $\rightarrow$ jeden Block separat verschlüsseln
 - Nachteile:
   - Gleicher Block = gleiches Chiffrat (Rückschlüsse möglich)
   - Block-Reihenfolge evtl. unbemerkt verfälschbar
@@ -378,7 +378,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Zertifikat vertrauenswürdig? / Zertifikatskette bis zur Root-CA OK?
   - entspricht Whitelist
 - **Problem: wie prüft man den Key der CA?**
-  - hierarchisches System \rightarrow\rightarrow übergeordnete CA signiert untergeordnete
+  - hierarchisches System $\rightarrow$ übergeordnete CA signiert untergeordnete
   - **Root-CA** (es existieren ein paar hundert) werden von Betriebssystem / Browser gespeichert und gelten **ohne weitere Prüfung** als vertrauenswürdig
   - Bsp. Root-CAs: DigiCert, D-Trust,... (kosten viel Geld); LetsEncrypt, CaCert als Community-CAs
 
@@ -458,7 +458,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 - Lösungsansatz für die beiden obigen Kapitel
 - "Pretty Good Privacy"
-- durch RFC4880 standardisiert \rightarrow\rightarrow freie Implementierungen: OpenPGP und GPG
+- durch RFC4880 standardisiert $\rightarrow$ freie Implementierungen: OpenPGP und GPG
 - Kombination aus sym. + asym. Verschlüsselung
 - falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
 - mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
@@ -542,7 +542,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 
 ## Berechnung von Zufallszahlen
 
-- im einfachsten Fall physische Inputs auf Qualität prüfen und zusammenhängen \rightarrow\rightarrow Kryptographische Hashfunktion
+- im einfachsten Fall physische Inputs auf Qualität prüfen und zusammenhängen $\rightarrow$ Kryptographische Hashfunktion
 - Linux: Nutzung eines Pseudozufallgenerators mit langer Periode; wird regelmäßig mit physikalischer Zufallszahl
 - Alternative: BBS-Generator (Blum-Blum-Shub-Generator), der auf Faktorisierungsproblem basiert
 
@@ -582,7 +582,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Passwörter bereits auf Wörterbuch-Attacken und andere "Blödheiten" prüfen
 - regelmäßige Passwortänderungen sind kontraproduktiv, hilf nur gegen heimlich geklaute Klartext-Passwörter
   - Nutzer verwenden einfachere Passwörter, notieren sich eher, ändern Teile systematisch
-- Gefahr: selbes Passwort wird für viele Dienste verwendet \rightarrow\rightarrow kein technisches Problem; Dienstanweisung etc. helfen evtl.
+- Gefahr: selbes Passwort wird für viele Dienste verwendet $\rightarrow$ kein technisches Problem; Dienstanweisung etc. helfen evtl.
 - Für Hochsicherheit: Passwörter nur aus Generator erlauben, müssen gut merkbar sein (aus Silben bestehend, lange Phrasen), Auswahl aus mehreren Vorschlägen, nach außen hin unbekannte Generator-Logik
 
 # Programmierung
