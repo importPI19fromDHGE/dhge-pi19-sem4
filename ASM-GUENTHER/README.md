@@ -152,7 +152,7 @@ Die Werte in den Registern können mit Hilfe eines Debuggers, wie `gdb` betracht
 
 ### Einfaches Debugging mit `gdb`
 
-1. Mit `gdb` das zu debuggende compilierte Programm öffnen: `gdb .\main.o`
+1. Mit `gdb` das zu debuggende compilierte Programm öffnen: `gdb ./main.o`
 2. Breakpoint setzen: `break linenumber`
 3. Programm auführen: `run [argv]`
 4. Programm wird an Breakpoint gestoppt
