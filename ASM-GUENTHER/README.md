@@ -178,7 +178,7 @@ asm("mov rax, %1;"
 		"mov %0, rbx;"
 		: "=r" (c) /* output operands */
 		: "r" (a), "r" (b) /* input operands */
-		: "rbx" /* list of clobbered registers */
+		: "rbx", "rax" /* list of clobbered registers */
 );
 ```
 
