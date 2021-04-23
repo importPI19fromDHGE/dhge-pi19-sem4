@@ -129,6 +129,61 @@ run-cpp: $(OUTFILE_CPP)
 	./$(OUTFILE_CPP)
 ```
 
+# Assembler
+
+## Inline Assembler in C
+
+Über die `asm`-Funktion können Assembler-Befehle direkt in C genutzt werden.
+
+```C
+int main(){
+	asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
+	asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
+	asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
+	return 0;
+}
+```
+
+Die Werte in den Registern können mit Hilfe eines Debuggers, wie `gdb` betrachtet werden.
+
+### Einfaches Debugging mit `gdb`
+
+1. Mit `gdb` das zu debuggende compilierte Programm öffnen: `gdb .\main.o`
+2. Breakpoint setzen: `break linenumber`
+3. Programm auführen: `run [argv]`
+4. Programm wird an Breakpoint gestoppt
+
+**Zustand des Programmes inspizieren**
+
+- Wert der Register ausgeben: `info registers`
+- Stepping: `step` nächste Instruktion (auch in Funktionen springen)
+- Stepping: `next` nächste Instruktion (nicht in Funktionen springen)
+
+### Geteilte Variablen zwischen C und Assembler
+
+```C
+long a = 7;
+long b = 35;
+long c;
+
+asm("mov rax, %1;"
+		"mov rbx, %2;"
+		"add rbx, rax;"
+		"mov %0, rbx;"
+		: "=r" (c) /* output operands */
+		: "r" (a), "r" (b) /* input operands */
+		: "rbx" /* list of clobbered registers */
+);
+```
+
+- Ein-/Ausgabeoperanden werden durch die Syntax `"contraint" ( operand )` definiert
+	- der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein beliebiges der Register)
+	- für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
+	- gibt es auschließlich Eingabe-Operanden, wird dies durch `::` definiert
+	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
+	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
+- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen verwendet werden
+
 # Mögliche Prüfungsaufgaben
 
 - wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
