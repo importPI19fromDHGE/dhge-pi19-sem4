@@ -8,6 +8,10 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 - [Java und Make](#java-und-make)
 - [C und Make](#c-und-make)
 - [C++ und Make](#c-und-make)
+- [Assembler](#assembler)
+  - [Inline Assembler in C](#inline-assembler-in-c)
+    - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
+    - [Geteilte Variablen zwischen C und Assembler](#geteilte-variablen-zwischen-c-und-assembler)
 - [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -128,6 +132,63 @@ run-c: $(OUTFILE_C)
 run-cpp: $(OUTFILE_CPP)
 	./$(OUTFILE_CPP)
 ```
+
+# Assembler
+
+## Inline Assembler in C
+
+Über die `asm`-Funktion können Assembler-Befehle direkt in C genutzt werden.
+
+> Für GCC ist [hier](https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html) eine Dokumentation verfügbar
+
+```C
+int main(){
+	asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
+	asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
+	asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
+	return 0;
+}
+```
+
+Die Werte in den Registern können mit Hilfe eines Debuggers, wie `gdb` betrachtet werden.
+
+### Einfaches Debugging mit `gdb`
+
+1. Mit `gdb` das zu debuggende compilierte Programm öffnen: `gdb ./main.o`
+2. Breakpoint setzen: `break linenumber`
+3. Programm auführen: `run [argv]`
+4. Programm wird an Breakpoint gestoppt
+
+**Zustand des Programmes inspizieren**
+
+- Wert der Register ausgeben: `info registers`
+- Stepping: `step` nächste Instruktion (auch in Funktionen springen)
+- Stepping: `next` nächste Instruktion (nicht in Funktionen springen)
+
+### Geteilte Variablen zwischen C und Assembler
+
+```C
+long a = 7;
+long b = 35;
+long c;
+
+asm("mov rax, %1;"
+		"mov rbx, %2;"
+		"add rbx, rax;"
+		"mov %0, rbx;"
+		: "=r" (c) /* output operands */
+		: "r" (a), "r" (b) /* input operands */
+		: "rbx", "rax" /* list of clobbered registers */
+);
+```
+
+- Ein-/Ausgabeoperanden werden durch die Syntax `"constraint" ( operand )` definiert
+	- der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
+	- für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
+	- gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
+	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
+	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
+- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
 
 # Mögliche Prüfungsaufgaben
 
