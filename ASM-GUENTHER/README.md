@@ -8,6 +8,10 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 - [Java und Make](#java-und-make)
 - [C und Make](#c-und-make)
 - [C++ und Make](#c-und-make)
+- [Assembler](#assembler)
+  - [Inline Assembler in C](#inline-assembler-in-c)
+    - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
+    - [Geteilte Variablen zwischen C und Assembler](#geteilte-variablen-zwischen-c-und-assembler)
 - [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
