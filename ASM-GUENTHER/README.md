@@ -139,7 +139,8 @@ run-cpp: $(OUTFILE_CPP)
 
 Über die `asm`-Funktion können Assembler-Befehle direkt in C genutzt werden.
 
-Für GCC ist [hier](https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html) eine Dokumentation verfügbar
+> Für GCC ist [hier](https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html) eine Dokumentation verfügbar
+
 ```C
 int main(){
 	asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
@@ -184,7 +185,7 @@ asm("mov rax, %1;"
 - Ein-/Ausgabeoperanden werden durch die Syntax `"constraint" ( operand )` definiert
 	- der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
 	- für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
-	- gibt es auschließlich Eingabe-Operanden, wird dies durch `::` definiert
+	- gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
 	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
 	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
 - die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
