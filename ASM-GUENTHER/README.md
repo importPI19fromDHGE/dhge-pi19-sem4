@@ -188,6 +188,34 @@ asm("mov rax, %1;"
 	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
 - die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen verwendet werden
 
+## Binärschnittstelle
+
+- definierte Schnittstelle ähnlich zu Inline-Assembler realisiert
+- ermöglicht direkten Aufruf von Assembler-Routinen
+- Nutzung:
+  - gesuchte Funktion extern deklarieren ``extern unsigned int popcnt(unsigned int a);``
+  - ABI aufrufen
+  - mittels Assembler die gesuchte Funktion zur Compile-Zeit zu einer Object-File verarbeiten: ``as --64 popcnt.s -o popcnt.o``
+  - beim Linken wird mit einer **impliziten Regel** Patternsubstitution verwendet:
+
+```makefile
+%.o: %.s Makefile
+        $(ASSEMBLER) $(ASM-PARAMETER) $< -o $@
+```
+
+- gemäß C Calling Convention muss ein Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
+
+```assembly
+global myFunc
+
+section .text
+
+myFunc:
+
+push ebp
+mov ebp
+```
+
 # Mögliche Prüfungsaufgaben
 
 - wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
