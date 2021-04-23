@@ -608,8 +608,8 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 Lösungsansätze:
 
 - listenbasierte One-Time-Passwords (OTPs), z.B. TAN-Listen
-- Hashbasierte OTPs: i-ter Passcode = n-i Mal geshashter Geheimcode
-  - hier ist der vorige berechenbar, aber nicht der nächste
+- Hashbasierte OTPs: `i`-ter Passcode = `n-i` mal gehashter Geheimcode
+  - letzter Hash berechenbar, Nächster nicht
 - Security Token
 - CR-Verfahren
 
@@ -649,7 +649,7 @@ Lösungsansätze:
 
 ## Unterschied zu File Encryption
 
-- File E. verschlüsselt nur den Inhalt, nicht die Metadaten
+- File-Encryption verschlüsselt nur den Inhalt, nicht die Metadaten
 - meistens normale Anwendung im Userspace
 - wird **explizit** aufgerufen
 
@@ -714,8 +714,8 @@ Es gibt verschiedene Arten der Disk Encryption:
 - berechnet, speichert und verifiziert Prüfsummen von Hard- und Software (offiziell zur Softwaresicherheit)
   - lückenlos abgesicherte Boot-Kette; PC bootet nur in "sicheren" Zustand
 - Praxis: DRM-Medienschutz, Aussperren von alternativen Betriebssystemen wie Linux; nimmt Freiheit von Nutzern, z.B. durch Ausschluss von Hardware- oder Sotware-Mods
-- weniger der Nutzer, sondern eher Dritte (Rechte-Inhaber) können dem Sytem vertrauen
-- "TPM schützt die Software vor dem Benutzer?!"
+- weniger der Nutzer, sondern eher Dritte (Rechte-Inhaber) können dem System vertrauen
+- *"TPM schützt die Software vor dem Benutzer?!"*
 - TPM kann Nutzer weltweit eindeutig identifizieren
   - ermöglicht individuelle Bindung von Lizenzen und DRM-Inhalten sowie Vendor-Lock-In
 - erzeugt "zugesperrte" PCs: lückenlose Kontrolle über Smartphones, Apple-Geräten, Konsolen,...
@@ -781,13 +781,13 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 # Sichere Programmierung
 
-## Angriffe
+## Angriffe/Motive
 
 - Datendiebstahl z.B. zum Verkauf der Daten
 - Datenzerstörung, -verschlüsselung, -veränderung z.B. zur Erpressung
 - Denial Of Service, also Ausfall
 - Resourcendiebstahl (Rechenzeit, Internet, Speicherplatz)
-- Motivation: "Ich bin so cool", wirtschaftliche Gründe (Spionage, Wettbewerbsvorteil, Rufschädigung,...); persönliche Gründe; politische, geheimdienstliche Absichten; Geld
+- Motivation: *"Ich bin so cool"*, wirtschaftliche Gründe (Spionage, Wettbewerbsvorteil, Rufschädigung,...); persönliche Gründe; politische, geheimdienstliche Absichten; Geld
 - Situation Angreifer:
   - Erpressung: Datenwiederherstellung, Beendigung des DOS, Nicht-Veröffentlichung von Daten, Erpressung Dritter
   - Verkauf: gestohlene Daten, Zugänge und Backdoors, Exploits
