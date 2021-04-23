@@ -54,6 +54,24 @@ Kryptographie und Softwaresicherheit
   - [Passwort setzen](#passwort-setzen)
 - [Programmierung](#programmierung)
 - [Mehr-Faktor-Authentifizierung](#mehr-faktor-authentifizierung)
+- [Authentifizierung über das Netz](#authentifizierung-%C3%BCber-das-netz)
+  - [Zero-Knowledge-Protokoll](#zero-knowledge-protokoll)
+- [Steganographie](#steganographie)
+- [Disk Encryption](#disk-encryption)
+  - [Unterschied zu File Encryption](#unterschied-zu-file-encryption)
+  - [Angriffe auf Disk Encryption](#angriffe-auf-disk-encryption)
+  - [Datenträger](#datentr%C3%A4ger)
+  - [Passwort-Eingabe](#passwort-eingabe)
+  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschl%C3%BCsselung---self-encrypting-drive)
+- [TPM](#tpm)
+  - [Angriffe](#angriffe)
+  - [Der EK](#der-ek)
+  - [Der SRK](#der-srk)
+  - [Die PCRs](#die-pcrs)
+  - [Die AIKs](#die-aiks)
+- [Sichere Programmierung](#sichere-programmierung)
+  - [Angriffe/Motive](#angriffemotive)
+  - [Allgemeines](#allgemeines)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -579,3 +597,215 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - etwas, das man hat: Handy, Chipkarte, Token, Biometrie,...
 - etwas, das man weiß: Passwort
 - etwas, das sich immer ändert: Zeit, zufällige Challenge, die jedes Mal für dieselben Nutzdaten ein anderes Ergebnis liefert
+
+# Authentifizierung über das Netz
+
+- Niemals Klartext-Passwort über das Internet, auch nicht mit TLS; auch nicht mit demselben Hash
+  - Grund: Replay-Attacken
+- Hash am Client erzeugen; Message darf nicht zwei mal gültig sein
+- Negativ-Beispiele: FTP, Telnet, Remote-Desktop (Tastatureingaben werden übermittelt), POP, IMAP, SMTP
+
+Lösungsansätze:
+
+- listenbasierte One-Time-Passwords (OTPs), z.B. TAN-Listen
+- Hashbasierte OTPs: `i`-ter Passcode = `n-i` mal gehashter Geheimcode
+  - letzter Hash berechenbar, Nächster nicht
+- Security Token
+- CR-Verfahren
+
+## Zero-Knowledge-Protokoll
+
+- "beweise, dass du einen Schlüssel besitzt, ohne ihn preiszugeben"
+- A hat Private Key, B will das prüfen, darf den Schlüssel aber nicht berechnen können; A darf aber nicht vortäuschen, den Schlüssel zu kennen
+- Ablauf:
+  - Großes n als Primzahlprodukt berechnen und n veröffentlichen
+  - Prüfung in mehreren Runden: A und B tauschen pro Runde 3 Zahlen aus, die aus Zufallszahl berechnet werden
+  - B prüft empfangenen Zahle gegen die Öffentlichen
+- mit jeder Runde verdoppelt sich die Sicherheit, dass n und v zu s gehören, ohne dass B oder ein Dritter dieses berechnen könnten
+
+# Steganographie
+
+- heißt "verdecktes Schreiben"
+- keine Verschlüsselung, sondern Tarnung, zum Transport oder Speicherung, ohne dass es auffällt
+- klassisches Verfahren: um einen inneren Text wird ein sinnvoller äußerer Text geschrieben
+- heute modern: Code in Bild, Video, Ton, z.B. niederwertigste Bits ändern, sodass es nicht auffällt
+- die "offensichtlichen" Daten sind unverschlüsselt, harmlos, unverdächtig; steht nicht in Zusammenhang mit verstecktem Inhalt
+- es wird trotzdem verschlüsselt, da erhöhte Sicherheit und gleichverteilte Bits (weniger auffällig)
+- um ein Payload wird in Praxis eine Verpackung konstruiert
+- Sonderfall MIC: bei Druckern wird heimlich *verirrte* Pixel in bspw. gelb an bekannten Stellen platziert, um Ausdruck rückverfolgbar zu machen (Seriennummer, Datum, Uhrzeit)
+- Sonderfall Wasserzeichen: kodiert unauffällig Copyright; möglichst wenig Daten aber hohe Robustheit gegen Umcodierung, Kompression, Aussschnitte, ...
+
+# Disk Encryption
+
+- keine Anwendung, sondern im OS oder als Treiber; zwischen Filesystem und I/O-Treiber
+- ver-/entschlüsselt jeden phys. Block vor/nach Zugriff
+- Verschlüsselung sieht nur Disk-Blöcke ohne Kenntnis ihrer Bedeutung, daher FS-unabhängig
+- arbeitet transparent und "on the fly"
+- sobald entsperrt, sind alle Daten lesbar
+- Zweck: z.B. Diebstahlschutz, Schutz vor fremden Betriebssystemen
+- schützt nicht vor Fremdzugriff in einer angemeldeten Sitzung, Malware, Fileshares
+
+![Disk Encryption](assets/disk_encryption.png)<!--width=400px-->
+
+## Unterschied zu File Encryption
+
+- File-Encryption verschlüsselt nur den Inhalt, nicht die Metadaten
+- meistens normale Anwendung im Userspace
+- wird **explizit** aufgerufen
+
+## Angriffe auf Disk Encryption
+
+- RAM enthält ständig den Key $\rightarrow$ verwundbar gegen DMA; RAM enthält selbst nach Stromverlust noch einige Sekunden lang lesbare Daten
+- Hibernate enthält alle RAM-Daten
+- Hardware-Verschlüsselung in Datenträgern bleibt entsperrt, solange Energie erhalten bleibt
+- Backups auf Dateiebene sind dann entschlüsselt, insofern das Backup nicht separat verschlüsselt ist
+
+## Datenträger
+
+Es gibt verschiedene Arten der Disk Encryption:
+
+- Physical Volume / komplette Platte
+  - inkl. Bootsektor, Partitionstabelle,...
+- Logical Volume / Filesystem
+  - Partition, RAID-Laufwerk, LVM
+  - ohne Boot-Sektoren, Partitionstabelle,...
+- Container
+  - eigenständiges Filesystem in einer großen Datei
+- Hidden Volume
+  - Container, aber unsichtbar in unbenutzten Blöcken eines Outer Filesystems (meist auch verschlüsselt)
+  - Existenz kann im Notfall abgestritten werden
+- Verschlüsselung aller Nutzerdaten auf Linux relativ einfach, da diese auf anderer Partition gespeichert werden können
+- symmetrische Verschlüsselung mit 128 oder 256 Bit Key
+  - Key entweder als gehashtes Passwort oder zufällig erzeugt und mit Passwort verschlüsselt
+  - nur verschlüsselter Key wird gespeichert und Klartext-Key als Recovery Key ausgegeben und dann gelöscht
+
+## Passwort-Eingabe
+
+- bei kompletter Verschlüsselung: Pre-Boot-Kennwort
+- nur Hardwarebindung: nur TPM, kein Kennwort
+- nur Diebstahlschutz: Erreichbarkeit eines Firmenservers
+- bei verschlüsselten Systempartitionen:
+  - Windows und Mac booten Minimalsystem nur für Passwortabfrage usw. von unverschlüsselter Partition
+  - Linux: Booten von unverschlüsselten Kernel mit Passwortabfrage im initrd-Modus
+- ggf. erkennt TPM Veränderungen im unverschlüsselten Teil
+
+## Hardware-Verschlüsselung - Self-Encrypting Drive
+
+- eingebaute Verschlüsselung in Datenträger
+- alternativ "MITM-Verschlüsselung" mit Zwischenstecker
+- Key nur im Laufwerk bekannt, kann mit "Quick Delete" dauerhaft gelöscht werden
+- Disk-Blöcke werden unabh. voneinander verschlüsselt
+- innerhalb eines Disk-Blocks wird verkettet: XTS-Mode
+- Problem: welcher Initialisierungsvektor?
+  - jedesmal zufällig: sicherer, aber aufwändiig
+  - fixer IV: unsicher
+  - Sektornummer: besser, aber Teilangriffe möglich
+  - verschlüsselte Sektor-Nummer: heute beste Lösung
+    - eine Hälfte für Nutzdaten, andere Hälfte für Verschlüsselung der Sektornummer
+
+# TPM
+
+- "Trusted Platform Module"
+- generiert und speichert Schlüsselpaare
+- ver- und entschlüsselt "on Chip" (Schlüssel verlassen also Chip nicht)
+- berechnet Zufallszahlen und Hashes; signiert
+- CPU übersteigt Geschwindigkeit des TPM und Schnittstelle langsamer
+- Sekundäre Funktionen: "Trusted System" und "Tamper Protection"
+- berechnet, speichert und verifiziert Prüfsummen von Hard- und Software (offiziell zur Softwaresicherheit)
+  - lückenlos abgesicherte Boot-Kette; PC bootet nur in "sicheren" Zustand
+- Praxis: DRM-Medienschutz, Aussperren von alternativen Betriebssystemen wie Linux; nimmt Freiheit von Nutzern, z.B. durch Ausschluss von Hardware- oder Sotware-Mods
+- weniger der Nutzer, sondern eher Dritte (Rechte-Inhaber) können dem System vertrauen
+- *"TPM schützt die Software vor dem Benutzer?!"*
+- TPM kann Nutzer weltweit eindeutig identifizieren
+  - ermöglicht individuelle Bindung von Lizenzen und DRM-Inhalten sowie Vendor-Lock-In
+- erzeugt "zugesperrte" PCs: lückenlose Kontrolle über Smartphones, Apple-Geräten, Konsolen,...
+- herstellerunabhängiger Standard von der Trusted Computing Group (TCG); Mitglieder sind Hardware- und Software-Hersteller (Intel, Microsoft, HP, IBM, ...)
+- Bestandteile: eigener Prozessor, RAM, ROM, EEPROM
+- angebunden via Steckmodul (LPC- oder SPI-Bus) oder integriert im Chipsatz
+  - kein Busmaster, kann System also nicht selbstständig ansprechen $\rightarrow$ muss von CPU gestartet werden
+- Initialisierung erfordert "Core Root of Trust for Management" (CRTM) / Trusted Root
+  - In BIOS oder eigenem Chip realisiert
+  - Initialisiert TPM, prüft HW und BIOS auf Integrität, fragt Smartcards oder Passwörter ab
+- ermöglicht "Trusted Software Stack" (TSS) bzw. "TCG Software Stack" für OS und Libraries
+  - Anwendungszugriff auf TPM
+  - kaum vollständige Implementierungen
+- großteils skeptisch aufgenommen oder abgelehnt:
+  - Angst vor DRM und Software-Monopolisierung
+  - Politik der TCG: geheime Arbeit, geheime Dokumente, hohe Mitgliedskosten
+
+## Angriffe
+
+- wenige und modulspezifisch
+- Seitenkanal-Attacken
+- Vorfall: knackbare RSA-Schlüsselpaare
+- Hardware gilt als sicher
+- Software ist zweifelhaftes Stückwerk
+
+## Der EK
+
+- "Endorsement Key"
+- hart eingebrannt und nicht auslesbar
+- codiert Echtheit, Hersteller und Nummer
+- Basis für alle weiteren Keys
+- bleibt vor Anwendungen verborgen; diese dürfen nur ihren eigenen AIK erfahren
+- Nutzeridentifizierung durch Anwendungen indirekt über unabhängige CAs oder Zero-Knowledge-Protokoll
+- Problem des EK: TPM-Hersteller kennt privaten Schlüssel; ermöglicht Tracking, Key-Fälschung, Weitergabe an Dritte
+  - daher TPM-Feature "neuen EK erzeugen" $\rightarrow$ ist nicht vertrauenswürdig oder zertifiziert, also weitgehend nutzlos
+
+## Der SRK
+
+- "Storage Root Key"
+- Wurzel des Schlüsselbaums
+- bei Erstbenutzung generiert: EK + (Passwort oder Biodaten)
+- einmalig, kann nicht wiederholt werden
+
+## Die PCRs
+
+<!--nein, das ist kein COVID-Test-->
+
+- "Platform Configuration Registers" (mind. 24)
+- Hashwerte über Hardware, Firmware, OS, Software und Config-Daten
+- kann in AIK-Berechnung einbezogen werden
+- quasi Blockchain
+
+## Die AIKs
+
+- "Attestation Identity Key"
+- permanent gespeicherte Keys für Lizenzen und DRM-Inhalte
+- jeder Anbieter hat eigenen Key zum Datenschutz
+- Erstellung bei Lizenz-Erwerb, mittels Challenge-Response-Verfahren aus:
+  - Challenge + Key
+  - EK
+  - signierte Hashes von gewählten PCRs (also Bindung an HW oder SW)
+- bei Software-Start: AIK-Prüfung
+
+# Sichere Programmierung
+
+## Angriffe/Motive
+
+- Datendiebstahl z.B. zum Verkauf der Daten
+- Datenzerstörung, -verschlüsselung, -veränderung z.B. zur Erpressung
+- Denial Of Service, also Ausfall
+- Resourcendiebstahl (Rechenzeit, Internet, Speicherplatz)
+- Motivation: *"Ich bin so cool"*, wirtschaftliche Gründe (Spionage, Wettbewerbsvorteil, Rufschädigung,...); persönliche Gründe; politische, geheimdienstliche Absichten; Geld
+- Situation Angreifer:
+  - Erpressung: Datenwiederherstellung, Beendigung des DOS, Nicht-Veröffentlichung von Daten, Erpressung Dritter
+  - Verkauf: gestohlene Daten, Zugänge und Backdoors, Exploits
+  - Nutzung der Daten: Finanzbetrug, Fake-IDs, Nutzung im wirtschaftlichen Sinne
+- Situation Opfer:
+  - Betriebsstillstand, Produktionsausfall, Maschinenschaden
+  - Kosten für Wiederherstellung, Bereinigung, externe Hilfe
+  - Datenverlust: Kundendaten, Buchhaltung, entwickelte Software, Know-how, Pläne
+  - Erpressungskosten
+  - Umsatzminderungen durch Rufschädigungen, Kundenverlust
+  - Strafe nach DSGVO
+  - Schadensersatzzahlungen
+  - Konkurs?
+
+## Allgemeines
+
+- große Software: haben CVE-Nummern
+- meistens Standardfehler, selten "echt falscher" Code
+- Sicherheitslücke = fehlender Code (Input-Prüfungen, Returncode-Prüfungen,...)
+- oft auch Verwendung unsicherer Konstrukte
+- **"Schlamperei und fehlendes Wissen"**
