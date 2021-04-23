@@ -70,7 +70,7 @@ Kryptographie und Softwaresicherheit
   - [Die PCRs](#die-pcrs)
   - [Die AIKs](#die-aiks)
 - [Sichere Programmierung](#sichere-programmierung)
-  - [Angriffe](#angriffe-1)
+  - [Angriffe/Motive](#angriffemotive)
   - [Allgemeines](#allgemeines)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
