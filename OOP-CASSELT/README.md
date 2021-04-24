@@ -16,6 +16,11 @@ Objektorientierte Programmierung mit Java
   - [statische Member und Methoden](#statische-member-und-methoden)
   - [innere Klassen](#innere-klassen)
 - [Vererbung](#vererbung)
+  - [Vererbung vs. Delegation](#vererbung-vs-delegation)
+- [Abstrakte Klassen und Methoden](#abstrakte-klassen-und-methoden)
+- [Interfaces](#interfaces)
+  - [Vererbung vs. abstrakte Klassen vs. Interfaces](#vererbung-vs-abstrakte-klassen-vs-interfaces)
+- [Lose Kopplung](#lose-kopplung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -80,6 +85,8 @@ returntyp methodenName(parameterliste) {
 - in Java werden keine Prototypen gebraucht
 - wer mehrere Klassen in eine ``.java``-Datei packt, kommt in die Hölle
 
+![Member-Zugriffe und Sichtbarkeit](assets/member_zugriff_sichtbarkeit.jpg)<!--width=600px-->
+
 ## Packages
 
 - Verwalten Klassen und Zugriffsrechte
@@ -133,3 +140,46 @@ returntyp methodenName(parameterliste) {
 - Jeder Konstruktor einer abgeleiteten Klasse ruft zuerst den Konstruktor der Superklasse auf
   - implizit, wenn nicht parametrisiert
   - muss explizit aufgerufen werden, wenn parametrisierter Konstruktor
+- jede Klasse erbt von ``Object``, auch implizit $\rightarrow$ also hat jede Klasse eine ``toString()``-Methode
+
+Beispiel für Downcasting:
+
+```java
+if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer());
+```
+
+## Vererbung vs. Delegation
+
+- Delegation: "Hat ein..." $\rightarrow$ Member-Variable
+- Vererbung: "Ist ein..." $\rightarrow$ siehe oben
+- Delegation ist der Vererbung vorzuziehen
+- Vererbung sollte verwendet werden, wenn...
+  - die angestrebte Unterklasse wirklich eine Spezialisierung / ein Teil von der Superklasse ist
+  - alle Eigenschaften wirklich vererbt werden sollen
+
+# Abstrakte Klassen und Methoden
+
+- von abstrakten Klassen können keine Objekte erzeugt werden
+- werden im Klassendiagramm *kursiv* geschrieben (Vorsicht: sieht man ggf. nicht gleich!)
+- abstrakte Methoden können nicht ``private`` sein, weil das keinen Sinn ergibt
+- vor abstrakten Methoden, die also keine Implementierung haben, steht das Schlüsselwort ``abstract``
+
+# Interfaces
+
+- auch benannte Schnittstellen genannt
+- spezifizieren Menge von Operationen, aber keine Implementierungen $\rightarrow$ abstrakte Methoden
+- Definition von Konstanten möglich
+- können als Typ verwendet werden, wobei alle Klassen, die dieses Interface implementieren, dafür qualifiziert sind $\rightarrow$ diese Klassen werden **dynamische Datentypen** genannt
+
+## Vererbung vs. abstrakte Klassen vs. Interfaces
+
+- Unterklassen, wenn die Oberklasse erweitert werden soll
+- abstrakte Klassen, wenn Instanzen der Oberklasse nicht sinnvoll / erwünscht sind
+- Interfaces, wenn verschiedene Klassen einen Funktionsumfang implementieren sollen oder gemeinsame Datentypen benötigt werden
+
+# Lose Kopplung
+
+- Szenario: Klasse A nutzt eine Referenzvariable vom Typ ``IB``; mehrere Klassen ``B1``, ``B2``, ... implementieren ``IB``
+- Zur Laufzeit kann entschieden werden, welche Klasse genutzt werden soll
+
+![Lose Kopplung](assets/lose_kopplung.jpg)<!--width=600px-->
