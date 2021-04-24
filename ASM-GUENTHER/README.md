@@ -12,6 +12,7 @@ Rechnerarchitekturen/hardwarenahe Programmierung
   - [Inline Assembler in C](#inline-assembler-in-c)
     - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
     - [Geteilte Variablen zwischen C und Assembler](#geteilte-variablen-zwischen-c-und-assembler)
+  - [Binärschnittstelle](#bin%C3%A4rschnittstelle)
 - [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -189,6 +190,34 @@ asm("mov rax, %1;"
 	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
 	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
 - die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
+
+## Binärschnittstelle
+
+- definierte Schnittstelle ähnlich zu Inline-Assembler realisiert
+- ermöglicht direkten Aufruf von Assembler-Routinen
+- Nutzung:
+  - gesuchte Funktion extern deklarieren ``extern unsigned int popcnt(unsigned int a);``
+  - ABI aufrufen
+  - mittels Assembler die gesuchte Funktion zur Compile-Zeit zu einer Object-File verarbeiten: ``as --64 popcnt.s -o popcnt.o``
+  - beim Linken wird mit einer **impliziten Regel** Patternsubstitution verwendet:
+
+```make
+%.o: %.s Makefile
+        $(ASSEMBLER) $(ASM-PARAMETER) $< -o $@
+```
+
+- gemäß C Calling Convention muss ein Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
+
+```asm
+global myFunc
+
+section .text
+
+myFunc:
+
+push ebp
+mov ebp
+```
 
 # Mögliche Prüfungsaufgaben
 
