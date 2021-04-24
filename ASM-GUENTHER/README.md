@@ -199,14 +199,14 @@ asm("mov rax, %1;"
   - mittels Assembler die gesuchte Funktion zur Compile-Zeit zu einer Object-File verarbeiten: ``as --64 popcnt.s -o popcnt.o``
   - beim Linken wird mit einer **impliziten Regel** Patternsubstitution verwendet:
 
-```makefile
+```make
 %.o: %.s Makefile
         $(ASSEMBLER) $(ASM-PARAMETER) $< -o $@
 ```
 
 - gemäß C Calling Convention muss ein Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
 
-```assembly
+```asm
 global myFunc
 
 section .text
