@@ -189,9 +189,9 @@ asm("mov rax, %1;"
 	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
 - die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen verwendet werden
 
-## Binärschnittstelle
+## Binärschnittstelle (Application Binary Interface)
 
-- definierte Schnittstelle ähnlich zu Inline-Assembler realisiert
+- definierte Schnittstelle, die Assembler-Verarbeitung ermöglicht (vgl. Inline-Assembler)
 - ermöglicht direkten Aufruf von Assembler-Routinen
 - Nutzung:
   - gesuchte Funktion extern deklarieren ``extern unsigned int popcnt(unsigned int a);``
@@ -214,7 +214,13 @@ section .text
 myFunc:
 
 push ebp
-mov ebp
+; vorbereitung
+mov ebp, esp ; neuer call frame
+; -- dein code -- 
+; nachbereitung
+mov     esp, ebp ; 
+pop     ebp       ; restore old call frame
+ret               ; return
 ```
 
 # Mögliche Prüfungsaufgaben
