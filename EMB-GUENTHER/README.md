@@ -152,7 +152,7 @@ Elektromotor, der zusätzlich mit einem Sensor zur Positionsbestimmung ausgestat
 **Achtung**
 
 > Innerhalb der vom Interrupt ausgelösten Funktion wird delay() nicht funktionieren und millis() nicht hochzählen. Empfangene Serielle Daten in der Funktion können verloren gehen. Variablen, die innerhalb der Funktion verarbeitet werden, sollten als volatile gekennzeichnet werden.
-> - [Arduino Dokumentation](https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/)
+> *Quelle: [Arduino Dokumentation](https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/)*
 
 **Anwendungsbeispiel**
 
