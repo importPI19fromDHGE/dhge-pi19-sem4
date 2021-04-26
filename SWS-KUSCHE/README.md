@@ -5,8 +5,9 @@ Kryptographie und Softwaresicherheit
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungen](#pr%C3%BCfungen)
-- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Kryptographie und Softwaresicherheit](#kryptographie-und-softwaresicherheit)
+- [Prüfungen](#prüfungen)
+- [Einführung und Inhalt](#einführung-und-inhalt)
 - [Symmetrische Verfahren](#symmetrische-verfahren)
 - [Asymmetrische Verfahren](#asymmetrische-verfahren)
   - [...SA vs ...DH](#sa-vs-dh)
@@ -14,7 +15,7 @@ Kryptographie und Softwaresicherheit
 - [Krypto-Analyse](#krypto-analyse)
 - [Anforderungen](#anforderungen)
   - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
-- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
+- [Verschlüsselung langer Daten](#verschlüsselung-langer-daten)
   - [ECB (Electronic Code Book Mode)](#ecb-electronic-code-book-mode)
   - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
   - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
@@ -29,14 +30,14 @@ Kryptographie und Softwaresicherheit
     - [Voraussetzungen](#voraussetzungen)
   - [Public-Key-Infrastruktur](#public-key-infrastruktur)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
-  - [Überprüfung eines Zertifikates](#%C3%BCberpr%C3%BCfung-eines-zertifikates)
+  - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
   - [Aufgaben einer CA](#aufgaben-einer-ca)
   - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
   - [Probleme beim CA-System](#probleme-beim-ca-system)
   - [Web of Trust](#web-of-trust)
 - [Anwendung: PGP, De-Mail](#anwendung-pgp-de-mail)
-  - [Email-Verschlüsselung](#email-verschl%C3%BCsselung)
-  - [Email-Authentizität](#email-authentizit%C3%A4t)
+  - [Email-Verschlüsselung](#email-verschlüsselung)
+  - [Email-Authentizität](#email-authentizität)
   - [PGP](#pgp)
     - [Probleme von PGP](#probleme-von-pgp)
   - [De-Mail](#de-mail)
@@ -54,15 +55,15 @@ Kryptographie und Softwaresicherheit
   - [Passwort setzen](#passwort-setzen)
 - [Programmierung](#programmierung)
 - [Mehr-Faktor-Authentifizierung](#mehr-faktor-authentifizierung)
-- [Authentifizierung über das Netz](#authentifizierung-%C3%BCber-das-netz)
+- [Authentifizierung über das Netz](#authentifizierung-über-das-netz)
   - [Zero-Knowledge-Protokoll](#zero-knowledge-protokoll)
 - [Steganographie](#steganographie)
 - [Disk Encryption](#disk-encryption)
   - [Unterschied zu File Encryption](#unterschied-zu-file-encryption)
   - [Angriffe auf Disk Encryption](#angriffe-auf-disk-encryption)
-  - [Datenträger](#datentr%C3%A4ger)
+  - [Datenträger](#datenträger)
   - [Passwort-Eingabe](#passwort-eingabe)
-  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschl%C3%BCsselung---self-encrypting-drive)
+  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschlüsselung---self-encrypting-drive)
 - [TPM](#tpm)
   - [Angriffe](#angriffe)
   - [Der EK](#der-ek)
@@ -72,6 +73,11 @@ Kryptographie und Softwaresicherheit
 - [Sichere Programmierung](#sichere-programmierung)
   - [Angriffe/Motive](#angriffemotive)
   - [Allgemeines](#allgemeines)
+  - [Triviale ID-Vergabe](#triviale-id-vergabe)
+  - [Exzessive Rechte](#exzessive-rechte)
+  - [File-Tricks](#file-tricks)
+  - [Krypto-Sünden (Ergänzung)](#krypto-sünden-ergänzung)
+  - [Gegenmaßnahmen](#gegenmaßnahmen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -809,3 +815,50 @@ Es gibt verschiedene Arten der Disk Encryption:
 - Sicherheitslücke = fehlender Code (Input-Prüfungen, Returncode-Prüfungen,...)
 - oft auch Verwendung unsicherer Konstrukte
 - **"Schlamperei und fehlendes Wissen"**
+- jeder kann jeden Code untersuchen:
+  - Reverse Engineering (Disassemblierung)
+  - gezielte Tests mit konstruiertem Input (z.B. mit automatisierter "Fuzzer"-Software)
+- nachträgliche Reparatur teurer als "gleich richtig machen" (finanziell, vom Ruf her,...)
+  - "Rule of Ten": jeder Fehler kostet das Zehnfache von dem, was es gekostet hätte, ihn von Anfang an zu vermeiden
+
+## Triviale ID-Vergabe
+
+- fortlaufende oder vorhersagbare Vergabe von Session-IDs, Cookies, URLs für Dokumente
+  - Lösung: verstreute IDs, benachbarte Werte dürfen nicht gültig sein; lange "Totzeit"; Prüfen, ob URL zu Session gehört
+  - Lösung: "Einmal-IDs": selber Request mit selber Session wird nur einmal akzeptiert (Schutz gegen Replay-Attacken)#
+- Client-seitige Prüfungen
+  - Client könnte manipuliert sein; MITM-Attacken
+  - **Daten vom Client sind nie vertrauenswürdig**; alle sicherheitsrelevanten Prüfungen müssen am Server stattfinden
+
+## Exzessive Rechte
+
+- Rechte aller angelegten Dateien, DBs, IPCs,... sind explizit so restriktiv wie möglich anzulegen
+- Server-Code aufspalten:
+  - Variante 1: alle Operationen beim Start mit erhöhten Rechten ausführen, dann erhöhte Rechte abgeben (eigene Server-UID)
+  - Variante 2: getrennte Prozesse; einer mit erhöhten Rechten (so wenig wie möglich Code) und einer mit normalen Rechten (Großteil des Codes)
+- temporäre Dateien in einem Unterverzeichnis anlegen, wo Rechte kontrolliert werden
+
+## File-Tricks
+
+- Szenario: Server will temp. File anlegen - Angreifer legt Link der Zieldatei auf ``/etc/passwd``, Server überschreibt diese Datei
+- Ursachen:
+  - Anlegen in *öffentlichen* Ordnern wie ``/tmp``
+  - Anlegen von Dateien mit fixen / erratbaren Namen
+  - Anlegen ohne atomare Existenzprüfung
+
+## Krypto-Sünden (Ergänzung)
+
+- Nutzung von Pseudo-Zufall
+- "inoffizielle" Zertifikate, die den Nutzer zum Akzeptieren einer Ausnahme zwingen
+- automatische Updates ohne Absicherung
+  - der Verbindung
+  - des Inhaltes
+
+## Gegenmaßnahmen
+
+- Schulungen für Programmierer, Tester, Nutzer
+- Programmier-Richtlinien
+- Nutzung sicherer Programmier-Standards
+- Tools für Sicherheits-QA
+- Code Reviews und Bug Bounties
+- externe Audits, Penetration-Tests
