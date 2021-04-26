@@ -17,6 +17,12 @@ Embedded Systems
     - [Sonstige Bauteile](#sonstige-bauteile)
   - [Messgeräte](#messger%C3%A4te)
   - [PWM](#pwm)
+  - [Digitale Schaltnetze](#digitale-schaltnetze)
+    - [Logisches UND](#logisches-und)
+    - [Logisches ODER](#logisches-oder)
+    - [Logische Äquivalenz](#logische-%C3%A4quivalenz)
+    - [Logische Antivalenz](#logische-antivalenz)
+  - [Interrupts](#interrupts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -75,3 +81,108 @@ Elektromotor, der zusätzlich mit einem Sensor zur Positionsbestimmung ausgestat
 - = **P**ulse**W**idth**M**odulation (Pulsbreitenmodulation)
 - Schnelles Ein- und Ausschalten der Spannung (=Rechteckpuls)\rightarrow\rightarrow Verhältnis zwischen Ein- und Ausschaltzeit wird variiert
 - Verwendung: z.B. Dimmen von LEDs, Ansteuerung von Servos
+
+
+## Digitale Schaltnetze
+
+### Logisches UND
+
+|A|B|Z|
+|-|-|-|
+|0|0|0|
+|0|1|0|
+|1|0|0|
+|1|1|1|
+
+- Code: ´if(a && b)´
+- Elektrisch: Zwei Schalter in Reihe
+- Anwendung: Schutzfunktion durch Erfüllung zweier Bedingungen
+
+### Logisches ODER
+
+|A|B|Z|
+|-|-|-|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|1|
+
+- Code: ´if(a || b)´
+- Elektrisch: Zwei Schalter in Parallel
+- Anwendung (Steuerungstechnik): Innenlichtsteuerung KFZ
+
+### Logische Äquivalenz
+
+|A|B|Z|
+|-|-|-|
+|0|0|1|
+|0|1|0|
+|1|0|0|
+|1|1|1|
+
+- Code: ´if(a == b)´
+- Elektrisch: Schalter mit mehreren Kontakten bzw. Digitalbausteine
+- Anwendung (Steuerungstechnik): Vergleich von Sensorwerten
+
+### Logische Antivalenz
+
+|A|B|Z|
+|-|-|-|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|0|
+
+- Code: ´if(a != b)´
+- Elektrisch: Schalter mit mehreren Kontakten bzw. Digitalbausteine (XOR)
+- Anwendung (Steuerungstechnik): Kryptografie, Prüfsummen
+
+## Interrupts
+
+- = kurzfristige Unterbrechung der normalen Programmausführung
+- tritt eine bestimmte Bedingung ein, wird sofort die gewünschte Interrupt Service Routine (ISR) ausgeführt
+
+**Interrupt Modi**
+
+|Interupt| Trigger                                      |
+|--------|----------------------------------------------|
+|RISING  | ansteigende Flanke                           |
+|FALLING | absteigende Flanke                           |
+|CHANGE  | ansteigende/abfallende Flanke (jede Änderung)|
+|LOW     | wird getriggert, wenn der Pin LOW ist        |
+|HIGH    | wird getriggert, wenn der Pin HIGH ist       |
+
+- mit `attachInterrupt()` wird ein Interrupt initialisiert
+- `digitalPinToInterrupt()` wandelt die Pin-Nummer in die mikrocontrollerspezifische Interrupt-Nummer um (erhöht Plattformunabhängigkeit)
+
+**Achtung**
+
+> Innerhalb der vom Interrupt ausgelösten Funktion wird delay() nicht funktionieren und millis() nicht hochzählen. Empfangene Serielle Daten in der Funktion können verloren gehen. Variablen, die innerhalb der Funktion verarbeitet werden, sollten als volatile gekennzeichnet werden.
+> *Quelle: [Arduino Dokumentation](https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/)*
+
+**Anwendungsbeispiel**
+
+> Es soll eine Schaltung mit einer blinkenden LED und einer LED, die über einen Schalter gesteuert wird.
+> Damit die LED zeitnah geschaltet werden kann, soll dies über einen Interrupt realisiert werden.
+
+```C
+#define INPUT_SWITCH 2
+#define OUTPUT_SWITCH 13
+#define OUTPUT_BLINK 12
+
+void setup(){
+  pinMode(INPUT_SWITCH, INPUT);
+  pinMode(OUTPUT_SWITCH, OUTPUT);
+  pinMode(OUTPUT_BLINK, OUTPUT);
+  attachInterrupt(digitalPinToInterrupt(INPUT_SWITCH), input_button, CHANGE);
+}
+
+void loop(){
+  digitalWrite(OUTPUT_BLINK, !digitalRead(OUTPUT_BLINK));
+  delay(1000);
+}
+
+void input_button(){
+  digitalWrite(OUTPUT_SWITCH, digitalRead(INPUT_SWITCH));
+}
+```
