@@ -876,7 +876,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 - Was filtert man? Z.B. SQL-Injections, JavaScript, HTML, alle Shell-Aufrufe (Klassiker: Mailadressen), ...
 - Grundproblem: Eingaben (Web, CLI, Formulare, ...) werden nicht gefiltert; durch Terminalsymbole kann unerwarteter Effekt ausgelöst werden
-- Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`), Regular Exressions (nutzen JIT-Compiler; erlaubt Rekursion)
+- Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`), Regular Expressions (nutzen JIT-Compiler; erlauben Rekursion)
 
 ### SQL-Injection
 
