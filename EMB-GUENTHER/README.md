@@ -17,6 +17,12 @@ Embedded Systems
     - [Sonstige Bauteile](#sonstige-bauteile)
   - [Messgeräte](#messger%C3%A4te)
   - [PWM](#pwm)
+  - [Digitale Schaltnetze](#digitale-schaltnetze)
+    - [Logisches UND](#logisches-und)
+    - [Logisches ODER](#logisches-oder)
+    - [Logische Äquivalenz](#logische-%C3%A4quivalenz)
+    - [Logische Antivalenz](#logische-antivalenz)
+  - [Interrupts](#interrupts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
