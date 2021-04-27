@@ -828,28 +828,28 @@ Es gibt verschiedene Arten der Disk Encryption:
   - Reverse Engineering (Disassemblierung)
   - gezielte Tests mit konstruiertem Input (z.B. mit automatisierter "Fuzzer"-Software)
 - nachträgliche Reparatur teurer als "gleich richtig machen" (finanziell, vom Ruf her,...)
-  - "Rule of Ten": jeder Fehler kostet das Zehnfache von dem, was es gekostet hätte, ihn von Anfang an zu vermeiden
+  - "Rule of Ten": Die Fehlerkosten eines nicht entdeckten Fehlers erhöhen sich von Stufe zu Stufe der Wertschöpfung/Entwicklung um den Faktor 10
 
 ## Triviale ID-Vergabe
 
 - fortlaufende oder vorhersagbare Vergabe von Session-IDs, Cookies, URLs für Dokumente
   - Lösung: verstreute IDs, benachbarte Werte dürfen nicht gültig sein; lange "Totzeit"; Prüfen, ob URL zu Session gehört
-  - Lösung: "Einmal-IDs": selber Request mit selber Session wird nur einmal akzeptiert (Schutz gegen Replay-Attacken)#
+  - Lösung: "Einmal-IDs": selber Request mit selber Session wird nur einmal akzeptiert (Schutz gegen Replay-Attacken)
 - Client-seitige Prüfungen
   - Client könnte manipuliert sein; MITM-Attacken
-  - **Daten vom Client sind nie vertrauenswürdig**; alle sicherheitsrelevanten Prüfungen müssen am Server stattfinden
+  - **Daten vom Client sind nie vertrauenswürdig** \rightarrow\rightarrow alle sicherheitsrelevanten Prüfungen müssen am Server stattfinden
 
 ## Exzessive Rechte
 
 - Rechte aller angelegten Dateien, DBs, IPCs,... sind explizit so restriktiv wie möglich anzulegen
 - Server-Code aufspalten:
   - Variante 1: alle Operationen beim Start mit erhöhten Rechten ausführen, dann erhöhte Rechte abgeben (eigene Server-UID)
-  - Variante 2: getrennte Prozesse; einer mit erhöhten Rechten (so wenig wie möglich Code) und einer mit normalen Rechten (Großteil des Codes)
+  - Variante 2: getrennte Prozesse; einer mit erhöhten Rechten (so wenig Code wie möglich) und einer mit normalen Rechten (Großteil des Codes)
 - temporäre Dateien in einem Unterverzeichnis anlegen, wo Rechte kontrolliert werden
 
 ## File-Tricks
 
-- Szenario: Server will temp. File anlegen - Angreifer legt Link der Zieldatei auf ``/etc/passwd``, Server überschreibt diese Datei
+- Szenario: Server will temp. File anlegen, Angreifer legt Link der Zieldatei auf `/etc/passwd` \rightarrow\rightarrow Server überschreibt diese Datei
 - Ursachen:
   - Anlegen in *öffentlichen* Ordnern wie ``/tmp``
   - Anlegen von Dateien mit fixen / erratbaren Namen
@@ -859,9 +859,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 - Nutzung von Pseudo-Zufall
 - "inoffizielle" Zertifikate, die den Nutzer zum Akzeptieren einer Ausnahme zwingen
-- automatische Updates ohne Absicherung
-  - der Verbindung
-  - des Inhaltes
+- automatische Updates ohne Absicherung der Verbindung und des Inhaltes
 
 ## Gegenmaßnahmen
 
@@ -874,7 +872,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 ## Fehlende Input-Filterung
 
-- Was filtert man? Z.B. SQL-Injections, JavaScript, HTML, alle Shell-Aufrufe (Klassiker: Mailadressen), ...
+- Was filtert man? z.B. SQL-Injections, JavaScript, HTML, alle Shell-Aufrufe (Klassiker: Mailadressen), ...
 - Grundproblem: Eingaben (Web, CLI, Formulare, ...) werden nicht gefiltert; durch Terminalsymbole kann unerwarteter Effekt ausgelöst werden
 - Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`), Regular Expressions (nutzen JIT-Compiler; erlauben Rekursion)
 
@@ -890,7 +888,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 - XPath ist Abfragesprache für XML
 - Problem: Einbau von Terminalsymbolen in Nutzereingaben
 
-### LDAP-Inection
+### LDAP-Injection
 
 - ähnlich zu SQL-Injections
 
@@ -900,9 +898,9 @@ Es gibt verschiedene Arten der Disk Encryption:
 - Problem 1: Directory Traversal
 - Problem 2: Command-Trenzeichen nicht gefiltert; Rest wird als eigener Shell-Befehl ausgeführt
 - Problem 3: Pipes nicht gefiltert `<` `>`: Auslesen oder Überschreiben beliebiger Dateien
-- Problem 4: die zukünftigen Features einer Shell sind fast unüberschaubar; Filterung könnte zukünftig nicht mehr reichen
+- Problem 4: die zukünftigen Features einer Shell sind fast unüberschaubar \rightarrow\rightarrow Filterung könnte zukünftig nicht mehr reichen
 
-### XSS - Cross Site Scripting
+### Cross Site Scripting (XSS)
 
 - Problem 1: JavaScript läuft auf allen Clients
 - Problem 2: HTML lädt Bilder nach, verlinkt dynamische Inhalte, ...
@@ -941,5 +939,5 @@ Es gibt verschiedene Arten der Disk Encryption:
 - Whitelist hat ähnliches Problem: alle "harmlosen" Zeichen erfassen ist unpraktisch, nicht zukunftssicher
   - dennoch in vielen Fällen am Besten
 - **nach** Hex-Dekodierung filtern
-- Nutzung von Zeihenklassen-Prüffunktionen (`isalpha`, `isdigit`, ...)
+- Nutzung von Zeichenklassen-Prüffunktionen (`isalpha`, `isdigit`, ...)
 - evtl. kein Unicode erlauben (abh. vom Backend)
