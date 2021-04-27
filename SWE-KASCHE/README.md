@@ -23,9 +23,10 @@ Systementwurf
 
 <!--newpage-->
 
-# Präambel 
+# Präambel
 
-Qualitäts-Verbesserung durch: 
+Qualitäts-Verbesserung durch:
+
 - **Kompetenz der Entwickler**
 - **Prozess** (Testen -> *System-Analyse*)
 - **Tooling** (Automatisierung, Testen -> *System-Entwurf*)
@@ -85,16 +86,19 @@ Qualitäts-Verbesserung durch:
 ## Gliederung des Entwurfsprozesses
 
 **Grobentwurf** (unabhängig von der Implementierungs-Sprache)
+
 - (1) Architektur-Entwurf
 - (2) Subsystem-Entwurf
 - (3) Schnittstellen-Entwurf
 
 **Feinentwurf**
+
 - (4) Komponenten
 - (5) Datenstrukturen
 - (6) Algorithmen
 
 **Ablauf**
+
 - (1) Zunächst wird die Architektur entworfen
 - (2) Die Architektur wird in Subsysteme untergliedert
 - (3) Die Schnittstellen der Subsysteme werden bestimmt
@@ -106,7 +110,7 @@ Qualitäts-Verbesserung durch:
 Entwickeln Sie eine Software-Architektur!
 
 **A**
-- Service-Techniker : mobiles Gerät oder Web-Aufruf 
+- Service-Techniker : mobiles Gerät oder Web-Aufruf
 - Auftragsschein ausfüllen $\rightarrow$  unterschreiben
 - Ziel: DB Ablage
 
@@ -124,24 +128,27 @@ Entwickeln Sie eine Software-Architektur!
 - Gruppierung $\rightarrow$ (Zusammengehörigkeit)
 - ausreichende Trennung?
 
-## Software Architektur 
+## Software Architektur
+
 > beschreibt die grundlegende Organisation des Systems
 
 - verkörpert durch seine Komponenten, seine Beziehungen zur Umgebung und seine Komponenten-Beziehungen
 - verwendet werden Diagramme für verschiedene Sichten
 
 beruht auf:
+
 - allgemeinen Entwicklungs-Prinzipien
 - Heuristiken
 - Architektur-Muster ("Kostproben von Möglichkeiten")
 
-$\Rightarrow$ Dokumentation wird erzeugt
+$\rightarrow$ Dokumentation wird erzeugt
 
 **Szenarien (Sichten):**
-  - Strukturelle Sicht $\rightarrow$ Physische Sicht
-  - Ablaufsicht
-  - Logische Sicht ("Nutzer-Sicht")
-  
+
+- Strukturelle Sicht $\rightarrow$ Physische Sicht
+- Ablaufsicht
+- Logische Sicht ("Nutzer-Sicht")
+ 
 > Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
 
 ## Kriterien für einen guten Entwurf
@@ -156,7 +163,7 @@ $\Rightarrow$ Dokumentation wird erzeugt
   - Sind die Anforderungen erfüllt?
   - Existieren alle Funktionen des System-Modells?
   - Checkliste, ...
-- 4. hohe Kohäsion 
+- 4. hohe Kohäsion
   - Maß für Zusammengehörigkeit
   - Früher: ähnliche Funktionen zusammenfassen
   - Heute: Objekt-Orientierung
@@ -173,7 +180,7 @@ $\Rightarrow$ Dokumentation wird erzeugt
   - Änderungen wirken nur lokal
   - Performance kann jedoch darunter leiden
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
-- 6. Wiederverwendbarkeit 
+- 6. Wiederverwendbarkeit
    - Maß für Ausnutzung von Gemeinsamkeiten
    - Verringerung der Redundanz
    - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
@@ -204,10 +211,10 @@ $\Rightarrow$ Dokumentation wird erzeugt
 - Qualitätssicherungswerkzeug (Review)
   - **direkte** Szenarien: auf der Architektur gut realisierbar
   - **indirekte** Szenarien: erst nach Erweiterung realisierbar
-- Bewertung mittels: 
+- Bewertung mittels:
   - 1. Anzahl direkte Szenarien
   - 2. Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
-  
+
 $\rightarrow$ Abschätzung der Effizienz
 
 ### Architektur-Muster für strukturelle Sicht
@@ -218,7 +225,7 @@ $\rightarrow$ Abschätzung der Effizienz
 - Komponentendiagramm (im UML)
 
 > An dieser Stelle kam eine Erklärung, wie ein Komponentendiagramm aussieht.
-> Hier eine externe Übersicht: [Klick](https://www.uml-diagrams.org/component-diagrams.html)  
+> Hier eine externe Übersicht: [Klick](https://www.uml-diagrams.org/component-diagrams.html) 
 > Hier sind die Pfeile und Symbole nochmal besser erklärt: [Klick](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/)
 
 - **Kette**
