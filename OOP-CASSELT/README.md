@@ -21,6 +21,13 @@ Objektorientierte Programmierung mit Java
 - [Interfaces](#interfaces)
   - [Vererbung vs. abstrakte Klassen vs. Interfaces](#vererbung-vs-abstrakte-klassen-vs-interfaces)
 - [Lose Kopplung](#lose-kopplung)
+- [Ausgewählte Probleme und Aspekte der OOP mit Java](#ausgew%C3%A4hlte-probleme-und-aspekte-der-oop-mit-java)
+  - [Liskov und Varianzen](#liskov-und-varianzen)
+  - [Vererbung und private Member](#vererbung-und-private-member)
+  - [Vererbung und die Klasse Object](#vererbung-und-die-klasse-object)
+  - [Gleichheit von Objekten](#gleichheit-von-objekten)
+- [Java Collection Framework](#java-collection-framework)
+- [Sortieren von Objekten](#sortieren-von-objekten)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -170,6 +177,7 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 - spezifizieren Menge von Operationen, aber keine Implementierungen $\rightarrow$ abstrakte Methoden
 - Definition von Konstanten möglich
 - können als Typ verwendet werden, wobei alle Klassen, die dieses Interface implementieren, dafür qualifiziert sind $\rightarrow$ diese Klassen werden **dynamische Datentypen** genannt
+- Interfaces können durch Unter-Interfaces erweitert werden
 
 ## Vererbung vs. abstrakte Klassen vs. Interfaces
 
@@ -183,3 +191,52 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 - Zur Laufzeit kann entschieden werden, welche Klasse genutzt werden soll
 
 ![Lose Kopplung](assets/lose_kopplung.jpg)<!--width=600px-->
+
+# Ausgewählte Probleme und Aspekte der OOP mit Java
+
+## Liskov und Varianzen
+
+- Wenn eine Klasse erwartet wird, sollte eine Unterklasse davon auch verarbeitet werden können
+- Problemstellung: was darf eine überschreibende Methode ändern, in Bezug auf Rückgabetyp, Typen der formalen Parameter, ggf. auch Typen der Checked Exceptions?
+- Invarianz: Datentypen sind in Ober- und Unterklasse gleich
+- Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse (Bsp.: Person schreibt Dokument; Student schreibt Buch)
+- Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse (Bsp.: Person schreibt Buch; Student schreibt Dokument)
+
+| Varianz       | Eingabeparameter | Rückgabeparameter |
+|:-------------:|:-----------------|:-----------------:|
+| Invarianz     | möglich          | möglich           |
+| Kovarianz     | nicht möglich    | möglich           |
+| Kontravarianz | nicht möglich    | nicht möglich     |
+
+## Vererbung und private Member
+
+- private Member werden ebenfalls vererbt, sind aber nicht sichtbar
+- Zugriff auf private Membervariablen sollte über Getter und Setter erfolgen
+
+## Vererbung und die Klasse Object
+
+- jede Klasse erbt implizit von ``Object``
+- ``Object`` enthält Implementierungen für Operatoren wie ``toString()``
+
+## Gleichheit von Objekten
+
+- ...wird mittels ``equals(Object o)`` überprüft
+- zwei Objekte sind gleich, wenn alle Member denselben Wert haben
+- Achtung: ``o1 == o2`` vergleicht Referenzen!
+- ``hashCode()`` liefert den Hash eines Objektes
+
+# Java Collection Framework
+
+- Implementierung komplexer Datenstrukturen über Zentrale Interfaces wie ``Collection``
+- ``Array``: schneller Zugriff, klassisches Array, aber statische Größe
+- ``ArrayList``: *aufgemotztes* Array, dynamisch in der Größe, wahlfreier Zugriff schneller als in LinkedList, aber Einfügen und Löschen langsamer, da i.d.R ein Umspeichern erforderlich ist
+- ``LinkedList``: doppelt verkettete Liste (siehe Algo Semester 2) dynamischer Größe, passt sich zur Laufzeit an, aber direkter Zugriff langsam, da Liste sequenziell durchlaufen werden muss
+- sowohl ``ArrayList`` als auch ``LinkedList`` erben von ``List``, welches wiederum eine ``Collection`` ist
+
+# Sortieren von Objekten
+
+- zwei Interfaces werden zur Verfügung gestellt: ``Comparable`` und ``Comparator``
+- ``Comparable`` deklariert die Methode ``public int compareTo(Object o)``, welche zu implementieren ist
+- Sortieren wird benötigt, wenn ``TreeSet`` verwendet werden soll
+- wenn kein triviales Vergleichen möglich ist, muss eine Klasse geschrieben werden, die ``Comparator`` implementiert
+- Erinnerung stabile Sortierung: bei einem Pasch bleibt die Reihenfolge wie im Original erhalten
