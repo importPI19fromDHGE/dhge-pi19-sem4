@@ -186,3 +186,42 @@ void input_button(){
   digitalWrite(OUTPUT_SWITCH, digitalRead(INPUT_SWITCH));
 }
 ```
+
+## Timer (Zähler)
+
+- spezielle Hardware im Mikrocontroller $\rightarrow$ Timer/Zähler
+- Uhren zum Warten auf Ereignise, Erzeugen von Frequenzen, Messen von Zeit
+- Arduino Uno (ATmega328) besitzt drei Timer (1x 16bit; 2x 8bit)
+- Register kann taktweise Zählen (16 MHz $\rightarrow$ 62,5ns pro Takt)
+  - 8bit-Timer $\rightarrow$ $256 * 62,5ns = 16 µs$
+  - 16bit-Timer $\rightarrow$ $65536 * 62,5ns = 4,096 ms$
+  - $\rightarrow$ mit dem `Prescaler` kann die Schrittweite eingestellt werden (0, 1, 8, 64, 256, 1024)
+  - $\rightarrow$ mit Prescaler max. 0,016s bzw. 4,19s 
+- je nach Konfiguration kann der Zähler der Interrupt ausgelöst werden (= interne Interrupt-Quelle)
+  - laufen unabhängig vom normalen Programmablauf
+  - Definition durch Interrupt-Maske
+
+$$\text{OCRn} = [\frac{\text{clockspeed}}{\text{prescaler}}*\text{gewünschte Zeit(s)}]-1$$
+
+> Welcher Wert sollte nach 1ms bei 16 MHz und ein Prescaler von 64 im 8bit-Zähler stehen?
+> $$\text{OCRn} = [\frac{16\text{MHz}}{64}*1*10^{-3}s]-1=\underline{\underline{249}}$$
+
+<!--"schöne Prüfungsfrage": angenommen Timer x ist schon belegt, kann das mit Timer a oder b realisiert werden? -> 8 bzw. 16bit, Prescaler ändern -->
+
+### Timer-Programmierung unter Arduino
+
+```C
+void setup(){
+  TCCR0A = (0x1<<WGM01); //Compare-Modus (CTC) aktivieren -> Timer wird bei Match gecleart
+  OCR0A = 0xF9; //Vergleichswert für 1ms setzen
+
+  TCCR0B|=(0x1<<CS01); //Prescale auf 64 setzen
+  TCCR0B|=(0x1<<CS00); //^^
+
+  TIMSK0|=(0x1<<OCIE0A); //internen Interrupt aktivieren 
+  sei(); //^^
+}
+ISR(TIMER0_COMPA_vect){
+  //ISR für den Timer
+}
+```
