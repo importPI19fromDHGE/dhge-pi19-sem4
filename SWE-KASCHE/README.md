@@ -78,9 +78,9 @@ Qualitäts-Verbesserung durch:
 - Software-Architektur $\rightarrow$ Spezifikation von System-Komponenten
 - **Subsystem:** abgeschlossene, eigenständig funktionsfähige Einheit; definiert Schnittstellen; besteht wieder aus Komponenten
 - **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ mehrere Klassen/Module)
-	- benutzt andere Komponenten
-	- wird von anderen Komponenten benutzt
-	- besteht aus Unterkomponenten
+  - benutzt andere Komponenten
+  - wird von anderen Komponenten benutzt
+  - besteht aus Unterkomponenten
 
 ## Gliederung des Entwurfsprozesses
 
@@ -145,41 +145,44 @@ $\Rightarrow$ Dokumentation wird erzeugt
 > Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
 
 ## Kriterien für einen guten Entwurf
-1. Verständlichkeit und Präzision
-   - dem Leser "muss ein Licht aufgehen"
-   - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
-2. Anpassbarkeit/Erweiterbarkeit
-   - Trennung in Module
-   - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
-3. Korrektheit
-   - Sind die Anforderungen erfüllt?
-   - Existieren alle Funktionen des System-Modells?
-   - Checkliste, ...
-4. hohe Kohäsion 
-    > Maß für Zusammengehörigkeit
-    - Früher: ähnliche Funktionen zusammenfassen
-    - Heute: Objekt-Orientierung
-      - Paketbildung
-      - geeignete Muster (später)
-      - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
-5. Schwache Kopplung
-  > Maß für die Abhängigkeit zwischen Komponenten
+
+- 1. Verständlichkeit und Präzision
+  - dem Leser "muss ein Licht aufgehen"
+  - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
+- 2. Anpassbarkeit/Erweiterbarkeit
+  - Trennung in Module
+  - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
+- 3. Korrektheit
+  - Sind die Anforderungen erfüllt?
+  - Existieren alle Funktionen des System-Modells?
+  - Checkliste, ...
+- 4. hohe Kohäsion 
+  - Maß für Zusammengehörigkeit
+  - Früher: ähnliche Funktionen zusammenfassen
+  - Heute: Objekt-Orientierung
+    - Paketbildung
+    - geeignete Muster (später)
+    - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
+- 5. Schwache Kopplung
+  - Maß für die Abhängigkeit zwischen Komponenten
   - Arten der Kopplungen:
     1. Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
     2. Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
     3. Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
-  - $\Rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
+  - $\rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
   - Änderungen wirken nur lokal
   - Performance kann jedoch darunter leiden
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
-6. Wiederverwendbarkeit 
+- 6. Wiederverwendbarkeit 
    - Maß für Ausnutzung von Gemeinsamkeiten
    - Verringerung der Redundanz
    - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
    - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
 ## Software-Architekturen und deren Sichten
+
 **"4+1 Sichten" (Szenarien)**
+
 - Strukturelle Sicht $\rightarrow$ Blick vom Entwickler
   - Softwaremodule, Bibliotheken, Schnittstellen
 - Physische Sicht $\rightarrow$ Service-Mitarbeiter
@@ -192,6 +195,7 @@ $\Rightarrow$ Dokumentation wird erzeugt
 > Fein-Entwurf: Rest der physischen Sicht, Ablauf-Sicht und Logische Sicht
 
 ### Szenarien
+
 - Verbindung zwischen Sichten
 - zeigen Laufzeitverhalten
 - keine extra-Sicht ("4+1")
@@ -201,12 +205,13 @@ $\Rightarrow$ Dokumentation wird erzeugt
   - **direkte** Szenarien: auf der Architektur gut realisierbar
   - **indirekte** Szenarien: erst nach Erweiterung realisierbar
 - Bewertung mittels: 
-  1.  Anzahl direkte Szenarien
-  2.  Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
+  - 1. Anzahl direkte Szenarien
+  - 2. Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
   
-  $\Rightarrow$ Abschätzung der Effizienz
+$\rightarrow$ Abschätzung der Effizienz
 
 ### Architektur-Muster für strukturelle Sicht
+
 - Zerlegung in eigenständige Funktionalitäten
 - *keine* Aussage über ihre physische Verteilung
 - Blockdiagramme (kein UML-Bestandteil)
@@ -217,13 +222,13 @@ $\Rightarrow$ Dokumentation wird erzeugt
 > Hier sind die Pfeile und Symbole nochmal besser erklärt: [Klick](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/)
 
 - **Kette**
-  1. Abfolge von Transformationen von Eingabedaten
-  2. Pipes, Filter
-     - Daten werden nicht im Block transformiert, sondern inkrementell
-     - $\Rightarrow$ Pipes sind zustandslos
-     - Filter arbeiten nach Pull-Prinzip
-     > @UML Unterschied nicht darstellbar
-  3. gut wiederverwendbar
+  - 1. Abfolge von Transformationen von Eingabedaten
+  - 2. Pipes, Filter
+    - Daten werden nicht im Block transformiert, sondern inkrementell
+    - $\Rightarrow$ Pipes sind zustandslos
+    - Filter arbeiten nach Pull-Prinzip
+    - Unterschied mit @UML nicht darstellbar
+  - 3. gut wiederverwendbar
 - **Repository**
 - **Schichten**
 - **Interpreter**
