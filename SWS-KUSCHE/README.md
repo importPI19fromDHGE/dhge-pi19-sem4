@@ -285,7 +285,7 @@ Kryptographie und Softwaresicherheit
   - Einweg-Funktion: darf nie *rückrechenbar* sein
 - Hash gilt als gebrochen, wenn schneller als Brute-Force lösbar
 
-## Kollisionen 
+## Kollisionen
 
 **Fall 1**
 
@@ -461,7 +461,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Kombination aus sym. + asym. Verschlüsselung
 - falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
 - mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
-- sym. Schlüssel wird asym. mit Elgamal verschlüsselt 
+- sym. Schlüssel wird asym. mit Elgamal verschlüsselt
 - aufgrund technischer Beschränkungen wird Base64 kodiert
 
 ### Probleme von PGP
