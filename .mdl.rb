@@ -17,4 +17,4 @@ exclude_rule 'MD025'
 rule 'MD013', :line_length => 200
 
 # Prefix ordered lists with incremental numbers instead of all ones
-rule 'MD029', :ordered
+rule 'MD029', :ordered => true
