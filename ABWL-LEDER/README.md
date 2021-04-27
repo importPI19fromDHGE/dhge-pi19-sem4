@@ -59,9 +59,7 @@ Allgemeine Betriebswirtschaftslehre
 <!--newpage-->
 <!--markdownlint-enable-->
 
-# Unternehmensführung
-
-# Produktionsfaktoren, betriebliche Funktionsbereiche
+# Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche
 
 ## Begriffe
 
@@ -184,6 +182,7 @@ Gewinnmaximierung durch:
 - Formelle Beziehungen: <!--???-->
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+
 - Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
@@ -191,7 +190,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Ausführungsfunktion
 - Leitungsfunktion: Zeit- und Selbstmanagement
-	- Anforderungen: fachliche, methodische, persönliche Kenntnisse
+  - Anforderungen: fachliche, methodische, persönliche Kenntnisse
 - Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
 - Stellen mit gleicher Befugnis = Hierarchieebene
 
@@ -326,7 +325,6 @@ $$\begin{matrix}&&\text{Personalbestand aus entsprechenden Veränderungsentschei
 
 > positiver Saldo = Mehrbedarf
 > negativer Saldo = Freistellung
-
 
 #### vergangenheitsorientierte Methoden
 
