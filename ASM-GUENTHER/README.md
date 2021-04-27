@@ -228,5 +228,5 @@ ret               ; return
 
 # Mögliche Prüfungsaufgaben
 
-- Wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. 
-  - Zu einer gegebenen Anzahl zu verwendender Kerne soll der Gesamtzeitaufwand bestimmt werden
+- Wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden.
+  - Zu einer gegebenen Anzahl zu verwendender Kerne soll der Gesamtzeitaufwand bestimmt werden.
