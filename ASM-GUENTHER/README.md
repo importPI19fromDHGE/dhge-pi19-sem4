@@ -108,30 +108,30 @@ CPARAM=--std=gnu99 -Wall -Wextra #C99 mit lang exts.
 
 
 compile-cpp: $(CPPSOURCE) Makefile
-	$(CPPCOMPILER) $(CPPARAM) $(CPPSOURCE) -o $(OUTFILE_CPP)
+        $(CPPCOMPILER) $(CPPARAM) $(CPPSOURCE) -o $(OUTFILE_CPP)
 
 compile-c: $(CSOURCE) Makefile
-	$(CCOMPILER) $(CPARAM) $(CSOURCE) -o $(OUTFILE_C)
+        $(CCOMPILER) $(CPARAM) $(CSOURCE) -o $(OUTFILE_C)
 
 compile-all: compile-cpp compile-c
 
 clean-all: clean-c clean-cpp
 
 clean-c:
-	rm -rvf $(OUTFILE_C)
+        rm -rvf $(OUTFILE_C)
 
 clean-cpp:
-	rm -rvf $(OUTFILE_CPP)
+        rm -rvf $(OUTFILE_CPP)
 
 # run unterstützt kein on-demand-kompilieren
 
 run-all: run-c run-cpp
 
 run-c: $(OUTFILE_C)
-	./$(OUTFILE_C)
+        ./$(OUTFILE_C)
 
 run-cpp: $(OUTFILE_CPP)
-	./$(OUTFILE_CPP)
+        ./$(OUTFILE_CPP)
 ```
 
 # Assembler
@@ -144,10 +144,10 @@ run-cpp: $(OUTFILE_CPP)
 
 ```C
 int main(){
-	asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
-	asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
-	asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
-	return 0;
+  asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
+  asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
+  asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
+  return 0;
 }
 ```
 
@@ -174,21 +174,21 @@ long b = 35;
 long c;
 
 asm("mov rax, %1;"
-		"mov rbx, %2;"
-		"add rbx, rax;"
-		"mov %0, rbx;"
-		: "=r" (c) /* output operands */
-		: "r" (a), "r" (b) /* input operands */
-		: "rbx", "rax" /* list of clobbered registers */
+        "mov rbx, %2;"
+        "add rbx, rax;"
+        "mov %0, rbx;"
+        : "=r" (c) /* output operands */
+        : "r" (a), "r" (b) /* input operands */
+        : "rbx", "rax" /* list of clobbered registers */
 );
 ```
 
 - Ein-/Ausgabeoperanden werden durch die Syntax `"constraint" ( operand )` definiert
-	- der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
-	- für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
-	- gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
-	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
-	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
+  - der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
+  - für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
+  - gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
+  - `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
+  - in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
 - die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
 
 ## Binärschnittstelle (Application Binary Interface)
@@ -218,9 +218,9 @@ myFunc:
 push ebp
 ; vorbereitung
 mov ebp, esp ; neuer call frame
-; -- dein code -- 
+; -- dein code --
 ; nachbereitung
-mov     esp, ebp ; 
+mov     esp, ebp ;
 pop     ebp       ; restore old call frame
 ret               ; return
 ```
