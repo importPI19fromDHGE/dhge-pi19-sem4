@@ -15,3 +15,6 @@ exclude_rule 'MD025'
 
 # Extend line length, since each sentence should be on a separate line.
 rule 'MD013', :line_length => 200
+
+# Prefix ordered lists with incremental numbers instead of all ones
+rule 'MD029', :ordered
