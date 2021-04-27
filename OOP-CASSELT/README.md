@@ -198,7 +198,6 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 
 - Wenn eine Klasse erwartet wird, sollte eine Unterklasse davon auch verarbeitet werden können
 - Problemstellung: was darf eine überschreibende Methode ändern, in Bezug auf Rückgabetyp, Typen der formalen Parameter, ggf. auch Typen der Checked Exceptions?
-
 - Invarianz: Datentypen sind in Ober- und Unterklasse gleich
 - Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse (Bsp.: Person schreibt Dokument; Student schreibt Buch)
 - Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse (Bsp.: Person schreibt Buch; Student schreibt Dokument)
@@ -236,8 +235,8 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 
 # Sortieren von Objekten
 
-- 2 Interfaces zur Verfügung gestellt: ``Comparable`` und ``Comparator``
-- ``Comparable`` deklariert die Methode public int ``compareTo(Object o)``, welche zu implementieren ist
+- zwei Interfaces werden zur Verfügung gestellt: ``Comparable`` und ``Comparator``
+- ``Comparable`` deklariert die Methode ``public int compareTo(Object o)``, welche zu implementieren ist
 - Sortieren wird benötigt, wenn ``TreeSet`` verwendet werden soll
 - wenn kein triviales Vergleichen möglich ist, muss eine Klasse geschrieben werden, die ``Comparator`` implementiert
 - Erinnerung stabile Sortierung: bei einem Pasch bleibt die Reihenfolge wie im Original erhalten
