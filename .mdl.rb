@@ -7,5 +7,8 @@ rule 'MD013', :line_length => 99999
 # Allow in-line HTML
 exclude_rule 'MD033'
 
+# Allow any Heading styles
+exclude_rule 'MD003' 
+
 # Nested lists should be indented with four spaces.
 rule 'MD007', :indent => 4
