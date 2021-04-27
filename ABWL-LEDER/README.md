@@ -1,4 +1,4 @@
-<!-- markdownlint-disable -->
+<!--markdownlint-disable-->
 Allgemeine Betriebswirtschaftslehre
 ===================================
 
@@ -57,7 +57,7 @@ Allgemeine Betriebswirtschaftslehre
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
-<!-- markdownlint-enable -->
+<!--markdownlint-enable-->
 
 # Unternehmensführung
 
