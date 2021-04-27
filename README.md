@@ -1,8 +1,8 @@
 # DHGE - Praktische Informatik - Matrikel 19 - Semester 4
 
-Dieses Repository ist ein Projekt von Studierenden des Studiengangs "Praktische Informatik" der Dualen Hochschule Gera-Eisenach. 
-Hier werden alle Mitschriften der einzelnen Modulen gesammelt. 
-Die Skripte liegen im `markdown`-Format vor. 
+Dieses Repository ist ein Projekt von Studierenden des Studiengangs "Praktische Informatik" der Dualen Hochschule Gera-Eisenach.
+Hier werden alle Mitschriften der einzelnen Modulen gesammelt.
+Die Skripte liegen im `markdown`-Format vor.
 Zur besseren Handhabung (und weil Github nur begrenzte `markdown`-Features bereitstellt) werden diese zusätzlich automatisch in [PDFs](https://github.com/importPI19fromDHGE/dhge-pi19-sem4/releases) umgewandelt und zur Verfügung gestellt.
 
 ## Contributing
@@ -51,4 +51,6 @@ Damit eine Kompatibilität zum Github-`markdown` haben wir eigene Erweiterungen 
 
 ### Mathematische Formel
 
-Github unterstützt keine mathematischen Formeln. Als Workaround gibt es eine [Erweiterung für Chrome](https://github.com/orsharir/github-mathjax). Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werden.
+Github unterstützt keine mathematischen Formeln.
+Als Workaround gibt es eine [Erweiterung für Chrome](https://github.com/orsharir/github-mathjax).
+Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werden.
