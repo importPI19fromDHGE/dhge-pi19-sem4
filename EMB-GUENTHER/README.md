@@ -23,6 +23,8 @@ Embedded Systems
     - [Logische Äquivalenz](#logische-%C3%A4quivalenz)
     - [Logische Antivalenz](#logische-antivalenz)
   - [Interrupts](#interrupts)
+  - [Timer (Zähler)](#timer-z%C3%A4hler)
+    - [Timer-Programmierung unter Arduino](#timer-programmierung-unter-arduino)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
