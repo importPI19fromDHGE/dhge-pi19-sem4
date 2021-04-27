@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 Allgemeine Betriebswirtschaftslehre
 ===================================
 
@@ -56,6 +57,7 @@ Allgemeine Betriebswirtschaftslehre
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+<!-- markdownlint-enable -->
 
 # Unternehmensführung
 
@@ -69,9 +71,9 @@ Allgemeine Betriebswirtschaftslehre
 ## Merkmale eines Unternehmens
 
 - komplexes System aus Ressourcen (HR, MR, FR)
-	- HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-	- MR = Maschinen, Gebäude, Material, Lizenzen
-	- FR = Finanzielle Mittel -> Eigen- und Fremdkapital
+  - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
+  - MR = Maschinen, Gebäude, Material, Lizenzen
+  - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
 - weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
