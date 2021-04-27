@@ -148,10 +148,12 @@ $\rightarrow$ Dokumentation wird erzeugt
 - Strukturelle Sicht $\rightarrow$ Physische Sicht
 - Ablaufsicht
 - Logische Sicht ("Nutzer-Sicht")
- 
+
 > Die Sichten generell nicht mischen! Sichten für die jeweiligen Zielgruppen einzeln erstellen. Es gibt jedoch auch Ausnahmen.
 
 ## Kriterien für einen guten Entwurf
+
+<!-- markdownlint-disable list-indent -->
 
 - 1. Verständlichkeit und Präzision
   - dem Leser "muss ein Licht aufgehen"
@@ -186,6 +188,8 @@ $\rightarrow$ Dokumentation wird erzeugt
    - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
    - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
+<!-- markdownlint-enable list-indent -->
+
 ## Software-Architekturen und deren Sichten
 
 **"4+1 Sichten" (Szenarien)**
@@ -203,6 +207,8 @@ $\rightarrow$ Dokumentation wird erzeugt
 
 ### Szenarien
 
+<!-- markdownlint-disable list-indent -->
+
 - Verbindung zwischen Sichten
 - zeigen Laufzeitverhalten
 - keine extra-Sicht ("4+1")
@@ -215,6 +221,8 @@ $\rightarrow$ Dokumentation wird erzeugt
   - 1. Anzahl direkte Szenarien
   - 2. Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
 
+<!-- markdownlint-enable list-indent -->
+
 $\rightarrow$ Abschätzung der Effizienz
 
 ### Architektur-Muster für strukturelle Sicht
@@ -225,7 +233,7 @@ $\rightarrow$ Abschätzung der Effizienz
 - Komponentendiagramm (im UML)
 
 > An dieser Stelle kam eine Erklärung, wie ein Komponentendiagramm aussieht.
-> Hier eine externe Übersicht: [Klick](https://www.uml-diagrams.org/component-diagrams.html) 
+> Hier eine externe Übersicht: [Klick](https://www.uml-diagrams.org/component-diagrams.html)
 > Hier sind die Pfeile und Symbole nochmal besser erklärt: [Klick](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/)
 
 - **Kette**
