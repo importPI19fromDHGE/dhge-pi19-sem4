@@ -184,10 +184,10 @@ $\rightarrow$ Dokumentation wird erzeugt
   - Performance kann jedoch darunter leiden
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
 - (6.) Wiederverwendbarkeit
-   - Maß für Ausnutzung von Gemeinsamkeiten
-   - Verringerung der Redundanz
-   - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
-   - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
+  - Maß für Ausnutzung von Gemeinsamkeiten
+  - Verringerung der Redundanz
+  - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
+  - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
 <!-- markdownlint-enable list-indent -->
 
@@ -219,8 +219,8 @@ $\rightarrow$ Dokumentation wird erzeugt
   - **direkte** Szenarien: auf der Architektur gut realisierbar
   - **indirekte** Szenarien: erst nach Erweiterung realisierbar
 - Bewertung mittels:
-  - 1. Anzahl direkte Szenarien
-  - 2. Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
+  - (1.) Anzahl direkte Szenarien
+  - (2.) Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
 
 <!-- markdownlint-enable list-indent -->
 
