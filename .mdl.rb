@@ -14,5 +14,4 @@ exclude_rule 'MD036'
 exclude_rule 'MD025'
 
 # Extend line length, since each sentence should be on a separate line.
-rule 'Mexclude_rule 'MD036'
-D013', :line_length => 200
+rule 'MD013', :line_length => 200
