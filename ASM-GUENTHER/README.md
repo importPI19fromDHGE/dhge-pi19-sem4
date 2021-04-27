@@ -189,7 +189,8 @@ asm("mov rax, %1;"
   - gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
   - `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
   - in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
-- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
+- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden
+  - wird definiert, damit `GCC` nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
 
 ## Binärschnittstelle (Application Binary Interface)
 
@@ -227,4 +228,5 @@ ret               ; return
 
 # Mögliche Prüfungsaufgaben
 
-- wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
+- Wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. 
+  - Zu einer gegebenen Anzahl zu verwendender Kerne soll der Gesamtzeitaufwand bestimmt werden
