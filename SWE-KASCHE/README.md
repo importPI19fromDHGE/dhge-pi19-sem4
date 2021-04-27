@@ -110,6 +110,7 @@ Qualitäts-Verbesserung durch:
 Entwickeln Sie eine Software-Architektur!
 
 **A**
+
 - Service-Techniker : mobiles Gerät oder Web-Aufruf
 - Auftragsschein ausfüllen $\rightarrow$  unterschreiben
 - Ziel: DB Ablage
@@ -155,10 +156,10 @@ $\rightarrow$ Dokumentation wird erzeugt
 
 <!-- markdownlint-disable list-indent -->
 
-- 1. Verständlichkeit und Präzision
+- (1.) Verständlichkeit und Präzision
   - dem Leser "muss ein Licht aufgehen"
   - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
-- 2. Anpassbarkeit/Erweiterbarkeit
+- (2.) Anpassbarkeit/Erweiterbarkeit
   - Trennung in Module
   - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
 - 3. Korrektheit
