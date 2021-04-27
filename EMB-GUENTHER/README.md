@@ -206,7 +206,8 @@ void input_button(){
 $$\text{OCRn} = [\frac{\text{clockspeed}}{\text{prescaler}}*\text{gewünschte Zeit(s)}]-1$$
 
 > Welcher Wert sollte nach 1ms bei 16 MHz und ein Prescaler von 64 im 8bit-Zähler stehen?
-> $$\text{OCRn} = [\frac{16\text{MHz}}{64}*1*10^{-3}s]-1=\underline{\underline{249}}$$
+
+$$\text{OCRn} = [\frac{16\text{MHz}}{64}*1*10^{-3}s]-1=\underline{\underline{249}}$$
 
 <!--"schöne Prüfungsfrage": angenommen Timer x ist schon belegt, kann das mit Timer a oder b realisiert werden? -> 8 bzw. 16bit, Prescaler ändern -->
 
