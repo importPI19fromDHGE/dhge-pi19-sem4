@@ -6,3 +6,6 @@ exclude_rule 'MD003'
 
 # First line of the file is not required to be the top-level heading
 exclude_rule 'MD041'
+
+# Extend line length, since each sentence should be on a separate line.
+rule 'MD013', :line_length => 120
