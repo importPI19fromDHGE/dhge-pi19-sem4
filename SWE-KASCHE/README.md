@@ -162,28 +162,28 @@ $\rightarrow$ Dokumentation wird erzeugt
 - (2.) Anpassbarkeit/Erweiterbarkeit
   - Trennung in Module
   - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
-- 3. Korrektheit
+- (3.) Korrektheit
   - Sind die Anforderungen erfüllt?
   - Existieren alle Funktionen des System-Modells?
   - Checkliste, ...
-- 4. hohe Kohäsion
+- (4.) hohe Kohäsion
   - Maß für Zusammengehörigkeit
   - Früher: ähnliche Funktionen zusammenfassen
   - Heute: Objekt-Orientierung
     - Paketbildung
     - geeignete Muster (später)
     - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
-- 5. Schwache Kopplung
+- (5.) Schwache Kopplung
   - Maß für die Abhängigkeit zwischen Komponenten
   - Arten der Kopplungen:
-    1. Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
-    2. Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
-    3. Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
+    - (1.) Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
+    - (2.) Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
+    - (3.) Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
   - $\rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
   - Änderungen wirken nur lokal
   - Performance kann jedoch darunter leiden
   - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
-- 6. Wiederverwendbarkeit
+- (6.) Wiederverwendbarkeit
    - Maß für Ausnutzung von Gemeinsamkeiten
    - Verringerung der Redundanz
    - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
@@ -238,13 +238,13 @@ $\rightarrow$ Abschätzung der Effizienz
 > Hier sind die Pfeile und Symbole nochmal besser erklärt: [Klick](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/)
 
 - **Kette**
-  - 1. Abfolge von Transformationen von Eingabedaten
-  - 2. Pipes, Filter
+  - (1.) Abfolge von Transformationen von Eingabedaten
+  - (2.) Pipes, Filter
     - Daten werden nicht im Block transformiert, sondern inkrementell
-    - $\Rightarrow$ Pipes sind zustandslos
+    - $\rightarrow$ Pipes sind zustandslos
     - Filter arbeiten nach Pull-Prinzip
     - Unterschied mit @UML nicht darstellbar
-  - 3. gut wiederverwendbar
+  - (3.) gut wiederverwendbar
 - **Repository**
 - **Schichten**
 - **Interpreter**
