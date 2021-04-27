@@ -72,6 +72,21 @@ Kryptographie und Softwaresicherheit
 - [Sichere Programmierung](#sichere-programmierung)
   - [Angriffe/Motive](#angriffemotive)
   - [Allgemeines](#allgemeines)
+  - [Triviale ID-Vergabe](#triviale-id-vergabe)
+  - [Exzessive Rechte](#exzessive-rechte)
+  - [File-Tricks](#file-tricks)
+  - [Krypto-Sünden (Ergänzung)](#krypto-s%C3%BCnden-erg%C3%A4nzung)
+  - [Gegenmaßnahmen](#gegenma%C3%9Fnahmen)
+  - [Fehlende Input-Filterung](#fehlende-input-filterung)
+    - [SQL-Injection](#sql-injection)
+    - [XPath-Injection](#xpath-injection)
+    - [LDAP-Injection](#ldap-injection)
+    - [Command-Injection](#command-injection)
+    - [Cross Site Scripting (XSS)](#cross-site-scripting-xss)
+    - [Directory Traversal](#directory-traversal)
+    - [Regular Expressions](#regular-expressions)
+    - [XML](#xml)
+    - [Allgemeine Behebung](#allgemeine-behebung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -809,3 +824,120 @@ Es gibt verschiedene Arten der Disk Encryption:
 - Sicherheitslücke = fehlender Code (Input-Prüfungen, Returncode-Prüfungen,...)
 - oft auch Verwendung unsicherer Konstrukte
 - **"Schlamperei und fehlendes Wissen"**
+- jeder kann jeden Code untersuchen:
+  - Reverse Engineering (Disassemblierung)
+  - gezielte Tests mit konstruiertem Input (z.B. mit automatisierter "Fuzzer"-Software)
+- nachträgliche Reparatur teurer als "gleich richtig machen" (finanziell, vom Ruf her,...)
+  - "Rule of Ten": Die Fehlerkosten eines nicht entdeckten Fehlers erhöhen sich von Stufe zu Stufe der Wertschöpfung/Entwicklung um den Faktor 10
+
+## Triviale ID-Vergabe
+
+- fortlaufende oder vorhersagbare Vergabe von Session-IDs, Cookies, URLs für Dokumente
+  - Lösung: verstreute IDs, benachbarte Werte dürfen nicht gültig sein; lange "Totzeit"; Prüfen, ob URL zu Session gehört
+  - Lösung: "Einmal-IDs": selber Request mit selber Session wird nur einmal akzeptiert (Schutz gegen Replay-Attacken)
+- Client-seitige Prüfungen
+  - Client könnte manipuliert sein; MITM-Attacken
+  - **Daten vom Client sind nie vertrauenswürdig** \rightarrow\rightarrow alle sicherheitsrelevanten Prüfungen müssen am Server stattfinden
+
+## Exzessive Rechte
+
+- Rechte aller angelegten Dateien, DBs, IPCs,... sind explizit so restriktiv wie möglich anzulegen
+- Server-Code aufspalten:
+  - Variante 1: alle Operationen beim Start mit erhöhten Rechten ausführen, dann erhöhte Rechte abgeben (eigene Server-UID)
+  - Variante 2: getrennte Prozesse; einer mit erhöhten Rechten (so wenig Code wie möglich) und einer mit normalen Rechten (Großteil des Codes)
+- temporäre Dateien in einem Unterverzeichnis anlegen, wo Rechte kontrolliert werden
+
+## File-Tricks
+
+- Szenario: Server will temp. File anlegen, Angreifer legt Link der Zieldatei auf `/etc/passwd` \rightarrow\rightarrow Server überschreibt diese Datei
+- Ursachen:
+  - Anlegen in *öffentlichen* Ordnern wie ``/tmp``
+  - Anlegen von Dateien mit fixen / erratbaren Namen
+  - Anlegen ohne atomare Existenzprüfung
+
+## Krypto-Sünden (Ergänzung)
+
+- Nutzung von Pseudo-Zufall
+- "inoffizielle" Zertifikate, die den Nutzer zum Akzeptieren einer Ausnahme zwingen
+- automatische Updates ohne Absicherung der Verbindung und des Inhaltes
+
+## Gegenmaßnahmen
+
+- Schulungen für Programmierer, Tester, Nutzer
+- Programmier-Richtlinien
+- Nutzung sicherer Programmier-Standards
+- Tools für Sicherheits-QA
+- Code Reviews und Bug Bounties
+- externe Audits, Penetration-Tests
+
+## Fehlende Input-Filterung
+
+- Was filtert man? z.B. SQL-Injections, JavaScript, HTML, alle Shell-Aufrufe (Klassiker: Mailadressen), ...
+- Grundproblem: Eingaben (Web, CLI, Formulare, ...) werden nicht gefiltert; durch Terminalsymbole kann unerwarteter Effekt ausgelöst werden
+- Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`), Regular Expressions (nutzen JIT-Compiler; erlauben Rekursion)
+
+### SQL-Injection
+
+- Input wird als String in SQL-Befehl eingebaut
+- Problem: String-Ende-Symbol wird nicht gefiltert
+- Effekt: alles nach String-Ende-Symbol wird als separates Statement ausgeführt
+
+### XPath-Injection
+
+- ähnlich zu SQL-Injections
+- XPath ist Abfragesprache für XML
+- Problem: Einbau von Terminalsymbolen in Nutzereingaben
+
+### LDAP-Injection
+
+- ähnlich zu SQL-Injections
+
+### Command-Injection
+
+- Input wird als Parameter in Shell-Befehl verwendet
+- Problem 1: Directory Traversal
+- Problem 2: Command-Trenzeichen nicht gefiltert; Rest wird als eigener Shell-Befehl ausgeführt
+- Problem 3: Pipes nicht gefiltert `<` `>`: Auslesen oder Überschreiben beliebiger Dateien
+- Problem 4: die zukünftigen Features einer Shell sind fast unüberschaubar \rightarrow\rightarrow Filterung könnte zukünftig nicht mehr reichen
+
+### Cross Site Scripting (XSS)
+
+- Problem 1: JavaScript läuft auf allen Clients
+- Problem 2: HTML lädt Bilder nach, verlinkt dynamische Inhalte, ...
+  - Werbung, Klick-Betrug, ...
+- Problem 3: Schadware auf Clients
+
+**Cross-Site Request Forgery**:
+
+- mittels XSS eingefügter HTML-Schadcode enthält Requests an Zielserver, der anmeldepflichtige Dienste anbietet
+- Wenn Opfer noch angemeldet, werden automatisch (siehe Session Cookie) korrekte Anmeldedaten übermittelt
+- Anfragen werden akzeptiert und sind nicht von legitimen Requests zu unterscheiden
+
+### Directory Traversal
+
+- Input wird als Filename oder URL verwendet
+- Fall 1: sollten gar keinen Directory-Teil enthalten
+  - Problem: `/` und `\` nicht gefiltert
+- Fall 2: Pfad sollte nur relativen Pfad unterhalb enthalten
+  - Probleme: `../`; `C:\`; `//...` (Windows Server)
+
+### Regular Expressions
+
+- RegEx wird innerhalb eines Textes eingebaut
+- kann Denial of Service verursachen
+- Filter regelt nicht mehr wie geplant (filtert mehr oder weniger als erwartet)
+- `.` passt für jedes Zeichen außer `\n`
+
+### XML
+
+- erlaubt Inkludieren von beliebigen anderen Dateien, auch Remote
+- schlimmstenfalls: Anzeigen der Datei
+
+### Allgemeine Behebung
+
+- Dank Unicode ist Sperrliste von Zeichen unzuverlässig
+- Whitelist hat ähnliches Problem: alle "harmlosen" Zeichen erfassen ist unpraktisch, nicht zukunftssicher
+  - dennoch in vielen Fällen am Besten
+- **nach** Hex-Dekodierung filtern
+- Nutzung von Zeichenklassen-Prüffunktionen (`isalpha`, `isdigit`, ...)
+- evtl. kein Unicode erlauben (abh. vom Backend)
