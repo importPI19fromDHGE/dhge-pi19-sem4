@@ -82,7 +82,6 @@ Elektromotor, der zusätzlich mit einem Sensor zur Positionsbestimmung ausgestat
 - Schnelles Ein- und Ausschalten der Spannung (=Rechteckpuls)\rightarrow\rightarrow Verhältnis zwischen Ein- und Ausschaltzeit wird variiert
 - Verwendung: z.B. Dimmen von LEDs, Ansteuerung von Servos
 
-
 ## Digitale Schaltnetze
 
 ### Logisches UND
@@ -157,7 +156,9 @@ Elektromotor, der zusätzlich mit einem Sensor zur Positionsbestimmung ausgestat
 
 **Achtung**
 
-> Innerhalb der vom Interrupt ausgelösten Funktion wird delay() nicht funktionieren und millis() nicht hochzählen. Empfangene Serielle Daten in der Funktion können verloren gehen. Variablen, die innerhalb der Funktion verarbeitet werden, sollten als volatile gekennzeichnet werden.
+> Innerhalb der vom Interrupt ausgelösten Funktion wird delay() nicht funktionieren und millis() nicht hochzählen. 
+> Empfangene Serielle Daten in der Funktion können verloren gehen. 
+> Variablen, die innerhalb der Funktion verarbeitet werden, sollten als volatile gekennzeichnet werden.
 > *Quelle: [Arduino Dokumentation](https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/)*
 
 **Anwendungsbeispiel**
