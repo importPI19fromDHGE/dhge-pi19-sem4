@@ -10,5 +10,9 @@ exclude_rule 'MD041'
 # Allow the use of emphasis for small-headers
 exclude_rule 'MD036'
 
+# Allow multiple top-level headers per file
+exclude_rule 'MD025'
+
 # Extend line length, since each sentence should be on a separate line.
-rule 'MD013', :line_length => 200
+rule 'Mexclude_rule 'MD036'
+D013', :line_length => 200
