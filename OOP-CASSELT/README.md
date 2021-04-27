@@ -5,14 +5,13 @@ Objektorientierte Programmierung mit Java
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Objektorientierte Programmierung mit Java](#objektorientierte-programmierung-mit-java)
 - [Einleitung](#einleitung)
   - [Java-Sprachelemente](#java-sprachelemente)
   - [Methoden](#methoden)
   - [Strings](#strings)
 - [Basiskonzepte der OOP & Java](#basiskonzepte-der-oop--java)
   - [Packages](#packages)
-  - [Überladen](#überladen)
+  - [Überladen](#%C3%BCberladen)
   - [Konstruktoren](#konstruktoren)
   - [statische Member und Methoden](#statische-member-und-methoden)
   - [innere Klassen](#innere-klassen)
@@ -22,7 +21,7 @@ Objektorientierte Programmierung mit Java
 - [Interfaces](#interfaces)
   - [Vererbung vs. abstrakte Klassen vs. Interfaces](#vererbung-vs-abstrakte-klassen-vs-interfaces)
 - [Lose Kopplung](#lose-kopplung)
-- [Ausgewählte Probleme und Aspekte der OOP mit Java](#ausgewählte-probleme-und-aspekte-der-oop-mit-java)
+- [Ausgewählte Probleme und Aspekte der OOP mit Java](#ausgew%C3%A4hlte-probleme-und-aspekte-der-oop-mit-java)
   - [Liskov und Varianzen](#liskov-und-varianzen)
   - [Vererbung und private Member](#vererbung-und-private-member)
   - [Vererbung und die Klasse Object](#vererbung-und-die-klasse-object)
