@@ -225,8 +225,6 @@ mov     esp, ebp ;
 pop     ebp       ; restore old call frame
 ret               ; return
 ```
-
-
 **Kompilieren und Linken einer C- und Assembler Datei**
 ```sh
 as --32 popcnt.s -o popcnt.o
