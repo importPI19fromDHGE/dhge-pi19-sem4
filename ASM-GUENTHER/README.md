@@ -206,7 +206,7 @@ asm("mov rax, %1;"
         $(ASSEMBLER) $(ASM-PARAMETER) $< -o $@
 ```
 
-- gemäß C Calling Convention muss ein Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
+- gemäß C Calling Convention muss ein 32-Bit (!!) Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
 
 ```asm
 global myFunc
@@ -218,7 +218,8 @@ myFunc:
 push ebp
 ; vorbereitung
 mov ebp, esp ; neuer call frame
-; -- dein code -- 
+; -- dein code --
+mov eax, [ebp+8] ; erster Parameter in Ausgaberegister eax (eax ist immer Ausgaberegister!)
 ; nachbereitung
 mov     esp, ebp ; 
 pop     ebp       ; restore old call frame
