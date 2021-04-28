@@ -227,7 +227,7 @@ ret               ; return
 ```
 
 
-**Compilation und Linking einer C und Assembler Datei**
+**Kompilieren und Linken einer C- und Assembler Datei**
 ```sh
 as --32 popcnt.s -o popcnt.o
 gcc -c --std=gnu99 -m32 main.c -o main.o
