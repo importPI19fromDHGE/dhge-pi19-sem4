@@ -225,6 +225,15 @@ pop     ebp       ; restore old call frame
 ret               ; return
 ```
 
+
+**Compilation und Linking einer C und Assembler Datei**
+```sh
+as --32 popcnt.s -o popcnt.o
+gcc -c --std=gnu99 -m32 main.c -o main.o
+gcc -m32 popcnt.o main.o -o main
+./main
+```
+
 # Mögliche Prüfungsaufgaben
 
 - wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
