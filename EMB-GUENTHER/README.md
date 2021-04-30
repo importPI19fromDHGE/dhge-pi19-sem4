@@ -199,7 +199,7 @@ void input_button(){
   - 8bit-Timer $\rightarrow$ $256 * 62,5ns = 16 µs$
   - 16bit-Timer $\rightarrow$ $65536 * 62,5ns = 4,096 ms$
   - $\rightarrow$ mit dem `Prescaler` kann die Schrittweite eingestellt werden (0, 1, 8, 64, 256, 1024)
-  - $\rightarrow$ mit Prescaler max. 0,016s bzw. 4,19s 
+  - $\rightarrow$ mit Prescaler max. 0,016s bzw. 4,19s
 - je nach Konfiguration kann der Zähler der Interrupt ausgelöst werden (= interne Interrupt-Quelle)
   - laufen unabhängig vom normalen Programmablauf
   - Definition durch Interrupt-Maske
@@ -222,7 +222,7 @@ void setup(){
   TCCR0B|=(0x1<<CS01); //Prescale auf 64 setzen
   TCCR0B|=(0x1<<CS00); //^^
 
-  TIMSK0|=(0x1<<OCIE0A); //internen Interrupt aktivieren 
+  TIMSK0|=(0x1<<OCIE0A); //internen Interrupt aktivieren
   sei(); //^^
 }
 ISR(TIMER0_COMPA_vect){
