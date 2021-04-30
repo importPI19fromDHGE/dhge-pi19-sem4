@@ -141,7 +141,6 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
   - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet 
     - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung
 
-
 <!--ToDo: Hier fehlen ein paar Inhalte-->
 
 # Sicherung von Konsistenz und Integrität
@@ -204,7 +203,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
   - bei lesendem Zugriff: Sperrung nur für schreibende Transaktionen
 - mögliche Reaktionen auf Sperrungen: als fehlerhaft abbrechen, auf das Aufheben der Sperre warten oder Sperre ignorieren
   - Verhalten der Transaktion wird mit der jeweiligen Isolationsebene festgelegt
-- eine Menge konkurrierender Transaktionen gilt als synchronisiert, wenn das Ergebnis der parallelen Abarbeitung dem der sequenziellen entspricht 
+- eine Menge konkurrierender Transaktionen gilt als synchronisiert, wenn das Ergebnis der parallelen Abarbeitung dem der sequenziellen entspricht
 
 ### Dauerhaftigkeit
 
