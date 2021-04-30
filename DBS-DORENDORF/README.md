@@ -13,6 +13,16 @@ Datenbankentwurf
   - [Entity-Relationship-Modell](#entity-relationship-modell)
     - [Komponenten von ERDs](#komponenten-von-erds)
     - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
+- [Sicherung von Konsistenz und Integrität](#sicherung-von-konsistenz-und-integrit%C3%A4t)
+  - [Integritätsbedingungen](#integrit%C3%A4tsbedingungen)
+  - [Transaktionen](#transaktionen)
+    - [Atomarität](#atomarit%C3%A4t)
+      - [Transaktionstypen](#transaktionstypen)
+    - [Isolation/Abkapselung](#isolationabkapselung)
+    - [Dauerhaftigkeit](#dauerhaftigkeit)
+  - [Recovery-Verfahren](#recovery-verfahren)
+    - [Aufbau eines Log-Eintrages](#aufbau-eines-log-eintrages)
+    - [Typen von Log-Einträgen](#typen-von-log-eintr%C3%A4gen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
