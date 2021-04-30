@@ -130,3 +130,106 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
     - Attribute der Beziehung werden in die Objektklasse mit dem Fremdschlüssel aufgenommen
   - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet 
     - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung
+
+
+<!--ToDo: Hier fehlen ein paar Inhalte-->
+
+# Sicherung von Konsistenz und Integrität
+
+- **Konsistenz:** Zusammenhang, Beständigkeit $\rightarrow$ widerspruchsfreier Zustand der Datenbank
+- **Integrität:** Makellosigkeit, Unbestechlichkeit $\rightarrow$ Wahrung der Konsistenz durch Bedingungen
+
+## Integritätsbedingungen
+
+- Definition von Voraussetzungen, die es dem DBMS ermöglichen bestimmte Fehler zu erkennen
+- sind in der Regel teil des jeweiligen Datenbankschemas
+- z.B.: Gehalt > 0, Gehälter der Mitarbeiter < Vorgesetzter, ...
+- können konsistenten Zustand oder Übergangsbedingungen beschreiben (z.B. Gehalt darf nur erhöht werden)
+
+**Überlegungen zu Integritätsbedingungen:**
+
+1. Wie werden Integritätsbedingungen formuliert? einfache Bedingungen bei Anlegen des Schemas (`NOT NULL`), komplexere bei der Anwendungsentwicklung
+2. Wann werden die Bedingungen geprüft? z.B. bei `UPDATE`-Operationen
+3. Wie soll bei Verletzung der Bedingungen reagiert werden? z.B. Ausführung der Operation ablehnen oder selbständige Korrektur durchführen
+
+## Transaktionen
+
+- Ziel: Auswirkungen von intern verursachten Fehlern begrenzen
+- eine Transaktion überführt eine Datenbank immer von einem konsistenten Zustand in einen anderen
+  - z.B. Banküberweisung besteht aus zwei Teilen: Belastung, Gutschrift $\rightarrow$ es muss sichergestellt werden, dass immer beide durchgeführt werden
+- Transaktionen im Sinne von Datenbank-Technologien muss die ACID-Eigenschaften erfüllen
+  - **A**tomarität, **K**onsistenz, **I**solation, **D**auerhaftigkeit
+- zur Verwaltung von Transaktionen führen DBMS interne Transaktionstabellen
+
+### Atomarität
+
+- eine Transaktion ist immer atomar (unteilbar)
+- innerhalb einer Transaktion werden einzelne Datenbankanweisungen sequenziell ausgeführt
+- kann eine Datenbankanweisung nicht erfolgreich durchgeführt werden, müssen alle vorherigen Änderungen der Transaktion rückgängig gemacht werden (Rollback)
+- nach einer Transaktion befindet sich die Datenbank wieder in einem konsistenten Zustand
+  - Rückgängigmachen unter Verwendung des Transaktionsprotokolls
+
+#### Transaktionstypen
+
+- **Autocommit:** jede einzelne Anweisung ist eine Transaktion
+- **Implizite Transaktionen:** wird implizit gestartet, sobald die vorhergehende Transaktion abgeschlossen ist. Jede Transaktion muss explizit mit `COMMIT` oder `ROLLBACK` beendet werden
+- **Explizite Transaktionen:** jede Transaktion beginnt explizit mit ``BEGIN TRANSACTION` und wird explizit mit `COMMIT` oder `ROLLBACK` beendet
+
+### Isolation/Abkapselung
+
+- alle Änderung, die eine Transaktion bewirkt sollen erst nach Beendigung für andere Transaktionen sichtbar werden
+- verhindert, dass gleichzeitig ausgeführte konkurrierende Transaktionen sich gegenseitig beeinflussen
+- Umsetzung durch Sperrprotokolle oder Zeitstempelverfahren
+- inkonsistente Datenbankzustände werden nicht sichtbar
+
+| Fehlersitutation                  | mögliche Folge                  |
+|-----------------------------------|---------------------------------|
+| beide greifen nur lesend zu       | keine                           |
+| einer lesend und einer schreibend | falsche Ergebnisse (dirty read) |
+| beide schreibden                  | inkonsistenter Zustand möglich  |
+
+- Zugriffe auf eine Datenbank müssen synchronisiert werden $\rightarrow$ z.B. durch Sperren von Teilen der Datenbank, auf die eine Transaktion zugreift
+- Unterscheidung zwischen Sperren für lesenden oder schreibenden Zugriff
+  - bei schreibendem Zugriff: sperren für *alle* anderen Transaktionen (exklusive Sperre)
+  - bei lesendem Zugriff: Sperrung nur für schreibende Transaktionen
+- mögliche Reaktionen auf Sperrungen: als fehlerhaft abbrechen, auf das Aufheben der Sperre warten oder Sperre ignorieren
+  - Verhalten der Transaktion wird mit der jeweiligen Isolationsebene festgelegt
+- eine Menge konkurrierender Transaktionen gilt als synchronisiert, wenn das Ergebnis der parallelen Abarbeitung dem der sequenziellen entspricht 
+
+### Dauerhaftigkeit
+
+- das Ergebnis einer abgeschlossenen Transaktion gilt als dauerhaft wenn es in der Datenbank erhalten bleibt
+- besonders bedeutend nach Systemfehlern
+- Verbesserung der Systemleistung durch Datenbankpuffer $\rightarrow$ Pufferveraltung stellt Daten möglichst effizient zur Verfügung (asynchrone Schreiboperationen auf Datenträger)
+  - geänderter Block wird nicht sofort auf den Datenträger geschrieben, verbleibt zunächst im Puffer
+  - *Page Cleaner List* dokumentiert beim Schreiben geänderte Blöcke
+  - bei Verlust des Pufferinhaltes oder der *Page Cleaner List* (z.B. Stromausfall) können trotz abgeschlossenen Transaktionen Änderungen verloren gehen $\rightarrow$ evtl. inkonsistenter Zustand
+  - Überführung in konsistenten Zustand nach Fehlerfall = Recovery/Widerherstellung
+    - Vorwärts-Recovery (*rollforward*): relativ zum Ausgangspunkt des Recoverys in neuen konsistenten Zustand überführen
+    - Rückwärts-Recovery (*rollback*): Datenbank wird in einen alten konsistenten Zustand versetzt
+
+## Recovery-Verfahren
+
+- Grundvoraussetzung: Aufzeichnungen über Datenbankinhalte (*physisches Logging*) und den an den Daten vorgenommenen Änderungen (*logisches Logging*) $\rightarrow$ Datenbankprotokoll
+- temporäre Protokolle: Sicherung einzelner Arbeitsschritte und Datenbankzustände (meist nur bis zum fehlerfreien Abschluss einer Transaktion; logisch oder physisch)
+- dauerhafte Protokolle: Protokollierung über längeren Zeitraum in Log-Dateien (Sicherung zusammen mit Backup der Datenbankinhalte)
+  - Gesamtsicherung und Logs ermöglichen Wiederherstellung nach schwerwiegenden Fehlern:
+    - Backup der Datenbankinhalte wird zunächst eingespielt (älterer Datenstand) $\rightarrow$ erneute Durchführung der in den Logs aufgezeichneten Operationen (*rollforward*)
+
+### Aufbau eines Log-Eintrages
+
+- Bestandteile fester Länge: *Log Sequence Number*, Transaktionsnummer, Typ des Log-Eintrages, Nummer des geänderten Blocks, Identifikation des betroffenen Datensatzes
+- Bestandteile variabler Länge:  Informationen über alten (*Undo Image*) und neuen Inhalt (*Redo Image*) des Teils der Datenbank auf den sich der Eintrag bezieht
+- ob Undo- oder Redo-Image protokolliert werden muss, hängt von der Änderungsoperation ab
+  - `INSERT`: Redo-Image
+  - `UPDATE`: Undo- und Redo-Image
+  - `DELETE`: Undo-Image
+
+### Typen von Log-Einträgen
+
+- Transaktionsbeginn, erfolgreiches Beenden einer Transaktion, Abbruch einer Transaktion und Rücksetzen
+  - Zuordnung von Log-Sätze zu einzelnen Verarbeitungseinheiten
+- Log-Sätze zur Protokollierung von Änderungen
+  - beschreiben die Erstellung bzw. Verarbeitung der Datenbankinhalten
+- Log-Sätze zur Beschreibung von Sicherungspunkten (Checkpoints)
+  - Aufsetzpunkt für Wiederherstellungsoperationen
