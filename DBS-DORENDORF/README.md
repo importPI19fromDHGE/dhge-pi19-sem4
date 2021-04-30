@@ -196,7 +196,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 |-----------------------------------|---------------------------------|
 | beide greifen nur lesend zu       | keine                           |
 | einer lesend und einer schreibend | falsche Ergebnisse (dirty read) |
-| beide schreibden                  | inkonsistenter Zustand möglich  |
+| beide schreibend                  | inkonsistenter Zustand möglich  |
 
 - Zugriffe auf eine Datenbank müssen synchronisiert werden $\rightarrow$ z.B. durch Sperren von Teilen der Datenbank, auf die eine Transaktion zugreift
 - Unterscheidung zwischen Sperren für lesenden oder schreibenden Zugriff
