@@ -214,7 +214,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
   - geänderter Block wird nicht sofort auf den Datenträger geschrieben, verbleibt zunächst im Puffer
   - *Page Cleaner List* dokumentiert beim Schreiben geänderte Blöcke
   - bei Verlust des Pufferinhaltes oder der *Page Cleaner List* (z.B. Stromausfall) können trotz abgeschlossenen Transaktionen Änderungen verloren gehen $\rightarrow$ evtl. inkonsistenter Zustand
-  - Überführung in konsistenten Zustand nach Fehlerfall = Recovery/Widerherstellung
+  - Überführung in konsistenten Zustand nach Fehlerfall = Recovery/Wiederherstellung
     - Vorwärts-Recovery (*rollforward*): relativ zum Ausgangspunkt des Recoverys in neuen konsistenten Zustand überführen
     - Rückwärts-Recovery (*rollback*): Datenbank wird in einen alten konsistenten Zustand versetzt
 
