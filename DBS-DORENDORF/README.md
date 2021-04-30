@@ -44,7 +44,7 @@ Folgende Anforderungen sollten daher im Entwurfsprozess berücksichtigt werden:
 - Die Nutzung einer Datenbank und die Aktualisierung des Datenbankschemas beschreibt den **Datenbanklebenszyklus**
 - Performance-Aspekte spielen untergeordnete Rolle
 - Wahrung der logischen Konsistenz der Datenbank hat hohe Bedeutung
-- Schemaevolution = Änderungen der logischen Datenorganisation 
+- Schemaevolution = Änderungen der logischen Datenorganisation
 - Tuning-Maßnahmen = Leistungsverhalten des DBMS verbessern (Anpassung Systemparameter $\rightarrow$ Puffer, gezielte Denormalisierung der Datenbankschemata)
 
 **Datenbankreorganisation** = Maßnahmen, die ...
@@ -128,5 +128,5 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
   - Objektklassen mit $1:1$-Beziehungen können normalerweise ohne Informationsverluste zu einer Objektklasse zusammengefasst werden (Datenschutz/-verteilung!)
   - bei Objektklassen mit $1:n$-Beziehungen wird der Objektklasse, die mehrfach mit einem Objekt der anderen in Beziehung stehen kann, ein Fremdschlüssel als Attribut hinzugefügt
     - Attribute der Beziehung werden in die Objektklasse mit dem Fremdschlüssel aufgenommen
-  - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet 
+  - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet
     - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung

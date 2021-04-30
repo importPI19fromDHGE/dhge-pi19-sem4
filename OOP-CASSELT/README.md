@@ -55,7 +55,8 @@ Objektorientierte Programmierung mit Java
 - Im Gegensatz zu C / C++ dürfen in Java Methoden und Membervariablen durcheinander geschrieben werden, ohne Abhängigkeiten zu berücksichtigen. Der Compiler wird diese automatisch sortieren
 - Es gibt die Zugriffsmodifier ``private``, ``protected`` und ``public``, wobei **``protected``** der **Standard** ist
 - alle primitiven Datentypen existieren auch in Wrapperklassen objektorientiert
-- Für zwei Referenzvariablen ``a1`` und ``a2`` kann ausgeführt werden: ``a2 = a1``, wobei die Referenz geändert wird, das Objekt wird nicht kopiert. Entsprechend verweisen beide Variablen auf dasselbe Objekt
+- Für zwei Referenzvariablen ``a1`` und ``a2`` kann ausgeführt werden: ``a2 = a1``, wobei die Referenz geändert wird, das Objekt wird nicht kopiert
+  - $\rightarrow$ entsprechend verweisen beide Variablen auf dasselbe Objekt
 
 ## Methoden
 
@@ -70,13 +71,10 @@ returntyp methodenName(parameterliste) {
 
 ## Strings
 
-- Gleichheit von Strings: Wir betrachten folgenden Code:
-
-``String s1 = "abc", s2 = "abc", s3 = new String("abc");``
-
-  - Java speichert Stringliterale in einem Pool, weshalb ``s1`` und ``s2`` auf dieselbe Adresse verweisen
-  - ``s1 == s2`` ergibt ``true``, aber ``s1 == s3`` ``false``
-  - **Daher immer ``s1.equals()`` verwenden!**
+- Gleichheit von Strings: Wir betrachten folgenden Code: ``String s1 = "abc", s2 = "abc", s3 = new String("abc");``
+- Java speichert Stringliterale in einem Pool, weshalb ``s1`` und ``s2`` auf dieselbe Adresse verweisen
+- ``s1 == s2`` ergibt ``true``, aber ``s1 == s3`` ``false``
+- **Daher immer ``s1.equals()`` verwenden!**
 
 # Basiskonzepte der OOP & Java
 
@@ -199,8 +197,10 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 - Wenn eine Klasse erwartet wird, sollte eine Unterklasse davon auch verarbeitet werden können
 - Problemstellung: was darf eine überschreibende Methode ändern, in Bezug auf Rückgabetyp, Typen der formalen Parameter, ggf. auch Typen der Checked Exceptions?
 - Invarianz: Datentypen sind in Ober- und Unterklasse gleich
-- Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse (Bsp.: Person schreibt Dokument; Student schreibt Buch)
-- Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse (Bsp.: Person schreibt Buch; Student schreibt Dokument)
+- Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse
+  - Bsp.: Person schreibt Dokument; Student schreibt Buch
+- Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse
+  - Bsp.: Person schreibt Buch; Student schreibt Dokument
 
 | Varianz       | Eingabeparameter | Rückgabeparameter |
 |:-------------:|:-----------------|:-----------------:|
