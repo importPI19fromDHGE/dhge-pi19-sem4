@@ -197,9 +197,9 @@ if (m instanceof Arbeiter) System.out.println("\t" + ((Arbeiter)m).getLohnsteuer
 - Wenn eine Klasse erwartet wird, sollte eine Unterklasse davon auch verarbeitet werden können
 - Problemstellung: was darf eine überschreibende Methode ändern, in Bezug auf Rückgabetyp, Typen der formalen Parameter, ggf. auch Typen der Checked Exceptions?
 - Invarianz: Datentypen sind in Ober- und Unterklasse gleich
-- Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse 
+- Kovarianz: Typhierarchie mit Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp auch von einer Unterklasse
   - Bsp.: Person schreibt Dokument; Student schreibt Buch
-- Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse 
+- Kontravarianz: Typhierarchie entgegen Vererbungshierarchie $\rightarrow$ bei Verwendung einer Unterklasse ist bspw. der Rückgabetyp von einer Oberklasse
   - Bsp.: Person schreibt Buch; Student schreibt Dokument
 
 | Varianz       | Eingabeparameter | Rückgabeparameter |
