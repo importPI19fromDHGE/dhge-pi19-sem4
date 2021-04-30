@@ -152,7 +152,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 ## Integritätsbedingungen
 
 - Definition von Voraussetzungen, die es dem DBMS ermöglichen bestimmte Fehler zu erkennen
-- sind in der Regel teil des jeweiligen Datenbankschemas
+- sind in der Regel Teil des jeweiligen Datenbankschemas
 - z.B.: Gehalt > 0, Gehälter der Mitarbeiter < Vorgesetzter, ...
 - können konsistenten Zustand oder Übergangsbedingungen beschreiben (z.B. Gehalt darf nur erhöht werden)
 
@@ -175,7 +175,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 - eine Transaktion ist immer atomar (unteilbar)
 - innerhalb einer Transaktion werden einzelne Datenbankanweisungen sequenziell ausgeführt
-- kann eine Datenbankanweisung nicht erfolgreich durchgeführt werden, müssen alle vorherigen Änderungen der Transaktion rückgängig gemacht werden (Rollback)
+- Wenn eine Datenbankanweisung nicht erfolgreich durchgeführt werden kann, müssen alle vorherigen Änderungen der Transaktion rückgängig gemacht werden (Rollback)
 - nach einer Transaktion befindet sich die Datenbank wieder in einem konsistenten Zustand
   - Rückgängigmachen unter Verwendung des Transaktionsprotokolls
 
@@ -187,7 +187,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 ### Isolation/Abkapselung
 
-- alle Änderung, die eine Transaktion bewirkt sollen erst nach Beendigung für andere Transaktionen sichtbar werden
+- alle Änderungen, die eine Transaktion bewirkt sollen erst nach Beendigung für andere Transaktionen sichtbar werden
 - verhindert, dass gleichzeitig ausgeführte konkurrierende Transaktionen sich gegenseitig beeinflussen
 - Umsetzung durch Sperrprotokolle oder Zeitstempelverfahren
 - inkonsistente Datenbankzustände werden nicht sichtbar
@@ -210,7 +210,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 - das Ergebnis einer abgeschlossenen Transaktion gilt als dauerhaft wenn es in der Datenbank erhalten bleibt
 - besonders bedeutend nach Systemfehlern
-- Verbesserung der Systemleistung durch Datenbankpuffer $\rightarrow$ Pufferveraltung stellt Daten möglichst effizient zur Verfügung (asynchrone Schreiboperationen auf Datenträger)
+- Verbesserung der Systemleistung durch Datenbankpuffer $\rightarrow$ Pufferverwaltung stellt Daten möglichst effizient zur Verfügung (asynchrone Schreiboperationen auf Datenträger)
   - geänderter Block wird nicht sofort auf den Datenträger geschrieben, verbleibt zunächst im Puffer
   - *Page Cleaner List* dokumentiert beim Schreiben geänderte Blöcke
   - bei Verlust des Pufferinhaltes oder der *Page Cleaner List* (z.B. Stromausfall) können trotz abgeschlossenen Transaktionen Änderungen verloren gehen $\rightarrow$ evtl. inkonsistenter Zustand
