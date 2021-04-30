@@ -183,7 +183,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 - **Autocommit:** jede einzelne Anweisung ist eine Transaktion
 - **Implizite Transaktionen:** wird implizit gestartet, sobald die vorhergehende Transaktion abgeschlossen ist. Jede Transaktion muss explizit mit `COMMIT` oder `ROLLBACK` beendet werden
-- **Explizite Transaktionen:** jede Transaktion beginnt explizit mit ``BEGIN TRANSACTION` und wird explizit mit `COMMIT` oder `ROLLBACK` beendet
+- **Explizite Transaktionen:** jede Transaktion beginnt explizit mit ``BEGIN TRANSACTION`` und wird explizit mit `COMMIT` oder `ROLLBACK` beendet
 
 ### Isolation/Abkapselung
 
