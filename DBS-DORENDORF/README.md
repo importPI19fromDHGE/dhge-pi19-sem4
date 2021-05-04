@@ -13,6 +13,11 @@ Datenbankentwurf
   - [Entity-Relationship-Modell](#entity-relationship-modell)
     - [Komponenten von ERDs](#komponenten-von-erds)
     - [Regeln für die Ableitung eines relationalen Schemas](#regeln-f%C3%BCr-die-ableitung-eines-relationalen-schemas)
+  - [Normalformen für relationale Datenbanken](#normalformen-f%C3%BCr-relationale-datenbanken)
+    - [1. Normalform](#1-normalform)
+    - [2. Normalform](#2-normalform)
+    - [3. Normalform](#3-normalform)
+    - [Allgemeine Design-Regeln für den Entwurf relationaler Datenbankschemata](#allgemeine-design-regeln-f%C3%BCr-den-entwurf-relationaler-datenbankschemata)
 - [Sicherung von Konsistenz und Integrität](#sicherung-von-konsistenz-und-integrit%C3%A4t)
   - [Integritätsbedingungen](#integrit%C3%A4tsbedingungen)
   - [Transaktionen](#transaktionen)
@@ -128,7 +133,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 - beschreiben Eigenschaften der einzelner Objekte oder Beziehungen
 - aus Gründen der Übersichtlichkeit wird meist in grafischer Darstellung auf Angabe verzichtet
 
-![Beispiel für Atribute von Objekten und Beziehungen](assets/erd-attributes.png)<!--width=400px-->
+![Beispiel für Attribute von Objekten und Beziehungen](assets/erd-attributes.png)<!--width=400px-->
 
 ### Regeln für die Ableitung eines relationalen Schemas
 
@@ -140,6 +145,42 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
     - Attribute der Beziehung werden in die Objektklasse mit dem Fremdschlüssel aufgenommen
   - Objektklassen mit $m:n$-Beziehungen werden durch Erzeugen einer neuen Relation abgebildet
     - beinhaltet Fremdschlüssel für beide Objektklassen und Attribute der Beziehung
+
+## Normalformen für relationale Datenbanken
+
+- Ziel: Erkennung von Fehlern bzw. Ungenauigkeiten beim Datenbankentwurf $\rightarrow$ Normalisierung beschreibt Regeln an relationales Schema
+  - Beseitigung von Mehrdeutigkeiten und Inkonsistenzen zur Vermeidung von Redundanzen und Anomalien
+- Überprüfung der funktionalen Abhängigkeiten von Attributen eines Schemas zum jeweiligen Schlüsselattribut
+
+### 1. Normalform
+
+- die Werte der Attribute sind atomar (zusammengesetzte/kollektionswertige Attribute sind nicht gestattet)
+- z.B. Speicherung einer Anschrift: PLZ, Ort, Straße, Hausnr. als separate Attribute $\leftrightarrow$ gesamte Anschrift als ein Attribut
+- Listen, Arrays müssen in eigene Relationen ausgelagert werden (wenn DBMS keine entsprechende Erweiterung bietet)
+
+### 2. Normalform
+
+- **Funktionale Abhängigkeit:** Attribut aus einer Menge $A$, kann stets einem Attribut der Menge $B$ zugeordnet werden; Umkehrung muss nicht gelten
+  - z.B. Matrikelnummer $\rightarrow$ Name des Studierenden
+- **Vollfunktionale Abhängigkeit:** Schlüssel als Kombination aus mehreren Attributen
+- Vorliegen der ersten Normalform und
+- alle nicht zu den Schlüsselattributen der Relation gehörende Attribute sind nur vom gesamten Primärschlüssel der Relation abhängig
+  - Relationen, die keinen zusammengesetzten Primärschlüssel besitzen, entsprechen immer der zweiten Normalform
+- bei Verletzung können Einfüge-, Lösch- und Änderungsanomalien auftreten
+
+### 3. Normalform
+
+- Vorliegen der zweiten Normalform + kein Nicht-Schlüsselattribut ist von einem anderen Nicht-Schlüsselattribut funktional abhängig
+
+> Durch Normalisierung entsteht eine sehr große Anzahl an Tabellen $\rightarrow$ hoher Verarbeitungsaufwand durch Join-Operationen.
+> Beim Entwurf werden daher in der Regel einzelne Normalformen ignoriert $\rightarrow$ gezielte Denormalisierung (möglich durch Vermeidung von Anomalien, wenn nur lesend zugegriffen wird)
+
+### Allgemeine Design-Regeln für den Entwurf relationaler Datenbankschemata
+
+- jede Tabelle (Relation) sollte intuitiv einem Objekt oder Beziehungstyp entsprechen (aussagekräftige Namen $\rightarrow$ eindeutige Semantik der Relation)
+- Entwurf der Basistabellen unter Einhaltung der dritten Normalform $\rightarrrow$ keine Anomalien
+- Attribute, die NULL-Werte zulassen sollten minimiert werden
+- Basistabellen sollten so entworfen werden, dass die Joins über Kombinationen aus Primär- und Sekundärschlüsseln erfolgen
 
 <!--ToDo: Hier fehlen ein paar Inhalte-->
 

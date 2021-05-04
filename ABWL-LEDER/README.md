@@ -6,15 +6,14 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung](#unternehmensf%C3%BChrung)
-- [Produktionsfaktoren, betriebliche Funktionsbereiche](#produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung-1)
+  - [Unternehmensführung](#unternehmensf%C3%BChrung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
