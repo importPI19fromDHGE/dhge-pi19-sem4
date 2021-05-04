@@ -300,7 +300,7 @@ Kryptographie und Softwaresicherheit
   - Einweg-Funktion: darf nie *rückrechenbar* sein
 - Hash gilt als gebrochen, wenn schneller als Brute-Force lösbar
 
-## Kollisionen 
+## Kollisionen
 
 **Fall 1**
 
@@ -476,7 +476,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Kombination aus sym. + asym. Verschlüsselung
 - falls gewünscht, wird Signatur zur Nachricht (verschlüsselt mit dem Private Key des Senders) beigefügt
 - mit zufällig erzeugtem Schlüssel wird Nachricht symmetrisch verschlüsselt
-- sym. Schlüssel wird asym. mit Elgamal verschlüsselt 
+- sym. Schlüssel wird asym. mit Elgamal verschlüsselt
 - aufgrund technischer Beschränkungen wird Base64 kodiert
 
 ### Probleme von PGP
@@ -874,7 +874,8 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 - Was filtert man? z.B. SQL-Injections, JavaScript, HTML, alle Shell-Aufrufe (Klassiker: Mailadressen), ...
 - Grundproblem: Eingaben (Web, CLI, Formulare, ...) werden nicht gefiltert; durch Terminalsymbole kann unerwarteter Effekt ausgelöst werden
-- Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`), Regular Expressions (nutzen JIT-Compiler; erlauben Rekursion)
+- Kategorien: SQL-Injection, Command Injection, Cross Site Scripting, Directory Traversal, Format String Exploits (z.B. ``printf``: formatiert Strings, interpretiert `%`)
+  - Regular Expressions (nutzen JIT-Compiler; erlauben Rekursion)
 
 ### SQL-Injection
 

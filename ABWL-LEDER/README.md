@@ -1,3 +1,4 @@
+<!--markdownlint-disable-->
 Allgemeine Betriebswirtschaftslehre
 ===================================
 
@@ -56,10 +57,9 @@ Allgemeine Betriebswirtschaftslehre
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+<!--markdownlint-enable-->
 
-# Unternehmensführung
-
-# Produktionsfaktoren, betriebliche Funktionsbereiche
+# Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche
 
 ## Begriffe
 
@@ -69,9 +69,9 @@ Allgemeine Betriebswirtschaftslehre
 ## Merkmale eines Unternehmens
 
 - komplexes System aus Ressourcen (HR, MR, FR)
-	- HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-	- MR = Maschinen, Gebäude, Material, Lizenzen
-	- FR = Finanzielle Mittel -> Eigen- und Fremdkapital
+  - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
+  - MR = Maschinen, Gebäude, Material, Lizenzen
+  - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
 - weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
@@ -182,6 +182,7 @@ Gewinnmaximierung durch:
 - Formelle Beziehungen: <!--???-->
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+
 - Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
@@ -189,7 +190,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Ausführungsfunktion
 - Leitungsfunktion: Zeit- und Selbstmanagement
-	- Anforderungen: fachliche, methodische, persönliche Kenntnisse
+  - Anforderungen: fachliche, methodische, persönliche Kenntnisse
 - Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
 - Stellen mit gleicher Befugnis = Hierarchieebene
 
@@ -324,7 +325,6 @@ $$\begin{matrix}&&\text{Personalbestand aus entsprechenden Veränderungsentschei
 
 > positiver Saldo = Mehrbedarf
 > negativer Saldo = Freistellung
-
 
 #### vergangenheitsorientierte Methoden
 
