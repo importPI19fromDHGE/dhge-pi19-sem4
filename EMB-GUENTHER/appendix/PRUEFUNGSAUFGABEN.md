@@ -51,7 +51,7 @@ Entwickeln Sie mit Hilfe eines `Arduino Uno` eine Schaltung sowie ein Programm m
 10. Die einstellbare Zeit beträgt 0-50 Sekunden (Grenzen beachten).
 11. `A1` und `A2` zeigen die eingestellte Zeit in Sekunden.
 12. Mit Betätigen von `S1` wird der Kurzzeitwecker gestartet.
-13. Ist der Kurzeitwecker gestartet, läuft die eingestellte Zeit rückwärts.
+13. Ist der Kurzzeitwecker gestartet, läuft die eingestellte Zeit rückwärts.
 14. Die rückwärtslaufende Zeit wird auf `A1` und `A2` angezeigt.
 15. Ist die Zeit abgelaufen, ertönt 5 Sekunden lang ein 1000-HZ-Ton.
 
