@@ -5,8 +5,9 @@ Kryptographie und Softwaresicherheit
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungen](#pr%C3%BCfungen)
-- [Einführung und Inhalt](#einf%C3%BChrung-und-inhalt)
+- [Kryptographie und Softwaresicherheit](#kryptographie-und-softwaresicherheit)
+- [Prüfungen](#prüfungen)
+- [Einführung und Inhalt](#einführung-und-inhalt)
 - [Symmetrische Verfahren](#symmetrische-verfahren)
 - [Asymmetrische Verfahren](#asymmetrische-verfahren)
   - [...SA vs ...DH](#sa-vs-dh)
@@ -14,7 +15,7 @@ Kryptographie und Softwaresicherheit
 - [Krypto-Analyse](#krypto-analyse)
 - [Anforderungen](#anforderungen)
   - [Anforderungen an Zukunft](#anforderungen-an-zukunft)
-- [Verschlüsselung langer Daten](#verschl%C3%BCsselung-langer-daten)
+- [Verschlüsselung langer Daten](#verschlüsselung-langer-daten)
   - [ECB (Electronic Code Book Mode)](#ecb-electronic-code-book-mode)
   - [CBC (Cipher Block Chaining Mode)](#cbc-cipher-block-chaining-mode)
   - [CFB (Cipher Feedback Mode)](#cfb-cipher-feedback-mode)
@@ -29,14 +30,14 @@ Kryptographie und Softwaresicherheit
     - [Voraussetzungen](#voraussetzungen)
   - [Public-Key-Infrastruktur](#public-key-infrastruktur)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
-  - [Überprüfung eines Zertifikates](#%C3%BCberpr%C3%BCfung-eines-zertifikates)
+  - [Überprüfung eines Zertifikates](#überprüfung-eines-zertifikates)
   - [Aufgaben einer CA](#aufgaben-einer-ca)
   - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
   - [Probleme beim CA-System](#probleme-beim-ca-system)
   - [Web of Trust](#web-of-trust)
 - [Anwendung: PGP, De-Mail](#anwendung-pgp-de-mail)
-  - [Email-Verschlüsselung](#email-verschl%C3%BCsselung)
-  - [Email-Authentizität](#email-authentizit%C3%A4t)
+  - [Email-Verschlüsselung](#email-verschlüsselung)
+  - [Email-Authentizität](#email-authentizität)
   - [PGP](#pgp)
     - [Probleme von PGP](#probleme-von-pgp)
   - [De-Mail](#de-mail)
@@ -54,15 +55,15 @@ Kryptographie und Softwaresicherheit
   - [Passwort setzen](#passwort-setzen)
 - [Programmierung](#programmierung)
 - [Mehr-Faktor-Authentifizierung](#mehr-faktor-authentifizierung)
-- [Authentifizierung über das Netz](#authentifizierung-%C3%BCber-das-netz)
+- [Authentifizierung über das Netz](#authentifizierung-über-das-netz)
   - [Zero-Knowledge-Protokoll](#zero-knowledge-protokoll)
 - [Steganographie](#steganographie)
 - [Disk Encryption](#disk-encryption)
   - [Unterschied zu File Encryption](#unterschied-zu-file-encryption)
   - [Angriffe auf Disk Encryption](#angriffe-auf-disk-encryption)
-  - [Datenträger](#datentr%C3%A4ger)
+  - [Datenträger](#datenträger)
   - [Passwort-Eingabe](#passwort-eingabe)
-  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschl%C3%BCsselung---self-encrypting-drive)
+  - [Hardware-Verschlüsselung - Self-Encrypting Drive](#hardware-verschlüsselung---self-encrypting-drive)
 - [TPM](#tpm)
   - [Angriffe](#angriffe)
   - [Der EK](#der-ek)
@@ -75,8 +76,8 @@ Kryptographie und Softwaresicherheit
   - [Triviale ID-Vergabe](#triviale-id-vergabe)
   - [Exzessive Rechte](#exzessive-rechte)
   - [File-Tricks](#file-tricks)
-  - [Krypto-Sünden (Ergänzung)](#krypto-s%C3%BCnden-erg%C3%A4nzung)
-  - [Gegenmaßnahmen](#gegenma%C3%9Fnahmen)
+  - [Krypto-Sünden (Ergänzung)](#krypto-sünden-ergänzung)
+  - [Gegenmaßnahmen](#gegenmaßnahmen)
   - [Fehlende Input-Filterung](#fehlende-input-filterung)
     - [SQL-Injection](#sql-injection)
     - [XPath-Injection](#xpath-injection)
@@ -87,6 +88,8 @@ Kryptographie und Softwaresicherheit
     - [Regular Expressions](#regular-expressions)
     - [XML](#xml)
     - [Allgemeine Behebung](#allgemeine-behebung)
+- [Speicherüberschreiber](#speicherüberschreiber)
+  - [Gegenmaßnahmen](#gegenmaßnahmen-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -942,3 +945,125 @@ Es gibt verschiedene Arten der Disk Encryption:
 - **nach** Hex-Dekodierung filtern
 - Nutzung von Zeichenklassen-Prüffunktionen (`isalpha`, `isdigit`, ...)
 - evtl. kein Unicode erlauben (abh. vom Backend)
+
+# Speicherüberschreiber
+
+- oft auf OS-Level
+- durch einen Programmierfehler gelingt es, unautorisiert Speicherbereiche zu überschreiben
+- Analog Buffer Overflow: ein Buffer (z.B. Arrays) ist übergelaufen und wurde über sein Ende hinaus beschrieben
+- erlaubt *potentiell* beliebige, unautorisierte Code-Ausführung
+  - potentiell bedeutet, dass eine genauere Analyse noch aussteht. Fehlt es, sind das schlechte Nachrichten
+  - prinzipiell erlaubt jeder Speicherüberschreiber die *potentielle* Code-Ausführung
+  - Code in Form von echtem Binärcode oder kleine Code-Fragmente (nicht standalone) $\rightarrow$ kein separater Prozess, sondern innerhalb des laufenden Programms; **Manipulation des Programm-Ablaufs**
+  - oft in Text, Bild, Video,... eingebettet
+- Manipulation des Programmablaufs erfolgt, indem der Speicherüberschreiber einen bereits vorhandenen Pointer *ersetzt*
+- Payload kann meist nur wenig tun, ist oft sehr kurz
+  - z.B. Shell-Befehl, lädt Programm aus Netz nach, nutzt andere Sicherheitslücken $\rightarrow$ "Türöffner"
+- normaler Programmcode während der Ausführung schreibgeschützt, daher nicht manipulierbar
+- im normalen, schreibbaren Datenbereich gibt es Pointer auf Code $\rightarrow$ Angriffsziel
+- Angriffsziele:
+  - primär: Return-Adressen von Funktionsaufrufen <!--Programm springt bei return an Adresse, um im Aufrufer fortzusetzen-->
+  - Funktionspointer
+  - Global Offset Table (GOT)
+  - Procedure Linkage Table (PLT) (Teil vom dynamischen Linker)
+  - ``setjmp`` und ``longjmp``
+  - In C++ die Typ-Informationen in Objekten, mit dem eigentlichen Ziel, die ``vtable`` zu manipulieren
+- Codepointer sind für Programmierer *nicht direkt* sichtbar, können aber überschrieben werden, bpsw. durch Verletzung der Arraygrenzen
+- fast alle Sprachen sind davon betroffen, aber vor allem Sprachen **ohne Prüfung von Pointern und Indizes**, wie C, C++ und Assembler
+- Ursachen: ungeprüfte Input-Längen, v.a. bei Strings; Kombination von fixen Arrays und zu großen dynamischen Daten; Array-Grenzen und Pointer-Arithmetik; Off-by-one-Fehler; fehlende String-Terminatoren; Integer Overflow und malloc-Größenberechnungen; ``free``-Fehler; Return auf Pointer auf lokale Daten; nicht initialisierte Daten
+- bekannt unsichere Funktionen: ``gets``, ``scanf``, ``strcpy``, ``strncpy``, ``strcat``
+- finden von Bugs:
+  - Lesen von Quellcode oder Reverse Engineering an Absturzstellen und Stellen, die durch Security Fixes geändert wurden+
+- nach einem Absturz durch Brute-Force-Versuche: "Wann tut sich mehr als nur ein Absturz"
+- jeder ungeklärte Absturz wegen eines illegalen Speicherzugriffs sollte als potentielle Sicherheitslücke betrachtet werden
+- Payload hat zwei Funktionen:
+  - Auslösen eines Programmfehlers, der speicher überschreibt
+  - enthalten Codefragment, das ausgeführt werden soll
+
+**Return-Oriented Programming**
+
+- Manipulation des Stacks, sodass Returnadresse auf ein bestehendes Codestück zeigt, v.a. in Libraries, z.B. ``system``
+- kein eingeschmuggelter Payload, sondern Nutzung des bereits vorhandenem Code
+
+**gefährliches Lesen**
+
+- leaken von Daten
+- Bsp.: Heartbleed-Bug in OpenSSL aufgrund fehlender Konsistenzprüfung
+
+## Gegenmaßnahmen
+
+- sichere Programmiersprachen verwenden
+- Index-Prüfung aller Arrayzugriffe
+  - nicht in C möglich
+- nur implizite Pointer, keine Pointer-Arithmetik
+- keine explizite Speicherverwaltung, nur Garbage Collection
+- Compiler-Option "Stack Smashing Protector":
+  - Erkennung von Speicherüberschreibung, indem zufällige, aber bekannte Daten zwischen Return-Pointer und restlichem Stack reserviert
+  - unmittelbar vor Return wird geprüft, ob Wert noch unversehrt
+  - schützt nur vor Angriffen auf Return-Adresse
+- Intel Control Flow Enforcement (CET):
+  - **Schatten-Stack** in Hardware, nicht manipulierbar
+  - speichert bei jedem Call die Return-Adresse, vergleicht diese
+  - Interrupt bei Korruption
+  - schützt nur Return-Adressen, aber auch nicht lückenlos
+- Execute Protection (NX-Bit, DEP, W^X):<!--letzteres: Write XOR Execute-->
+  - Speicher darf nie gleichzeitig schreibbar **und** ausführbar sein
+  - CPU-Feature (d.h. sehr schnell)
+  - nicht vorhanden auf Embedded Systemen
+  - hilft nicht gegen Return Oriented Programming
+  - Skripte mit **JIT-Kompiler** müssen teilweise **ohne Execute Protection** ausgeführt werden
+- Adress Space Layout Randomization (ASLR):
+  - Loader des OS randomisiert bei jedem Programmstart die Adressen des Programms (incl. globaler Daten + Heap); aller Shared Libs; des Stacks, dynamische Datenbereiche, ``mmap``s
+  - kein absoluter Schutz, aber Erhöhung des Aufwandes
+  - benötigt Position Independent Executable
+- Sandboxing
+  - Filterung aller System-Calls zur Einschränkung von Zugriffen
+  - Urformen: ``chroot``, ``seccomp``
+  - erweiterte Formen: Role Based Access Control (RBAC); Capabilities (SELinux, AppArmor); ``seccomp-bpf``
+  - hilft nicht direkt gegen Überschreiber, aber mildert die Folgen
+- Brute-Force-Bremse: automatischen Neuversuch verzögern
+- Trusted Path Execution:
+  - Liste von Programm-Directories $\rightarrow$ *nur* diese Dirs sind ausführbar, aber *nie* schreibbar
+  - unterbindet Ausführung heruntergeladener Dateien
+- seit kurzem: ``vtable``-Verfication: Prüfung der Vtables zur Laufzeit mittels Prüfsumme; GCC-Option
+- Programmier-Richtlinien; Textsuche nach gefährlichen Konstrukten; viele Compilerwarnungen; statische Programmanalyse ("Linting"); Code-Reviews
+  - statische Programmanalyse untersucht für jede Variable den möglichen Wertebereich (auch ``NULL``) und merken sich z.B. für Pointer, ob ``free`` / ``delete`` aufgerufen wurde oder mehrere Pointer auf dieselbe Adresse zeigen
+  - Speicherzugriffschecker: Compiler-basiert, z.B. ASAN im gcc und llvm; Code Instrumenter, z.B. Purify; interpretierende Tools, z.B. Valgrind
+    - prüfen Array- und Pointer-Zugriffe; führen Buch über allokierte Blöcke und uninitialisierte Speicherbereiche
+    - erfordert Verständnis, um zu erkennen, welches Tool welche Fehler erkennen kann
+  - Testen
+    - kreative, menschliche Tester; spezielle Pen-Tester; Fuzzing-Programme
+
+**ASAN:**
+
+- prüft zur Compilezeit
+- einfügen von Guard Words: Puffer zwischen bspw. Arrays, um Grenzverletzungen festzustellen
+- sehr schnell, da keine Suchoperationen ausgeführt werden, sondern mit Bitshift und Addieren gearbeitet wird
+- direktes Adressenmapping, um Gültigkeit von Speicher festzustellen (byteweise)
+- findet Grenzverletzungen in lokalen, globalen und Heap-Daten; die meisten use-after-free, manche use-after-return; die meisten doppelten ``free``s
+- findet keine Crashes in Bibliotheken; uninitialisierte Variablen; sehr große Pointer-Sprünge
+
+**Valgrind Memcheck:**
+
+- sehr kompliziertes Framework für x86
+- braucht keinen Quellcode, nutzt Laufzeitprüfungen
+- prüft auch alle Lib-Aufrufe
+- Plugins injizieren ggf. Code vor oder nach Ausführung einer Instruktion
+- findet uninitialisierte Variablen durch valid-Bit und initialized-Bit für jeden Byte im Programm
+- ersetzt ``malloc`` und ``free``
+- findet ungültige Speicherzugriffe
+- findet alle Memory Leaks
+- findet keine Grenzverletzungen für lokale und globale Variablen (prüft nur Heapdaten)
+- findet kein use-after-return; random Pointer auf gültige Daten
+
+**Valgrind SGCheck:**
+
+- komplementär zu Valgrind Memcheck
+- benötigt Debugsymbole
+- findet Grenzverletzungen, use-after-return und Pointer auf gültige Daten, aber **nicht für Heap-Daten**
+
+**weitere Tools**
+
+- Valgrind bietet viele Plugins
+- Googles "Dr. Memory": ASAN-Funktionen für 32 Bit (konnte ASAN nicht)
+- IBM Purify: kommerziell; ähnlich zu Valgrind, bietet Code Instrumentation
