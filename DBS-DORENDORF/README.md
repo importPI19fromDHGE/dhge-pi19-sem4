@@ -165,7 +165,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 - **Vollfunktionale Abhängigkeit:** Schlüssel als Kombination aus mehreren Attributen
 - Vorliegen der ersten Normalform + alle nicht zu den Schlüsselattributen der Relation gehörenden Attribute sind nur vom gesamten Primärschlüssel der Relation abhängig
   - Relationen, die keinen zusamengesetzten Primärschlüssel besitzen entsprechen immer der zweiten Normalform
-- bei Verletzung können Einfüge-, Lösch- und Änderungsanomalien auftretten
+- bei Verletzung können Einfüge-, Lösch- und Änderungsanomalien auftreten
 
 ### 3. Normalform
 
