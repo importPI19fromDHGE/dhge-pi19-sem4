@@ -178,7 +178,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 ### Allgemeine Design-Regeln für den Entwurf relationaler Datenbankschemata
 
 - jede Tabelle (Relation) sollte intuitiv einem Objekt oder Beziehungstyp entsprechen (aussagekräftige Namen $\rightarrow$ eindeutige Semantik der Relation)
-- Entwurf der Basistabellen unter Einhaltung der dritten Normalform $\rightarrrow$ keine Anomalien
+- Entwurf der Basistabellen unter Einhaltung der dritten Normalform $\rightarrow$ keine Anomalien
 - Attribute, die NULL-Werte zulassen sollten minimiert werden
 - Basistabellen sollten so entworfen werden, dass die Joins über Kombinationen aus Primär- und Sekundärschlüsseln erfolgen
 
