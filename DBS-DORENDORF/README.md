@@ -163,8 +163,9 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 - **Funktionale Abhängigkeit:** Attribut aus einer Menge $A$, kann stets einem Attribut der Menge $B$ zugeordnet werden; Umkehrung muss nicht gelten
   - z.B. Matrikelnummer $\rightarrow$ Name des Studierenden
 - **Vollfunktionale Abhängigkeit:** Schlüssel als Kombination aus mehreren Attributen
-- Vorliegen der ersten Normalform + alle nicht zu den Schlüsselattributen der Relation gehörenden Attribute sind nur vom gesamten Primärschlüssel der Relation abhängig
-  - Relationen, die keinen zusamengesetzten Primärschlüssel besitzen entsprechen immer der zweiten Normalform
+- Vorliegen der ersten Normalform und
+- alle nicht zu den Schlüsselattributen der Relation gehörende Attribute sind nur vom gesamten Primärschlüssel der Relation abhängig
+  - Relationen, die keinen zusammengesetzten Primärschlüssel besitzen, entsprechen immer der zweiten Normalform
 - bei Verletzung können Einfüge-, Lösch- und Änderungsanomalien auftreten
 
 ### 3. Normalform
