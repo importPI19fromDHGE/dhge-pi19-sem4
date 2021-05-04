@@ -178,7 +178,7 @@ Die Beziehungen können unterschiedliche Kardinalitäten besitzen:
 
 - jede Tabelle (Relation) sollte intuitiv einem Objekt oder Beziehungstyp entsprechen (aussagekräftige Namen $\rightarrow$ eindeutige Semantik der Relation)
 - Entwurf der Basistabellen unter Einhaltung der dritten Normalform $\rightarrrow$ keine Anomalien
-- Attribute die NULL-Werte zulassen sollten minimiert werden
+- Attribute, die NULL-Werte zulassen sollten minimiert werden
 - Basistabellen sollten so entworfen werden, dass die Joins über Kombinationen aus Primär- und Sekundärschlüsseln erfolgen
 
 <!--ToDo: Hier fehlen ein paar Inhalte-->
