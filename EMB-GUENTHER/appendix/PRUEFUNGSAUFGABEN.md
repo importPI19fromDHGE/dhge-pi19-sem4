@@ -16,11 +16,11 @@ Die Zeit kann digital gewählt, gestartet und gestoppt werden.
 Entwickeln Sie mit Hilfe eines `Arduino Uno` eine Schaltung sowie ein Programm mit den folgenden Funktionen:
 
 1. Die benötigten I/O Pins sind per `define` festgelegt.
-2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Katode) werden verwendet.
+2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Kathode) werden verwendet.
 3. Je ein IC (`CD4511`) übernimmt die jeweilige BCD-zu-7-Segement-Code-Wandlung.
 4. Verwenden Sie die richtigen Vorwiderstände (`V1`, …, `Vn`) für `A1` und `A2`.
 5. Es wird eine LED als Belichtungseinrichtung verwendet (soll das UV-Licht simulieren).
-6. Verwenden den richtigen Vorwiderstand für die LED.
+6. Verwenden Sie den richtigen Vorwiderstand für die LED.
 7. Es werden vier Taster (`S1`, `S2`, `S3`, `S4`) verwendet.
 8. Verwenden Sie Pull-Down-Widerstände (`R1`, …, `Rn`).
 9. Die einstellbare Belichtungszeit beträgt 0-99 Sekunden.
@@ -40,7 +40,7 @@ Die Zeit kann analog gewählt und der Wecker digital gestartet werden.
 Entwickeln Sie mit Hilfe eines `Arduino Uno` eine Schaltung sowie ein Programm mit den folgenden Funktionen:
 
 1. Die benötigten I/O Pins sind per `define` festgelegt.
-2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Katode) werden verwendet.
+2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Kathode) werden verwendet.
 3. Je ein IC (`CD4511`) übernimmt die jeweilige BCD-zu-7-Segement-Code-Wandlung.
 4. Verwenden Sie die richtigen Vorwiderstände (`V1`, …, `Vn`) für `A1` und `A2`.
 5. Es wird ein Piezosummer als akustischer Signalgeber verwendet.
@@ -64,7 +64,7 @@ Im *Mittel-* und *Fernbereich* wird die Entfernung ausschließlich mit LEDs ange
 Entwickeln Sie mit Hilfe eines `Arduino Uno` eine Schaltung sowie ein Programm mit den folgenden Funktionen:
 
 1. Die benötigten I/O Pins sind per `define` festgelegt.
-2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Katode) werden verwendet.
+2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Kathode) werden verwendet.
 3. Je ein IC (`CD4511`) übernimmt die jeweilige BCD-zu-7-Segement-Code-Wandlung.
 4. Verwenden Sie die richtigen Vorwiderstände (`V1`, …, `Vn`) für `A1` und `A2`.
 5. Es werden drei LEDs verwendet (`L1`-grün, `L2`-gelb, `L3`-rot).
@@ -88,7 +88,7 @@ Die Tür wird automatisch nach 10 Sekunden ohne Bewegung geschlossen.
 Entwickeln Sie mit Hilfe eines `Arduino Uno` eine Schaltung sowie ein Programm mit den folgenden Funktionen:
 
 1. Die benötigten I/O Pins sind per `define` festgelegt.
-2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Katode) werden verwendet.
+2. zwei 7-Segmentanzeigen `A1` und `A2` (positiv angesteuert, Einstellung: Kathode) werden verwendet.
 3. Je ein IC (`CD4511`) übernimmt die jeweilige BCD-zu-7-Segement-Code-Wandlung.
 4. Verwenden Sie die richtigen Vorwiderstände (`V1`, …, `Vn`) für `A1` und `A2`.
 5. Es wird eine LED (`L1`) zur Tür-Auf-Signalisierung verwendet.
