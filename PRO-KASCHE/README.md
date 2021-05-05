@@ -91,7 +91,7 @@ IT-Trends
 - diejenige Node die zuerst einen Block mit einem passenden Hash generiert und der vom Netzwerk validiert wird, wird mit 'neuen' Bitcoin belohnt (Belohnung halbiert sich alle 4 Jahre - aktuell 6,25 BTC)
 - Neue Blöcke werden etwa alle 10 Minuten erzeugt
 
-> Bitcoin ermöglicht es kryptografisch gesicherte, direkte Transaktionen ohne zentrale Vermittler in einem dezentralen Peer-to-Peer Netzwerk durchzuführen
+- Bitcoin ermöglicht es kryptografisch gesicherte, direkte Transaktionen ohne zentrale Vermittler in einem dezentralen Peer-to-Peer Netzwerk durchzuführen
 
 | **Vorteile**                                                                 | **Nachteile**                                                                   |
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
