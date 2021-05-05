@@ -634,7 +634,7 @@ Lösungsansätze:
 ## Zero-Knowledge-Protokoll
 
 - "beweise, dass du einen Schlüssel besitzt, ohne ihn preiszugeben"
-- A hat Private Key, B will das prüfen, darf den Schlüssel aber nicht berechnen können; A darf aber nicht vortäuschen, den Schlüssel zu kennen
+- A hat Geheimnis, B will das prüfen, darf das Geheimnis aber nicht berechnen können; A darf aber nicht vortäuschen, den Schlüssel zu kennen
 - Ablauf:
   - Großes n als Primzahlprodukt berechnen und n veröffentlichen
   - Prüfung in mehreren Runden: A und B tauschen pro Runde 3 Zahlen aus, die aus Zufallszahl berechnet werden
