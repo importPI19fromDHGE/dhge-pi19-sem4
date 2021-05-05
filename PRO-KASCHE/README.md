@@ -56,7 +56,7 @@ IT-Trends
 
 - **symmetrische Verschlüsselung:** gleicher Schlüssel zum ver- und entschlüsseln
   - schnell, effizient durch Hardwarebeschleunigung ausführbar
-- **asymmetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Ent-/verschlüsseln)
+- **asymmetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Entschlüsseln / Verschlüsseln)
   - z.B. End-to-End verschlüsselte Chat-Programme, PGP, Digitale Signaturen
 
 ### Digitale Signaturen
