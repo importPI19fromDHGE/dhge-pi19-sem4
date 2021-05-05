@@ -77,7 +77,7 @@ Kryptographie und Softwaresicherheit
   - [Exzessive Rechte](#exzessive-rechte)
   - [File-Tricks](#file-tricks)
   - [Krypto-Sünden (Ergänzung)](#krypto-sünden-ergänzung)
-  - [Gegenmaßnahmen](#gegenmaßnahmen)
+  - [Gegenmaßnahmen allgemein](#gegenmaßnahmen-allgemein)
   - [Fehlende Input-Filterung](#fehlende-input-filterung)
     - [SQL-Injection](#sql-injection)
     - [XPath-Injection](#xpath-injection)
@@ -89,7 +89,7 @@ Kryptographie und Softwaresicherheit
     - [XML](#xml)
     - [Allgemeine Behebung](#allgemeine-behebung)
 - [Speicherüberschreiber](#speicherüberschreiber)
-  - [Gegenmaßnahmen](#gegenmaßnahmen-1)
+  - [Gegenmaßnahmen Speicherüberschreiber](#gegenmaßnahmen-speicherüberschreiber)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -864,7 +864,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 - "inoffizielle" Zertifikate, die den Nutzer zum Akzeptieren einer Ausnahme zwingen
 - automatische Updates ohne Absicherung der Verbindung und des Inhaltes
 
-## Gegenmaßnahmen
+## Gegenmaßnahmen allgemein
 
 - Schulungen für Programmierer, Tester, Nutzer
 - Programmier-Richtlinien
@@ -970,7 +970,14 @@ Es gibt verschiedene Arten der Disk Encryption:
   - In C++ die Typ-Informationen in Objekten, mit dem eigentlichen Ziel, die ``vtable`` zu manipulieren
 - Codepointer sind für Programmierer *nicht direkt* sichtbar, können aber überschrieben werden, bpsw. durch Verletzung der Arraygrenzen
 - fast alle Sprachen sind davon betroffen, aber vor allem Sprachen **ohne Prüfung von Pointern und Indizes**, wie C, C++ und Assembler
-- Ursachen: ungeprüfte Input-Längen, v.a. bei Strings; Kombination von fixen Arrays und zu großen dynamischen Daten; Array-Grenzen und Pointer-Arithmetik; Off-by-one-Fehler; fehlende String-Terminatoren; Integer Overflow und malloc-Größenberechnungen; ``free``-Fehler; Return auf Pointer auf lokale Daten; nicht initialisierte Daten
+- Ursachen:
+  - ungeprüfte Input-Längen, v.a. bei Strings
+  - Kombination von fixen Arrays und zu großen dynamischen Daten
+  - Array-Grenzen und Pointer-Arithmetik; Off-by-one-Fehler
+  - fehlende String-Terminatoren
+  - Integer Overflow und malloc-Größenberechnungen
+  - ``free``-Fehler
+  - Return auf Pointer auf lokale Daten; nicht initialisierte Daten
 - bekannt unsichere Funktionen: ``gets``, ``scanf``, ``strcpy``, ``strncpy``, ``strcat``
 - finden von Bugs:
   - Lesen von Quellcode oder Reverse Engineering an Absturzstellen und Stellen, die durch Security Fixes geändert wurden+
@@ -990,7 +997,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 - leaken von Daten
 - Bsp.: Heartbleed-Bug in OpenSSL aufgrund fehlender Konsistenzprüfung
 
-## Gegenmaßnahmen
+## Gegenmaßnahmen Speicherüberschreiber
 
 - sichere Programmiersprachen verwenden
 - Index-Prüfung aller Arrayzugriffe
@@ -1027,7 +1034,8 @@ Es gibt verschiedene Arten der Disk Encryption:
   - unterbindet Ausführung heruntergeladener Dateien
 - seit kurzem: ``vtable``-Verfication: Prüfung der Vtables zur Laufzeit mittels Prüfsumme; GCC-Option
 - Programmier-Richtlinien; Textsuche nach gefährlichen Konstrukten; viele Compilerwarnungen; statische Programmanalyse ("Linting"); Code-Reviews
-  - statische Programmanalyse untersucht für jede Variable den möglichen Wertebereich (auch ``NULL``) und merken sich z.B. für Pointer, ob ``free`` / ``delete`` aufgerufen wurde oder mehrere Pointer auf dieselbe Adresse zeigen
+  - statische Programmanalyse untersucht für jede Variable den möglichen Wertebereich (auch ``NULL``)
+    - merken sich z.B. für Pointer, ob ``free`` / ``delete`` aufgerufen wurde oder mehrere Pointer auf dieselbe Adresse zeigen
   - Speicherzugriffschecker: Compiler-basiert, z.B. ASAN im gcc und llvm; Code Instrumenter, z.B. Purify; interpretierende Tools, z.B. Valgrind
     - prüfen Array- und Pointer-Zugriffe; führen Buch über allokierte Blöcke und uninitialisierte Speicherbereiche
     - erfordert Verständnis, um zu erkennen, welches Tool welche Fehler erkennen kann
