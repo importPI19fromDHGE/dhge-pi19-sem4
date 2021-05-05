@@ -586,7 +586,7 @@ zu 2.: Nutzung von Zertifikaten: PKI / Public Key Infrastructure
 - Brute-Force-Bremsen einbauen, z.B. mit Wartezeiten, Account-Sperren, Fehlermeldungen dürfen keine Informationen leaken $\rightarrow$ quadriert Anzahl der Versuche bei unbekanntem User
 
 ## Passwort offline knacken
-
+Gegenmaßnahmen
 - gestohlene Passwort-Datei liegt vor
 - zu testende Passwort-Kandidaten werden gehasht und es wird geprüft, ob dieser Hash in der Datei vorkommt $\rightarrow$ dauert zu lange
 - Wörterbuchattaken: häufig genutzte Passwörter, Worte, 13375p34k, umgedreht,...
