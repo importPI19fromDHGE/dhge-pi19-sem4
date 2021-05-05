@@ -949,7 +949,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 - oft auf OS-Level
 - durch einen Programmierfehler gelingt es, unautorisiert Speicherbereiche zu überschreiben
-- Analog Buffer Overflow: ein Buffer (z.B. Arrays) ist übergelaufen und wurde über sein Ende hinaus beschrieben
+- analog: Buffer Overflow $\rightarrow$ ein Buffer (z.B. Arrays) ist übergelaufen und wurde über sein Ende hinaus beschrieben
 - erlaubt *potentiell* beliebige, unautorisierte Code-Ausführung
   - potentiell bedeutet, dass eine genauere Analyse noch aussteht. Fehlt es, sind das schlechte Nachrichten
   - prinzipiell erlaubt jeder Speicherüberschreiber die *potentielle* Code-Ausführung
@@ -979,7 +979,7 @@ Es gibt verschiedene Arten der Disk Encryption:
   - Return auf Pointer auf lokale Daten; nicht initialisierte Daten
 - bekannt unsichere Funktionen: ``gets``, ``scanf``, ``strcpy``, ``strncpy``, ``strcat``
 - finden von Bugs:
-  - Lesen von Quellcode oder Reverse Engineering an Absturzstellen und Stellen, die durch Security Fixes geändert wurden+
+  - Lesen von Quellcode oder Reverse Engineering an Absturzstellen und Stellen, die durch Security Fixes geändert wurden
 - nach einem Absturz durch Brute-Force-Versuche: "Wann tut sich mehr als nur ein Absturz"
 - jeder ungeklärte Absturz wegen eines illegalen Speicherzugriffs sollte als potentielle Sicherheitslücke betrachtet werden
 - Payload hat zwei Funktionen:
@@ -993,7 +993,7 @@ Es gibt verschiedene Arten der Disk Encryption:
 
 **gefährliches Lesen**
 
-- leaken von Daten
+- Leaken von Daten
 - Bsp.: Heartbleed-Bug in OpenSSL aufgrund fehlender Konsistenzprüfung
 
 ## Gegenmaßnahmen Speicherüberschreiber
@@ -1031,15 +1031,14 @@ Es gibt verschiedene Arten der Disk Encryption:
 - Trusted Path Execution:
   - Liste von Programm-Directories $\rightarrow$ *nur* diese Dirs sind ausführbar, aber *nie* schreibbar
   - unterbindet Ausführung heruntergeladener Dateien
-- seit kurzem: ``vtable``-Verfication: Prüfung der Vtables zur Laufzeit mittels Prüfsumme; GCC-Option
+- seit Kurzem: ``vtable``-Verification: Prüfung der Vtables zur Laufzeit mittels Prüfsumme; GCC-Option
 - Programmier-Richtlinien; Textsuche nach gefährlichen Konstrukten; viele Compilerwarnungen; statische Programmanalyse ("Linting"); Code-Reviews
   - statische Programmanalyse untersucht für jede Variable den möglichen Wertebereich (auch ``NULL``)
     - merken sich z.B. für Pointer, ob ``free`` / ``delete`` aufgerufen wurde oder mehrere Pointer auf dieselbe Adresse zeigen
   - Speicherzugriffschecker: Compiler-basiert, z.B. ASAN im gcc und llvm; Code Instrumenter, z.B. Purify; interpretierende Tools, z.B. Valgrind
     - prüfen Array- und Pointer-Zugriffe; führen Buch über allokierte Blöcke und uninitialisierte Speicherbereiche
     - erfordert Verständnis, um zu erkennen, welches Tool welche Fehler erkennen kann
-  - Testen
-    - kreative, menschliche Tester; spezielle Pen-Tester; Fuzzing-Programme
+  - Testen: kreative, menschliche Tester; spezielle Pen-Tester; Fuzzing-Programme
 
 **ASAN:**
 
