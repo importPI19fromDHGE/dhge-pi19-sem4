@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 jobs:
-  convert_via_pandoc_and_release:
+  convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -49,6 +50,16 @@ jobs:
         with:
           args: --output=output/OOP-CASSELT.pdf --resource-path=OOP-CASSELT/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v1.4.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose OOP-CASSELT/README.md
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
+        with:
+          name: output
+          path: output
+  release_pdfs:
+    runs-on: ubuntu-18.04
+    needs: convert_via_pandoc
+    if: github.ref == 'refs/heads/main' # only publish if commited to the main branch
+    steps:
+      - name: Retrieve saved Docker image
+        uses: actions/download-artifact@v2
         with:
           name: output
           path: output
