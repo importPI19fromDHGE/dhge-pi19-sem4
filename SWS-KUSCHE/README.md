@@ -1018,7 +1018,7 @@ Es gibt verschiedene Arten der Disk Encryption:
   - nicht vorhanden auf Embedded Systemen
   - hilft nicht gegen Return Oriented Programming
   - Skripte mit **JIT-Kompiler** müssen teilweise **ohne Execute Protection** ausgeführt werden
-- Adress Space Layout Randomization (ASLR):
+- Address Space Layout Randomization (ASLR):
   - Loader des OS randomisiert bei jedem Programmstart die Adressen des Programms (incl. globaler Daten + Heap); aller Shared Libs; des Stacks, dynamische Datenbereiche, ``mmap``s
   - kein absoluter Schutz, aber Erhöhung des Aufwandes
   - benötigt Position Independent Executable
