@@ -246,5 +246,25 @@ $\rightarrow$ Abschätzung der Effizienz
     - Unterschied mit @UML nicht darstellbar
   - (3.) gut wiederverwendbar
 - **Repository**
+  - Lager, Depot
+  - digitales Archiv
+  - häufig inklusive Funktion zur Versionsverwaltung
+  - Datenzentrierung
+  - Daten sind passiv
+  - Vorteil: Klienten sind unabhängig $\rightarrow$ einzeln änderbar
+  - Bsp.: SVN, CVS, GIT, Mercurial; integrierte Entwicklungs-Umgebung; Management-Informations-Systeme
 - **Schichten**
+  - Benutzer greift auf eine Schicht zu
+  - jede Schicht bietet Dienst nach oben an und nutzt einen Dienst von unten
+  - Bsp. ISO/OSI Referenz Modell, TCP IP-Stack
+- **Die 3-Schichten Architektur**
+  1. Präsentations-Schicht (GUI)
+  2. Logik-Schicht (Algo)
+  3. Datenhaltung-Schicht (Daten)
+  - Mindestmaß für architektonische Strukturierung
 - **Interpreter**
+  - Programm läuft auf einer abstrakten Maschine; Benutzer interagiert mit der abstrakten Maschine
+  - Interpreter parsed Programm $\rightarrow$ lässt es auf Basis-System laufen
+  - Bsp.: C-Python, Java (JVM), Javascript, Bash
+  - Vorteil: keine Hardwarebinding, (Optimierung zur Laufzeit)
+  - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich
