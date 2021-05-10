@@ -258,13 +258,13 @@ $\rightarrow$ Abschätzung der Effizienz
   - jede Schicht bietet Dienst nach oben an und nutzt einen Dienst von unten
   - Bsp. ISO/OSI Referenz Modell, TCP IP-Stack
 - **Die 3-Schichten Architektur**
-  1. Präsentations-Schicht (GUI)
-  2. Logik-Schicht (Algo)
-  3. Datenhaltung-Schicht (Daten)
+  1. Präsentations-Schicht (z.B. GUI)
+  2. Logik-Schicht (z.B. Algorithmen)
+  3. Datenhaltung-Schicht (z.B. Datenbank)
   - Mindestmaß für architektonische Strukturierung
 - **Interpreter**
   - Programm läuft auf einer abstrakten Maschine; Benutzer interagiert mit der abstrakten Maschine
-  - Interpreter parsed Programm $\rightarrow$ lässt es auf Basis-System laufen
+  - Interpreter parst Programm \rightarrow\rightarrow lässt es auf Basis-System laufen
   - Bsp.: C-Python, Java (JVM), Javascript, Bash
   - Vorteil: keine Hardwarebinding, (Optimierung zur Laufzeit)
-  - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich
+  - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich ("NX-Bit")
