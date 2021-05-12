@@ -209,7 +209,7 @@ $\rightarrow$ Dokumentation wird erzeugt
 
 ### Szenarien
 
-<!-- markdownlint-disable list-indent -->
+<!-- markdownlint-disable indentation -->
 
 - Verbindung zwischen Sichten
 - zeigen Laufzeitverhalten
@@ -223,7 +223,7 @@ $\rightarrow$ Dokumentation wird erzeugt
   - (1.) Anzahl direkte Szenarien
   - (2.) Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
 
-<!-- markdownlint-enable list-indent -->
+<!-- markdownlint-enable indentation -->
 
 $\rightarrow$ Abschätzung der Effizienz
 
@@ -272,15 +272,19 @@ $\rightarrow$ Abschätzung der Effizienz
 
 **Vorteile eines Musters**
 
+<!-- markdownlint-disable indentation -->
+
 1. Dinge sichtbar gemacht
-   - Dokumentation
-   - Kommunikation fördert
-   - Verständnis wird erleichtert
+  - Dokumentation
+  - Kommunikation fördert
+  - Verständnis wird erleichtert
 2. Wiedervewendung auf Entwurfsebene
 3. generische Lösung für ein Problem
 4. **nichtfunktionale Anforderungen *können* sichtbar werden**
 5. Wissen über gute Entwurfspraktiken wird gekapselt
 6. Corporate Identity
+
+<!-- markdownlint-enable indentation -->
 
 ### Architekturmuster der physikalischen Sicht
 
