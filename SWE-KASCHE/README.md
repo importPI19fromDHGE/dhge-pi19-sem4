@@ -273,7 +273,7 @@ $\rightarrow$ Abschätzung der Effizienz
 
 **Vorteile eines Musters**
 
-<!-- markdownlint-disable indentation -->
+<!-- markdownlint-disable -->
 
 1. Dinge sichtbar gemacht
    - Dokumentation
@@ -285,7 +285,7 @@ $\rightarrow$ Abschätzung der Effizienz
 5. Wissen über gute Entwurfspraktiken wird gekapselt
 6. Corporate Identity
 
-<!-- markdownlint-enable indentation -->
+<!-- markdownlint-enable -->
 
 ### Architekturmuster der physikalischen Sicht
 
