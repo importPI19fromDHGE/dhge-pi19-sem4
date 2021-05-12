@@ -18,6 +18,7 @@ Systementwurf
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
     - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -208,7 +209,7 @@ $\rightarrow$ Dokumentation wird erzeugt
 
 ### Szenarien
 
-<!-- markdownlint-disable list-indent -->
+<!-- markdownlint-disable indentation -->
 
 - Verbindung zwischen Sichten
 - zeigen Laufzeitverhalten
@@ -222,7 +223,7 @@ $\rightarrow$ Dokumentation wird erzeugt
   - (1.) Anzahl direkte Szenarien
   - (2.) Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
 
-<!-- markdownlint-enable list-indent -->
+<!-- markdownlint-enable indentation -->
 
 $\rightarrow$ Abschätzung der Effizienz
 
@@ -268,3 +269,108 @@ $\rightarrow$ Abschätzung der Effizienz
   - Bsp.: C-Python, Java (JVM), Javascript, Bash
   - Vorteil: keine Hardwarebinding, (Optimierung zur Laufzeit)
   - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich ("NX-Bit")
+
+**Vorteile eines Musters**
+
+<!-- markdownlint-disable indentation -->
+
+1. Dinge sichtbar gemacht
+  - Dokumentation
+  - Kommunikation fördert
+  - Verständnis wird erleichtert
+2. Wiedervewendung auf Entwurfsebene
+3. generische Lösung für ein Problem
+4. **nichtfunktionale Anforderungen *können* sichtbar werden**
+5. Wissen über gute Entwurfspraktiken wird gekapselt
+6. Corporate Identity
+
+<!-- markdownlint-enable indentation -->
+
+### Architekturmuster der physikalischen Sicht
+
+- Aufteilung der Funktionalitäten auf Knoten eines Netzes
+- Darstellung mittels Konfigurations-Diagramme
+- Darstellung: (im Rechteck) Knoten; (am Pfeil) Kommunikation
+- Zentrales System, Client-Server, Föderation, Konfigurations-Diagramm
+
+**Zum Zentralen System**
+
+- klassischer Großrechner
+- keine Intelligenz bei Terminals
+- Terminal 1, Terminal 2, Terminal 3 ... Termanal N $\rightarrow$ greifen alle auf das zentrale System zu
+
+**Zum Client-Server**
+
+- viele intelligente Clients (Frontend) greifen alle auf einen Server (Backend) zu
+
+Frontend:
+
+1. User-Interface
+2. Einbindung in die Geschäftsprozesse
+
+Backend:
+
+1. Datenhaltung
+2. Fachlogik
+3. ggf. Weiterleitung
+
+THIN Client
+
+- nicht eigenständig ("Screen Scraping")
+- nur User-Interface
+- Network-Computing (ohne Server sind keine Aktionen möglich)
+- Kosten geringer aber Anforderung an die Infrastruktur ist höher
+
+FAT Client
+
+- Teile der Anwendungslogik auf dem Client
+- Server Entlastung
+- Datenhaltung auf Server
+- bedingt eigenfähig überlebensfähig
+
+>Übungs-Aufgabe:
+>1. FAT-Clients (Multithreading)
+>2. Datenserver
+>3. MPI (Message Parsing Interface) soll möglich sein (wahlweise)
+>4. Cloud Computing
+
+Mit Plantuml darstellen!
+
+**Zum Three Tier Client/Server**
+
+- viele intelligente Clients (UI, Fachlogik) kommunizieren mit Anwendungsserver (weitere Fachlogik, Verteilung der Anfragen auf verschiedene Server)
+
+**Zum Verteilmuster Förderation**
+
+- gleichberechtigte Partner
+- verteilte Subsysteme, die miteinander kommunizieren
+- (als voll-vermaschtes Netz dargestellt)
+
+>Übungs-Aufgabe 2:
+>- verschiedene Simulationsprogramme
+>- verschiedene CAD-Programme
+>- Schwing-Simulation, Thermo-Simulation
+>- Calculationssimulationsprogramm
+>- Produktionssimulation
+>- Montage
+>- Beschichtung
+>
+> insgesamt 13 verschiedene Programme
+>
+> Frage: Systementwurf um diesen Produkt-Entstehungsprozess zu unterstützen
+>
+> Anzahl an Konvertern bestimmen
+>
+> *???*
+
+**Zum Konfigurations-Diagramm**
+
+- System-Komponenten können gut dargestellt werden
+- nicht im UML offiziell beschrieben
+
+![Konfigurationsdiagramm](assets/konfDiag.jpg)<!--width=600px-->
+
+**MPI**
+
+- Prozess auf einer anderen Maschine starten
+- Daten für die Ausführung (und Ergebnis) über standardisiertes Protokoll zwischen Maschinen übertragen
