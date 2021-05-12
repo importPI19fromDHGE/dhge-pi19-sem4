@@ -5,19 +5,20 @@ Systementwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [Systementwurf](#systementwurf)
+- [Präambel](#präambel)
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
-    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+    - [Kostenschätzungen](#kostenschätzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
-  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
-    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -271,6 +272,7 @@ $\rightarrow$ Abschätzung der Effizienz
   - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich ("NX-Bit")
 
 **Vorteile eines Musters**
+
 1. Dinge sichtbar gemacht
    - Dokumentation
    - Kommunikation fördert
@@ -282,35 +284,42 @@ $\rightarrow$ Abschätzung der Effizienz
 6. Corporate Identity
 
 ### Architekturmuster der physikalischen Sicht
+
 - Aufteilung der Funktionalitäten auf Knoten eines Netzes
 - Darstellung mittels Konfigurations-Diagramme
 - Darstellung: (im Rechteck) Knoten; (am Pfeil) Kommunikation
 - Zentrales System, Client-Server, Föderation, Konfigurations-Diagramm
 
 **Zum Zentralen System**
+
 - klassischer Großrechner
 - keine Intelligenz bei Terminals
 - Terminal 1, Terminal 2, Terminal 3 ... Termanal N $\rightarrow$ greifen alle auf das zentrale System zu
 
 **Zum Client-Server**
+
 - viele intelligente Clients (Frontend) greifen alle auf einen Server (Backend) zu
 
 Frontend:
+
 1. User-Interface
 2. Einbindung in die Geschäftsprozesse
 
 Backend:
+
 1. Datenhaltung
 2. Fachlogik
 3. ggf. Weiterleitung
 
 THIN Client
+
 - nicht eigenständig ("Screen Scraping")
 - nur User-Interface
 - Network-Computing (ohne Server sind keine Aktionen möglich)
 - Kosten geringer aber Anforderung an die Infrastruktur ist höher
 
 FAT Client
+
 - Teile der Anwendungslogik auf dem Client
 - Server Entlastung
 - Datenhaltung auf Server
@@ -325,9 +334,11 @@ FAT Client
 Mit Plantuml darstellen!
 
 **Zum Three Tier Client/Server**
+
 - viele intelligente Clients (UI, Fachlogik) kommunizieren mit Anwendungsserver (weitere Fachlogik, Verteilung der Anfragen auf verschiedene Server)
 
 **Zum Verteilmuster Förderation**
+
 - gleichberechtigte Partner
 - verteilte Subsysteme, die miteinander kommunizieren
 - (als voll-vermaschtes Netz dargestellt)
@@ -342,17 +353,19 @@ Mit Plantuml darstellen!
 >- Beschichtung
 >
 > insgesamt 13 verschiedene Programme
-> 
+>
 > Frage: Systementwurf um diesen Produkt-Entstehungsprozess zu unterstützen
-> 
+>
 > Anzahl an Konvertern bestimmen
-> 
+>
 > *???*
 
 **Zum Konfigurations-Diagramm**
+
 - System-Komponenten können gut dargestellt werden
 - nicht im UML offiziell beschrieben
 
 **MPI**
+
 - Prozess auf einer anderen Maschine starten
 - Daten für die Ausführung (und Ergebnis) über standardisiertes Protokoll zwischen Maschinen übertragen
