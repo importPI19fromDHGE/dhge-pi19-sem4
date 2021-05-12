@@ -351,3 +351,7 @@ Mit Plantuml darstellen!
 **Zum Konfigurations-Diagramm**
 - System-Komponenten können gut dargestellt werden
 - nicht im UML offiziell beschrieben
+
+**MPI**
+- Prozess auf einer anderen Maschine starten
+- Daten für die Ausführung (und Ergebnis) über standardisiertes Protokoll zwischen Maschinen übertragen
