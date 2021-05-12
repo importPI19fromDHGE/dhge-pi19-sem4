@@ -5,19 +5,20 @@ Systementwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [Systementwurf](#systementwurf)
+- [Präambel](#präambel)
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
-    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+    - [Kostenschätzungen](#kostenschätzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
-  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
-    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -209,7 +210,7 @@ $\rightarrow$ Dokumentation wird erzeugt
 
 ### Szenarien
 
-<!-- markdownlint-disable list-indent -->
+<!-- markdownlint-disable indentation -->
 
 - Verbindung zwischen Sichten
 - zeigen Laufzeitverhalten
@@ -223,7 +224,7 @@ $\rightarrow$ Dokumentation wird erzeugt
   - (1.) Anzahl direkte Szenarien
   - (2.) Aufwand für Modifikationen (um bisher indirekte Szenarien in direkte zu überführen)
 
-<!-- markdownlint-enable list-indent -->
+<!-- markdownlint-enable indentation -->
 
 $\rightarrow$ Abschätzung der Effizienz
 
