@@ -384,7 +384,7 @@ Mit Plantuml darstellen!
 
 ### Architektur-Modelle der Ablauf-Sicht
 
-**Zielperson:** Integrator 
+**Zielperson:** Integrator
 
 - Definition von Nebenläufigen System-Einheiten (Prozesse, Threads etc.)
 - Steuerung der Abfolge von Einzelfunktionen
@@ -421,6 +421,7 @@ Mit Plantuml darstellen!
 - ggf. Swimlanes verwenden
 
 ## Einflussfaktoren
+
 - Einsatzbedingungen
   - Einsetzbarkeit (Skalierbarkeit)
   - Zielplattform (Integration wird notwendig)
@@ -431,7 +432,6 @@ Mit Plantuml darstellen!
   - Hilfesystem
   - Entwicklungsmodell beim System-Entwurf
   - nicht-funktionale Anforderungen
-  
 ## Grundsatzentscheidungen
 - welche zusätzlichen Dienstleistungen werde ich anbieten?
 - welche Dienstleistungen können wegfallen?
@@ -439,7 +439,7 @@ Mit Plantuml darstellen!
 - Ausbaustufen gewünscht
 - Hilfesystem
   - schmale Schnittstelle zum Hilfesystem (XML, JSON, CSV, PDF, MD, ...)
-- Verteilung im Netz (Client-Server, Web-Architektur) 
+- Verteilung im Netz (Client-Server, Web-Architektur)
 - Oberfläche zum Benutzer (UI)
   - GUI, Kommandozeile, beides?
   - UX - Paradigmen
