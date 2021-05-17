@@ -574,7 +574,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 Vollkostenrechnung
 
 - ca. 1950 entwickelt
-- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung 
+- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung
 
 Teilkostenrechnung
 
