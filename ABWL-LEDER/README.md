@@ -565,7 +565,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
   - mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
 - **Instrumente:** KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
 
-## Balance Score Card 
+## Balance Score Card
 
 <!--3 Vor- und Nachteile müssen gewusste werden-->
 <!--TODO: von Folien übernehmen-->
@@ -575,7 +575,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 Vollkostenrechnung
 
 - ca. 1950 entwickelt
-- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung 
+- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung
 
 Teilkostenrechnung
 
