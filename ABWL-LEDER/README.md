@@ -481,7 +481,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - ergänzt um Lagebericht
   - definiert in §244 HGB
 
-## Was ist was?
+## Was ist was
 
 Bilanz:
 
