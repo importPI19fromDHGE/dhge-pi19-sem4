@@ -497,23 +497,60 @@ Kapitalflussrechnung
 Eigenkapitalspiegel 
 - stellt neben dem Unternehmenserfolg auch alle anderen Eigenkapitalveränderungen während einer Rechnungsperiode dar
 
+Segmentberichterstattung
+- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien 
+- Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
+Lagebericht
+- verbale Darstellung der Unternehmensführung über bestimmte Bereiche
 
+## Inhaltliche Bedeutung der Teile des Jahresabschlusses
 
+- Finanzlage $\rightarrow$ sämtliche Aspekte der Finazierung
+- Finanzstruktur $\rightarrow$ Aufbau des Kapitals (Eigenkapital, Fremdkapital, ...)
+- Deckungsverhältnisse $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
+- Zins- und Tilgungsfristen $\rightarrow$ Fristigkeit der Verbindlichkeiten
+- Finanzierungsmöglichkeiten $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
+- Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
+- abgeleitet der Finanzierung der Vermögensgegenstände
+- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten 
+
+- **Ertragslage**
+  - Darstellen des Erfolgs des Unternehmens
+  - Informationsquelle ist die GuV
+
+**Einzelabschluss** ist der Jahresabschluss eines rechtlich selbstständigen Unternehmens
 
 # Internes Rechnungswesen
 Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen 
 
-umfasst: 
-  - Kosten-Leistungsrechnung (KLAR)
-    - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen? 
-    - welchen Preis und Menge können wir am Markt erzielen?
-  - Selbstkosten der Produkte und Dienstleistungen
-    - Rahmenkosten werden außen vor gelassen 
-    - daraus folgt: Preiskalkulation der Produkte und Dienstleistungen
-    - Preis der Produkte wird vom Markt bestimmt 
-      - wenn Marktpreis höher als Kosten für Produkte: Gewinn 
-      - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen 
+## umfasst: 
+- Kosten-Leistungsrechnung (KLAR)
+  - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen? 
+  - welchen Preis und Menge können wir am Markt erzielen?
+- Selbstkosten der Produkte und Dienstleistungen
+  - Rahmenkosten werden außen vor gelassen 
+  - daraus folgt: Preiskalkulation der Produkte und Dienstleistungen
+  - Preis der Produkte wird vom Markt bestimmt 
+    - wenn Marktpreis höher als Kosten für Produkte: Gewinn 
+    - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen 
+
+## Kriterien: 
+- **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
+- **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
+- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
+- **Objekt der erfassten Daten:** von einzelnen Unternehmensbereichen bis zum Gesamtunternehmen
+- **Zeitraum der erfassten Daten:** 
+  - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
+  - mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
+- **Instrumente:** KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
+
+## Balance Score Card 
+
+<!--3 Vor- und Nachteile müssen gewusste werden-->
+<!--TODO: von Folien übernehmen-->
+
+
 
 
 # Investition und Finanzierung
