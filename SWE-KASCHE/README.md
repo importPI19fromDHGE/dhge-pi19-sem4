@@ -5,26 +5,27 @@ Systementwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [Systementwurf](#systementwurf)
+- [Präambel](#präambel)
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
-    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+    - [Kostenschätzungen](#kostenschätzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
-  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
-    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
     - [Architektur-Modelle der Ablauf-Sicht](#architektur-modelle-der-ablauf-sicht)
     - [Architektur-Muster der Logischen Sicht](#architektur-muster-der-logischen-sicht)
   - [Einflussfaktoren](#einflussfaktoren)
   - [Grundsatzentscheidungen](#grundsatzentscheidungen)
   - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
-  - [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Qualitätssicherung](#qualitätssicherung)
   - [Ablauf](#ablauf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -455,6 +456,7 @@ Mit Plantuml darstellen!
 - UML
 
 ## Qualitätssicherung
+
 1. Checklisten (Randbedingen, Grundsatzentscheidungen)
 2. geeigneter Entwicklungsprozess (z.Bsp. Peer-Review etc.)
 3. Zielperson definieren
