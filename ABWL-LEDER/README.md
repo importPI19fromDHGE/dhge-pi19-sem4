@@ -418,7 +418,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 - externes Rechnungswesen ist alles, was das Unternehmen nach außen hin verlässt
   - z.B. Nachweise über den Erfolg des Unternehmens
 
-## umfasst:
+**umfasst:**
 
 - Bilanz
   - für alle Unternehmen
