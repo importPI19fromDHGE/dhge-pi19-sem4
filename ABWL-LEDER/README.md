@@ -543,7 +543,6 @@ Lagebericht
 
 beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen
 
-
 - Kosten-Leistungsrechnung (KLAR)
   - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen?
   - welchen Preis und Menge können wir am Markt erzielen?
