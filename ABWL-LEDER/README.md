@@ -560,7 +560,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
 - **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
 - **Objekt der erfassten Daten:** von einzelnen Unternehmensbereichen bis zum Gesamtunternehmen
-- **Zeitraum der erfassten Daten:** 
+- **Zeitraum der erfassten Daten:**
   - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
   - mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
 - **Instrumente:** KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
