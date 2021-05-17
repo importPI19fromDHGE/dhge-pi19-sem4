@@ -419,7 +419,7 @@ Mit Plantuml darstellen!
 
 - Verfeinerung des Analyse-Modells
 - Blickpunkte des Benutzers (z. Bsp. durch Aktivitätsdiagramm)
-- Schwarzer Punkte: Start, Punkte mit Kreis: Stop
+- Schwarze Punkte: Start, Punkte mit Kreis: Stop
 - ggf. Swimlanes verwenden
 
 ## Einflussfaktoren
@@ -437,8 +437,8 @@ Mit Plantuml darstellen!
 
 ## Grundsatzentscheidungen
 
-- welche zusätzlichen Dienstleistungen werde ich anbieten?
-- welche Dienstleistungen können wegfallen?
+- Welche zusätzlichen Dienstleistungen werde ich anbieten?
+- Welche Dienstleistungen können wegfallen?
 - Systemumgebung
 - Ausbaustufen gewünscht
 - Hilfesystem
