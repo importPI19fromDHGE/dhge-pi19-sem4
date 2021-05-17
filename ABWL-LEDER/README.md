@@ -6,25 +6,26 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Allgemeine Betriebswirtschaftslehre](#allgemeine-betriebswirtschaftslehre)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensführung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung)
+  - [Unternehmensführung](#unternehmensführung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
   - [Kontrolle vs Controlling](#kontrolle-vs-controlling)
-  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensf%C3%BChrung)
-  - [Führung und Leitung](#f%C3%BChrung-und-leitung)
+  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensführung)
+  - [Führung und Leitung](#führung-und-leitung)
   - [Organisationsformen](#organisationsformen)
     - [Inhalt einer Stelle](#inhalt-einer-stelle)
-    - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
-      - [Zentralität](#zentralit%C3%A4t)
-      - [Dezentralität](#dezentralit%C3%A4t)
+    - [Möglichkeiten der Führungshierarchie](#möglichkeiten-der-führungshierarchie)
+      - [Zentralität](#zentralität)
+      - [Dezentralität](#dezentralität)
   - [Darstellung der Organisation](#darstellung-der-organisation)
     - [Moderne Stellenbeschreibung](#moderne-stellenbeschreibung)
     - [Organigramm](#organigramm)
@@ -38,13 +39,13 @@ Allgemeine Betriebswirtschaftslehre
     - [Einordnung](#einordnung)
     - [Verfahren der Personalplanung](#verfahren-der-personalplanung)
       - [Faustformel REFA](#faustformel-refa)
-      - [Vorwärtskalkulation](#vorw%C3%A4rtskalkulation)
-      - [Rückwärtskalkulation](#r%C3%BCckw%C3%A4rtskalkulation)
+      - [Vorwärtskalkulation](#vorwärtskalkulation)
+      - [Rückwärtskalkulation](#rückwärtskalkulation)
       - [vergangenheitsorientierte Methoden](#vergangenheitsorientierte-methoden)
     - [Quantitative Planung](#quantitative-planung)
     - [Stellenplanmethode](#stellenplanmethode)
     - [Kennzahlmethode](#kennzahlmethode)
-    - [Schätzmethode](#sch%C3%A4tzmethode)
+    - [Schätzmethode](#schätzmethode)
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
@@ -416,20 +417,22 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 # Externes Rechnungswesen
 
 - Personalführung selbst ist die individuelle Führung des Menschen und daher nicht digitalisierbar
-- externes Rechnungswesen ist alles, was das Unternehmen nach außen hin verlässt 
-  - z.B. Nachweise über den Erfolg des Unternehmens 
+- externes Rechnungswesen ist alles, was das Unternehmen nach außen hin verlässt
+  - z.B. Nachweise über den Erfolg des Unternehmens
 
 ## umfasst:
-  - Bilanz
-    - für alle Unternehmen
-  - Erfolgsrechnung (für große Unternehmen)
-    - für große Unternehmen
-  - Einschätzung und Ausblick des Unternehmens (Lagebericht)
-    - wie entwickelt sich das Unternehmen
-    - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
 
-## Funktionen: 
-- Informationsfunktion: 
+- Bilanz
+  - für alle Unternehmen
+- Erfolgsrechnung (für große Unternehmen)
+  - für große Unternehmen
+- Einschätzung und Ausblick des Unternehmens (Lagebericht)
+  - wie entwickelt sich das Unternehmen
+  - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
+
+## Funktionen:
+
+- Informationsfunktion:
   - Hauptfunktion des externen Rechnungswesens
   - Informationsaustausch zwischen Kapitalgeber und Management
   - ist vergangenheitsbasiert und dient möglicher Prognose
@@ -438,15 +441,16 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - Gewinnermittlung
   - Gewinnverwendung
   - z.B. Dividende bei Aktiengesellschaften
-- im Rahmen der Insolvenz 
+- im Rahmen der Insolvenz
   - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
-  - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden 
-  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ist ein Signal für Überschuldung 
+  - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
+  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ist ein Signal für Überschuldung
 - Entscheidungsanreizsystem
-  - gute Bilanz kann Entscheidungsgrundlage für Investoren sein 
-  - Gewinnentwicklung als Signal für Investoren 
+  - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
+  - Gewinnentwicklung als Signal für Investoren
 
-## Kriterien: 
+## Kriterien:
+
 - **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
 - **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
 - **gesetzliche Regelung:** beachten handels- und steuerrechtlicher Regelungen
@@ -459,18 +463,17 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 - **Instrumente:** Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
 
 ## Wer braucht was?
+
 - **Einzelkaufleute und Personenunternehmen:**
   - eine Bilanz
   - Gewinn- und Verlustrechnung (GuV)
   - definiert in §242 HGB
-
 - **Kapitalgesellschaften und KapCoGes**
   - Bilanz
   - GuV
   - Anhang
   - ggf. ergänzt um Lagebericht
   - definiert in §244 HGB
-
 - **kapitalmarktorientierte Kapitalgesellschaften, die nicht zur Aufstellung eines Konzernabschlusses verpflichtet sind:**
   - Bilanz
   - GuV
@@ -481,37 +484,44 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - ergänzt um Lagebericht
   - definiert in §244 HGB
 
-## Was ist was? 
+## Was ist was?
 
-Bilanz: 
+Bilanz:
+
 - rechnerische Zusammenstellung aller Vermögensgegenstände (Aktiva) sowie aller Schulden (Passiva)
 - Differenz beider Summen ergibt das Eigenkapital 
 - Vergleich eines Teils beider Eigenkapitalbeträge des Berichtsjahres und des Vorjahres ergibt Gewinn oder Verlust
 
-GuV: 
-- Erträge werden den Aufwendungen gegeübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
-- beide Aufstellungen sind über doppelte Buchführung miteinander verbunden 
+GuV:
 
-Anhang: 
+- Erträge werden den Aufwendungen gegeübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
+- beide Aufstellungen sind über doppelte Buchführung miteinander verbunden
+
+Anhang:
+
 - Zusammenstellung bestimmter Informationen außerhalb von Bilanz und GuV
 - diese können z.T. wahlweise alternativ in Bilanz oder GuV angegeben werden
-- Beispiel: 
+- Beispiel:
   - Beschreibung eines Entwicklungsprogrammes für Mitarbeiter
 
 Kapitalflussrechnung
+
 - erfasst die Finanzmittelzuflüsse und -abflüsse einer Periode
 - zeigt als Saldo einen Zufluss oder Abfluss an Finanzmitteln, die der finanzwirksamen Veränderung eines in der Bilanz enthaltenen Bestands an Finanzmitteln entspricht
-- Beispiel: 
+- Beispiel:
   - Abverkauf von Flächen
 
-Eigenkapitalspiegel 
+Eigenkapitalspiegel
+
 - stellt neben dem Unternehmenserfolg auch alle anderen Eigenkapitalveränderungen während einer Rechnungsperiode dar
 
 Segmentberichterstattung
+
 - Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien 
 - Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
 Lagebericht
+
 - verbale Darstellung der Unternehmensführung über bestimmte Bereiche
 
 ## Inhaltliche Bedeutung der Teile des Jahresabschlusses
@@ -532,20 +542,23 @@ Lagebericht
 **Einzelabschluss** ist der Jahresabschluss eines rechtlich selbstständigen Unternehmens
 
 # Internes Rechnungswesen
+
 Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen 
 
-## umfasst: 
+## umfasst:
+
 - Kosten-Leistungsrechnung (KLAR)
-  - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen? 
+  - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen?
   - welchen Preis und Menge können wir am Markt erzielen?
 - Selbstkosten der Produkte und Dienstleistungen
-  - Rahmenkosten werden außen vor gelassen 
+  - Rahmenkosten werden außen vor gelassen
   - daraus folgt: Preiskalkulation der Produkte und Dienstleistungen
-  - Preis der Produkte wird vom Markt bestimmt 
-    - wenn Marktpreis höher als Kosten für Produkte: Gewinn 
-    - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen 
+  - Preis der Produkte wird vom Markt bestimmt
+    - wenn Marktpreis höher als Kosten für Produkte: Gewinn
+    - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen
 
-## Kriterien: 
+## Kriterien:
+
 - **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
 - **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
@@ -563,15 +576,14 @@ Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 ## Kosten- Leistungsrechnung
 
 Vollkostenrechnung
+
 - ca. 1950 entwickelt
 - Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung 
 
 Teilkostenrechnung
+
 - seit ca. 1975
 - Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten/ variable Kosten
-
-
-
 
 # Investition und Finanzierung
 
