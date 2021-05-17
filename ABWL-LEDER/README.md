@@ -448,7 +448,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
   - Gewinnentwicklung als Signal für Investoren
 
-## Kriterien:
+## Kriterien d. externen Rechnungswesens:
 
 - **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
 - **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
