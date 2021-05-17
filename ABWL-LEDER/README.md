@@ -6,25 +6,26 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Allgemeine Betriebswirtschaftslehre](#allgemeine-betriebswirtschaftslehre)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensführung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung)
+  - [Unternehmensführung](#unternehmensführung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
   - [Kontrolle vs Controlling](#kontrolle-vs-controlling)
-  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensf%C3%BChrung)
-  - [Führung und Leitung](#f%C3%BChrung-und-leitung)
+  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensführung)
+  - [Führung und Leitung](#führung-und-leitung)
   - [Organisationsformen](#organisationsformen)
     - [Inhalt einer Stelle](#inhalt-einer-stelle)
-    - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
-      - [Zentralität](#zentralit%C3%A4t)
-      - [Dezentralität](#dezentralit%C3%A4t)
+    - [Möglichkeiten der Führungshierarchie](#möglichkeiten-der-führungshierarchie)
+      - [Zentralität](#zentralität)
+      - [Dezentralität](#dezentralität)
   - [Darstellung der Organisation](#darstellung-der-organisation)
     - [Moderne Stellenbeschreibung](#moderne-stellenbeschreibung)
     - [Organigramm](#organigramm)
@@ -38,20 +39,20 @@ Allgemeine Betriebswirtschaftslehre
     - [Einordnung](#einordnung)
     - [Verfahren der Personalplanung](#verfahren-der-personalplanung)
       - [Faustformel REFA](#faustformel-refa)
-      - [Vorwärtskalkulation](#vorw%C3%A4rtskalkulation)
-      - [Rückwärtskalkulation](#r%C3%BCckw%C3%A4rtskalkulation)
+      - [Vorwärtskalkulation](#vorwärtskalkulation)
+      - [Rückwärtskalkulation](#rückwärtskalkulation)
       - [vergangenheitsorientierte Methoden](#vergangenheitsorientierte-methoden)
     - [Quantitative Planung](#quantitative-planung)
     - [Stellenplanmethode](#stellenplanmethode)
     - [Kennzahlmethode](#kennzahlmethode)
-    - [Schätzmethode](#sch%C3%A4tzmethode)
+    - [Schätzmethode](#schätzmethode)
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
   - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
   - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
-  - [Wer braucht was?](#wer-braucht-was)
-  - [Was ist was?](#was-ist-was)
+  - [Wer braucht was](#wer-braucht-was)
+  - [Was ist was](#was-ist-was)
   - [Inhaltliche Bedeutung der Teile des Jahresabschlusses](#inhaltliche-bedeutung-der-teile-des-jahresabschlusses)
 - [Internes Rechnungswesen](#internes-rechnungswesen)
   - [Kriterien d. internen Rechnungswesens](#kriterien-d-internen-rechnungswesens)
@@ -459,7 +460,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
     - muss aber begründet und beschlossen werden
 - **Instrumente:** Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
 
-## Wer braucht was?
+## Wer braucht was
 
 - **Einzelkaufleute und Personenunternehmen:**
   - eine Bilanz
@@ -481,7 +482,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - ergänzt um Lagebericht
   - definiert in §244 HGB
 
-## Was ist was?
+## Was ist was
 
 Bilanz:
 
