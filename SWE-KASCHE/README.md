@@ -19,6 +19,13 @@ Systementwurf
     - [Szenarien](#szenarien)
     - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
+    - [Architektur-Modelle der Ablauf-Sicht](#architektur-modelle-der-ablauf-sicht)
+    - [Architektur-Muster der Logischen Sicht](#architektur-muster-der-logischen-sicht)
+  - [Einflussfaktoren](#einflussfaktoren)
+  - [Grundsatzentscheidungen](#grundsatzentscheidungen)
+  - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
+  - [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Ablauf](#ablauf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -374,3 +381,94 @@ Mit Plantuml darstellen!
 
 - Prozess auf einer anderen Maschine starten
 - Daten für die Ausführung (und Ergebnis) über standardisiertes Protokoll zwischen Maschinen übertragen
+
+### Architektur-Modelle der Ablauf-Sicht
+
+**Zielperson:** Integrator
+
+- Definition von nebenläufigen System-Einheiten (Prozesse, Threads etc.)
+- Steuerung der Abfolge von Einzelfunktionen
+- Synchronisation / Koordination
+- Reaktion auf Ereignisse
+- Darstellung: Sequenz-Diagramme
+  > Stichwort: Swimlanes
+
+- Muster:
+  - Zentrale Steuerung
+    - Call and Return
+      - Hauptprogramm, Unterprogramm 1, 2, 3
+    - Master Slave
+      - Manager, GUI, Sensor, Aktor
+  - Ereignis-Steuerung
+    - Selective Broadcast
+      - Event-Handler, Subsystem 1, 2, 3
+      - Events werden von einem System geraised und vom Event-Handler behandelt
+      - Events werden nicht an alle Systeme, sondern immer nur an bestimmte gesendet (selective)
+      - externe Events können auch an den Event Handler gereicht werden
+      - Bsp.: GUI, Microservices
+      - Nachteil: in der gezeigten Ausbaustufe: keine Info über Subsystem - Erfolg <!-- ??? -->, Scheduling schwierig, Event-Handler ist Single Point Of Failure
+      - Vorteil: zentrale Stelle für Vorverarbeitung, Konfiguration, Priorisierung
+      - ![Selektive Broadcast](assets/selective_broadcast.jpg)<!--width=600px-->
+    - Interrupt
+      - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
+      - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
+
+### Architektur-Muster der Logischen Sicht
+
+**Zielgruppe:** Benutzer
+
+- Verfeinerung des Analyse-Modells
+- Blickpunkte des Benutzers (z. Bsp. durch Aktivitätsdiagramm)
+- Schwarze Punkte: Start, Punkte mit Kreis: Stop
+- ggf. Swimlanes verwenden
+
+## Einflussfaktoren
+
+- Einsatzbedingungen
+  - Einsetzbarkeit (Skalierbarkeit)
+  - Zielplattform (Integration wird notwendig)
+  - vorhandene Schnittstellen
+  - Netzverteilung
+  - Benutzerzielgruppe / Service-Modell
+  - Mandantenfähigkeit
+  - Hilfesystem
+  - Entwicklungsmodell beim System-Entwurf
+  - nicht-funktionale Anforderungen
+
+## Grundsatzentscheidungen
+
+- Welche zusätzlichen Dienstleistungen werde ich anbieten?
+- Welche Dienstleistungen können wegfallen?
+- Systemumgebung
+- Ausbaustufen gewünscht
+- Hilfesystem
+  - schmale Schnittstelle zum Hilfesystem (XML, JSON, CSV, PDF, MD, ...)
+- Verteilung im Netz (Client-Server, Web-Architektur)
+- Oberfläche zum Benutzer (UI)
+  - GUI, Kommandozeile, beides?
+  - UX - Paradigmen
+  - UI-Builder-Tools
+
+## Hauptaufgabe beim Entwurf einer (Software-)Architektur
+
+- Zerlegung, Strukturierung, Beziehungen
+- Systemkomponenten (abgegrenzter Teil des Gesamtsystems)
+- UML
+
+## Qualitätssicherung
+
+1. Checklisten (Randbedingen, Grundsatzentscheidungen)
+2. geeigneter Entwicklungsprozess (z.Bsp. Peer-Review etc.)
+3. Zielperson definieren
+4. Szenarien
+
+## Ablauf
+
+1. Architektur festlegen
+  - Alternativen benennen / erstellen
+2. Szenarien durchspielen
+  - direkte und indirekte Szenarien (nur nach Architektur Änderungen realisierbar)
+3. Architektur bewerten
+  - Anzahl an direkten Szenarien
+  - Aufwand für Modifikationen
+  - Effizienzabschätzung
