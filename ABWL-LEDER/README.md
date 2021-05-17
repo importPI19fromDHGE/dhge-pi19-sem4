@@ -523,7 +523,7 @@ Lagebericht
 
 ## Inhaltliche Bedeutung der Teile des Jahresabschlusses
 
-- Finanzlage $\rightarrow$ sämtliche Aspekte der Finazierung
+- Finanzlage \rightarrow\rightarrow sämtliche Aspekte der Finanzierung
 - Finanzstruktur $\rightarrow$ Aufbau des Kapitals (Eigenkapital, Fremdkapital, ...)
 - Deckungsverhältnisse $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
 - Zins- und Tilgungsfristen $\rightarrow$ Fristigkeit der Verbindlichkeiten
@@ -540,7 +540,7 @@ Lagebericht
 
 # Internes Rechnungswesen
 
-Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen 
+beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen 
 
 
 - Kosten-Leistungsrechnung (KLAR)
