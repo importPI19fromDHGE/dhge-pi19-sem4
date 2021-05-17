@@ -554,7 +554,7 @@ Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
     - wenn Marktpreis höher als Kosten für Produkte: Gewinn
     - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen
 
-## Kriterien:
+## Kriterien d. internen Rechnungswesens:
 
 - **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
