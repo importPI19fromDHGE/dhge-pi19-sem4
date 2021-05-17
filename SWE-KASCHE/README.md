@@ -19,6 +19,13 @@ Systementwurf
     - [Szenarien](#szenarien)
     - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
+    - [Architektur-Modelle der Ablauf-Sicht](#architektur-modelle-der-ablauf-sicht)
+    - [Architektur-Muster der Logischen Sicht](#architektur-muster-der-logischen-sicht)
+  - [Einflussfaktoren](#einflussfaktoren)
+  - [Grundsatzentscheidungen](#grundsatzentscheidungen)
+  - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
+  - [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Ablauf](#ablauf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
