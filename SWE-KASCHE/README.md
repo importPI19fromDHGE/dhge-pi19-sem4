@@ -374,3 +374,87 @@ Mit Plantuml darstellen!
 
 - Prozess auf einer anderen Maschine starten
 - Daten für die Ausführung (und Ergebnis) über standardisiertes Protokoll zwischen Maschinen übertragen
+
+### Architektur-Modelle der Ablauf-Sicht
+
+**Zielperson:** Integrator 
+
+- Definition von Nebenläufigen System-Einheiten (Prozesse, Threads etc.)
+- Steuerung der Abfolge von Einzelfunktionen
+- Synchronisation / Koordination
+- Reaktion auf Ereignisse
+- Darstellung: Sequenz-Diagramme
+  > Stichwort: Swimlanes
+
+- Muster:
+  - Zentrale Steuerung
+    - Call and Return
+      - Hauptprogramm, Unterprogramm 1, 2, 3
+    - Master Slave
+      - Manager, GUI, Sensor, Aktor
+  - Ereignis Steuerung
+    - Selective Broadcast
+      - Event-Handler, Subsystem 1, 2, 3
+      - Events werden von einem System geraised und vom Event-Handler behandelt
+      - Events werden nicht an alle Systeme, sondern immer nur an bestimmte gesendet (selective)
+      - externe Events können auch an den Event Handler gereicht werden
+      - Bsp.: GUI, Microservices
+      - Nachteil: in der gezeigten Ausbaustufe: keine Info über Subsystem - Erfolg <!-- ??? -->, Scheduling schierig, zentrale Stelle des Event-Handlers beim Ausfall
+      - Vorteil: zentrale Stelle für Vorverarbeitung, Konfiguration, Priorisierung
+    - Interrupt
+      - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
+      - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
+
+### Architektur-Muster der Logischen Sicht
+
+**ZielGruppe:** Benutzer
+- Verfeinerung des Analyse-Modells
+- Blickpunkte des Benutzers (z. Bsp. durch Aktivitätsdiagramm)
+- Schwarzer Punkte: Start, Punkte mit Kreis: Stop
+- ggf. Swimlanes verwenden
+
+## Einflussfaktoren
+- Einsatzbedingungen
+  - Einsetzbarkeit (Skalierbarkeit)
+  - Zielplattform (Integration wird notwendig)
+  - vorhandene Schnittstellen
+  - Netzverteilung
+  - Benutzerzielgruppe / Service-Modell
+  - Mandantenfähigkeit
+  - Hilfesystem
+  - Entwicklungsmodell beim System-Entwurf
+  - nicht-funktionale Anforderungen
+  
+## Grundsatzentscheidungen
+- welche zusätzlichen Dienstleistungen werde ich anbieten?
+- welche Dienstleistungen können wegfallen?
+- Systemumgebung
+- Ausbaustufen gewünscht
+- Hilfesystem
+  - schmale Schnittstelle zum Hilfesystem (XML, JSON, CSV, PDF, MD, ...)
+- Verteilung im Netz (Client-Server, Web-Architektur) 
+- Oberfläche zum Benutzer (UI)
+  - GUI, Kommandozeile, beides?
+  - UX - Paradigmen
+  - UI-Builder-Tools
+
+## Hauptaufgabe beim Entwurf einer (Software-)Architektur
+- Zerlegung, Strukturierung, Beziehungen
+- Systemkomponenten (abgegrenzter Teil des Gesamtsystems)
+- UML
+
+## Qualitätssicherung
+1. Checklisten (Randbedingen, Grundsatzentscheidungen)
+2. geeigneter Entwicklungsprozess (z.Bsp. Peer-Review etc.)
+3. Zielperson definieren
+4. Szenarien
+
+## Ablauf
+1. Architektur festlegen
+   - Alternativen benennen / erstellen
+2. Szenarien durchspielen
+   - direkte und indirekte Szenarien (nur nach Architektur Änderungen realisierbar)
+3. Architektur bewerten
+   - Anzahl an direkten Szenarien
+   - Aufwand für Modifikationen
+   - Effizienzabschätzung
