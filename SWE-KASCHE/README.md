@@ -5,26 +5,27 @@ Systementwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Präambel](#pr%C3%A4ambel)
+- [Systementwurf](#systementwurf)
+- [Präambel](#präambel)
   - [Entwurf-Herangehensweise (Wiederholung System-Analyse)](#entwurf-herangehensweise-wiederholung-system-analyse)
-    - [Kostenschätzungen](#kostensch%C3%A4tzungen)
+    - [Kostenschätzungen](#kostenschätzungen)
   - [Entwicklungskonzepte](#entwicklungskonzepte)
 - [Entwicklungs-Konzepte](#entwicklungs-konzepte)
   - [Software-Entwurf](#software-entwurf)
   - [Gliederung des Entwurfsprozesses](#gliederung-des-entwurfsprozesses)
   - [Beispiel](#beispiel)
   - [Software Architektur](#software-architektur)
-  - [Kriterien für einen guten Entwurf](#kriterien-f%C3%BCr-einen-guten-entwurf)
+  - [Kriterien für einen guten Entwurf](#kriterien-für-einen-guten-entwurf)
   - [Software-Architekturen und deren Sichten](#software-architekturen-und-deren-sichten)
     - [Szenarien](#szenarien)
-    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-f%C3%BCr-strukturelle-sicht)
+    - [Architektur-Muster für strukturelle Sicht](#architektur-muster-für-strukturelle-sicht)
     - [Architekturmuster der physikalischen Sicht](#architekturmuster-der-physikalischen-sicht)
     - [Architektur-Modelle der Ablauf-Sicht](#architektur-modelle-der-ablauf-sicht)
     - [Architektur-Muster der Logischen Sicht](#architektur-muster-der-logischen-sicht)
   - [Einflussfaktoren](#einflussfaktoren)
   - [Grundsatzentscheidungen](#grundsatzentscheidungen)
   - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
-  - [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Qualitätssicherung](#qualitätssicherung)
   - [Ablauf](#ablauf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -415,6 +416,7 @@ Mit Plantuml darstellen!
 ### Architektur-Muster der Logischen Sicht
 
 **ZielGruppe:** Benutzer
+
 - Verfeinerung des Analyse-Modells
 - Blickpunkte des Benutzers (z. Bsp. durch Aktivitätsdiagramm)
 - Schwarzer Punkte: Start, Punkte mit Kreis: Stop
@@ -432,7 +434,9 @@ Mit Plantuml darstellen!
   - Hilfesystem
   - Entwicklungsmodell beim System-Entwurf
   - nicht-funktionale Anforderungen
+
 ## Grundsatzentscheidungen
+
 - welche zusätzlichen Dienstleistungen werde ich anbieten?
 - welche Dienstleistungen können wegfallen?
 - Systemumgebung
@@ -446,6 +450,7 @@ Mit Plantuml darstellen!
   - UI-Builder-Tools
 
 ## Hauptaufgabe beim Entwurf einer (Software-)Architektur
+
 - Zerlegung, Strukturierung, Beziehungen
 - Systemkomponenten (abgegrenzter Teil des Gesamtsystems)
 - UML
@@ -457,11 +462,12 @@ Mit Plantuml darstellen!
 4. Szenarien
 
 ## Ablauf
+
 1. Architektur festlegen
-   - Alternativen benennen / erstellen
+  - Alternativen benennen / erstellen
 2. Szenarien durchspielen
-   - direkte und indirekte Szenarien (nur nach Architektur Änderungen realisierbar)
+  - direkte und indirekte Szenarien (nur nach Architektur Änderungen realisierbar)
 3. Architektur bewerten
-   - Anzahl an direkten Szenarien
-   - Aufwand für Modifikationen
-   - Effizienzabschätzung
+  - Anzahl an direkten Szenarien
+  - Aufwand für Modifikationen
+  - Effizienzabschätzung
