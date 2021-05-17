@@ -51,7 +51,7 @@ Allgemeine Betriebswirtschaftslehre
   - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
   - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
   - [Wer braucht was?](#wer-braucht-was)
-  - [Was ist was?](#was-ist-was)
+  - [Was ist was](#was-ist-was)
   - [Inhaltliche Bedeutung der Teile des Jahresabschlusses](#inhaltliche-bedeutung-der-teile-des-jahresabschlusses)
 - [Internes Rechnungswesen](#internes-rechnungswesen)
   - [Kriterien d. internen Rechnungswesens](#kriterien-d-internen-rechnungswesens)
