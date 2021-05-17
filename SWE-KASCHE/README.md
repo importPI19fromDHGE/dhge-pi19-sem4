@@ -386,7 +386,7 @@ Mit Plantuml darstellen!
 
 **Zielperson:** Integrator
 
-- Definition von Nebenläufigen System-Einheiten (Prozesse, Threads etc.)
+- Definition von nebenläufigen System-Einheiten (Prozesse, Threads etc.)
 - Steuerung der Abfolge von Einzelfunktionen
 - Synchronisation / Koordination
 - Reaktion auf Ereignisse
@@ -399,14 +399,14 @@ Mit Plantuml darstellen!
       - Hauptprogramm, Unterprogramm 1, 2, 3
     - Master Slave
       - Manager, GUI, Sensor, Aktor
-  - Ereignis Steuerung
+  - Ereignis-Steuerung
     - Selective Broadcast
       - Event-Handler, Subsystem 1, 2, 3
       - Events werden von einem System geraised und vom Event-Handler behandelt
       - Events werden nicht an alle Systeme, sondern immer nur an bestimmte gesendet (selective)
       - externe Events können auch an den Event Handler gereicht werden
       - Bsp.: GUI, Microservices
-      - Nachteil: in der gezeigten Ausbaustufe: keine Info über Subsystem - Erfolg <!-- ??? -->, Scheduling schierig, zentrale Stelle des Event-Handlers beim Ausfall
+      - Nachteil: in der gezeigten Ausbaustufe: keine Info über Subsystem - Erfolg <!-- ??? -->, Scheduling schwierig, Event-Handler ist Single Point Of Failure
       - Vorteil: zentrale Stelle für Vorverarbeitung, Konfiguration, Priorisierung
     - Interrupt
       - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
@@ -414,7 +414,7 @@ Mit Plantuml darstellen!
 
 ### Architektur-Muster der Logischen Sicht
 
-**ZielGruppe:** Benutzer
+**Zielgruppe:** Benutzer
 
 - Verfeinerung des Analyse-Modells
 - Blickpunkte des Benutzers (z. Bsp. durch Aktivitätsdiagramm)
