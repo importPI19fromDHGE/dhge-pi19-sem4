@@ -409,9 +409,7 @@ Mit Plantuml darstellen!
       - Bsp.: GUI, Microservices
       - Nachteil: in der gezeigten Ausbaustufe: keine Info über Subsystem - Erfolg <!-- ??? -->, Scheduling schwierig, Event-Handler ist Single Point Of Failure
       - Vorteil: zentrale Stelle für Vorverarbeitung, Konfiguration, Priorisierung
-
-![Selektive Broadcast](assets/selective_broadcast.jpg)<!--width=600px-->
-
+      - ![Selektive Broadcast](assets/selective_broadcast.jpg)<!--width=600px-->
     - Interrupt
       - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
       - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
