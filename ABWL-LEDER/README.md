@@ -550,6 +550,16 @@ Beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 <!--3 Vor- und Nachteile müssen gewusste werden-->
 <!--TODO: von Folien übernehmen-->
 
+## Kosten- Leistungsrechnung
+
+Vollkostenrechnung
+- ca. 1950 entwickelt
+- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung 
+
+Teilkostenrechnung
+- seit ca. 1975
+- Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten/ variable Kosten
+
 
 
 
