@@ -441,7 +441,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 - im Rahmen der Insolvenz
   - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
   - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
-  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ist ein Signal für Überschuldung
+  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ein Signal für Überschuldung
 - Entscheidungsanreizsystem
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
   - Gewinnentwicklung als Signal für Investoren
