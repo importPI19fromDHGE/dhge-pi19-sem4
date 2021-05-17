@@ -6,25 +6,26 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Allgemeine Betriebswirtschaftslehre](#allgemeine-betriebswirtschaftslehre)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensführung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung)
+  - [Unternehmensführung](#unternehmensführung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
   - [Kontrolle vs Controlling](#kontrolle-vs-controlling)
-  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensf%C3%BChrung)
-  - [Führung und Leitung](#f%C3%BChrung-und-leitung)
+  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensführung)
+  - [Führung und Leitung](#führung-und-leitung)
   - [Organisationsformen](#organisationsformen)
     - [Inhalt einer Stelle](#inhalt-einer-stelle)
-    - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
-      - [Zentralität](#zentralit%C3%A4t)
-      - [Dezentralität](#dezentralit%C3%A4t)
+    - [Möglichkeiten der Führungshierarchie](#möglichkeiten-der-führungshierarchie)
+      - [Zentralität](#zentralität)
+      - [Dezentralität](#dezentralität)
   - [Darstellung der Organisation](#darstellung-der-organisation)
     - [Moderne Stellenbeschreibung](#moderne-stellenbeschreibung)
     - [Organigramm](#organigramm)
@@ -38,23 +39,23 @@ Allgemeine Betriebswirtschaftslehre
     - [Einordnung](#einordnung)
     - [Verfahren der Personalplanung](#verfahren-der-personalplanung)
       - [Faustformel REFA](#faustformel-refa)
-      - [Vorwärtskalkulation](#vorw%C3%A4rtskalkulation)
-      - [Rückwärtskalkulation](#r%C3%BCckw%C3%A4rtskalkulation)
+      - [Vorwärtskalkulation](#vorwärtskalkulation)
+      - [Rückwärtskalkulation](#rückwärtskalkulation)
       - [vergangenheitsorientierte Methoden](#vergangenheitsorientierte-methoden)
     - [Quantitative Planung](#quantitative-planung)
     - [Stellenplanmethode](#stellenplanmethode)
     - [Kennzahlmethode](#kennzahlmethode)
-    - [Schätzmethode](#sch%C3%A4tzmethode)
+    - [Schätzmethode](#schätzmethode)
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
-  - [Funktionen:](#funktionen)
-  - [Kriterien d. externen Rechnungswesens:](#kriterien-d-externen-rechnungswesens)
+  - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
+  - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
   - [Wer braucht was?](#wer-braucht-was)
   - [Was ist was?](#was-ist-was)
   - [Inhaltliche Bedeutung der Teile des Jahresabschlusses](#inhaltliche-bedeutung-der-teile-des-jahresabschlusses)
 - [Internes Rechnungswesen](#internes-rechnungswesen)
-  - [Kriterien d. internen Rechnungswesens:](#kriterien-d-internen-rechnungswesens)
+  - [Kriterien d. internen Rechnungswesens](#kriterien-d-internen-rechnungswesens)
   - [Balance Score Card](#balance-score-card)
   - [Kosten- Leistungsrechnung](#kosten--leistungsrechnung)
 - [Investition und Finanzierung](#investition-und-finanzierung)
@@ -427,7 +428,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - wie entwickelt sich das Unternehmen
   - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
 
-## Funktionen:
+## Funktionen des externen Rechnungswesens
 
 - Informationsfunktion:
   - Hauptfunktion des externen Rechnungswesens
@@ -446,7 +447,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
   - Gewinnentwicklung als Signal für Investoren
 
-## Kriterien d. externen Rechnungswesens:
+## Kriterien d. externen Rechnungswesens
 
 - **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
 - **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
@@ -486,7 +487,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 Bilanz:
 
 - rechnerische Zusammenstellung aller Vermögensgegenstände (Aktiva) sowie aller Schulden (Passiva)
-- Differenz beider Summen ergibt das Eigenkapital 
+- Differenz beider Summen ergibt das Eigenkapital
 - Vergleich eines Teils beider Eigenkapitalbeträge des Berichtsjahres und des Vorjahres ergibt Gewinn oder Verlust
 
 GuV:
@@ -514,7 +515,7 @@ Eigenkapitalspiegel
 
 Segmentberichterstattung
 
-- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien 
+- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
 - Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
 Lagebericht
@@ -530,7 +531,7 @@ Lagebericht
 - Finanzierungsmöglichkeiten $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
 - Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
 - abgeleitet der Finanzierung der Vermögensgegenstände
-- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten 
+- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten
 
 - **Ertragslage**
   - Darstellen des Erfolgs des Unternehmens
@@ -540,7 +541,7 @@ Lagebericht
 
 # Internes Rechnungswesen
 
-beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen 
+beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen
 
 
 - Kosten-Leistungsrechnung (KLAR)
@@ -553,7 +554,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
     - wenn Marktpreis höher als Kosten für Produkte: Gewinn
     - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen
 
-## Kriterien d. internen Rechnungswesens:
+## Kriterien d. internen Rechnungswesens
 
 - **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
