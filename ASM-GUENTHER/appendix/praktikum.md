@@ -23,12 +23,12 @@ Praktikum hardwarenahe Programmierung
 - 8 kB Flash <!--Whoa-->
 - 512 Byte EEPROM
 - 512 Byte SRAM
-- bis zu 64kB externen SRAM
-- 8Bit + 16Bit Zähler
+- bis zu 64 kB externen SRAM
+- 8 Bit + 16 Bit Zähler
 - 0 bis 8 MHz
 - interne und externe Interrupts
 - interner Watchdog (mit Brownout Detection)
-- CPU entspricht Havard-Architektur und unterstützt Single Level Pipelining
+- CPU entspricht Harvard-Architektur und unterstützt Single Level Pipelining
 - RAM: Adresse ``0x60``
 - Stack: wächst von unten nach oben; Pointer muss initialisiert werden
 - LED und Taster sind **Low-aktiv** (verhindert Störungen beim Start)
@@ -101,21 +101,21 @@ rjmp main
 ## I/O
 
 - Port $\rightarrow$ Sammlung verschiedener Speicher
-- ``DDRx``-Register: "Data Direction Register"; deklariert, ob ein Pin an einem Port x mithilfe des dazugehörigen Bits ein Eingang oder Ausgang ist
+- ``DDRx``-Register: "Data Direction Register"; deklariert, ob ein Pin an einem Port ``x`` mithilfe des dazugehörigen Bits ein Eingang oder Ausgang ist
   - Beispiel: ``DDRB`` hat Wert 255 $\rightarrow$ alle Pins sind Ausgänge
 - ``PORTx`` sendet Daten an Ausgänge
 - ``PINx`` ist ein nur-lesen-Register $\rightarrow$ hier können Daten ausgelesen werden
 - Befehle:
   - ``OUT``: schreibt Daten
   - ``IN``: liest Daten in ein Arbeitsregister
-  - ``LDI``: Liest Bit aus I/O-Register
-  - ``SBI``: Schreibt bit in I/O-Register
+  - ``LDI``: liest Bit aus I/O-Register
+  - ``SBI``: schreibt Bit in I/O-Register
   - ``CBI``: löscht Bit aus I/O-Register
   - ``SBIC``: Wenn Register cleared, dann überspringe nächste Anweisung
 
 ## Register
 
-- 32 General Purpose Register sowei Spezialregister
+- 32 General Purpose Register sowie Spezialregister
 - Register ``R16`` bis ``R31`` für spezielle Aufgaben
   - ``LDI``,  ``ANDI``, ``CBR``, ``SBR``, ``CPI``, ``SER``, ``ORI``, ``SBCI``, ``SUBI`` funktionieren erst ab ``R16``
 - Zeigerregister ``X``, ``Y``, ``Z``
