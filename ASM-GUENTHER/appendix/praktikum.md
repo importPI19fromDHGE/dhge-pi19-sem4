@@ -22,8 +22,73 @@ Praktikum hardwarenahe Programmierung
 - CPU entspricht Havard-Architektur und unterstützt Single Level Pipelining
 - RAM: Adresse ``0x60``
 - Stack: wächst von unten nach oben; Pointer muss initialisiert werden
+- LED und Taster sind **Low-aktiv** (verhindert Störungen beim Start)
 
-## besondere Register
+## Besonderheiten bei Registern
 
 - Statusregister: Informationen zu Ergeignissen von arithmetischen und logischen Operationen, wie z.B. Zero-Flag
   - Besonderheit `I`-Flag: muss manuell auf 1 gesetzt werden, wenn Interrupts behandelt werden sollen
+- PIN-Register laufen dem PORT-Register um einen Takt nach
+
+# Direktiven und Kommandos
+
+- Direktiven: Anweisungen für den Assembler (die Software), ähnlich zu C-Präprozessor
+  - keine Maschinenbefehle
+  - wichtig:
+    - ``.include`` - analog zu C
+    - ``.def`` - Aliase für Register
+    - ``.equ`` - Definition einer Konstante, ähnlich zu ``#define``
+    - ``.set`` - wie ``.equ``, aber nicht konstant <!--???-->
+- Kommandos: entsprechen genau einem Maschinenbefehl; ca. 130
+  - Speicheroperationen: ``LDI``, ``MOV``,...
+  - Arithmetische und logische Operationen: ``ADD``, ``SUB``, ...
+  - Manipulationen im Programmablauf: ``SIBS``, ``BREQ``,...
+  - Kommentare
+  - Ziel von Ergebnisdaten ist der **linke Operand**
+  - jede Kombination von verwendeten Registern in einem Befehl bildet eigentlich einen separaten Befehl $\rightarrow$ Befehlssatz begrenzt
+
+# Programmieren mit AVR Studio
+
+## Dateistruktur
+
+- in einem Kommentarblock soll Zweck des Programms festgehalten werden
+- wir benötigen zunächst einen Dateikopf, in der wir die Gerätedatei laden:
+
+```asm
+.nolist
+.include "m8515def.inc"
+.list
+```
+
+- anschließend soll in einem Kommentarblock die Hardwarebeschreibung festgehalten werden, u.a.
+  - welche Komponenten an welchen Pins?
+  - welcher Takt?
+- f
+
+```asm
+.def work   = R16
+
+.equ Taster0 = 0
+```
+
+- falls verwendet, folgen Makros, Funktionsbeschreibungen und Vektor-Interrupt-Tabelle
+- es folgt die Initialisierung, z.B. mit Stack:
+
+```asm
+start:
+;init Stack
+ldi work, LOW(RAMEND)
+out SPL, work
+ldi work, HIGH(RAMEND)
+out SPH, work
+```
+
+- Das Hauptprogramm läuft in einer Endlos-Schleife:
+
+```asm
+main:
+
+rjmp main
+```
+
+- zuletzt folgen Unterprogramme und Nutzdaten
