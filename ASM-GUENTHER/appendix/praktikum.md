@@ -31,7 +31,7 @@ Praktikum hardwarenahe Programmierung
 - CPU entspricht Harvard-Architektur und unterstützt Single Level Pipelining
 - RAM: Adresse ``0x60``
 - Stack: wächst von unten nach oben; Pointer muss initialisiert werden
-- LED und Taster sind **Low-aktiv** (verhindert Störungen beim Start)
+- LED und Taster *auf dem Entwicklerboard* sind **Low-aktiv** (verhindert Störungen beim Start)
 - Statusregister: Informationen zu Ergeignissen von arithmetischen und logischen Operationen, wie z.B. Zero-Flag
   - Besonderheit `I`-Flag: muss manuell auf 1 gesetzt werden, wenn Interrupts behandelt werden sollen
 - PIN-Register laufen dem PORT-Register um einen Takt nach
