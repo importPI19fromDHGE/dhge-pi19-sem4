@@ -23,9 +23,6 @@ Praktikum hardwarenahe Programmierung
 - RAM: Adresse ``0x60``
 - Stack: wächst von unten nach oben; Pointer muss initialisiert werden
 - LED und Taster sind **Low-aktiv** (verhindert Störungen beim Start)
-
-## Besonderheiten bei Registern
-
 - Statusregister: Informationen zu Ergeignissen von arithmetischen und logischen Operationen, wie z.B. Zero-Flag
   - Besonderheit `I`-Flag: muss manuell auf 1 gesetzt werden, wenn Interrupts behandelt werden sollen
 - PIN-Register laufen dem PORT-Register um einen Takt nach
@@ -92,3 +89,34 @@ rjmp main
 ```
 
 - zuletzt folgen Unterprogramme und Nutzdaten
+
+## I/O
+
+- Port $\rightarrow$ Sammlung verschiedener Speicher
+- ``DDRx``-Register: "Data Direction Register"; deklariert, ob ein Pin an einem Port x mithilfe des dazugehörigen Bits ein Eingang oder Ausgang ist
+  - Beispiel: ``DDRB`` hat Wert 255 $\rightarrow$ alle Pins sind Ausgänge
+- ``PORTx`` sendet Daten an Ausgänge
+- ``PINx`` ist ein nur-lesen-Register $\rightarrow$ hier können Daten ausgelesen werden
+- Befehle:
+  - ``OUT``: schreibt Daten
+  - ``IN``: liest Daten in ein Arbeitsregister
+  - ``LDI``: Liest Bit aus I/O-Register
+  - ``SBI``: Schreibt bit in I/O-Register
+  - ``CBI``: löscht Bit aus I/O-Register
+  - ``SBIC``: Wenn Register cleared, dann überspringe nächste Anweisung
+
+## Register
+
+- 32 General Purpose Register sowei Spezialregister
+- Register ``R16`` bis ``R31`` für spezielle Aufgaben
+  - ``LDI``,  ``ANDI``, ``CBR``, ``SBR``, ``CPI``, ``SER``, ``ORI``, ``SBCI``, ``SUBI`` funktionieren erst ab ``R16``
+- Zeigerregister ``X``, ``Y``, ``Z``
+- Empfehlungen:
+  - verwendeten Registern Namen zuweisen
+  - für Zeiger R26 bis R31 reservieren
+  - 16-Bit-Zähler mit R24/R25
+  - für Zugriff auf Programmspeiher Z (R30/R31) und R0 reservieren
+  - für Verwendung von Konstanten oder Bit-Auswertung R16 bis R23 vorsehen
+  - Sichern des Status-Registers wenn möglich in R15
+
+<!--Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten-->
