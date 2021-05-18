@@ -18,4 +18,12 @@ Praktikum hardwarenahe Programmierung
 - 8Bit + 16Bit Zähler
 - 0 bis 8 MHz
 - interne und externe Interrupts
-- interner Watchdog
+- interner Watchdog (mit Brownout Detection)
+- CPU entspricht Havard-Architektur und unterstützt Single Level Pipelining
+- RAM: Adresse ``0x60``
+- Stack: wächst von unten nach oben; Pointer muss initialisiert werden
+
+## besondere Register
+
+- Statusregister: Informationen zu Ergeignissen von arithmetischen und logischen Operationen, wie z.B. Zero-Flag
+  - Besonderheit `I`-Flag: muss manuell auf 1 gesetzt werden, wenn Interrupts behandelt werden sollen
