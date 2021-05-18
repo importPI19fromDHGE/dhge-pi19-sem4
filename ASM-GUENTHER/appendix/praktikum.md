@@ -60,7 +60,6 @@ Praktikum hardwarenahe Programmierung
 - anschließend soll in einem Kommentarblock die Hardwarebeschreibung festgehalten werden, u.a.
   - welche Komponenten an welchen Pins?
   - welcher Takt?
-- f
 
 ```asm
 .def work   = R16
