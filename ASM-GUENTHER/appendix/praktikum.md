@@ -123,7 +123,7 @@ rjmp main
   - verwendeten Registern Namen zuweisen
   - für Zeiger R26 bis R31 reservieren
   - 16-Bit-Zähler mit R24/R25
-  - für Zugriff auf Programmspeiher Z (R30/R31) und R0 reservieren
+  - für Zugriff auf Programmspeicher Z (R30/R31) und R0 reservieren
   - für Verwendung von Konstanten oder Bit-Auswertung R16 bis R23 vorsehen
   - Sichern des Status-Registers wenn möglich in R15
 
