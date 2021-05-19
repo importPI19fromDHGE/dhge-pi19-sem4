@@ -472,3 +472,41 @@ Mit Plantuml darstellen!
   - Anzahl an direkten Szenarien
   - Aufwand für Modifikationen
   - Effizienzabschätzung
+
+## Metriken für den Software-Architekture-Entwurf
+
+- messbares, Eigenschaft wird Zahl zugeordnet
+
+### "Metriken" für einen guten Entwurf
+
+- Verständlichkeit; Präzision; Korrektheit; Anpassbarkeit / Erweiterbarkeit; auf "Zielperson" zugeschnitten; hohe Kohäsion; Wiederverwendbarkeit
+- leicht messbare Kriterien
+
+### Metriken für einen modularen Entwurf
+
+- $\copyright$ Henry / Kafura 1981
+- $\copyright$ Corol / Glass 1990
+  
+**Fan-IN / FAN-OUT Metrik**
+- **Fan-IN**: Anzahl an Stellen, wo der Kontrollfluss in das Modul hineingeht
+  - Anzahl an globalen Variablen aus dem Modul
+- **FAN-OUT**: Anzahl der Stellen, wo das Modul andere Module aufruft
+  - Anzahl an globalen Variablen, die dieses Modul ändern
+- hoher Fan-OUT $\Rightarrow$ hohe Kopplung
+- hoher FAN-IN $\Rightarrow$ schwache Kohäsion
+- **Ziel**: FAN-OUT $\downarrow$, FAN-IN $\downarrow$
+
+### Metriken für den Objekt-Orientierten Entwurf
+
+**Maß für Kapselung** $\copyright$ PIA19 <!-- :^) -->
+- $Anzahl Getter Setter - Anzahl Attribute$ soll $= 0$ sein
+
+**Lack of cohesion in methods (LOCM)**
+
+- Anzahl der Methodenpaare, die keine gemeinsamen Daten verwenden
+- skaliert auf Anzahl der Methoden und Attribute
+<!-- der code ändert sich doch eh ständig, das ist doch nach 10 minuten komplett outdated ... naja -->
+
+**Coupling between objects (CBO)**
+
+- Anzahl an Objekten, die von einer Klasse benutzt werden
