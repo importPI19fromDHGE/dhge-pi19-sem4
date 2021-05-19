@@ -26,7 +26,7 @@ Systementwurf
   - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
   - [Qualitätssicherung](#qualit%C3%A4tssicherung)
   - [Ablauf](#ablauf)
-  - [Metriken für den Software-Architekture-Entwurf](#metriken-f%C3%BCr-den-software-architekture-entwurf)
+  - [Metriken für den Software-Architektur-Entwurf](#metriken-f%C3%BCr-den-software-architektur-entwurf)
     - ["Metriken" für einen guten Entwurf](#metriken-f%C3%BCr-einen-guten-entwurf)
     - [Metriken für einen modularen Entwurf](#metriken-f%C3%BCr-einen-modularen-entwurf)
     - [Metriken für den Objekt-Orientierten Entwurf](#metriken-f%C3%BCr-den-objekt-orientierten-entwurf)
