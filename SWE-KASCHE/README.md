@@ -477,7 +477,7 @@ Mit Plantuml darstellen!
   - Aufwand für Modifikationen
   - Effizienzabschätzung
 
-## Metriken für den Software-Architekture-Entwurf
+## Metriken für den Software-Architektur-Entwurf
 
 - messbares, Eigenschaft wird Zahl zugeordnet
 
@@ -490,6 +490,7 @@ Mit Plantuml darstellen!
 
 - $\copyright$ Henry / Kafura 1981
 - $\copyright$ Corol / Glass 1990
+
 **Fan-IN / FAN-OUT Metrik**
 
 - **Fan-IN**: Anzahl an Stellen, wo der Kontrollfluss in das Modul hineingeht
