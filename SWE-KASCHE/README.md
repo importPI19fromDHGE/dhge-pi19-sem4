@@ -26,6 +26,10 @@ Systementwurf
   - [Hauptaufgabe beim Entwurf einer (Software-)Architektur](#hauptaufgabe-beim-entwurf-einer-software-architektur)
   - [Qualitätssicherung](#qualit%C3%A4tssicherung)
   - [Ablauf](#ablauf)
+  - [Metriken für den Software-Architektur-Entwurf](#metriken-f%C3%BCr-den-software-architektur-entwurf)
+    - ["Metriken" für einen guten Entwurf](#metriken-f%C3%BCr-einen-guten-entwurf)
+    - [Metriken für einen modularen Entwurf](#metriken-f%C3%BCr-einen-modularen-entwurf)
+    - [Metriken für den Objekt-Orientierten Entwurf](#metriken-f%C3%BCr-den-objekt-orientierten-entwurf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -472,3 +476,57 @@ Mit Plantuml darstellen!
   - Anzahl an direkten Szenarien
   - Aufwand für Modifikationen
   - Effizienzabschätzung
+
+## Metriken für den Software-Architektur-Entwurf
+
+- messbares, Eigenschaft wird Zahl zugeordnet
+
+### "Metriken" für einen guten Entwurf
+
+- Verständlichkeit; Präzision; Korrektheit; Anpassbarkeit / Erweiterbarkeit; auf "Zielperson" zugeschnitten; hohe Kohäsion; Wiederverwendbarkeit
+- leicht messbare Kriterien
+
+### Metriken für einen modularen Entwurf
+
+- $\copyright$ Henry / Kafura 1981
+- $\copyright$ Corol / Glass 1990
+
+**Fan-IN / FAN-OUT Metrik**
+
+- **Fan-IN**: Anzahl an Stellen, wo der Kontrollfluss in das Modul hineingeht
+  - Anzahl an globalen Variablen aus dem Modul
+- **FAN-OUT**: Anzahl der Stellen, wo das Modul andere Module aufruft
+  - Anzahl an globalen Variablen, die dieses Modul ändern
+- hoher Fan-OUT $\Rightarrow$ hohe Kopplung
+- hoher FAN-IN $\Rightarrow$ schwache Kohäsion
+- **Ziel**: FAN-OUT $\downarrow$, FAN-IN $\downarrow$
+
+### Metriken für den Objekt-Orientierten Entwurf
+
+**Maß für Kapselung** $\copyright$ PIA19 <!-- :^) -->
+
+- Anzahl Getter Setter - Anzahl AttributeAnzahl Getter Setter - Anzahl Attribute soll $= 0$ sein
+
+**Lack of cohesion in methods (LOCM)**
+
+- Anzahl der Methodenpaare, die keine gemeinsamen Daten verwenden
+- skaliert auf Anzahl der Methoden und Attribute
+
+<!-- der code ändert sich doch eh ständig, das ist doch nach 10 minuten komplett outdated ... naja -->
+
+**Coupling between objects (CBO)**
+
+- Anzahl an Objekten, die von einer Klasse benutzt werden
+- Kaskadierende Änderungen können durch Anpassungen der Unterobjekte notwendig werden
+
+**Response for a class (RFC)**
+
+- Anzahl an Methoden, die durch eine Nachrichten-Objekt der Klasse aufgerufen werden können
+
+**Depth of Inheritance-Tree (DIT)**
+
+- Vererbungsbaum: Tiefe des Baumes
+
+**Number of Subclasses (NOC)**
+
+- Anzahl der Subclass-Kinder
