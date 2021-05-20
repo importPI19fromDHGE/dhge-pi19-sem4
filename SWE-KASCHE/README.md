@@ -517,3 +517,16 @@ Mit Plantuml darstellen!
 **Coupling between objects (CBO)**
 
 - Anzahl an Objekten, die von einer Klasse benutzt werden
+- Kaskadierende Änderungen können durch Anpassungen der Unterobjekte notwendig werden
+
+**Response for a class (RFC)**
+
+- Anzahl an Methoden, die durch eine Nachrichten-Objekt der Klasse aufgerufen werden können
+
+**Depth of Inheritance-Tree (DIT)**
+
+- Vererbungsbaum: Tiefe des Baumes
+
+**Number of Subclasses (NOC)**
+
+- Anzahl der Subclass-Kinder
