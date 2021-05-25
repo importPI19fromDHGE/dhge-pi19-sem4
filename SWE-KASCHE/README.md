@@ -30,6 +30,9 @@ Systementwurf
     - ["Metriken" für einen guten Entwurf](#metriken-f%C3%BCr-einen-guten-entwurf)
     - [Metriken für einen modularen Entwurf](#metriken-f%C3%BCr-einen-modularen-entwurf)
     - [Metriken für den Objekt-Orientierten Entwurf](#metriken-f%C3%BCr-den-objekt-orientierten-entwurf)
+- [Objektorientierte Entwurfsmuster](#objektorientierte-entwurfsmuster)
+  - [Erzeugende Entwurfsmuster](#erzeugende-entwurfsmuster)
+  - [Strukturelle Muster](#strukturelle-muster)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
