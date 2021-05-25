@@ -641,6 +641,7 @@ class Konvertierer {
 ```
 
 **Singleton**
+
 - Ziel: nur genau ein Objekt einer Klasse soll existieren
 - Beispiel: Manager-Klasse zum Verwalten anderer Objekte
 - Spieler soll nur einmal existieren
@@ -648,7 +649,7 @@ class Konvertierer {
 - Schnittstellenobjekt
 - Application-Context (Android)
 - Idee: private Constructors verwenden
-  
+
 ```cpp
 class Singleton {
 public:
@@ -671,11 +672,12 @@ void main() {
 ```
 
 anstatt
+
 ```cpp
 private:
   Singleton(Singleton &o const);
-```
 nun ($\copyright$ Scott Meyers)
+
 ```cpp
 public:
   Singleton (Singleton &o const) = delete;
