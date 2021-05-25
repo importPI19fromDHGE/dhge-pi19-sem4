@@ -530,3 +530,157 @@ Mit Plantuml darstellen!
 **Number of Subclasses (NOC)**
 
 - Anzahl der Subclass-Kinder
+
+# Objektorientierte Entwurfsmuster
+
+- dienen dazu: bewährte Erfahrungen im OO-Entwurf an andere Entwickler weiterzugegeben / zur Verfügung zu stellen
+- Wiederverwendung von Algorithmen, Klassen und deren Beziehungen
+- Standardwerk: von Gamma, Helm, Johnson, Vlissides "Design Patterns" von '94 (als GoF abgekürzt = "Gang of Four" (Viererbande))
+
+**MVC - Model-View-Controller**
+
+- Model $\rightarrow$ Daten
+- View $\rightarrow$ Darstellung
+- Controller $\rightarrow$ Verwaltung
+- Model kommuniziert über den Controller mit der View (und anders herum)
+- Nutzen: oft hat man viele Views, die alle auf die gleichen Daten zugreifen $\rightarrow$ alle greifen über den Controller zu
+- Bsp: Tabellen
+
+**Entwurfsmuster**
+
+- $\rightarrow$ Erzeugende Entwurfsmuster
+  - > Prozess der Erzeugung
+  - Factory Method
+  - Builder
+  - Singleton
+- $\rightarrow$ Strukturelle Entwurfsmuster
+  - > Komposition von Objekten/Klassen
+  - Proxy (Stellvertreter)
+  - Adapter (Hülle, Wrapper)
+  - Bridge (Schnittstelle und Implementierung trennen)
+  - Composite (Baumstrukturen)
+- $\rightarrow$ Verhaltens-Entwurfsmuster
+  - > Art und Weise wie Klassen kommunizieren und Aufgaben aufteilen
+  - Command
+  - Interpreter
+  - Iterator
+
+## Erzeugende Entwurfsmuster
+
+**Abstract Factory:**
+
+- Es wird eine Schnittstelle zur Verfügung gestellt, mit der eine Familie von Objekten erzeugt werden kann, deren konkrete Klasse nicht bekannt sein muss.
+- wird verwendet: wenn Klasse, die von ihr erzeugten Objekte nicht kennen kann bzw. soll
+- z.Bsp.: Frameworks, Klassenbibliotheken
+- missbrauchte Version: `Object *o = new Object();`
+  - `Object *o = Factory.createNewInstance();`
+  - $\Rightarrow$ statischer Methodenaufruf ist nicht im Sinne der GoF
+
+```cpp
+class Essen {
+};
+
+class Fisch : public Essen {
+};
+
+class Bratwurst : public Essen {
+};
+
+class Restaurant {
+public:
+  std::shared_ptr<Essen> food;
+protected:
+  virtual void Kochen() = 0; // abstract
+  virtual void Bestellen();
+  virtual void Liefern();
+  void Go();
+};
+
+class Fischrestaurant : public Restaurant {
+  void Kochen() override;
+}
+
+class BB : public Restaurant {
+  void Kochen() override;
+};
+
+```
+
+**Builder (Erzeuger):**
+
+- trennt die Konstruktion eines Objektes von seiner Darstellung
+- $\rightarrow$ *ein* Konstruktionsprozess für verschiedene Darstellungen
+- wird verwendet, wenn:
+  - Konstruktion unabhängig von Erzeugung der Bestandteile
+  - zu einem Objekt sollen unterschiedliche Repräsentationen existieren
+  - Konstruktionsablauf vor dem Benutzer verbergen
+  - unvollständig initialisierte Objekte können verhindert werden
+  - Bspw.: StringBuilder (Java)
+
+```cpp
+class XML : Erbauer {
+  void createData(...);
+};
+
+class CSV : Erbauer {
+  void createData(...);
+};
+
+class Erbauer {
+virtual void createData(std::List<String> stringList);
+};
+
+class Konvertierer {
+  std::shared_ptr<Erbauer> e;
+
+  void setType(std::shared_ptr<Erbauer> f);
+};
+```
+
+**Singleton**
+- Ziel: nur genau ein Objekt einer Klasse soll existieren
+- Beispiel: Manager-Klasse zum Verwalten anderer Objekte
+- Spieler soll nur einmal existieren
+- Logger
+- Schnittstellenobjekt
+- Application-Context (Android)
+- Idee: private Constructors verwenden
+  
+```cpp
+class Singleton {
+public:
+  static Singleton& GetInstance();
+private:
+  Singleton();
+  Singleton(Singleton &o);
+  Singleton &operator=(Singleton &o) = delete;
+private:
+  Singleton *myself;
+};
+
+Singleton Singleton::Singleton(Singleton &o) {
+  return GetInstance();
+}
+
+void main() {
+  singleton *s = Singleton.GetInstance();
+}
+```
+
+anstatt
+```cpp
+private:
+  Singleton(Singleton &o const);
+```
+nun ($\copyright$ Scott Meyers)
+```cpp
+public:
+  Singleton (Singleton &o const) = delete;
+```
+
+## Strukturelle Muster
+
+**Proxy (Stellvertreter)**
+
+- Steuerung eines Objekts wird auf ein vorgelagertes Stellvertreter-Objekt verschoben
+- d.h. $\rightarrow$ die selbe Schnittstelle
