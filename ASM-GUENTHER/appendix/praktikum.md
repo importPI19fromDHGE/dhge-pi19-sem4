@@ -5,12 +5,17 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
   - [Dateistruktur](#dateistruktur)
   - [I/O](#io)
   - [Register](#register)
+- [Interrupts](#interrupts)
+  - [Aufbau der IV-Tabelle](#aufbau-der-iv-tabelle)
+  - [externe Interrupts](#externe-interrupts)
+  - [Stack](#stack)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -127,4 +132,155 @@ rjmp main
   - für Verwendung von Konstanten oder Bit-Auswertung R16 bis R23 vorsehen
   - Sichern des Status-Registers wenn möglich in R15
 
-<!--Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten-->
+Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten
+
+<details>
+
+<summary>Lösung der Hausaufgabe</summary>
+
+```asm
+/***********************************
+*                                  *
+* Programm wechselt LED-Zustand    *
+* beim Drücken des Tasters         *
+*                                  *
+* Autor: Maximilian Kerst          *
+* erstellt am: 18.05.2021          *
+* Version 0.1                      *
+*                                  *
+***********************************/
+
+.nolist
+.include "m8515def.inc"
+.list
+
+/*********************************************
+*                                            *
+* Hardwarebeschreibung:                      *
+*                                            *
+* STK500 -> 4MHz; LED an Pin A0, Taster an A1*
+*                                            *
+*********************************************/
+
+.def work   = R16
+.def eins   = R17
+
+.equ LED = 0
+
+
+
+/********************************
+*                               *
+* Initialisierung               *
+*                               *
+********************************/
+start:
+
+;init registers
+;LDI work, 255
+;OUT DDRB, work
+LDI work, 253
+OUT DDRA, work ; set Output-Flag on all Bits but 1
+LDI work, 2
+OUT PORTA, work ;  set Pull-Up Resistor on Bit 1
+LDI work, 0
+LDI eins, 1
+
+/****************
+*               *
+* Hauptprogramm *
+*               *
+****************/
+main:
+
+sbis PINA, 1
+  rjmp main ; jump back if button not pressed
+
+in work, PINA
+eor work, eins
+out PINA, work
+
+loop:
+sbic PINA, 1
+rjmp loop
+rjmp main
+
+rjmp main
+
+```
+
+</details>
+
+# Interrupts
+
+- Aktivierung über Register
+- Behandlung via Interrupt Service Routinen (ISR) in Interrupt-Vektortabelle
+- erfordert initialisierten Stack (ist standardmäßig 0)
+- setzen des I-Bit mit ``SEI``
+
+Abarbeitung:
+
+- Microcontroller beendet aktuellen Befehl
+- MC löscht I-Bit $\rightarrow$ muss gesetzt sein, damit Interrupts behandelt werden $\rightarrow$ Behandlungsroutine kann nicht unterbrochen werden
+- MC speichert Program Counter auf den Stack $\rightarrow$ Fortsetzung des Programmablaufs wird gesichert
+- Interrupt-Vektor des ausgelösten Interrupts in PC laden; IV ist eine festzulegende Adresse im Programmspeicher (**Interrupt-Vektor-Tabelle**)
+  - wird abgearbeitet, bis ``reti`` ("REturn To Interrupt") erreicht
+- PC vom Stack laden
+- I-Bit setzen
+- Programmablauf fortsetzen
+- **Statusregister wird nicht automatisch gesichert!**<!--!!1!1elf11!-->
+- möglichst kurz halten, um keine Interrupts zu verpassen
+
+Standardmäßige, leere IVT:
+
+```asm
+.org 0x0000
+rjmp start
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+```
+
+## Aufbau der IV-Tabelle
+
+- rjmp zur ISR
+- innerhalb kein ``.org``
+- Länge der Sprungtabelle = Anzahl der Interrupts
+
+## externe Interrupts
+
+- 4 Pins: 9: RESET, 12: PD2 / INT0, 13: PD3 / INT1, 31: <!--TODO-->
+- ``RESET`` ist Low-aktiv
+- General Interrupt Flag Register (GIFR): gesetzt bei entsprechendem Ereignis
+- vom MC gelöscht
+- General Interrupt Control Register (GICR): Wenn entsprechendes Bit gesetzt, ist ein Interrupt aktiviert
+- Microcontroller-Unit-Control-Register (MCUCR): Konfiguriert, welche Konfiguration von INT0 und INT1 einen Interrupt auslöst und ob auf steigende oder fallende Flanken reagiert wird
+- INT2 wird in EMCUCR konfiguriert, wobei hier nur die Flanke eingestellt werden kann
+
+## Stack
+
+- 16 Bit Stackregister
+- beginnt bei ``0x60`` und hört bei ``0x25F``
+- Es gibt die Konstante ``RAMEND`` :-)
+
+Initialisierung:
+
+```asm
+ldi work, LOW(RAMEND)
+out SPL, work
+ldi work, HIGH, RAMEND
+out SPH, work
+```
