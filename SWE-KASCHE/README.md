@@ -552,18 +552,18 @@ Mit Plantuml darstellen!
 **Entwurfsmuster**
 
 - $\rightarrow$ Erzeugende Entwurfsmuster
-  - > Prozess der Erzeugung
+  - Prozess der Erzeugung
   - Factory Method
   - Builder
   - Singleton
 - $\rightarrow$ Strukturelle Entwurfsmuster
-  - > Komposition von Objekten/Klassen
+  - Komposition von Objekten/Klassen
   - Proxy (Stellvertreter)
   - Adapter (Hülle, Wrapper)
   - Bridge (Schnittstelle und Implementierung trennen)
   - Composite (Baumstrukturen)
 - $\rightarrow$ Verhaltens-Entwurfsmuster
-  - > Art und Weise wie Klassen kommunizieren und Aufgaben aufteilen
+  - Art und Weise wie Klassen kommunizieren und Aufgaben aufteilen
   - Command
   - Interpreter
   - Iterator
