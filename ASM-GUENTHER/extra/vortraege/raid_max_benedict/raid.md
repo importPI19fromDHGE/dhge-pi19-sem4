@@ -49,7 +49,7 @@ Nachteile:
 - moderate Zusatzkosten durch HBA oder MB mit RAID-Suport (vgl. \[ada06\])
 - Verwundbarkeit von Malware von Software-RAID geerbt (vgl. \[ada06\])
 - keine Treiber für sehr neue OS-Releases oder exotischere Betriebssysteme verfügbar (vgl. \[ada06\]) Bsp.: TempleOS, ReactOS
-- - kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
 
 ### HW-RAID
 
