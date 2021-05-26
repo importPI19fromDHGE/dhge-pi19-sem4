@@ -29,15 +29,18 @@ Nachteile:
 - Array zur Boot-Zeit ungeschützt (vgl. \[ada06\])
   - Datenverlust oder -korruption wird zur Boot-Zeit nicht abgefangen \$rightarrow\$
 - zusätzliche Last auf CPU, steigt mit Anzahl Disks und komplexeren RAID-Levels wie 5 oder 6 (vgl. \[ada06\])
-- möglicherweise nicht auf andere Betriebssysteme migrierbar, wenn spez. Implementierung nicht unterstützt wird (vgl. \[ada06\]), wobei sich diese Situation verglichen mit der Vergangenheit deutlich verbessert hat (z.B. Linux hat einheitliche Software-RAID-Lösung ``mdadm``)
+- möglicherweise nicht auf andere Betriebssysteme migrierbar, wenn spez. Implementierung nicht unterstützt wird (vgl. \[ada06\]),
+wobei sich diese Situation verglichen mit der Vergangenheit deutlich verbessert hat (z.B. Linux hat einheitliche Software-RAID-Lösung ``mdadm``)
 - RAID-Software kann durch Malware übernommen oder beschädigt werden (vgl. \[ada06\])
 - Abstürze gefährden Integrität (vgl. \[ada06\]); ZFS kann aber durchaus einen Power-loss überleben (Erfahrung von Max)
-- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15a\])
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein,
+also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15a\])
 - kein Booten von RAID-Array, da für das BIOS nicht lesbar
 
 ## Hybrid-RAID
 
-Hybrid-RAID ist ein hardware-beschleunitgtes Software-RAID. Typischerweise in Form eines HBAs oder Mainboards mit RAID-BIOS. Es hat den Zweck, einige Nachteile von Software-RAID zu lindern oder beheben. (vgl. \[ada06\])
+Hybrid-RAID ist ein hardware-beschleunitgtes Software-RAID. Typischerweise in Form eines HBAs oder Mainboards mit RAID-BIOS.
+Es hat den Zweck, einige Nachteile von Software-RAID zu lindern oder beheben. (vgl. \[ada06\])
 
 Vorteile:
 
@@ -51,7 +54,8 @@ Nachteile:
 - moderate Zusatzkosten durch HBA oder MB mit RAID-Suport (vgl. \[ada06\])
 - Verwundbarkeit von Malware von Software-RAID geerbt (vgl. \[ada06\])
 - keine Treiber für sehr neue OS-Releases oder exotischere Betriebssysteme verfügbar (vgl. \[ada06\]) Bsp.: TempleOS, ReactOS
-- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein, also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein,
+also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
 
 ### HW-RAID
 
@@ -155,18 +159,20 @@ Live:
 
 (Max)
 
-\[ada06\] Adaptec, Inc.: Hardware RAID vs. Software RAID: Which Implementation is Best for my Application?, 2021. https://www.adaptec.com/nr/rdonlyres/14b2fd84-f7a0-4ac5-a07a-214123ea3dd6/0/4423_sw_hwraid_10.pdf Abruf: 27.03.2021
+\[ada06\] Adaptec, Inc.: Hardware RAID vs. Software RAID: Which Implementation is Best for my Application?, 2021.
+[https://www.adaptec.com/nr/rdonlyres/14b2fd84-f7a0-4ac5-a07a-214123ea3dd6/0/4423_sw_hwraid_10.pdf](https://www.adaptec.com/nr/rdonlyres/14b2fd84-f7a0-4ac5-a07a-214123ea3dd6/0/4423_sw_hwraid_10.pdf)
+Abruf: 27.03.2021
 
-\[tho15a\] Thomas-Krenn: RAID, 2015. https://www.thomas-krenn.com/de/wiki/RAID Abruf: 27.03.2021
+\[tho15a\] Thomas-Krenn: RAID, 2015. [https://www.thomas-krenn.com/de/wiki/RAID](https://www.thomas-krenn.com/de/wiki/RAID) Abruf: 27.03.2021
 
-\[tho15b\] Thomas-Krenn: RAID Datenrettung, 2015. https://www.thomas-krenn.com/de/wiki/RAID_Datenrettung Abruf: 28.03.2021
+\[tho15b\] Thomas-Krenn: RAID Datenrettung, 2015. [https://www.thomas-krenn.com/de/wiki/RAID_Datenrettung](https://www.thomas-krenn.com/de/wiki/RAID_Datenrettung) Abruf: 28.03.2021
 
-\[tho18\] Thomas-Krenn: Mdadm recovery und resync, 2018. https://www.thomas-krenn.com/de/wiki/Mdadm_recovery_und_resync Abruf: 29.03.2021
+\[tho18\] Thomas-Krenn: Mdadm recovery und resync, 2018. [https://www.thomas-krenn.com/de/wiki/Mdadm_recovery_und_resync](https://www.thomas-krenn.com/de/wiki/Mdadm_recovery_und_resync) Abruf: 29.03.2021
 
-\[tld21\] The Linux Documentation Project: RAID-HOWTO, 2021. https://tldp.org/HOWTO/Software-RAID-HOWTO-6.html#ss6.1 Abruf: 28.03.2021
+\[tld21\] The Linux Documentation Project: RAID-HOWTO, 2021. [https://tldp.org/HOWTO/Software-RAID-HOWTO-6.html#ss6.1](https://tldp.org/HOWTO/Software-RAID-HOWTO-6.html#ss6.1) Abruf: 28.03.2021
 
-\[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z Abruf: 28.03.2021
+\[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. [https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z](https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z) Abruf: 28.03.2021
 
-\[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016. https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04 Abruf: 30.03.2021
+\[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016. [https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04) Abruf: 30.03.2021
 
-\[baj19\] Bajrami, Valentin: Replacing a failed RAID 6 drive with mdadm, 2019. https://www.redhat.com/sysadmin/raid-drive-mdadm Abruf: 30.03.2021
+\[baj19\] Bajrami, Valentin: Replacing a failed RAID 6 drive with mdadm, 2019. [https://www.redhat.com/sysadmin/raid-drive-mdadm](https://www.redhat.com/sysadmin/raid-drive-mdadm) Abruf: 30.03.2021
