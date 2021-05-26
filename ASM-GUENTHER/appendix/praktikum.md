@@ -263,7 +263,8 @@ reti
 
 ## externe Interrupts
 
-- 4 Pins: 9: RESET, 12: PD2 / INT0, 13: PD3 / INT1, 31: <!--TODO-->
+![Interrupts](8515_interrupts.jpg)<!--width=600px-->
+
 - ``RESET`` ist Low-aktiv
 - General Interrupt Flag Register (GIFR): gesetzt bei entsprechendem Ereignis
 - vom MC gelöscht
