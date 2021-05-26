@@ -676,6 +676,8 @@ anstatt
 ```cpp
 private:
   Singleton(Singleton &o const);
+```
+
 nun ($\copyright$ Scott Meyers)
 
 ```cpp
