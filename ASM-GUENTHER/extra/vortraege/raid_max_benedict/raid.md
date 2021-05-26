@@ -54,8 +54,8 @@ Nachteile:
 - moderate Zusatzkosten durch HBA oder MB mit RAID-Suport (vgl. \[ada06\])
 - Verwundbarkeit von Malware von Software-RAID geerbt (vgl. \[ada06\])
 - keine Treiber für sehr neue OS-Releases oder exotischere Betriebssysteme verfügbar (vgl. \[ada06\]) Bsp.: TempleOS, ReactOS
-- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein,
-also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein
+  - also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (siehe. oben)
 
 ### HW-RAID
 
@@ -174,6 +174,7 @@ Abruf: 27.03.2021
 \[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. [https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z](https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z) Abruf: 28.03.2021
 
 \[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016.
-[https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04) Abruf: 30.03.2021
+[https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04)
+Abruf: 30.03.2021
 
 \[baj19\] Bajrami, Valentin: Replacing a failed RAID 6 drive with mdadm, 2019. [https://www.redhat.com/sysadmin/raid-drive-mdadm](https://www.redhat.com/sysadmin/raid-drive-mdadm) Abruf: 30.03.2021
