@@ -1,7 +1,6 @@
 # RAID-Vortrag
 
-<!-- markdownlint-disable-file MD013 -->
-<!-- markdownlint-disable-file MD034 -->
+<!-- markdownlint-disable-file -->
 
 von Max und Benedict
 
