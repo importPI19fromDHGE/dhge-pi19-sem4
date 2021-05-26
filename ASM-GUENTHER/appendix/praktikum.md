@@ -15,7 +15,8 @@ Praktikum hardwarenahe Programmierung
 - [Interrupts](#interrupts)
   - [Aufbau der IV-Tabelle](#aufbau-der-iv-tabelle)
   - [externe Interrupts](#externe-interrupts)
-  - [Stack](#stack)
+- [Stack](#stack)
+- [Funktionen und Makros](#funktionen-und-makros)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -270,7 +271,7 @@ reti
 - Microcontroller-Unit-Control-Register (MCUCR): Konfiguriert, welche Konfiguration von INT0 und INT1 einen Interrupt auslöst und ob auf steigende oder fallende Flanken reagiert wird
 - INT2 wird in EMCUCR konfiguriert, wobei hier nur die Flanke eingestellt werden kann
 
-## Stack
+# Stack
 
 - 16 Bit Stackregister
 - beginnt bei ``0x60`` und hört bei ``0x25F``
@@ -283,4 +284,166 @@ ldi work, LOW(RAMEND)
 out SPL, work
 ldi work, HIGH, RAMEND
 out SPH, work
+```
+
+Ein Beispielprogramm zeigt die Nutzung von Stack und Interrupts anhand von zwei Tastern (lt. Datenblatt an ``PORTB``)
+
+```asm
+/***********************************
+*                                  *
+* LED Toggle Interrupt             *
+*                                  *
+* Autor: Max KErst                 *
+* erstellt am: 26.05.2021          *
+* Version 0.1                      *
+*                                  *
+***********************************/
+
+.nolist
+.include "m8515def.inc"
+.list
+
+/*********************************************
+*                                            *
+* Hardwarebeschreibung:                      *
+*                                            *
+* Taster E0; LED E1                          *
+*                                            *
+*********************************************/
+
+.def status = R15
+.def work   = R16
+.def mask = R17
+.include "m8515def.inc"
+
+/***************************
+*                          *
+* Interrupt Vektor Tabelle *
+*                          *
+***************************/
+.org 0x0000
+rjmp start
+rjmp int0handle 
+rjmp int1handle
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+reti
+
+
+/*********************
+*		     *
+* Interrupt Handler  *
+* 		     *
+*********************/
+
+//////////////////////////////////////
+//
+// Reagiert bei Int0; ändert den LED-Zustand B1
+//
+//////////////////////////////////////
+int0handle:
+
+in status, SREG
+in work, PORTB
+ldi mask, 1
+eor work, mask
+out PORTB, work
+out SREG, status
+
+reti
+
+int1handle:
+
+in status, SREG
+in work, PORTB
+ldi mask, 2
+eor work, mask
+out PORTB, work
+out SREG, status
+
+reti
+
+
+/********************************
+*                               *
+* Initialisierung               *
+*                               *
+********************************/
+start:
+;init Stack
+ldi work, LOW(RAMEND)
+out SPL, work
+ldi work, HIGH(RAMEND)
+out SPH, work
+
+;init registers
+LDI work, 0b11111111
+out DDRB, work
+LDI work, 0b11000001
+out portB, work
+
+;init INT
+ldi work, 0xff
+out portd, work
+ldi work, 0b11000000
+out gicr, work ; aktiviert den Interrupt
+ldi work, 0b00001111
+out mcucr, work ; rising edge
+
+SEI
+
+
+/****************
+*               *
+* Hauptprogramm *
+*               *
+****************/
+main:
+
+rjmp main
+
+```
+
+# Funktionen und Makros
+
+- vermeidet Spaghetticode
+- sind sich wiederholende Programmabläufe
+- Parameterübergabe möglich
+- Definition von Makros am Anfang, da sie vor dem Aufruf bekannt sein müssen
+- Makros werden in-place ersetzt
+- Unterprogramme werden via Sprungadresse definiert, abgeschlosssen mit ``RET``, Aufruf mit ``RCALL``
+- Parameterübergabe mittels Registern, Stack oder globalen Variablen
+
+| Makro                | Unterprogramm             |
+| :------------------: | :-----------------------: |
+| in-place Ersetzung   | Sprung                    |
+| große Binary         | kleine Binary             |
+| hohe Geschwindigkeit | geringere Geschwindigkeit |
+
+- Register<!--Kranplätze--> müssen gesichert<!--verdichtet--> sein und danach wiederhergestellt werden
+  - Ausnahme: Register für Rückgabewerte
+- bei Makros bis zu 10 Parameter möglich
+
+Das obige Beispiel kann durch die Verwendung von Makros aufgewertet werden; ``@0`` ist der erste Parameter und ``@1`` der zweite:
+
+```asm
+// @0 Portregister LED
+// @1 Bitmaske XOR
+.macro togglePin
+in work, @0
+ldi mask, @1
+eor work, mask
+out @0, work
+.endm
 ```
