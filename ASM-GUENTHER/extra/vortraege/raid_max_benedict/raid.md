@@ -30,11 +30,11 @@ Nachteile:
   - Datenverlust oder -korruption wird zur Boot-Zeit nicht abgefangen \$rightarrow\$
 - zusätzliche Last auf CPU, steigt mit Anzahl Disks und komplexeren RAID-Levels wie 5 oder 6 (vgl. \[ada06\])
 - möglicherweise nicht auf andere Betriebssysteme migrierbar, wenn spez. Implementierung nicht unterstützt wird (vgl. \[ada06\]),
-wobei sich diese Situation verglichen mit der Vergangenheit deutlich verbessert hat (z.B. Linux hat einheitliche Software-RAID-Lösung ``mdadm``)
+  - wobei sich diese Situation verglichen mit der Vergangenheit deutlich verbessert hat (z.B. Linux hat einheitliche Software-RAID-Lösung ``mdadm``)
 - RAID-Software kann durch Malware übernommen oder beschädigt werden (vgl. \[ada06\])
 - Abstürze gefährden Integrität (vgl. \[ada06\]); ZFS kann aber durchaus einen Power-loss überleben (Erfahrung von Max)
-- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein,
-also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15a\])
+- kein Hardware-Cache, d.h. bei komplexeren RAID-Levels wie 5 und 6 tritt eine *write penalty* auf: urspr. Parität muss korrekt sein
+  - also: read - modify - write; dazu keine Sicherheit einer Backup-Batterie (vgl. \[ada06\], \[tho15a\])
 - kein Booten von RAID-Array, da für das BIOS nicht lesbar
 
 ## Hybrid-RAID
@@ -173,6 +173,7 @@ Abruf: 27.03.2021
 
 \[bou06\] Bourbonnais, Roch: WHEN TO (AND NOT TO) USE RAID-Z, 2006. [https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z](https://blogs.oracle.com/roch/when-to-and-not-to-use-raid-z) Abruf: 28.03.2021
 
-\[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016. [https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04) Abruf: 30.03.2021
+\[ell16\] Ellingwood, Justin: How To Create RAID Arrays with mdadm on Ubuntu 16.04, 2016.
+[https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-raid-arrays-with-mdadm-on-ubuntu-16-04) Abruf: 30.03.2021
 
 \[baj19\] Bajrami, Valentin: Replacing a failed RAID 6 drive with mdadm, 2019. [https://www.redhat.com/sysadmin/raid-drive-mdadm](https://www.redhat.com/sysadmin/raid-drive-mdadm) Abruf: 30.03.2021
