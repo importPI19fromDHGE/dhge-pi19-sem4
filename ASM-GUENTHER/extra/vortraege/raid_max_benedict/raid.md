@@ -1,5 +1,8 @@
 # RAID-Vortrag
 
+<!-- markdownlint-disable-file MD013 -->
+<!-- markdownlint-disable-file MD034 -->
+
 von Max und Benedict
 
 ## HW-Raid vs. SW-Raid
