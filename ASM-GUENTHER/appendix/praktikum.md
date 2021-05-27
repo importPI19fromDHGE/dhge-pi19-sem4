@@ -112,6 +112,7 @@ rjmp main
   - ``SBI``: schreibt Bit in I/O-Register
   - ``CBI``: löscht Bit aus I/O-Register
   - ``SBIC``: Wenn Register cleared, dann überspringe nächste Anweisung
+  - ``SBIS``: Wenn Register gesetzt, dann überspringe nächste Anweisung
 
 ## Register
 
@@ -120,7 +121,7 @@ rjmp main
   - ``LDI``,  ``ANDI``, ``CBR``, ``SBR``, ``CPI``, ``SER``, ``ORI``, ``SBCI``, ``SUBI`` funktionieren erst ab ``R16``
 - Zeigerregister ``X``, ``Y``, ``Z``
 - Empfehlungen:
-  - verwendeten Registern Namen zuweisen
+  - verwendeten Registern Namen zuweisen (``.def``-Direktive)
   - für Zeiger R26 bis R31 reservieren
   - 16-Bit-Zähler mit R24/R25
   - für Zugriff auf Programmspeicher Z (R30/R31) und R0 reservieren
@@ -128,3 +129,21 @@ rjmp main
   - Sichern des Status-Registers wenn möglich in R15
 
 <!--Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten-->
+
+## Interrupts
+
+- Interrupt = kurzfristige Unterbrechung des normalen Programmablaufs
+
+1. Mikrocontroller beendet aktuellen Befehl, I-Bit löschen, Program Counter (`PC`) auf Stack speichern
+2. Interrupt-Vektor des ausgelösten Interrupt in `PC` laden
+3. Abarbeitung der Interrupt-Service-Routine (`ISR`) bis `RETI`
+4. `PC` vom Stack wiederherstellen, I-Bit setzen $\rightarrow$ Programmablauf fortsetzen
+
+> **Achtung:** Statusregister wird nicht automatisch gesichert
+
+### Interrupt-Vektor-Tabelle (Aufbau)
+
+- `RJMP` zur `ISR`
+- kein `.org` innerhalb
+- Länge der Sprungtabelle = Anzahl der Interrupts des Mikrocontroller
+- `RETI`
