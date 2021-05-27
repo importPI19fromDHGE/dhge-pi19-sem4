@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -134,9 +135,7 @@ rjmp main
 
 Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten
 
-<details>
-
-<summary>Lösung der Hausaufgabe</summary>
+Lösung der Hausaufgabe:
 
 ```asm
 /***********************************
@@ -166,8 +165,6 @@ Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten
 .def eins   = R17
 
 .equ LED = 0
-
-
 
 /********************************
 *                               *
@@ -208,8 +205,6 @@ rjmp main
 rjmp main
 
 ```
-
-</details>
 
 # Interrupts
 
@@ -323,7 +318,7 @@ Ein Beispielprogramm zeigt die Nutzung von Stack und Interrupts anhand von zwei 
 ***************************/
 .org 0x0000
 rjmp start
-rjmp int0handle 
+rjmp int0handle
 rjmp int1handle
 reti
 reti
@@ -342,9 +337,9 @@ reti
 
 
 /*********************
-*		     *
-* Interrupt Handler  *
-* 		     *
+*
+* Interrupt Handler
+*
 *********************/
 
 //////////////////////////////////////
