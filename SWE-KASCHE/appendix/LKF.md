@@ -78,11 +78,31 @@
 
 #### einen Prototyp vom Pretotype unterscheiden
 
-- ToDo
+- Pretotype = *"fake it till you make it"*
+  - Teil der Fail-Early Idee $\rightarrow$ es wird so getan, als wäre eine Funktion vorhanden (keine tatsächliche Implementation)
+  - Ziel: Bedarf einer Lösung, Art und Weise der Nutzung und Erfolgskriterien für ein Produkt benennen
+  - z.B. Simulation der Interaktion in einer App über mehrere Papierskizzen mit grobem Interface der verschiedenen Screens
+- Prototyp
+  - **funktionsfähiges, vereinfachtes Versuchsmodell** eines geplanten Produktes
+  - sammeln praktischer Erfahrungen, klären von Anforderungen
+  - Ziel: Funktioniert es wie gedacht? Kann ich es überhaupt entwickeln?
+  - Gefahr: wird nicht wieder weggeworfen, als Doku-Ersatz missbraucht oder Aufwand zu hoch
 
 #### fünf Grundprinzipien nennen, die den Design‐Thinking‐Prozess befördern und kenne die vier Phasen des Design‐Thinking‐Prinzips
 
-- ToDo
+- = Methode für den Innovationsprozess
+- **Idee:** Iterationen, Prozesse und Objekte bewusst gestalten, die sich streng an den Bedürfnissen des zukünftigen Nutzers orientieren
+- **Grundprinzipien:**
+  - bildlich Arbeiten
+  - früh und oft scheitern (*fail early!*)
+  - Quantität ist wichtig: viele Herangensweisen sammeln, aber nicht in die Tiefe verfolgen
+  - wilde Ideen zulassen und ermutigen
+  - insgesamt kundenorientiert
+- **Phasen:**
+  - **Inspiration:** Verstehen und Beobachten $\rightarrow$ Was soll für wen entwickelt werden?
+  - **Ideen:** *verknüpfen, sprudeln lassen*
+  - **Testen:** Pretotyp, Prototyp, ...
+  - **Machen:** *nicht nur reden*
 
 ### Spiralen-Modell, V-Modell, XP
 
