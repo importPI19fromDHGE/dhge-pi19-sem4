@@ -1,12 +1,16 @@
 # Lernkontrollfragen
 
-## System-Analyse 
+## System-Analyse
 
 ### Einleitung / Überblick
 
 #### SW-Engineering definieren
 
-- ToDo
+> Zielorientierte Bereitstellung und systematische Verwendung von Prinzipien, Methoden und Werkzeugen
+> für die arbeitsteilige, ingenieurmäßige Entwicklung und Anwendung von umfangreichen Softwaresystemen.
+> Zielorientiert bedeutet die Berücksichtigung z.B. von Kosten, Zeit und Qualität.
+>
+> - [Helmut Balzert: Lehrbuch der Software-Technik](https://www.doi.org/10.1007/978-3-8274-2247-7)
 
 #### Phasen der SW-Entwicklung unabhängig vom verwendetet Modell benennen
 
@@ -65,11 +69,11 @@
 
 - ToDo
 
-#### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern.
+#### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
 
 - ToDo
 
-### Phasenmodelle 
+### Phasenmodelle
 
 #### die fünf Phasen des Wasserfall‐Modells benennen und erläutern
 
@@ -233,7 +237,7 @@
 
 - ToDo
 
-## System-Entwurf 
+## System-Entwurf
 
 ### Entwicklungskonzepte
 
