@@ -18,11 +18,18 @@
 
 #### ein Beispiel für ein MVP nennen
 
-- ToDo
+- **MVP** = **M**inimum **V**iable **P**roduct (minimales überlebensfähiges Produkt)
+- Testen eines Produktes mit möglichst wenig Entwicklungsaufwand
+- Amazon: verkaufte anfangs nur Bücher, später Expansion in andere Produktkategorien
+- Groupon: Launch mit einfachem Wordpress-Blog vor der Entwicklung einer eigenen Plattform
+- Airbnb: zunächst nur einfache Website Vermietung der Wohnung der Gründer, danach Öffnung für andere Gastgeber
 
 #### das MMM-Prinzip erläutern
 
-- ToDo
+- **MMM** = **M**ensch, **M**aschine, **M**ethode
+- Zuerst schauen: *"Habe ich die richtigen Mitarbeiter?"*
+- Danach prüfen: *"Habe ich die richtige Hardware/Software?"*
+- Zuletzt hinterfragen: *"Verwende ich die richtigen die Methoden?"*
 
 #### Regeln der SW-Entwicklung benennen
 
