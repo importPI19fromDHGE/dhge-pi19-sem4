@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -540,5 +541,7 @@ ret ;4T
 - Timer Interrupt Flag Register (TIFR):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
-- Prescaler: Register, um im voraus Takt zu teilen
-  - zählt langsamer bzw. hält länger ohne Überlauf<!--TODO: Tabelle PPTX 57 einfügen-->
+- Prescaler<!--Im Datenblatt heißt es Prescaler, es steht auf den Folien wahrsch. falsch-->: Register, um im voraus Takt zu teilen
+  - zählt langsamer bzw. hält länger ohne Überlauf
+
+![Prescaler](8515_prescaler.jpg)<!--width=600px-->
