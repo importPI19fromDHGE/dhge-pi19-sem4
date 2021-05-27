@@ -533,7 +533,7 @@ ret ;4T
     - zählt aufwärts
     - ``OCR0`` enthält Vergleichswert; beim Erreichen wird rückgesetzt und ``OCF0`` gesetzt
     - kann Interrupts auslösen
-  - 2 Modi für PWM:
+  - 2 Modi für Pulsweitenmodulation:
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
     - ``OC0`` wird bei CTC geschalten<!--???-->(siehe Datenblatt)
