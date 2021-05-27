@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -16,6 +17,9 @@ Praktikum hardwarenahe Programmierung
   - [externe Interrupts](#externe-interrupts)
 - [Stack](#stack)
 - [Funktionen und Makros](#funktionen-und-makros)
+- [Zeitsteuerung](#zeitsteuerung)
+- [Unterprogramme](#unterprogramme)
+- [Timer](#timer)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -441,3 +445,80 @@ eor work, mask
 out @0, work
 .endm
 ```
+
+# Zeitsteuerung
+
+- Warteschleifen werden beeinflusst durch:
+  - Arbeitsgeschwindigkeit der CPU
+  - Takte innerhalb der Schleife
+  - Errechnung der Durchläufe
+- wir dürfen einen AVR-Schleifengenerator nutzen, um passende Schleifen zu erzeugen
+
+Beispiel einer Warteschleife:
+
+```asm
+; CPU-Takt: 200kHz
+.include "m8515def.inc"
+
+ldi R16, 0xFF
+out DDRA, R16
+
+main:
+
+sbi PORTA, 0
+
+; warte 0,5s:
+; d.h. wir brauchen 25k Takte --> zwei Loops
+ldi R18, 99
+loop2
+ldi R17, 248:
+loop:
+  nop ; braucht ein Takt, damit wir schön teilen können
+  dec R17 ; braucht 1 Takt
+  BRNE loop ; branch if not equal; prüft, ob letzte Operation das Zero-Flag gesetzt hat; braucht 2 Takte, wenn wahr
+  nop ; Dummy-Takt, da BRNE bei "falsch" nur 1 Takt braucht
+dec R18
+brne loop2
+nop
+
+cbi PORTA, 0
+
+rjmp main
+```
+
+# Unterprogramme
+
+- Makros können keine Sprungmarken haben, da es zu Namensdopplungen kommen könnte
+
+# Timer
+
+- im Prinzip Zähler, die mit jedem MC-Takt hochgezählt werden
+- sind unabhängig vom ausgeführten Programm
+- Interruptquelle
+- Anwendungen:
+  - periodische Interrupts als Zeitgeber
+  - Zeitverzögerungen; Ersatz für Programmschleifen
+  - Frequenzgenerator / -messer
+- 8515 hat einen 8-Bit- und einen 16-Bit-Timer (``TCNT0`` und ``TCNT1``)
+- können aufwärts oder abwärts gezählt werden
+- ``OCR0`` / ``OCR1`` sind Vergleichswerte, bei dem der Timer genullt wird (ggf. mit Interrupt)
+- aktiviert mit Timer/Counter Interrupt Mask Register (TIMSK)
+- Konfiguration mittels Timer/Counter Control Register (``TCCRx``) $\rightarrow$ Einstellen der Arbeitsmodi
+- 4 Arbeitsmodi:
+  - normal: ``WGM01:0`` = 0
+    - zählt immer aufwärts
+    - nach ``0xFF`` kommt ``0x00`` und Overflow Flag wird gesetzt
+    - ``TCNT0`` kann jederzeit geschrieben werden
+  - Clear Timer on Compare Match (CTC): ``WGM01:0`` = 2
+    - zählt aufwärts
+    - ``OCR0`` enthält Vergleichswert; beim Erreichen wird rückgesetzt und ``OCF0`` gesetzt
+    - kann Interrupts auslösen
+  - 2 Modi für PWM:
+    - Generierung spezieller Signalformen oder Takte
+    - Motorsteuerung; DAC
+    - ``OC0`` wird bei CTC geschalten<!--???-->(siehe Datenblatt)
+- Timer Interrupt Flag Register (TIFR):
+  - Bit 1: Timer Overflow
+  - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
+- Prescaler: Register, um im voraus Takt zu teilen
+  - zählt langsamer bzw. hält länger ohne Überlauf<!--TODO: Tabelle PPTX 57 einfügen-->
