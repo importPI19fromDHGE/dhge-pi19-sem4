@@ -489,6 +489,27 @@ rjmp main
 # Unterprogramme
 
 - Makros können keine Sprungmarken haben, da es zu Namensdopplungen kommen könnte
+- verwendete Register sollten [aus bekannten Gründen](../README.md#bin%C3%A4rschnittstelle-application-binary-interface) auf den Stack gepusht werden
+  - v.a. auf das **Statusregister** sollte geachtet werden, da es implizit genutzt wird
+- Aufruf mit ``RCALL``, Abschluss mit ``RET``
+
+Beispielfunktion:
+
+```asm
+warte:
+in R15, SREG
+push R24
+push R25
+ldi R24, LOW(count)
+ldi R25, HIGH(count)
+warteMarke:
+  sbiw R24, 1 ; 2T
+  brne warteMarke
+pop R25
+pop R24
+out SREG, R15
+ret ;4T
+```
 
 # Timer
 
