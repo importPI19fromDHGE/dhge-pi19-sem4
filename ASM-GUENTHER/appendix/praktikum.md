@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -542,4 +543,4 @@ ret ;4T
 - Prescaler<!--Im Datenblatt heißt es Prescaler, es steht auf den Folien wahrsch. falsch-->: Register, um im voraus Takt zu teilen
   - zählt langsamer bzw. hält länger ohne Überlauf
 
-![Prescaler](8515_prescaler.jpg)<!--width=600px-->
+![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
