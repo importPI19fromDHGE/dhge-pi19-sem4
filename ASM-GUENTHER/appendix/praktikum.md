@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -19,6 +20,7 @@ Praktikum hardwarenahe Programmierung
 - [Zeitsteuerung](#zeitsteuerung)
 - [Unterprogramme](#unterprogramme)
 - [Timer](#timer)
+- [Serielle Schnittstelle](#serielle-schnittstelle)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -474,7 +476,7 @@ ret ;4T
   - 2 Modi für Pulsweitenmodulation:
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
-    - ``OC0`` wird bei CTC geschalten<!--???-->(siehe Datenblatt)
+    - ``OC0`` wird bei CTC getogglet (siehe Datenblatt)
 - Timer Interrupt Flag Register (TIFR):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
@@ -482,3 +484,26 @@ ret ;4T
   - zählt langsamer bzw. hält länger ohne Überlauf
 
 ![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
+
+# Serielle Schnittstelle
+
+- Universal Synchronous/Asynchronous Receiver and Transmitter (USART)
+- Pegelkonverter zwischen RS232-Connector und AVR
+- Anwendung: Debugging, Mensch-Maschine-Schnittstelle, Maschine-Maschine-Schnittstelle
+- Konfiguration: mit Registern UCSRA, UCSRB, UCSRC
+  - UCSRC-Register: UMSEL-Bit: High = synchron
+  - Double Speed Asynchronous Mode: U2X-Bit in UCRSA
+  - Synchronisation Mater/Slave $\rightarrow$ DDR für Pin PD4 (XCK)
+  - Baudrate in Register UBRR (High und Low)
+- Datenregister: UDR
+- Aufbau eines Datenframe:
+  - 1 Startbit
+  - 5 bis 9 Datenbits
+  - Paritätseinstelllung
+  - 1 oder 2 Stopp-Bits
+- Baudrate:
+  - UBRR ist ein abwärtszähler; bei 0 wird ein Taktsignal generiert
+  - MC-Takt wird durch 2, 8 oder 16 geteilt
+  - Beispiel asynchron: UBRR = (MC-Takt) / (16 * Zielbaudrate) - 1 <!--TODO: in MathJax umwandeln-->
+
+<!--ab hier hatte ich Filmriss-->
