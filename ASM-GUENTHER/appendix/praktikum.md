@@ -212,7 +212,7 @@ rjmp main
 
 - Aktivierung über Register
 - Behandlung via Interrupt Service Routinen (ISR) in Interrupt-Vektortabelle
-- erfordert initialisierten Stack (ist standardmäßig 0)
+- erfordert initialisierten Stack (liegt standardmäßig auf Adresse 0)
 - setzen des I-Bit mit ``SEI``
 
 Abarbeitung:
