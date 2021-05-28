@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -506,7 +507,7 @@ ldi R30, LOW(data)
 ldi R31, HIGH(data)
 
 main:
-lpm 
+lpm
 loop:
 lpm work, z+
 cpi work, 0
