@@ -1,3 +1,9 @@
+<!----------
+title: "Datenbankentwurf"
+date: "Semester 4"
+keywords: [Datenbankentwurf, Datenbanken, DHGE, Semester 4]
+---------->
+
 Datenbankentwurf
 ================
 

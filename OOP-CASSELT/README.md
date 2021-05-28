@@ -1,3 +1,9 @@
+<!----------
+title: "Objektorientierte Programmierung mit Java"
+date: "Semester 4"
+keywords: [Objektorientierte Programmierung, Java, DHGE, Semester 4]
+---------->
+
 Objektorientierte Programmierung mit Java
 =========================================
 

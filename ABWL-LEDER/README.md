@@ -1,4 +1,9 @@
-<!--markdownlint-disable-->
+<!----------
+title: "Allgemeine Betriebswirtschaftslehre"
+date: "Semester 4"
+keywords: [Betriebswirtschaftslehre, BWL, DHGE, Semester 4]
+---------->
+
 Allgemeine Betriebswirtschaftslehre
 ===================================
 
@@ -64,7 +69,6 @@ Allgemeine Betriebswirtschaftslehre
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
-<!--markdownlint-enable-->
 
 # Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche
 
