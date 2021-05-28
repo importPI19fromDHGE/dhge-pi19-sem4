@@ -14,7 +14,11 @@
 
 #### Phasen der SW-Entwicklung unabhängig vom verwendetet Modell benennen
 
-- ToDo
+- Anforderungen (Anforderungsanalyse)
+- Strukturierung der Entwicklung
+- Entwurf und Entwicklung der Lösung
+- Betrieb und Wartung der Lösung
+- Qualitätssicherung (Testen)
 
 #### Unterschied zwischen SW-Entw.-Phasen und –Modell benennen
 
