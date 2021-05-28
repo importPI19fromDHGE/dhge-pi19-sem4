@@ -49,7 +49,9 @@
 
 #### die äußere Form einer User-Story benennen
 
-- ToDo
+> Als … möchte ich … um …
+
+- Erklärung eines Features aus Sicht einer Person, die das Feature verwenden will
 
 ### Retrospektive
 
