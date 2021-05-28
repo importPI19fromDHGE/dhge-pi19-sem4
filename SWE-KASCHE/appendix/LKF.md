@@ -57,19 +57,31 @@
 
 #### benennen, wozu eine Retro gut ist
 
-- ToDo
+- ausschließliche Betrachtung des Prozesses
 
 #### erläutern, welche Vorteile eine regelmäßige Retro hat
 
-- ToDo
+- Verbesserung der Zusammenarbeit im Team
+- Verbesserung der Arbeit des Teams
+- Aufgestauten Frust vermeiden
+- Raum geben, um Probleme im Team offen anzusprechen
+- Maßnahmen zur Optimierung des Zusammenhalts im Team entwickeln
+
+[Quelle: T3N](https://t3n.de/news/scrum-was-ist-eine-retrospektive-1129292/)
 
 #### sagen, wer die Retro im Scrum-Prozess leitet 
 
-- ToDo
+- die Retrospektive wird durch den Scrum Master geleitet
 
 #### die Elemente eine Retro-Veranstaltung aufzählen
 
-- ToDo
+- Intro: Begrüßung, über Ziele der Retrospektive abstimmen
+- Daten sammeln: Was ist gut und was schlecht verlaufen? Analyse und Priorisierung einzelner Themen
+- Einsichten gewinnen: Teilnehmer erörtern Erfahrungen; Ermittlung von Ursachen für Erfolge und Misserfolge
+- Maßnahmen beschließen: Konstruktion konkreter Maßnahmen, die zu Veränderungen führen sollen
+- Abschluss: Rückblick auf die Retrospektive; Verbesserungsvorschläge für zukünftige Retrospektiven sammeln
+
+[Quelle: T3N](https://t3n.de/news/scrum-was-ist-eine-retrospektive-1129292/)
 
 #### darstellen, was und wieviel nach dem Clustern der Impediments erzeugt werden muss
 
