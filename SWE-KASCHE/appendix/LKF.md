@@ -311,7 +311,11 @@
 
 #### Standard-Muster einer Strukturellen-Sicht einer Software-Architektur benennen
 
-- ToDo
+- **Komposition von Klassen**
+- Proxy (Stellvertreter)
+- Adapter (Wrapper)
+- Bridge (Implementation und Schnittstelle trennen)
+- Composite (Baumstrukturen)
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden
 
@@ -319,7 +323,10 @@
 
 #### Standard-Muster einer Physikalischen-Sicht einer Software-Architektur benennen
 
-- ToDo
+- **Prozess der Erzeugung**
+- Factory
+- Builder (Erzeuger)
+- Singleton
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden
 
@@ -327,7 +334,10 @@
 
 #### Standard-Muster einer Ablauf-Sicht einer Software-Architektur benennen
 
-- ToDo
+- **Art und Weise wie Klassen kommunizieren und Aufgaben verteilen**
+- Command
+- Interpreter
+- Iterator
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden
 
