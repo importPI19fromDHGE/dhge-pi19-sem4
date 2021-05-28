@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -140,39 +141,19 @@ Hausaufgabe: LED-Zustand beim Drücken des Tasters umschalten
 Lösung der Hausaufgabe:
 
 ```asm
-/***********************************
-*                                  *
-* Programm wechselt LED-Zustand    *
-* beim Drücken des Tasters         *
-*                                  *
-* Autor: Maximilian Kerst          *
-* erstellt am: 18.05.2021          *
-* Version 0.1                      *
-*                                  *
-***********************************/
-
 .nolist
 .include "m8515def.inc"
 .list
 
-/*********************************************
-*                                            *
-* Hardwarebeschreibung:                      *
-*                                            *
-* STK500 -> 4MHz; LED an Pin A0, Taster an A1*
-*                                            *
-*********************************************/
+/* STK500 -> 4MHz; LED an Pin A0, Taster an A1 */
 
 .def work   = R16
 .def eins   = R17
 
 .equ LED = 0
 
-/********************************
-*                               *
-* Initialisierung               *
-*                               *
-********************************/
+; Initialisierung
+
 start:
 
 ;init registers
@@ -185,11 +166,8 @@ OUT PORTA, work ;  set Pull-Up Resistor on Bit 1
 LDI work, 0
 LDI eins, 1
 
-/****************
-*               *
-* Hauptprogramm *
-*               *
-****************/
+; Hauptprogramm
+
 main:
 
 sbis PINA, 1
@@ -286,38 +264,20 @@ out SPH, work
 Ein Beispielprogramm zeigt die Nutzung von Stack und Interrupts anhand von zwei Tastern (lt. Datenblatt an ``PORTB``)
 
 ```asm
-/***********************************
-*                                  *
-* LED Toggle Interrupt             *
-*                                  *
-* Autor: Max KErst                 *
-* erstellt am: 26.05.2021          *
-* Version 0.1                      *
-*                                  *
-***********************************/
 
 .nolist
 .include "m8515def.inc"
 .list
 
-/*********************************************
-*                                            *
-* Hardwarebeschreibung:                      *
-*                                            *
-* Taster E0; LED E1                          *
-*                                            *
-*********************************************/
+;Taster E0; LED E1
 
 .def status = R15
 .def work   = R16
 .def mask = R17
 .include "m8515def.inc"
 
-/***************************
-*                          *
-* Interrupt Vektor Tabelle *
-*                          *
-***************************/
+;Interrupt Vektor Tabelle
+
 .org 0x0000
 rjmp start
 rjmp int0handle
@@ -337,18 +297,7 @@ reti
 reti
 reti
 
-
-/*********************
-*
-* Interrupt Handler
-*
-*********************/
-
-//////////////////////////////////////
-//
 // Reagiert bei Int0; ändert den LED-Zustand B1
-//
-//////////////////////////////////////
 int0handle:
 
 in status, SREG
@@ -371,12 +320,8 @@ out SREG, status
 
 reti
 
+;Initialisierung
 
-/********************************
-*                               *
-* Initialisierung               *
-*                               *
-********************************/
 start:
 ;init Stack
 ldi work, LOW(RAMEND)
@@ -400,12 +345,7 @@ out mcucr, work ; rising edge
 
 SEI
 
-
-/****************
-*               *
-* Hauptprogramm *
-*               *
-****************/
+; Hauptprogramm
 main:
 
 rjmp main
