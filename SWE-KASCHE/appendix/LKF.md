@@ -49,7 +49,7 @@
 
 #### die äußere Form einer User-Story benennen
 
-> Als … möchte ich … um …
+> Als ... möchte ich ... um ...
 
 - Erklärung eines Features aus Sicht einer Person, die das Feature verwenden will
 
@@ -144,11 +144,20 @@
 
 #### die Quadranten des Spiralen-Modells
 
-- ToDo
+- **Ziele**, Alternativen und Rahmenbedingungen
+- **Risiken** abschätzen und reduzieren, Evaluierung der Alternativen
+- **Realisierung** und Überprüfung
+- **Plan** für den nächsten Zyklus
+- Annäherung an Gesamt-Ziel durch zyklische Wiederholung der vier Phasen
+- Weiterentwicklung des Wasserfallmodells; versucht auf sich ändernde Ziele während des Projektfortschrittes zu reagieren
 
 #### den Entwicklungsablauf beim Spiralen-Modell
 
-- ToDo
+| Zyklus | Phase 1                                | Phase 2                            | Phase 3                                 | Phase 4          |
+|--------|----------------------------------------|------------------------------------|-----------------------------------------|------------------|
+| 1      | Planung                                | Risiko, Prototyp 1                 | Anforderungen                           | Entwicklungsplan |
+| 2      | Ziele, Alternativen, Rahmenbedingungen | Risiko, Prototyp 2                 | Grob-Entwurf                            | Testplan         |
+| 3      | Ziele, Alternativen, Rahmenbedingungen | Risiko, Prototyp 3 (betriebsfähig) | Fein-Entwurf, Code, Integrieren, Testen | ...              |
 
 #### Zielkriterien, warum überhaupt Entwicklungsmodelle verwendet werden
 
