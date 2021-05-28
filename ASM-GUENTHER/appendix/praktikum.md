@@ -180,7 +180,6 @@ out PINA, work
 loop:
 sbic PINA, 1
 rjmp loop
-rjmp main
 
 rjmp main
 
@@ -188,9 +187,9 @@ rjmp main
 
 # Interrupts
 
-- Aktivierung über Register
+- Aktivierung über `GICR`-Register, Konfiguration über `MCUCR`, `EMCUCR`-Register
 - Behandlung via Interrupt Service Routinen (ISR) in Interrupt-Vektortabelle
-- erfordert initialisierten Stack (ist standardmäßig 0)
+- erfordert initialisierten Stack (liegt standardmäßig auf Adresse 0)
 - setzen des I-Bit mit ``SEI``
 
 Abarbeitung:
@@ -199,7 +198,7 @@ Abarbeitung:
 - MC löscht I-Bit $\rightarrow$ muss gesetzt sein, damit Interrupts behandelt werden $\rightarrow$ Behandlungsroutine kann nicht unterbrochen werden
 - MC speichert Program Counter auf den Stack $\rightarrow$ Fortsetzung des Programmablaufs wird gesichert
 - Interrupt-Vektor des ausgelösten Interrupts in PC laden; IV ist eine festzulegende Adresse im Programmspeicher (**Interrupt-Vektor-Tabelle**)
-  - wird abgearbeitet, bis ``reti`` ("REturn To Interrupt") erreicht
+  - wird abgearbeitet, bis ``reti`` ("Return To Interrupt") erreicht
 - PC vom Stack laden
 - I-Bit setzen
 - Programmablauf fortsetzen
@@ -231,7 +230,7 @@ reti
 
 ## Aufbau der IV-Tabelle
 
-- rjmp zur ISR
+- ``rjmp`` zur ISR
 - innerhalb kein ``.org``
 - Länge der Sprungtabelle = Anzahl der Interrupts
 
@@ -240,11 +239,11 @@ reti
 ![Interrupts](8515_interrupts.jpg)<!--width=600px-->
 
 - ``RESET`` ist Low-aktiv
-- General Interrupt Flag Register (GIFR): gesetzt bei entsprechendem Ereignis
+- General Interrupt Flag Register (``GIFR``): gesetzt bei entsprechendem Ereignis
 - vom MC gelöscht
-- General Interrupt Control Register (GICR): Wenn entsprechendes Bit gesetzt, ist ein Interrupt aktiviert
-- Microcontroller-Unit-Control-Register (MCUCR): Konfiguriert, welche Konfiguration von INT0 und INT1 einen Interrupt auslöst und ob auf steigende oder fallende Flanken reagiert wird
-- INT2 wird in EMCUCR konfiguriert, wobei hier nur die Flanke eingestellt werden kann
+- General Interrupt Control Register (``GICR``): Wenn entsprechendes Bit gesetzt, ist ein Interrupt aktiviert
+- Microcontroller-Unit-Control-Register (``MCUCR``): Konfiguriert, welche Konfiguration von ``INT0`` und ``INT1`` einen Interrupt auslöst und ob auf steigende oder fallende Flanken reagiert wird
+- ``INT2`` wird in ``EMCUCR`` konfiguriert, wobei hier nur die Flanke eingestellt werden kann
 
 # Stack
 
@@ -257,7 +256,7 @@ Initialisierung:
 ```asm
 ldi work, LOW(RAMEND)
 out SPL, work
-ldi work, HIGH, RAMEND
+ldi work, HIGH(RAMEND)
 out SPH, work
 ```
 
@@ -483,4 +482,4 @@ ret ;4T
 - Prescaler<!--Im Datenblatt heißt es Prescaler, es steht auf den Folien wahrsch. falsch-->: Register, um im voraus Takt zu teilen
   - zählt langsamer bzw. hält länger ohne Überlauf
 
-![Prescaler](8515_prescaler.jpg)<!--width=600px-->
+![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
