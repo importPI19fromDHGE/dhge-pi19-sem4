@@ -20,6 +20,7 @@ Praktikum hardwarenahe Programmierung
 - [Zeitsteuerung](#zeitsteuerung)
 - [Unterprogramme](#unterprogramme)
 - [Timer](#timer)
+- [Programmspeicher](#programmspeicher)
 - [Serielle Schnittstelle](#serielle-schnittstelle)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -484,6 +485,39 @@ ret ;4T
   - zählt langsamer bzw. hält länger ohne Überlauf
 
 ![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
+
+# Programmspeicher
+
+- feste Daten, z.B. Zahlen oder Strings, können im Programm nach der ``data:``-Sprungmarke eingefügt werden
+- Syntax: ``.db daten, Zeilenumbruch, Carriage Return, Terminator`` $\rightarrow$ ``.db "ganz erstaunlich!, 10, 13, 0"``
+- ``lpm`` lädt die Adresse der Daten auf ``R0``
+- schrittweise Abarbeitung kann dann mit einem Arbeitsregister erfolgen
+
+Folgendes Beispiel lädt Daten zeichenweise in ein Arbeitsregister:
+
+```asm
+.nolist
+.include "m8515def.inc"
+.list
+
+.def work   = R16
+
+start:
+ldi R30, LOW(data)
+ldi R31, HIGH(data)
+
+main:
+lpm 
+loop:
+lpm work, z+
+cpi work, 0
+brne loop
+rjmp main
+
+; Daten, Zeilenumbruch, LF, Terminator
+data:
+  .db "Hier stehen Daten!",10,13,0
+```
 
 # Serielle Schnittstelle
 
