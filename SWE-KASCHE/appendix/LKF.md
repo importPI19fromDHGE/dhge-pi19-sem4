@@ -77,15 +77,34 @@
 
 #### die fünf Phasen des Wasserfall‐Modells benennen und erläutern
 
-- ToDo
+- **Analyse:** Funktionsumfang, User Interface, Leistungsverhalten, Termine klären (Lastenheft als Grundlage)
+- **Design:** Festlegen der innere Struktur der Software $\rightarrow$ Komponentenzerlegung; Erstellung des Pflichtenhefts
+- **Programmierung:** Komponenten (Module) werden anhand des Entwurfs implementiert
+- **Integration / Test:** Zusammenfügen einzelner Komponenten (Integrationstest); nach Zusammenfügen Systemtest (Konsistenz bezüglich der Produkt-Definition prüfen)
+- **Einsatz / Wartung:** Fehlerkorrektur, Änderungen und Erweiterungen der Funktionalitäten und Anpassungen an andere System-Umgebungen bis zum Abschalten der Software
 
 #### das Wasserfall‐Modell hinsichtlich Vor‐ und Nachteilen evaluieren
 
-- ToDo
+**Vorteile**
+
+- Gesamtkosten und Aufwand zu Beginn klar
+- Einzelabschnitte sind wenig komplex
+- Phasenpipelining möglich
+
+**Nachteile**
+
+- wenig Flexibilität bezüglich Änderungsmöglichkeiten
+- Testen nur am Ende
+- für komplexe Aufgaben oder große Teams ungeeignet
+- Kunde wird kaum involviert
+- kein experimentelles Vorgehen
+- Fail Early wird nicht unterstützt
 
 #### eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
 
-- ToDo
+- Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesprungen werden 
+- PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
+  - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
 
 #### einen Prototyp vom Pretotype unterscheiden
 
