@@ -42,6 +42,7 @@
 #### Regeln der SW-Entwicklung benennen
 
 **1. Klartext reden**
+
 - Linear:
   - Was möchte der Kunde bekommen?)
   -	Pflichtenheft (Was hat der Entwickler verstanden, was macht er?)
@@ -51,6 +52,7 @@
   -	Refinement Prozess!
 
 **2.	Gründliche Vertragsgestaltung**
+
 - Wasserfallmodell
   - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
   -	gleiche Begriffe zu Beginn des Lastenhefts abklären
@@ -59,6 +61,7 @@
   - Backlog + Refinement
 
 **3.	Wandelnde Anforderungen: Wie gehe ich damit um?**
+
 - Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich => am Ende: was zählt?
 -	Change Request Prozess:
 -	Request → Impact, Analysis → Approve / Deny → Implementation → Business
@@ -76,9 +79,10 @@
     - ist verständlich
     - hat Aktzeptanzkriterien
     - ...
+
 - Definition of Done: Wann ist die Aufgabe/Projekt erledigt?
   - Beispiel:
-  - Der Code ist fertiggestellt und im Versionierungssystem eingespielt. 
+  - Der Code ist fertiggestellt und im Versionierungssystem eingespielt.
   - Es gab einen Code Review bzw. der Code wurde im Pair Programming erarbeitet.
   - Es gibt entsprechende Unit Tests und diese stehen auf grün.
   - Alle Akzeptanzkriterien sind erfüllt.
@@ -382,7 +386,7 @@ Quellen:
 - Builder (Erzeuger)
 - Singleton
 
-#### Vor- und Nachteile jedes Musters darstellen und anwenden
+#### Vor- und Nachteile jedes Musters darstellen und anwenden1
 
 - ToDo
 
@@ -393,7 +397,7 @@ Quellen:
 - Interpreter
 - Iterator
 
-#### Vor- und Nachteile jedes Musters darstellen und anwenden
+#### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
 - ToDo
 
