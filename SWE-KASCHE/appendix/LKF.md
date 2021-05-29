@@ -223,19 +223,69 @@ Quellen:
 
 #### das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
 
+- ![Schematische Darstellung des V-Modells](assets/v-modell.png)
+
+| Vorteile                                              | Nachteile                                                                                                         |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Anaylse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
+| klare Test-Struktur vorgegeben                        |                                                                                                                   |
+| Iterationen bis alle Tests der Phase OK sind          |                                                                                                                   |
+
 - ToDo
 
 #### die Bedeutung des XT beim V-Modell-XT
 
-- ToDo
+- XT-> Extreme Tailoring 
+- an Bedürfnisse anpassbar
+- Auftraggeber mit eingebunden
+- stärkere Modularisierung
+- mehr in Richtung AGIL
+
 
 #### die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
-
+- Bausteine
 - ToDo
+
+-4 Projekt-Typen:
+  1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
+  2. Auftragnehmer Projekt (AW): Entwicklung
+  3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
+  4. Organisationsspezifische Projekt
+
+Durchführungs-Strategien:
+	-ToDo
+
 
 #### die 3 Säulen, deren sich das V-Modell-XT bedient
 
-- ToDo
+- 3 Säulen: Meta-Modell, freie Inhalte, Werkzeuge
+**Meta-Modell**
+- Rollen
+- Produkte
+- Beziehungen (Aktivitäten)
+
+feste Inhalte + optionale Bestandteile
+
+Produkt-orientierte Arbeitsweise + Tailoring
+
+Auftrag-Geber / Auftrag-Nehmer im Sprachgebrauch + Schnittstellen (Synchronisations-Punkte)
+
+**Werkzeuge**
+- V-Modell XT-Editor (für Anpassungen)
+- V-Modell XT-Projekt-Assistenten (Tailoring)
+- XML-Technologie baiserend
+
+|                     |                                                                                |
+| ------------------- | ------------------------------------------------------------------------------ |
+| produktorierentiert | nicht *wie*, sondern *was* "hergestellt" wird                                  |
+| Produkte            | Software-Code, Modelle, Dokumentationen, Zwischenergebnisse (auch als SW-Code) |
+
+für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
+- inklusive Aussagen zur Qualitätskontrolle
+- DoD
+
+> DoR: "Definition of Ready"  
+> DoD: "Definition of Done"
 
 #### den Grund für den Buchstaben X beim Extrem Programming und kann mindestens drei von den vier Techniken erläutern
 
