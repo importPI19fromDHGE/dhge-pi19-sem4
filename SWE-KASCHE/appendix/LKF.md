@@ -289,11 +289,22 @@ für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
 
 #### den Grund für den Buchstaben X beim Extrem Programming und kann mindestens drei von den vier Techniken erläutern
 
-- ToDo
+> XP setzt bewährte Techniken im extremen Maße ein
+E**X**TREME
+1. Paar-Programmierung  
+   kontinuierliches Review
+2. Testen  
+   kontinuierliches Testen
+3. Refactoring  
+   kontinuierliches Design / Redesign
+4. Feedback an Kunden  
+   kurze Release Zyklen
 
 #### mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
 - ToDo
+Alle, LOL
+kontinuierliches Testen ist essenziel!
 
 ### SCRUM
 
