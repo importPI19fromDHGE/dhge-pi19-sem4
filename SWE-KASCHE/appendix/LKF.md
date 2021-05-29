@@ -64,7 +64,6 @@
 -	Request → Impact, Analysis → Approve / Deny → Implementation → Business
 -	14 Tage Cycle: Planning, Review, Retro
 
-
 #### DOD und DOR erklären und deren Bedeutung benennen
 
 - Checklisten
@@ -72,12 +71,12 @@
 - Definition of Ready (allgemein): Was sollte erledigt sein, damit eine Aufgabe begonnen werden kann? Konkret / allgemein
 - Definition of Ready (SCRUM): Liste von Kriterien, die Backlog Items erfüllen müssen, bevor sie in Sprint eingeplant werden.
   - Beispiel:
-  -  Item im Product Backlog  
+  - Item im Product Backlog
     - ist klein genug für Sprint
     - ist verständlich
     - hat Aktzeptanzkriterien
     - ...
-- Definition of Done: Wann ist die Aufgabe/Projekt erledigt? 
+- Definition of Done: Wann ist die Aufgabe/Projekt erledigt?
   - Beispiel:
   - Der Code ist fertiggestellt und im Versionierungssystem eingespielt. 
   - Es gab einen Code Review bzw. der Code wurde im Pair Programming erarbeitet.
@@ -85,13 +84,10 @@
   - Alle Akzeptanzkriterien sind erfüllt.
   - ...
 
-Quellen: 
+Quellen:
 [DOR 1](https://www.scrum-events.de/was-ist-die-definition-of-ready-dor.html)
 [DOR 2](https://t2informatik.de/wissen-kompakt/definition-of-ready/)
 [DOD](https://www.scrum-events.de/was-ist-die-definition-of-done-dod.html)
-
-
-
 
 #### die äußere Form einer User-Story benennen
 
@@ -115,7 +111,7 @@ Quellen:
 
 [Quelle: T3N](https://t3n.de/news/scrum-was-ist-eine-retrospektive-1129292/)
 
-#### sagen, wer die Retro im Scrum-Prozess leitet 
+#### sagen, wer die Retro im Scrum-Prozess leitet
 
 - die Retrospektive wird durch den Scrum Master geleitet
 
@@ -166,7 +162,7 @@ Quellen:
 
 #### eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
 
-- Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesprungen werden 
+- Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesprungen werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
   - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
 
