@@ -327,7 +327,22 @@ aber Aussage
 
 #### die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
 
-- ToDo
+- ToDo : kürzen
+**Pairing-Tabelle** als Werkzeug:  
+Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter  
+- Realisierung durch eine einfache (Excel) Tabelle  
+- es wird schnell klar, ob Mitarbeiter zu wenige oder zu viele Themen bearbeiten sollen
+- die Machbarkeit des Sprints wird frühzeitig sichtbar
+
+- pro Zeile ein Thema
+- Anzahl der Themen soll ca Anzahl Mitarbeiter / 2
+- Spalten den Mitarbeitern zuordnen
+- Verantwortliche (zu den Themen) zuordnen
+- pro Mitarbeiter habe ich Informationen: Zu viele Verantwortlichkeiten? Zu viele Themen?
+- pro Zeile: Informationen, wie viele Mitarbeiter im Thema involviert sind
+- **ZIEL:** Probleme frühzeitig sichtbar machen! (und im Idealfall lösen)
+
+> Die Anzahl der Zeilen (Themen) ist künstlich beschränkt! (da T-shaped Mitarbeiter --> die Mitarbeiter sollen voneinander lernen können)
 
 #### sagen, warum DOR und DOD verwendet werden sollten
 
@@ -336,10 +351,13 @@ aber Aussage
 #### aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
 
 - ToDo
+- Kommt aus der Übung.. leicht messbar muss es sein!
+- Gesamten Prozess sichtbar machen
 
 #### Checklisten den einzelnen Typen (DOR, DOD) zuordnen und ggf. wichtige fehlende Punkte ergänzen
 
 - ToDo
+- Auch eine Übungssache ..?
 
 #### das SCRUM-Manifest und dessen Anwendung erläutern
 
