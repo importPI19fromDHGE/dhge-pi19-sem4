@@ -1,3 +1,9 @@
+<!----------
+title: "Embedded Systems"
+date: "Semester 4"
+keywords: [Embedded Systems, DHGE, Semester 4]
+---------->
+
 Embedded Systems
 ================
 
