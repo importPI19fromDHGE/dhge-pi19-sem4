@@ -41,7 +41,29 @@
 
 #### Regeln der SW-Entwicklung benennen
 
-- ToDo
+**1. Klartext reden**
+- Linear:
+  - Was möchte der Kunde bekommen?)
+  -	Pflichtenheft (Was hat der Entwickler verstanden, was macht er?)
+- Agil:
+  -	feste Struktur & klare Regeln → jedoch adaptierbar
+  -	Backlog → Aufgabensammlung
+  -	Refinement Prozess!
+
+**2.	Gründliche Vertragsgestaltung**
+- Wasserfallmodell
+  - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
+  -	gleiche Begriffe zu Beginn des Lastenhefts abklären
+  -	dritte Person ließt, versteht und korrigiert → unterschreibt
+- Agil:
+  - Backlog + Refinement
+
+**3.	Wandelnde Anforderungen: Wie gehe ich damit um?**
+- Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich => am Ende: was zählt?
+-	Change Request Prozess:
+-	Request → Impact, Analysis → Approve / Deny → Implementation → Business
+-	14 Tage Cycle: Planning, Review, Retro
+
 
 #### DOD und DOR erklären und deren Bedeutung benennen
 
