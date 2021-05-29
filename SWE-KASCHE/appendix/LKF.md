@@ -67,7 +67,31 @@
 
 #### DOD und DOR erklären und deren Bedeutung benennen
 
-- ToDo
+- Checklisten
+- Immer anhand einfach zu bestimmender Metriken definieren.
+- Definition of Ready (allgemein): Was sollte erledigt sein, damit eine Aufgabe begonnen werden kann? Konkret / allgemein
+- Definition of Ready (SCRUM): Liste von Kriterien, die Backlog Items erfüllen müssen, bevor sie in Sprint eingeplant werden.
+  - Beispiel:
+  -  Item im Product Backlog  
+    - ist klein genug für Sprint
+    - ist verständlich
+    - hat Aktzeptanzkriterien
+    - ...
+- Definition of Done: Wann ist die Aufgabe/Projekt erledigt? 
+  - Beispiel:
+  - Der Code ist fertiggestellt und im Versionierungssystem eingespielt. 
+  - Es gab einen Code Review bzw. der Code wurde im Pair Programming erarbeitet.
+  - Es gibt entsprechende Unit Tests und diese stehen auf grün.
+  - Alle Akzeptanzkriterien sind erfüllt.
+  - ...
+
+Quellen: 
+[DOR 1](https://www.scrum-events.de/was-ist-die-definition-of-ready-dor.html)
+[DOR 2](https://t2informatik.de/wissen-kompakt/definition-of-ready/)
+[DOD](https://www.scrum-events.de/was-ist-die-definition-of-done-dod.html)
+
+
+
 
 #### die äußere Form einer User-Story benennen
 
