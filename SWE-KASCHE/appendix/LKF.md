@@ -249,7 +249,17 @@ Quellen:
 
 #### Vier Phasen einer empirischen Prozess-Kontrolle benennen und die Vorteile darstellen
 
-- ToDo
+- Plan
+- Do
+- Check
+- Act (zurück zu Plan)
+
+- kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen  
+- soll zu einer besseren Lösung führen
+- transparenter Prozess
+- Doing + Überprüfung + Anpassung
+- häufige Wiederholung
+
 
 #### den SCRUM-Ablauf beschreiben
 
