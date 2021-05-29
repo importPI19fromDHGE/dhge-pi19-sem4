@@ -50,7 +50,7 @@
   -	feste Struktur & klare Regeln → jedoch adaptierbar
   -	Backlog → Aufgabensammlung
   -	Refinement Prozess!
-
+  
 **2.	Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
