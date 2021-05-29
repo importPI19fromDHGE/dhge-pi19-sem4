@@ -50,7 +50,7 @@
   -	feste Struktur & klare Regeln → jedoch adaptierbar
   -	Backlog → Aufgabensammlung
   -	Refinement Prozess!
-  
+
 **2.	Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
@@ -135,7 +135,13 @@ Quellen:
 
 #### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
 
-- ToDo
+- SCRUM-Vorgabe: Am  Ende des Sprints 
+- Bei kurzen Sprints (z.B. 1 Wochen) ist es sinnvoll, davon abzuweichen. Retro dann erst nach mehreren Sprints.
+- [t2informatik](https://t2informatik.de/wissen-kompakt/scrum-retrospektive/), Scrum Guide empfiehlt 3h / Monat Retro
+- Bei 2 Wochen Sprint also z.B. 2 x 1,5 h
+- Bei 1 Wochen Sprint das gleiche, Retro nach jedem zweiten Sprint
+
+- Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt (ToDo)
 
 ### Phasenmodelle
 
