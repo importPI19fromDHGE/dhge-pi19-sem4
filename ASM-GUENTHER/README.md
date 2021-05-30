@@ -5,21 +5,24 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnerarchitekturen/hardwarenahe Programmierung](#rechnerarchitekturenhardwarenahe-programmierung)
 - [Java und Make](#java-und-make)
 - [C und Make](#c-und-make)
-- [C++ und Make](#c-und-make)
+- [C++ und Make](#c-und-make-1)
 - [Assembler](#assembler)
   - [Inline Assembler in C](#inline-assembler-in-c)
     - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
     - [Geteilte Variablen zwischen C und Assembler](#geteilte-variablen-zwischen-c-und-assembler)
-  - [Binärschnittstelle (Application Binary Interface)](#bin%C3%A4rschnittstelle-application-binary-interface)
-- [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
+  - [Binärschnittstelle (Application Binary Interface)](#binärschnittstelle-application-binary-interface)
+- [Mögliche Prüfungsaufgaben](#mögliche-prüfungsaufgaben)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
 
 # Java und Make
+
+Ich mag den Geruch von Elektronik.
 
 - mit ``javac`` kompiliert man eine ``.java``-Datei zu Bytecode
 - mit ``java klassenname`` kann man ausführen
