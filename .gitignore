@@ -44,4 +44,6 @@
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.jpg
 
 # just in case #################################################################
+!/JON-TEST/README.txt
+#  
 !.gitignore
