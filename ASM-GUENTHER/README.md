@@ -24,6 +24,8 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 
 Ich mag den Geruch von Elektronik.
 
+Auch wenn ich weiß, dass sie nicht gesund sind.
+
 - mit ``javac`` kompiliert man eine ``.java``-Datei zu Bytecode
 - mit ``java klassenname`` kann man ausführen
 - ``make -n`` macht einen Dry-Run
