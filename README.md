@@ -1,5 +1,7 @@
 # DHGE - Praktische Informatik - Matrikel 19 - Semester 4
 
+Dies ist ein Test und sollte nicht mit ``main`` gemerged werden.
+
 Dieses Repository ist ein Projekt von Studierenden des Studiengangs "Praktische Informatik" der Dualen Hochschule Gera-Eisenach.
 Hier werden alle Mitschriften der einzelnen Modulen gesammelt.
 Die Skripte liegen im `markdown`-Format vor.
