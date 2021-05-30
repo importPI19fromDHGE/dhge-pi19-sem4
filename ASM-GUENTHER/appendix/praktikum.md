@@ -488,7 +488,7 @@ ret ;4T
 # Programmspeicher
 
 - feste Daten, z.B. Zahlen oder Strings, können im Programm nach der ``data:``-Sprungmarke eingefügt werden
-- Syntax: ``.db daten, Zeilenumbruch, Carriage Return, Terminator`` $\rightarrow$ ``.db "ganz erstaunlich!, 10, 13, 0"``
+- Syntax: ``.db daten, Zeilenumbruch, Carriage Return, Terminator`` \rightarrow\rightarrow ``.db "ganz erstaunlich!", 10, 13, 0``
 - ``lpm`` lädt die Adresse der Daten auf ``R0``
 - schrittweise Abarbeitung kann dann mit einem Arbeitsregister erfolgen
 
@@ -523,20 +523,20 @@ data:
 - Universal Synchronous/Asynchronous Receiver and Transmitter (USART)
 - Pegelkonverter zwischen RS232-Connector und AVR
 - Anwendung: Debugging, Mensch-Maschine-Schnittstelle, Maschine-Maschine-Schnittstelle
-- Konfiguration: mit Registern UCSRA, UCSRB, UCSRC
-  - UCSRC-Register: UMSEL-Bit: High = synchron
-  - Double Speed Asynchronous Mode: U2X-Bit in UCRSA
-  - Synchronisation Mater/Slave $\rightarrow$ DDR für Pin PD4 (XCK)
-  - Baudrate in Register UBRR (High und Low)
-- Datenregister: UDR
+- Konfiguration: mit Registern ``UCSRA``, ``UCSRB``, ``UCSRC``
+  - ``UCSRC``-Register: ``UMSEL``-Bit: High = synchron
+  - Double Speed Asynchronous Mode: ``U2X``-Bit in ``UCRSA``
+  - Synchronisation Mater/Slave \rightarrow\rightarrow DDR für Pin PD4 (``XCK``)
+  - Baudrate in Register ``UBRR`` (High und Low)
+- Datenregister: ``UDR``
 - Aufbau eines Datenframe:
   - 1 Startbit
   - 5 bis 9 Datenbits
-  - Paritätseinstelllung
+  - Paritätseinstellung
   - 1 oder 2 Stopp-Bits
 - Baudrate:
-  - UBRR ist ein abwärtszähler; bei 0 wird ein Taktsignal generiert
+  - ``UBRR`` ist ein Abwärtszähler; bei 0 wird ein Taktsignal generiert
   - MC-Takt wird durch 2, 8 oder 16 geteilt
-  - Beispiel asynchron: UBRR = (MC-Takt) / (16 * Zielbaudrate) - 1 <!--TODO: in MathJax umwandeln-->
+  - Beispiel asynchron: $\text{UBRR} = \frac{\text{MC-Takt}}{16 * \text{Zielbaudrate}} - 1$
 
 <!--ab hier hatte ich Filmriss-->
