@@ -564,10 +564,8 @@ Dem Autor auf Anhieb unbekannt
 - Function-Point-Methode
 - ToDo
 
-**Vor:** Eingangsvariablen müssen zutreffend geschätzt werden
-ohne Maßzahlen von alten projekten **keine** zuverlässigen Aussagen
-
 **COCOMO**
+
 "Constructive-Cost-Method"
 
 Lines-of-Code $=l$
@@ -608,7 +606,26 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 #### Schwachstellen des CoCoMo bzw. Function-Point-Methode darlegen
 
-- ToDo
+**allgemein**
+
+- Starr, trocken, kein Teamgeist, keine Kommunikation
+- Eingangsvariablen **müssen** zutreffend geschätzt werden
+- ohne Maßzahlen von alten projekten **keine** zuverlässigen Aussage
+  - Sie beziehen sich dadurch immer nur auf gleiche und ähnliche Teams 
+  - mit gleichen und ähnlichen Projekten. 
+  - Selbst noch nie sowas gemacht? Damit nicht zuverlässig schätzbar! 
+- Reaktion auf neue Anforderungen: nicht möglich
+
+**COCOMO**
+
+- Lines of Code ist eine fehlerbehaftete Angabe
+
+**FP-Methode**
+
+- präziser Entwurf nötig, Datenelemente, Transaktionen etc $\Rightarrow$ ändert sich oft während Entwicklung
+- Kosten pro Function Point muss bekannt sein
+
+
 
 ## System-Entwurf
 
