@@ -39,6 +39,8 @@ Systementwurf
 - [Objektorientierte Entwurfsmuster](#objektorientierte-entwurfsmuster)
   - [Erzeugende Entwurfsmuster](#erzeugende-entwurfsmuster)
   - [Strukturelle Muster](#strukturelle-muster)
+  - [Verhaltensmuster](#verhaltensmuster)
+  - [XML](#xml)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
