@@ -695,5 +695,213 @@ public:
 
 **Proxy (Stellvertreter)**
 
-- Steuerung eines Objekts wird auf ein vorgelagertes Stellvertreter-Objekt verschoben
+- Steuerung eines Objekts wird auf ein vorgelagertes Stellvertreter(Proxy)-Objekt verschoben
 - d.h. $\rightarrow$ die selbe Schnittstelle
+- Das Proxy-Objekt greift dann auf das (echte) real-Objekt zu
+- dadurch greifen andere Objekte auf den Proxy und nicht auf das echte Objekt zu
+- bspw. beim MVC bietet es sich an, Proxy-Models zu verwenden
+
+**Adapter (Wrapper)**
+
+- Ziel: konvertiert die Schnittstelle einer Klasse in der Weise, dass die Erwartungen des Klienten erfüllt werden
+- z.Bsp.:
+
+```cpp
+class Bibliothek1 { // diese Klasse ist nicht so schön, hat allerdings die "richtigen" Schnittstellen
+  getR();
+};
+
+class Bibliothek2 { // diese Klasse ist schöner, sie wollen wir verwenden
+  getRadius();
+};
+
+// nicht unbedingt eine Klasse (nur zur Veranschaulichung)
+// über die WrapperBibliothek wird im Endeffekt der Radius abgefragt
+class WrapperBibliothek { // verwendet Bibliothek2 um intern den Radius abzufragen
+  getR();
+};
+// -> Schnittstelle ist korrekt, wir verwenden aber die "schöne" Klasse/Funktion
+```
+
+**Bridge**
+
+- Implementierungen und Schnittstellen sollen getrennt werden
+- $\rightarrow$ beide voneinander unabhängig änderbar
+- angewendet, wenn:
+  - Änderungen in Implementierungen sich nicht auf den Anwender auswirken sollen
+  - verschiedene Implementierungen genutzt werden sollen
+  - Implementierungen vor dem Klienten verborgen werden sollen
+  - die Schnittstellen und Implementierungen erweiterbar sein sollen
+
+```cpp
+// Schnittstelle
+class Container{
+};
+
+// Schnittstelle
+class SortedContainer : public Container {
+};
+
+// Implementierung -> wird über das Container interface verwendet
+class List{
+};
+
+// Implementierung
+class List1 : public List {
+};
+
+// Implementierung
+class List2 : public List {
+};
+```
+
+**Composite**
+
+- Einsatz bei Baumstrukturen
+- Unterschied zwischen einzelnen und zusammengesetzten Objekten soll verborgen werden
+- bspw. Baum $\rightarrow$ ein Element ohne Kinder wird anders dargestellt, als ein Element mit Kindern
+- bspw. Dateisystem $\rightarrow$
+  - Ordner (bestehen entweder selbst wieder aus Ordnern oder aus Files)
+  - File
+- bspw. Hierarchien von UI-Elementen
+  - Grafik-Elemente
+    - Elypse, Kreis, Rechteck
+    - Gruppieren dieser Blatt-Elemente
+  - Menüs (z.B. Office)
+- `add()`, `delete()`, `size()` etc. $\rightarrow$ Gleiche Interaktion mit Elementen, egal um welches Element es sich konkret handelt
+
+```cpp
+class Komponente {
+};
+
+// Einzelobjekt
+class Blatt : public Komponente {
+};
+
+// enthält 0..n Komponenten (i.e. weitere Komposita oder Blätter)
+class Kompositum : public Komponente {
+};
+```
+
+## Verhaltensmuster
+
+**Command**
+
+- verkapselt eine Anfrage als Objekt
+
+1. verschiedene Anfragen können parametrisiert werden
+2. Undo wird möglich
+3. Ergebnis kann dem Objekt zugeordnet werden (Logbuch)
+
+- Bsp.:
+  1. Datenbank-Server-Anfrage
+  2. git (Versionskontrolle)
+  3. GUI + Kommandozeile
+
+- Erstellung und Ausführung der Kommandos voneinander getrennt
+  - Ausführung in: Thread, Prozess, auf anderem Rechner etc.
+
+**Interpreter**
+
+- definiert Repräsentation der Grammatik (einer Sprache)
+- definiert Möglichkeit Sätze dieser Sprache zu interpretieren
+
+Bsp.: Berechnung einer mathematischen Formel
+
+- $(7+3) + (2\cdot 6)$
+- links $\rightarrow$ Summenbildung mit zwei Summanden
+- rechts Multiplikation mit zwei Faktoren $\rightarrow$ terminierter Ausdruck
+- am Ende $\rightarrow$ Summierung der Ergebnisse
+
+```cpp
+class Ausdruck {
+  Interpretiere(kontext);
+};
+
+// "befüllt die Methode des Ausdrucks mit Leben"
+class TerminatingAusdruck : Ausdruck {
+  Interpretiere(k);
+};
+
+class NonTerminatingAusdruck : Ausdruck {
+  Interpretiere(k);
+};
+
+// alle abgeleiteten Klassen implementieren das "Interpretiere(k)"
+```
+
+- ein Syntaxbaum aus terminierenden und nicht-terminierenden Ausdrücken wird aufgebaut
+- Klient wertet den Syntaxbaum aus, indem er `interpretire(kontext)` aufruft
+
+**Iterator**
+
+- es können auf Bestandteile eines aggregierten Objekts zugegriffen werden
+
+```cpp
+class AbstrakteListe {
+};
+
+// verwendet den ListIterator
+class Liste : public AbstrakteListe {
+  erzeugeIterator();
+};
+
+class AbstrakterIterator {
+  start();
+  ende();
+  weiter();
+  aktuellesElement();
+};
+
+// wird von Liste als Iterator verwendet
+class ListIterator : public AbstrakterIterator {
+};
+```
+
+Warum Iteratoren?
+
+- es kann auf ein Element zugegriffen werden ohne, dass die interne Struktur offengelegt werden muss
+- es kann auf verschiedene Arten traversiert werden
+- es kann auf verschiedene Arten traversiert werden, ohne die Datencontainerklasse ändern zu müssen
+- es kann über eine einheitliche Schnittstelle traversiert werden
+- einer Datencontainerklasse können mehrere Iteratoren zugeordnet werden
+
+**Qualitätsverbesserung**
+
+- Kompetenz der Entwickler
+- Prozess (Sys-Anwendung) : MMM (Mensch, Maschine, Methode)
+- Tooling, Wiederverwendung (System-Entwurf)
+- Automatisierung
+  1. DevOps Ideen
+  2. Dokumentations-Generatoren
+  3. Code-Generatoren $\rightarrow$ Galerenarbeit (generiert aus abstrakter Beschreibung)
+  4. Template-Funktionen ($\rightarrow$ `Stack<Kogel>` (ein Stack vom Typ Kogel))
+  5. Round-Trip-Engineering
+     - Änderungen im Klassendiagramm $\rightarrow$ Änderungen im Code
+     - Änderungen im Code $\rightarrow$ Änderungen im Klassendiagramm
+  6. Model-Driven-Architecture (MDA)
+     - Modell entwickeln (z.B. in UML)
+     - Generator $\rightarrow$ Quelltext erstellen
+     - Design wird in Platform Independant Model (PIM) überführt
+     - PIM wird in Platform Specific Model (PSM) überführt
+     - wenn beim PSM etwas nicht passt $\rightarrow$ einen Schritt zurückführen (Reengineering)
+     - PSM führt dann schließlich zur Code-Generierung
+
+## XML
+
+- e**X**tensible **M**arkup **L**anguage
+- Metasprache um Dokumenttypen zu definieren
+- strukturierte Dokumente, Hierarchie von Containern
+
+```xml
+<Name> <!-- Begin tag -->
+</Name> <!-- End tag -->
+```
+
+- Inhalt des Containers befindet sich zwischen begin- und end-tag
+- jedes Element kann Atttribute besitzen
+
+```xml
+<Name language="de">Herr Kogel</Name>
+<Name language="en">Mr. Kogel</Name>
+```
