@@ -516,9 +516,24 @@ Dem Autor auf Anhieb unbekannt
 
 - ToDo
 
-#### das Teufelsquadrat zur Argumentation verwenden und weiß, wann ich es einsetzen kann
+#### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
 
-- ToDo
+- Inhalt
+- Qualität
+- $\frac{1}{Kosten}$
+- $\frac{1}{Zeit}$
+
+**Argumentation**
+
+- Nicht alle Parameter können optimiert werden!
+- Wenn ein oder zwei Ecken ausgereizt werden, "leiden" die anderen.
+- Prioritätensetzung, Machbarkeit
+
+**Verwendung**
+
+- Zieldefinition bei Projektstart
+- Steuerung bei Änderungen
+
 
 #### Faktoren benennen, die Aufwandschätzungen beeinflussen
 
