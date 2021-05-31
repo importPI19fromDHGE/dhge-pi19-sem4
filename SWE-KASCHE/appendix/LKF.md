@@ -154,7 +154,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - **Integration / Test:** Zusammenfügen einzelner Komponenten (Integrationstest); nach Zusammenfügen Systemtest (Konsistenz bezüglich der Produkt-Definition prüfen)
 - **Einsatz / Wartung:** Fehlerkorrektur, Änderungen und Erweiterungen der Funktionalitäten und Anpassungen an andere System-Umgebungen bis zum Abschalten der Software
 
-#### das Wasserfall‐Modell hinsichtlich Vor‐ und Nachteilen evaluieren
+#### Das Wasserfall‐Modell hinsichtlich Vor‐ und Nachteilen evaluieren
 
 **Vorteile**
 
@@ -273,9 +273,7 @@ Durchführungs-Strategien:
 - Beziehungen (Aktivitäten)
 
 feste Inhalte + optionale Bestandteile
-
 Produkt-orientierte Arbeitsweise + Tailoring
-
 Auftrag-Geber / Auftrag-Nehmer im Sprachgebrauch + Schnittstellen (Synchronisations-Punkte)
 
 **Werkzeuge**
