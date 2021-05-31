@@ -727,8 +727,7 @@ class WrapperBibliothek { // verwendet Bibliothek2 um intern den Radius abzufrag
 
 **Bridge**
 
-- Implementierungen und Schnittstellen sollen getrennt werden
-- $\rightarrow$ beide voneinander unabhängig änderbar
+- Implementierungen und Schnittstellen sollen getrennt werden $\rightarrow$ beide voneinander unabhängig änderbar
 - angewendet, wenn:
   - Änderungen in Implementierungen sich nicht auf den Anwender auswirken sollen
   - verschiedene Implementierungen genutzt werden sollen
@@ -767,7 +766,7 @@ class List2 : public List {
   - File
 - bspw. Hierarchien von UI-Elementen
   - Grafik-Elemente
-    - Elypse, Kreis, Rechteck
+    - Ellipse, Kreis, Rechteck
     - Gruppieren dieser Blatt-Elemente
   - Menüs (z.B. Office)
 - `add()`, `delete()`, `size()` etc. $\rightarrow$ Gleiche Interaktion mit Elementen, egal um welches Element es sich konkret handelt
@@ -833,7 +832,7 @@ class NonTerminatingAusdruck : Ausdruck {
 ```
 
 - ein Syntaxbaum aus terminierenden und nicht-terminierenden Ausdrücken wird aufgebaut
-- Klient wertet den Syntaxbaum aus, indem er `interpretire(kontext)` aufruft
+- Klient wertet den Syntaxbaum aus, indem er `interpretiere(kontext)` aufruft
 
 **Iterator**
 
