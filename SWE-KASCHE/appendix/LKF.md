@@ -45,27 +45,27 @@
 
 - Linear:
   - Was möchte der Kunde bekommen?
-  -	Pflichtenheft (Was hat der Entwickler verstanden, was macht er?
+  - Pflichtenheft (Was hat der Entwickler verstanden, was macht er?
 - Agil:
-  -	feste Struktur & klare Regeln → jedoch adaptierbar
-  -	Backlog → Aufgabensammlung
-  -	Refinement Prozess!
+  - feste Struktur & klare Regeln → jedoch adaptierbar
+  - Backlog → Aufgabensammlung
+  - Refinement Prozess!
 
 **2.	Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
   - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
-  -	gleiche Begriffe zu Beginn des Lastenhefts abklären
-  -	dritte Person ließt, versteht und korrigiert → unterschreibt
+  - gleiche Begriffe zu Beginn des Lastenhefts abklären
+  - dritte Person ließt, versteht und korrigiert → unterschreibt
 - Agil:
   - Backlog + Refinement
 
 **3.	Wandelnde Anforderungen: Wie gehe ich damit um?**
 
 - Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich → am Ende: was zählt?
--	Change Request Prozess:
--	Request → Impact, Analysis → Approve / Deny → Implementation → Business
--	14 Tage Cycle: Planning, Review, Retro
+- Change Request Prozess:
+- Request → Impact, Analysis → Approve / Deny → Implementation → Business
+- 14 Tage Cycle: Planning, Review, Retro
 
 #### DOD und DOR erklären und deren Bedeutung benennen
 
@@ -259,7 +259,7 @@ Quellen:
   4. Organisationsspezifische Projekt
 
 Durchführungs-Strategien:
-	-ToDo
+- ToDo
 
 
 #### die 3 Säulen, deren sich das V-Modell-XT bedient
@@ -338,9 +338,9 @@ kontinuierliches Testen ist essenziel!
 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
 2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
 3.	Bearbeitung des Sprints (meist 14 Tage)
-  -	Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
-  -	am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
-  -	Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
+  - Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
+  - am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
+  - Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
 - Die 4 festen Events sind nicht abwählbar 
 aber Aussage
 >Bei SCRUM kann vieles an Bedürfnisse vom Team angepasst werden
@@ -389,7 +389,7 @@ aber Aussage
 - ToDo
 <!-- Ziel und Erklärung ist auszuweiten --->
 
--	Sprint Planning (Alle)
+- Sprint Planning (Alle)
 - Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
 - Retro (Alle)
 - Sprint Review (Alle + wechselnde Stakeholder)
