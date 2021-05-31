@@ -51,7 +51,7 @@
   - Backlog → Aufgabensammlung
   - Refinement Prozess!
 
-**2.	Gründliche Vertragsgestaltung**
+**2.  Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
   - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
@@ -60,7 +60,7 @@
 - Agil:
   - Backlog + Refinement
 
-**3.	Wandelnde Anforderungen: Wie gehe ich damit um?**
+**3.  Wandelnde Anforderungen: Wie gehe ich damit um?**
 
 - Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich → am Ende: was zählt?
 - Change Request Prozess:
