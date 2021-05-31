@@ -878,15 +878,15 @@ Warum Iteratoren?
   3. Code-Generatoren $\rightarrow$ Galerenarbeit (generiert aus abstrakter Beschreibung)
   4. Template-Funktionen ($\rightarrow$ `Stack<Kogel>` (ein Stack vom Typ Kogel))
   5. Round-Trip-Engineering
-     - Änderungen im Klassendiagramm $\rightarrow$ Änderungen im Code
-     - Änderungen im Code $\rightarrow$ Änderungen im Klassendiagramm
+    - Änderungen im Klassendiagramm $\rightarrow$ Änderungen im Code
+    - Änderungen im Code $\rightarrow$ Änderungen im Klassendiagramm
   6. Model-Driven-Architecture (MDA)
-     - Modell entwickeln (z.B. in UML)
-     - Generator $\rightarrow$ Quelltext erstellen
-     - Design wird in Platform Independant Model (PIM) überführt
-     - PIM wird in Platform Specific Model (PSM) überführt
-     - wenn beim PSM etwas nicht passt $\rightarrow$ einen Schritt zurückführen (Reengineering)
-     - PSM führt dann schließlich zur Code-Generierung
+    - Modell entwickeln (z.B. in UML)
+    - Generator $\rightarrow$ Quelltext erstellen
+    - Design wird in Platform Independant Model (PIM) überführt
+    - PIM wird in Platform Specific Model (PSM) überführt
+    - wenn beim PSM etwas nicht passt $\rightarrow$ einen Schritt zurückführen (Reengineering)
+    - PSM führt dann schließlich zur Code-Generierung
 
 ## XML
 
