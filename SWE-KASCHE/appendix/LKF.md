@@ -545,7 +545,7 @@ Dem Autor auf Anhieb unbekannt
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
-|Kategorie                           | Delphi                                      | SCRUM                                       |
+| Kategorie                           | Delphi                                      | SCRUM                                       |
 | ---------------------------------- | ----------------------------------------------------------------------------------------- |
 | Teilnehmer                         | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
 | Anzahl Runden                      | quasi beliebig                              | maximal 2                                   |
@@ -560,7 +560,51 @@ Dem Autor auf Anhieb unbekannt
 
 #### Algorithmische Schätzverfahren benennen und die Struktur der Berechnungsformeln kennen
 
+- COCOMO
+- Function-Point-Methode
 - ToDo
+
+**Vor:** Eingangsvariablen müssen zutreffend geschätzt werden
+ohne Maßzahlen von alten projekten **keine** zuverlässigen Aussagen
+
+**COCOMO**
+"Constructive-Cost-Method"
+
+Lines-of-Code $=l$
+
+Mann-Monate $=MM$
+
+Entwicklungszeit $=t$
+
+Aufwandsanalyse $=t_{AA}$
+
+$t_{SW}=A(B\cdot (\frac{l}{1000})^{1+C})^{D}+t_{Aufwandanalyse}$
+mit $A,B > 2, 0 < C,D < 1$
+z.B.
+$t_{easySW}=2.5(2.4\cdot (\frac{l}{1000})^{1.05})^{0.38}+t_{AA}$
+für einfache, mittlere, komplexe SW-Projekte
+weitere Präzisierung möglich
+
+**Function-Point-Methode**
+
+- anstatt Codezeilen zu schätzen $\Rightarrow$ Evaluierung von Eingangsgrößen von Funktionen
+- somit entsteht ein relatives Maß zur Bewertung von Funktionen $\rightarrow$ `function-points`
+- *wenn* Kosten pro Funktion Point bekannt, dann ist eine Kostenschätzung möglich
+
+Vorgehen:
+
+- Zähle logische Transaktionen einer Funktion: Eingabe, Ausgabe, Anfrangen, Schnittstelle extern, Datenbankanfrage intern
+- FP_roh ermitteln
+  - Werte gewichtet: S, M, L
+  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert S, M, L fest
+  - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu  
+
+$Function Points = FP_{Roh}* Korrekturfaktoren$
+- Bis zu 14 Einflussfaktoren als Korrekturfaktoren
+
+- Beispiel Faustregel von Jones:
+  - $MM=FP^{0.4}=\sqrt[5]{FP^2}\hat{=}t$
+  - $Anzahl_{MA}=\frac{FP}{150}$
 
 #### Schwachstellen des CoCoMo bzw. Function-Point-Methode darlegen
 
