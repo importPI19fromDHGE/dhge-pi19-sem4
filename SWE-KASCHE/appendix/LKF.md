@@ -51,7 +51,7 @@
   - Backlog → Aufgabensammlung
   - Refinement Prozess!
 
-**2.  Gründliche Vertragsgestaltung**
+**2. Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
   - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
@@ -60,7 +60,7 @@
 - Agil:
   - Backlog + Refinement
 
-**3.  Wandelnde Anforderungen: Wie gehe ich damit um?**
+**3. Wandelnde Anforderungen: Wie gehe ich damit um?**
 
 - Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich → am Ende: was zählt?
 - Change Request Prozess:
@@ -135,7 +135,7 @@ Quellen:
 
 #### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
 
-- SCRUM-Vorgabe: Am  Ende des Sprints
+- SCRUM-Vorgabe: Am Ende des Sprints
 - Bei kurzen Sprints (z.B. 1 Wochen) ist es sinnvoll, davon abzuweichen. Retro dann erst nach mehreren Sprints.
 - [t2informatik](https://t2informatik.de/wissen-kompakt/scrum-retrospektive/), Scrum Guide empfiehlt 3h / Monat Retro
 - Bei 2 Wochen Sprint also z.B. 2 x 1,5 h
@@ -239,7 +239,7 @@ Quellen:
 
 - ToDo
 
-#### die Bedeutung des XT beim V-Modell-XT
+#### Die Bedeutung des XT beim V-Modell-XT
 
 - XT-> Extreme Tailoring 
 - an Bedürfnisse anpassbar
@@ -248,7 +248,7 @@ Quellen:
 - mehr in Richtung AGIL
 
 
-#### die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
+#### Die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
 - Bausteine
 - ToDo
 
@@ -262,7 +262,7 @@ Durchführungs-Strategien:
 - ToDo
 
 
-#### die 3 Säulen, deren sich das V-Modell-XT bedient
+#### Die 3 Säulen, deren sich das V-Modell-XT bedient
 
 - 3 Säulen: Meta-Modell, freie Inhalte, Werkzeuge
 
@@ -300,13 +300,13 @@ für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
 
 E**X**TREME
 
-1. Paar-Programmierung  
+1. Paar-Programmierung
    kontinuierliches Review
 2. Testen  
    kontinuierliches Testen
 3. Refactoring  
    kontinuierliches Design / Redesign
-4. Feedback an Kunden  
+4. Feedback an Kunden
    kurze Release Zyklen
 
 #### mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
@@ -325,7 +325,7 @@ kontinuierliches Testen ist essenziel!
 - Check
 - Act (zurück zu Plan)
 
-- kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen  
+- kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen
 - soll zu einer besseren Lösung führen
 - transparenter Prozess
 - Doing + Überprüfung + Anpassung
