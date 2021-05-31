@@ -141,7 +141,8 @@ Quellen:
 - Bei 2 Wochen Sprint also z.B. 2 x 1,5 h
 - Bei 1 Wochen Sprint das gleiche, Retro nach jedem zweiten Sprint
 
-- Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt (ToDo)
+Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt 
+- ToDo
 
 ### Phasenmodelle
 
