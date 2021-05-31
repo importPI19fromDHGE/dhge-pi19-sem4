@@ -553,6 +553,8 @@ Dem Autor auf Anhieb unbekannt
 | geeignete Teamgröße der Projekte   | für kleine Teams nicht sinvoll              | für (sehr) große Teams ungeeignet           |
 |                                    | nach oben open End                          |                                             |
 | Konsenzfindung                     | Diskussion über Ausreiser                   | Diskussion über Ausreiser                   |
+| Kosten                             | zusätzlich                                  | Personalkosten                              |
+| Sichtbarkeit von Schätzfehlern     | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
 
 - ToDo
 
