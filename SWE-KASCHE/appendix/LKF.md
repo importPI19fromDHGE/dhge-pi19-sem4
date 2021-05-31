@@ -171,7 +171,6 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - Testen nur am Ende
 - für komplexe Aufgaben oder große Teams ungeeignet
 - Kunde wird kaum involviert
-- kein experimentelles Vorgehen
 - Fail Early wird nicht unterstützt
 
 #### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
