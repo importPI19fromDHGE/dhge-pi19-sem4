@@ -44,8 +44,8 @@
 **1. Klartext reden**
 
 - Linear:
-  - Was möchte der Kunde bekommen?)
-  -	Pflichtenheft (Was hat der Entwickler verstanden, was macht er?)
+  - Was möchte der Kunde bekommen?
+  -	Pflichtenheft (Was hat der Entwickler verstanden, was macht er?
 - Agil:
   -	feste Struktur & klare Regeln → jedoch adaptierbar
   -	Backlog → Aufgabensammlung
@@ -62,7 +62,7 @@
 
 **3.	Wandelnde Anforderungen: Wie gehe ich damit um?**
 
-- Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich => am Ende: was zählt?
+- Zum Beispiel: keine Zusatzleistungen bzw. E-Mail/mündlich → am Ende: was zählt?
 -	Change Request Prozess:
 -	Request → Impact, Analysis → Approve / Deny → Implementation → Business
 -	14 Tage Cycle: Planning, Review, Retro
@@ -135,7 +135,7 @@ Quellen:
 
 #### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
 
-- SCRUM-Vorgabe: Am  Ende des Sprints 
+- SCRUM-Vorgabe: Am  Ende des Sprints
 - Bei kurzen Sprints (z.B. 1 Wochen) ist es sinnvoll, davon abzuweichen. Retro dann erst nach mehreren Sprints.
 - [t2informatik](https://t2informatik.de/wissen-kompakt/scrum-retrospektive/), Scrum Guide empfiehlt 3h / Monat Retro
 - Bei 2 Wochen Sprint also z.B. 2 x 1,5 h
@@ -229,7 +229,7 @@ Quellen:
 
 #### das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
 
-- ![Schematische Darstellung des V-Modells](assets/v-modell.png)
+![Schematische Darstellung des V-Modells](assets/v-modell.png)
 
 | Vorteile                                              | Nachteile                                                                                                         |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -252,7 +252,7 @@ Quellen:
 - Bausteine
 - ToDo
 
--4 Projekt-Typen:
+- 4 Projekt-Typen:
   1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
   2. Auftragnehmer Projekt (AW): Entwicklung
   3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
@@ -265,6 +265,7 @@ Durchführungs-Strategien:
 #### die 3 Säulen, deren sich das V-Modell-XT bedient
 
 - 3 Säulen: Meta-Modell, freie Inhalte, Werkzeuge
+
 **Meta-Modell**
 - Rollen
 - Produkte
@@ -296,7 +297,9 @@ für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
 #### den Grund für den Buchstaben X beim Extrem Programming und kann mindestens drei von den vier Techniken erläutern
 
 > XP setzt bewährte Techniken im extremen Maße ein
+
 E**X**TREME
+
 1. Paar-Programmierung  
    kontinuierliches Review
 2. Testen  
@@ -309,7 +312,8 @@ E**X**TREME
 #### mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
 - ToDo
-Alle, LOL
+
+Alle?
 kontinuierliches Testen ist essenziel!
 
 ### SCRUM
@@ -331,9 +335,9 @@ kontinuierliches Testen ist essenziel!
 #### den SCRUM-Ablauf beschreiben
 
 <!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
-- 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
-- 2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
-- 3.	Bearbeitung des Sprints (meist 14 Tage)
+1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
+2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
+3.	Bearbeitung des Sprints (meist 14 Tage)
   -	Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
   -	am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
   -	Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
@@ -383,7 +387,7 @@ aber Aussage
 #### die einzelnen Events des SCRUM aufzählen und kenne Ziel sowie personelle Zusammensetzung eines jeden Events
 
 - ToDo
-<!--> Ziel und Erklärung ist auszuweiten <--->
+<!-- Ziel und Erklärung ist auszuweiten --->
 
 -	Sprint Planning (Alle)
 - Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
@@ -430,7 +434,7 @@ Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
 
 - ToDo
 
-#### ein Kanban-Board für eine Aufgabe erstellen und kenne die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik
+#### ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
 
 - ToDo
 
