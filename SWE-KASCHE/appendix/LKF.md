@@ -249,14 +249,14 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 
 #### Die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
-- Bausteine
+Bausteine
 - ToDo
 
-- 4 Projekt-Typen:
-  1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
-  2. Auftragnehmer Projekt (AW): Entwicklung
-  3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
-  4. Organisationsspezifische Projekt
+4 Projekt-Typen:
+1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
+2. Auftragnehmer Projekt (AW): Entwicklung
+3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
+4. Organisationsspezifische Projekt
 
 Durchführungs-Strategien:
 - ToDo
@@ -318,11 +318,12 @@ kontinuierliches Testen ist essenziel!
 
 #### Vier Phasen einer empirischen Prozess-Kontrolle benennen und die Vorteile darstellen
 
+Vier Phasen:
 - Plan
 - Do
 - Check
 - Act (zurück zu Plan)
-
+Charakter des PDCA:
 - kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen
 - soll zu einer besseren Lösung führen
 - transparenter Prozess
