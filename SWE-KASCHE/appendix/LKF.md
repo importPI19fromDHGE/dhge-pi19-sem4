@@ -251,13 +251,14 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - stärkere Modularisierung
 - mehr in Richtung AGIL
 
-
 #### Die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
+
 Bausteine
 
 - ToDo
 
 4 Projekt-Typen:
+
 1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
 2. Auftragnehmer Projekt (AW): Entwicklung
 3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
@@ -267,12 +268,12 @@ Durchführungs-Strategien:
 
 - ToDo
 
-
 #### Die 3 Säulen, deren sich das V-Modell-XT bedient
 
 - 3 Säulen: Meta-Modell, freie Inhalte, Werkzeuge
 
 **Meta-Modell**
+
 - Rollen
 - Produkte
 - Beziehungen (Aktivitäten)
@@ -282,6 +283,7 @@ Produkt-orientierte Arbeitsweise + Tailoring
 Auftrag-Geber / Auftrag-Nehmer im Sprachgebrauch + Schnittstellen (Synchronisations-Punkte)
 
 **Werkzeuge**
+
 - V-Modell XT-Editor (für Anpassungen)
 - V-Modell XT-Projekt-Assistenten (Tailoring)
 - XML-Technologie baiserend
@@ -292,6 +294,7 @@ Auftrag-Geber / Auftrag-Nehmer im Sprachgebrauch + Schnittstellen (Synchronisati
 | Produkte            | Software-Code, Modelle, Dokumentationen, Zwischenergebnisse (auch als SW-Code) |
 
 für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
+
 - inklusive Aussagen zur Qualitätskontrolle
 - DoD
 
@@ -339,13 +342,12 @@ Charakter des PDCA:
 - Doing + Überprüfung + Anpassung
 - häufige Wiederholung
 
-
 #### Den SCRUM-Ablauf beschreiben
 <!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
 
 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
-2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
-3.	Bearbeitung des Sprints (meist 14 Tage)
+2. Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
+3. Bearbeitung des Sprints (meist 14 Tage)
   - Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
   - am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
   - Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
@@ -379,7 +381,7 @@ Aus praktischer Erfahrung ist der PO:
 
 - besteht idealerweise aus 7+-2 Mitarbeiter
 - selbstorganisierend
-- Mitarbeiter ist typischerweise "I-shaped" $\rightarrow$ hat auf einem Gebiet extrem tiefes Wissen 
+- Mitarbeiter ist typischerweise "I-shaped" $\rightarrow$ hat auf einem Gebiet extrem tiefes Wissen
 - das Ziel ist jedoch ein "T-shaped" Mitarbeiter $\rightarrow$ hat ein breites Wissen, mit einem Spezialbereich
 - sind Macher
 - sind nach außen geschützt
@@ -392,7 +394,6 @@ Aus praktischer Erfahrung ist der PO:
 - dokumentiert u.A. den Fortschritt der Entwicklung
 - hilft dem Team, Probleme zu lösen
 - idealerweise ist der SCRUM-Master ein fachfremder Mitarbeiter
-
 
 #### Die einzelnen Events des SCRUM aufzählen und Ziel sowie personelle Zusammensetzung eines jeden Events kennen
 
