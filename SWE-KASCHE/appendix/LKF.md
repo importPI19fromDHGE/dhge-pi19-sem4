@@ -152,7 +152,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 #### Die fünf Phasen des Wasserfall‐Modells benennen und erläutern
 
 - **Analyse:** Funktionsumfang, User Interface, Leistungsverhalten, Termine klären (Lastenheft als Grundlage)
-- **Design:** Festlegen der innere Struktur der Software $\rightarrow$ Komponentenzerlegung; Erstellung des Pflichtenhefts
+- **Design:** Festlegen der inneren Struktur der Software $\rightarrow$ Komponentenzerlegung; Erstellung des Pflichtenhefts
 - **Programmierung:** Komponenten (Module) werden anhand des Entwurfs implementiert
 - **Integration / Test:** Zusammenfügen einzelner Komponenten (Integrationstest); nach Zusammenfügen Systemtest (Konsistenz bezüglich der Produkt-Definition prüfen)
 - **Einsatz / Wartung:** Fehlerkorrektur, Änderungen und Erweiterungen der Funktionalitäten und Anpassungen an andere System-Umgebungen bis zum Abschalten der Software
@@ -176,7 +176,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 #### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
 
-- Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesprungen werden
+- Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesetzt werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
   - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
 
