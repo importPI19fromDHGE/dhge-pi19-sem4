@@ -343,6 +343,7 @@ Charakter des PDCA:
 - häufige Wiederholung
 
 #### Den SCRUM-Ablauf beschreiben
+
 <!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
 
 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
