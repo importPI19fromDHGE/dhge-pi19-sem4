@@ -46,6 +46,7 @@
 - Linear:
   - Was möchte der Kunde bekommen?
   - Pflichtenheft (Was hat der Entwickler verstanden, was macht er?
+
 - Agil:
   - feste Struktur & klare Regeln → jedoch adaptierbar
   - Backlog → Aufgabensammlung
@@ -57,6 +58,7 @@
   - 1/2 Jahr rechtsichere Formulierung des Lastenhefts
   - gleiche Begriffe zu Beginn des Lastenhefts abklären
   - dritte Person ließt, versteht und korrigiert → unterschreibt
+
 - Agil:
   - Backlog + Refinement
 
@@ -79,6 +81,7 @@
     - ist verständlich
     - hat Aktzeptanzkriterien
     - ...
+
 - Definition of Done: Wann ist die Aufgabe/Projekt erledigt?
   - Beispiel:
   - Der Code ist fertiggestellt und im Versionierungssystem eingespielt.
@@ -140,7 +143,8 @@ Quellen:
 - Bei 2 Wochen Sprint also z.B. 2 x 1,5 h
 - Bei 1 Wochen Sprint das gleiche, Retro nach jedem zweiten Sprint
 
-Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt 
+Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
+
 - ToDo
 
 ### Phasenmodelle
@@ -241,7 +245,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 #### Die Bedeutung des XT beim V-Modell-XT
 
-- XT-> Extreme Tailoring 
+- XT-> Extreme Tailoring
 - an Bedürfnisse anpassbar
 - Auftraggeber mit eingebunden
 - stärkere Modularisierung
@@ -250,6 +254,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 #### Die Bausteine des V-Modell-XT, die vier Projekt-Typen und einige Durchführungs-Strategien
 Bausteine
+
 - ToDo
 
 4 Projekt-Typen:
@@ -259,6 +264,7 @@ Bausteine
 4. Organisationsspezifische Projekt
 
 Durchführungs-Strategien:
+
 - ToDo
 
 
@@ -289,7 +295,7 @@ für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
 - inklusive Aussagen zur Qualitätskontrolle
 - DoD
 
-> DoR: "Definition of Ready"  
+> DoR: "Definition of Ready"
 > DoD: "Definition of Done"
 
 #### Der Grund für den Buchstaben X beim Extrem Programming und Erläuterung für mindestens drei von den vier Technike
@@ -300,9 +306,9 @@ E**X**TREME
 
 1. Paar-Programmierung
    kontinuierliches Review
-2. Testen  
+2. Testen
    kontinuierliches Testen
-3. Refactoring  
+3. Refactoring
    kontinuierliches Design / Redesign
 4. Feedback an Kunden
    kurze Release Zyklen
@@ -319,11 +325,14 @@ kontinuierliches Testen ist essenziel!
 #### Vier Phasen einer empirischen Prozess-Kontrolle benennen und die Vorteile darstellen
 
 Vier Phasen:
+
 - Plan
 - Do
 - Check
 - Act (zurück zu Plan)
+
 Charakter des PDCA:
+
 - kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen
 - soll zu einer besseren Lösung führen
 - transparenter Prozess
@@ -332,15 +341,16 @@ Charakter des PDCA:
 
 
 #### Den SCRUM-Ablauf beschreiben
-
 <!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
+
 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
 2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
 3.	Bearbeitung des Sprints (meist 14 Tage)
   - Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
   - am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
   - Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
-- Die 4 festen Events sind nicht abwählbar 
+- Die 4 festen Events sind nicht abwählbar
+
 aber Aussage
 >Bei SCRUM kann vieles an Bedürfnisse vom Team angepasst werden
 
@@ -351,6 +361,7 @@ aber Aussage
 - **Team**
 
 **Product Owner**
+
 - muss eine "Brücke" zwischen Business und Development herstellen
 - muss ROI (Return of Investment) gewährleisten
 - ist die Schnittstelle zum Kunden $\rightarrow$ muss die Kundenbedürfnisse verstehen und einordnen
@@ -360,9 +371,9 @@ aber Aussage
 
 Aus praktischer Erfahrung ist der PO:
 
-  - ein Full-Time Job  
-  - eine Authoritätsperson  
-  - genau eine Person
+- ein Full-Time Job
+- eine Authoritätsperson
+- genau eine Person
 
 **Entwickler-Team**
 
@@ -386,7 +397,6 @@ Aus praktischer Erfahrung ist der PO:
 #### Die einzelnen Events des SCRUM aufzählen und Ziel sowie personelle Zusammensetzung eines jeden Events kennen
 
 - ToDo
-<!-- Ziel und Erklärung ist auszuweiten --->
 
 - Sprint Planning (Alle)
 - Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
@@ -399,12 +409,15 @@ Aus praktischer Erfahrung ist der PO:
 
 - ToDo : kürzen
 
-**Pairing-Tabelle** als Werkzeug:  
-Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter  
-- Realisierung durch eine einfache (Excel) Tabelle  
+**Pairing-Tabelle** als Werkzeug:
+Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
+
+- Realisierung durch eine einfache (Excel) Tabelle
 - es wird schnell klar, ob Mitarbeiter zu wenige oder zu viele Themen bearbeiten sollen
 - die Machbarkeit des Sprints wird frühzeitig sichtbar
+
 Einschränkungen:
+
 - pro Zeile ein Thema
 - Anzahl der Themen soll ca Anzahl Mitarbeiter / 2
 - Spalten den Mitarbeitern zuordnen
