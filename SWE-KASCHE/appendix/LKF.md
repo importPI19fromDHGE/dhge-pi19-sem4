@@ -32,7 +32,7 @@
 - Groupon: Launch mit einfachem Wordpress-Blog vor der Entwicklung einer eigenen Plattform
 - Airbnb: zunächst nur einfache Website Vermietung der Wohnung der Gründer, danach Öffnung für andere Gastgeber
 
-#### das MMM-Prinzip erläutern
+#### Das MMM-Prinzip erläutern
 
 - **MMM** = **M**ensch, **M**aschine, **M**ethode
 - Zuerst schauen: *"Habe ich die richtigen Mitarbeiter?"*
@@ -54,7 +54,7 @@
 **2. Gründliche Vertragsgestaltung**
 
 - Wasserfallmodell
-  - 1/2 Jahr rechtsichere Fomulierung des Lastenhefts
+  - 1/2 Jahr rechtsichere Formulierung des Lastenhefts
   - gleiche Begriffe zu Beginn des Lastenhefts abklären
   - dritte Person ließt, versteht und korrigiert → unterschreibt
 - Agil:
@@ -93,7 +93,7 @@ Quellen:
 [DOR 2](https://t2informatik.de/wissen-kompakt/definition-of-ready/)
 [DOD](https://www.scrum-events.de/was-ist-die-definition-of-done-dod.html)
 
-#### die äußere Form einer User-Story benennen
+#### Die äußere Form einer User-Story benennen
 
 > Als ... möchte ich ... um ...
 
@@ -101,11 +101,11 @@ Quellen:
 
 ### Retrospektive
 
-#### benennen, wozu eine Retro gut ist
+#### Benennen, wozu eine Retro gut ist
 
 - ausschließliche Betrachtung des Prozesses
 
-#### erläutern, welche Vorteile eine regelmäßige Retro hat
+#### Erläutern, welche Vorteile eine regelmäßige Retro hat
 
 - Verbesserung der Zusammenarbeit im Team
 - Verbesserung der Arbeit des Teams
@@ -119,7 +119,7 @@ Quellen:
 
 - die Retrospektive wird durch den Scrum Master geleitet
 
-#### die Elemente eine Retro-Veranstaltung aufzählen
+#### Die Elemente eine Retro-Veranstaltung aufzählen
 
 - Intro: Begrüßung, über Ziele der Retrospektive abstimmen
 - Daten sammeln: Was ist gut und was schlecht verlaufen? Analyse und Priorisierung einzelner Themen
@@ -133,7 +133,7 @@ Quellen:
 
 - ToDo
 
-#### die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
+#### Die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
 
 - SCRUM-Vorgabe: Am Ende des Sprints
 - Bei kurzen Sprints (z.B. 1 Wochen) ist es sinnvoll, davon abzuweichen. Retro dann erst nach mehreren Sprints.
@@ -145,7 +145,7 @@ Quellen:
 
 ### Phasenmodelle
 
-#### die fünf Phasen des Wasserfall‐Modells benennen und erläutern
+#### Die fünf Phasen des Wasserfall‐Modells benennen und erläutern
 
 - **Analyse:** Funktionsumfang, User Interface, Leistungsverhalten, Termine klären (Lastenheft als Grundlage)
 - **Design:** Festlegen der innere Struktur der Software $\rightarrow$ Komponentenzerlegung; Erstellung des Pflichtenhefts
@@ -170,13 +170,13 @@ Quellen:
 - kein experimentelles Vorgehen
 - Fail Early wird nicht unterstützt
 
-#### eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
+#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
 
 - Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesprungen werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
   - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
 
-#### einen Prototyp vom Pretotype unterscheiden
+#### Einen Prototyp vom Pretotype unterscheiden
 
 - Pretotype = *"fake it till you make it"*
   - Teil der Fail-Early Idee $\rightarrow$ es wird so getan, als wäre eine Funktion vorhanden (keine tatsächliche Implementation)
@@ -188,7 +188,7 @@ Quellen:
   - Ziel: Funktioniert es wie gedacht? Kann ich es überhaupt entwickeln?
   - Gefahr: wird nicht wieder weggeworfen, als Doku-Ersatz missbraucht oder Aufwand zu hoch
 
-#### fünf Grundprinzipien nennen, die den Design‐Thinking‐Prozess befördern und kenne die vier Phasen des Design‐Thinking‐Prinzips
+#### Fünf Grundprinzipien nennen, die den Design‐Thinking‐Prozess befördern und kenne die vier Phasen des Design‐Thinking‐Prinzips
 
 - = Methode für den Innovationsprozess
 - **Idee:** Iterationen, Prozesse und Objekte bewusst gestalten, die sich streng an den Bedürfnissen des zukünftigen Nutzers orientieren
@@ -206,7 +206,7 @@ Quellen:
 
 ### Spiralen-Modell, V-Modell, XP
 
-#### die Quadranten des Spiralen-Modells
+#### Die Quadranten des Spiralen-Modells
 
 - **Ziele**, Alternativen und Rahmenbedingungen
 - **Risiken** abschätzen und reduzieren, Evaluierung der Alternativen
@@ -215,7 +215,7 @@ Quellen:
 - Annäherung an Gesamt-Ziel durch zyklische Wiederholung der vier Phasen
 - Weiterentwicklung des Wasserfallmodells; versucht auf sich ändernde Ziele während des Projektfortschrittes zu reagieren
 
-#### den Entwicklungsablauf beim Spiralen-Modell
+#### Der Entwicklungsablauf beim Spiralen-Modell
 
 | Zyklus | Phase 1                                | Phase 2                            | Phase 3                                 | Phase 4          |
 |--------|----------------------------------------|------------------------------------|-----------------------------------------|------------------|
@@ -227,7 +227,7 @@ Quellen:
 
 - ToDo
 
-#### das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
+#### Das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
 
 ![Schematische Darstellung des V-Modells](assets/v-modell.png)
 
@@ -294,7 +294,7 @@ für alle Produkte gibt es sog. Entscheidungspunkte (Milestones)
 > DoR: "Definition of Ready"  
 > DoD: "Definition of Done"
 
-#### den Grund für den Buchstaben X beim Extrem Programming und kann mindestens drei von den vier Techniken erläutern
+#### Der Grund für den Buchstaben X beim Extrem Programming und Erläuterung für mindestens drei von den vier Technike
 
 > XP setzt bewährte Techniken im extremen Maße ein
 
@@ -309,7 +309,7 @@ E**X**TREME
 4. Feedback an Kunden
    kurze Release Zyklen
 
-#### mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
+#### Mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
 - ToDo
 
@@ -332,7 +332,7 @@ kontinuierliches Testen ist essenziel!
 - häufige Wiederholung
 
 
-#### den SCRUM-Ablauf beschreiben
+#### Den SCRUM-Ablauf beschreiben
 
 <!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
@@ -345,7 +345,7 @@ kontinuierliches Testen ist essenziel!
 aber Aussage
 >Bei SCRUM kann vieles an Bedürfnisse vom Team angepasst werden
 
-#### die Rollen und deren Aufgaben im SCRUM-Prozess benennen
+#### Die Rollen und deren Aufgaben im SCRUM-Prozess benennen
 
 - **Product Owner**
 - **SCRUM Master**
@@ -384,7 +384,7 @@ aber Aussage
 - idealerweise ist der SCRUM-Master ein fachfremder Mitarbeiter
 
 
-#### die einzelnen Events des SCRUM aufzählen und kenne Ziel sowie personelle Zusammensetzung eines jeden Events
+#### Die einzelnen Events des SCRUM aufzählen und Ziel sowie personelle Zusammensetzung eines jeden Events kennen
 
 - ToDo
 <!-- Ziel und Erklärung ist auszuweiten --->
@@ -396,7 +396,7 @@ aber Aussage
 
 [guckst du hier](https://agility.im/frequent-agile-question/who-attends-what-event-in-scrum/)
 
-#### die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
+#### Die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
 
 - ToDo : kürzen
 **Pairing-Tabelle** als Werkzeug:  
@@ -415,11 +415,11 @@ Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
 
 > Die Anzahl der Zeilen (Themen) ist künstlich beschränkt! (da T-shaped Mitarbeiter --> die Mitarbeiter sollen voneinander lernen können)
 
-#### sagen, warum DOR und DOD verwendet werden sollten
+#### Sagen, warum DOR und DOD verwendet werden sollten
 
 - ToDo
 
-#### aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
+#### Aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
 
 - ToDo
 - Kommt aus der Übung.. leicht messbar muss es sein!
@@ -430,7 +430,7 @@ Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
 - ToDo
 - Auch eine Übungssache ..?
 
-#### das SCRUM-Manifest und dessen Anwendung erläutern
+#### Das SCRUM-Manifest und dessen Anwendung erläutern
 
 - ToDo
 
