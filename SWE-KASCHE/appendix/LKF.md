@@ -461,10 +461,55 @@ Einschränkungen:
 
 #### Scrum-Poker in seiner Art erläutern sowie Vor- und Nachteile auflisten
 
-- ToDo
+- Schätzmethode für fundierte, grobe Schätzung unter Einbezug des (meist agilen) Teams
+- keine direkte Zeit+Geld Aussagen kommen als Ergebnis heraus!
+- Spaßfaktor $\Rightarrow$ Teamgeist
+- Basis des Planning-Poker: Karten mit Story-Points (quasi Aufwand)
+- Kartenwert von unten aus meist Fibonacci, höher dann gröbere Schritte
+  - 0: Aufgabe ist quasi schon erledigt
+  - 0.5: Kaum Aufwand
+  - 1-5: klein
+  - 8-20: mittel
+  - 40-100: XL
+  - Kartenwert kann mit Fragezeichen versehen $\rightarrow$ man ist unsicher, was den Aufwand angeht
+  **P**ausen-Karte (manchmal mit Kaffeetasse dargestellt): triviale Aufgabe oder: "Ich brauche eine Pause"
+
+**Ablauf**
+
+1. Scrum-Master liest Aufgabe vor
+2. Fragen sind erlaubt $\rightarrow Timebox \leq 1 Min$, Aufgabe von Scrum-Master! **Keine bewertenden Aussagen zulassen!**
+3. alle Karten umdrehen
+4. Minimal + Maximal begründen ihre Wahl
+- *alle* Anderen haben Redeverbot
+5. zurück zu 2. $\rightarrow$ i.d.R. maximal 2 Iterationen
+
+**Charakter der Veranstaltung/Bewertung**
+
+Vorteile:
+
+- Fragen können direkt geklärt werden, alle sind vor Ort
+- keine $\alpha$-Tier-Meinungen in der Schätzung
+- keine Autoritäts-Meinungen dabei (muss auch so umgesetzt werden!)
+- alle sind mit im Boot $\Rightarrow$ Engagement
+- nur Debatten bei unterschiedlichen Meinungen (effizient)
+- alle haben eine Stimme
+- Teams sind besser als einzelne Experten (i.d.R.)
+
+Nachteile:
+
+- zeitaufwendig, Eingewöhnungszeit
+- nur Debatten bei unterschiedlichen Meinungen (betriebsblind)
+- alle haben eine Stimme
+- Diversität in Gruppen wird benötigt (T-shaped, mitreden können)
+- keine Planung sondern Schätzung! (muss klar sein)
 
 #### die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
 
+Dem Autor auf Anhieb unbekannt
+
+- grobe Schätzwerte, Kategorien, Aufwand 44 oder 45 kann niemand schätzen, "mittel" oder "viel" schon eher
+- Kommunikation: alle sind dabei, nur Inhalt ist relevant
+- ???
 - ToDo
 
 #### Monatsaufgaben eines SW-Entwicklers benennen
