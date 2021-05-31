@@ -79,7 +79,6 @@
     - ist verständlich
     - hat Aktzeptanzkriterien
     - ...
-
 - Definition of Done: Wann ist die Aufgabe/Projekt erledigt?
   - Beispiel:
   - Der Code ist fertiggestellt und im Versionierungssystem eingespielt.
@@ -358,7 +357,7 @@ aber Aussage
 - ist für Sprint Reviews verantwortlich
 - muss Backlog Prioritäten setzen
 
-- **Aus praktischer Erfahrung ist der PO:**
+Aus praktischer Erfahrung ist der PO:
 
   - ein Full-Time Job  
   - eine Authoritätsperson  
@@ -398,12 +397,13 @@ aber Aussage
 #### Die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
 
 - ToDo : kürzen
+
 **Pairing-Tabelle** als Werkzeug:  
 Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter  
 - Realisierung durch eine einfache (Excel) Tabelle  
 - es wird schnell klar, ob Mitarbeiter zu wenige oder zu viele Themen bearbeiten sollen
 - die Machbarkeit des Sprints wird frühzeitig sichtbar
-
+Einschränkungen:
 - pro Zeile ein Thema
 - Anzahl der Themen soll ca Anzahl Mitarbeiter / 2
 - Spalten den Mitarbeitern zuordnen
