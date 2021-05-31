@@ -111,7 +111,7 @@ Quellen:
 
 - Verbesserung der Zusammenarbeit im Team
 - Verbesserung der Arbeit des Teams
-- Aufgestauten Frust vermeiden
+- aufgestauten Frust vermeiden
 - Raum geben, um Probleme im Team offen anzusprechen
 - Maßnahmen zur Optimierung des Zusammenhalts im Team entwickeln
 
@@ -199,7 +199,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - **Grundprinzipien:**
   - bildlich Arbeiten
   - früh und oft scheitern (*fail early!*)
-  - Quantität ist wichtig: viele Herangensweisen sammeln, aber nicht in die Tiefe verfolgen
+  - Quantität ist wichtig: viele Herangehensweisen sammeln, aber nicht in die Tiefe verfolgen
   - wilde Ideen zulassen und ermutigen
   - insgesamt kundenorientiert
 - **Phasen:**
@@ -237,7 +237,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 | Vorteile                                              | Nachteile                                                                                                         |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Anaylse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
+| klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Analyse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
 | klare Test-Struktur vorgegeben                        |                                                                                                                   |
 | Iterationen bis alle Tests der Phase OK sind          |                                                                                                                   |
 
@@ -286,7 +286,7 @@ Auftrag-Geber / Auftrag-Nehmer im Sprachgebrauch + Schnittstellen (Synchronisati
 
 - V-Modell XT-Editor (für Anpassungen)
 - V-Modell XT-Projekt-Assistenten (Tailoring)
-- XML-Technologie baiserend
+- XML-Technologie basierend
 
 |                     |                                                                                |
 | ------------------- | ------------------------------------------------------------------------------ |
@@ -421,7 +421,7 @@ Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
 Einschränkungen:
 
 - pro Zeile ein Thema
-- Anzahl der Themen soll ca Anzahl Mitarbeiter / 2
+- Anzahl der Themen soll ca. Anzahl Mitarbeiter / 2 sein
 - Spalten den Mitarbeitern zuordnen
 - Verantwortliche (zu den Themen) zuordnen
 - pro Mitarbeiter habe ich Informationen: Zu viele Verantwortlichkeiten? Zu viele Themen?
