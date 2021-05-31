@@ -545,13 +545,22 @@ Dem Autor auf Anhieb unbekannt
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
+|Kategorie                           | Delphi                                      | SCRUM                                       |
+| ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| Teilnehmer                         | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
+| Anzahl Runden                      | quasi beliebig                              | maximal 2                                   |
+| Aufwand                            | (sehr) hoch, aber nicht fürs Team! (extern) | hoch, dafür teambildend                     |
+| geeignete Teamgröße der Projekte   | für kleine Teams nicht sinvoll              | für (sehr) große Teams ungeeignet           |
+|                                    | nach oben open End                          |                                             |
+| Konsenzfindung                     | Diskussion über Ausreiser                   | Diskussion über Ausreiser                   |
+
 - ToDo
 
-#### algorithmische Schätzverfahren benennen und kenne die Struktur der Berechnungsformeln
+#### Algorithmische Schätzverfahren benennen und die Struktur der Berechnungsformeln kennen
 
 - ToDo
 
-#### Schwachstellendes CoCoMo bzw. Function-Point-Methode darlegen
+#### Schwachstellen des CoCoMo bzw. Function-Point-Methode darlegen
 
 - ToDo
 
