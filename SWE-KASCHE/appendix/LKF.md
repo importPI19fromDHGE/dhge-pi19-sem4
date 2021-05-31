@@ -316,23 +316,100 @@ kontinuierliches Testen ist essenziel!
 
 #### Vier Phasen einer empirischen Prozess-Kontrolle benennen und die Vorteile darstellen
 
-- ToDo
+- Plan
+- Do
+- Check
+- Act (zurück zu Plan)
+
+- kurze Planungszeit, schnell in das Doing übergehen und nach kurzer Zeit prüfen  
+- soll zu einer besseren Lösung führen
+- transparenter Prozess
+- Doing + Überprüfung + Anpassung
+- häufige Wiederholung
+
 
 #### den SCRUM-Ablauf beschreiben
 
-- ToDo
+<!--- kollidiert inhaltlich mit "Einzelnen Events aufzählen, bzw kann ich (Jonathan) die Fragen nicht wirklich unterscheiden --->
+- 1. Vision $\rightarrow$ Produktbacklog: im Produktbacklog ist die oberste Aufgabe die Wichtigste
+- 2.	Sprint-Planning: Team erstellt ein Sprint-Backlog aus dem Produkt-Backlog (Definition eines Sprint-Ziels)
+- 3.	Bearbeitung des Sprints (meist 14 Tage)
+  -	Daily Meeting (jeder im Team erzählt ganz kurz, woran er gerade arbeitet)
+  -	am Ende des Sprints: Sprint Review (bezieht sich konkret auf den Inhalt des Sprints)
+  -	Retrospektive (bezieht sich auf den Prozess des Sprints, realisierbar durch KSSP) $\rightarrow$ zurück zu 2.
+- Die 4 festen Events sind nicht abwählbar 
+aber Aussage
+>Bei SCRUM kann vieles an Bedürfnisse vom Team angepasst werden
 
 #### die Rollen und deren Aufgaben im SCRUM-Prozess benennen
 
-- ToDo
+- **Product Owner**
+- **SCRUM Master**
+- **Team**
+
+**Product Owner**
+- muss eine "Brücke" zwischen Business und Development herstellen
+- muss ROI (Return of Investment) gewährleisten
+- ist die Schnittstelle zum Kunden $\rightarrow$ muss die Kundenbedürfnisse verstehen und einordnen
+- **Value:** muss Kriterien für den Value definieren und ihn erhöhen $\rightarrow$ Was und Warum?
+- ist für Sprint Reviews verantwortlich
+- muss Backlog Prioritäten setzen
+
+- **Aus praktischer Erfahrung ist der PO:**
+
+  - ein Full-Time Job  
+  - eine Authoritätsperson  
+  - genau eine Person
+
+**Entwickler-Team**
+
+- besteht idealerweise aus 7+-2 Mitarbeiter
+- selbstorganisierend
+- Mitarbeiter ist typischerweise "I-shaped" $\rightarrow$ hat auf einem Gebiet extrem tiefes Wissen 
+- das Ziel ist jedoch ein "T-shaped" Mitarbeiter $\rightarrow$ hat ein breites Wissen, mit einem Spezialbereich
+- sind Macher
+- sind nach außen geschützt
+
+**SCRUM-Master**
+
+- Kümmerer (kümmert sich um Probleme seiner Mitarbeiter)
+- Diener + Führer in einer Person
+- Prozessbeobachter
+- dokumentiert u.A. den Fortschritt der Entwicklung
+- hilft dem Team, Probleme zu lösen
+- idealerweise ist der SCRUM-Master ein fachfremder Mitarbeiter
+
 
 #### die einzelnen Events des SCRUM aufzählen und kenne Ziel sowie personelle Zusammensetzung eines jeden Events
 
 - ToDo
+<!--> Ziel und Erklärung ist auszuweiten <--->
+
+-	Sprint Planning (Alle)
+- Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
+- Retro (Alle)
+- Sprint Review (Alle + wechselnde Stakeholder)
+
+[guckst du hier](https://agility.im/frequent-agile-question/who-attends-what-event-in-scrum/)
 
 #### die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
 
-- ToDo
+- ToDo : kürzen
+**Pairing-Tabelle** als Werkzeug:  
+Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter  
+- Realisierung durch eine einfache (Excel) Tabelle  
+- es wird schnell klar, ob Mitarbeiter zu wenige oder zu viele Themen bearbeiten sollen
+- die Machbarkeit des Sprints wird frühzeitig sichtbar
+
+- pro Zeile ein Thema
+- Anzahl der Themen soll ca Anzahl Mitarbeiter / 2
+- Spalten den Mitarbeitern zuordnen
+- Verantwortliche (zu den Themen) zuordnen
+- pro Mitarbeiter habe ich Informationen: Zu viele Verantwortlichkeiten? Zu viele Themen?
+- pro Zeile: Informationen, wie viele Mitarbeiter im Thema involviert sind
+- **ZIEL:** Probleme frühzeitig sichtbar machen! (und im Idealfall lösen)
+
+> Die Anzahl der Zeilen (Themen) ist künstlich beschränkt! (da T-shaped Mitarbeiter --> die Mitarbeiter sollen voneinander lernen können)
 
 #### sagen, warum DOR und DOD verwendet werden sollten
 
@@ -341,10 +418,13 @@ kontinuierliches Testen ist essenziel!
 #### aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
 
 - ToDo
+- Kommt aus der Übung.. leicht messbar muss es sein!
+- Gesamten Prozess sichtbar machen
 
 #### Checklisten den einzelnen Typen (DOR, DOD) zuordnen und ggf. wichtige fehlende Punkte ergänzen
 
 - ToDo
+- Auch eine Übungssache ..?
 
 #### das SCRUM-Manifest und dessen Anwendung erläutern
 
