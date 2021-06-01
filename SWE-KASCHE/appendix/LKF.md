@@ -486,6 +486,7 @@ ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **E
 - Anfangen, bevor alle ToDos klar sind / Neue können dazukommen
 
 übliche Kategorien:
+
 - ToDo
 - Doing
 - (On hold)
@@ -493,11 +494,18 @@ ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **E
 - Done
 - eigene Kategorien
 
-**Bedeutung**
+Beispiele außerhalb der IT:
+
+- Projektarbeit DHGE
+- "Studentenparty"
 
 #### Ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
 
-- ToDo
+- Lt. Kasche: Aus User-Sicht 
+- Kopfzeile: Einteilung in Blöcke, darunter detaillierter werden, Features beschreiben
+- Priorisierung von oben nach unten
+- MVP bilden
+- Dem Nutzer zeigen / mit ihm erstellen $\Rightarrow$ gewünschte Priorisierung wird klar 
 
 ### Aufwandsschätzungen
 
@@ -513,7 +521,7 @@ ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **E
   - 1-5: klein
   - 8-20: mittel
   - 40-100: XL
-  - Kartenwert kann mit Fragezeichen versehen $\rightarrow$ man ist unsicher, was den Aufwand angeht
+  - Kartenwert kann mit Fragezeichen versehen werden $\rightarrow$ man ist unsicher, was den Aufwand angeht
   **P**ausen-Karte (manchmal mit Kaffeetasse dargestellt): triviale Aufgabe oder: "Ich brauche eine Pause"
 
 **Ablauf**
@@ -545,13 +553,17 @@ Nachteile:
 - Diversität in Gruppen wird benötigt (T-shaped, mitreden können)
 - keine Planung sondern Schätzung! (muss klar sein)
 
-#### die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
+#### Die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
 
-Dem Autor auf Anhieb unbekannt
+ - ???
 
 - grobe Schätzwerte, Kategorien, Aufwand 44 oder 45 kann niemand schätzen, "mittel" oder "viel" schon eher
-- Kommunikation: alle sind dabei, nur Inhalt ist relevant
-- ???
+- Kommunikation und Arbeitsklima: alle sind dabei, nur Inhalt ist relevant
+
+- Transparenz: Aufgaben sind bekannt, Meinungen der Extreme werden offen vorgetragen
+- Überprüfung: SCRUM Master überprüft Prozess, keine wertenden Aussagen
+- Anpassung: Schätzung wird nach Aussprache ggf. angepasst
+
 - ToDo
 
 #### Monatsaufgaben eines SW-Entwicklers benennen
