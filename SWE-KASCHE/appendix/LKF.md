@@ -233,7 +233,13 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 #### Zielkriterien, warum überhaupt Entwicklungsmodelle verwendet werden
 
-- ToDo
+- Struktur in Entwicklung bringen
+- Vorhersagen ermöglichen
+  - Personal
+  - Kostenplanung
+  - Zeitpunkt der Fertigstellung
+- Dokumentation und Tests werden (oft) obligatorisch
+
 
 #### Das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
 
@@ -242,10 +248,8 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 | Vorteile                                              | Nachteile                                                                                                         |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Analyse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
-| klare Test-Struktur vorgegeben                        |                                                                                                                   |
-| Iterationen bis alle Tests der Phase OK sind          |                                                                                                                   |
-
-- ToDo
+| klare Test-Struktur vorgegeben                        | bezieht sich nur auf Entwicklung: Kein Betrieb, keine Wartung definiert                                           |
+| Iterationen bis alle Tests der Phase OK sind          | kein Rückspringen in vorherige Phase ohne Fehlerfall vorgesehen (siehe iteriertes Wasserfallmodell)               |
 
 #### Die Bedeutung des XT beim V-Modell-XT
 
