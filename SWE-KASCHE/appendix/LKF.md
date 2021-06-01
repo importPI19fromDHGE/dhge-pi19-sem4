@@ -462,13 +462,40 @@ Einschränkungen:
 
 #### Das SCRUM-Manifest und dessen Anwendung erläutern
 
+ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **Entscheidungshilfe** für ganzheitliche Transformationen (agile Prozesse, Geschäftsarchitekturen, liquide Netzwerkstrukturen, ...) gegenüber dem Klammern an alten Strukturen.
+
+- **Individuen** stehen ***über*** den **Tools und Prozessen**
+- **Produkt** steht ***über*** der **Dokumentation**
+- **Zusammenarbeit** steht ***über*** **Vertragsverhandlungen**
+- **Änderungen** stehen ***über*** dem **Plan**
+
+**Anwendung** 
+
+- keine Anleitung, Manifest muss gelebt werden
+- Verwendung von untergeordneten Dingen ist trotzdem möglich
+- alte, starre Strukturen [Silodenken](https://www.pfi.or.at/blog/wie-schlimm-ist-silodenken/) aufbrechen, sich um den Menschen kümmern
+- man braucht trotzdem einen konkreten Plan
+- Umsetzung entscheidet am Ende; Nicht die Strategie
+
+#### (Ich kann) ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
+
+- Atomare Aufgaben auf Karten (phsyisch) oder digital (trello)
+- zeitlich unbegrenzter Durchlauf: **Fortschritt des gesamten Projekts (auf einen Blick) einsehbar**
+- Priorität sichtbar: oben nach unten; von hoch bis niedrig.
+- maximal 2 Aufgaben / Mitarbeiter im Doing
+- Anfangen, bevor alle ToDos klar sind / Neue können dazukommen
+
+übliche Kategorien:
 - ToDo
+- Doing
+- (On hold)
+- Review
+- Done
+- eigene Kategorien
 
-#### ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
+**Bedeutung**
 
-- ToDo
-
-#### ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
+#### Ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
 
 - ToDo
 
