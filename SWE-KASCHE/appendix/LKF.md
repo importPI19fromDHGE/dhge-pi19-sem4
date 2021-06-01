@@ -336,7 +336,8 @@ E**X**TREME
 
 #### Mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
-- ToDo
+- Entscheidung zu fällen, was am Besten sei, schwierig ( war auch nicht gefragt)
+- Individuell lernen
 
 Alle?
 kontinuierliches Testen ist essenziel!
@@ -416,8 +417,6 @@ Aus praktischer Erfahrung ist der PO:
 
 #### Die einzelnen Events des SCRUM aufzählen und Ziel sowie personelle Zusammensetzung eines jeden Events kennen
 
-- ToDo
-
 - Sprint Planning (Alle)
 - Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
 - Retro (Alle)
@@ -426,8 +425,6 @@ Aus praktischer Erfahrung ist der PO:
 [guckst du hier](https://agility.im/frequent-agile-question/who-attends-what-event-in-scrum/)
 
 #### Die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
-
-- ToDo : kürzen
 
 **Pairing-Tabelle** als Werkzeug:
 Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
@@ -450,18 +447,18 @@ Einschränkungen:
 
 #### Sagen, warum DOR und DOD verwendet werden sollten
 
-- ToDo
+- Klar festlegen wann Aufgabe / Story Ready $\Rightarrow$ Doing und Doing $\Rightarrow$ Done geschoben werden kann
+- z.B. Scrum: Wann ist User-Story bereit zur Bearbeitung; Wann ist die fertiggestellt?
+- Überblick über Fortschritt einer Aufgabe
 
 #### Aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
 
-- ToDo
-- Kommt aus der Übung.. leicht messbar muss es sein!
+- leicht messbar muss es sein!
 - Gesamten Prozess sichtbar machen
 
 #### Checklisten den einzelnen Typen (DOR, DOD) zuordnen und ggf. wichtige fehlende Punkte ergänzen
 
-- ToDo
-- Auch eine Übungssache ..?
+?!
 
 #### Das SCRUM-Manifest und dessen Anwendung erläutern
 
