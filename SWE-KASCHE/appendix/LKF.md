@@ -22,7 +22,8 @@
 
 #### Unterschied zwischen SW-Entw.-Phasen und –Modell benennen
 
-- ToDo
+- Software durchläuft im Entwicklungsprozess üblicherweise bestimmte, meist ähnliche SW-Entw.-Phasen
+- Die Umsetzung, Aneinanderreihung und das Verhältnis dieser Phasen zueinander wird in SW-Entw.-Modellen definiert
 
 #### ein Beispiel für ein MVP nennen
 
@@ -133,6 +134,9 @@ Quellen:
 
 #### darstellen, was und wieviel nach dem Clustern der Impediments erzeugt werden muss
 
+- Impediments=Behinderung der Arbeit 
+- Improvement-Backlog erzeugen (?)
+- Relevanz?
 - ToDo
 
 #### Die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
@@ -145,6 +149,7 @@ Quellen:
 
 Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
+- Wasserfall, V-Modell, Spiralmodell: eigentlich nicht vorgesehen
 - ToDo
 
 ### Phasenmodelle
@@ -623,8 +628,6 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 - präziser Entwurf nötig, Datenelemente, Transaktionen etc $\Rightarrow$ ändert sich oft während Entwicklung
 - Kosten pro Function Point muss bekannt sein
-
-
 
 ## System-Entwurf
 
