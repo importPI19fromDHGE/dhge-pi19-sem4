@@ -263,14 +263,24 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 Bausteine
 
-- ToDo
+- unbekannt, nicht behandelt in der VL
+- Web sagt:
+- Projektmanagement
+- Qualitätsicherung
+- Konfigurationsmanagement
+- Problem- und Änderungsmanagement
+- Systemerstellung
+- Anforderungsfestigung
+- Lieferung und Abnahme
+- Vertragsschluss
+- (Einführung und Pflege eines organisationsspezifischen Vorgehensmodells)
 
 4 Projekt-Typen:
 
 1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
 2. Auftragnehmer Projekt (AW): Entwicklung
 3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
-4. Organisationsspezifische Projekt
+4. Organisationsspezifisches Projekt
 
 Durchführungs-Strategien:
 
