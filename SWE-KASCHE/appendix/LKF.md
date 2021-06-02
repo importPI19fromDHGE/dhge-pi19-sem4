@@ -755,6 +755,47 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 - ToDo
 
-#### die Mindest-Architektur auf einen konkreten Fall anwenden
+#### Die Mindest-Architektur auf einen konkreten Fall anwenden
+
+- Drei-Schichten
+- ToDo
+
+#### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren). 
+
+- ToDo
+
+#### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen. 
+
+- ToDo
+
+#### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen. 
+
+- ToDo
+
+#### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann. 
+
+- ToDo
+
+#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert. 
+
+- ToDo
+
+#### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert. 
+
+- ToDo
+
+#### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären. 
+
+- ToDo
+
+#### Alle Objekt-Typen aufzählen, die in einer JSON-Datei stehen können.
+
+- ToDo
+
+#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme, die aber nicht in dem Format vorliegen, für das ich mich entschieden habe. 
+
+- ToDo
+
+####  Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen. 
 
 - ToDo
