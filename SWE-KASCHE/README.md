@@ -950,8 +950,8 @@ Warum Iteratoren?
 ```
 
 - beide Varianten sind wohlgeformt und valide
-- bei einer Änderung des Schemas $\rightarrow$ das Tag-basierte Format wird *invalide*
-- bei einer Änderung des Schemas $\rightarrow$ das Inhaltsbasierte Format bleibt valide
+- bei einer Änderung des Schemas wird das Tag-basierte Format *invalide*
+- bei einer Änderung des Schemas bleibt das Inhaltsbasierte Format bleibt valide
 
 ## JSON
 
