@@ -26,7 +26,7 @@ Embedded Systems
   - [Digitale Schaltnetze](#digitale-schaltnetze)
     - [Logisches UND](#logisches-und)
     - [Logisches ODER](#logisches-oder)
-    - [Logische Äquivalenz](#logische-%C3%A4quivalenz)
+    - [Logische Äquivalenz](#logische-%C3%84quivalenz)
     - [Logische Antivalenz](#logische-antivalenz)
   - [Interrupts](#interrupts)
   - [Timer (Zähler)](#timer-z%C3%A4hler)
