@@ -134,7 +134,7 @@ Quellen:
 
 #### darstellen, was und wieviel nach dem Clustern der Impediments erzeugt werden muss
 
-- Impediments=Behinderung der Arbeit 
+- Impediments=Behinderung der Arbeit
 - Improvement-Backlog erzeugen (?)
 - Relevanz?
 - ToDo
@@ -469,7 +469,7 @@ ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **E
 - **Zusammenarbeit** steht ***über*** **Vertragsverhandlungen**
 - **Änderungen** stehen ***über*** dem **Plan**
 
-**Anwendung** 
+**Anwendung**
 
 - keine Anleitung, Manifest muss gelebt werden
 - Verwendung von untergeordneten Dingen ist trotzdem möglich
@@ -501,11 +501,11 @@ Beispiele außerhalb der IT:
 
 #### Ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
 
-- Lt. Kasche: Aus User-Sicht 
+- Lt. Kasche: Aus User-Sicht
 - Kopfzeile: Einteilung in Blöcke, darunter detaillierter werden, Features beschreiben
 - Priorisierung von oben nach unten
 - MVP bilden
-- Dem Nutzer zeigen / mit ihm erstellen $\Rightarrow$ gewünschte Priorisierung wird klar 
+- Dem Nutzer zeigen / mit ihm erstellen $\Rightarrow$ gewünschte Priorisierung wird klar
 
 ### Aufwandsschätzungen
 
@@ -555,7 +555,7 @@ Nachteile:
 
 #### Die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
 
- - ???
+- ???
 
 - grobe Schätzwerte, Kategorien, Aufwand 44 oder 45 kann niemand schätzen, "mittel" oder "viel" schon eher
 - Kommunikation und Arbeitsklima: alle sind dabei, nur Inhalt ist relevant
@@ -649,7 +649,7 @@ Vorgehen:
 - FP_roh ermitteln
   - Werte gewichtet: S, M, L
   - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert S, M, L fest
-  - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu  
+  - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu
 
 $Function Points = FP_{Roh}* Korrekturfaktoren$
 - Bis zu 14 Einflussfaktoren als Korrekturfaktoren
@@ -665,9 +665,9 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 - Starr, trocken, kein Teamgeist, keine Kommunikation
 - Eingangsvariablen **müssen** zutreffend geschätzt werden
 - ohne Maßzahlen von alten projekten **keine** zuverlässigen Aussage
-  - Sie beziehen sich dadurch immer nur auf gleiche und ähnliche Teams 
-  - mit gleichen und ähnlichen Projekten. 
-  - Selbst noch nie sowas gemacht? Damit nicht zuverlässig schätzbar! 
+  - Sie beziehen sich dadurch immer nur auf gleiche und ähnliche Teams
+  - mit gleichen und ähnlichen Projekten.
+  - Selbst noch nie sowas gemacht? Damit nicht zuverlässig schätzbar!
 - Reaktion auf neue Anforderungen: nicht möglich
 
 **COCOMO**
@@ -760,31 +760,31 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 - Drei-Schichten
 - ToDo
 
-#### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren). 
+#### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren).
 
 - ToDo
 
-#### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen. 
+#### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen.
 
 - ToDo
 
-#### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen. 
+#### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen.
 
 - ToDo
 
-#### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann. 
+#### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann.
 
 - ToDo
 
-#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert. 
+#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert.
 
 - ToDo
 
-#### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert. 
+#### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert.
 
 - ToDo
 
-#### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären. 
+#### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären.
 
 - ToDo
 
@@ -792,10 +792,10 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 - ToDo
 
-#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme, die aber nicht in dem Format vorliegen, für das ich mich entschieden habe. 
+#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme, die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
 
 - ToDo
 
-####  Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen. 
+####  Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen.
 
 - ToDo
