@@ -41,6 +41,8 @@ Systementwurf
   - [Strukturelle Muster](#strukturelle-muster)
   - [Verhaltensmuster](#verhaltensmuster)
   - [XML](#xml)
+  - [JSON](#json)
+  - [CSV](#csv)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
