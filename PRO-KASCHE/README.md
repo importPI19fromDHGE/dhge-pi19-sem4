@@ -1,3 +1,9 @@
+<!----------
+title: "IT-Trends"
+date: "Semester 4"
+keywords: [IT-Trends, DHGE, Semester 4]
+---------->
+
 IT-Trends
 =========
 

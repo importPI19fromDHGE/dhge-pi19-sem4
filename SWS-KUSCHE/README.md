@@ -1,3 +1,9 @@
+<!----------
+title: "Kryptographie und Softwaresicherheit"
+date: "Semester 4"
+keywords: [Kryptographie, Softwaresicherheit, DHGE, Semester 4]
+---------->
+
 Kryptographie und Softwaresicherheit
 ====================================
 

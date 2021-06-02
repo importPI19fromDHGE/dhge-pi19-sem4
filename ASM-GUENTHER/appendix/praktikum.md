@@ -19,6 +19,8 @@ Praktikum hardwarenahe Programmierung
 - [Zeitsteuerung](#zeitsteuerung)
 - [Unterprogramme](#unterprogramme)
 - [Timer](#timer)
+- [Programmspeicher](#programmspeicher)
+- [Serielle Schnittstelle](#serielle-schnittstelle)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -474,7 +476,7 @@ ret ;4T
   - 2 Modi für Pulsweitenmodulation:
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
-    - ``OC0`` wird bei CTC geschalten<!--???-->(siehe Datenblatt)
+    - ``OC0`` wird bei CTC getogglet (siehe Datenblatt)
 - Timer Interrupt Flag Register (TIFR):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
@@ -482,3 +484,59 @@ ret ;4T
   - zählt langsamer bzw. hält länger ohne Überlauf
 
 ![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
+
+# Programmspeicher
+
+- feste Daten, z.B. Zahlen oder Strings, können im Programm nach der ``data:``-Sprungmarke eingefügt werden
+- Syntax: ``.db daten, Zeilenumbruch, Carriage Return, Terminator`` \rightarrow\rightarrow ``.db "ganz erstaunlich!", 10, 13, 0``
+- ``lpm`` lädt die Adresse der Daten auf ``R0``
+- schrittweise Abarbeitung kann dann mit einem Arbeitsregister erfolgen
+
+Folgendes Beispiel lädt Daten zeichenweise in ein Arbeitsregister:
+
+```asm
+.nolist
+.include "m8515def.inc"
+.list
+
+.def work   = R16
+
+start:
+ldi R30, LOW(data)
+ldi R31, HIGH(data)
+
+main:
+lpm
+loop:
+lpm work, z+
+cpi work, 0
+brne loop
+rjmp main
+
+; Daten, Zeilenumbruch, LF, Terminator
+data:
+  .db "Hier stehen Daten!",10,13,0
+```
+
+# Serielle Schnittstelle
+
+- Universal Synchronous/Asynchronous Receiver and Transmitter (USART)
+- Pegelkonverter zwischen RS232-Connector und AVR
+- Anwendung: Debugging, Mensch-Maschine-Schnittstelle, Maschine-Maschine-Schnittstelle
+- Konfiguration: mit Registern ``UCSRA``, ``UCSRB``, ``UCSRC``
+  - ``UCSRC``-Register: ``UMSEL``-Bit: High = synchron
+  - Double Speed Asynchronous Mode: ``U2X``-Bit in ``UCRSA``
+  - Synchronisation Mater/Slave \rightarrow\rightarrow DDR für Pin PD4 (``XCK``)
+  - Baudrate in Register ``UBRR`` (High und Low)
+- Datenregister: ``UDR``
+- Aufbau eines Datenframe:
+  - 1 Startbit
+  - 5 bis 9 Datenbits
+  - Paritätseinstellung
+  - 1 oder 2 Stopp-Bits
+- Baudrate:
+  - ``UBRR`` ist ein Abwärtszähler; bei 0 wird ein Taktsignal generiert
+  - MC-Takt wird durch 2, 8 oder 16 geteilt
+  - Beispiel asynchron: $\text{UBRR} = \frac{\text{MC-Takt}}{16 * \text{Zielbaudrate}} - 1$
+
+<!--ab hier hatte ich Filmriss-->
