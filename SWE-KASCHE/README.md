@@ -1001,6 +1001,7 @@ null
 ```
 
 **Vergleich XML und JSON**
+
 1. nicht zulässig (Anwendungsabhängigkeit!)
    - XML: (komfortable) Auszeichnungssprache
    - JSON: (einfache, komfortables) Datenaustauschformat
