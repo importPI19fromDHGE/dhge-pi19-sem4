@@ -35,7 +35,7 @@ Kryptographie und Softwaresicherheit
     - [Voraussetzungen](#voraussetzungen)
   - [Public-Key-Infrastruktur](#public-key-infrastruktur)
   - [Informationen in einem Zertifikat](#informationen-in-einem-zertifikat)
-  - [Überprüfung eines Zertifikates](#%C3%BCberpr%C3%BCfung-eines-zertifikates)
+  - [Überprüfung eines Zertifikates](#%C3%9Cberpr%C3%BCfung-eines-zertifikates)
   - [Aufgaben einer CA](#aufgaben-einer-ca)
   - [Sperrungen von Zertifikaten](#sperrungen-von-zertifikaten)
   - [Probleme beim CA-System](#probleme-beim-ca-system)

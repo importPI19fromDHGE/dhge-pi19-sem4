@@ -11,7 +11,7 @@ Datenbankentwurf
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Überblick über den Datenbankentwurfsprozess](#%C3%BCberblick-%C3%BCber-den-datenbankentwurfsprozess)
+- [Überblick über den Datenbankentwurfsprozess](#%C3%9Cberblick-%C3%BCber-den-datenbankentwurfsprozess)
   - [Entwicklung von Datenbankschemata](#entwicklung-von-datenbankschemata)
   - [Phasen des Entwurfprozesses](#phasen-des-entwurfprozesses)
   - [Ableitung des Datenbankschemas aus einer verbalen Spezifikation](#ableitung-des-datenbankschemas-aus-einer-verbalen-spezifikation)

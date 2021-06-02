@@ -7,7 +7,7 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 
 - [Java und Make](#java-und-make)
 - [C und Make](#c-und-make)
-- [C++ und Make](#c-und-make)
+- [C++ und Make](#c-und-make-1)
 - [Assembler](#assembler)
   - [Inline Assembler in C](#inline-assembler-in-c)
     - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
