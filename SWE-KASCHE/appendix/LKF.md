@@ -463,7 +463,7 @@ Einschränkungen:
 
 ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **Entscheidungshilfe** für ganzheitliche Transformationen
 
->(agile Prozesse, Geschäftsarchitekturen, liquide Netzwerkstrukturen, ...) 
+>(agile Prozesse, Geschäftsarchitekturen, liquide Netzwerkstrukturen, ...)
 
 gegenüber dem Klammern an alten Strukturen.
 
