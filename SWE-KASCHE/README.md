@@ -1003,8 +1003,8 @@ null
 **Vergleich XML und JSON**
 
 1. nicht zulässig (Anwendungsabhängigkeit!)
-   - XML: (komfortable) Auszeichnungssprache
-   - JSON: (einfache, komfortables) Datenaustauschformat
+  - XML: (komfortable) Auszeichnungssprache
+  - JSON: (einfache, komfortables) Datenaustauschformat
 2. inhaltsbasiertes XML hat kein Äquivalent im JSON
 
 | wohlgeformt | XML $\checkmark$ | JSON $\checkmark$ |
