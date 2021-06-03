@@ -850,11 +850,6 @@ Anwendungsgebiet:
     - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
     - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
 
-<!-- Das ist was anderes, für später hier geparkt
-- Command
-- Interpreter
-- Iterator -->
-
 #### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
 <!-- hier geparkt, gehört woanders hin 
@@ -881,6 +876,7 @@ Anwendungsgebiet:
 #### vorgegebene Muster wiedererkennen und verbessern (Schwachstellen benennen)
 
 - ToDo
+
 #### Die Mindest-Architektur auf einen konkreten Fall anwenden
 
 **Drei-Schichten**
@@ -889,6 +885,8 @@ Anwendungsgebiet:
 - Datenhaltungschicht 
 
 - konkreter Fall: individuelles ToDo
+
+### OO-Entwurf
 
 #### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren)
 
@@ -912,40 +910,79 @@ Anwendungsgebiet:
   - Interpreter
   - Iterator
 
-- ToDo
+- ToDo Beispiele
 
 #### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen
 
 **Architektur**
 
+- Art und Weise eine Architektur, ein Gesamtsystem umzusetzen
+- Ist in der Lage z.B. Quelltext zu interpretieren, umzuwandeln
+
+**OO-Entwurf**
+
+- Entwurfsmuster auf Programmebene: Klasse
+- Interpretation einer definierten Grammatik, Syntax und Semantik
+- ToDo
 
 #### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann
 
 - ToDo
 
-#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
+#### Diese 4 Säulen benennen und eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
 
-- ToDo
+- Kompetenz der Entwickler
+- Prozess (Sys-Anwendung) : MMM (Mensch, Maschine, Methode)
+- Tooling, Wiederverwendung (System-Entwurf)
+- Automatisierung
+
+- Code-Generator: Tooling + Automatisierung
 
 #### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert
 
-- ToDo
+- ToDo: Zuordnung prüfen
+
+1. DevOps Ideen (1-2-3-4)
+2. Dokumentations-Generatoren (2-3-4)
+3. Code-Generatoren $\rightarrow$ Galerenarbeit (generiert aus abstrakter Beschreibung) (3-4)
+4. Template-Funktionen ($\rightarrow$ `Stack<Kogel>` (ein Stack vom Typ Kogel)) (1-3)
+5. Round-Trip-Engineering (2?-3-4)
+  - Änderungen im Klassendiagramm $\rightarrow$ Änderungen im Code
+  - Änderungen im Code $\rightarrow$ Änderungen im Klassendiagramm
+6. Model-Driven-Architecture (MDA) (1?-2-3-4)
+  - Modell entwickeln (z.B. in UML)
+  - Generator $\rightarrow$ Quelltext erstellen
+  - Design wird in Platform Independant Model (PIM) überführt
+  - PIM wird in Platform Specific Model (PSM) überführt
+  - wenn beim PSM etwas nicht passt $\rightarrow$ einen Schritt zurückführen (Reengineering)
+  - PSM führt dann schließlich zur Code-Generierung
 
 #### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären
 
-- ToDo
+- wenn die physische Struktur aka. die Syntax korrekt ist $\rightarrow$ *wohlgeformtes XML*
+- wenn die logische Stuktur korrekt ist $\rightarrow$ *valides XML*
 
 #### Alle Objekt-Typen aufzählen, die in einer JSON-Datei stehen können
 
-- ToDo
+```json
+Objekt { }
+Array [ ]
+String
+Zahl
+Bool
+null
+```
 
 #### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde
 
 und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme
 die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
 
+- XML: (komfortable) Auszeichnungssprache
+- JSON: (einfache, komfortables) Datenaustauschformat
+- CSV: Separierte Werte
 - ToDo
 
 #### Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen
 
-- ToDo
+- nicht behandelt?
