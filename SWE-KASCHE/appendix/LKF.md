@@ -809,22 +809,25 @@ Anwendungsgebiet:
 
 #### Standard-Muster einer Strukturellen-Sicht einer Software-Architektur benennen
 
-- **Komposition von Klassen**
-- Proxy (Stellvertreter)
-- Adapter (Wrapper)
-- Bridge (Implementation und Schnittstelle trennen)
-- Composite (Baumstrukturen)
+- Kette
+- Repository
+- Schichten
+- Die 3-Schichten Architektur
+- Interpreter
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden
+
+<!--  SWE/Readme.md Z. 698 -->
 
 - ToDo
 
 #### Standard-Muster einer Physikalischen-Sicht einer Software-Architektur benennen
 
-- **Prozess der Erzeugung**
-- Factory
-- Builder (Erzeuger)
-- Singleton
+- zentrales System
+- Client-Server
+- (Three Tier Client/Server)
+- Verteilmuster Förderation
+- Konfigurationsdiagramm
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden1
 
@@ -832,35 +835,89 @@ Anwendungsgebiet:
 
 #### Standard-Muster einer Ablauf-Sicht einer Software-Architektur benennen
 
-- **Art und Weise wie Klassen kommunizieren und Aufgaben verteilen**
+<!--- SWE/readme.md Z. 413 --->
+
+- **Zentrale Steuerung**
+  - **Call and Return**
+    - Hauptprogramm, Unterprogramm 1, 2, 3
+  - **Master Slave**
+    - Manager, GUI, Sensor, Aktor
+- **Ereignis-Steuerung**
+  - **Selective Broadcast**
+    - Event-Handler, Subsystem 1, 2, 3
+    - Events werden von einem System geraised und vom Event-Handler behandelt
+   - **Interrupt**
+    - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
+    - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
+
+<!-- Das ist was anderes, für später hier geparkt
 - Command
 - Interpreter
-- Iterator
+- Iterator -->
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
+<!-- hier geparkt, gehört woanders hin 
+**Warum Command?**
+
+1. verschiedene Anfragen können parametrisiert werden
+2. Undo wird möglich
+3. Ergebnis kann dem Objekt zugeordnet werden (Logbuch)
+- Erstellung und Ausführung der Kommandos voneinander getrennt
+
+**Warum Interpreter?**
+
 - ToDo
+
+**Warum Iteratoren?**
+
+- es kann auf ein Element zugegriffen werden ohne, dass die interne Struktur offengelegt werden muss
+- es kann auf verschiedene Arten traversiert werden
+- es kann auf verschiedene Arten traversiert werden, ohne die Datencontainerklasse ändern zu müssen
+- es kann über eine einheitliche Schnittstelle traversiert werden
+- einer Datencontainerklasse können mehrere Iteratoren zugeordnet werden
+--->
 
 #### vorgegebene Muster wiedererkennen und verbessern (Schwachstellen benennen)
 
 - ToDo
-
 #### Die Mindest-Architektur auf einen konkreten Fall anwenden
 
-- Drei-Schichten
-- ToDo
+**Drei-Schichten**
+- GUI
+- Fachkonzeptsicht (Logik)
+- Datenhaltungschicht 
+
+- konkreter Fall: individuelles ToDo
 
 #### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren)
 
-- ToDo
+- Muster kommen in Entwürfen immer wieder in ähnlicher Form vor
+- Wiederverwendbarkeit: Zeitgewinn
+- Bewährtes nutzen
 
 #### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen
+
+- Erzeugende Entwurfsmuster
+  - (Abstract Factory)
+  - Builder (Erzeuger)
+  - Singleton
+- Strukturelle Muster
+  - (Stellvertreter)
+  - Adapter (Wrapper)
+  - Bridge
+  - Composite
+- Verhaltensmuster
+  - Command
+  - Interpreter
+  - Iterator
 
 - ToDo
 
 #### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen
 
-- ToDo
+**Architektur**
+
 
 #### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann
 
