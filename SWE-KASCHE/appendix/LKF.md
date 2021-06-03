@@ -826,6 +826,37 @@ Anwendungsgebiet:
 
 - ToDo
 
+**Zum Zentralen System**
+
+- keine Intelligenz bei Terminals
+- Terminal 1, Terminal 2, Terminal 3 ... Terminal N $\rightarrow$ greifen alle auf das zentrale System zu
+- typische Vor-und- Nachteile eines zentralen Systems
+- gemeinsamer Datenbestand = einfach einzurichten
+- Last kann System in die Knie zwingen
+- gemeinsame Nutzung von gleicher Ressource: Kollision muss behandelt oder vermieden werden, v.a. bei Datenbeständen!
+
+**Zum Client-Server**
+
+- viele intelligente Clients (Frontend) greifen alle auf einen Server (Backend) zu
+- DoS/DDoS Angriffe
+
+**Zum Three Tier Client/Server**
+
+- viele intelligente Clients (UI, Fachlogik) kommunizieren mit Anwendungsserver
+- Verteilung der Anfragen auf verschiedene Server (Loadbalancing) möglich
+
+**Zum Verteilmuster Förderation**
+
+- gleichberechtigte Partner
+- verteilte Subsysteme, die miteinander kommunizieren
+- (als voll-vermaschtes Netz dargestellt)
+
+
+**Zum Konfigurations-Diagramm**
+
+- System-Komponenten können gut dargestellt werden
+- nicht im UML offiziell beschrieben
+
 #### Standard-Muster einer Ablauf-Sicht einer Software-Architektur benennen
 
 <!--- SWE/readme.md Z. 413 --->
