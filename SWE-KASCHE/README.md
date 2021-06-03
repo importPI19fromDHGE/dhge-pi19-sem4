@@ -981,22 +981,22 @@ null
 
 ```xml
 {
-  'Name' : 'Kogel',
-  'ID' : 0815
+  "Name": "Kogel",
+  "ID": 0815
 }
 
 {
-  'Mitarbeiter' : [
+  "Mitarbeiter": [
     {
-      'Name' : 'Kogel',
-      'ID' : 0815
+      "Name": "Kogel",
+      "ID": 0815
     },
     {
-      'Name' : 'Meier',
-      'ID' : 0816
+      "Name" : "Meier",
+      "ID" : 0816
     }
   ],
-  'Ort' : 'Erfurt'
+  "Ort": "Erfurt"
 }
 ```
 
@@ -1021,7 +1021,7 @@ null
 - Formate müssen abgesprochen werden
 
 ```csv
-27.Mai 2021
+27. Mai 2021
 27, Mai 2021
 ```
 
