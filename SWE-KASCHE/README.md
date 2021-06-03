@@ -41,6 +41,8 @@ Systementwurf
   - [Strukturelle Muster](#strukturelle-muster)
   - [Verhaltensmuster](#verhaltensmuster)
   - [XML](#xml)
+  - [JSON](#json)
+  - [CSV](#csv)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -906,3 +908,122 @@ Warum Iteratoren?
 <Name language="de">Herr Kogel</Name>
 <Name language="en">Mr. Kogel</Name>
 ```
+
+- wenn die physische Struktur aka. die Syntax korrekt ist $\rightarrow$ *wohlgeformtes XML*
+- wenn die logische Stuktur korrekt ist $\rightarrow$ *valides XML*
+  - ehemals DTD (Document Type Definition)
+  - heute definiert ein XML-Schema die zulässige Struktur / den Plan für das XML-File
+  - XML-Schema ist selbst wiederum ein XML-File
+    1. XML Syntax
+    2. Unterstützung von Standard-Datentypen + Möglichkeit eigene Datentypen zu definieren
+    3. Ableitung- und Vererbungsphilosophie wird unterstützt
+    4. Standard-Namensräume
+- Namespaces dürfen verwendet werden ("gleiche" Elemente werden verschiedenen Zwecken zugeordnet)
+- CSS: Cascading Style Sheets; für die Anzeige; ist hierarchisch aufgebaut
+
+**Zwei Möglichkeiten**
+
+- Tag basiertes XML-Format
+
+```xml
+<ROOT>
+  <MITARBEITER>
+    <NAME>Kogel</Name>
+    <ID>0815</ID>
+  </MITARBEITER>
+</ROOT>
+```
+
+- Inahltsbasiertes XML-Format
+
+```xml
+<ROOT>
+  <PROPERTY Name="Mitarbeiter">
+    <VALUE TYPE='STR' Bezeichner="Name">
+      Kogel
+    </VALUE>
+    <VALUE TYPE='INT' Bezeichner="ID">
+      0815
+    </VALUE>
+  </PROPERTY>
+</ROOT>
+```
+
+- beide Varianten sind wohlgeformt und valide
+- bei einer Änderung des Schemas wird das Tag-basierte Format *invalide*
+- bei einer Änderung des Schemas bleibt das Inhaltsbasierte Format bleibt valide
+
+## JSON
+
+- "JavaScript Object Notation"
+- Teilmenge der Programmiersprache JavaScript
+- Format zum Austausch von Daten
+- Serialisierung von Daten
+- Hierarchie von Containern (Objekten)
+- Objekte:
+
+```json
+Objekt { }
+Array [ ]
+String
+Zahl
+Bool
+null
+```
+
+- Eigenschaft ist ein Tupel aus: Schlüssel-Namen Doppelpunkt Wert
+
+```xml
+'Name' : 'Kogel'
+```
+
+- Beispiel:
+
+```xml
+{
+  'Name' : 'Kogel',
+  'ID' : 0815
+}
+
+{
+  'Mitarbeiter' : [
+    {
+      'Name' : 'Kogel',
+      'ID' : 0815
+    },
+    {
+      'Name' : 'Meier',
+      'ID' : 0816
+    }
+  ],
+  'Ort' : 'Erfurt'
+}
+```
+
+**Vergleich XML und JSON**
+
+1. nicht zulässig (Anwendungsabhängigkeit!)
+  - XML: (komfortable) Auszeichnungssprache
+  - JSON: (einfache, komfortables) Datenaustauschformat
+2. inhaltsbasiertes XML hat kein Äquivalent im JSON
+
+| wohlgeformt | XML $\checkmark$ | JSON $\checkmark$ |
+| ----------- | ---------------- | ----------------- |
+| valid       | $\checkmark$     | n.n               |
+| Zeichencode | Präambel         | n.n               |
+
+## CSV
+
+- Komma separierte Werte
+- reine Text-Daten
+- es gibt keinen allgemeinen Standard
+- Zeichencode ist offen (frei wählbar)
+- Formate müssen abgesprochen werden
+
+```csv
+27.Mai 2021
+27, Mai 2021
+```
+
+- $\uparrow$ trennt das Komma die Datensätze oder gehört es zu einem Datensatz?
+- $\rightarrow$ daher ist die Absprache des Formats sehr wichtig!
