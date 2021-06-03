@@ -851,7 +851,6 @@ Anwendungsgebiet:
 - verteilte Subsysteme, die miteinander kommunizieren
 - (als voll-vermaschtes Netz dargestellt)
 
-
 **Zum Konfigurations-Diagramm**
 
 - System-Komponenten können gut dargestellt werden
