@@ -22,7 +22,8 @@
 
 #### Unterschied zwischen SW-Entw.-Phasen und –Modell benennen
 
-- ToDo
+- Software durchläuft im Entwicklungsprozess üblicherweise bestimmte, meist ähnliche SW-Entw.-Phasen
+- Die Umsetzung, Aneinanderreihung und das Verhältnis dieser Phasen zueinander wird in SW-Entw.-Modellen definiert
 
 #### ein Beispiel für ein MVP nennen
 
@@ -133,6 +134,9 @@ Quellen:
 
 #### darstellen, was und wieviel nach dem Clustern der Impediments erzeugt werden muss
 
+- Impediments=Behinderung der Arbeit
+- Improvement-Backlog erzeugen (?)
+- Relevanz?
 - ToDo
 
 #### Die empfohlene Häufigkeit einer Retro beim Scrum und bei anderen Vorgehensmodellen jeweils erläutern
@@ -145,6 +149,7 @@ Quellen:
 
 Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
+- Wasserfall, V-Modell, Spiralmodell: eigentlich nicht vorgesehen
 - ToDo
 
 ### Phasenmodelle
@@ -228,7 +233,12 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 #### Zielkriterien, warum überhaupt Entwicklungsmodelle verwendet werden
 
-- ToDo
+- Struktur in Entwicklung bringen
+- Vorhersagen ermöglichen
+  - Personal
+  - Kostenplanung
+  - Zeitpunkt der Fertigstellung
+- Dokumentation und Tests werden (oft) obligatorisch
 
 #### Das allgemeine V-Modell und dessen Vorteile gegenüber anderen Phasen-Modellen
 
@@ -237,10 +247,8 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 | Vorteile                                              | Nachteile                                                                                                         |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Analyse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
-| klare Test-Struktur vorgegeben                        |                                                                                                                   |
-| Iterationen bis alle Tests der Phase OK sind          |                                                                                                                   |
-
-- ToDo
+| klare Test-Struktur vorgegeben                        | bezieht sich nur auf Entwicklung: Kein Betrieb, keine Wartung definiert                                           |
+| Iterationen bis alle Tests der Phase OK sind          | kein Rückspringen in vorherige Phase ohne Fehlerfall vorgesehen (siehe iteriertes Wasserfallmodell)               |
 
 #### Die Bedeutung des XT beim V-Modell-XT
 
@@ -254,14 +262,24 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 
 Bausteine
 
-- ToDo
+- unbekannt, nicht behandelt in der VL
+- Web sagt:
+- Projektmanagement
+- Qualitätsicherung
+- Konfigurationsmanagement
+- Problem- und Änderungsmanagement
+- Systemerstellung
+- Anforderungsfestigung
+- Lieferung und Abnahme
+- Vertragsschluss
+- (Einführung und Pflege eines organisationsspezifischen Vorgehensmodells)
 
 4 Projekt-Typen:
 
 1. Auftraggeber Projekt (AG): Vergabe von Entwicklungsaufträgen
 2. Auftragnehmer Projekt (AW): Entwicklung
 3. AG/AW: ohne Vertragsverhältnis (z.B. Fach + Developer Abteilung sitzen zusammen)
-4. Organisationsspezifische Projekt
+4. Organisationsspezifisches Projekt
 
 Durchführungs-Strategien:
 
@@ -317,7 +335,8 @@ E**X**TREME
 
 #### Mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
-- ToDo
+- Entscheidung zu fällen, was am Besten sei, schwierig (war auch nicht gefragt)
+- Individuell lernen
 
 Alle?
 kontinuierliches Testen ist essenziel!
@@ -397,8 +416,6 @@ Aus praktischer Erfahrung ist der PO:
 
 #### Die einzelnen Events des SCRUM aufzählen und Ziel sowie personelle Zusammensetzung eines jeden Events kennen
 
-- ToDo
-
 - Sprint Planning (Alle)
 - Daily Scrum (Dev-Team, gelegentlich SCRUM Master, nicht PO)
 - Retro (Alle)
@@ -407,8 +424,6 @@ Aus praktischer Erfahrung ist der PO:
 [guckst du hier](https://agility.im/frequent-agile-question/who-attends-what-event-in-scrum/)
 
 #### Die Zielrichtung für das Pflegen einer Pairing-Tabelle darstellen
-
-- ToDo : kürzen
 
 **Pairing-Tabelle** als Werkzeug:
 Ziel: eine realistische Aufteilung der Themen auf die Mitarbeiter
@@ -431,38 +446,126 @@ Einschränkungen:
 
 #### Sagen, warum DOR und DOD verwendet werden sollten
 
-- ToDo
+- Klar festlegen wann Aufgabe / Story Ready $\rightarrow$ Doing und Doing $\rightarrow$ Done geschoben werden kann
+- z.B. Scrum: Wann ist User-Story bereit zur Bearbeitung; Wann ist die fertiggestellt?
+- Überblick über Fortschritt einer Aufgabe
 
 #### Aus Checklisten herausfinden, welche Punkte nicht in eine DOR bzw. DOD kommen sollten
 
-- ToDo
-- Kommt aus der Übung.. leicht messbar muss es sein!
+- leicht messbar muss es sein!
 - Gesamten Prozess sichtbar machen
 
 #### Checklisten den einzelnen Typen (DOR, DOD) zuordnen und ggf. wichtige fehlende Punkte ergänzen
 
-- ToDo
-- Auch eine Übungssache ..?
+?!
 
 #### Das SCRUM-Manifest und dessen Anwendung erläutern
 
+ist eine öffentliche Erklärung von Zielen / Absichten im SCRUM-Prozess als **Entscheidungshilfe** für ganzheitliche Transformationen
+
+>(agile Prozesse, Geschäftsarchitekturen, liquide Netzwerkstrukturen, ...)
+
+gegenüber dem Klammern an alten Strukturen.
+
+- **Individuen** stehen ***über*** den **Tools und Prozessen**
+- **Produkt** steht ***über*** der **Dokumentation**
+- **Zusammenarbeit** steht ***über*** **Vertragsverhandlungen**
+- **Änderungen** stehen ***über*** dem **Plan**
+
+**Anwendung**
+
+- keine Anleitung, Manifest muss gelebt werden
+- Verwendung von untergeordneten Dingen ist trotzdem möglich
+- alte, starre Strukturen [Silodenken](https://www.pfi.or.at/blog/wie-schlimm-ist-silodenken/) aufbrechen, sich um den Menschen kümmern
+- man braucht trotzdem einen konkreten Plan
+- Umsetzung entscheidet am Ende; Nicht die Strategie
+
+#### (Ich kann) ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
+
+- Atomare Aufgaben auf Karten (physisch) oder digital (trello)
+- zeitlich unbegrenzter Durchlauf: **Fortschritt des gesamten Projekts (auf einen Blick) einsehbar**
+- Priorität sichtbar: oben nach unten, von hoch bis niedrig
+- maximal 2 Aufgaben / Mitarbeiter im Doing
+- Anfangen, bevor alle ToDos klar sind / Neue können dazukommen
+
+übliche Kategorien:
+
 - ToDo
+- Doing
+- (On hold)
+- Review
+- Done
+- eigene Kategorien
 
-#### ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
+Beispiele außerhalb der IT:
 
-- ToDo
+- Projektarbeit DHGE
+- "Studentenparty"
 
-#### ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
+#### Ein STORY-Board für eine SW-Entwicklungs-Aufgabe erstellen und den Vorteil der Verwendung motivieren
 
-- ToDo
+- Lt. Kasche: Aus User-Sicht
+- Kopfzeile: Einteilung in Blöcke, darunter detaillierter werden, Features beschreiben
+- Priorisierung von oben nach unten
+- MVPs bilden
+- Dem Nutzer zeigen / mit ihm erstellen $\rightarrow$ gewünschte Priorisierung wird klar
 
 ### Aufwandsschätzungen
 
 #### Scrum-Poker in seiner Art erläutern sowie Vor- und Nachteile auflisten
 
-- ToDo
+- Schätzmethode für fundierte, grobe Schätzung unter Einbezug des (meist agilen) Teams
+- keine direkte Zeit+Geld Aussagen kommen als Ergebnis heraus!
+- Spaßfaktor $\rightarrow$ Teamgeist
+- Basis des Planning-Poker: Karten mit Story-Points (quasi Aufwand)
+- Kartenwert von unten aus meist Fibonacci, höher dann gröbere Schritte
+  - 0: Aufgabe ist quasi schon erledigt
+  - 0.5: Kaum Aufwand
+  - 1-5: klein
+  - 8-20: mittel
+  - 40-100: XL
+  - Kartenwert kann mit Fragezeichen versehen werden $\rightarrow$ man ist unsicher, was den Aufwand angeht
+  **P**ausen-Karte (manchmal mit Kaffeetasse dargestellt): triviale Aufgabe oder: *"Ich brauche eine Pause"*
 
-#### die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
+**Ablauf**
+
+1. Scrum-Master liest Aufgabe vor
+2. Fragen sind erlaubt $\rightarrow Timebox \leq 1 Min$, Aufgabe von Scrum-Master! **Keine bewertenden Aussagen zulassen!**
+3. alle Karten umdrehen
+4. Minimal + Maximal begründen ihre Wahl
+- *alle* Anderen haben Redeverbot
+5. zurück zu 2. $\rightarrow$ i.d.R. maximal 2 Iterationen
+
+**Charakter der Veranstaltung/Bewertung**
+
+Vorteile:
+
+- Fragen können direkt geklärt werden, alle sind vor Ort
+- keine $\alpha$-Tier-Meinungen in der Schätzung
+- keine Autoritäts-Meinungen dabei (muss auch so umgesetzt werden!)
+- alle sind mit im Boot $\rightarrow$ Engagement
+- nur Debatten bei unterschiedlichen Meinungen (effizient)
+- alle haben eine Stimme
+- Teams sind besser als einzelne Experten (i.d.R.)
+
+Nachteile:
+
+- zeitaufwendig, Eingewöhnungszeit
+- nur Debatten bei unterschiedlichen Meinungen (betriebsblind)
+- alle haben eine Stimme
+- Diversität in Gruppen wird benötigt (T-shaped, mitreden können)
+- keine Planung sondern Schätzung! (muss klar sein)
+
+#### Die drei wesentlichen Säulen von Scrum-Poker ähnlichen Schätzverfahren benennen und begründen, warum ein neues Verfahren, welches ich mir ausdenken würde, genau diese drei Aspekte beheimaten sollte
+
+- ???
+
+- grobe Schätzwerte, Kategorien, Aufwand 44 oder 45 kann niemand schätzen, "mittel" oder "viel" schon eher
+- Kommunikation und Arbeitsklima: alle sind dabei, nur Inhalt ist relevant
+
+- Transparenz: Aufgaben sind bekannt, Meinungen der Extreme werden offen vorgetragen
+- Überprüfung: SCRUM Master überprüft Prozess, keine wertenden Aussagen
+- Anpassung: Schätzung wird nach Aussprache ggf. angepasst
 
 - ToDo
 
@@ -470,9 +573,23 @@ Einschränkungen:
 
 - ToDo
 
-#### das Teufelsquadrat zur Argumentation verwenden und weiß, wann ich es einsetzen kann
+#### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
 
-- ToDo
+- Inhalt
+- Qualität
+- $\frac{1}{\text{Kosten}}$
+- $\frac{1}{\text{Zeit}}$
+
+**Argumentation**
+
+- Nicht alle Parameter können optimiert werden!
+- Wenn ein oder zwei Ecken ausgereizt werden, "leiden" die anderen.
+- Prioritätensetzung, Machbarkeit
+
+**Verwendung**
+
+- Zieldefinition bei Projektstart
+- Steuerung bei Änderungen
 
 #### Faktoren benennen, die Aufwandschätzungen beeinflussen
 
@@ -484,15 +601,79 @@ Einschränkungen:
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
+| Kategorie                        | Delphi                                      | SCRUM                                       |
+|----------------------------------| --------------------------------------------|---------------------------------------------|
+| Teilnehmer                       | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
+| Anzahl Runden                    | quasi beliebig                              | maximal 2                                   |
+| Aufwand                          | (sehr) hoch, aber nicht fürs Team! (extern) | hoch, dafür teambildend                     |
+| geeignete Teamgröße der Projekte | für kleine Teams nicht sinvoll              | für (sehr) große Teams ungeeignet           |
+|                                  | nach oben Open-End                          |                                             |
+| Konsenzfindung                   | Diskussion über Ausreiser                   | Diskussion über Ausreiser                   |
+| Kosten                           | zusätzlich                                  | Personalkosten                              |
+| Sichtbarkeit von Schätzfehlern   | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
+
 - ToDo
 
-#### algorithmische Schätzverfahren benennen und kenne die Struktur der Berechnungsformeln
+#### Algorithmische Schätzverfahren benennen und die Struktur der Berechnungsformeln kennen
 
+- COCOMO
+- Function-Point-Methode
 - ToDo
 
-#### Schwachstellendes CoCoMo bzw. Function-Point-Methode darlegen
+**COCOMO**
 
-- ToDo
+- "Constructive-Cost-Method"
+- Lines-of-Code $=l$
+- Mann-Monate $=MM$
+- Entwicklungszeit $=t$
+- Aufwandsanalyse $=t_{AA}$
+- $t_{SW}=A(B\cdot (\frac{l}{1000})^{1+C})^{D}+t_{\text{Aufwandanalyse}}$
+  - mit $A,B > 2, 0 < C,D < 1$
+  - z.B. $t_{easySW}=2.5(2.4\cdot (\frac{l}{1000})^{1.05})^{0.38}+t_{AA}$
+- für einfache, mittlere, komplexe SW-Projekte weitere Präzisierung möglich
+
+**Function-Point-Methode**
+
+- anstatt Codezeilen zu schätzen $\rightarrow$ Evaluierung von Eingangsgrößen von Funktionen
+- somit entsteht ein relatives Maß zur Bewertung von Funktionen $\rightarrow$ `function-points`
+- *wenn* Kosten pro Funktion Point bekannt, dann ist eine Kostenschätzung möglich
+
+Vorgehen:
+
+- Zähle logische Transaktionen einer Funktion: Eingabe, Ausgabe, Anfrangen, Schnittstelle extern, Datenbankanfrage intern
+- $FP_{roh}$ ermitteln
+  - Werte gewichtet: $S, M, L$
+  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert $S, M, L$ fest
+  - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu
+
+$\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
+
+- Bis zu 14 Einflussfaktoren als Korrekturfaktoren
+
+- Beispiel Faustregel von Jones:
+  - $MM=FP^{0.4}=\sqrt[5]{FP^2}\hat{=}t$
+  - $\text{Anzahl}_{MA}=\frac{FP}{150}$
+
+#### Schwachstellen des CoCoMo bzw. Function-Point-Methode darlegen
+
+**allgemein**
+
+- starr, trocken, kein Teamgeist, keine Kommunikation
+- Eingangsvariablen **müssen** zutreffend geschätzt werden
+- ohne Maßzahlen von alten Projekten **keine** zuverlässigen Aussage
+  - Sie beziehen sich dadurch immer nur auf gleiche und ähnliche Teams
+  - mit gleichen und ähnlichen Projekten
+  - Selbst noch nie sowas gemacht? Damit nicht zuverlässig schätzbar!
+- Reaktion auf neue Anforderungen: nicht möglich
+
+**COCOMO**
+
+- Lines of Code ist eine fehlerbehaftete Angabe
+
+**FP-Methode**
+
+- präziser Entwurf nötig $\rightarrow$ Datenelemente, Transaktionen usw. ändern sich oft während Entwicklung
+- Kosten pro Function Point muss bekannt sein
 
 ## System-Entwurf
 
@@ -570,6 +751,50 @@ Einschränkungen:
 
 - ToDo
 
-#### die Mindest-Architektur auf einen konkreten Fall anwenden
+#### Die Mindest-Architektur auf einen konkreten Fall anwenden
+
+- Drei-Schichten
+- ToDo
+
+#### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren)
+
+- ToDo
+
+#### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen
+
+- ToDo
+
+#### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen
+
+- ToDo
+
+#### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann
+
+- ToDo
+
+#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
+
+- ToDo
+
+#### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert
+
+- ToDo
+
+#### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären
+
+- ToDo
+
+#### Alle Objekt-Typen aufzählen, die in einer JSON-Datei stehen können
+
+- ToDo
+
+#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde
+
+und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme
+die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
+
+- ToDo
+
+#### Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen
 
 - ToDo
