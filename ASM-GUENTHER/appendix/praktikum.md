@@ -504,7 +504,7 @@ ret ;4T
 
 - ``OCR0`` enthält Vergleichswert
   - muss um 1 niedriger sein, da um einen Takt verzögert
-Wenn $TCNT0 = OCR0$ wird im nächsten Takt $TCNT0 = 0$
+- Wenn $TCNT0 = OCR0$ wird im nächsten Takt $TCNT0 = 0$
 
 # Programmspeicher
 
