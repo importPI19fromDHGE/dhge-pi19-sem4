@@ -352,6 +352,14 @@ rjmp main
 
 ```
 
+Für die Arbeit mit Interrupts sollten folgende Dinge beachtet / erledigt werden:
+
+- Interrupts im ``GICR``-Register und ``MCUCR`` / ``EMCUCR``-Register aktivieren und konfigurieren
+- Stack initialisieren
+- I-Bit setzen
+- Interrupt-Vektor-Tabelle konfigurieren
+- Interrupt-Service-Routinen erstellen
+
 # Funktionen und Makros
 
 - vermeidet Spaghetticode
@@ -461,10 +469,11 @@ ret ;4T
   - Frequenzgenerator / -messer
 - 8515 hat einen 8-Bit- und einen 16-Bit-Timer (``TCNT0`` und ``TCNT1``)
 - können aufwärts oder abwärts gezählt werden
-- ``OCR0`` / ``OCR1`` sind Vergleichswerte, bei dem der Timer genullt wird (ggf. mit Interrupt)
-- aktiviert mit Timer/Counter Interrupt Mask Register (TIMSK)
+- ``OCR0`` / ``OCR1`` sind Vergleichswerte, nach dem der Timer genullt wird (ggf. mit Interrupt)
+- Pin ``B0`` ist mit ``OC0`` verknüpft<!--Grimm: "spezieller Spezialpin"-->
+- aktiviert mit Timer/Counter Interrupt Mask Register (``TIMSK``)
 - Konfiguration mittels Timer/Counter Control Register (``TCCRx``) $\rightarrow$ Einstellen der Arbeitsmodi
-- 4 Arbeitsmodi:
+- 4 Arbeitsmodi:<!--TODO: Tabelle-->
   - normal: ``WGM01:0`` = 0
     - zählt immer aufwärts
     - nach ``0xFF`` kommt ``0x00`` und Overflow Flag wird gesetzt
@@ -476,14 +485,26 @@ ret ;4T
   - 2 Modi für Pulsweitenmodulation:
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
-    - ``OC0`` wird bei CTC getogglet (siehe Datenblatt)
-- Timer Interrupt Flag Register (TIFR):
+  - ``OC0`` (also ggf. Pin ``B0``) wird bei CTC getogglet (siehe Datenblatt)
+    - Verhalten gesteuert via ``COM01:0``
+- Timer Interrupt Flag Register (``TIFR``):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
 - Prescaler<!--Im Datenblatt heißt es Prescaler, es steht auf den Folien wahrsch. falsch-->: Register, um im voraus Takt zu teilen
   - zählt langsamer bzw. hält länger ohne Überlauf
 
 ![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
+
+**Overflow:**
+
+- ``TCNT0`` wird je nach Prescaler hochgezählt und wird mit Differenz zum Wunsch initialisiert
+- Interrupt wird bei Nullsetzung ausgelöst $\rightarrow$ um einen Prescaler verzögert
+
+**Compare Match:**
+
+- ``OCR0`` enthält Vergleichswert
+  - muss um 1 niedriger sein, da um einen Takt verzögert
+- Wenn $TCNT0 = OCR0$ wird im nächsten Takt $TCNT0 = 0$
 
 # Programmspeicher
 
@@ -539,4 +560,27 @@ data:
   - MC-Takt wird durch 2, 8 oder 16 geteilt
   - Beispiel asynchron: $\text{UBRR} = \frac{\text{MC-Takt}}{16 * \text{Zielbaudrate}} - 1$
 
-<!--ab hier hatte ich Filmriss-->
+Hilfe zur Berechnung:
+
+```txt
+(Frequenz des Mikrokontrollers / (Teiler * Zielbaudrate)) - 1 = UBBR
+
+Teiler:  16 ->  async. Mode
+  8 ->  double speed async. Mode
+  2 ->  synchronous Mode
+
+Beispiel: async. Mode, Zielbaudrate 9600 Baud
+
+MC-Takt = 1 MHz
+(1 000 000 / (16 * 9600) ) - 1  = 5,51   -> UBBR = 6
+
+1 000 000 / ((6+1) *16) = reale Baudrate = 8928 Baud
+
+((real / gewünscht) - 1 ) * 100 = Fehler in % = -7 % -> Fehler zu groß für sichere Funktion
+
+MC-Takt = 3,6864 MHz
+3 686 400 / (16 * 9600) -1 = 23 -> kein Fehler, weil glattes Ergebnis
+
+Weitere Infos:
+https://www.mikrocontroller.net/articles/AVR-Tutorial:_UART#UART_konfigurieren
+```
