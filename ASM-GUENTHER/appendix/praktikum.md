@@ -5,6 +5,7 @@ Praktikum hardwarenahe Programmierung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Praktikum hardwarenahe Programmierung](#praktikum-hardwarenahe-programmierung)
 - [AVR ATmega 8515L](#avr-atmega-8515l)
 - [Direktiven und Kommandos](#direktiven-und-kommandos)
 - [Programmieren mit AVR Studio](#programmieren-mit-avr-studio)
@@ -461,10 +462,11 @@ ret ;4T
   - Frequenzgenerator / -messer
 - 8515 hat einen 8-Bit- und einen 16-Bit-Timer (``TCNT0`` und ``TCNT1``)
 - können aufwärts oder abwärts gezählt werden
-- ``OCR0`` / ``OCR1`` sind Vergleichswerte, bei dem der Timer genullt wird (ggf. mit Interrupt)
-- aktiviert mit Timer/Counter Interrupt Mask Register (TIMSK)
+- ``OCR0`` / ``OCR1`` sind Vergleichswerte, nach dem der Timer genullt wird (ggf. mit Interrupt)
+- Pin ``B0`` ist mit ``OC0`` verknüpft<!--Grimm: "spezieller Spezialpin"-->
+- aktiviert mit Timer/Counter Interrupt Mask Register (``TIMSK``)
 - Konfiguration mittels Timer/Counter Control Register (``TCCRx``) $\rightarrow$ Einstellen der Arbeitsmodi
-- 4 Arbeitsmodi:
+- 4 Arbeitsmodi:<!--TODO: Tabelle-->
   - normal: ``WGM01:0`` = 0
     - zählt immer aufwärts
     - nach ``0xFF`` kommt ``0x00`` und Overflow Flag wird gesetzt
@@ -476,14 +478,28 @@ ret ;4T
   - 2 Modi für Pulsweitenmodulation:
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
-    - ``OC0`` wird bei CTC getogglet (siehe Datenblatt)
-- Timer Interrupt Flag Register (TIFR):
+  - ``OC0`` (also ggf. Pin ``B0``) wird bei CTC getogglet (siehe Datenblatt)
+    - Verhalten gesteuer via ``COM01:0``
+- Timer Interrupt Flag Register (``TIFR``):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
 - Prescaler<!--Im Datenblatt heißt es Prescaler, es steht auf den Folien wahrsch. falsch-->: Register, um im voraus Takt zu teilen
   - zählt langsamer bzw. hält länger ohne Überlauf
 
 ![Prescaler](./assets/8515_prescaler.jpg)<!--width=600px-->
+
+aktivieren, Stack, I-Bit, IVT, ISR
+
+**Overflow:**
+
+- ``TCNT0`` wird je nach Prescaler hochgezählt und wird mit Differenz zum Wunsch initialisiert
+- Interrupt wird bei Nullsetzung ausgelöst $\rightarrow$ um einen Prescaler verzögert
+
+**Compare Match:**
+
+- ``OCR0`` enthält Vergleichswert
+  - muss um 1 niedriger sein, da um einen Takt verzögert
+  - ``TCNT0`` wird nach nach Gleichheit + ZZ
 
 # Programmspeicher
 
