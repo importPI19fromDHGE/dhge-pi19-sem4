@@ -839,13 +839,13 @@ Anwendungsgebiet:
   - **Selective Broadcast**
     - Event-Handler, Subsystem 1, 2, 3
     - Events werden von einem System geraised und vom Event-Handler behandelt
-   - **Interrupt**
+  - **Interrupt**
     - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
     - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
-<!-- hier geparkt, gehört woanders hin 
+<!-- hier geparkt, gehört woanders hin
 **Warum Command?**
 
 1. verschiedene Anfragen können parametrisiert werden
@@ -873,9 +873,10 @@ Anwendungsgebiet:
 #### Die Mindest-Architektur auf einen konkreten Fall anwenden
 
 **Drei-Schichten**
+
 - GUI
 - Fachkonzeptsicht (Logik)
-- Datenhaltungschicht 
+- Datenhaltungschicht
 
 - konkreter Fall: individuelles ToDo
 
