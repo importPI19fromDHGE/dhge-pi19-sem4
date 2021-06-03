@@ -686,35 +686,122 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 ### Entwicklungskonzepte
 
-#### Hauptaufgaben des Systeme-Entwurfs benennen
+#### Hauptaufgaben des System-Entwurfs benennen
 
-- ToDo
+<!-- Bitte Antwort überprüfen, unklar ob passend-->
+<!-- SWE/Readme.md Z. 101-->
 
-#### Themen für zu treffende Grundsatzentscheidungen beim System-Entwurf benennen
+- Zerlegung, Strukturierung; Komponenten in Beziehungen bringen (Voraussetzung: Anforderungen sind benannt)
 
-- ToDo
+#### Themen für zu treffende Grundsatzentscheidungen beim System-Entwurf benennen (Graue Frage?)
+
+<!-- SWE/Readme.md Z. 440-->
+
+- Welche zusätzlichen Dienstleistungen werde ich anbieten?
+- Welche Dienstleistungen können wegfallen?
+- Systemumgebung
+- Ausbaustufen gewünscht
+- Hilfesystem
+  - schmale Schnittstelle zum Hilfesystem (XML, JSON, CSV, PDF, MD, ...)
+- Verteilung im Netz (Client-Server, Web-Architektur)
+- Oberfläche zum Benutzer (UI)
+  - GUI, Kommandozeile, beides?
+  - UX - Paradigmen
+  - UI-Builder-Tools
 
 #### den Ablauf (Gliederung) des Entwurf-Prozesses darstellen
 
-- ToDo
+<!-- SWE/Readme.md Z. 125-->
+
+- (1) Zunächst wird die Architektur entworfen
+- (2) Die Architektur wird in Subsysteme untergliedert
+- (3) Die Schnittstellen der Subsysteme werden bestimmt
+- (4) Die Subsysteme werden in Komponenten unterteilt
+- (5) Die Datenstrukturen und (6) Algorithmen werden definiert
 
 #### den Begriff einer Komponente vom Subsystem unterscheiden
 
-- ToDo
+<!-- SWE/Readme.md Z. 103-->
+
+- **Subsystem:** abgeschlossene, eigenständig funktionsfähige Einheit; definiert Schnittstellen; besteht wieder aus Komponenten
+- **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ mehrere Klassen/Module)
+  - benutzt andere Komponenten
+  - wird von anderen Komponenten benutzt
+  - besteht aus Unterkomponenten
 
 #### Kriterien für einen guten System-Entwurf nennen und am Beispiel nach dessen Erfüllungsgraden suchen und diese quantifizieren
 
-- ToDo
+<!--  SWE/Readme.md Z. 182 -->
+
+- **(1.) Verständlichkeit und Präzision**
+  - dem Leser "muss ein Licht aufgehen"
+  - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
+- **(2.) Anpassbarkeit/Erweiterbarkeit**
+  - Trennung in Module
+  - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
+- **(3.) Korrektheit**
+  - Sind die Anforderungen erfüllt?
+  - Existieren alle Funktionen des System-Modells?
+  - Checkliste, ...
+- **(4.) hohe Kohäsion**
+  - Maß für Zusammengehörigkeit
+  - Früher: ähnliche Funktionen zusammenfassen
+  - Heute: Objekt-Orientierung
+    - Paketbildung
+    - geeignete Muster (später)
+    - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
+- **(5.) Schwache Kopplung**
+  - Maß für die Abhängigkeit zwischen Komponenten
+  - Arten der Kopplungen:
+    - (1.) Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
+    - (2.) Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
+    - (3.) Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
+  - $\rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
+  - Änderungen wirken nur lokal
+  - Performance kann jedoch darunter leiden
+  - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
+- **(6.) Wiederverwendbarkeit**
+  - Maß für Ausnutzung von Gemeinsamkeiten
+  - Verringerung der Redundanz
+  - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
+  - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
 #### Prinzip der Software-Architektur-Sichten erläutern und motivieren
 
+<!--  SWE/Readme.md Z. 219 -->
+
+**Entwurf für die richtige Zielperson gestalten**
+
+- Strukturelle Sicht $\rightarrow$ Blick vom Entwickler
+  - Softwaremodule, Bibliotheken, Schnittstellen
+- Physische Sicht $\rightarrow$ Service-Mitarbeiter
+  - PCs, Netze, Eingebettete Systeme
+- Ablauf-Sicht $\rightarrow$ Integrator
+  - Prozesse, Threads, Synchronisation
+- Logische Sicht $\rightarrow$ Benutzer
+
+> Grob-Entwurf: Strukturelle Sicht, mit teilen der physischen Sicht
+> Fein-Entwurf: Rest der physischen Sicht, Ablauf-Sicht und logische Sicht
+
+#### Qualitätssicherungs-Prinzipien für einen Architektur-Entwurf benennen und motivieren (Graue Frage?)
+
 - ToDo
 
-#### Qualitätssicherungs-Prinzipien für einen Architektur-Entwurf benennen und motivieren
+#### Metriken für modulare Entwürfe nennen und ein geeignetes Anwendungsgebiet benennen (Graue Frage?)
 
-- ToDo
+<!--  SWE/Readme.md Z. 507 -->
 
-#### Metriken für modulare Entwürfe nennen und ein geeignetes Anwendungsgebiet benennen
+**Fan-IN / FAN-OUT Metrik**
+
+- **Fan-IN**: Anzahl an Stellen, wo der Kontrollfluss in das Modul hineingeht
+  - Anzahl an globalen Variablen aus dem Modul
+- **FAN-OUT**: Anzahl der Stellen, wo das Modul andere Module aufruft
+  - Anzahl an globalen Variablen, die dieses Modul ändern
+- hoher Fan-OUT $\Rightarrow$ hohe Kopplung
+- hoher FAN-IN $\Rightarrow$ schwache Kohäsion
+- **Ziel**: FAN-OUT $\downarrow$, FAN-IN $\downarrow$
+
+Anwendungsgebiet:
 
 - ToDo
 
