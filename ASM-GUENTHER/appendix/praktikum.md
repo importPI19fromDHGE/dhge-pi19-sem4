@@ -555,4 +555,27 @@ data:
   - MC-Takt wird durch 2, 8 oder 16 geteilt
   - Beispiel asynchron: $\text{UBRR} = \frac{\text{MC-Takt}}{16 * \text{Zielbaudrate}} - 1$
 
-<!--ab hier hatte ich Filmriss-->
+Hilfe zur Berechnung:
+
+```txt
+(Frequenz des Mikrokontrollers / (Teiler * Zielbaudrate)) - 1 = UBBR
+
+Teiler:  16 ->  async. Mode
+  8 ->  double speed async. Mode
+  2 ->  syncrone Mode
+
+Beispiel: async. Mode, Zielbaudrate 9600 Baud
+
+MC-Takt = 1 MHz
+(1 000 000 / (16 * 9600) ) - 1  = 5,51   -> UBBR = 6
+
+1 000 000 / ((6+1) *16) = reale Baudrate = 8928 Baud
+
+((real / gewünscht) - 1 ) * 100 = Fehler in % = -7 % -> Fehler zu groß für sichere Funktion
+
+MC-Takt = 3,6864 MHz
+3 686 400 / (16 * 9600) -1 = 23 -> kein Fehler, weil glattes Ergebnis
+
+Weitere Infos:
+https://www.mikrocontroller.net/articles/AVR-Tutorial:_UART#UART_konfigurieren
+```
