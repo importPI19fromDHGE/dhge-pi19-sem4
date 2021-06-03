@@ -1023,6 +1023,7 @@ null
 ```csv
 27. Mai 2021
 27, Mai 2021
+27, Mai 2021
 ```
 
 - $\uparrow$ trennt das Komma die Datensätze oder gehört es zu einem Datensatz?
