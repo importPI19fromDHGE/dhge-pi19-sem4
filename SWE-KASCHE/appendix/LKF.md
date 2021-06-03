@@ -679,35 +679,122 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 ### Entwicklungskonzepte
 
-#### Hauptaufgaben des Systeme-Entwurfs benennen
+#### Hauptaufgaben des System-Entwurfs benennen
 
-- ToDo
+<!-- Bitte Antwort überprüfen, unklar ob passend-->
+<!-- SWE/Readme.md Z. 101-->
 
-#### Themen für zu treffende Grundsatzentscheidungen beim System-Entwurf benennen
+- Zerlegung, Strukturierung; Komponenten in Beziehungen bringen (Voraussetzung: Anforderungen sind benannt)
 
-- ToDo
+#### Themen für zu treffende Grundsatzentscheidungen beim System-Entwurf benennen (Graue Frage?)
+
+<!-- SWE/Readme.md Z. 440-->
+
+- Welche zusätzlichen Dienstleistungen werde ich anbieten?
+- Welche Dienstleistungen können wegfallen?
+- Systemumgebung
+- Ausbaustufen gewünscht
+- Hilfesystem
+  - schmale Schnittstelle zum Hilfesystem (XML, JSON, CSV, PDF, MD, ...)
+- Verteilung im Netz (Client-Server, Web-Architektur)
+- Oberfläche zum Benutzer (UI)
+  - GUI, Kommandozeile, beides?
+  - UX - Paradigmen
+  - UI-Builder-Tools
 
 #### den Ablauf (Gliederung) des Entwurf-Prozesses darstellen
 
-- ToDo
+<!-- SWE/Readme.md Z. 125-->
+
+- (1) Zunächst wird die Architektur entworfen
+- (2) Die Architektur wird in Subsysteme untergliedert
+- (3) Die Schnittstellen der Subsysteme werden bestimmt
+- (4) Die Subsysteme werden in Komponenten unterteilt
+- (5) Die Datenstrukturen und (6) Algorithmen werden definiert
 
 #### den Begriff einer Komponente vom Subsystem unterscheiden
 
-- ToDo
+<!-- SWE/Readme.md Z. 103-->
+
+- **Subsystem:** abgeschlossene, eigenständig funktionsfähige Einheit; definiert Schnittstellen; besteht wieder aus Komponenten
+- **Komponenten:** Bausteine für Software-System (Pakete $\rightarrow$ mehrere Klassen/Module)
+  - benutzt andere Komponenten
+  - wird von anderen Komponenten benutzt
+  - besteht aus Unterkomponenten
 
 #### Kriterien für einen guten System-Entwurf nennen und am Beispiel nach dessen Erfüllungsgraden suchen und diese quantifizieren
 
-- ToDo
+<!--  SWE/Readme.md Z. 182 -->
+
+- **(1.) Verständlichkeit und Präzision**
+  - dem Leser "muss ein Licht aufgehen"
+  - kann durch einen Review-Prozess gewährleistet werden (2. Namen draufschreiben)
+- **(2.) Anpassbarkeit/Erweiterbarkeit**
+  - Trennung in Module
+  - elektronische Variante (auf Papier zwar auch möglich aber generell weniger empfehlenswert)
+- **(3.) Korrektheit**
+  - Sind die Anforderungen erfüllt?
+  - Existieren alle Funktionen des System-Modells?
+  - Checkliste, ...
+- **(4.) hohe Kohäsion**
+  - Maß für Zusammengehörigkeit
+  - Früher: ähnliche Funktionen zusammenfassen
+  - Heute: Objekt-Orientierung
+    - Paketbildung
+    - geeignete Muster (später)
+    - kohärente Klassen (es existiert keine Partitionierung in Untergruppen von Attributen bzw. Methoden)
+- **(5.) Schwache Kopplung**
+  - Maß für die Abhängigkeit zwischen Komponenten
+  - Arten der Kopplungen:
+    - (1.) Daten-Kopplung (gemeinsame Daten) ($\rightarrow$ Microservices, Objektorientierte Kapselung)
+    - (2.) Schnittstellen-Kopplung (gemeinsame Aufrufe) ($\rightarrow$ OK wegen höherer Flexibilität)
+    - (3.) Struktur-Kopplung (gemeinsame Strukturelemente) ($\rightarrow$ keine Vererbung über Paketgrenzen hinweg)
+  - $\rightarrow$ möglichst gering, weil dadurch die Wartbarkeit und Stabilität erhöht wird
+  - Änderungen wirken nur lokal
+  - Performance kann jedoch darunter leiden
+  - `private`, `public` $\Rightarrow$ `getter`/`setter` $\rightarrow$ als Maß für die Kapselung
+- **(6.) Wiederverwendbarkeit**
+  - Maß für Ausnutzung von Gemeinsamkeiten
+  - Verringerung der Redundanz
+  - Erhöhung der Stabilität (Fehler existieren nur an einer Stelle)
+  - Hilfsmittel: IDEs warnen, OOP $\rightarrow$ Vererbung, Parametrisierung (Prozedurale Programmierung), Module/Objekte mit allgemeiner Schnittstelle
 
 #### Prinzip der Software-Architektur-Sichten erläutern und motivieren
 
+<!--  SWE/Readme.md Z. 219 -->
+
+**Entwurf für die richtige Zielperson gestalten**
+
+- Strukturelle Sicht $\rightarrow$ Blick vom Entwickler
+  - Softwaremodule, Bibliotheken, Schnittstellen
+- Physische Sicht $\rightarrow$ Service-Mitarbeiter
+  - PCs, Netze, Eingebettete Systeme
+- Ablauf-Sicht $\rightarrow$ Integrator
+  - Prozesse, Threads, Synchronisation
+- Logische Sicht $\rightarrow$ Benutzer
+
+> Grob-Entwurf: Strukturelle Sicht, mit teilen der physischen Sicht
+> Fein-Entwurf: Rest der physischen Sicht, Ablauf-Sicht und logische Sicht
+
+#### Qualitätssicherungs-Prinzipien für einen Architektur-Entwurf benennen und motivieren (Graue Frage?)
+
 - ToDo
 
-#### Qualitätssicherungs-Prinzipien für einen Architektur-Entwurf benennen und motivieren
+#### Metriken für modulare Entwürfe nennen und ein geeignetes Anwendungsgebiet benennen (Graue Frage?)
 
-- ToDo
+<!--  SWE/Readme.md Z. 507 -->
 
-#### Metriken für modulare Entwürfe nennen und ein geeignetes Anwendungsgebiet benennen
+**Fan-IN / FAN-OUT Metrik**
+
+- **Fan-IN**: Anzahl an Stellen, wo der Kontrollfluss in das Modul hineingeht
+  - Anzahl an globalen Variablen aus dem Modul
+- **FAN-OUT**: Anzahl der Stellen, wo das Modul andere Module aufruft
+  - Anzahl an globalen Variablen, die dieses Modul ändern
+- hoher Fan-OUT $\Rightarrow$ hohe Kopplung
+- hoher FAN-IN $\Rightarrow$ schwache Kohäsion
+- **Ziel**: FAN-OUT $\downarrow$, FAN-IN $\downarrow$
+
+Anwendungsgebiet:
 
 - ToDo
 
@@ -715,22 +802,25 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 #### Standard-Muster einer Strukturellen-Sicht einer Software-Architektur benennen
 
-- **Komposition von Klassen**
-- Proxy (Stellvertreter)
-- Adapter (Wrapper)
-- Bridge (Implementation und Schnittstelle trennen)
-- Composite (Baumstrukturen)
+- Kette
+- Repository
+- Schichten
+- Die 3-Schichten Architektur
+- Interpreter
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden
+
+<!--  SWE/Readme.md Z. 698 -->
 
 - ToDo
 
 #### Standard-Muster einer Physikalischen-Sicht einer Software-Architektur benennen
 
-- **Prozess der Erzeugung**
-- Factory
-- Builder (Erzeuger)
-- Singleton
+- zentrales System
+- Client-Server
+- (Three Tier Client/Server)
+- Verteilmuster Förderation
+- Konfigurationsdiagramm
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden1
 
@@ -738,10 +828,20 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 #### Standard-Muster einer Ablauf-Sicht einer Software-Architektur benennen
 
-- **Art und Weise wie Klassen kommunizieren und Aufgaben verteilen**
-- Command
-- Interpreter
-- Iterator
+<!--- SWE/readme.md Z. 413 --->
+
+- **Zentrale Steuerung**
+  - **Call and Return**
+    - Hauptprogramm, Unterprogramm 1, 2, 3
+  - **Master Slave**
+    - Manager, GUI, Sensor, Aktor
+- **Ereignis-Steuerung**
+  - **Selective Broadcast**
+    - Event-Handler, Subsystem 1, 2, 3
+    - Events werden von einem System geraised und vom Event-Handler behandelt
+  - **Interrupt**
+    - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
+    - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
@@ -753,48 +853,111 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 #### Die Mindest-Architektur auf einen konkreten Fall anwenden
 
-- Drei-Schichten
-- ToDo
+**Drei-Schichten**
+
+- GUI
+- Fachkonzeptsicht (Logik)
+- Datenhaltungschicht
+
+- konkreter Fall: individuelles ToDo
+
+### OO-Entwurf
 
 #### Zweck für das Anlegen einer Sammlung mit Entwurfmustern nennen und begründen (motivieren)
 
-- ToDo
+- Muster kommen in Entwürfen immer wieder in ähnlicher Form vor
+- Wiederverwendbarkeit: Zeitgewinn
+- Bewährtes nutzen
 
 #### Aus den drei großen Entwurfsmuster-Kategorien Vertreter benennen und jeweils eines davon mit einem Beispiel veranschaulichen
 
-- ToDo
+- Erzeugende Entwurfsmuster
+  - (Abstract Factory)
+  - Builder (Erzeuger)
+  - Singleton
+- Strukturelle Muster
+  - (Stellvertreter)
+  - Adapter (Wrapper)
+  - Bridge
+  - Composite
+- Verhaltensmuster
+  - Command
+  - Interpreter
+  - Iterator
+
+- ToDo Beispiele
 
 #### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen
 
+**Architektur**
+
+- Art und Weise eine Architektur, ein Gesamtsystem umzusetzen
+- Ist in der Lage z.B. Quelltext zu interpretieren, umzuwandeln
+
+**OO-Entwurf**
+
+- Entwurfsmuster auf Programmebene: Klasse
+- Interpretation einer definierten Grammatik, Syntax und Semantik
 - ToDo
 
 #### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann
 
 - ToDo
 
-#### Diese 4 Säulen benennen und kann eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
+#### Diese 4 Säulen benennen und eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
 
-- ToDo
+- Kompetenz der Entwickler
+- Prozess (Sys-Anwendung) : MMM (Mensch, Maschine, Methode)
+- Tooling, Wiederverwendung (System-Entwurf)
+- Automatisierung
+
+- Code-Generator: Tooling + Automatisierung
 
 #### Für jede dieser Säulenpaare (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) eine Maßnahme benennen, idealerweise sogar eine Maßnahme, die alle 4 Säulen verbessert
 
-- ToDo
+- ToDo: Zuordnung prüfen
+
+1. DevOps Ideen (1-2-3-4)
+2. Dokumentations-Generatoren (2-3-4)
+3. Code-Generatoren $\rightarrow$ Galerenarbeit (generiert aus abstrakter Beschreibung) (3-4)
+4. Template-Funktionen ($\rightarrow$ `Stack<Kogel>` (ein Stack vom Typ Kogel)) (1-3)
+5. Round-Trip-Engineering (2?-3-4)
+  - Änderungen im Klassendiagramm $\rightarrow$ Änderungen im Code
+  - Änderungen im Code $\rightarrow$ Änderungen im Klassendiagramm
+6. Model-Driven-Architecture (MDA) (1?-2-3-4)
+  - Modell entwickeln (z.B. in UML)
+  - Generator $\rightarrow$ Quelltext erstellen
+  - Design wird in Platform Independant Model (PIM) überführt
+  - PIM wird in Platform Specific Model (PSM) überführt
+  - wenn beim PSM etwas nicht passt $\rightarrow$ einen Schritt zurückführen (Reengineering)
+  - PSM führt dann schließlich zur Code-Generierung
 
 #### Den Unterschied zwischen der Prüfung einer XML-Datei auf Wohlgeformtheit und Validität an inhaltsbasierten XML-Dateien erklären
 
-- ToDo
+- wenn die physische Struktur aka. die Syntax korrekt ist $\rightarrow$ *wohlgeformtes XML*
+- wenn die logische Stuktur korrekt ist $\rightarrow$ *valides XML*
 
 #### Alle Objekt-Typen aufzählen, die in einer JSON-Datei stehen können
 
-- ToDo
+```json
+Objekt { }
+Array [ ]
+String
+Zahl
+Bool
+null
+```
 
 #### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde
 
 und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme
 die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
 
+- XML: (komfortable) Auszeichnungssprache
+- JSON: (einfache, komfortables) Datenaustauschformat
+- CSV: Separierte Werte
 - ToDo
 
 #### Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen
 
-- ToDo
+- nicht behandelt?
