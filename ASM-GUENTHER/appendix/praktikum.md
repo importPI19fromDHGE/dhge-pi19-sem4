@@ -478,7 +478,7 @@ ret ;4T
     - Generierung spezieller Signalformen oder Takte
     - Motorsteuerung; DAC
   - ``OC0`` (also ggf. Pin ``B0``) wird bei CTC getogglet (siehe Datenblatt)
-    - Verhalten gesteuer via ``COM01:0``
+    - Verhalten gesteuert via ``COM01:0``
 - Timer Interrupt Flag Register (``TIFR``):
   - Bit 1: Timer Overflow
   - Bit 0: Output Compare (Match) Flag; wird gesetzt, wenn ``OCR0`` = ``TCNT0``
@@ -561,7 +561,7 @@ Hilfe zur Berechnung:
 
 Teiler:  16 ->  async. Mode
   8 ->  double speed async. Mode
-  2 ->  syncrone Mode
+  2 ->  synchronous Mode
 
 Beispiel: async. Mode, Zielbaudrate 9600 Baud
 
