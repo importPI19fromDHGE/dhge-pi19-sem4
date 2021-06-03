@@ -335,7 +335,7 @@ E**X**TREME
 
 #### Mindestens eine übernehmenswerte Technik aus dem XP für andere Vorgehensweisen
 
-- Entscheidung zu fällen, was am Besten sei, schwierig ( war auch nicht gefragt)
+- Entscheidung zu fällen, was am Besten sei, schwierig (war auch nicht gefragt)
 - Individuell lernen
 
 Alle?
@@ -446,7 +446,7 @@ Einschränkungen:
 
 #### Sagen, warum DOR und DOD verwendet werden sollten
 
-- Klar festlegen wann Aufgabe / Story Ready $\Rightarrow$ Doing und Doing $\Rightarrow$ Done geschoben werden kann
+- Klar festlegen wann Aufgabe / Story Ready $\rightarrow$ Doing und Doing $\rightarrow$ Done geschoben werden kann
 - z.B. Scrum: Wann ist User-Story bereit zur Bearbeitung; Wann ist die fertiggestellt?
 - Überblick über Fortschritt einer Aufgabe
 
@@ -482,9 +482,9 @@ gegenüber dem Klammern an alten Strukturen.
 
 #### (Ich kann) ein Kanban-Board für eine Aufgabe erstellen und die Bedeutung eines Kanban-Boardes für die SW-Entwicklung sowie für Bereiche außerhalb der Informatik kennen
 
-- Atomare Aufgaben auf Karten (phsyisch) oder digital (trello)
+- Atomare Aufgaben auf Karten (physisch) oder digital (trello)
 - zeitlich unbegrenzter Durchlauf: **Fortschritt des gesamten Projekts (auf einen Blick) einsehbar**
-- Priorität sichtbar: oben nach unten; von hoch bis niedrig.
+- Priorität sichtbar: oben nach unten, von hoch bis niedrig
 - maximal 2 Aufgaben / Mitarbeiter im Doing
 - Anfangen, bevor alle ToDos klar sind / Neue können dazukommen
 
@@ -507,8 +507,8 @@ Beispiele außerhalb der IT:
 - Lt. Kasche: Aus User-Sicht
 - Kopfzeile: Einteilung in Blöcke, darunter detaillierter werden, Features beschreiben
 - Priorisierung von oben nach unten
-- MVP bilden
-- Dem Nutzer zeigen / mit ihm erstellen $\Rightarrow$ gewünschte Priorisierung wird klar
+- MVPs bilden
+- Dem Nutzer zeigen / mit ihm erstellen $\rightarrow$ gewünschte Priorisierung wird klar
 
 ### Aufwandsschätzungen
 
@@ -516,7 +516,7 @@ Beispiele außerhalb der IT:
 
 - Schätzmethode für fundierte, grobe Schätzung unter Einbezug des (meist agilen) Teams
 - keine direkte Zeit+Geld Aussagen kommen als Ergebnis heraus!
-- Spaßfaktor $\Rightarrow$ Teamgeist
+- Spaßfaktor $\rightarrow$ Teamgeist
 - Basis des Planning-Poker: Karten mit Story-Points (quasi Aufwand)
 - Kartenwert von unten aus meist Fibonacci, höher dann gröbere Schritte
   - 0: Aufgabe ist quasi schon erledigt
@@ -525,7 +525,7 @@ Beispiele außerhalb der IT:
   - 8-20: mittel
   - 40-100: XL
   - Kartenwert kann mit Fragezeichen versehen werden $\rightarrow$ man ist unsicher, was den Aufwand angeht
-  **P**ausen-Karte (manchmal mit Kaffeetasse dargestellt): triviale Aufgabe oder: "Ich brauche eine Pause"
+  **P**ausen-Karte (manchmal mit Kaffeetasse dargestellt): triviale Aufgabe oder: *"Ich brauche eine Pause"*
 
 **Ablauf**
 
@@ -543,7 +543,7 @@ Vorteile:
 - Fragen können direkt geklärt werden, alle sind vor Ort
 - keine $\alpha$-Tier-Meinungen in der Schätzung
 - keine Autoritäts-Meinungen dabei (muss auch so umgesetzt werden!)
-- alle sind mit im Boot $\Rightarrow$ Engagement
+- alle sind mit im Boot $\rightarrow$ Engagement
 - nur Debatten bei unterschiedlichen Meinungen (effizient)
 - alle haben eine Stimme
 - Teams sind besser als einzelne Experten (i.d.R.)
@@ -577,8 +577,8 @@ Nachteile:
 
 - Inhalt
 - Qualität
-- $\frac{1}{Kosten}$
-- $\frac{1}{Zeit}$
+- $\frac{1}{\text{Kosten}}$
+- $\frac{1}{\text{Zeit}}$
 
 **Argumentation**
 
@@ -601,16 +601,16 @@ Nachteile:
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
-| Kategorie                           | Delphi                                      | SCRUM                                       |
-| ---------------------------------- | ----------------------------------------------------------------------------------------- |
-| Teilnehmer                         | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
-| Anzahl Runden                      | quasi beliebig                              | maximal 2                                   |
-| Aufwand                            | (sehr) hoch, aber nicht fürs Team! (extern) | hoch, dafür teambildend                     |
-| geeignete Teamgröße der Projekte   | für kleine Teams nicht sinvoll              | für (sehr) große Teams ungeeignet           |
-|                                    | nach oben open End                          |                                             |
-| Konsenzfindung                     | Diskussion über Ausreiser                   | Diskussion über Ausreiser                   |
-| Kosten                             | zusätzlich                                  | Personalkosten                              |
-| Sichtbarkeit von Schätzfehlern     | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
+| Kategorie                        | Delphi                                      | SCRUM                                       |
+|----------------------------------| --------------------------------------------|---------------------------------------------|
+| Teilnehmer                       | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
+| Anzahl Runden                    | quasi beliebig                              | maximal 2                                   |
+| Aufwand                          | (sehr) hoch, aber nicht fürs Team! (extern) | hoch, dafür teambildend                     |
+| geeignete Teamgröße der Projekte | für kleine Teams nicht sinvoll              | für (sehr) große Teams ungeeignet           |
+|                                  | nach oben Open-End                          |                                             |
+| Konsenzfindung                   | Diskussion über Ausreiser                   | Diskussion über Ausreiser                   |
+| Kosten                           | zusätzlich                                  | Personalkosten                              |
+| Sichtbarkeit von Schätzfehlern   | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
 
 - ToDo
 
@@ -622,54 +622,47 @@ Nachteile:
 
 **COCOMO**
 
-"Constructive-Cost-Method"
-
-Lines-of-Code $=l$
-
-Mann-Monate $=MM$
-
-Entwicklungszeit $=t$
-
-Aufwandsanalyse $=t_{AA}$
-
-$t_{SW}=A(B\cdot (\frac{l}{1000})^{1+C})^{D}+t_{Aufwandanalyse}$
-mit $A,B > 2, 0 < C,D < 1$
-z.B.
-$t_{easySW}=2.5(2.4\cdot (\frac{l}{1000})^{1.05})^{0.38}+t_{AA}$
-für einfache, mittlere, komplexe SW-Projekte
-weitere Präzisierung möglich
+- "Constructive-Cost-Method"
+- Lines-of-Code $=l$
+- Mann-Monate $=MM$
+- Entwicklungszeit $=t$
+- Aufwandsanalyse $=t_{AA}$
+- $t_{SW}=A(B\cdot (\frac{l}{1000})^{1+C})^{D}+t_{\text{Aufwandanalyse}}$
+  - mit $A,B > 2, 0 < C,D < 1$
+  - z.B. $t_{easySW}=2.5(2.4\cdot (\frac{l}{1000})^{1.05})^{0.38}+t_{AA}$
+- für einfache, mittlere, komplexe SW-Projekte weitere Präzisierung möglich
 
 **Function-Point-Methode**
 
-- anstatt Codezeilen zu schätzen $\Rightarrow$ Evaluierung von Eingangsgrößen von Funktionen
+- anstatt Codezeilen zu schätzen $\rightarrow$ Evaluierung von Eingangsgrößen von Funktionen
 - somit entsteht ein relatives Maß zur Bewertung von Funktionen $\rightarrow$ `function-points`
 - *wenn* Kosten pro Funktion Point bekannt, dann ist eine Kostenschätzung möglich
 
 Vorgehen:
 
 - Zähle logische Transaktionen einer Funktion: Eingabe, Ausgabe, Anfrangen, Schnittstelle extern, Datenbankanfrage intern
-- FP_roh ermitteln
-  - Werte gewichtet: S, M, L
-  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert S, M, L fest
+- $FP_{roh}$ ermitteln
+  - Werte gewichtet: $S, M, L$
+  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert $S, M, L$ fest
   - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu
 
-$Function Points = FP_{Roh}* Korrekturfaktoren$
+$\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 - Bis zu 14 Einflussfaktoren als Korrekturfaktoren
 
 - Beispiel Faustregel von Jones:
   - $MM=FP^{0.4}=\sqrt[5]{FP^2}\hat{=}t$
-  - $Anzahl_{MA}=\frac{FP}{150}$
+  - $\text{Anzahl}_{MA}=\frac{FP}{150}$
 
 #### Schwachstellen des CoCoMo bzw. Function-Point-Methode darlegen
 
 **allgemein**
 
-- Starr, trocken, kein Teamgeist, keine Kommunikation
+- starr, trocken, kein Teamgeist, keine Kommunikation
 - Eingangsvariablen **müssen** zutreffend geschätzt werden
-- ohne Maßzahlen von alten projekten **keine** zuverlässigen Aussage
+- ohne Maßzahlen von alten Projekten **keine** zuverlässigen Aussage
   - Sie beziehen sich dadurch immer nur auf gleiche und ähnliche Teams
-  - mit gleichen und ähnlichen Projekten.
+  - mit gleichen und ähnlichen Projekten
   - Selbst noch nie sowas gemacht? Damit nicht zuverlässig schätzbar!
 - Reaktion auf neue Anforderungen: nicht möglich
 
@@ -679,7 +672,7 @@ $Function Points = FP_{Roh}* Korrekturfaktoren$
 
 **FP-Methode**
 
-- präziser Entwurf nötig, Datenelemente, Transaktionen etc $\Rightarrow$ ändert sich oft während Entwicklung
+- präziser Entwurf nötig $\rightarrow$ Datenelemente, Transaktionen usw. ändern sich oft während Entwicklung
 - Kosten pro Function Point muss bekannt sein
 
 ## System-Entwurf
