@@ -845,26 +845,7 @@ Anwendungsgebiet:
 
 #### Vor- und Nachteile jedes Musters darstellen und anwenden2
 
-<!-- hier geparkt, gehört woanders hin
-**Warum Command?**
-
-1. verschiedene Anfragen können parametrisiert werden
-2. Undo wird möglich
-3. Ergebnis kann dem Objekt zugeordnet werden (Logbuch)
-- Erstellung und Ausführung der Kommandos voneinander getrennt
-
-**Warum Interpreter?**
-
 - ToDo
-
-**Warum Iteratoren?**
-
-- es kann auf ein Element zugegriffen werden ohne, dass die interne Struktur offengelegt werden muss
-- es kann auf verschiedene Arten traversiert werden
-- es kann auf verschiedene Arten traversiert werden, ohne die Datencontainerklasse ändern zu müssen
-- es kann über eine einheitliche Schnittstelle traversiert werden
-- einer Datencontainerklasse können mehrere Iteratoren zugeordnet werden
---->
 
 #### vorgegebene Muster wiedererkennen und verbessern (Schwachstellen benennen)
 
