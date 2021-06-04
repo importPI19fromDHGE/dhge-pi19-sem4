@@ -826,14 +826,14 @@ Anwendungsgebiet:
 
 - ToDo
 
-**Zum Zentralen System**
+**Zum zentralen System**
 
 - keine Intelligenz bei Terminals
 - Terminal 1, Terminal 2, Terminal 3 ... Terminal N $\rightarrow$ greifen alle auf das zentrale System zu
-- typische Vor-und- Nachteile eines zentralen Systems
-- gemeinsamer Datenbestand = einfach einzurichten
-- Last kann System in die Knie zwingen
-- gemeinsame Nutzung von gleicher Ressource: Kollision muss behandelt oder vermieden werden, v.a. bei Datenbeständen!
+- typische Vor- und Nachteile eines zentralen Systems
+  - gemeinsamer Datenbestand = einfach einzurichten
+  - Last kann System in die Knie zwingen
+  - gemeinsame Nutzung gleicher Ressourcen: Kollision muss behandelt oder vermieden werden, v.a. bei Datenbeständen!
 
 **Zum Client-Server**
 
