@@ -237,7 +237,7 @@ reti
 
 ## externe Interrupts
 
-![Interrupts](8515_interrupts.jpg)<!--width=600px-->
+![Interrupts](./assets/8515_interrupts.jpg)<!--width=600px-->
 
 - ``RESET`` ist Low-aktiv
 - General Interrupt Flag Register (``GIFR``): gesetzt bei entsprechendem Ereignis
