@@ -321,7 +321,7 @@ $\rightarrow$ Abschätzung der Effizienz
 
 - klassischer Großrechner
 - keine Intelligenz bei Terminals
-- Terminal 1, Terminal 2, Terminal 3 ... Termanal N $\rightarrow$ greifen alle auf das zentrale System zu
+- Terminal 1, Terminal 2, Terminal 3 ... Terminal N $\rightarrow$ greifen alle auf das zentrale System zu
 
 **Zum Client-Server**
 
