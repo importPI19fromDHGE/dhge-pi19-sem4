@@ -226,7 +226,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 #### Der Entwicklungsablauf beim Spiralen-Modell
 
 | Zyklus | Phase 1                                | Phase 2                            | Phase 3                                 | Phase 4          |
-|--------|----------------------------------------|------------------------------------|-----------------------------------------|------------------|
+| ------ | -------------------------------------- | ---------------------------------- | --------------------------------------- | ---------------- |
 | 1      | Planung                                | Risiko, Prototyp 1                 | Anforderungen                           | Entwicklungsplan |
 | 2      | Ziele, Alternativen, Rahmenbedingungen | Risiko, Prototyp 2                 | Grob-Entwurf                            | Testplan         |
 | 3      | Ziele, Alternativen, Rahmenbedingungen | Risiko, Prototyp 3 (betriebsfähig) | Fein-Entwurf, Code, Integrieren, Testen | ...              |
@@ -602,7 +602,7 @@ Nachteile:
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
 | Kategorie                        | Delphi                                      | SCRUM                                       |
-|----------------------------------| --------------------------------------------|---------------------------------------------|
+| -------------------------------- | ------------------------------------------- | ------------------------------------------- |
 | Teilnehmer                       | mehrere unabhängige Experten                | Team, Product Owner, Scrum Master           |
 | Anzahl Runden                    | quasi beliebig                              | maximal 2                                   |
 | Aufwand                          | (sehr) hoch, aber nicht fürs Team! (extern) | hoch, dafür teambildend                     |
@@ -778,7 +778,10 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 #### Qualitätssicherungs-Prinzipien für einen Architektur-Entwurf benennen und motivieren (Graue Frage?)
 
-- ToDo
+- Checklisten (Randbedingungen, Grundsatzentscheidungen)
+- geeigneter Entwicklungsprozess (z.Bsp. Peer-Review etc.)
+- Zielperson definieren (für wen wird der Entwurf angefertigt)
+- Szenarien (ist der gewünschte Ablauf mit dieser Architektur zufriedenstellend realisierbar?)
 
 #### Metriken für modulare Entwürfe nennen und ein geeignetes Anwendungsgebiet benennen (Graue Frage?)
 
@@ -796,7 +799,7 @@ $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
 
 Anwendungsgebiet:
 
-- ToDo
+- Bewertung eines Entwurfs anhand leicht messbarer Kriterien
 
 ### Standard-Muster im Architektur-Entwurf
 
@@ -812,7 +815,36 @@ Anwendungsgebiet:
 
 <!--  SWE/Readme.md Z. 698 -->
 
-- ToDo
+**Kette**
+
+| Vorteile                                        | Nachteile                                                             |
+| ----------------------------------------------- | --------------------------------------------------------------------- |
+| Übersichtlichkeit (da Abläufe gut darstellbar)  | parallele Abläufe und deren Abhängigkeiten schlecht/nicht darstellbar |
+| Verarbeitungsprozesse als Black Box darstellbar | es werden keine Zustände dargestellt                                  |
+| geeignet für Regelsysteme                       | Zuständigkeit schlecht angebbar                                       |
+
+**Repository**
+
+| Vorteile                             | Nachteile |
+| ------------------------------------ | --------- |
+| Klienten sind unabhängig             | SPOF      |
+| Zugriffssteuerung für alle Werkzeuge |           |
+
+**Schichten**
+
+| Vorteile        | Nachteile                                                 |
+| --------------- | --------------------------------------------------------- |
+| Abstraktion     | mehr Overhead (durch Abstraktion)                         |
+| (Schachtelung?) | Kommunikation nur zwischen benachbarten Schichten möglich |
+
+**Interpreter**
+
+| Vorteile                 | Nachteile                                                                |
+| ------------------------ | ------------------------------------------------------------------------ |
+| keine Hardwarebindung    | Zusatzaufwand (Overhead) durch abstrakte Maschine                        |
+| Optimierung zur Laufzeit | beschränkte Optimierungsmöglichkeiten                                    |
+|                          | keine Hardware-Spezialisierung                                           |
+|                          | Schreibschutz von Daten nicht möglich (Ausführen setzt Schreiben voraus) |
 
 #### Standard-Muster einer Physikalischen-Sicht einer Software-Architektur benennen
 
@@ -822,9 +854,7 @@ Anwendungsgebiet:
 - Verteilmuster Förderation
 - Konfigurationsdiagramm
 
-#### Vor- und Nachteile jedes Musters darstellen und anwenden1
-
-- ToDo
+#### Vor- und Nachteile jedes (physikalischen) Musters darstellen und anwenden
 
 **Zum zentralen System**
 
@@ -838,6 +868,8 @@ Anwendungsgebiet:
 **Zum Client-Server**
 
 - viele intelligente Clients (Frontend) greifen alle auf einen Server (Backend) zu
+- Clients können bedingt Überlebensfähig sein (FAT Client)
+- hohe Infrastrukturanforderungen bei THIN-Clients
 - DoS/DDoS Angriffe
 
 **Zum Three Tier Client/Server**
@@ -873,13 +905,37 @@ Anwendungsgebiet:
     - Interrupt-Dispatcher, Handler 1, Prozess 1, Handler 2, Prozess 2
     - Bspw.: Keyboard-Handler (Lesen des ASCII-Codes, Prozess starten + Keycode Info mitgeben, Info an Dispatcher)
 
-#### Vor- und Nachteile jedes Musters darstellen und anwenden2
+#### Vor- und Nachteile jedes Musters (Ablauf-Sicht) darstellen und anwenden
 
-- ToDo
+**Call and Return**
+
+| Vorteile                                              | Nachteile                      |
+| ----------------------------------------------------- | ------------------------------ |
+| geringe Komplexität (lineare Abläufe gut darstellbar) | keine Parallelisierung möglich |
+
+**Master Slave**
+
+| Vorteile                                                 | Nachteile |
+| -------------------------------------------------------- | --------- |
+| Verhinderung von Race Conditions (durch Zentralisierung) | SPOF      |
+
+**Selective Broadcast**
+
+| Vorteile                                                          | Nachteile                                               |
+| ----------------------------------------------------------------- | ------------------------------------------------------- |
+| zentrale Stelle für Vorverarbeitung, Konfiguration, Priorisierung | EventHandler ist SPOF                                   |
+|                                                                   | in der gegebenen Ausbaustufe: keine Info über Subsystem |
+|                                                                   | Scheduling schwierig                                    |
+
+**Interrupt**
+
+| Vorteile                                                                     | Nachteile                     |
+| ---------------------------------------------------------------------------- | ----------------------------- |
+| jeder Prozess hat eigenen Handler $\rightarrow$ bessere Parallelisierbarkeit | Interrupt Dispatcher ist SPOF |
 
 #### vorgegebene Muster wiedererkennen und verbessern (Schwachstellen benennen)
 
-- ToDo
+- ja!
 
 #### Die Mindest-Architektur auf einen konkreten Fall anwenden
 
@@ -889,7 +945,7 @@ Anwendungsgebiet:
 - Fachkonzeptsicht (Logik)
 - Datenhaltungschicht
 
-- konkreter Fall: individuelles ToDo
+- konkreter Fall: individuell
 
 ### OO-Entwurf
 
@@ -903,19 +959,26 @@ Anwendungsgebiet:
 
 - Erzeugende Entwurfsmuster
   - (Abstract Factory)
+    - Bsp.: proprietäre Libraries einbinden
   - Builder (Erzeuger)
+    - Bsp.: StringBuilder (Java)
   - Singleton
+    - Bsp.: Logger
 - Strukturelle Muster
-  - (Stellvertreter)
+  - Proxy (Stellvertreter)
   - Adapter (Wrapper)
+    - Bsp.: Format-Konvertierung
   - Bridge
+    - Bsp.: Java Interfaces
   - Composite
+    - Bsp.: Hierarchien von UI-Elementen, Dateisysteme
 - Verhaltensmuster
   - Command
+    - Bsp.: Datenbank-Server-Anfrage, git, GUI + Kommandozeile
   - Interpreter
+    - Bsp.: Berechnung einer mathematischen Formel
   - Iterator
-
-- ToDo Beispiele
+    - Bsp.: Durchlaufen einer (abstrakten) Liste
 
 #### Den Unterschied zwischen dem Interpreter-Entwurfsmuster und „Interpreter“ als Architekturmuster der strukturellen Sicht benennen
 
@@ -932,7 +995,10 @@ Anwendungsgebiet:
 
 #### begründen, warum Qualitätsverbesserung in der Software-Entwicklung durch Maßnahmen aus den 4 in der Vorlesung genannten Säulen erfolgen kann
 
-- ToDo
+- kompetente Entwickler $\rightarrow$ Fehlererkennung, qualitativer und quantitativer Code
+- Prozess $\rightarrow$ reibungslose Arbeits-Abläufe
+- Tooling, Wiederverwendung $\rightarrow$ Fortsetzung eines Projekts durch andere Mitarbeiter
+- Automatisierung $\rightarrow$ höhere Effizienz, weniger Fehler
 
 #### Diese 4 Säulen benennen und eine Maßnahme beispielhaft beschreiben, die gleichzeitig zwei Säulen adressiert
 
@@ -978,10 +1044,9 @@ Bool
 null
 ```
 
-#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CVS) ich zur Speicherung verwenden würde
+#### Ich kann mich bei einer vorgegebenen Datensammlung entscheiden, welches Dateiformat (XML, JSON, CSV) ich zur Speicherung verwenden würde
 
-und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von externen Stelle solche Daten bekomme
-die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
+und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wenn ich von einer externen Stelle solche Daten bekomme die aber nicht in dem Format vorliegen, für das ich mich entschieden habe.
 
 - XML: (komfortable) Auszeichnungssprache
 - JSON: (einfache, komfortables) Datenaustauschformat
