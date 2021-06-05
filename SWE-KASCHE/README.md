@@ -964,18 +964,20 @@ Warum Iteratoren?
 - Objekte:
 
 ```json
-Objekt { }
-Array [ ]
-String
-Zahl
-Bool
-null
+{
+  "Objekt": {},
+  "Array": [],
+  "String": "abc",
+  "Zahl": 123,
+  "Boolean": true,
+  "Null": null
+}
 ```
 
 - Eigenschaft ist ein Tupel aus: Schlüssel-Namen Doppelpunkt Wert
 
 ```xml
-'Name' : 'Kogel'
+"Name" : "Kogel"
 ```
 
 - Beispiel:
