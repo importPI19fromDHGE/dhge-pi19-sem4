@@ -44,7 +44,7 @@
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.png
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.jpg
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.asm
-!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/popcnt_32bit/*.*
+!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/popcnt_32bit/**
 
 # just in case #################################################################
 !.gitignore
