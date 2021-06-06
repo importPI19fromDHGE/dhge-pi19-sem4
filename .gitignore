@@ -25,7 +25,6 @@
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.svg
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.png
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.jpg
-!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/**
 
 
 # assets folder ################################################################
@@ -44,6 +43,8 @@
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.svg
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.png
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.jpg
+!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/**/*.asm
+!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/extra/popcnt_32bit/*.*
 
 # just in case #################################################################
 !.gitignore
