@@ -92,15 +92,42 @@ LDI work, 3			;bei Eingabe Pull Up setzen, Ausgabe LED anmachen
 OUT PORTE, work
 
 ;init int2 
+
+/*Aufbau GCICR,x irrelevant
+INT1 INT0 INT2 x x x x
+Einerstelle:  Interrupt-Nummer
+Zehnerstelle: Identifier*/
+
 in work, GICR       ;durch GICR wird der Interrupt generell aktiviert
-ldi mask, 0b00100000 ;0b1 -> Interrupt 1; 0b01 -> Interrupt 0; 0b001 -> Interrupt 2
+ldi mask, 0b00100000 ; 0b1 -> Interrupt 1; 0b01 -> Interrupt 0; 0b001 -> Interrupt 2
 or work, mask  
 out GICR, work
 
+/*
+;Aufbau MCUCR  x irrelevant
+x x x x ISC11 ISC10 ISC01 ISC00
+Einerstelle:  Interrupt-Nummer
+Zehnerstelle: Identifier
+EMUCR nur niedrigstes Bit relvant
+Für Interrupt 1:
+ISC11 ISC01
+0	0	low level interrupt
+0 	1 	zwei-flankengesteuerter Interrupt
+1	0	fallende Flanke
+1 	1 	steigende Flanke
+Interrupt 2 nur flanken-aktiv 0 --> fallend
+ISC2
+*/
+
 in work, EMCUCR     ;EMCUCR bei Int2, MCUCR bei Int0+1 s. PP Folie 37+38
 ldi mask, 0b11111110
-and work, mask  
 out EMCUCR, work
+
+; Externer Interrupt 1
+;in work, MCUCR
+;in mask, (1<<ISC11|0x00) ; Interrupt 1 an fallende Flanke
+;or work, mask  
+;out mcucr, work 
 
 ; I Bit für das aktivieren von Interrupts setzen
 SEI
