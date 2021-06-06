@@ -25,6 +25,8 @@
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.svg
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.png
 !/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/*.jpg
+!/[A-Z]*[A-Z]-[A-Z]*[A-Z]/appendix/assets/**
+
 
 # assets folder ################################################################
 
