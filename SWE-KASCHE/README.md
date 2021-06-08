@@ -289,7 +289,7 @@ $\rightarrow$ Abschätzung der Effizienz
   - Mindestmaß für architektonische Strukturierung
 - **Interpreter**
   - Programm läuft auf einer abstrakten Maschine; Benutzer interagiert mit der abstrakten Maschine
-  - Interpreter parst Programm \rightarrow\rightarrow lässt es auf Basis-System laufen
+  - Interpreter parst Programm $\rightarrow$ lässt es auf Basis-System laufen
   - Bsp.: C-Python, Java (JVM), Javascript, Bash
   - Vorteil: keine Hardwarebinding, (Optimierung zur Laufzeit)
   - Nachteil: beschränkte Optimiermöglichkeiten; Zusatzaufwand für die abstrakte Maschine; keine Spezialisierung für die Hardware möglich; Schreibschutz von Programm-Daten nicht möglich ("NX-Bit")
@@ -321,7 +321,7 @@ $\rightarrow$ Abschätzung der Effizienz
 
 - klassischer Großrechner
 - keine Intelligenz bei Terminals
-- Terminal 1, Terminal 2, Terminal 3 ... Termanal N $\rightarrow$ greifen alle auf das zentrale System zu
+- Terminal 1, Terminal 2, Terminal 3 ... Terminal N $\rightarrow$ greifen alle auf das zentrale System zu
 
 **Zum Client-Server**
 
@@ -963,18 +963,20 @@ Warum Iteratoren?
 - Objekte:
 
 ```json
-Objekt { }
-Array [ ]
-String
-Zahl
-Bool
-null
+{
+  "Objekt": {},
+  "Array": [],
+  "String": "abc",
+  "Zahl": 123,
+  "Boolean": true,
+  "Null": null
+}
 ```
 
 - Eigenschaft ist ein Tupel aus: Schlüssel-Namen Doppelpunkt Wert
 
 ```xml
-'Name' : 'Kogel'
+"Name" : "Kogel"
 ```
 
 - Beispiel:
