@@ -67,7 +67,7 @@ reti
 
 ### Externe Interrupts konfigurieren
 
-```
+```asm
 // Externe Interrupts an PORTD Pin 2,3 -> Pullups aktivieren
 ldi work, 0x06
 out PORTD, work
