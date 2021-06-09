@@ -38,30 +38,30 @@ reti        // 17
 
 start:
 // Stack initialisieren
-	ldi work, LOW(RAMEND)
-	out SPL, work
-	ldi work, HIGH(RAMEND)
-	out SPH, work
+  ldi work, LOW(RAMEND)
+  out SPL, work
+  ldi work, HIGH(RAMEND)
+  out SPH, work
 
 // ---> ToDo: Interrupts aktivieren und konfigurieren <---
 
 // Globale Interrupt-Flag setzen
-	sei
+  sei
 main:
-	rjmp main
+  rjmp main
 ```
 
 ### Interrupt Service Routine
 
 ```asm
 isr:
-	//Statusregister sichern
-	in status, SREG
+  //Statusregister sichern
+  in status, SREG
 
-	// ---> ToDo: Do Something <---
+  // ---> ToDo: Do Something <---
 
-	//Statusregister wiederherstellen
-	out SREG, status
+  //Statusregister wiederherstellen
+  out SREG, status
 reti
 ```
 
@@ -123,7 +123,7 @@ ldi mask, 0x2
 main:
 
 sbis PINE, 0
-	rjmp main
+  rjmp main
 
 in work, PORTE
 eor work, mask
@@ -132,7 +132,7 @@ out PORTE, work
 skip:
 
 sbic PINE, 0
-	rjmp skip
+  rjmp skip
 
 rjmp main
 ```
@@ -143,9 +143,9 @@ rjmp main
 // @0 Portregister
 // @1 Nummer des zu toggelnden Bits
 .macro togglePin
-	in work, @0
-	ldi mask, 1 << @1
-	eor work, mask
-	out @0, work
+  in work, @0
+  ldi mask, 1 << @1
+  eor work, mask
+  out @0, work
 .endm
 ```
