@@ -18,23 +18,23 @@
 
 ```asm
 .org 0x0000
-rjmp start	;1 External Pin, Power-on Reset, Brown-out Reset and Watchdog Reset 
-reti	;2 External Interrupt Request 0
-reti	;3 External Interrupt Request 1
-reti	;4 Timer/Counter1 Capture Event
-reti	;5 Timer/Counter1 Compare Match A
-reti	;6 Timer/Counter1 Compare Match B
-reti	;7 Timer/Counter1 Overflow
-reti	;8 Timer/Counter0 Overflow
-reti	;9 Serial Transfer Complete
-reti	;10
-reti	;11
-reti	;12
-reti	;13
-reti	;14 External Interrupt Request 2
-reti	;15 Timer/Counter0 Compare Match
-reti	;16
-reti	;17
+rjmp start  // 1 External Pin, Power-on Reset, Brown-out Reset and Watchdog Reset
+reti        // 2 External Interrupt Request 0
+reti        // 3 External Interrupt Request 1
+reti        // 4 Timer/Counter1 Capture Event
+reti        // 5 Timer/Counter1 Compare Match A
+reti        // 6 Timer/Counter1 Compare Match B
+reti        // 7 Timer/Counter1 Overflow
+reti        // 8 Timer/Counter0 Overflow
+reti        // 9 Serial Transfer Complete
+reti        // 10
+reti        // 11
+reti        // 12
+reti        // 13
+reti        // 14 External Interrupt Request 2
+reti        // 15 Timer/Counter0 Compare Match
+reti        // 16
+reti        // 17
 
 start:
 // Stack initialisieren
