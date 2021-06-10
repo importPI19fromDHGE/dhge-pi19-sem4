@@ -178,7 +178,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - Kunde wird kaum involviert
 - Fail Early wird nicht unterstützt
 
-#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierten Phasenmodell motivieren
+#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
 
 - Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesetzt werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
@@ -571,9 +571,7 @@ Nachteile:
 
 #### Monatsaufgaben eines SW-Entwicklers benennen
 
-- Software, Betriebssysteme aktualisieren
-- Post (auch digital) beantworten 
-- ???
+- ToDo
 
 #### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
 
