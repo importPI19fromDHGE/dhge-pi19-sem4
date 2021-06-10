@@ -178,7 +178,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - Kunde wird kaum involviert
 - Fail Early wird nicht unterstützt
 
-#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
+#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierten Phasenmodell motivieren
 
 - Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesetzt werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
@@ -380,6 +380,7 @@ aber Aussage
 - **Product Owner**
 - **SCRUM Master**
 - **Team**
+- *Kunde und Management*
 
 **Product Owner**
 
@@ -571,7 +572,9 @@ Nachteile:
 
 #### Monatsaufgaben eines SW-Entwicklers benennen
 
-- ToDo
+- Software, Betriebssysteme aktualisieren
+- Post (auch digital) beantworten
+- ???
 
 #### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
 
@@ -593,11 +596,47 @@ Nachteile:
 
 #### Faktoren benennen, die Aufwandschätzungen beeinflussen
 
-- ToDo
+- Einbezug und Schätzung von Komplexität ist nötig $\rightarrow$ vereinfachte Schätzung mit *Schulnotenprinzip* (1..6)
+  - auch möglich: 3-Teilung (kleine, mittlere, große Komplexität)
+- Programmiersprache
+- Lesbarkeit/Wartbarkeit/Erweiterbarkeit als Qualitätsmaß einbeziehen
+  - Problem: es entstünde ein hochkomplexes Funktionsgebirge, daher nicht praktisch anwendbar
+- Skills und Anzahl der Mitarbeiter
+- rechtliche Rahmenbedingungen
+- verwendete Technologien
+- Kommunikation
+- Organisationsform
+- Vorgehensmodell
 
 #### empirische Schätzverfahren benennen und deren Ablauf-Restriktionen darstellen
 
-- ToDo
+basieren auf: Erfahrungen, Vergleich mit bisherigen Projekten
+
+- Expertenschätzung
+- Delphi-Methode
+- Divide et Impera (Teile und Herrsche)
+- Planning Poker (SCRUM-Poker)
+
+**Expertenschätzung**
+
+- $\oplus$ "Experten" mit Erfahrung in gleichartigen Projekten
+- $\oplus$ einfach + wenig zeitaufwändig
+- $\ominus$ entscheidende Fehleinschätzungen möglich $\rightarrow$ wichtig: wann wird Fehler sichtbar?
+
+**Delphi-Methode**
+
+- mehrere unabhängige Experten
+- mehrere Runden
+- $\oplus$ Schätzungen konvergieren i.d.R.
+- $\oplus$ eliminiert Ausreiser
+- $\ominus$ relativ hoher Aufwand
+
+**Divide et Impera (Teile und Hersche)**
+
+- Zerlegung
+- Teilaufgaben schätzen $\Rightarrow$ i.d. Regel kann ich das besser
+- Vorteil: Meilensteine
+- Achtung: Aufwand für Zusammenführen beachten?
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
@@ -612,13 +651,12 @@ Nachteile:
 | Kosten                           | zusätzlich                                  | Personalkosten                              |
 | Sichtbarkeit von Schätzfehlern   | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
 
-- ToDo
+- ToDo, Überprüfen
 
 #### Algorithmische Schätzverfahren benennen und die Struktur der Berechnungsformeln kennen
 
 - COCOMO
 - Function-Point-Methode
-- ToDo
 
 **COCOMO**
 
@@ -643,7 +681,7 @@ Vorgehen:
 - Zähle logische Transaktionen einer Funktion: Eingabe, Ausgabe, Anfrangen, Schnittstelle extern, Datenbankanfrage intern
 - $FP_{roh}$ ermitteln
   - Werte gewichtet: $S, M, L$
-  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert $S, M, L$ fest
+  - Anzahl x je y (Beispiel für Dateneingabe: Datenelemente je Datenbestand) einer Transaktion legt jeweils Wert $S, M, L$ fest
   - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu
 
 $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
@@ -1051,7 +1089,7 @@ und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wen
 - XML: (komfortable) Auszeichnungssprache
 - JSON: (einfache, komfortables) Datenaustauschformat
 - CSV: Separierte Werte
-- ToDo
+- Muster: Format-Wrapper? (ToDo)
 
 #### Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen
 
