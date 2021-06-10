@@ -609,7 +609,38 @@ Nachteile:
 
 #### empirische Schätzverfahren benennen und deren Ablauf-Restriktionen darstellen
 
-- ToDo
+basieren auf: Erfahrungen, Vergleich mit bisherigen Projekten
+
+- Expertenschätzung
+- Delphi-Methode
+- Divide et Impera (Teile und Hersche)
+- Planning Poker (SCRUM-Poker)
+
+**Expertenschätzung**
+
+- $\oplus$ "Experten" mit Erfahrung in gleichartigen Projekten
+- $\oplus$ einfach + wenig zeitaufwändig
+- $\ominus$ entscheidende Fehleinschätzungen möglich $\rightarrow$ wichtig: wann wird Fehler sichtbar?
+
+**Delphi-Methode**
+
+- mehrere unabhängige Experten
+- mehrere Runden
+- $\oplus$ Schätzungen konvergieren i.d.R.
+- $\oplus$ eliminiert Ausreiser
+- $\ominus$ relativ hoher Aufwand
+
+**Divide et Impera (Teile und Hersche)**
+
+- Zerlegung
+- Teilaufgaben schätzen $\Rightarrow$ i.d. Regel kann ich das besser
+- Vorteil: Meilensteine
+- Achtung: Aufwanfd für Zusammenführen beachten?
+
+**Vorteil**: Meilensteine
+
+$\Rightarrow$ **Achtung**: Aufwand für das Zusammenführen beachten!
+
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
