@@ -178,7 +178,7 @@ Andere Modelle: vielleicht nach jedem Projekt, wenn überhaupt
 - Kunde wird kaum involviert
 - Fail Early wird nicht unterstützt
 
-#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierte Phasenmodell motivieren
+#### Eine Weiterentwicklung des Wasserfall‐Modells zum iterierten Phasenmodell motivieren
 
 - Iteriertes Phasenmodell: Phase kann bei Problemen wieder zurückgesetzt werden
 - PDCA-Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
@@ -571,7 +571,9 @@ Nachteile:
 
 #### Monatsaufgaben eines SW-Entwicklers benennen
 
-- ToDo
+- Software, Betriebssysteme aktualisieren
+- Post (auch digital) beantworten 
+- ???
 
 #### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
 
@@ -593,7 +595,17 @@ Nachteile:
 
 #### Faktoren benennen, die Aufwandschätzungen beeinflussen
 
-- ToDo
+- Einbezug und Schätzung von Komplexität ist nötig $\rightarrow$ vereinfachte Schätzung mit *Schulnotenprinzip* (1..6)
+  - auch möglich: 3-Teilung (kleine, mittlere, große Komplexität)
+- Programmiersprache
+- Lesbarkeit/Wartbarkeit/Erweiterbarkeit als Qualitätsmaß einbeziehen
+  - Problem: es entstünde ein hochkomplexes Funktionsgebirge, daher nicht praktisch anwendbar
+- Skills und Anzahl der Mitarbeiter
+- rechtliche Rahmenbedingungen
+- verwendete Technologien
+- Kommunikation
+- Organisationsform
+- Vorgehensmodell
 
 #### empirische Schätzverfahren benennen und deren Ablauf-Restriktionen darstellen
 
