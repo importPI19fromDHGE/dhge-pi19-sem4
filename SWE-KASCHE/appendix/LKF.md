@@ -614,7 +614,7 @@ basieren auf: Erfahrungen, Vergleich mit bisherigen Projekten
 
 - Expertenschätzung
 - Delphi-Methode
-- Divide et Impera (Teile und Hersche)
+- Divide et Impera (Teile und Herrsche)
 - Planning Poker (SCRUM-Poker)
 
 **Expertenschätzung**
