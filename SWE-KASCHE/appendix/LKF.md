@@ -1088,7 +1088,7 @@ und dazu ein Entwurfsmuster für eine Software zur Konvertierung erläutern, wen
 - XML: (komfortable) Auszeichnungssprache
 - JSON: (einfache, komfortables) Datenaustauschformat
 - CSV: Separierte Werte
-- ToDo
+- Muster: Format-Wrapper? (ToDo)
 
 #### Möglichkeiten der Parallelisierung benennen und dessen Vor- und Nachteile darstellen
 
