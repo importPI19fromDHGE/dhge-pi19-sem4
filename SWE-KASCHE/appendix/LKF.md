@@ -572,7 +572,7 @@ Nachteile:
 #### Monatsaufgaben eines SW-Entwicklers benennen
 
 - Software, Betriebssysteme aktualisieren
-- Post (auch digital) beantworten 
+- Post (auch digital) beantworten
 - ???
 
 #### Das Teufelsquadrat zur Argumentation verwenden und wissen, wann ich es einsetzen kann
