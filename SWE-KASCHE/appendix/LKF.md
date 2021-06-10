@@ -380,6 +380,7 @@ aber Aussage
 - **Product Owner**
 - **SCRUM Master**
 - **Team**
+- *Kunde und Management*
 
 **Product Owner**
 
