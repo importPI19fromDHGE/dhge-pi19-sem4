@@ -635,12 +635,7 @@ basieren auf: Erfahrungen, Vergleich mit bisherigen Projekten
 - Zerlegung
 - Teilaufgaben schätzen $\Rightarrow$ i.d. Regel kann ich das besser
 - Vorteil: Meilensteine
-- Achtung: Aufwanfd für Zusammenführen beachten?
-
-**Vorteil**: Meilensteine
-
-$\Rightarrow$ **Achtung**: Aufwand für das Zusammenführen beachten!
-
+- Achtung: Aufwand für Zusammenführen beachten?
 
 #### Delphi-Methode mit Scrum-Poker vergleichen
 
@@ -655,13 +650,12 @@ $\Rightarrow$ **Achtung**: Aufwand für das Zusammenführen beachten!
 | Kosten                           | zusätzlich                                  | Personalkosten                              |
 | Sichtbarkeit von Schätzfehlern   | beliebiger Zeitpunkt, Verzug möglich        | meist früh erkannt, Ausnahme: betriebsblind |
 
-- ToDo
+- ToDo, Überprüfen
 
 #### Algorithmische Schätzverfahren benennen und die Struktur der Berechnungsformeln kennen
 
 - COCOMO
 - Function-Point-Methode
-- ToDo
 
 **COCOMO**
 
@@ -686,7 +680,7 @@ Vorgehen:
 - Zähle logische Transaktionen einer Funktion: Eingabe, Ausgabe, Anfrangen, Schnittstelle extern, Datenbankanfrage intern
 - $FP_{roh}$ ermitteln
   - Werte gewichtet: $S, M, L$
-  - Anzahl Datenelemente je Datenbestand einer Transaktion legt jeweils Wert $S, M, L$ fest
+  - Anzahl x je y (Beispiel für Dateneingabe: Datenelemente je Datenbestand) einer Transaktion legt jeweils Wert $S, M, L$ fest
   - für jede logische Transaktion [...] kommen nach Größe variierend FP dazu
 
 $\text{Function Points} = FP_{roh}* \text{Korrekturfaktoren}$
