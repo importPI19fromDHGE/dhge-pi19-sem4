@@ -7,7 +7,7 @@ Embedded Systems - Prüfungsaufgaben
 > Die Aufgaben waren handschriftlich oder per PDF-Editor in der gegebenen Datei zu bearbeiten.
 > Nachfragen waren über Teams möglich. Zusätzlich zur Bearbeitungszeit gab es 15 Minuten für die Digitalisierung der handschriftlichen Abgaben.
 
-## 1. Continous Integration (68 Punkte)
+## 1. Continuous Integration (68 Punkte)
 
 - SW-Entwicklung-Herangehensweisen nennen, bezüglich CI beschreiben
 - Herangehensweisen in zwei Kategorien unterteilen (CI wird gut/schlecht unterstützt) und begründen
@@ -17,7 +17,7 @@ Embedded Systems - Prüfungsaufgaben
 - zehn User-Stories für einen Backlog erstellen (*"Neustrukturierung der IT-Landschaft eines Flughafens"* als Beispiel)
 - Scrum-Rollen benennen
 - Scrum-Poker erläutern
-- Fuction-Point-Methode erläutern + Einsetzbarkeit bewerten
+- Function-Point-Methode erläutern + Einsetzbarkeit bewerten
 
 ## 3. Begriffe erklären (55 Punkte)
 
