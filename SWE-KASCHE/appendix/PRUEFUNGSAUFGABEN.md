@@ -5,7 +5,7 @@ Embedded Systems - Prüfungsaufgaben
 
 > In 2021 wurde die Prüfung online durchgeführt. Die Aufgaben wurden über BAckstage zur Verfügung gestellt.
 > Die Aufgaben waren handschriftlich oder per PDF-Editor in der gegebenen Datei zu bearbeiten.
-> Nachfragen waren über Teams möglich. Zusätzlich zur Bearbeitungszeit gab es 15 Minuten für die Digitalisierung der handschriftlichen Abgaben. 
+> Nachfragen waren über Teams möglich. Zusätzlich zur Bearbeitungszeit gab es 15 Minuten für die Digitalisierung der handschriftlichen Abgaben.
 
 ## 1. Continous Integration (68 Punkte)
 
@@ -21,13 +21,13 @@ Embedded Systems - Prüfungsaufgaben
 
 ## 3. Begriffe erklären (55 Punkte)
 
-> Folgende Begriffe erklären, einer Herangehensweise zuordnen und eine andere Herangehensweise vorschlagen 
+> Folgende Begriffe erklären, einer Herangehensweise zuordnen und eine andere Herangehensweise vorschlagen
 
 - DoD
 - Retro
 - SCRUM-Poker-Idee
 - Requirement-Analyse mittels T-Shirt-Größen
-- Pairing-Tabelle 
+- Pairing-Tabelle
 
 ## 4. Evaluierung von SW-Entwicklungs-Modellen (58 Punkte)
 
