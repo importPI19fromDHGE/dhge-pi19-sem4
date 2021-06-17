@@ -128,7 +128,7 @@ MMP1 - Themenkatalog
 
 ```text
 IPv4                                | IPv6
-- 32bit Adressen  (NAT!)             | - 128bit Adressen
+- 32bit Adressen  (NAT!)            | - 128bit Adressen
 - keine autom. Adress-Conf.         | - SLAAC
 - variabler Header                  | - konstanter Header + Extension-Header
   -> ineffizentes Routing           |
@@ -138,7 +138,7 @@ IPv4                                | IPv6
 ## UDP vs TCP
 
 ```text
-# UDP                            | TCP
+UDP                              | TCP
 - verbindungslos                 | - verbindungsorientiert
 - unzuverlässig                  | - zuverlässig
 - geringer Protokoll-Overhead    | - höherer Protokoll-Overhead
