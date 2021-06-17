@@ -69,7 +69,6 @@ MMP1 - Themenkatalog
 
 > **ToDo:**
 >
-> - Aufgaben Betriebssystem
 > - Klassifizierung von Betriebssystemen
 > - Scheduling Verfahren
 > - Parallelisierung
@@ -93,6 +92,24 @@ MMP1 - Themenkatalog
 > die Abwicklung von Programmen steuern und überwachen
 >
 > - DIN 44300
+
+## Aufgaben eines Betriebssystems
+
+- Bedienschnittstelle für Nutzer -> Programme (CLI/UI)
+- Verstecken technischer Details/Automatisierung von Vorgängen
+  - Abstraktion der HW (einfache Programmierschnittstelle)
+  - Definition von Konzepten (Prozess, Datei, Speicher, ...)
+  - Vermeidung von Fehlern (Schutz der HW -> Stabilität)
+- Steuern von Abläufen/Kontrollieren von Ressourcennutzung
+  - quasiparallele Ausführung mehrere Prozesse (sichere Trennung)
+  - Blockaden von Prozessen verhindern, CPU-Leistung zuweisen
+  - effiziente, zuverlässige, sichere Verwaltung
+- Dienste für Anwender/Anwendungsprogramme
+  - Prozess-, Speicher-, Dateiverwaltung, E/A-Operationen, Interprozesskommunikation (über APIs realisiert)
+- Privilegiensystem zum Schutz der Anwendungen untereinander (inkl. OS)
+  - Kern-Modus: alle Rechte für Betriebssystem-Code
+  - Benutzer-Modus: eingeschränkte Rechte für Anwendungs-Code
+  - Schnittstelle zwischen Usermode und Kernel = **Traps** (Einstiegspunkte; vgl. Software-Interrupt)
 
 # Betriebssystemverwaltung
 
