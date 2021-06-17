@@ -312,6 +312,16 @@ ACK = Bestätigen der SeqNr
 
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
+## DNS
+
+= Namensauflösung (Domain $\rightarrow$ IP)
+
+```
+                       <-> 1. Root-DNS (/cache)
+- Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
+                       <-> 3. autoritativer NS (Resource-Record)
+```
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Datenbanken
