@@ -69,7 +69,6 @@ MMP1 - Themenkatalog
 
 > **ToDo:**
 >
-> - Definition Betriebssystem
 > - Aufgaben Betriebssystem
 > - Klassifizierung von Betriebssystemen
 > - Scheduling Verfahren
@@ -86,6 +85,14 @@ MMP1 - Themenkatalog
 > - Dateisystemarten nennen können + Vor- und Nachteile
 > - *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
 > - Adressierungsarten
+
+## Definition Betriebssystem
+
+> Die Programme eines digitalen Rechnersystems, die zusammen mit den Eigenschaften dieser Rechenanlage
+> die Basis der möglichen Betriebsarten des digitalen Rechnersystems bilden und die insbesondere
+> die Abwicklung von Programmen steuern und überwachen
+>
+> - DIN 44300
 
 # Betriebssystemverwaltung
 
@@ -138,7 +145,7 @@ IPv4                                | IPv6
 ## UDP vs TCP
 
 ```text
-UDP                             | TCP
+UDP                              | TCP
 - verbindungslos                 | - verbindungsorientiert
 - unzuverlässig                  | - zuverlässig
 - geringer Protokoll-Overhead    | - höherer Protokoll-Overhead
