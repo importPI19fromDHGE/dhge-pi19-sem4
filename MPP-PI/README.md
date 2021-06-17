@@ -316,7 +316,7 @@ ACK = Bestätigen der SeqNr
 
 = Namensauflösung (Domain $\rightarrow$ IP)
 
-```
+```text
                        <-> 1. Root-DNS (/cache)
 - Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
                        <-> 3. autoritativer NS (Resource-Record)
