@@ -127,7 +127,6 @@ Ziffer | Aiken-Code
 
 > **ToDo:**
 >
-> - *Welche Eigenschaften haben Algorithmen?*
 > - Verschlüsselung
 > - symetrische vs. asymetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
 > - Schutzziele von Verschlüsselung
@@ -139,6 +138,15 @@ Ziffer | Aiken-Code
 > - Stack, Queue
 > - *Was ist ein Graph?* Traveling Salesman-Problem, Minimal Spanning Tree, ...
 >   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
+
+## Eigenschaften von Algorithmen
+
+- **Eindeutigkeit:** keine widersprüchliche Beschreibung haben
+- **Ausführbarkeit:** jeder Einzelschritt muss ausführbar sein
+- **Finitheit(= Endlichkeit):** Beschreibung des Algorithmus muss endlich sein
+- **Terminierung:** nach endlich vielen Schritten enden
+- **Determiniertheit:** bei gleichen Voraussetzungen stets gleiches Ergebnis
+- **Determinismus:** zu jedem Zeitpunkt höchstens eine Möglichkeit der Fortsetzung
 
 # Automaten und Sprachen
 
