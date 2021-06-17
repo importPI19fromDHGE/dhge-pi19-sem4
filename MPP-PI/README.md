@@ -1,7 +1,7 @@
 MMP1 - Themenkatalog
 ====================
 
-# Einführung in die Informationsverarbeitung
+# Grundlagen der Informationsverarbeitung
 
 - Von-Neumann-Architektur
 - Harvard-Architekur (im Vgl. zu Neumann)
