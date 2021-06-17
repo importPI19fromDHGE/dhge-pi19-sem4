@@ -97,7 +97,6 @@ MMP1 - Themenkatalog
 > - TCP/IP (inkl. TCP-Fast-Open)
 > - TLS (HTTP vs HTTPS)
 > - *Was passiert bei einem Browseraufruf (URL)?*
-> - Drei-Wege-Handschake
 > - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - DNS
 > - SDSL/ADSL?
@@ -128,6 +127,21 @@ MMP1 - Themenkatalog
 - keine Reihenfolgegarantie      | - Reihenfolgegarantie
 - Anw.: DNS, DHCP, NTP, SNMP     | - Flusskontrolle, Überlaststeuerung
 ```
+
+## TCP-Handshake
+```
+C                 S
+l |->   SYN   ->| e
+i |<- SYN,ACK <-| r
+e |->   ACK   ->| v
+n |             | e
+t |<-   ...   ->| r
+
+SYN = Senden der SeqNr
+ACK = Bestätigen der SeqNr
+```
+
+- **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
 # Datenbanken
 ## ToDo
