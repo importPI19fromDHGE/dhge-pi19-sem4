@@ -16,6 +16,8 @@ MMP1 - Themenkatalog
 > - Gleitpunktverfahren
 > - Befehlsverarbeitung
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Digitaltechnik
 
 > **ToDo:**
@@ -114,6 +116,8 @@ Ziffer | Aiken-Code
 ⟋         ┌─┘
 ```
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Elektrotechnik
 
 > **ToDo:**
@@ -122,6 +126,8 @@ Ziffer | Aiken-Code
 > - RGB???
 > - *Warum ist ein RAM-Speicher flüchtig?*
 > - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
+
+----------------------------------------------------------------------------------------------------------------------
 
 # Algorithmen und Datenstrukturen
 
@@ -148,6 +154,8 @@ Ziffer | Aiken-Code
 - **Determiniertheit:** bei gleichen Voraussetzungen stets gleiches Ergebnis
 - **Determinismus:** zu jedem Zeitpunkt höchstens eine Möglichkeit der Fortsetzung
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Automaten und Sprachen
 
 > **ToDo:**
@@ -157,6 +165,8 @@ Ziffer | Aiken-Code
 > - Turingmaschine erklären können + Beispiel
 > - Registermaschine erklären
 > - Prinzip der Automatenkonstruktion (NEA, DEA)
+
+----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
 
@@ -204,6 +214,8 @@ Ziffer | Aiken-Code
   - Benutzer-Modus: eingeschränkte Rechte für Anwendungs-Code
   - Schnittstelle zwischen Usermode und Kernel = **Traps** (Einstiegspunkte; vgl. Software-Interrupt)
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Betriebssystemverwaltung
 
 > **ToDo:**
@@ -217,7 +229,7 @@ Ziffer | Aiken-Code
 - Nutzen von Redundanzen zur Erhöhung der Ausfallsicherheit oder des Datendurchsatzes (keine Datensicherung!)
 - Mirroring: alle Daten auf mehreren Speichermedien gespeichert (kein Datenverlust bei einem Ausfall)
 - Striping: Daten auf allen Speichermedien verteilen (Datenverlust bei einem Ausfall)
-  - Parität: Bei verteilter Datenspeicherung durch Striping $\rightarrow$ Speicherung von Paritätsinformationen auf weiterem Speichermedium 
+  - Parität: Bei verteilter Datenspeicherung durch Striping $\rightarrow$ Speicherung von Paritätsinformationen auf weiterem Speichermedium
 - `RAID 0`: Striping über min. 2 Datenträger (höhere Performance, aber keine Ausfallsicherheit)
 - `RAID 1`: Mirroring über min. 2 Datenträger (Ausfallsicherheit; geringe Netto-Kapazität; hohe Kosten)
 - `RAID 5`: Striping mit Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
@@ -226,6 +238,8 @@ Ziffer | Aiken-Code
 - `RAID 50`: Striping, Mirroring und Parität über min. 6 Datenträger
 - `RAID 60`: Striping, Mirroring und doppelte Parität über min. 8 Datenträger
 - Spare: zusätzliches Speichermedium $\rightarrow$ bei Ausfall erfolgt sofortiger Restore auf Spare
+
+----------------------------------------------------------------------------------------------------------------------
 
 # Rechnernetze
 
@@ -294,6 +308,8 @@ ACK = Bestätigen der SeqNr
 
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Datenbanken
 
 > **ToDo:**
@@ -317,6 +333,8 @@ ACK = Bestätigen der SeqNr
   - $\updownarrow$ physische Datenunabhängigkeit: Anw.-Prog. von physischer Speicherung unabhängig, Speicherstrukturen uninteressant
 - **Interne Ebene:** physische Datenstrukturen, Speichermedien
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Systemanalyse
 
 > **ToDo:**
@@ -330,6 +348,8 @@ ACK = Bestätigen der SeqNr
 > - *Welche Rolle spielt das Testen in der SE?*
 > - Aufwandsschätzung
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Systementwurf
 
 > **ToDo:**
@@ -342,6 +362,8 @@ ACK = Bestätigen der SeqNr
 > - UML
 > - *Was ist XML? Wie können XML-Dateien validiert werden?*
 
+----------------------------------------------------------------------------------------------------------------------
+
 # Hardwarenahe Programmierung
 
 > **ToDo:**
@@ -349,6 +371,8 @@ ACK = Bestätigen der SeqNr
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
 > - RISC, CISC
 > - *Was ist Pipelining?*
+
+----------------------------------------------------------------------------------------------------------------------
 
 # IT-Trends
 
