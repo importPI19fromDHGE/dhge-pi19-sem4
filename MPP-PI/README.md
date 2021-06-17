@@ -95,7 +95,6 @@ MMP1 - Themenkatalog
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP (inkl. TCP-Fast-Open)
-> - TCP vs UDP
 > - TLS (HTTP vs HTTPS)
 > - *Was passiert bei einem Browseraufruf (URL)?*
 > - Drei-Wege-Handschake
@@ -118,6 +117,17 @@ MMP1 - Themenkatalog
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## UDP vs TCP
+
+```
+# UDP                            | TCP
+- verbindungslos                 | - verbindungsorientiert
+- unzuverlässig                  | - zuverlässig
+- geringer Protokoll-Overhead    | - höherer Protokoll-Overhead
+- keine Reihenfolgegarantie      | - Reihenfolgegarantie
+- Anw.: DNS, DHCP, NTP, SNMP     | - Flusskontrolle, Überlaststeuerung
+```
 
 # Datenbanken
 ## ToDo
