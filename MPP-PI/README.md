@@ -53,11 +53,13 @@ MMP1 - Themenkatalog
 - *Was ist eine Grammatik? (+Grammatik-Typen)*
 - Turingmaschine erklären können + Bsp.
 - Registermaschine erklären
+- Prinzip der Automatenkonstruktion (NEA,DEA)
 
 # Betriebssysteme
 
 - Definition Betriebssystem
 - Aufgaben Betriebssystem
+- Klassifizierung von Betriebssystemen
 - Scheduling Verfahren
 - Parallelisierung
 - Serielle vs. Parallele Datenübertragung (*Warum heute mehr seriell?*)
@@ -70,11 +72,14 @@ MMP1 - Themenkatalog
 - *Welche Betriebsmittel kennen Sie?*
 - *Was ist Spooling?*
 - Dateisystemarten nennen können + Vor- und Nachteile
+- *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
+- Adressierungsarten
 
 # Betriebssystemverwaltung
 
 - RAID (Hotspare)
 - "Datensicherung"
+- *Was sind Pipes?*
 
 # Rechnernetze
 
