@@ -154,9 +154,9 @@ Ziffer | Aiken-Code
 >
 > - *Was sind reguläre Ausdrücke?*
 > - *Was ist eine Grammatik? (+Grammatik-Typen)*
-> - Turingmaschine erklären können + Bsp.
+> - Turingmaschine erklären können + Beispiel
 > - Registermaschine erklären
-> - Prinzip der Automatenkonstruktion (NEA,DEA)
+> - Prinzip der Automatenkonstruktion (NEA, DEA)
 
 # Betriebssysteme
 
@@ -208,9 +208,24 @@ Ziffer | Aiken-Code
 
 > **ToDo:**
 >
-> - RAID (Hotspare)
 > - "Datensicherung"
 > - *Was sind Pipes?*
+
+## RAID
+
+- **R**edundant **A**rray of **I**ndependent **D**isks
+- Nutzen von Redundanzen zur Erhöhung der Ausfallsicherheit oder des Datendurchsatzes (keine Datensicherung!)
+- Mirroring: alle Daten auf mehreren Speichermedien gespeichert (kein Datenverlust bei einem Ausfall)
+- Striping: Daten auf allen Speichermedien verteilen (Datenverlust bei einem Ausfall)
+  - Parität: Bei verteilter Datenspeicherung durch Striping $\rightarrow$ Speicherung von Paritätsinformationen auf weiterem Speichermedium 
+- `RAID 0`: Striping über min. 2 Datenträger (höhere Performance, aber keine Ausfallsicherheit)
+- `RAID 1`: Mirroring über min. 2 Datenträger (Ausfallsicherheit; geringe Netto-Kapazität; hohe Kosten)
+- `RAID 5`: Striping mit Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
+- `RAID 6`: Striping mit Parität über 4-16 Datenträger (zweite Kopie der Parität $\rightarrow$ Ausfallsicherheit zweier Speichermedien)
+- `RAID 10`: Striping und Mirroring über min. 4 Datenträger
+- `RAID 50`: Striping, Mirroring und Parität über min. 6 Datenträger
+- `RAID 60`: Striping, Mirroring und doppelte Parität über min. 8 Datenträger
+- Spare: zusätzliches Speichermedium $\rightarrow$ bei Ausfall erfolgt sofortiger Restore auf Spare
 
 # Rechnernetze
 
