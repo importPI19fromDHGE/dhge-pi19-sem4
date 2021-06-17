@@ -17,6 +17,7 @@ MMP1 - Themenkatalog
 > - Befehlsverarbeitung
 
 # Digitaltechnik
+
 ## ToDo
 
 > - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
@@ -29,6 +30,7 @@ MMP1 - Themenkatalog
 > - Arten von Kippgliedern
 
 # Elektrotechnik
+
 ## ToDo
 
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
@@ -37,6 +39,7 @@ MMP1 - Themenkatalog
 > - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
 
 # Algorithmen und Datenstrukturen
+
 ## ToDo
 
 > - *Welche Eigenschaften haben Algorithmen?*
@@ -53,6 +56,7 @@ MMP1 - Themenkatalog
 >   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
 # Automaten und Sprachen
+
 ## ToDo
 
 > - *Was sind reguläre Ausdrücke?*
@@ -62,6 +66,7 @@ MMP1 - Themenkatalog
 > - Prinzip der Automatenkonstruktion (NEA,DEA)
 
 # Betriebssysteme
+
 ## ToDo
 
 > - Definition Betriebssystem
@@ -83,6 +88,7 @@ MMP1 - Themenkatalog
 > - Adressierungsarten
 
 # Betriebssystemverwaltung
+
 ## ToDo
 
 > - RAID (Hotspare)
@@ -90,6 +96,7 @@ MMP1 - Themenkatalog
 > - *Was sind Pipes?*
 
 # Rechnernetze
+
 ## ToDo
 
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
@@ -119,9 +126,9 @@ MMP1 - Themenkatalog
 
 ## IPv4 vs IPv6
 
-```
+```text
 IPv4                                | IPv6
-- 32bit Adressen (NAT!)             | - 128bit Adressen
+- 32bit Adressen  (NAT!)             | - 128bit Adressen
 - keine autom. Adress-Conf.         | - SLAAC
 - variabler Header                  | - konstanter Header + Extension-Header
   -> ineffizentes Routing           |
@@ -130,7 +137,7 @@ IPv4                                | IPv6
 
 ## UDP vs TCP
 
-```
+```text
 # UDP                            | TCP
 - verbindungslos                 | - verbindungsorientiert
 - unzuverlässig                  | - zuverlässig
@@ -140,7 +147,8 @@ IPv4                                | IPv6
 ```
 
 ## TCP-Handshake
-```
+
+```text
 C                 S
 l |->   SYN   ->| e
 i |<- SYN,ACK <-| r
@@ -155,6 +163,7 @@ ACK = Bestätigen der SeqNr
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
 # Datenbanken
+
 ## ToDo
 
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
@@ -170,6 +179,7 @@ ACK = Bestätigen der SeqNr
 > - *Was sind Constraints?*
 
 # Systemanalyse
+
 ## ToDo
 
 > - V-Modell
