@@ -117,6 +117,17 @@ MMP1 - Themenkatalog
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
 
+## IPv4 vs IPv6
+
+```
+IPv4                                | IPv6
+- 32bit Adressen (NAT!)             | - 128bit Adressen
+- keine autom. Adress-Conf.         | - SLAAC
+- variabler Header                  | - konstanter Header + Extension-Header
+  -> ineffizentes Routing           |
+- Fragmentierung durch Router       | - Fragmentierung durch Sender
+```
+
 ## UDP vs TCP
 
 ```
