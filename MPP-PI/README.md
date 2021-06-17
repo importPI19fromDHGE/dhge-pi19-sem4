@@ -26,8 +26,84 @@ MMP1 - Themenkatalog
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - AD-Wandler
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
-> - *Was ist ein Code?(+Eigenschaften) Wie funktioniert ein BCD-Code, Binärcodes, Gray-Code*
 > - Arten von Kippgliedern
+
+## Eigenschaften von Codes
+
+> *Was ist ein Code?(+Eigenschaften) Wie funktioniert ein BCD-Code, Binärcodes, Gray-Code*
+
+> Code = Abbildungsvorschrift zur Darstellung von Zahlen
+
+- **Bewertbarkeit:** jeder Stelle wird eine bestimmte Wertigkeit zugeordnet
+- **Gewicht:** Anzahl der mit `1` belegten Stellen
+- **Distanz:** Anzahl der Stellen, die sich zwischen benachbarten Codeworten unterscheiden
+- **Stetigkeit:** stetig, wenn die Distanz über den gesamten Code hinweg gleich ist
+- **Redundanz:** mögliche Kombinationen vs. vom Code genutzte Kombinationen
+
+### BCD-Code
+
+- binär codierte Dezimalziffern
+- Redundanzen: bei 4bit nur 10 Kombinationen belegt
+
+```text
+Ziffer | BCD-Code
+   0   |   0000
+   1   |   0001
+   2   |   0010
+   3   |   0011
+   4   |   0100
+   5   |   0101
+   6   |   0110
+   7   |   0111
+   8   |   1000
+   9   |   1001
+```
+
+### Gray-Code
+
+- einschrittiger Code (Vermeidung von Abtastfehlern an einer Codescheibe)
+
+```text
+Ziffer | Gray-Code
+   0   |   0000
+   1   |   0001
+-------------------> Reflektionslinie 1
+   2   |   0011
+   3   |   0010
+-------------------> Reflektionslinie 2
+   4   |   0110
+   5   |   0111
+   6   |   0101
+   7   |   0100
+-------------------> Reflektionslinie 3
+   8   |   1100
+   9   |   1101
+  10   |   1111
+  11   |   1110
+  12   |   1010
+  13   |   1011
+  14   |   1001
+  15   |   1000
+```
+
+### Aiken-Code
+
+- Ziffern 5-9 negativsymetrisch zu 0-4 $\rightarrow$ Neunerkomplementbildung durch Negation
+
+```text
+Ziffer | Aiken-Code
+   0   |   0000
+   1   |   0001
+   2   |   0011
+   3   |   0010
+   4   |   0110
+--------------------
+   5   |   0111
+   6   |   0101
+   7   |   0100
+   8   |   1100
+   9   |   1101
+```
 
 # Elektrotechnik
 
