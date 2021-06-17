@@ -11,10 +11,14 @@ MMP1 - Themenkatalog
 > - Einordnung von Programmiersprachen (Vor- und Nachteile) <!--imperativ, deklarativ, objektorientiert, ...?-->
 > - Struktogramm?
 > - statisches vs dynamisches Binden
-> - Call by Value vs Call by Reference
 > - Umrechnen von Zahlensystemen
 > - Gleitpunktverfahren
 > - Befehlsverarbeitung
+
+## `Call by Value` vs `Call by Reference`
+
+- `Call by Value`: Übergabe der Kopie eines Parameters bei Funktionsaufruf (z.B. `int`, `char` in `C`; Kopie existiert nur innerhalb der Funktion)
+- `Call by Reference`: Übergabe der Referenz auf einen Parameter bei Funktionsaufruf (z.B. `*` in `C`; Änderungen bleiben nach Verlassen der Funktion erhalten)
 
 ----------------------------------------------------------------------------------------------------------------------
 
