@@ -92,7 +92,6 @@ MMP1 - Themenkatalog
 # Rechnernetze
 ## ToDo
 
-> - ISO/OSI-Referenzmodell
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP (inkl. TCP-Fast-Open)
@@ -104,6 +103,21 @@ MMP1 - Themenkatalog
 > - DNS
 > - SDSL/ADSL?
 > - Netzwerktopologien
+
+## ISO/OSI-Referenzmodell
+
+| Schicht                | Funktion                                                     | Protokolle |
+|------------------------|--------------------------------------------------------------|------------|
+| Anwendungsschicht      | Kommunikation zw. Anwendungen                                |            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            |            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             |            |
+| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   |
+| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         |
+| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   |
+| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            |
+
+- Protokoll = Regeln zur Steuerung der Kommunikation
+- Dienst = durch Sicht erbrachte Funktionalität
 
 # Datenbanken
 ## ToDo
