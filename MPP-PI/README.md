@@ -31,7 +31,7 @@ MMP1 - Themenkatalog
 
 > *Was ist ein Code?(+Eigenschaften) Wie funktioniert ein BCD-Code, Binärcodes, Gray-Code*
 
-> Code = Abbildungsvorschrift zur Darstellung von Zahlen
+Code = Abbildungsvorschrift zur Darstellung von Zahlen
 
 - **Bewertbarkeit:** jeder Stelle wird eine bestimmte Wertigkeit zugeordnet
 - **Gewicht:** Anzahl der mit `1` belegten Stellen
@@ -93,15 +93,15 @@ Ziffer | Gray-Code
 Ziffer | Aiken-Code
    0   |   0000
    1   |   0001
-   2   |   0011
-   3   |   0010
-   4   |   0110
+   2   |   0010
+   3   |   0011
+   4   |   0100
 --------------------
-   5   |   0111
-   6   |   0101
-   7   |   0100
-   8   |   1100
-   9   |   1101
+   5   |   1011
+   6   |   1100
+   7   |   1101
+   8   |   1110
+   9   |   1111
 ```
 
 ## AD-Wandler
