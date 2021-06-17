@@ -47,7 +47,6 @@ MMP1 - Themenkatalog
 - *Was ist ein Graph?* Traveling Salesman-Problem, Minimal Spanning Tree, ...
   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
-
 # Automaten und Sprachen
 
 - *Was sind reguläre Ausdrücke?*
