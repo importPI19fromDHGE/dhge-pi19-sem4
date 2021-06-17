@@ -138,7 +138,7 @@ IPv4                                | IPv6
 ## UDP vs TCP
 
 ```text
-UDP                              | TCP
+UDP                             | TCP
 - verbindungslos                 | - verbindungsorientiert
 - unzuverlässig                  | - zuverlässig
 - geringer Protokoll-Overhead    | - höherer Protokoll-Overhead
@@ -168,7 +168,6 @@ ACK = Bestätigen der SeqNr
 >
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
 > - Datenmodelle: hierarchisch, relational, objektorientiert
-> - ANSI/SPARC 3-Ebenen Konzept (Datenunabhängigkeit)
 > - relationales DBMS: Selektion/Projektion/Join
 > - ERM
 > - *"SQL"*
@@ -177,6 +176,14 @@ ACK = Bestätigen der SeqNr
 > - Transaktionen (Eigenschaften)
 > - Sperrverfahren
 > - *Was sind Constraints?*
+
+## ANSI-SPARC Drei-Ebenen-Konzept
+
+- **Externe Ebene:** logische Datenstrukturen der Anw.-Programme zur Präsentation der Daten an den Benutzer
+  - $\updownarrow$ logische Datenunabhängigkeit: Sicht der Anw.-Prog. unabhängig von der Gesamtsicht der Daten
+- **Konzeptionelle Ebene:** logische Gesamtstruktur der Daten(Eigenschaften, Beziehungen); neutral zu Anw.-Prog. (relationales Modell)
+  - $\updownarrow$ physische Datenunabhängigkeit: Anw.-Prog. von physischer Speicherung unabhängig, Speicherstrukturen uninteressant
+- **Interne Ebene:** physische Datenstrukturen, Speichermedien
 
 # Systemanalyse
 
