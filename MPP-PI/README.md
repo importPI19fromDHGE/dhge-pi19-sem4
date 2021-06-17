@@ -3,8 +3,8 @@ MMP1 - Themenkatalog
 
 # Grundlagen der Informationsverarbeitung
 
-## ToDo
-
+> **ToDo:**
+>
 > - Von-Neumann-Architektur
 > - Harvard-Architekur (im Vgl. zu Neumann)
 > - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
@@ -18,8 +18,8 @@ MMP1 - Themenkatalog
 
 # Digitaltechnik
 
-## ToDo
-
+> **ToDo:**
+>
 > - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
 > - 1-Bit Volladdierer
 > - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
@@ -31,8 +31,8 @@ MMP1 - Themenkatalog
 
 # Elektrotechnik
 
-## ToDo
-
+> **ToDo:**
+>
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
 > - *Warum ist ein RAM-Speicher flüchtig?*
@@ -40,8 +40,8 @@ MMP1 - Themenkatalog
 
 # Algorithmen und Datenstrukturen
 
-## ToDo
-
+> **ToDo:**
+>
 > - *Welche Eigenschaften haben Algorithmen?*
 > - Verschlüsselung
 > - symetrische vs. asymetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
@@ -57,8 +57,8 @@ MMP1 - Themenkatalog
 
 # Automaten und Sprachen
 
-## ToDo
-
+> **ToDo:**
+>
 > - *Was sind reguläre Ausdrücke?*
 > - *Was ist eine Grammatik? (+Grammatik-Typen)*
 > - Turingmaschine erklären können + Bsp.
@@ -67,8 +67,8 @@ MMP1 - Themenkatalog
 
 # Betriebssysteme
 
-## ToDo
-
+> **ToDo:**
+>
 > - Definition Betriebssystem
 > - Aufgaben Betriebssystem
 > - Klassifizierung von Betriebssystemen
@@ -89,16 +89,16 @@ MMP1 - Themenkatalog
 
 # Betriebssystemverwaltung
 
-## ToDo
-
+> **ToDo:**
+>
 > - RAID (Hotspare)
 > - "Datensicherung"
 > - *Was sind Pipes?*
 
 # Rechnernetze
 
-## ToDo
-
+> **ToDo:**
+>
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP (inkl. TCP-Fast-Open)
@@ -164,8 +164,8 @@ ACK = Bestätigen der SeqNr
 
 # Datenbanken
 
-## ToDo
-
+> **ToDo:**
+>
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
 > - Datenmodelle: hierarchisch, relational, objektorientiert
 > - ANSI/SPARC 3-Ebenen Konzept (Datenunabhängigkeit)
@@ -180,8 +180,8 @@ ACK = Bestätigen der SeqNr
 
 # Systemanalyse
 
-## ToDo
-
+> **ToDo:**
+>
 > - V-Modell
 > - SCRUM
 > - *"agile Entwicklung"*
@@ -193,8 +193,8 @@ ACK = Bestätigen der SeqNr
 
 # Systementwurf
 
-## ToDo
-
+> **ToDo:**
+>
 > - Compiler vs. Interpreter
 > - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
@@ -205,15 +205,15 @@ ACK = Bestätigen der SeqNr
 
 # Hardwarenahe Programmierung
 
-## ToDo
-
+> **ToDo:**
+>
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
 > - RISC, CISC
 > - *Was ist Pipelining?*
 
 # IT-Trends
 
-## ToDo
-
+> **ToDo:**
+>
 > - Cloud Computing (Warum?, Vor- und Nachteile)
 > - *Was sind IoT?*
