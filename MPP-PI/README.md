@@ -394,7 +394,7 @@ ACK = Bestätigen der SeqNr
 > - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
-> - MVP-Architektur
+> - MVC-Architektur
 > - UML
 > - *Was ist XML? Wie können XML-Dateien validiert werden?*
 
@@ -407,6 +407,12 @@ ACK = Bestätigen der SeqNr
 - Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
 - Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
 - Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+
+## MVC-Architektur
+
+- **M**odel: Daten
+- **V**iew: Darstellung der Daten des Modells, Realisierung der Benutzerinteraktionen
+- **C**ontroller: verwaltet Model und View, realisiert Geschäftslogik (Algorithmen)
 
 ----------------------------------------------------------------------------------------------------------------------
 
