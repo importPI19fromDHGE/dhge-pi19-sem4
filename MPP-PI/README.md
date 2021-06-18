@@ -27,7 +27,6 @@ MMP1 - Themenkatalog
 > **ToDo:**
 >
 > - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
-> - 1-Bit Volladdierer
 > - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
@@ -118,6 +117,21 @@ Ziffer | Aiken-Code
     ⟋         ┌─┘
   ⟋   -->   ┌─┘
 ⟋         ┌─┘
+```
+
+## Volladdierer
+
+```text
+x ──┬─────╮╒═══╗
+    │     & AND╟───────────────╮╒════╗
+y ──│───┬─╯╘═══╝               >=1 OR╟──── cout
+    │   │╒════╗                │╘════╝
+    │   =1 XOR╟─┬─────╮╒═══╗   │
+    ╰───╯╘════╝ │     & AND╟───╯
+cin ────────────│───┬─╯╘═══╝
+                │   │╒════╗
+                │   =1 XOR╟─────────────── s
+                ╰───╯╘════╝
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
