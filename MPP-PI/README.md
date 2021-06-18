@@ -232,6 +232,17 @@ cin ────────────│───┬─╯╘═══╝
   - Benutzer-Modus: eingeschränkte Rechte für Anwendungs-Code
   - Schnittstelle zwischen Usermode und Kernel = **Traps** (Einstiegspunkte; vgl. Software-Interrupt)
 
+## Scheduling-Strategie (Prozesse)
+
+- First come first serve (FCFS / FIFO)
+  - Jobs werden bei Entstehen in Warteschlange eingefügt
+- Shortest-Job-First (SJF)
+  - Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
+- Highest response ratio next (HRN)
+  - Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
+- Prioritätsscheduling (PS)
+  -  Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssystemverwaltung
