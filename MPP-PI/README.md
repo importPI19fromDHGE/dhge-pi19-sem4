@@ -242,14 +242,14 @@ cin ────────────│───┬─╯╘═══╝
 - Highest response ratio next (HRN)
   - Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
 - Prioritätsscheduling (PS)
-  -  Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+  - Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
 
 **Präemptive Scheduling**
 
-- Round-Robin (RR) 
-  - Round-Robin ist eine Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren. 
+- Round-Robin (RR)
+  - Round-Robin ist eine Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
 - Dynamic Priority Round Robin
-  -  Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
+  - Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
 - Shortest Remaining Time First
   - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
@@ -450,7 +450,7 @@ ACK = Bestätigen der SeqNr
 > - UML
 > - *Was ist XML? Wie können XML-Dateien validiert werden?*
 
-## OOP-Paradigmen 
+## OOP-Paradigmen
 
 <!--Das kann sich gerne nochmal jemand ansehen-->
 
