@@ -514,7 +514,37 @@ Archivspeicher ╱     offline    ╲ sec - min
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
 > - UML
-> - *Was ist XML? Wie können XML-Dateien validiert werden?*
+
+## XML
+
+> *Was ist XML? Wie können XML-Dateien validiert werden?*
+
+- XML = E**X**tensible **M**arkup **L**anguage 
+- Auszeichnungssprache zur Darstellung hierarchisch strukturierter Daten in einem Textformat
+- für Mensch und Maschine lesbar
+- Validierung: wohlgeformt = physische Struktur eingeahlten (Regeln der Sprache); valide = entspricht einem definiertem Schema
+
+**tag-basiertes XML**
+
+```xml
+<ROOT>
+  <MITARBEITER>
+    <NAME>Müller</Name>
+    <ID>0815</ID>
+  </MITARBEITER>
+</ROOT>
+```
+
+**inhaltsbasiertes XML**
+
+```xml
+<ROOT>
+  <PROPERTY Name="Mitarbeiter">
+    <VALUE TYPE='STR' Bezeichner="Name">Müller</VALUE>
+    <VALUE TYPE='INT' Bezeichner="ID">0815</VALUE>
+  </PROPERTY>
+</ROOT>
+```
 
 ## OOP-Paradigmen
 
