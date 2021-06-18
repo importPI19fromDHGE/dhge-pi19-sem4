@@ -266,7 +266,6 @@ cin ────────────│───┬─╯╘═══╝
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP (inkl. TCP-Fast-Open)
-> - *Was passiert bei einem Browseraufruf (URL)?*
 > - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - DNS
 > - SDSL/ADSL?
@@ -343,6 +342,14 @@ ACK = Bestätigen der SeqNr
 - bietet: Authentisierung und Schlüsselaustausch, Verschlüsselungsalgorithmen und kryptographische Hashfunktionen
 - sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
 - $\rightarrow$ großer Overhead zusammen mit TCP
+
+## URL-Aufruf
+
+> - *Was passiert bei einem Browseraufruf (URL)?*
+
+- Namensauflösung URL -> IP durch DNS
+- HTTP-Request
+- HTTP Response: Status Code, HTML-Page
 
 ----------------------------------------------------------------------------------------------------------------------
 
