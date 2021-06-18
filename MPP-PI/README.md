@@ -275,13 +275,15 @@ cin ────────────│───┬─╯╘═══╝
 
 | Schicht                | Funktion                                                     | Protokolle |
 |------------------------|--------------------------------------------------------------|------------|
-| Anwendungsschicht      | Kommunikation zw. Anwendungen                                |            |
-| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            |            |
-| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             |            |
+| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   |
 | Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   |
 | Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         |
 | Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   |
 | Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            |
+
+- Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
