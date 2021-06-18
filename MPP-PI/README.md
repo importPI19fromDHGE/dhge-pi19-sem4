@@ -692,8 +692,20 @@ Archivspeicher ╱     offline    ╲ sec - min
 > **ToDo:**
 >
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
-> - RISC, CISC
 > - *Was ist Pipelining?*
+
+## RISC vs CISC
+
+```text
+Reduced Instruction Set Computing   | Complex Instruction Set Computing
+────────────────────────────────────┼─────────────────────────────────────────
+reduzierter, homogener Befehlssatz  | komplexer, aber komfortabler Befehlssatz
+paralelle Verarbeitung              | sequenzielle Verarbeitung
+-> geringere Taktrate, Verbrauch    | -> höhere Taktrate, Stromverbrauch nötig
+-> aber: Synchronisationsaufwand    |
+komplexer Compile-Schritt           | Befehle werden als Micorocde ausgeführt
+Pipelining möglich                  | Pipelining schwierig
+```
 
 ----------------------------------------------------------------------------------------------------------------------
 
