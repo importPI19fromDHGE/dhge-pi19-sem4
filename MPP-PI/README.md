@@ -10,7 +10,7 @@ MMP1 - Themenkatalog
 > - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
 > - Einordnung von Programmiersprachen (Vor- und Nachteile) <!--imperativ, deklarativ, objektorientiert, ...?-->
 > - Struktogramm?
-> - statisches vs dynamisches Binden
+> - Statisches vs Dynamisches Binden
 > - Umrechnen von Zahlensystemen
 > - Gleitpunktverfahren
 > - Befehlsverarbeitung
@@ -47,7 +47,7 @@ Code = Abbildungsvorschrift zur Darstellung von Zahlen
 ### BCD-Code
 
 - binär codierte Dezimalziffern
-- Redundanzen: bei 4bit nur 10 Kombinationen belegt
+- Redundanzen: bei 4 Bit nur 10 Kombinationen belegt
 
 ```text
 Ziffer | BCD-Code
@@ -92,7 +92,7 @@ Ziffer | Gray-Code
 
 ### Aiken-Code
 
-- Ziffern 5-9 negativsymetrisch zu 0-4 $\rightarrow$ Neunerkomplementbildung durch Negation
+- Ziffern 5-9 negativsymmetrisch zu 0-4 $\rightarrow$ Neunerkomplementbildung durch Negation
 
 ```text
 Ziffer | Aiken-Code
@@ -152,7 +152,7 @@ cin ────────────│───┬─╯╘═══╝
 > **ToDo:**
 >
 > - Verschlüsselung
-> - symetrische vs. asymetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
+> - symmetrische vs. asymmetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
 > - Schutzziele von Verschlüsselung
 > - Hashing (Eigenschaften)
 >   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
@@ -160,7 +160,7 @@ cin ────────────│───┬─╯╘═══╝
 > - Sortieralgorithmen (+ Klassifizierung)
 > - Digitale Signatur
 > - Stack, Queue
-> - *Was ist ein Graph?* Traveling Salesman-Problem, Minimal Spanning Tree, ...
+> - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
 >   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
 ## Eigenschaften von Algorithmen
@@ -341,7 +341,7 @@ ACK = Bestätigen der SeqNr
 
 - setzt auf TCP-Verbindungen auf
 - bietet: Authentisierung und Schlüsselaustausch, Verschlüsselungsalgorithmen und kryptographische Hashfunktionen
-- sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausche bei OpenVPN
+- sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
 - $\rightarrow$ großer Overhead zusammen mit TCP
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -365,7 +365,7 @@ ACK = Bestätigen der SeqNr
 
 - **Externe Ebene:** logische Datenstrukturen der Anw.-Programme zur Präsentation der Daten an den Benutzer
   - $\updownarrow$ logische Datenunabhängigkeit: Sicht der Anw.-Prog. unabhängig von der Gesamtsicht der Daten
-- **Konzeptionelle Ebene:** logische Gesamtstruktur der Daten(Eigenschaften, Beziehungen); neutral zu Anw.-Prog. (relationales Modell)
+- **Konzeptionelle Ebene:** logische Gesamtstruktur der Daten (Eigenschaften, Beziehungen); neutral zu Anw.-Prog. (relationales Modell)
   - $\updownarrow$ physische Datenunabhängigkeit: Anw.-Prog. von physischer Speicherung unabhängig, Speicherstrukturen uninteressant
 - **Interne Ebene:** physische Datenstrukturen, Speichermedien
 
