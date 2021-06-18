@@ -190,7 +190,6 @@ cin ────────────│───┬─╯╘═══╝
 
 > **ToDo:**
 >
-> - Klassifizierung von Betriebssystemen
 > - Parallelisierung
 > - Serielle vs. Parallele Datenübertragung (*Warum heute mehr seriell?*)
 > - Semaphoren
@@ -230,6 +229,13 @@ cin ────────────│───┬─╯╘═══╝
   - Kern-Modus: alle Rechte für Betriebssystem-Code
   - Benutzer-Modus: eingeschränkte Rechte für Anwendungs-Code
   - Schnittstelle zwischen Usermode und Kernel = **Traps** (Einstiegspunkte; vgl. Software-Interrupt)
+
+## Klassifizierung von Betriebssystemen
+
+- *Nach Betriebsart:* Netzwerk-, Realzeit- oder universale Betriebssysteme
+- *Nach Anzahl der gleichzeitig laufenden Programme:* Einzel- (singletask) oder Mehrprogrammbetrieb (multitask)
+- *Nach Anzahl der gleichzeitigen Nutzer:* Einzel- oder Mehrbenutzerbetrieb
+- *Nach Anzahl der verwalteten Prozessoren:* Ein- oder Mehr-Prozessor-Betriebssystem
 
 ## Scheduling-Strategien für Prozesse
 
