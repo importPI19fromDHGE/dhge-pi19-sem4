@@ -192,7 +192,6 @@ cin ────────────│───┬─╯╘═══╝
 >
 > - Parallelisierung
 > - Serielle vs. Parallele Datenübertragung (*Warum heute mehr seriell?*)
-> - Semaphoren
 > - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
 > - virtueller Hauptspeicher
 > - Thread/Prozess/Task
@@ -284,6 +283,12 @@ cin ────────────│───┬─╯╘═══╝
 **Traps**
 
 - Trap = Art automatischer Prozeduraufruf bei bestimmten Bedingungen (z.B. Gleitkommaüberlauf) -> Programmcounter wird mit Adresse des Trap-Handlers überschrieben
+
+## Semaphore
+
+- Semaphore = Variable, die einem Prozess erlaubt und anderen verbietet
+- Manipulation der Semaphore über zwei unteilbare Operationen (reservieren = P(sema); freigeben = V(sema))
+- Synchronisation von Prozessen $\rightarrow$ Semaphore realisiert ein passives Warten der Prozesse
 
 ## Turing-Maschine
 
