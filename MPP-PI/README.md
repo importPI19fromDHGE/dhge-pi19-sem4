@@ -269,7 +269,6 @@ cin ────────────│───┬─╯╘═══╝
 > **ToDo:**
 >
 > - "Datensicherung"
-> - *Was sind Pipes?*
 
 ## RAID
 
@@ -286,6 +285,13 @@ cin ────────────│───┬─╯╘═══╝
 - `RAID 50`: Striping, Mirroring und Parität über min. 6 Datenträger
 - `RAID 60`: Striping, Mirroring und doppelte Parität über min. 8 Datenträger
 - Spare: zusätzliches Speichermedium $\rightarrow$ bei Ausfall erfolgt sofortiger Restore auf Spare
+
+## Pipes
+
+> *Was sind Pipes?*
+
+- Pipes verbinden die Ausgabe eines Programmes mit der Eingabe eines anderen $\rightarrow$ Datenstrom zwischen zwei Prozessen nach dem FIFO-Prinzip
+- Symbol: `|`; z.B. `cat example.txt | wc -l`
 
 ----------------------------------------------------------------------------------------------------------------------
 
