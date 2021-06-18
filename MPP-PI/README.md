@@ -661,7 +661,7 @@ Archivspeicher ╱     offline    ╲ sec - min
 - XML = E**X**tensible **M**arkup **L**anguage
 - Auszeichnungssprache zur Darstellung hierarchisch strukturierter Daten in einem Textformat
 - für Mensch und Maschine lesbar
-- Validierung: wohlgeformt = physische Struktur eingeahlten (Regeln der Sprache); valide = entspricht einem definiertem Schema
+- Validierung: wohlgeformt = physische Struktur eingehalten (Regeln der Sprache); valide = entspricht einem definiertem Schema
 
 **tag-basiertes XML**
 
