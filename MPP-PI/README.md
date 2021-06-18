@@ -377,7 +377,7 @@ ACK = Bestätigen der SeqNr
 
 ## URL-Aufruf
 
-> - *Was passiert bei einem Browseraufruf (URL)?*
+> *Was passiert bei einem Browseraufruf (URL)?*
 
 - Namensauflösung URL -> IP durch DNS
 - HTTP-Request
@@ -446,7 +446,6 @@ ACK = Bestätigen der SeqNr
 > - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
-> - MVC-Architektur
 > - UML
 > - *Was ist XML? Wie können XML-Dateien validiert werden?*
 
