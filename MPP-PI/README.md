@@ -253,6 +253,15 @@ cin ────────────│───┬─╯╘═══╝
 - Shortest Remaining Time First
   - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
+## Turing-Maschine
+
+- Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
+- unendlich langes Band, LS-Kopf arbeitet auf Band : Bandalphabet
+- Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
+- Zustandsmenge
+- Anfangszustand
+- Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssystemverwaltung
