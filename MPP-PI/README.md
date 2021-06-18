@@ -505,9 +505,25 @@ Archivspeicher ╱     offline    ╲ sec - min
 > - *"agile Entwicklung"*
 > - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile)
 > - *Motivation - Wieso Softwareengineering?*
-> - Lastenheft/Pflichtenheft
 > - *Welche Rolle spielt das Testen in der SE?*
 > - Aufwandsschätzung
+
+## Lasten- und Pflichtenheft
+
+**Lastenheft**
+
+- Basisanforderungen und das grobe Konzept zum Projekt vom Auftraggeber
+- Erforderliche Funktionen, Qualitätsanforderungen
+- relevante technische Daten und vertragliche Rahmenbedingungen
+
+**Pflichtenheft**
+
+- ausformulierte Lösungen sowie die detaillierten Anforderungen auf Basis des Lastenhefts vom Auftragnehmer
+- Dokumentation der Ausgangslage, Definition der Ziele $\rightarrow$ beschreiben der Prozessabläufe
+- Soll-Konzept, dass die Anforderungen des Auftraggebers erfüllt
+- technische Struktur
+- tabellarische Übersicht der wichtigsten Daten
+- Belege, Ablaufpläne und Checklisten
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -520,6 +536,22 @@ Archivspeicher ╱     offline    ╲ sec - min
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
 > - UML
+
+## OOP-Paradigmen
+
+<!--Das kann sich gerne nochmal jemand ansehen-->
+
+- Abstraktion: die Implementierung von Klassen bleibt verborgen, nur Schnittstellen sind nach außen sichtbar
+- Kapselung: Verbergen von Implementierungsdetails, kein Zugriff auf interne Strukturen
+- Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
+- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
+- Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+
+## MVC-Architektur
+
+- **M**odel: Daten
+- **V**iew: Darstellung der Daten des Modells, Realisierung der Benutzerinteraktionen
+- **C**ontroller: verwaltet Model und View, realisiert Geschäftslogik (Algorithmen)
 
 ## XML
 
@@ -551,22 +583,6 @@ Archivspeicher ╱     offline    ╲ sec - min
   </PROPERTY>
 </ROOT>
 ```
-
-## OOP-Paradigmen
-
-<!--Das kann sich gerne nochmal jemand ansehen-->
-
-- Abstraktion: die Implementierung von Klassen bleibt verborgen, nur Schnittstellen sind nach außen sichtbar
-- Kapselung: Verbergen von Implementierungsdetails, kein Zugriff auf interne Strukturen
-- Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
-- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
-- Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
-
-## MVC-Architektur
-
-- **M**odel: Daten
-- **V**iew: Darstellung der Daten des Modells, Realisierung der Benutzerinteraktionen
-- **C**ontroller: verwaltet Model und View, realisiert Geschäftslogik (Algorithmen)
 
 ----------------------------------------------------------------------------------------------------------------------
 
