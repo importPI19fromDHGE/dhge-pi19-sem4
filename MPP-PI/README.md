@@ -394,7 +394,6 @@ ACK = Bestätigen der SeqNr
 > - relationales DBMS: Selektion/Projektion/Join
 > - ERM
 > - *"SQL"*
-> - "Speicherpyramide"
 > - Transaktionen (Eigenschaften)
 
 ## ANSI-SPARC Drei-Ebenen-Konzept
@@ -438,6 +437,21 @@ Sperre         X |  + | % | %        X = Write Lock |
 
 - Wahrung der Konsistenz durch Bedingungen $\rightarrow$ ermöglichen DBMS Integrität zu prüfen
 - z.B. `CONSTRAINT ck_plz CHECK (plz LIKE '[0-9][0-9][0-9][0-9][0-9]');`
+
+## Speicherpyramide
+
+```text
+Register               ╱╲         1 - 10 ns
+Cache                 ╱  ╲      10 - 100 ns      Adressierung von Bytes, flüchtig
+Hauptspeicher        ╱    ╲     0.1 - 1  µs
+                    ╱      ╲          ╱╲
+                   ╱--------╲         ││  Zugriffslücke > 10^5
+                  ╱          ╲        ╲╱
+Externspeicher   ╱   online   ╲          ms
+Archivspeicher  ╱   nearline   ╲        sec      blockadressierbar, nichtflüchtig
+Archivspeicher ╱     offline    ╲ sec - min
+               ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+```
 
 ----------------------------------------------------------------------------------------------------------------------
 
