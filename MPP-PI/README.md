@@ -5,7 +5,6 @@ MMP1 - Themenkatalog
 
 > **ToDo:**
 >
-> - Von-Neumann-Architektur
 > - Harvard-Architekur (im Vgl. zu Neumann)
 > - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
 > - Einordnung von Programmiersprachen (Vor- und Nachteile) <!--imperativ, deklarativ, objektorientiert, ...?-->
@@ -14,6 +13,31 @@ MMP1 - Themenkatalog
 > - Umrechnen von Zahlensystemen
 > - Gleitpunktverfahren
 > - Befehlsverarbeitung
+
+## Von-Neumann-Architektur
+
+```text
+┌──────────────────────────────┐
+│             CPU              │
+│ Rechenwerk        Steuerwerk │
+│     ╱╲                ╱╲     │
+└─────┼┼────────────────┼┼─────┘
+      ╲╱                ╲╱
+┌──────────────────────────────┐
+│          Bus-System          │
+└──────────────────────────────┘
+      ╱╲                ╱╲
+      ││                ││
+      ╲╱                ╲╱
+┌──────────┐    ┌──────────────┐
+│ I/O-Werk │    │ Speicherwerk │
+└──────────┘    └──────────────┘
+```
+
+- binär codierte Daten und Programme im gleichen Speicher
+- Ordnung aufeinanderfolgender Befehle entspricht physischen Speicherung (Abweichungen über Sprünge möglich)
+- Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
+- **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
 
 ## `Call by Value` vs `Call by Reference`
 
