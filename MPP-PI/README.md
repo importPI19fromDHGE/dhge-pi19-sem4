@@ -191,7 +191,6 @@ cin ────────────│───┬─╯╘═══╝
 > **ToDo:**
 >
 > - Klassifizierung von Betriebssystemen
-> - Scheduling Verfahren
 > - Parallelisierung
 > - Serielle vs. Parallele Datenübertragung (*Warum heute mehr seriell?*)
 > - Semaphoren
@@ -232,7 +231,9 @@ cin ────────────│───┬─╯╘═══╝
   - Benutzer-Modus: eingeschränkte Rechte für Anwendungs-Code
   - Schnittstelle zwischen Usermode und Kernel = **Traps** (Einstiegspunkte; vgl. Software-Interrupt)
 
-## Scheduling-Strategie (Prozesse)
+## Scheduling-Strategien für Prozesse
+
+**Non-präemptive Scheduling**
 
 - First come first serve (FCFS / FIFO)
   - Jobs werden bei Entstehen in Warteschlange eingefügt
@@ -242,6 +243,15 @@ cin ────────────│───┬─╯╘═══╝
   - Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
 - Prioritätsscheduling (PS)
   -  Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+
+**Präemptive Scheduling**
+
+- Round-Robin (RR) 
+  - Round-Robin ist eine Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren. 
+- Dynamic Priority Round Robin
+  -  Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
+- Shortest Remaining Time First
+  - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
 ----------------------------------------------------------------------------------------------------------------------
 
