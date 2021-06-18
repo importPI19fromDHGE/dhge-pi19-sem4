@@ -200,7 +200,6 @@ cin ────────────│───┬─╯╘═══╝
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
 > - Dateisystemarten nennen können + Vor- und Nachteile
-> - *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
 > - Adressierungsarten
 
 ## Definition Betriebssystem
@@ -257,6 +256,25 @@ cin ────────────│───┬─╯╘═══╝
   - Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
 - Shortest Remaining Time First
   - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
+
+## Interrupts
+
+> *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
+
+- Interrupt = kurzfristige Unterbrechung eines Programms durch eine von der CPU abzuarbeitende Befehlssequenz (Interrupt Service Routine -> schnelle Reaktion auf I/O, Zeitgeber, ...)
+
+**Ablauf**
+
+- Sperren weiterer Unterbrechungen mit gleicher oder geringerer Priorität
+- Sicherung wichtiger Register-Informationen
+- Bestimmen der Interruptquelle (durch Hardware realisiert)
+- Laden des zugehörigen Interruptvektors
+- Abarbeitung der Interruptroutine
+- Rückkehr zur unterbrochenen Aufgabe (Registerinformationen wiederherstellen)
+
+**Traps**
+
+- Trap = Art automatischer Prozeduraufruf bei bestimmten Bedingungen (z.B. Gleitkommaüberlauf) -> Programmcounter wird mit Adresse des Trap-Handlers überschrieben
 
 ## Turing-Maschine
 
