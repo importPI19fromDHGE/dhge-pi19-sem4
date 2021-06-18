@@ -330,7 +330,7 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - **Relative:** wie indizierte, nur statt Indexregister Basisregister
 - **Virtuelle:** Speicherbereich außerhalb physischen Hauptspeichers
 
-## Serielle vs. Parallele Datenübertragung 
+## Serielle vs. Parallele Datenübertragung
 
 **Serielle Datenübertragung**
 
@@ -346,7 +346,7 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 > *Warum ist heute die serielle Datenübertragung verbreiteter?*
 
 - Taktrate hat gegenüber Busbreite gewonnen
-- Früher: seriell für langsamere Datenübertragungen über ggf. längere Distanzen 
+- Früher: seriell für langsamere Datenübertragungen über ggf. längere Distanzen
   - parallele für schnellere Übertragungen über kürzere Entfernungen
 
 ## Interrupts
