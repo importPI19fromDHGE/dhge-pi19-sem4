@@ -1,3 +1,9 @@
+<!----------
+title: "Allgemeine Betriebswirtschaftslehre"
+date: "Semester 4"
+keywords: [Betriebswirtschaftslehre, BWL, DHGE, Semester 4]
+---------->
+
 Allgemeine Betriebswirtschaftslehre
 ===================================
 
@@ -5,15 +11,14 @@ Allgemeine Betriebswirtschaftslehre
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Unternehmensführung](#unternehmensf%C3%BChrung)
-- [Produktionsfaktoren, betriebliche Funktionsbereiche](#produktionsfaktoren-betriebliche-funktionsbereiche)
+- [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung-1)
+  - [Unternehmensführung](#unternehmensf%C3%BChrung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
@@ -48,7 +53,15 @@ Allgemeine Betriebswirtschaftslehre
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
+  - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
+  - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
+  - [Wer braucht was](#wer-braucht-was)
+  - [Was ist was](#was-ist-was)
+  - [Inhaltliche Bedeutung der Teile des Jahresabschlusses](#inhaltliche-bedeutung-der-teile-des-jahresabschlusses)
 - [Internes Rechnungswesen](#internes-rechnungswesen)
+  - [Kriterien d. internen Rechnungswesens](#kriterien-d-internen-rechnungswesens)
+  - [Balance Score Card](#balance-score-card)
+  - [Kosten- Leistungsrechnung](#kosten--leistungsrechnung)
 - [Investition und Finanzierung](#investition-und-finanzierung)
 - [Protektionswirtschaft](#protektionswirtschaft)
 - [Marketing](#marketing)
@@ -57,9 +70,7 @@ Allgemeine Betriebswirtschaftslehre
 
 <!--newpage-->
 
-# Unternehmensführung
-
-# Produktionsfaktoren, betriebliche Funktionsbereiche
+# Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche
 
 ## Begriffe
 
@@ -69,9 +80,9 @@ Allgemeine Betriebswirtschaftslehre
 ## Merkmale eines Unternehmens
 
 - komplexes System aus Ressourcen (HR, MR, FR)
-	- HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-	- MR = Maschinen, Gebäude, Material, Lizenzen
-	- FR = Finanzielle Mittel -> Eigen- und Fremdkapital
+  - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
+  - MR = Maschinen, Gebäude, Material, Lizenzen
+  - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
 - weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
@@ -182,6 +193,7 @@ Gewinnmaximierung durch:
 - Formelle Beziehungen: <!--???-->
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+
 - Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
@@ -189,7 +201,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Ausführungsfunktion
 - Leitungsfunktion: Zeit- und Selbstmanagement
-	- Anforderungen: fachliche, methodische, persönliche Kenntnisse
+  - Anforderungen: fachliche, methodische, persönliche Kenntnisse
 - Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
 - Stellen mit gleicher Befugnis = Hierarchieebene
 
@@ -325,7 +337,6 @@ $$\begin{matrix}&&\text{Personalbestand aus entsprechenden Veränderungsentschei
 > positiver Saldo = Mehrbedarf
 > negativer Saldo = Freistellung
 
-
 #### vergangenheitsorientierte Methoden
 
 - Kennzahlen: Mitarbeiter werden für best. Kennzahl benötigt
@@ -406,7 +417,172 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 
 # Externes Rechnungswesen
 
+- Personalführung selbst ist die individuelle Führung des Menschen und daher nicht digitalisierbar
+- externes Rechnungswesen ist alles, was das Unternehmen nach außen hin verlässt
+  - z.B. Nachweise über den Erfolg des Unternehmens
+
+**umfasst:**
+
+- Bilanz
+  - für alle Unternehmen
+- Erfolgsrechnung (für große Unternehmen)
+  - für große Unternehmen
+- Einschätzung und Ausblick des Unternehmens (Lagebericht)
+  - wie entwickelt sich das Unternehmen
+  - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
+
+## Funktionen des externen Rechnungswesens
+
+- Informationsfunktion:
+  - Hauptfunktion des externen Rechnungswesens
+  - Informationsaustausch zwischen Kapitalgeber und Management
+  - ist vergangenheitsbasiert und dient möglicher Prognose
+  - meist öffentlich einsehbar (z.B. Bundesanzeiger)
+- Ausschüttungsbemessungsfunktion
+  - Gewinnermittlung
+  - Gewinnverwendung
+  - z.B. Dividende bei Aktiengesellschaften
+- im Rahmen der Insolvenz
+  - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
+  - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
+  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ein Signal für Überschuldung
+- Entscheidungsanreizsystem
+  - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
+  - Gewinnentwicklung als Signal für Investoren
+
+## Kriterien d. externen Rechnungswesens
+
+- **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
+- **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
+- **gesetzliche Regelung:** beachten handels- und steuerrechtlicher Regelungen
+- **Objekt der erfassten Daten:** das ganze Unternehmen
+  - vom Einkauf bsi zum Verkauf wird alles erfasst
+  - dazu Kontierungssystem vorhanden (Daten kommen in verschiedene Konten)
+- **Zeitraum der erfassten Daten:** ein Jahr (im Allgemeinen)
+  - Ausnahme: Wechsel des Geschäftsjahres
+    - muss aber begründet und beschlossen werden
+- **Instrumente:** Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
+
+## Wer braucht was
+
+- **Einzelkaufleute und Personenunternehmen:**
+  - eine Bilanz
+  - Gewinn- und Verlustrechnung (GuV)
+  - definiert in §242 HGB
+- **Kapitalgesellschaften und KapCoGes**
+  - Bilanz
+  - GuV
+  - Anhang
+  - ggf. ergänzt um Lagebericht
+  - definiert in §244 HGB
+- **kapitalmarktorientierte Kapitalgesellschaften, die nicht zur Aufstellung eines Konzernabschlusses verpflichtet sind:**
+  - Bilanz
+  - GuV
+  - Anhang
+  - Kapitalflussrechnung
+  - Eigenkapitalspiegel
+  - *freiwillig* eine Segmentberichterstattung
+  - ergänzt um Lagebericht
+  - definiert in §244 HGB
+
+## Was ist was
+
+Bilanz:
+
+- rechnerische Zusammenstellung aller Vermögensgegenstände (Aktiva) sowie aller Schulden (Passiva)
+- Differenz beider Summen ergibt das Eigenkapital
+- Vergleich eines Teils beider Eigenkapitalbeträge des Berichtsjahres und des Vorjahres ergibt Gewinn oder Verlust
+
+GuV:
+
+- Erträge werden den Aufwendungen gegeübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
+- beide Aufstellungen sind über doppelte Buchführung miteinander verbunden
+
+Anhang:
+
+- Zusammenstellung bestimmter Informationen außerhalb von Bilanz und GuV
+- diese können z.T. wahlweise alternativ in Bilanz oder GuV angegeben werden
+- Beispiel:
+  - Beschreibung eines Entwicklungsprogrammes für Mitarbeiter
+
+Kapitalflussrechnung
+
+- erfasst die Finanzmittelzuflüsse und -abflüsse einer Periode
+- zeigt als Saldo einen Zufluss oder Abfluss an Finanzmitteln, die der finanzwirksamen Veränderung eines in der Bilanz enthaltenen Bestands an Finanzmitteln entspricht
+- Beispiel:
+  - Abverkauf von Flächen
+
+Eigenkapitalspiegel
+
+- stellt neben dem Unternehmenserfolg auch alle anderen Eigenkapitalveränderungen während einer Rechnungsperiode dar
+
+Segmentberichterstattung
+
+- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
+- Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
+
+Lagebericht
+
+- verbale Darstellung der Unternehmensführung über bestimmte Bereiche
+
+## Inhaltliche Bedeutung der Teile des Jahresabschlusses
+
+- Finanzlage \rightarrow\rightarrow sämtliche Aspekte der Finanzierung
+- Finanzstruktur $\rightarrow$ Aufbau des Kapitals (Eigenkapital, Fremdkapital, ...)
+- Deckungsverhältnisse $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
+- Zins- und Tilgungsfristen $\rightarrow$ Fristigkeit der Verbindlichkeiten
+- Finanzierungsmöglichkeiten $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
+- Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
+- abgeleitet der Finanzierung der Vermögensgegenstände
+- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten
+
+- **Ertragslage**
+  - Darstellen des Erfolgs des Unternehmens
+  - Informationsquelle ist die GuV
+
+**Einzelabschluss** ist der Jahresabschluss eines rechtlich selbstständigen Unternehmens
+
 # Internes Rechnungswesen
+
+beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen
+
+- Kosten-Leistungsrechnung (KLAR)
+  - mit welchen Kosten sind wir in der Lage welche Leistung zu erzeugen?
+  - welchen Preis und Menge können wir am Markt erzielen?
+- Selbstkosten der Produkte und Dienstleistungen
+  - Rahmenkosten werden außen vor gelassen
+  - daraus folgt: Preiskalkulation der Produkte und Dienstleistungen
+  - Preis der Produkte wird vom Markt bestimmt
+    - wenn Marktpreis höher als Kosten für Produkte: Gewinn
+    - andernfalls müssen Kosten gesenkt werden um keinen Verlust zu machen
+
+## Kriterien d. internen Rechnungswesens
+
+- **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
+- **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
+- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
+- **Objekt der erfassten Daten:** von einzelnen Unternehmensbereichen bis zum Gesamtunternehmen
+- **Zeitraum der erfassten Daten:**
+  - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
+  - mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
+- **Instrumente:** KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
+
+## Balance Score Card
+
+<!--3 Vor- und Nachteile müssen gewusste werden-->
+<!--TODO: von Folien übernehmen-->
+
+## Kosten- Leistungsrechnung
+
+Vollkostenrechnung
+
+- ca. 1950 entwickelt
+- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung
+
+Teilkostenrechnung
+
+- seit ca. 1975
+- Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten/ variable Kosten
 
 # Investition und Finanzierung
 

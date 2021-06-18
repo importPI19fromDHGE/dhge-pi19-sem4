@@ -7,12 +7,12 @@ Rechnerarchitekturen/hardwarenahe Programmierung
 
 - [Java und Make](#java-und-make)
 - [C und Make](#c-und-make)
-- [C++ und Make](#c-und-make)
+- [C++ und Make](#c-und-make-1)
 - [Assembler](#assembler)
   - [Inline Assembler in C](#inline-assembler-in-c)
     - [Einfaches Debugging mit `gdb`](#einfaches-debugging-mit-gdb)
     - [Geteilte Variablen zwischen C und Assembler](#geteilte-variablen-zwischen-c-und-assembler)
-  - [Binärschnittstelle](#bin%C3%A4rschnittstelle)
+  - [Binärschnittstelle (Application Binary Interface)](#bin%C3%A4rschnittstelle-application-binary-interface)
 - [Mögliche Prüfungsaufgaben](#m%C3%B6gliche-pr%C3%BCfungsaufgaben)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -108,30 +108,30 @@ CPARAM=--std=gnu99 -Wall -Wextra #C99 mit lang exts.
 
 
 compile-cpp: $(CPPSOURCE) Makefile
-	$(CPPCOMPILER) $(CPPARAM) $(CPPSOURCE) -o $(OUTFILE_CPP)
+        $(CPPCOMPILER) $(CPPARAM) $(CPPSOURCE) -o $(OUTFILE_CPP)
 
 compile-c: $(CSOURCE) Makefile
-	$(CCOMPILER) $(CPARAM) $(CSOURCE) -o $(OUTFILE_C)
+        $(CCOMPILER) $(CPARAM) $(CSOURCE) -o $(OUTFILE_C)
 
 compile-all: compile-cpp compile-c
 
 clean-all: clean-c clean-cpp
 
 clean-c:
-	rm -rvf $(OUTFILE_C)
+        rm -rvf $(OUTFILE_C)
 
 clean-cpp:
-	rm -rvf $(OUTFILE_CPP)
+        rm -rvf $(OUTFILE_CPP)
 
 # run unterstützt kein on-demand-kompilieren
 
 run-all: run-c run-cpp
 
 run-c: $(OUTFILE_C)
-	./$(OUTFILE_C)
+        ./$(OUTFILE_C)
 
 run-cpp: $(OUTFILE_CPP)
-	./$(OUTFILE_CPP)
+        ./$(OUTFILE_CPP)
 ```
 
 # Assembler
@@ -144,10 +144,10 @@ run-cpp: $(OUTFILE_CPP)
 
 ```C
 int main(){
-	asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
-	asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
-	asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
-	return 0;
+  asm("mov rax, 7"); // setze den Wert des Register "rax" auf 7
+  asm("mov rbx, 35"); // setze den Wert des Register "rbx" auf 35
+  asm("add rbx, rax"); // addiere die Register "rax" und "rbx" -> Ergebnis in "rbx"
+  return 0;
 }
 ```
 
@@ -174,22 +174,67 @@ long b = 35;
 long c;
 
 asm("mov rax, %1;"
-		"mov rbx, %2;"
-		"add rbx, rax;"
-		"mov %0, rbx;"
-		: "=r" (c) /* output operands */
-		: "r" (a), "r" (b) /* input operands */
-		: "rbx", "rax" /* list of clobbered registers */
+        "mov rbx, %2;"
+        "add rbx, rax;"
+        "mov %0, rbx;"
+        : "=r" (c) /* output operands */
+        : "r" (a), "r" (b) /* input operands */
+        : "rbx", "rax" /* list of clobbered registers */
 );
 ```
 
 - Ein-/Ausgabeoperanden werden durch die Syntax `"constraint" ( operand )` definiert
-	- der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
-	- für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
-	- gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
-	- `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
-	- in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
-- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden, damit GCC nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
+  - der `constraint` gibt an, in welchem Register `gcc` die Operanden speichern soll (`r` steht dabei für ein automatisch gewähltes Register)
+  - für Ausgabe-Operanden wird vor dem `constraint` ein `=` gesetzt (z.B. `"=r"`)
+  - gibt es ausschließlich Eingabe-Operanden, wird dies durch `::` definiert
+  - `operand` gibt an, aus/in welchem Wert die Ein-/Ausgabe gelesen/geschrieben werden soll
+  - in den `asm`-Befehlen werden die Operanden durch `%index` verwendet
+- die `clobbered registers` geben lediglich an, welche Register von den `asm`-Befehlen schreibend verwendet werden
+  - wird definiert, damit `GCC` nicht annimmt, dass diese Register am Ende des Assemblerteils noch dieselben Werte haben
+
+## Binärschnittstelle (Application Binary Interface)
+
+- definierte Schnittstelle, die Assembler-Verarbeitung ermöglicht (vgl. Inline-Assembler)
+- ermöglicht direkten Aufruf von Assembler-Routinen
+- Nutzung:
+  - gesuchte Funktion extern deklarieren ``extern unsigned int popcnt(unsigned int a);``
+  - ABI aufrufen
+  - mittels Assembler die gesuchte Funktion zur Compile-Zeit zu einer Object-File verarbeiten: ``as --64 popcnt.s -o popcnt.o``
+  - beim Linken wird mit einer **impliziten Regel** Patternsubstitution verwendet:
+
+```make
+%.o: %.s Makefile
+        $(ASSEMBLER) $(ASM-PARAMETER) $< -o $@
+```
+
+- gemäß C Calling Convention muss ein 32-Bit (!!) Assemblerprogramm folgenden Rahmen haben, um in einem C-Programm aufrufbar zu sein:
+
+```asm
+global myFunc
+
+section .text
+
+myFunc:
+
+push ebp
+; vorbereitung
+mov ebp, esp ; neuer call frame
+; -- dein code --
+mov eax, [ebp+8] ; erster Parameter in Ausgaberegister eax (eax ist immer Ausgaberegister!)
+; nachbereitung
+mov     esp, ebp ;
+pop     ebp      ; restore old call frame
+ret              ; return
+```
+
+**Kompilieren und Linken einer C- und Assembler Datei**
+
+```sh
+as --32 popcnt.s -o popcnt.o
+gcc -c --std=gnu99 -m32 main.c -o main.o
+gcc -m32 popcnt.o main.o -o main
+./main
+```
 
 ## Binärschnittstelle
 
@@ -221,4 +266,5 @@ mov ebp
 
 # Mögliche Prüfungsaufgaben
 
-- wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden. Wir haben auch die Anzahl verwendeter Kerne. Wir sollen dann den Gesamtzeitaufwand bestimen
+- Wir kriegen ein Konstrukt aus Make-Targets mit definierten Zeitaufwänden, von denen manche nebenläufig ausgeführt werden.
+  - Zu einer gegebenen Anzahl zu verwendender Kerne soll der Gesamtzeitaufwand bestimmt werden.

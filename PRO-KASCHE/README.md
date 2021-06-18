@@ -1,3 +1,9 @@
+<!----------
+title: "IT-Trends"
+date: "Semester 4"
+keywords: [IT-Trends, DHGE, Semester 4]
+---------->
+
 IT-Trends
 =========
 
@@ -56,7 +62,7 @@ IT-Trends
 
 - **symmetrische Verschlüsselung:** gleicher Schlüssel zum ver- und entschlüsseln
   - schnell, effizient durch Hardwarebeschleunigung ausführbar
-- **asymmetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Ent-/verschlüsseln)
+- **asymmetrische Verschlüsselung:** privater und öffentlicher Schlüssel (meist für Entschlüsseln / Verschlüsseln)
   - z.B. End-to-End verschlüsselte Chat-Programme, PGP, Digitale Signaturen
 
 ### Digitale Signaturen
@@ -93,10 +99,16 @@ IT-Trends
 
 > Bitcoin ermöglicht es kryptografisch gesicherte, direkte Transaktionen ohne zentrale Vermittler in einem dezentralen Peer-to-Peer Netzwerk durchzuführen
 
-| **Vorteile**                                                                 | **Nachteile**                                                                   |
-|------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| - dezentral, unabhängig von Zentralbanken                                    | - hohe Eigenverantwortung der Nutzer (ohne Private-Key kein Zugriff auf Wallet) |
-| - sicherer Wertspeicher (maximale Anzahl von BTC begrenzt)                   | - irreversible Transaktionen (Diebstahl, ...)                                   |
-| - freie weltweite Transaktionen, ohne Sanktionen und hohe Transaktionskosten | - legt alle Transaktionen offen (Nachverfolgbarkeit vs. Privatsphäre)           |
-|                                                                              | - Nutzung für illegale Transaktionen möglich (Silk Road, ...)                   |
-|                                                                              | - hoher Stromverbrauch des verbreiteten Mining-Algorithmus                      |
+**Vorteile**
+
+- dezentral, unabhängig von Zentralbanken
+- sicherer Wertspeicher (maximale Anzahl von BTC begrenzt)
+- freie weltweite Transaktionen, ohne Sanktionen und hohe Transaktionskosten
+
+**Nachteile**
+
+- hohe Eigenverantwortung der Nutzer (ohne Private-Key kein Zugriff auf Wallet)
+- irreversible Transaktionen (Diebstahl, ...)
+- legt alle Transaktionen offen (Nachverfolgbarkeit vs. Privatsphäre)
+- Nutzung für illegale Transaktionen möglich (Silk Road, ...)
+- hoher Stromverbrauch des verbreiteten Mining-Algorithmus
