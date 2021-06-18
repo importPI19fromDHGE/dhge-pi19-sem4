@@ -199,7 +199,6 @@ cin ────────────│───┬─╯╘═══╝
 > - *Wozu dienen Caches in Rechnersystemen?*
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
-> - *Was ist Spooling?*
 > - Dateisystemarten nennen können + Vor- und Nachteile
 > - *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
 > - Adressierungsarten
@@ -267,6 +266,13 @@ cin ────────────│───┬─╯╘═══╝
 - Zustandsmenge
 - Anfangszustand
 - Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
+
+## Spooling
+
+> *Was ist Spooling?*
+
+- Dienst verwaltet eine Ressource zentral $\rightarrow$ kann von mehreren Prozessen angefordert werden
+- z.B. Drucker-Spooler = Puffer für Druckeraufträge (*nicht bei allen Ressourcen möglich*)
 
 ----------------------------------------------------------------------------------------------------------------------
 
