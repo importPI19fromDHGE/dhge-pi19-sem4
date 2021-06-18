@@ -178,11 +178,40 @@ cin ────────────│───┬─╯╘═══╝
 
 > **ToDo:**
 >
-> - *Was sind reguläre Ausdrücke?*
 > - *Was ist eine Grammatik? (+Grammatik-Typen)*
 > - Turingmaschine erklären können + Beispiel
 > - Registermaschine erklären
 > - Prinzip der Automatenkonstruktion (NEA, DEA)
+
+## Reguläre Ausdrücke
+
+> *Was sind reguläre Ausdrücke?*
+
+- beschreiben reguläre Mengen
+
+**Definition einer regulären Menge**
+
+- $\emptyset \in R$; die leere Menge ist regulär
+- $\{\epsilon\}\in R$; die Menge, die das leere Wort enthält ist regulär
+- $\{a\}\in R \;\forall\; a \in A$
+- Vereinigungen und Konkatenation von regulären Mengen sind ebenfalls regulär
+  - $(p)^{\ast}$: Konkatenation von $p$ mit sich selbst
+  - $(pq)$: Konkatenation von $p$ und $q$
+  - $p \lor q$: Vereinigungsmenge von $p$ und $q$
+- Eine Menge ist genau dann regulär, wenn sie in endlich vielen Schritten aus diesen Regeln gewonnen werden kann
+
+**Beispiel:** Alphabet $A=\{a,b\}$, dessen Worte weder **aa** noch **bb** enthalten
+
+$$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\ast}$$
+
+## Turing-Maschine
+
+- Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
+- unendlich langes Band, LS-Kopf arbeitet auf Band : Bandalphabet
+- Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
+- Zustandsmenge
+- Anfangszustand
+- Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -289,15 +318,6 @@ cin ────────────│───┬─╯╘═══╝
 - Semaphore = Variable, die einem Prozess erlaubt und anderen verbietet
 - Manipulation der Semaphore über zwei unteilbare Operationen (reservieren = P(sema); freigeben = V(sema))
 - Synchronisation von Prozessen $\rightarrow$ Semaphore realisiert ein passives Warten der Prozesse
-
-## Turing-Maschine
-
-- Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
-- unendlich langes Band, LS-Kopf arbeitet auf Band : Bandalphabet
-- Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
-- Zustandsmenge
-- Anfangszustand
-- Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
 
 ## Spooling
 
