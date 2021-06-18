@@ -390,7 +390,6 @@ ACK = Bestätigen der SeqNr
 > **ToDo:**
 >
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
-> - relationales DBMS: Selektion/Projektion/Join
 > - ERM
 > - *"SQL"*
 > - Transaktionen (Eigenschaften)
@@ -433,6 +432,12 @@ ACK = Bestätigen der SeqNr
 **Objektrelationale Systeme**
 
 - Verknüpfung von relationalen Systemen und Objektorientierung
+
+## Operationen im Relationalen Modell
+
+- **Selection:** Auswahl von Zeilen, die bestimmte Bedingungen erfüllen
+- **Projektion:** Auswahl bestimmter Attribute eines Datensatzes (Spalten)
+- **Join:** Verbinden zweier Datensätze
 
 ## ACID (Transkationseigenschaften)
 
