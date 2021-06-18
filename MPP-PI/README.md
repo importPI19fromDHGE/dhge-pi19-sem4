@@ -355,7 +355,6 @@ ACK = Bestätigen der SeqNr
 > - relationales DBMS: Selektion/Projektion/Join
 > - ERM
 > - *"SQL"*
-> - ACID
 > - "Speicherpyramide"
 > - Transaktionen (Eigenschaften)
 > - Sperrverfahren
@@ -368,6 +367,20 @@ ACK = Bestätigen der SeqNr
 - **Konzeptionelle Ebene:** logische Gesamtstruktur der Daten (Eigenschaften, Beziehungen); neutral zu Anw.-Prog. (relationales Modell)
   - $\updownarrow$ physische Datenunabhängigkeit: Anw.-Prog. von physischer Speicherung unabhängig, Speicherstrukturen uninteressant
 - **Interne Ebene:** physische Datenstrukturen, Speichermedien
+
+## ACID (Transkationseigenschaften)
+
+- Atomarität, Konsistenz, Isolation, Dauerhaftigkeit
+- **Atomarität**
+  - eine Transaktion ist immer atomar (unteilbar)
+  - Wenn eine Datenbankanweisung nicht erfolgreich durchgeführt werden kann, müssen alle vorherigen Änderungen der Transaktion rückgängig gemacht werden (Rollback)
+- **Konsistenz**
+  - vor und nach einer Transaktion befindet sich die Datenbank immer in einem konsistenten Zustand
+- **Isolation/Abkapselung**
+  - alle Änderungen, die eine Transaktion bewirkt sollen erst nach Beendigung für andere Transaktionen sichtbar werden
+  - Sperrprotokolle, Zeitstempelverfahren
+- **Dauerhaftigkeit**
+  - das Ergebnis einer abgeschlossenen Transaktion steht dauerhaft in der Datenbank, kann nicht mehr verloren gehen
 
 ----------------------------------------------------------------------------------------------------------------------
 
