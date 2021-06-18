@@ -390,7 +390,6 @@ ACK = Bestätigen der SeqNr
 > **ToDo:**
 >
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
-> - Datenmodelle: hierarchisch, relational, objektorientiert
 > - relationales DBMS: Selektion/Projektion/Join
 > - ERM
 > - *"SQL"*
@@ -403,6 +402,37 @@ ACK = Bestätigen der SeqNr
 - **Konzeptionelle Ebene:** logische Gesamtstruktur der Daten (Eigenschaften, Beziehungen); neutral zu Anw.-Prog. (relationales Modell)
   - $\updownarrow$ physische Datenunabhängigkeit: Anw.-Prog. von physischer Speicherung unabhängig, Speicherstrukturen uninteressant
 - **Interne Ebene:** physische Datenstrukturen, Speichermedien
+
+## Datenmodelle
+
+**hierarchisches Modell**
+
+- hierarchische Datensätze mit verschiedenen Feldern
+- stark an Filesystem orientiert $\rightarrow$ Baumstruktur (Verweise über Pointer)
+- Grenzen: starres Modell, das keine n:m-Beziehungen unterstützt (ohne Redundanzen)
+
+**Netzwerkmodell**
+
+- Verallgemeinerung des hierarchischen Modells $\rightarrow$ keine strenge Hierarchie
+- m:n-Beziehungen indirekt über Hilfsdatensatztyp möglich (2x 1:n)
+
+**Relationales Modell**
+
+- ein Objekt besitzt bestimmte Merkmale (= Attribute)
+- Beziehungen zwischen den Objekten besitzen ebenfalls Merkmale
+- Speicherung in einfacher Tabellenform (Zeilen = Objekte, Spalten = Attribute)
+- Darstellung von Beziehungen zwischen Objekten durch Attributwerte statt Pointer
+
+**Objektorientiertes Datenmodell**
+
+- Sammlung von Objekten (enthalten Attribute und weitere Objekte)
+- eindeutige Identifikation von Objekten durch unveränderliche Indikatoren
+- Erfassen von mehr Semantik $\rightarrow$ aufwändige Verbundoperationen entfallen (Optimierung vs. Datenunabhängigkeit)
+- Kriterien: komplexe Objekte, Kapselung, Klassen- und Typhierarchie, Sicherstellung der Objektidentität, ...
+
+**Objektrelationale Systeme**
+
+- Verknüpfung von relationalen Systemen und Objektorientierung
 
 ## ACID (Transkationseigenschaften)
 
