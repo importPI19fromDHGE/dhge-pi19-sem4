@@ -39,7 +39,7 @@ MMP1 - Themenkatalog
 - Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
 - **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
 
-## `Call by Value` vs `Call by Reference`
+## `Call by Value` vs. `Call by Reference`
 
 - `Call by Value`: Übergabe der Kopie eines Parameters bei Funktionsaufruf (z.B. `int`, `char` in `C`; Kopie existiert nur innerhalb der Funktion)
 - `Call by Reference`: Übergabe der Referenz auf einen Parameter bei Funktionsaufruf (z.B. `*` in `C`; Änderungen bleiben nach Verlassen der Funktion erhalten)
@@ -231,7 +231,7 @@ AB│
 - $\emptyset \in R$; die leere Menge ist regulär
 - $\{\epsilon\}\in R$; die Menge, die das leere Wort enthält ist regulär
 - $\{a\}\in R \;\forall\; a \in A$
-- Vereinigungen und Konkatenation von regulären Mengen sind ebenfalls regulär
+- Vereinigungen und Konkatenationen von regulären Mengen sind ebenfalls regulär
   - $(p)^{\ast}$: Konkatenation von $p$ mit sich selbst
   - $(pq)$: Konkatenation von $p$ und $q$
   - $p \lor q$: Vereinigungsmenge von $p$ und $q$
@@ -324,7 +324,7 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 
 - **Unmittelbar:** Operand direkt im Adressteil (ohne Speicherzugriff)
 - **Absolut/Direkt:** Operand in Adressteil angegebene Adresse
-- **Indirekt:** Adresse von Speicherzelle enthält Adresse des Operand
+- **Indirekt:** Adresse von Speicherzelle enthält Adresse des Operanden
 - **Symbolische:** Speicherzelle enthält frei wählbaren Namen
 - **Indizierte:** Adressteil + Adresse Indexregister = Adresse des Operanden
 - **Relative:** wie indizierte, nur statt Indexregister Basisregister
@@ -337,10 +337,10 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - einzelne Bits werden nacheinander übertragen (eine Leitung)
 - geringere Störanfälligkeit; niedrige Übertragungsgeschwindigkeit
 
-**Paralelle Datenübertragung**
+**Parallele Datenübertragung**
 
-- mehrere Bits werden paralell übertragen (mehrere Leitungen)
-- störanfällig $\rightarrow$ paralelle Leitungen beeinflussen sich gegenseitig (Übersprechen)
+- mehrere Bits werden parallel übertragen (mehrere Leitungen)
+- störanfällig $\rightarrow$ parallele Leitungen beeinflussen sich gegenseitig (Übersprechen)
 - Berücksichtigung von Laufzeitunterschieden verschiedener Leitungen nötig
 
 > *Warum ist heute die serielle Datenübertragung verbreiteter?*
@@ -639,7 +639,7 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 - ausformulierte Lösungen sowie die detaillierten Anforderungen auf Basis des Lastenhefts vom Auftragnehmer
 - Dokumentation der Ausgangslage, Definition der Ziele $\rightarrow$ beschreiben der Prozessabläufe
-- Soll-Konzept, dass die Anforderungen des Auftraggebers erfüllt
+- Soll-Konzept, das die Anforderungen des Auftraggebers erfüllt
 - technische Struktur
 - tabellarische Übersicht der wichtigsten Daten
 - Belege, Ablaufpläne und Checklisten
@@ -712,16 +712,16 @@ Archivspeicher ╱     offline    ╲ sec - min
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
 > - *Was ist Pipelining?*
 
-## RISC vs CISC
+## RISC vs. CISC
 
 ```text
 Reduced Instruction Set Computing   | Complex Instruction Set Computing
 ────────────────────────────────────┼─────────────────────────────────────────
 reduzierter, homogener Befehlssatz  | komplexer, aber komfortabler Befehlssatz
-paralelle Verarbeitung              | sequenzielle Verarbeitung
+parallele Verarbeitung              | sequenzielle Verarbeitung
 -> geringere Taktrate, Verbrauch    | -> höhere Taktrate, Stromverbrauch nötig
 -> aber: Synchronisationsaufwand    |
-komplexer Compile-Schritt           | Befehle werden als Micorocde ausgeführt
+komplexer Compile-Schritt           | Befehle werden als Microcode ausgeführt
 Pipelining möglich                  | Pipelining schwierig
 ```
 
