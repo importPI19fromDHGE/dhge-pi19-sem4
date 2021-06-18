@@ -397,7 +397,6 @@ ACK = Bestätigen der SeqNr
 > - "Speicherpyramide"
 > - Transaktionen (Eigenschaften)
 > - Sperrverfahren
-> - *Was sind Constraints?*
 
 ## ANSI-SPARC Drei-Ebenen-Konzept
 
@@ -420,6 +419,13 @@ ACK = Bestätigen der SeqNr
   - Sperrprotokolle, Zeitstempelverfahren
 - **Dauerhaftigkeit**
   - das Ergebnis einer abgeschlossenen Transaktion steht dauerhaft in der Datenbank, kann nicht mehr verloren gehen
+
+## Constraints
+
+> *Was sind Constraints?*
+
+- Wahrung der Konsistenz durch Bedingungen $\rightarrow$ ermöglichen DBMS Integrität zu prüfen
+- z.B. `CONSTRAINT ck_plz CHECK (plz LIKE '[0-9][0-9][0-9][0-9][0-9]');`
 
 ----------------------------------------------------------------------------------------------------------------------
 
