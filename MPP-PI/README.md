@@ -396,7 +396,6 @@ ACK = Bestätigen der SeqNr
 > - *"SQL"*
 > - "Speicherpyramide"
 > - Transaktionen (Eigenschaften)
-> - Sperrverfahren
 
 ## ANSI-SPARC Drei-Ebenen-Konzept
 
@@ -419,6 +418,19 @@ ACK = Bestätigen der SeqNr
   - Sperrprotokolle, Zeitstempelverfahren
 - **Dauerhaftigkeit**
   - das Ergebnis einer abgeschlossenen Transaktion steht dauerhaft in der Datenbank, kann nicht mehr verloren gehen
+
+## Sperrkonzepte
+
+**RX-Sperrverfahren**
+
+```text
+               vorhandene Sperre
+                 | NL | R | X        NL = No Lock   |   + = Sperranforderung realisierbar
+angeforderte   R |  + | + | %        R = Read Lock  |   % = bestehende Sperre muss aufgehoben werden
+Sperre         X |  + | % | %        X = Write Lock |
+```
+
+- Gefahren durch Deadlocks: Transaktionen abbrechen (später erneut durchführen) oder Timeout-Verfahren
 
 ## Constraints
 
