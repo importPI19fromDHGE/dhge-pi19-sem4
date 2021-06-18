@@ -257,7 +257,6 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 > **ToDo:**
 >
 > - Parallelisierung
-> - Serielle vs. Parallele Datenübertragung (*Warum heute mehr seriell?*)
 > - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
 > - virtueller Hauptspeicher
 > - Thread/Prozess/Task
@@ -331,11 +330,30 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - **Relative:** wie indizierte, nur statt Indexregister Basisregister
 - **Virtuelle:** Speicherbereich außerhalb physischen Hauptspeichers
 
+## Serielle vs. Parallele Datenübertragung 
+
+**Serielle Datenübertragung**
+
+- einzelne Bits werden nacheinander übertragen (eine Leitung)
+- geringere Störanfälligkeit; niedrige Übertragungsgeschwindigkeit
+
+**Paralelle Datenübertragung**
+
+- mehrere Bits werden paralell übertragen (mehrere Leitungen)
+- störanfällig $\rightarrow$ paralelle Leitungen beeinflussen sich gegenseitig (Übersprechen)
+- Berücksichtigung von Laufzeitunterschieden verschiedener Leitungen nötig
+
+> *Warum ist heute die serielle Datenübertragung verbreiteter?*
+
+- Taktrate hat gegenüber Busbreite gewonnen
+- Früher: seriell für langsamere Datenübertragungen über ggf. längere Distanzen 
+  - parallele für schnellere Übertragungen über kürzere Entfernungen
+
 ## Interrupts
 
 > *Was passiert beim Auftreten eines Interrupts? (+Interrupt vs. Trap)*
 
-- Interrupt = kurzfristige Unterbrechung eines Programms durch eine von der CPU abzuarbeitende Befehlssequenz (Interrupt Service Routine -> schnelle Reaktion auf I/O, Zeitgeber, ...)
+- Interrupt = kurzfristige Unterbrechung eines Programms durch eine von der CPU abzuarbeitende Befehlssequenz (Interrupt Service Routine $\rightarrow$ schnelle Reaktion auf I/O, Zeitgeber, ...)
 
 **Ablauf**
 
@@ -348,7 +366,7 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 
 **Traps**
 
-- Trap = Art automatischer Prozeduraufruf bei bestimmten Bedingungen (z.B. Gleitkommaüberlauf) -> Programmcounter wird mit Adresse des Trap-Handlers überschrieben
+- Trap = Art automatischer Prozeduraufruf bei bestimmten Bedingungen (z.B. Gleitkommaüberlauf) $\rightarrow$ Programmcounter wird mit Adresse des Trap-Handlers überschrieben
 
 ## Semaphore
 
