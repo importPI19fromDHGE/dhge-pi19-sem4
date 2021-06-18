@@ -200,7 +200,6 @@ cin ────────────│───┬─╯╘═══╝
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
 > - Dateisystemarten nennen können + Vor- und Nachteile
-> - Adressierungsarten
 
 ## Definition Betriebssystem
 
@@ -256,6 +255,16 @@ cin ────────────│───┬─╯╘═══╝
   - Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
 - Shortest Remaining Time First
   - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
+
+## Adressierungsarten
+
+- **Unmittelbar:** Operand direkt im Adressteil (ohne Speicherzugriff)
+- **Absolut/Direkt:** Operand in Adressteil angegebene Adresse
+- **Indirekt:** Adresse von Speicherzelle enthält Adresse des Operand
+- **Symbolische:** Speicherzelle enthält frei wählbaren Namen
+- **Indizierte:** Adressteil + Adresse Indexregister = Adresse des Operanden
+- **Relative:** wie indizierte, nur statt Indexregister Basisregister
+- **Virtuelle:** Speicherbereich außerhalb physischen Hauptspeichers
 
 ## Interrupts
 
