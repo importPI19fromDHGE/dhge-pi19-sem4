@@ -266,7 +266,6 @@ cin ────────────│───┬─╯╘═══╝
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP (inkl. TCP-Fast-Open)
-> - TLS (HTTP vs HTTPS)
 > - *Was passiert bei einem Browseraufruf (URL)?*
 > - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - DNS
@@ -335,6 +334,15 @@ ACK = Bestätigen der SeqNr
 - Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
                        <-> 3. autoritativer NS (Resource-Record)
 ```
+
+## TLS
+
+> *Was ist der Unterschied zischen HTTP und HTTPS?*
+
+- setzt auf TCP-Verbindungen auf
+- bietet: Authentisierung und Schlüsselaustausch, Verschlüsselungsalgorithmen und kryptographische Hashfunktionen
+- sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausche bei OpenVPN
+- $\rightarrow$ großer Overhead zusammen mit TCP
 
 ----------------------------------------------------------------------------------------------------------------------
 
