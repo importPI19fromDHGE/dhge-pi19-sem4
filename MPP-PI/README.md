@@ -398,6 +398,16 @@ ACK = Bestätigen der SeqNr
 > - UML
 > - *Was ist XML? Wie können XML-Dateien validiert werden?*
 
+## OOP-Paradigmen 
+
+<!--Das kann sich gerne nochmal jemand ansehen-->
+
+- Abstraktion: die Implementierung von Klassen bleibt verborgen, nur Schnittstellen sind nach außen sichtbar
+- Kapselung: Verbergen von Implementierungsdetails, kein Zugriff auf interne Strukturen
+- Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
+- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
+- Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Hardwarenahe Programmierung
