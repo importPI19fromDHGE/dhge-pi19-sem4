@@ -7,8 +7,7 @@ MMP1 - Themenkatalog
 
 - ISO/OSI
 - OOP-Paradigmen
-- HTTP vs HTTPS
-- TCP/IP, Handshake, IPv4 vs IPv6, Routing, IP und MAC, UDP-TCP
+- TCP/IP, Handshake, IPv4 vs IPv6, Routing, IP und MAC, UDP-TCP, HTTP vs HTTPS
 - Rechnerarchitektur
 - Unterschiede Programmiersprachen, Einordnung, Compiler vs Interpreter
 - Datenbankentwurf, ER-Modell, SQL, ACID
