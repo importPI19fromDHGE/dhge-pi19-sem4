@@ -1,6 +1,24 @@
 MMP1 - Themenkatalog
 ====================
 
+# Präambel
+
+## Most Important Topics
+
+- ISO/OSI
+- OOP-Paradigmen
+- TCP/IP, Handshake, IPv4 vs IPv6, Routing, IP und MAC, UDP-TCP, HTTP vs HTTPS
+- Rechnerarchitektur
+- Unterschiede Programmiersprachen, Einordnung, Compiler vs Interpreter
+- Datenbankentwurf, ER-Modell, SQL, ACID
+- 3-Schichten-Architektur
+- Struktogramm
+- V-Modell, Scrum
+- Verschlüsselung (Arten,Verfahren,Hash)
+- Definition Betriebssystem, Aufgaben, Scheduling, Parallelisierung
+- RAID Level
+- Sortieralogrithmen
+
 # Grundlagen der Informationsverarbeitung
 
 > **ToDo:**
@@ -131,7 +149,6 @@ STOP
 
 > **ToDo:**
 >
-> - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
 > - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
@@ -252,6 +269,25 @@ AB│
  D│ 0 0 1 1
 ```
 
+## Vereinfachung Boolescher Schaltfunktionen
+
+> (`!a||(!a&&b)`)
+> eigentlich (¬a ∨ (¬a)∧b) = ¬a
+
+```text
+(¬a ∨ ¬(a∧b))
+Negation des zweiten Terms entfernen
+(¬a ∨ (¬a)∨(¬b))
+(¬a ∨ ¬a ∨ ¬b)
+Vereinfachen !a ∨ !a = !a
+(¬a ∨ ¬b)
+Negation zusammenführen
+¬(a∧b)
+
+NAND(a,b)
+Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
+```
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik
@@ -260,8 +296,21 @@ AB│
 >
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
-> - *Warum ist ein RAM-Speicher flüchtig?*
-> - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
+
+## Flüchtiger RAM
+
+> *Warum ist ein RAM-Speicher flüchtig?*
+
+- DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
+- Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
+- SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
+
+## Signalübertragung Kabel
+
+> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?* ToDo
+
+- Signallaufzeit: Latenz
+- Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
 
 ----------------------------------------------------------------------------------------------------------------------
 

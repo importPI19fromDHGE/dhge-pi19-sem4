@@ -1,4 +1,7 @@
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - main
 name: TOC Generator
 jobs:
   generateTOC:
