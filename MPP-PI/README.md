@@ -7,7 +7,6 @@ MMP1 - Themenkatalog
 >
 > - Harvard-Architekur (im Vgl. zu Neumann)
 > - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
-> - Einordnung von Programmiersprachen (Vor- und Nachteile) <!--imperativ, deklarativ, objektorientiert, ...?-->
 > - Struktogramm?
 > - Statisches vs Dynamisches Binden
 > - Umrechnen von Zahlensystemen
@@ -58,6 +57,68 @@ STOP
 - **Decodierphase:** Entschlüsseln und Interpretieren des Befehls
 - **Ausführungsphase:** Erzeugung von Steuersignalen zur Ausführung des Befehls (z.B. durch Mikroprogramme)
 - Wiederholung der Phasen, bis ein STOP-Befehl erreicht wird
+
+## Einordnung von Programmiersprachen
+
+| Maschinenorientierte Sprachen                                                   | Problemorientierte Sprachen                                             |
+|---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| - orientieren sich am Befehlssatz der zugrundeliegenden Hardware                | - Sprache orientiert sich an den zu lösenden Problemstellungen          |
+| - Programmierung für einen spezifischen Prozessor (nicht plattformübergreifend) | - Bsp.: imperative, funktionale, logische o. deskriptive Programmierung |
+| - sehr einfache Befehle -> Komplexe Programmierung                              | - auch "höhere Programmiersprachen"                                     |
+| - Assembler-Programmierung = Vereinfachung durch mnemonische Ersetzungen        | - plattformunabhängige Entwicklung durch Verwendung von Compilern       |
+| - hohe Effizienz                                                                | - einfachere Programmierung                                             |
+
+### Problemorientierte Programmiersprachen
+
+- zu sehr großen Teil von der zugrundeliegenden Maschine unabhängig
+- definierter Kern: Wesen der Sprachen überall gleich
+- eventuell maschinen-/plattformspezifische Erweiterungen
+- sog. Quellprogramme werden mit Übersetzungswerkzeugen in Maschinensprache des Rechners übersetzt
+
+**Imperative Programmiersprachen**
+
+- Folge von Anweisungen
+- Weg der Verarbeitung im Vordergrund
+- Bsp.: C, Pascal, Fortan, Cobol, Basic
+
+**Funktionale Programmiersprachen**
+
+- Funktionen die Eingabegrößen in Ausgabegrößen abbilden
+- Funktionen bestehen aus Ausdrücken, die sich aus Operationen zusammensetzen
+- Bsp.: Lisp
+
+**Deskriptive Programmiersprachen**
+
+- Ergebnis selbst im Vordergrund $\rightarrow$ Sprache beschreibt Eigenschaften des gewünschten Ergebnis
+- Programm liefert alle Eingabewerte, die diese Bedingungen erfüllen
+- keine Manipulation der Eingabegrößen
+- oft Abfragesprachen für Datenbanken $\rightarrow$ Bsp.: SQL
+
+**Prädikative Programmiersprachen**
+
+- Beweis in einem System aus Tatsachen und Regeln im Vordergrund (= Wissensbasis)
+- Benutzer formuliert Anfrage an das System, die dieses versucht mit "richtig" oder "falsch" zu beantworten
+- Bsp.: Prolog
+
+**Objektorientierte Programmiersprachen**
+
+- Zusammenfassen der zur Lösung von Teilproblemen notwendigen Daten und Operationen zu Objekten
+- Objekte kommunizieren über Signale und Botschaften miteinander
+- einige imperative Vertreter sind durch objektorientierte Programmierung erweitert wurden
+- Bsp.: C++, Java, Smalltalk
+
+### Maschinenorientierte Programmiersprachen
+
+- Orientierung an der vorliegenden Hardware (Befehlssatz des Zentralprozessors)
+- Typische Vertreter: Assemblersprachen
+
+**Befehl**
+
+- kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
+- bezeichnen einzelne Arbeitsschritte
+- bei problemorientierten Sprachen: Anweisung (oft keine einzelnen Schritte, sondern komplexere Abläufe)
+- nicht weiter zerlegbare Anweisung = elementare Answeisung
+- Befehl = Operationsteil + Adressteil
 
 ## `Call by Value` vs. `Call by Reference`
 
