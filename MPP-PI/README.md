@@ -450,10 +450,11 @@ Einteilung von Grammatiken in vier Klassen:
 - **Unmittelbar:** Operand direkt im Adressteil (ohne Speicherzugriff)
 - **Absolut/Direkt:** Operand in Adressteil angegebene Adresse
 - **Indirekt:** Adresse von Speicherzelle enthält Adresse des Operanden
-- **Symbolische:** Speicherzelle enthält frei wählbaren Namen
+- **Symbolische:** Speicherzelle enthält frei wählbaren Namen (wird während des Linkens durch absolute Adresse ersetzt)
 - **Indizierte:** Adressteil + Adresse Indexregister = Adresse des Operanden
 - **Relative:** wie indizierte, nur statt Indexregister Basisregister
-- **Virtuelle:** Speicherbereich außerhalb physischen Hauptspeichers
+- **PC-relative:** Berechnung der nächsten Adresse relativ zur aktuell bearbeiteten Adresse
+- **Virtuelle:** Speicherbereich außerhalb des physischen Hauptspeichers
 
 ## Serielle vs. Parallele Datenübertragung
 
