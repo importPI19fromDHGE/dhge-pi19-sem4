@@ -960,7 +960,7 @@ Pipelining möglich                  | Pipelining schwierig
 
 ## Pipelining
 
-Die Phasen der Befehlsausführung werden sequenziell paralell versetzt ausgeführt $\rightarrow$ Erhöhung des Befehlsdurchsatzes
+Die einzelnen Phasen der Befehlsausführung werden sequenziell parallel versetzt ausgeführt $\rightarrow$ Erhöhung des Befehlsdurchsatzes
 
 ```text
              ┌─────────────┬───────────────┬──────────────────┐
