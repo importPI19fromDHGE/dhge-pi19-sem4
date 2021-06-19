@@ -384,7 +384,6 @@ Einteilung von Grammatiken in vier Klassen:
 > - Parallelisierung
 > - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
 > - virtueller Hauptspeicher
-> - Thread/Prozess/Task
 > - *Wozu dienen Caches in Rechnersystemen?*
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
@@ -422,6 +421,13 @@ Einteilung von Grammatiken in vier Klassen:
 - *Nach Anzahl der gleichzeitig laufenden Programme:* Einzel- (singletask) oder Mehrprogrammbetrieb (multitask)
 - *Nach Anzahl der gleichzeitigen Nutzer:* Einzel- oder Mehrbenutzerbetrieb
 - *Nach Anzahl der verwalteten Prozessoren:* Ein- oder Mehr-Prozessor-Betriebssystem
+
+## Thread/Prozess/Task
+
+- **Programm:** statische Beschreibung eines sequentiellen Algorithmus
+- **Prozess:** Programm in der Ausführung
+- **Thread:** sequentieller Abarbeitungsablauf innerhalb eines Prozesses
+- **Task:** Synonym für Prozess, aber auch Thread
 
 ## Scheduling-Strategien für Prozesse
 
