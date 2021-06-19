@@ -244,7 +244,7 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 ## Turing-Maschine
 
 - Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
-- unendlich langes Band, LS-Kopf arbeitet auf Band : Bandalphabet
+- unendlich langes Band : Bandalphabet
 - Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
 - Zustandsmenge
 - Anfangszustand
@@ -302,23 +302,16 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 
 **Non-präemptive Scheduling**
 
-- First come first serve (FCFS / FIFO)
-  - Jobs werden bei Entstehen in Warteschlange eingefügt
-- Shortest-Job-First (SJF)
-  - Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
-- Highest response ratio next (HRN)
-  - Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
-- Prioritätsscheduling (PS)
-  - Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+- First come first serve (FCFS / FIFO): Jobs werden bei Entstehen in Warteschlange eingefügt
+- Shortest-Job-First (SJF): Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
+- Highest response ratio next (HRN): Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
+- Prioritätsscheduling (PS): Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
 
 **Präemptive Scheduling**
 
-- Round-Robin (RR)
-  - Round-Robin ist eine Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
-- Dynamic Priority Round Robin
-  - Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
-- Shortest Remaining Time First
-  - Variante von SJF: bevorzugt Jobs mit kleinster restlicher Bedienzeit
+- Round-Robin (RR): Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
+- Dynamic Priority Round Robin: Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
+- Shortest Remaining Time First: Variante von SJF $\rightarrow$ bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
 ## Adressierungsarten
 
