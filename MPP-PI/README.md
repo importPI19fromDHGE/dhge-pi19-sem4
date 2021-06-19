@@ -131,7 +131,6 @@ STOP
 
 > **ToDo:**
 >
-> - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
 > - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
@@ -250,6 +249,22 @@ AB│
 ──┼──────────
  C│ 0 1 1 0
  D│ 0 0 1 1
+```
+
+## Vereinfachung Boolescher Schaltfunktionen
+
+> (`!a||(!a&&b)`)
+
+```text
+(!a ∨ !(a∧b)) 
+Negation des zweiten Terms entfernen
+(!a ∨ (!a)∨(!b))
+Vereinfachen !a ∨ !a = !a
+(!a ∨ !b)
+Negation zusammenführen
+!(a∧b)
+
+NAND(a,B)
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
