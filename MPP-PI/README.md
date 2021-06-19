@@ -381,7 +381,7 @@ Einteilung von Grammatiken in vier Klassen:
 
 > **ToDo:**
 >
-> - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
+> - Speicherzuweisungsstrategien
 > - *Wozu dienen Caches in Rechnersystemen?*
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
@@ -456,6 +456,31 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Typische Größe eines Seitentabelleneintrags: 32 Bit (Zugriffsrechte, Informationsbits für Speicherverwaltung, Seitenrahmennummer)
 
 <!--Sollte man hier kurz was zu Paging sagen?-->
+
+## Seitenersetzungsstrategien
+
+- wird versucht auf eine Seite zuzugreifen, die nicht im physischen Speicher liegt, wird ein Systemaufruf mit einem Seitenfehler (page fault) ausgelöst
+	- wenig genutzter Speicherrahmen wird ausgelagert, angeforderte Seite wird in den freien Rahmen geladen
+	- Anpassung der Seitentabelle, Wiederholung des Befehls
+- richtiges Auslagern ist eines der größten Probleme virtueller Speichersysteme (extreme Auswirkungen auf Gesamtleistung)
+- Worst case: ausgelagerte Seite wird sofort wieder benötigt $\rightarrow$ Seitenflattern (trashing)
+
+**Optimale Seitenersetzungsstrategie**
+
+- lagere die Seite aus, für die der nächste Zugriff am weitesten in der Zukunft liegt (theoretisch beste Strategie)
+- jedoch unmöglich, herauszufinden, welche Seite wann als nächstes gebraucht wird (praktisch nicht umsetzbar)
+- Auch bekannt als **Belady-Theorem der optimalen Verdrängung**
+
+**Seitenersetzungsstrategien** (optimale Strategie dient als Referenz)
+
+- **NRU:** teilt Seiten anhand ihrer R- und M-Bits (read, modified) in vier Klassen ein und entfernt zufällig eine Seite aus der niedrigsten, nicht-leeren Klasse
+- **FIFO:** Auslagern der Seite, die sich am längsten im Hauptspeicher befunden hat (älteste Seite)
+- **Second-Chance:** FIFO mit R-Bit Überprüfung (verhindert Auslagern häufig genutzter Seiten)
+- **LRU:** Auslagern der Seite, auf die am längsten nicht mehr zugegriffen wurde (aufwändig, Umsetzung über Hardware)
+- **NFU:** Seite, die am seltensten benutzt wird, soll ausgelagert werden (mit Zähler realisiert; Problem: anfangs viel genutzte Seiten werden nicht augelagert)
+- **Aging:** Software-Simulation von LRU (alle Zähler 1 Bit nach rechts, R-Bit addiert)
+- **Clock:** analog Second-Chance -> Uhrzeiger wandert so lange um die Elemente, bis eine Seite mit einem zurückgesetzten R-Bit gefunden wird
+- **WSClock:** Kombination aus Working-Set (Menge von Seiten eines Prozesses) und Clock
 
 ## Scheduling-Strategien für Prozesse
 
