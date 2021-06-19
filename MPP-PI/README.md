@@ -275,7 +275,6 @@ AB│
 > - Hashing (Eigenschaften)
 >   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
 >   - *Wie kann sondiert werden?*
-> - Sortieralgorithmen (+ Klassifizierung)
 > - Digitale Signatur
 > - Stack, Queue
 > - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
@@ -289,6 +288,63 @@ AB│
 - **Terminierung:** nach endlich vielen Schritten enden
 - **Determiniertheit:** bei gleichen Voraussetzungen stets gleiches Ergebnis
 - **Determinismus:** zu jedem Zeitpunkt höchstens eine Möglichkeit der Fortsetzung
+
+## Sortieralgorithmen
+
+- Sortieren = zentrales Problem der Computeranwendung (grundlegende Voraussetzung für effizientes Suchen)
+- Anwendung: statistische Auswertung großer Datenmengen, Datenbankanwendungen (erfordern effiziente Zugriffe), Teilschritt in anderen Algorithmen
+
+**Eigenschaften von Sortierverfahren**
+
+- stabiles Sortieren: Reihenfolge gleicher Werte bleibt erhalten
+- Speicherbedarf: insitu (Array) oder exsitu (Liste)
+- Anzahl der Vergleiche/Tausche (best-/worst-case)
+
+### Selection-Sort
+
+- Idee: entferne jeweils das kleinste Element aus der Ausgangsfolge und füge es am Ende der Ergebnisfolge ein
+- Selection-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
+- $N-1$ Swaps, $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
+- insitu, kein stabiles Verfahren
+- Aufwandsabschätzung: $T_{worst}(n)=T_{best}(N)\rightarrow O(N^2)$
+
+### Bubble-Sort
+
+- Idee: Tausche benachbarte Schlüssel, wenn diese nicht in der gewünschten Reihenfolge sind
+- Bubble-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
+- In jedem Durchlauf wandert das größte Element an die richtige Stelle
+- insitu, stabiles Suchverfahren (bei fast Vorsortierung trotzdem $n-1$ Durchläufe)
+- Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
+
+### Insertion-Sort
+
+- Idee: Entnimm der Ausgangsfolge ein beliebiges Element und sortiere es in die (bereits sortierte) Ergebnisfolge
+- Insertion-Sort ist terminiert (Ausgangsfolge wird bei jedem Durchlauf um ein Element verringert)
+- $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
+- pro Durchlauf von Vorsortierung abhängige Anzahl von Vergleichen und Verschiebungen ($T_{worst}(n)\neq T_{best})
+- insitu, stabiles Verfahren
+- Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
+
+### Quick-Sort
+
+- Idee: wähle ein beliebiges Element $x$ aus der Folge (= Pivotelement)
+  - teile die Restfolge in zwei Teilmengen (LTM und RTM)
+  - sortiere beide Teilmengen mit Quick-Sort (Rekursion)
+- Auswahl des Pivot-Elements durch verschiedene Strategien $\rightarrow$ für höchste Effizienz teilen in zwei gleichgroße Teilmengen
+- Termination: bei Partitionierung entstehende Teilmengen sind immer kleiner als die Ausgangsmenge bis zur einelementigen Liste
+- insitu, kein stabiles Verfahren
+- worst-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen der Länge $1$ und $N-1$ ($T_{worst}\rightarrow O(N^2)$)
+- best-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen gleicher Länge ($T_{best}\rightarrow O(N log N)$)
+
+### Merge-Sort
+
+- Idee: Zerlege die Ausgangsmenge rekursiv in 2 gleichgroße Teilmengen (bis einelementige Mengen)
+  - Mische jeweils 2 benachbarte Teilmengen, sortiere dabei die Elemente
+- Gut geeignet für Sortierung von Daten auf externen Medien
+- Termination: durch sukzessive Teilung der Folge bis zu einelementiger Folge gesichert
+- exsitu, stabiles Verfahren
+- worst case: $O(N log N)$
+- best = worst (immer optimale Teilung)
 
 ----------------------------------------------------------------------------------------------------------------------
 
