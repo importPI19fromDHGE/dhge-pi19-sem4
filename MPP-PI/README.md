@@ -7,12 +7,10 @@ MMP1 - Themenkatalog
 >
 > - Harvard-Architekur (im Vgl. zu Neumann)
 > - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
-> - Einordnung von Programmiersprachen (Vor- und Nachteile) <!--imperativ, deklarativ, objektorientiert, ...?-->
 > - Struktogramm?
 > - Statisches vs Dynamisches Binden
 > - Umrechnen von Zahlensystemen
 > - Gleitpunktverfahren
-> - Befehlsverarbeitung
 
 ## Von-Neumann-Architektur
 
@@ -38,6 +36,89 @@ MMP1 - Themenkatalog
 - Ordnung aufeinanderfolgender Befehle entspricht physischen Speicherung (Abweichungen über Sprünge möglich)
 - Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
 - **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
+
+## Befehlsverarbeitung
+
+```text
+       ┌──────────────────┒
+       ↓                  │
+   Holphase               │
+       ↓                  │
+  Decodierphase       nächster
+       ↓               Befehl
+Ausführungsphase          │
+       ↓                  │
+  ┌─ STOP? ───────────────┘
+  ↓
+STOP
+```
+
+- **Holphase:** Transport des nächsten Befehls aus dem Speicher ins Steuerwerk
+- **Decodierphase:** Entschlüsseln und Interpretieren des Befehls
+- **Ausführungsphase:** Erzeugung von Steuersignalen zur Ausführung des Befehls (z.B. durch Mikroprogramme)
+- Wiederholung der Phasen, bis ein STOP-Befehl erreicht wird
+
+## Einordnung von Programmiersprachen
+
+| Maschinenorientierte Sprachen                                                   | Problemorientierte Sprachen                                             |
+|---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| - orientieren sich am Befehlssatz der zugrundeliegenden Hardware                | - Sprache orientiert sich an den zu lösenden Problemstellungen          |
+| - Programmierung für einen spezifischen Prozessor (nicht plattformübergreifend) | - Bsp.: imperative, funktionale, logische o. deskriptive Programmierung |
+| - sehr einfache Befehle -> Komplexe Programmierung                              | - auch "höhere Programmiersprachen"                                     |
+| - Assembler-Programmierung = Vereinfachung durch mnemonische Ersetzungen        | - plattformunabhängige Entwicklung durch Verwendung von Compilern       |
+| - hohe Effizienz                                                                | - einfachere Programmierung                                             |
+
+### Problemorientierte Programmiersprachen
+
+- zu sehr großen Teil von der zugrundeliegenden Maschine unabhängig
+- definierter Kern: Wesen der Sprachen überall gleich
+- eventuell maschinen-/plattformspezifische Erweiterungen
+- sog. Quellprogramme werden mit Übersetzungswerkzeugen in Maschinensprache des Rechners übersetzt
+
+**Imperative Programmiersprachen**
+
+- Folge von Anweisungen
+- Weg der Verarbeitung im Vordergrund
+- Bsp.: C, Pascal, Fortan, Cobol, Basic
+
+**Funktionale Programmiersprachen**
+
+- Funktionen die Eingabegrößen in Ausgabegrößen abbilden
+- Funktionen bestehen aus Ausdrücken, die sich aus Operationen zusammensetzen
+- Bsp.: Lisp
+
+**Deskriptive Programmiersprachen**
+
+- Ergebnis selbst im Vordergrund $\rightarrow$ Sprache beschreibt Eigenschaften des gewünschten Ergebnis
+- Programm liefert alle Eingabewerte, die diese Bedingungen erfüllen
+- keine Manipulation der Eingabegrößen
+- oft Abfragesprachen für Datenbanken $\rightarrow$ Bsp.: SQL
+
+**Prädikative Programmiersprachen**
+
+- Beweis in einem System aus Tatsachen und Regeln im Vordergrund (= Wissensbasis)
+- Benutzer formuliert Anfrage an das System, die dieses versucht mit "richtig" oder "falsch" zu beantworten
+- Bsp.: Prolog
+
+**Objektorientierte Programmiersprachen**
+
+- Zusammenfassen der zur Lösung von Teilproblemen notwendigen Daten und Operationen zu Objekten
+- Objekte kommunizieren über Signale und Botschaften miteinander
+- einige imperative Vertreter sind durch objektorientierte Programmierung erweitert wurden
+- Bsp.: C++, Java, Smalltalk
+
+### Maschinenorientierte Programmiersprachen
+
+- Orientierung an der vorliegenden Hardware (Befehlssatz des Zentralprozessors)
+- Typische Vertreter: Assemblersprachen
+
+**Befehl**
+
+- kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
+- bezeichnen einzelne Arbeitsschritte
+- bei problemorientierten Sprachen: Anweisung (oft keine einzelnen Schritte, sondern komplexere Abläufe)
+- nicht weiter zerlegbare Anweisung = elementare Answeisung
+- Befehl = Operationsteil + Adressteil
 
 ## `Call by Value` vs. `Call by Reference`
 
@@ -164,7 +245,7 @@ cin ────────────│───┬─╯╘═══╝
 AB│
 00│ 0 0 1 1
 01│ 0 0 1 1  ───╲   Zusammenfassen zu 2er-Potenz-Blöcken (2,4,8,...)
-11│ 0 0 0 1  ───╱   -> ¬AD v ¬CD v A¬BC
+11│ 0 0 0 1  ───╱   Verknüpfung der Blöcke mit ODER -> ¬AD v ¬CD v A¬BC
 10│ 0 1 1 1
 ──┼──────────
  C│ 0 1 1 0
@@ -194,7 +275,6 @@ AB│
 > - Hashing (Eigenschaften)
 >   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
 >   - *Wie kann sondiert werden?*
-> - Sortieralgorithmen (+ Klassifizierung)
 > - Digitale Signatur
 > - Stack, Queue
 > - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
@@ -209,15 +289,70 @@ AB│
 - **Determiniertheit:** bei gleichen Voraussetzungen stets gleiches Ergebnis
 - **Determinismus:** zu jedem Zeitpunkt höchstens eine Möglichkeit der Fortsetzung
 
+## Sortieralgorithmen
+
+- Sortieren = zentrales Problem der Computeranwendung (grundlegende Voraussetzung für effizientes Suchen)
+- Anwendung: statistische Auswertung großer Datenmengen, Datenbankanwendungen (erfordern effiziente Zugriffe), Teilschritt in anderen Algorithmen
+
+**Eigenschaften von Sortierverfahren**
+
+- stabiles Sortieren: Reihenfolge gleicher Werte bleibt erhalten
+- Speicherbedarf: insitu (Array) oder exsitu (Liste)
+- Anzahl der Vergleiche/Tausche (best-/worst-case)
+
+### Selection-Sort
+
+- Idee: entferne jeweils das kleinste Element aus der Ausgangsfolge und füge es am Ende der Ergebnisfolge ein
+- Selection-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
+- $N-1$ Swaps, $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
+- insitu, kein stabiles Verfahren
+- Aufwandsabschätzung: $T_{worst}(n)=T_{best}(N)\rightarrow O(N^2)$
+
+### Bubble-Sort
+
+- Idee: Tausche benachbarte Schlüssel, wenn diese nicht in der gewünschten Reihenfolge sind
+- Bubble-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
+- In jedem Durchlauf wandert das größte Element an die richtige Stelle
+- insitu, stabiles Suchverfahren (bei fast Vorsortierung trotzdem $n-1$ Durchläufe)
+- Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
+
+### Insertion-Sort
+
+- Idee: Entnimm der Ausgangsfolge ein beliebiges Element und sortiere es in die (bereits sortierte) Ergebnisfolge
+- Insertion-Sort ist terminiert (Ausgangsfolge wird bei jedem Durchlauf um ein Element verringert)
+- $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
+- pro Durchlauf von Vorsortierung abhängige Anzahl von Vergleichen und Verschiebungen ($T_{worst}(n)\neq T_{best})
+- insitu, stabiles Verfahren
+- Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
+
+### Quick-Sort
+
+- Idee: wähle ein beliebiges Element $x$ aus der Folge (= Pivotelement)
+  - teile die Restfolge in zwei Teilmengen (LTM und RTM)
+  - sortiere beide Teilmengen mit Quick-Sort (Rekursion)
+- Auswahl des Pivot-Elements durch verschiedene Strategien $\rightarrow$ für höchste Effizienz teilen in zwei gleichgroße Teilmengen
+- Termination: bei Partitionierung entstehende Teilmengen sind immer kleiner als die Ausgangsmenge bis zur einelementigen Liste
+- insitu, kein stabiles Verfahren
+- worst-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen der Länge $1$ und $N-1$ ($T_{worst}\rightarrow O(N^2)$)
+- best-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen gleicher Länge ($T_{best}\rightarrow O(N log N)$)
+
+### Merge-Sort
+
+- Idee: Zerlege die Ausgangsmenge rekursiv in 2 gleichgroße Teilmengen (bis einelementige Mengen)
+  - Mische jeweils 2 benachbarte Teilmengen, sortiere dabei die Elemente
+- Gut geeignet für Sortierung von Daten auf externen Medien
+- Termination: durch sukzessive Teilung der Folge bis zu einelementiger Folge gesichert
+- exsitu, stabiles Verfahren
+- worst case: $O(N log N)$
+- best = worst (immer optimale Teilung)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Automaten und Sprachen
 
 > **ToDo:**
 >
-> - *Was ist eine Grammatik? (+Grammatik-Typen)*
 > - Turingmaschine erklären können + Beispiel
-> - Registermaschine erklären
 > - Prinzip der Automatenkonstruktion (NEA, DEA)
 
 ## Reguläre Ausdrücke
@@ -241,6 +376,36 @@ AB│
 
 $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\ast}$$
 
+## Grammatiken
+
+> *Was ist eine Grammatik? (+Grammatik-Typen)*
+
+- Regelwerk, das festlegt, welche Zeichen und Zeichenfolgen zu einer Sprache gehören (= Wortproblem)
+- Definition von Programmiersprachen erfolgt über präzise Grammatiken
+
+**Bestandteile einer Grammatik**
+
+$$G = {T,V,S,P}$$
+
+- Menge $T$ von **Terminalsymbolen**: unveränderliche und unteilbare Bestandteile der Sprache
+- Menge $V$ von **Nichtterminalsymbolen**: Zeichen und Zeichenfolgen, die nach den Regeln der Grammatik gebildet werden können
+- Menge $P$ von **Grammatikregeln**: Regeln, die festlegen wie aus Terminalsymbolen und/oder Nichtterminalsymbolen neue Konstrukte (Nichtterminalsymbole) gebildet werden können
+- Das **Startsymbol** $S$: Nichtterminalsymbol, aus dem alle Worte der Sprache abgeleitet werden
+
+```text
+<Zeichen> ::= <Buchstabe> | <Sonderzeichen> | <Ziffer>
+<Buchstabe> ::= A | B | C | ... | Z
+```
+
+**Die Chomsky-Hierarchie**
+
+Einteilung von Grammatiken in vier Klassen:
+
+- Chomsky-0: Grammatiken ohne Einschränkungen
+- Chomsky-1: Alle Regeln der Form $u\rightarrow v$ mit $u \in V^+$ mit $v \in ((V \cup T) - {S})^+$ und $|u| \leq |v|$ oder $S \rightarrow \varepsilon$ (kontextsensitive Grammatiken)
+- Chomsky-2: Alle Regeln der Form $A\rightarrow v$ mit $A \in V$ und $v \in (V \cup T)^*$ (kontextfreie Grammatiken)
+- Chomsky-3: Alle Regeln der Form $A\rightarrow v$ mit $A \in V$ und $v = \varepsilon$ oder $v = aB$ mit $a \in T$ und $B \in V$ (rechtslinear, reguläre Grammatiken)
+
 ## Turing-Maschine
 
 - Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
@@ -250,16 +415,29 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - Anfangszustand
 - Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
 
+## Registermaschinen
+
+- Registermaschine = vereinfachtes Modell realer Rechner (Vorbild: Von-Neumann-Architektur)
+- beinhaltet Befehlszähler, Akkumulator, Programm und endliche Anzahl von Registern
+- jedes Register kann eine beliebig große natürliche Zahl aufnehmen und die Operationen Inkrement, Dekrement und das Testen des Wertes im Register auf 0
+- eine Registermaschine besitzt $m$ Register und berechnet die Funktionen $f:N^r_0 \rightarrow N^s_0 \;\text{mit}\; r,s \leq m$
+- Eingabe in den ersten Registern $r$, Ausgabe beginnend im ersten Register $s$
+
+**Programm**
+
+- einzelne Befehle des Programmes sind nummeriert
+- Programm verarbeitet natürliche Zahlen aus den Eingaberegistern in natürliche Zahlen in den Ausgaberegistern
+- Eingabe wird in den Erste $r$ Registern gespeichert (restliche Register mit 0 belegt)
+- Programm beginnt bei der mit 0 gekennzeichneten Anweisung, stoppt, wenn zu einer Marke verzweigt werden soll, die nicht im Programm enthalten ist
+- Konfigurationen = Momentaufnahmen des Zustandes der Register einer Registermaschine
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
 
 > **ToDo:**
 >
-> - Parallelisierung
-> - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
-> - virtueller Hauptspeicher
-> - Thread/Prozess/Task
+> - Speicherzuweisungsstrategien
 > - *Wozu dienen Caches in Rechnersystemen?*
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
@@ -298,6 +476,68 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - *Nach Anzahl der gleichzeitigen Nutzer:* Einzel- oder Mehrbenutzerbetrieb
 - *Nach Anzahl der verwalteten Prozessoren:* Ein- oder Mehr-Prozessor-Betriebssystem
 
+## Thread/Prozess/Task
+
+- **Programm:** statische Beschreibung eines sequentiellen Algorithmus
+- **Prozess:** Programm in der Ausführung
+- **Thread:** sequentieller Abarbeitungsablauf innerhalb eines Prozesses
+- **Task:** Synonym für Prozess, aber auch Thread
+
+## Parallelität und Nebenläufigkeit
+
+- **Mehrprogrammbetrieb:** Verwaltung mehrerer Prozesse in einem Einprozessorsystem
+- **Mehrprozessorbetrieb:** Verwaltung mehrerer Prozesse in einem Mehrprozessorsystem
+- **Verteilte Verarbeitung:** Verwaltung mehrerer Prozesse auf mehreren Verteilten Computersystemen (Cluster)
+- **Grundlegender Bedeutung:** Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
+
+Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
+
+- **Parallelität:** Die Anweisungen zweier Prozesse werden gleichtzeitig unabhängig voneinander ausgeführt (echte Parallelität $\rightarrow$ nur auf Multiprozessor-Systemen)
+- **Nebenläufigkeit:** Die Anweisungen zweier Prozesse werden unabhängig voneinander sequentiell ausgeführt (pseudo Parallelität $\rightarrow$ auf Monoprozessor-Systemen)
+
+## Virtueller Speicher
+
+- mehrere Fragmente müssen für das Programm so dargestellt werden, als ob sie aus einem kontinuierlichen Bereich stammen
+- verlangt ein Programm mehr Speicher als vorhanden, wird der inaktive Teil ausgelagert (geswappt)
+- Umsetzung der virtuellen in eine physische Adresse durch die Memory Management Unit (MMU)
+
+**Implementierung**
+
+- jeder Prozess besitzt eigenen virtuellen Adressraum
+- virtueller Adressraum besteht aus gleich großen Seiten (pages)
+- Arbeitspeicher unterteilt in gleich große Kacheln (page frame)
+- i.d.R.: $\text{page} = \text{page frame}$ oder $\text{page} * n = \text{page frame}$
+- Hintergrundspeicher aufgeteilt in zusammenhängende Blöcke gleicher Größe (nur blockweise adressierbar)
+- Verwaltung der Adresse und des Zustand jeder Seite in einer Seitentabelle
+- Typische Größe eines Seitentabelleneintrags: 32 Bit (Zugriffsrechte, Informationsbits für Speicherverwaltung, Seitenrahmennummer)
+
+<!--Sollte man hier kurz was zu Paging sagen?-->
+
+## Seitenersetzungsstrategien
+
+- wird versucht auf eine Seite zuzugreifen, die nicht im physischen Speicher liegt, wird ein Systemaufruf mit einem Seitenfehler (page fault) ausgelöst
+  - wenig genutzter Speicherrahmen wird ausgelagert, angeforderte Seite wird in den freien Rahmen geladen
+  - Anpassung der Seitentabelle, Wiederholung des Befehls
+- richtiges Auslagern ist eines der größten Probleme virtueller Speichersysteme (extreme Auswirkungen auf Gesamtleistung)
+- Worst case: ausgelagerte Seite wird sofort wieder benötigt $\rightarrow$ Seitenflattern (trashing)
+
+**Optimale Seitenersetzungsstrategie**
+
+- lagere die Seite aus, für die der nächste Zugriff am weitesten in der Zukunft liegt (theoretisch beste Strategie)
+- jedoch unmöglich, herauszufinden, welche Seite wann als nächstes gebraucht wird (praktisch nicht umsetzbar)
+- Auch bekannt als **Belady-Theorem der optimalen Verdrängung**
+
+**Seitenersetzungsstrategien** (optimale Strategie dient als Referenz)
+
+- **NRU:** teilt Seiten anhand ihrer R- und M-Bits (read, modified) in vier Klassen ein und entfernt zufällig eine Seite aus der niedrigsten, nicht-leeren Klasse
+- **FIFO:** Auslagern der Seite, die sich am längsten im Hauptspeicher befunden hat (älteste Seite)
+- **Second-Chance:** FIFO mit R-Bit Überprüfung (verhindert Auslagern häufig genutzter Seiten)
+- **LRU:** Auslagern der Seite, auf die am längsten nicht mehr zugegriffen wurde (aufwändig, Umsetzung über Hardware)
+- **NFU:** Seite, die am seltensten benutzt wird, soll ausgelagert werden (mit Zähler realisiert; Problem: anfangs viel genutzte Seiten werden nicht augelagert)
+- **Aging:** Software-Simulation von LRU (alle Zähler 1 Bit nach rechts, R-Bit addiert)
+- **Clock:** analog Second-Chance -> Uhrzeiger wandert so lange um die Elemente, bis eine Seite mit einem zurückgesetzten R-Bit gefunden wird
+- **WSClock:** Kombination aus Working-Set (Menge von Seiten eines Prozesses) und Clock
+
 ## Scheduling-Strategien für Prozesse
 
 **Non-präemptive Scheduling**
@@ -318,10 +558,11 @@ $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\as
 - **Unmittelbar:** Operand direkt im Adressteil (ohne Speicherzugriff)
 - **Absolut/Direkt:** Operand in Adressteil angegebene Adresse
 - **Indirekt:** Adresse von Speicherzelle enthält Adresse des Operanden
-- **Symbolische:** Speicherzelle enthält frei wählbaren Namen
+- **Symbolische:** Speicherzelle enthält frei wählbaren Namen (wird während des Linkens durch absolute Adresse ersetzt)
 - **Indizierte:** Adressteil + Adresse Indexregister = Adresse des Operanden
 - **Relative:** wie indizierte, nur statt Indexregister Basisregister
-- **Virtuelle:** Speicherbereich außerhalb physischen Hauptspeichers
+- **PC-relative:** Berechnung der nächsten Adresse relativ zur aktuell bearbeiteten Adresse
+- **Virtuelle:** Speicherbereich außerhalb des physischen Hauptspeichers
 
 ## Serielle vs. Parallele Datenübertragung
 
