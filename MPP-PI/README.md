@@ -273,15 +273,17 @@ AB│
 ## Vereinfachung Boolescher Schaltfunktionen
 
 > (`!a||(!a&&b)`)
+> eigentlich (¬a ∨ (¬a)∧b) = ¬a
 
 ```text
-(!a ∨ !(a∧b))
+(¬a ∨ ¬(a∧b))
 Negation des zweiten Terms entfernen
-(!a ∨ (!a)∨(!b))
+(¬a ∨ (¬a)∨(¬b))
+(¬a ∨ ¬a ∨ ¬b)
 Vereinfachen !a ∨ !a = !a
-(!a ∨ !b)
+(¬a ∨ ¬b)
 Negation zusammenführen
-!(a∧b)
+¬(a∧b)
 
 NAND(a,b)
 Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
