@@ -184,7 +184,7 @@ cin ────────────│───┬─╯╘═══╝
 AB│
 00│ 0 0 1 1
 01│ 0 0 1 1  ───╲   Zusammenfassen zu 2er-Potenz-Blöcken (2,4,8,...)
-11│ 0 0 0 1  ───╱   -> ¬AD v ¬CD v A¬BC
+11│ 0 0 0 1  ───╱   Verknüpfung der Blöcke mit ODER -> ¬AD v ¬CD v A¬BC
 10│ 0 1 1 1
 ──┼──────────
  C│ 0 1 1 0
