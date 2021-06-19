@@ -20,7 +20,6 @@ MMP1 - Themenkatalog
 - RAID Level
 - Sortieralogrithmen
 
-
 # Grundlagen der Informationsverarbeitung
 
 > **ToDo:**
