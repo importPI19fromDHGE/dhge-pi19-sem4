@@ -60,6 +60,14 @@ STOP
 
 ## Einordnung von Programmiersprachen
 
+| Maschinenorientierte Sprachen                                                   | Problemorientierte Sprachen                                             |
+|---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| - orientieren sich am Befehlssatz der zugrundeliegenden Hardware                | - Sprache orientiert sich an den zu lösenden Problemstellungen          |
+| - Programmierung für einen spezifischen Prozessor (nicht plattformübergreifend) | - Bsp.: imperative, funktionale, logische o. deskriptive Programmierung |
+| - sehr einfache Befehle -> Komplexe Programmierung                              | - auch "höhere Programmiersprachen"                                     |
+| - Assembler-Programmierung = Vereinfachung durch mnemonische Ersetzungen        | - plattformunabhängige Entwicklung durch Verwendung von Compilern       |
+| - hohe Effizienz                                                                | - einfachere Programmierung                                             |
+
 ### Problemorientierte Programmiersprachen
 
 - zu sehr großen Teil von der zugrundeliegenden Maschine unabhängig
