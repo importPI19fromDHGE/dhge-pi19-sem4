@@ -264,7 +264,8 @@ Vereinfachen !a ∨ !a = !a
 Negation zusammenführen
 !(a∧b)
 
-NAND(a,B)
+NAND(a,b)
+Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -275,8 +276,15 @@ NAND(a,B)
 >
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
-> - *Warum ist ein RAM-Speicher flüchtig?*
 > - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
+
+## Flüchtiger RAM
+
+> *Warum ist ein RAM-Speicher flüchtig?*
+
+- DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
+- Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
+- SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
 
 ----------------------------------------------------------------------------------------------------------------------
 
