@@ -884,7 +884,6 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > **ToDo:**
 >
-> - Compiler vs. Interpreter
 > - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
@@ -905,6 +904,23 @@ Archivspeicher ╱     offline    ╲ sec - min
 - **M**odel: Daten
 - **V**iew: Darstellung der Daten des Modells, Realisierung der Benutzerinteraktionen
 - **C**ontroller: verwaltet Model und View, realisiert Geschäftslogik (Algorithmen)
+
+## Compiler vs. Interpreter
+
+**Compiler**
+
+- Übersetzung des gesamten Quellcodes in hardwarespezifischen Maschinencode
+- Beispiele: `C`, `C++`, `C#`
+- Vorteil: keine Hardwarebindung, hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
+- Nachteil: aufwändiger hardwarespezifischer Compile-Prozess
+
+**Interpreter**
+
+- befehlsweise Verarbeitung auf einer abstrakten Maschine zur Laufzeit
+- Interpreter parst Programm $\rightarrow$ lässt es auf Basis-System laufen
+- Beispiele: `Python`, `Ruby`
+- Vorteil: keine Hardwarebindung
+- Nachteil: beschränkte Optimierungsmöglichkeiten, Zusatzaufwand für abstrakte Maschine, keine Spezialisierung für Hardware möglich
 
 ## XML
 
