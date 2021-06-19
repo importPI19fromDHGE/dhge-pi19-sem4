@@ -654,6 +654,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 ## ISO/OSI-Referenzmodell
 
+```
 | Schicht                | Funktion                                                     | Protokolle |
 |------------------------|--------------------------------------------------------------|------------|
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
@@ -663,6 +664,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 | Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         |
 | Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   |
 | Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            |
+```
 
 - Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
 
