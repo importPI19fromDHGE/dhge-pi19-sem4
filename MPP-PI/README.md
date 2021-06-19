@@ -382,7 +382,6 @@ Einteilung von Grammatiken in vier Klassen:
 > **ToDo:**
 >
 > - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
-> - virtueller Hauptspeicher
 > - *Wozu dienen Caches in Rechnersystemen?*
 > - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 > - *Welche Betriebsmittel kennen Sie?*
@@ -439,6 +438,24 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - **Parallelität:** Die Anweisungen zweier Prozesse werden gleichtzeitig unabhängig voneinander ausgeführt (echte Parallelität $\rightarrow$ nur auf Multiprozessor-Systemen)
 - **Nebenläufigkeit:** Die Anweisungen zweier Prozesse werden unabhängig voneinander sequentiell ausgeführt (pseudo Parallelität $\rightarrow$ auf Monoprozessor-Systemen)
+
+## Virtueller Speicher
+
+- mehrere Fragmente müssen für das Programm so dargestellt werden, als ob sie aus einem kontinuierlichen Bereich stammen
+- verlangt ein Programm mehr Speicher als vorhanden, wird der inaktive Teil ausgelagert (geswappt)
+- Umsetzung der virtuellen in eine physische Adresse durch die Memory Management Unit (MMU)
+
+**Implementierung**
+
+- jeder Prozess besitzt eigenen virtuellen Adressraum
+- virtueller Adressraum besteht aus gleich großen Seiten (pages)
+- Arbeitspeicher unterteilt in gleich große Kacheln (page frame)
+- i.d.R.: $\text{page} = \text{page frame}$ oder $\text{page} * n = \text{page frame}$
+- Hintergrundspeicher aufgeteilt in zusammenhängende Blöcke gleicher Größe (nur blockweise adressierbar)
+- Verwaltung der Adresse und des Zustand jeder Seite in einer Seitentabelle
+- Typische Größe eines Seitentabelleneintrags: 32 Bit (Zugriffsrechte, Informationsbits für Speicherverwaltung, Seitenrahmennummer)
+
+<!--Sollte man hier kurz was zu Paging sagen?-->
 
 ## Scheduling-Strategien für Prozesse
 
