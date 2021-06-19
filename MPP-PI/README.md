@@ -654,7 +654,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 ## ISO/OSI-Referenzmodell
 
-```
+```text
 | Schicht                | Funktion                                                     | Protokolle |
 |------------------------|--------------------------------------------------------------|------------|
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
