@@ -2,6 +2,7 @@ on:
   pull_request:
     branches:
       - main
+      - quicktest
 name: TOC Generator
 jobs:
   generateTOC:
