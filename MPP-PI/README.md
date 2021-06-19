@@ -276,7 +276,7 @@ AB│
 > (`!a||(!a&&b)`)
 
 ```text
-(!a ∨ !(a∧b)) 
+(!a ∨ !(a∧b))
 Negation des zweiten Terms entfernen
 (!a ∨ (!a)∨(!b))
 Vereinfachen !a ∨ !a = !a
