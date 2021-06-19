@@ -1,6 +1,26 @@
 MMP1 - Themenkatalog
 ====================
 
+# Präambel
+
+## Most Important Topics
+
+- ISO/OSI
+- OOP-Paradigmen
+- HTTP vs HTTPS
+- TCP/IP, Handshake, IPv4 vs IPv6, Routing, IP und MAC, UDP-TCP
+- Rechnerarchitektur
+- Unterschiede Programmiersprachen, Einordnung, Compiler vs Interpreter
+- Datenbankentwurf, ER-Modell, SQL, ACID
+- 3-Schichten-Architektur
+- Struktogramm
+- V-Modell, Scrum
+- Verschlüsselung (Arten,Verfahren,Hash)
+- Definition Betriebssystem, Aufgaben, Scheduling, Parallelisierung
+- RAID Level
+- Sortieralogrithmen
+
+
 # Grundlagen der Informationsverarbeitung
 
 > **ToDo:**
