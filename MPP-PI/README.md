@@ -944,7 +944,6 @@ Archivspeicher ╱     offline    ╲ sec - min
 > **ToDo:**
 >
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
-> - *Was ist Pipelining?*
 
 ## RISC vs. CISC
 
@@ -957,6 +956,19 @@ parallele Verarbeitung              | sequenzielle Verarbeitung
 -> aber: Synchronisationsaufwand    |
 komplexer Compile-Schritt           | Befehle werden als Microcode ausgeführt
 Pipelining möglich                  | Pipelining schwierig
+```
+## Pipelining
+
+Die Phasen der Befehlsausführung werden sequenziell paralell versetzt ausgeführt $\rightarrow$ Erhöhung des Befehlsdurchsatzes
+
+```text
+             ┌─────────────┬───────────────┬──────────────────┐
+Befehl 1:    │  Hol-Phase  │ Decodierphase │ Ausführungsphase │
+             └─────────────┼───────────────┼──────────────────┼──────────────────┐
+Befehl 2:                  │   Hol-Phase   │   Decodierphase  │ Ausführungsphase │
+                           └───────────────┼──────────────────┼──────────────────┼─────┐
+Befehl 3:                                  │    Hol-Phase     │  Decodierphase   │ ... │
+                                           └──────────────────┴──────────────────┴─────┘
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
