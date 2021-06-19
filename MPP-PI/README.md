@@ -367,7 +367,7 @@ Einteilung von Grammatiken in vier Klassen:
 - eine Registermaschine besitzt $m$ Register und berechnet die Funktionen $f:N^r_0 \rightarrow N^s_0 \;\text{mit}\; r,s \leq m$
 - Eingabe in den ersten Registern $r$, Ausgabe beginnend im ersten Register $s$
 
-### Programm
+**Programm**
 
 - einzelne Befehle des Programmes sind nummeriert
 - Programm verarbeitet natürliche Zahlen aus den Eingaberegistern in natürliche Zahlen in den Ausgaberegistern
