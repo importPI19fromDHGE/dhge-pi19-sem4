@@ -276,7 +276,6 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 >
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
-> - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
 
 ## Flüchtiger RAM
 
@@ -285,6 +284,13 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
 - Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
 - SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
+
+## Signalübertragung Kabel
+
+> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?* ToDo
+
+- Signallaufzeit: Latenz
+- Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
 
 ----------------------------------------------------------------------------------------------------------------------
 
