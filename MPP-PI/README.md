@@ -632,8 +632,8 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
   - Parität: Bei verteilter Datenspeicherung durch Striping $\rightarrow$ Speicherung von Paritätsinformationen auf weiterem Speichermedium
 - `RAID 0`: Striping über min. 2 Datenträger (höhere Performance, aber keine Ausfallsicherheit)
 - `RAID 1`: Mirroring über min. 2 Datenträger (Ausfallsicherheit; geringe Netto-Kapazität; hohe Kosten)
-- `RAID 5`: Striping mit Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
-- `RAID 6`: Striping mit Parität über 4-16 Datenträger (zweite Kopie der Parität $\rightarrow$ Ausfallsicherheit zweier Speichermedien)
+- `RAID 5`: Striping mit einer XOR-Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
+- `RAID 6`: Striping mit zweifachen Paritätsinformationen (Reed-Solomon-Code) über 4-16 Datenträger (Ausfallsicherheit zweier Speichermedien)
 - `RAID 10`: Striping und Mirroring über min. 4 Datenträger
 - `RAID 50`: Striping, Mirroring und Parität über min. 6 Datenträger
 - `RAID 60`: Striping, Mirroring und doppelte Parität über min. 8 Datenträger
