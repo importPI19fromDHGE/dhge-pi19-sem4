@@ -215,7 +215,6 @@ AB│
 
 > **ToDo:**
 >
-> - *Was ist eine Grammatik? (+Grammatik-Typen)*
 > - Turingmaschine erklären können + Beispiel
 > - Registermaschine erklären
 > - Prinzip der Automatenkonstruktion (NEA, DEA)
@@ -240,6 +239,36 @@ AB│
 **Beispiel:** Alphabet $A=\{a,b\}$, dessen Worte weder **aa** noch **bb** enthalten
 
 $$L \subset A^{\ast}=(ab)^{\ast}\lor(ba)^{\ast}\lor a(ba)^{\ast} \lor b(ab)^{\ast}$$
+
+## Grammatiken
+
+> *Was ist eine Grammatik? (+Grammatik-Typen)*
+
+- Regelwerk, das festlegt, welche Zeichen und Zeichenfolgen zu einer Sprache gehören (= Wortproblem)
+- Definition von Programmiersprachen erfolgt über präzise Grammatiken
+
+**Bestandteile einer Grammatik**
+
+$$G = {T,V,S,P}$$
+
+- Menge $T$ von **Terminalsymbolen**: unveränderliche und unteilbare Bestandteile der Sprache
+- Menge $V$ von **Nichtterminalsymbolen**: Zeichen und Zeichenfolgen, die nach den Regeln der Grammatik gebildet werden können
+- Menge $P$ von **Grammatikregeln**: Regeln, die festlegen wie aus Terminalsymbolen und/oder Nichtterminalsymbolen neue Konstrukte (Nichtterminalsymbole) gebildet werden können
+- Das **Startsymbol** $S$: Nichtterminalsymbol, aus dem alle Worte der Sprache abgeleitet werden
+
+```text
+<Zeichen> ::= <Buchstabe> | <Sonderzeichen> | <Ziffer>
+<Buchstabe> ::= A | B | C | ... | Z
+```
+
+**Die Chomsky-Hierarchie**
+
+Einteilung von Grammatiken in vier Klassen:
+
+- Chomsky-0: Grammatiken ohne Einschränkungen
+- Chomsky-1: Alle Regeln der Form $u\rightarrow v$ mit $u \in V^+$ mit $v \in ((V \cup T) - {S})^+$ und $|u| \leq |v|$ oder $S \rightarrow \varepsilon$ (kontextsensitive Grammatiken)
+- Chomsky-2: Alle Regeln der Form $A\rightarrow v$ mit $A \in V$ und $v \in (V \cup T)^*$ (kontextfreie Grammatiken)
+- Chomsky-3: Alle Regeln der Form $A\rightarrow v$ mit $A \in V$ und $v = \varepsilon$ oder $v = aB$ mit $a \in T$ und $B \in V$ (rechtslinear, reguläre Grammatiken)
 
 ## Turing-Maschine
 
