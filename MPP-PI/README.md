@@ -216,7 +216,6 @@ AB│
 > **ToDo:**
 >
 > - Turingmaschine erklären können + Beispiel
-> - Registermaschine erklären
 > - Prinzip der Automatenkonstruktion (NEA, DEA)
 
 ## Reguläre Ausdrücke
@@ -278,6 +277,22 @@ Einteilung von Grammatiken in vier Klassen:
 - Zustandsmenge
 - Anfangszustand
 - Überführungsfunktion: Wenn in Zustand ..  und Symbol ..  gelesen, dann ist .. neuer Zustand, schreibe Symbol .. und gehe mit LS links/rechts oder bleibe stehen
+
+## Registermaschinen
+
+- Registermaschine = vereinfachtes Modell realer Rechner (Vorbild: Von-Neumann-Architektur)
+- beinhaltet Befehlszähler, Akkumulator, Programm und endliche Anzahl von Registern
+- jedes Register kann eine beliebig große natürliche Zahl aufnehmen und die Operationen Inkrement, Dekrement und das Testen des Wertes im Register auf 0
+- eine Registermaschine besitzt $m$ Register und berechnet die Funktionen $f:N^r_0 \rightarrow N^s_0 \;\text{mit}\; r,s \leq m$
+- Eingabe in den ersten Registern $r$, Ausgabe beginnend im ersten Register $s$
+
+### Programm
+
+- einzelne Befehle des Programmes sind nummeriert
+- Programm verarbeitet natürliche Zahlen aus den Eingaberegistern in natürliche Zahlen in den Ausgaberegistern
+- Eingabe wird in den Erste $r$ Registern gespeichert (restliche Register mit 0 belegt)
+- Programm beginnt bei der mit 0 gekennzeichneten Anweisung, stoppt, wenn zu einer Marke verzweigt werden soll, die nicht im Programm enthalten ist
+- Konfigurationen = Momentaufnahmen des Zustandes der Register einer Registermaschine
 
 ----------------------------------------------------------------------------------------------------------------------
 
