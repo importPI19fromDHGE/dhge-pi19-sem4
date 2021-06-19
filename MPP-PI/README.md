@@ -381,7 +381,6 @@ Einteilung von Grammatiken in vier Klassen:
 
 > **ToDo:**
 >
-> - Parallelisierung
 > - Seitenersetzungsstrategien, Speicherzuweisungsstrategien
 > - virtueller Hauptspeicher
 > - *Wozu dienen Caches in Rechnersystemen?*
@@ -428,6 +427,18 @@ Einteilung von Grammatiken in vier Klassen:
 - **Prozess:** Programm in der Ausführung
 - **Thread:** sequentieller Abarbeitungsablauf innerhalb eines Prozesses
 - **Task:** Synonym für Prozess, aber auch Thread
+
+## Parallelität und Nebenläufigkeit
+
+- **Mehrprogrammbetrieb:** Verwaltung mehrerer Prozesse in einem Einprozessorsystem
+- **Mehrprozessorbetrieb:** Verwaltung mehrerer Prozesse in einem Mehrprozessorsystem
+- **Verteilte Verarbeitung:** Verwaltung mehrerer Prozesse auf mehreren Verteilten Computersystemen (Cluster)
+- **Grundlegender Bedeutung:** Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
+
+Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
+
+- **Parallelität:** Die Anweisungen zweier Prozesse werden gleichtzeitig unabhängig voneinander ausgeführt (echte Parallelität $\rightarrow$ nur auf Multiprozessor-Systemen)
+- **Nebenläufigkeit:** Die Anweisungen zweier Prozesse werden unabhängig voneinander sequentiell ausgeführt (pseudo Parallelität $\rightarrow$ auf Monoprozessor-Systemen)
 
 ## Scheduling-Strategien für Prozesse
 
