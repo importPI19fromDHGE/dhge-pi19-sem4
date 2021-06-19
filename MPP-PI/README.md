@@ -12,7 +12,6 @@ MMP1 - Themenkatalog
 > - Statisches vs Dynamisches Binden
 > - Umrechnen von Zahlensystemen
 > - Gleitpunktverfahren
-> - Befehlsverarbeitung
 
 ## Von-Neumann-Architektur
 
@@ -38,6 +37,27 @@ MMP1 - Themenkatalog
 - Ordnung aufeinanderfolgender Befehle entspricht physischen Speicherung (Abweichungen über Sprünge möglich)
 - Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
 - **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
+
+## Befehlsverarbeitung
+
+```text
+       ┌──────────────────┒
+       ↓                  │
+   Holphase               │
+       ↓                  │
+  Decodierphase       nächster
+       ↓               Befehl
+Ausführungsphase          │
+       ↓                  │
+  ┌─ STOP? ───────────────┘
+  ↓
+STOP
+```
+
+- **Holphase:** Transport des nächsten Befehls aus dem Speicher ins Steuerwerk
+- **Decodierphase:** Entschlüsseln und Interpretieren des Befehls
+- **Ausführungsphase:** Erzeugung von Steuersignalen zur Ausführung des Befehls (z.B. durch Mikroprogramme)
+- Wiederholung der Phasen, bis ein STOP-Befehl erreicht wird
 
 ## `Call by Value` vs. `Call by Reference`
 
