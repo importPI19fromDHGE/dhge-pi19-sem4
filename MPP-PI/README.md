@@ -480,11 +480,11 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - Speichern von elektrischen Ladungen
 - Anwendung: Glättungskondensatoren, Datenspeicherung im flüchtigen Speicher
 
-**ohmischer Widerstand**
+**Ohmscher Widerstand**
 
 - begrenzt den Strom
-- Spannung ändert sich anhand des ohm'schen Gesetzes
-- ohm'sches Gesetz:$R=\frac{U}{I}$
+- Spannung ändert sich anhand des Ohmschen Gesetzes
+- Ohmsches Gesetz:$R=\frac{U}{I}$
 - Anwendung: Vorwiderstand, Spannungsteiler
 
 **Diode**
@@ -883,7 +883,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - schneller Zwischenspeicher
 - dient Ausgleichung der Zugriffslücke
-- Größe ist aus kostengründen meist begrenzt
+- Größe ist aus Kostengründen meist begrenzt
 
 ## Speicherzuweisungsstrategien
 
