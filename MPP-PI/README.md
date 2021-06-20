@@ -149,9 +149,6 @@ STOP
 
 > **ToDo:**
 >
-> - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
->   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
-> - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
 > - Arten von Kippgliedern
 
 ## Eigenschaften von Codes
@@ -231,6 +228,92 @@ Ziffer | Aiken-Code
    9   |   1111
 ```
 
+## Fehlererkennbare Codes
+
+> *Wie können Fehler bei der Signalübertragung erkannt werden?*
+> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+
+- Ziel: Erkennen einfacher Fehler $\rightarrow$ Verfälschung von `0` in `1` oder `1` in `0`
+- Methoden: Quersummenprüfung, gleichgewichtige Codes (gleiche Zahl mit `1` belegter Stellen)
+
+**Paritätsbit**
+
+- Zusätzliches Bit für Parität (XOR); ein Fehler erkennbar, Doppelfehler wird nicht erkannt
+
+```text
+Dezimal | 2^2 | 2^1 | 2^0 | Parität
+   0    |  0  |  0  |  0  |    0
+   1    |  0  |  0  |  1  |    1
+   2    |  0  |  1  |  0  |    1
+   3    |  0  |  1  |  1  |    0
+   4    |  1  |  0  |  0  |    1
+   5    |  1  |  0  |  1  |    0
+  ...
+```
+
+**Gleichgewichtige Codes**
+
+- einfach Fehler werden immer erkannt
+- Doppelfehler werden nur einseitig Erkannt (nur `0` zu `1` oder `1` zu `0`)
+- Dreifachfehler werden nur bei Verfälschung von `0` zu `1` erkennt
+- z.B. 2-aus-5-Code *(Achtung: Stellenwertigkeit gilt nicht für 0)*
+
+```text
+Dezimal | 7 | 4 | 2 | 1 | 0
+   0    | 1 | 1 | 0 | 0 | 0
+   1    | 0 | 0 | 0 | 1 | 1
+   2    | 0 | 0 | 1 | 0 | 1
+   3    | 0 | 0 | 1 | 1 | 0
+   4    | 0 | 1 | 0 | 0 | 1
+   5    | 0 | 1 | 0 | 1 | 0
+  ...
+```
+
+## Fehlerkorrigierbare Codes
+
+> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+
+- Ziel: Fehlerkorrektur für übertragene Zeichen
+- Methoden: Rückfrageverfahren, automatische Fehlerkorrektur durch Empfänger bei Fehlererkennung (Block-Verfahren, Hamming-Codes)
+- Eigenschaften: Vergrößerung der Redundanz $\rightarrow$ Verringerung der Datenrate, Erhöhung Übertragungsdauer
+
+**Blockprüfung**
+
+- Blockbildung aus mehreren Codeworten $\rightarrow$ Prüfwort am Ende eines Blocks$\rightarrow$ Paritätsbit für jede Zeile/Spalte
+
+```text
+Dezimal | 2^3 | 2^2 | 2^1 | 2^0 | Parität
+   5    |  0  |  1  |  0  |  1  |    0
+   3    |  0  | *1* |  1  |  1  |    0 ← Fehler
+   1    |  0  |  0  |  0  |  1  |    1
+   6    |  0  |  1  |  1  |  0  |    0
+   8    |  1  |  0  |  0  |  0  |    1
+Prüfwort|  1  |  0  |  0  |  1  |    0
+                 ↑
+               Fehler
+```
+
+**Hamming-Codes**
+
+- Codes mit korrigierbaren Einzelzeichen $\rightarrow$ Überprüfung jedes Informationsbits mit zwei Prüfbits
+- Prinzip der Erkennung: ein Prüfbit falsch $\rightarrow$ Fehler im Prüfbit; zwei Prüfbit falsch $\rightarrow$ Fehler im Informationsbit
+- Prüfbits nebeneinander geschrieben ergeben die Stelle mit dem Fehler
+- z.B. 7-3-Hamming-Code:
+
+$$\begin{matrix}
+k_0 = m_3 + m_2 + m_0\\
+k_1 = m_3 + m_1 + m_0\\
+k_2 = m_2 + m_1 + m_0
+\end{matrix}$$
+
+```text
+Dezimal | k0 | k1 | m3 | k2 | m2 | m1 | m0
+   0    | 0  | 0  | 0  | 0  | 0  | 0  | 0
+   1    | 1  | 1  | 0  | 1  | 0  | 0  | 1
+   2    | 0  | 1  | 0  | 1  | 0  | 1  | 0
+   3    | 1  | 0  | 0  | 0  | 0  | 1  | 1
+```
+
 ## AD-Wandler
 
 - Umwandeln von analogen Signalen (Spannung) in digitale Signale (`0,1`)
@@ -255,6 +338,32 @@ cin ────────────│───┬─╯╘═══╝
                 │   =1 XOR╟─────────────── s
                 ╰───╯╘════╝
 ```
+
+## Konjunktive/Disjunktive-Normalform
+
+- Ausgangspunkt: Wahrheitstabelle (Darstellung aller Eingangskombinationen)
+
+```text
+ A  B  C |  Y
+ 0  0  0 |  0
+ 0  0  1 |  1
+ 0  1  0 |  1
+ 0  1  1 |  1
+ 1  0  0 |  0
+ 1  0  1 |  0
+ 1  1  0 |  0
+ 1  1  1 |  1
+```
+
+**Disjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv Verknüpft (OR)
+- $\rightarrow\; Y = \bar{A}\bar{B}C \lor \bar{A}B\bar{C} \lor \bar{A}BC \lor ABC$
+
+**Konjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv Verknüpft (AND)
+- $\rightarrow\; Y = (\bar{A}\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor C) \land (A\lor B\lor\bar{C})$
 
 ## KV-Diagramme
 
