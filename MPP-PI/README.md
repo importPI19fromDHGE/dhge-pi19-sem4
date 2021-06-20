@@ -1043,8 +1043,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
 > - TCP/IP
-> - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
-> - DNS
+> - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - SDSL/ADSL?
 > - Netzwerktopologien
 
@@ -1109,6 +1108,15 @@ ACK = Bestätigen der SeqNr
 - Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
 - Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
+## TLS
+
+> *Was ist der Unterschied zischen HTTP und HTTPS?*
+
+- setzt auf TCP-Verbindungen auf
+- bietet: Authentisierung und Schlüsselaustausch, Verschlüsselungsalgorithmen und kryptographische Hashfunktionen
+- sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
+- $\rightarrow$ großer Overhead zusammen mit TCP
+
 ## DNS
 
 = Namensauflösung (Domain $\rightarrow$ IP)
@@ -1119,15 +1127,6 @@ ACK = Bestätigen der SeqNr
                        <-> 3. autoritativer NS (Resource-Record)
 ```
 
-## TLS
-
-> *Was ist der Unterschied zischen HTTP und HTTPS?*
-
-- setzt auf TCP-Verbindungen auf
-- bietet: Authentisierung und Schlüsselaustausch, Verschlüsselungsalgorithmen und kryptographische Hashfunktionen
-- sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
-- $\rightarrow$ großer Overhead zusammen mit TCP
-
 ## URL-Aufruf
 
 > *Was passiert bei einem Browseraufruf (URL)?*
@@ -1135,6 +1134,15 @@ ACK = Bestätigen der SeqNr
 - Namensauflösung URL -> IP durch DNS
 - HTTP-Request
 - HTTP Response: Status Code, HTML-Page
+
+# DHCP
+
+- **D**ynamic **H**orst **C**onfiguration **P**rotocol ermöglicht die automatische Konfiguration von TCP/IP-Netzwerkinformationen für IPv4 und IPv6
+- `DISCOVER`: DHCP-Server im lokalen Netz suchen
+- `OFFER`: Server offerieren Basis-Konfiguration
+- `REQUEST`: Client bestätigt Konfiguration
+- `ACK`: Server bestätigt, optionale Konfiguration
+- Konfiguration: Default-Gateway, Subnetz, IP, (DNS), (Timeserver)
 
 ----------------------------------------------------------------------------------------------------------------------
 
