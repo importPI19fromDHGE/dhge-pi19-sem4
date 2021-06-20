@@ -149,7 +149,7 @@ STOP
 
 > **ToDo:**
 >
-> - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
+> - Hamming-Codes
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
 > - Arten von Kippgliedern
@@ -230,6 +230,49 @@ Ziffer | Aiken-Code
    8   |   1110
    9   |   1111
 ```
+
+## Fehlererkennbare Codes
+
+> *Wie können Fehler bei der Signalübertragung erkannt werden?*
+
+- Ziel: Erkennen einfacher Fehler $\rightarrow$ Verfälschung von `0` in `1` oder `1` in `0`
+- Methoden: Quersummenprüfung, gleichgewichtige Codes (gleiche Zahl mit `1` belegter Stellen)
+
+**Paritätsbit**
+
+- Zusätzliches Bit für Parität (XOR); ein Fehler erkennbar, Doppelfehler wird nicht erkannt
+
+```
+Dezimal | 2^2 | 2^1 | 2^0 | Parität
+   0    |  0  |  0  |  0  |    0
+   1    |  0  |  0  |  1  |    1
+   2    |  0  |  1  |  0  |    1
+   3    |  0  |  1  |  1  |    0
+   4    |  1  |  0  |  0  |    1 
+   5    |  1  |  0  |  1  |    0
+  ...
+```
+
+**Gleichgewichtige Codes**
+
+- einfach Fehler werden immer erkannt
+- Doppelfehler werden nur einseitig Erkannt (nur `0` zu `1` oder `1` zu `0`)
+- Dreifachfehler werden nur bei Verfälschung von `0` zu `1` erkennt
+- z.B. 2-aus-5-Code *(Achtung: Stellenwertigkeit gilt nicht für 0)*
+
+```
+Dezimal | 7 | 4 | 2 | 1 | 0
+   0    | 1 | 1 | 0 | 0 | 0
+   1    | 0 | 0 | 0 | 1 | 1
+   2    | 0 | 0 | 1 | 0 | 1
+   3    | 0 | 0 | 1 | 1 | 0
+   4    | 0 | 1 | 0 | 0 | 1 
+   5    | 0 | 1 | 0 | 1 | 0
+  ...
+```
+
+
+
 
 ## AD-Wandler
 
