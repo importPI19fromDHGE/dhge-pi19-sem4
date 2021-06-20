@@ -520,7 +520,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 ## Signalübertragung Kabel
 
-> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?* ToDo
+> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
 
 - Signallaufzeit: Latenz
 - Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
@@ -531,9 +531,6 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 > **ToDo:**
 >
-> - Verschlüsselung
-> - symmetrische vs. asymmetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
-> - Schutzziele von Verschlüsselung
 > - Hashing (Eigenschaften)
 >   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
 >   - *Wie kann sondiert werden?*
@@ -607,6 +604,49 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - exsitu, stabiles Verfahren
 - worst case: $O(N log N)$
 - best = worst (immer optimale Teilung)
+
+## Verschlüsselung
+
+### Schutzziele
+
+- Klartext *so* transformieren, dass originale Informationen nicht mehr lesbar sind
+- Vertrauligkeit
+
+### symmetrisch vs. asymmetrisch
+
+**symmetrisch**
+
+- gleicher Schlüssel für Ver- und Entschlüsselung
+- hohe Performance
+- typische Schlüsselänge: >128bit
+- Problem: sicherer Schlüsseltausch
+- Implementierungen: AES-256 (Rijndael), DES (unsicher)
+
+**asymmetrisch**
+
+- unterschiedliche Schlüssel für Ver-und Entschlüsselung
+- vergleichsweise niedrige Performance
+- in der Regel:
+  - Verschlüsselung mit Public-Key des Empfängers
+  - Entschlüsselung mit Private-Key des Empfängers
+- privater Schlüssel muss sicher verwahrt werden
+- ermöglicht durch: Einsatz mathematischer Einwegfunktionen
+  - privater Schlüssel darf nicht aus öffentlichem ableitbar sein
+- Implementierungen: RSA
+
+**hybrides Verfahren**
+
+- Kombination von symmetrischen und asymmetrischen Verfahren
+  - asymmetrisches Verfahren für den sicheren Schlüsseltausch
+  - symmetrisches Verfahren für den Nutzdatenaustausch
+- Implementierungen: TLS/SSL
+
+## Hashing
+
+- variable Eingangsgröße auf fixe Ausgangsgröße abbilden
+- Lawineneffekt (minimale Änderungen im Eingang führt zu großen Änderungen im Ausgang)
+- Anwendungen: Speichern von Passwörtern, Integritätsüberprüfung
+- sichere/kryptografische Hashverfahren: SHA-256
 
 ----------------------------------------------------------------------------------------------------------------------
 
