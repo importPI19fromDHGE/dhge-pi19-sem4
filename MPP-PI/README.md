@@ -1045,7 +1045,6 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 > - TCP/IP
 > - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - SDSL/ADSL?
-> - Netzwerktopologien
 
 ## ISO/OSI-Referenzmodell
 
@@ -1063,6 +1062,14 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## Netzwerktopologien
+
+- Unterscheidung zwischen physikalischer und logischer Topologie:
+  - **Physikalische Topologie:** tatsächlich vorhandenen Netzwerkkomponenten und ihrer Verbindungen
+    - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
+  - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
+- SPOF im Netz $\right$ Ausfallsicherheit gering
 
 ## IPv4 vs IPv6
 
