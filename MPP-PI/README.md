@@ -791,10 +791,6 @@ Einteilung von Grammatiken in vier Klassen:
 
 # Betriebssysteme
 
-> **ToDo:**
->
-> - Dateisystemarten nennen können + Vor- und Nachteile
-
 ## Definition Betriebssystem
 
 > Die Programme eines digitalen Rechnersystems, die zusammen mit den Eigenschaften dieser Rechenanlage
@@ -862,6 +858,12 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - **Parallelität:** Die Anweisungen zweier Prozesse werden gleichtzeitig unabhängig voneinander ausgeführt (echte Parallelität $\rightarrow$ nur auf Multiprozessor-Systemen)
 - **Nebenläufigkeit:** Die Anweisungen zweier Prozesse werden unabhängig voneinander sequentiell ausgeführt (pseudo Parallelität $\rightarrow$ auf Monoprozessor-Systemen)
+
+## Dateisysteme
+
+> Dateisystemarten nennen können + Vor- und Nachteile
+
+- Beispiele: Exfat, ext4, NTFS, Fat32
 
 ## Virtueller Speicher
 
