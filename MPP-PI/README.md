@@ -1042,7 +1042,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 >
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
-> - TCP/IP (inkl. TCP-Fast-Open)
+> - TCP/IP
 > - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - DNS
 > - SDSL/ADSL?
@@ -1102,6 +1102,12 @@ ACK = Bestätigen der SeqNr
 ```
 
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
+
+### TCP Fast-Open
+
+- Ziel: Latenz beim wiederholten Verbindungsaufbau reduzieren (3-Wege-Handshake vor Übermittlung von Anwendungsdaten)
+- Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
+- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
 ## DNS
 
