@@ -1403,5 +1403,18 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 > **ToDo:**
 >
-> - Cloud Computing (Warum?, Vor- und Nachteile)
+> - Machine-Learning/KI
 > - *Was sind IoT?*
+
+## Cloud Computing
+
+- Nutzung der IT-Infrastruktur von externen Dienstleistern (Computerressourcen als Dienstleistung)
+- schnelles Deployment, hohe Verfügbarkeit, unabhängig von lokaler Infrastruktur $\rightarrow$ dynamisch skalierbar
+- *"Pay as you go"* $\rightarrow$ verschiedene Modelle: `IaaS`, `PaaS`, `SaaS`
+
+**Nachteile**
+
+- Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
+- Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
+- permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
+
