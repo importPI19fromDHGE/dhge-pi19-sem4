@@ -149,7 +149,6 @@ STOP
 
 > **ToDo:**
 >
-> - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
 > - Arten von Kippgliedern
 
 ## Eigenschaften von Codes
@@ -339,6 +338,32 @@ cin ────────────│───┬─╯╘═══╝
                 │   =1 XOR╟─────────────── s
                 ╰───╯╘════╝
 ```
+
+## Konjunktive/Disjunktive-Normalform
+
+- Ausgangspunkt: Wahrheitstabelle (Darstellung aller Eingangskombinationen)
+
+```text
+ A  B  C |  Y
+ 0  0  0 |  0
+ 0  0  1 |  1
+ 0  1  0 |  1
+ 0  1  1 |  1
+ 1  0  0 |  0
+ 1  0  1 |  0
+ 1  1  0 |  0
+ 1  1  1 |  1
+```
+
+**Disjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv Verknüpft (OR)
+- $\rightarrow\; Y = \bar{A}\bar{B}C \lor \bar{A}B\bar{C} \lor \bar{A}BC \lor ABC$
+
+**Konjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv Verknüpft (AND)
+- $\rightarrow\; Y = (\bar{A}\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor C) \land (A\lor B\lor\bar{C})$
 
 ## KV-Diagramme
 
