@@ -1042,11 +1042,9 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 >
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
-> - TCP/IP (inkl. TCP-Fast-Open)
-> - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
-> - DNS
+> - TCP/IP
+> - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - SDSL/ADSL?
-> - Netzwerktopologien
 
 ## ISO/OSI-Referenzmodell
 
@@ -1064,6 +1062,14 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## Netzwerktopologien
+
+- Unterscheidung zwischen physikalischer und logischer Topologie:
+  - **Physikalische Topologie:** tatsächlich vorhandenen Netzwerkkomponenten und ihrer Verbindungen
+    - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
+  - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
+- SPOF im Netz $\rightarrow$ Ausfallsicherheit gering
 
 ## IPv4 vs IPv6
 
@@ -1103,15 +1109,11 @@ ACK = Bestätigen der SeqNr
 
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
-## DNS
+### TCP Fast-Open
 
-= Namensauflösung (Domain $\rightarrow$ IP)
-
-```text
-                       <-> 1. Root-DNS (/cache)
-- Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
-                       <-> 3. autoritativer NS (Resource-Record)
-```
+- Ziel: Latenz beim wiederholten Verbindungsaufbau reduzieren (3-Wege-Handshake vor Übermittlung von Anwendungsdaten)
+- Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
+- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
 ## TLS
 
@@ -1122,6 +1124,16 @@ ACK = Bestätigen der SeqNr
 - sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
 - $\rightarrow$ großer Overhead zusammen mit TCP
 
+## DNS
+
+= Namensauflösung (Domain $\rightarrow$ IP)
+
+```text
+                       <-> 1. Root-DNS (/cache)
+- Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
+                       <-> 3. autoritativer NS (Resource-Record)
+```
+
 ## URL-Aufruf
 
 > *Was passiert bei einem Browseraufruf (URL)?*
@@ -1129,6 +1141,15 @@ ACK = Bestätigen der SeqNr
 - Namensauflösung URL -> IP durch DNS
 - HTTP-Request
 - HTTP Response: Status Code, HTML-Page
+
+# DHCP
+
+- **D**ynamic **H**orst **C**onfiguration **P**rotocol ermöglicht die automatische Konfiguration von TCP/IP-Netzwerkinformationen für IPv4 und IPv6
+- `DISCOVER`: DHCP-Server im lokalen Netz suchen
+- `OFFER`: Server offerieren Basis-Konfiguration
+- `REQUEST`: Client bestätigt Konfiguration
+- `ACK`: Server bestätigt, optionale Konfiguration
+- Konfiguration: Default-Gateway, Subnetz, IP, (DNS), (Timeserver)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -1382,5 +1403,18 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 > **ToDo:**
 >
-> - Cloud Computing (Warum?, Vor- und Nachteile)
+> - Machine-Learning/KI
 > - *Was sind IoT?*
+
+## Cloud Computing
+
+- Nutzung der IT-Infrastruktur von externen Dienstleistern (Computerressourcen als Dienstleistung)
+- schnelles Deployment, hohe Verfügbarkeit, unabhängig von lokaler Infrastruktur $\rightarrow$ dynamisch skalierbar
+- *"Pay as you go"* $\rightarrow$ verschiedene Modelle: `IaaS`, `PaaS`, `SaaS`
+
+**Nachteile**
+
+- Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
+- Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
+- permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
+
