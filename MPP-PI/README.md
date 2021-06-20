@@ -477,6 +477,39 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
 
+## Grundlegende elektrische Bauteile
+
+**Kondensator**
+
+- Speichern von elektrischen Ladungen
+- Anwendung: Glättungskondensatoren, Datenspeicherung im flüchtigen Speicher
+
+**ohmischer Widerstand**
+
+- begrenzt den Strom
+- Spannung ändert sich anhand des ohm'schen Gesetzes
+- ohm'sches Gesetz:$R=\frac{U}{I}$
+- Anwendung: Vorwiderstand, Spannungsteiler
+
+**Diode**
+
+- Halbleiterelement
+- in Abhängigkeit von Stromrichtung sperrt es
+- Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
+
+**Transistor**
+
+- Halbleiterelement
+- besteht aus: Kollektor, Emitter und Basis
+- Grundlage für heutige Rechentechnik
+- Anwendung: Verstärker, Schalter
+
+**Spule**
+
+- Transformation von Spannungen
+- erzeugen Magnetfelder / Induktivität
+- Anwendungen: Relais, Störfilter
+
 ## Flüchtiger RAM
 
 > *Warum ist ein RAM-Speicher flüchtig?*
