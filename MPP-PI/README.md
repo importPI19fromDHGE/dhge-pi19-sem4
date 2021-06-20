@@ -192,19 +192,13 @@ STOP
 
 - bsp.: 160 zu Basis 7
 
-$$
-\begin{matrix}
+$$\begin{matrix}
 160 / 7 & = 22 &  R 6 \\
 22 / 7 & = 3 & R 1 \\
 3 / 7 & = 0 & R 3 \\
 \end{matrix}
-
-\uparrow
-
-\\
-\Rightarrow 316_7
-
-$$
+\uparrow\\
+\Rightarrow 316_7$$
 
 ### X zu Dezimal
 
