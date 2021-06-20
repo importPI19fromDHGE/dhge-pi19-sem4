@@ -59,6 +59,8 @@ MPP1 - Themenkatalog
 
 ## Befehlsverarbeitung
 
+> *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
+
 ```text
        ┌──────────────────┒
        ↓                  │
@@ -529,16 +531,6 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 # Algorithmen und Datenstrukturen
 
-> **ToDo:**
->
-> - Hashing (Eigenschaften)
->   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
->   - *Wie kann sondiert werden?*
-> - Digitale Signatur
-> - Stack, Queue
-> - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
->   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
-
 ## Eigenschaften von Algorithmen
 
 - **Eindeutigkeit:** keine widersprüchliche Beschreibung haben
@@ -643,19 +635,42 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 ## Hashing
 
+> *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
+>
+> *Wie kann sondiert werden?*
+
 - variable Eingangsgröße auf fixe Ausgangsgröße abbilden
 - Lawineneffekt (minimale Änderungen im Eingang führt zu großen Änderungen im Ausgang)
 - Anwendungen: Speichern von Passwörtern, Integritätsüberprüfung
 - sichere/kryptografische Hashverfahren: SHA-256
+- verschiedene Sondierungsverfahren: lineares, quadratisches Sondieren
+
+## Digitale Signatur
+
+- Authentifizierung des Kommunikationspartners
+- Hash der Nachricht wird mit Private-Key des Absenders verschlüsselt
+- Funktionen wie Unterschrift: Abschlussfunktion, Identitätsfunktion, Echtheitsfunktion, Warnfunktion, Beweisfunktion
+
+## Stack und Queue
+
+- Queue: FIFO: First In, First Out
+  - auch Warteschlange
+  - Anwendung: Round-Robin-Verfahren
+- Stack: LIFO: Last In, First Out
+  - auch Kellerspeicher genannt
+  - Rechnen mit Postfix-Notation
+  - Anwendung: Funktionsaufrufe, Speicherung statischer Daten
+
+## Graphen
+
+> - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
+>   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
+
+- Siehe: [Algo Cheatsheet](https://github.com/importPI19fromDHGE/dhge-pi19-sem2/blob/master/ALGO/ALGO-Cheatsheet.pdf)
 
 ----------------------------------------------------------------------------------------------------------------------
 
 # Automaten und Sprachen
-
-> **ToDo:**
->
-> - Turingmaschine erklären können + Beispiel
-> - Prinzip der Automatenkonstruktion (NEA, DEA)
 
 ## Reguläre Ausdrücke
 
@@ -733,16 +748,51 @@ Einteilung von Grammatiken in vier Klassen:
 - Programm beginnt bei der mit 0 gekennzeichneten Anweisung, stoppt, wenn zu einer Marke verzweigt werden soll, die nicht im Programm enthalten ist
 - Konfigurationen = Momentaufnahmen des Zustandes der Register einer Registermaschine
 
+## Automatenkonstruktion
+
+**Nicht-deterministischer endlicher Automat**
+
+- Orakel bestimmt Folgezustand
+- gleiche Eingaben führen nicht immer zur gleichen Ausgabe
+- theoretisches Modell
+- (ab $\lor$ aba)*
+
+```text
+   ╭←───a─────╮
+ ╭═╧╮        ╭┴─╮
+→╢q0╟───a───→┤q1│
+ ╰═╤╯        ╰┬─╯
+   ↑   ╭──╮   │
+   ╰─a─┤q2├←b─╯
+       ╰──╯
+```
+
+**deterministischer endlicher Automat**
+
+- gleiche Eingaben führen immer zur gleichen Ausgabe
+- tatsächlich von Computer ausführbar
+- (ab $\lor$ aba)*
+
+```text
+               ╭←───────a──────────╮
+ ╭══╮        ╭─┴╮      ╭══╮       ╭╧═╮
+→╢q0╟───a───→┤q1├──b──→╢q2╟───a──→╢q2║
+ ╰═╤╯        ╰┬─╯      ╰╤╤╯       ╰═╤╯
+   │          a         │╰←───b─────╯
+   │          ↓         │
+   │         ╭┴─╮       │
+   ╰───b────→┤q4├←──b───╯
+             ╰┬┬╯
+              ↑a,b
+              ╰╯
+```
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
 
 > **ToDo:**
 >
-> - Speicherzuweisungsstrategien
-> - *Wozu dienen Caches in Rechnersystemen?*
-> - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
-> - *Welche Betriebsmittel kennen Sie?*
 > - Dateisystemarten nennen können + Vor- und Nachteile
 
 ## Definition Betriebssystem
@@ -777,6 +827,22 @@ Einteilung von Grammatiken in vier Klassen:
 - *Nach Anzahl der gleichzeitig laufenden Programme:* Einzel- (singletask) oder Mehrprogrammbetrieb (multitask)
 - *Nach Anzahl der gleichzeitigen Nutzer:* Einzel- oder Mehrbenutzerbetrieb
 - *Nach Anzahl der verwalteten Prozessoren:* Ein- oder Mehr-Prozessor-Betriebssystem
+
+## Betriebsmittel
+
+> *Welche Betriebsmittel kennen Sie?*
+
+- aktive Resourcen verarbeitunge passive Resourcen
+- Einteilung in Klassen: Entziehbarkeit, Zuteilbarkeit, Wiederverwendbarkeit, Hard- oder Software Ressource
+
+**aktive Ressourcen**
+
+- CPU
+- Netzwerk
+
+**passive Ressourcen**
+
+- Festplatte, Arbeitsspeicher
 
 ## Thread/Prozess/Task
 
@@ -813,7 +879,31 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Verwaltung der Adresse und des Zustand jeder Seite in einer Seitentabelle
 - Typische Größe eines Seitentabelleneintrags: 32 Bit (Zugriffsrechte, Informationsbits für Speicherverwaltung, Seitenrahmennummer)
 
-<!--Sollte man hier kurz was zu Paging sagen?-->
+<!--TODO: Sollte man hier kurz was zu Paging sagen?-->
+
+## Cache
+
+> *Wozu dienen Caches in Rechnersystemen?*
+
+- schneller Zwischenspeicher
+- dient Ausgleichung der Zugriffslücke
+- Größe ist aus kostengründen meist begrenzt
+
+## Speicherzuweisungsstrategien
+
+**First fit**
+
+- Speicherverwaltung durchläuft Liste der Reihe nach, reserviert erstbesten Block
+- fängt immer wieder an Position 0 an
+
+**Next fit**
+
+- analog zu first fit
+- jedoch $\rightarrow$ fängt an Position d. letzten Treffers an
+
+**Best fit**
+
+- Suche nach dem Block, bei dem beim Einfügen der Werte die kleinste Fragmentierung auftritt
 
 ## Seitenersetzungsstrategien
 
