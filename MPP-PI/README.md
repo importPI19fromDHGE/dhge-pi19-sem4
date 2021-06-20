@@ -147,10 +147,6 @@ STOP
 
 # Digitaltechnik
 
-> **ToDo:**
->
-> - Arten von Kippgliedern
-
 ## Eigenschaften von Codes
 
 > *Was ist ein Code?(+Eigenschaften) Wie funktioniert ein BCD-Code, Binärcodes, Gray-Code*
@@ -396,6 +392,12 @@ Negation zusammenführen
 NAND(a,b)
 Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 ```
+
+## Arten von Kippgliedern
+
+- **Bistabil:** zwei stabile Zustände
+- **Monostabil:** ein statischer Zustand und ein quasistatischer Zustand (zeitlich begrenzt)
+- **Astabil:** kein stabiler Zustand (toggelt)
 
 ----------------------------------------------------------------------------------------------------------------------
 
