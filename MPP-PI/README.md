@@ -1069,7 +1069,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
   - **Physikalische Topologie:** tatsächlich vorhandenen Netzwerkkomponenten und ihrer Verbindungen
     - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
   - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
-- SPOF im Netz $\right$ Ausfallsicherheit gering
+- SPOF im Netz $\rightarrow$ Ausfallsicherheit gering
 
 ## IPv4 vs IPv6
 
