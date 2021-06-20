@@ -1,6 +1,24 @@
 MMP1 - Themenkatalog
 ====================
 
+# Präambel
+
+## Most Important Topics
+
+- ISO/OSI
+- OOP-Paradigmen
+- TCP/IP, Handshake, IPv4 vs IPv6, Routing, IP und MAC, UDP-TCP, HTTP vs HTTPS
+- Rechnerarchitektur
+- Unterschiede Programmiersprachen, Einordnung, Compiler vs Interpreter
+- Datenbankentwurf, ER-Modell, SQL, ACID
+- 3-Schichten-Architektur
+- Struktogramm
+- V-Modell, Scrum
+- Verschlüsselung (Arten,Verfahren,Hash)
+- Definition Betriebssystem, Aufgaben, Scheduling, Parallelisierung
+- RAID Level
+- Sortieralogrithmen
+
 # Grundlagen der Informationsverarbeitung
 
 > **ToDo:**
@@ -131,7 +149,6 @@ STOP
 
 > **ToDo:**
 >
-> - Vereinfachung Boolescher Schaltfunktionen (`!a||(!a&&b)`)
 > - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
 >   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
 > - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
@@ -252,6 +269,25 @@ AB│
  D│ 0 0 1 1
 ```
 
+## Vereinfachung Boolescher Schaltfunktionen
+
+> (`!a||(!a&&b)`)
+> eigentlich (¬a ∨ (¬a)∧b) = ¬a
+
+```text
+(¬a ∨ ¬(a∧b))
+Negation des zweiten Terms entfernen
+(¬a ∨ (¬a)∨(¬b))
+(¬a ∨ ¬a ∨ ¬b)
+Vereinfachen !a ∨ !a = !a
+(¬a ∨ ¬b)
+Negation zusammenführen
+¬(a∧b)
+
+NAND(a,b)
+Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
+```
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik
@@ -260,8 +296,21 @@ AB│
 >
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
-> - *Warum ist ein RAM-Speicher flüchtig?*
-> - *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
+
+## Flüchtiger RAM
+
+> *Warum ist ein RAM-Speicher flüchtig?*
+
+- DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
+- Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
+- SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
+
+## Signalübertragung Kabel
+
+> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?* ToDo
+
+- Signallaufzeit: Latenz
+- Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -632,8 +681,8 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
   - Parität: Bei verteilter Datenspeicherung durch Striping $\rightarrow$ Speicherung von Paritätsinformationen auf weiterem Speichermedium
 - `RAID 0`: Striping über min. 2 Datenträger (höhere Performance, aber keine Ausfallsicherheit)
 - `RAID 1`: Mirroring über min. 2 Datenträger (Ausfallsicherheit; geringe Netto-Kapazität; hohe Kosten)
-- `RAID 5`: Striping mit Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
-- `RAID 6`: Striping mit Parität über 4-16 Datenträger (zweite Kopie der Parität $\rightarrow$ Ausfallsicherheit zweier Speichermedien)
+- `RAID 5`: Striping mit einer XOR-Parität über 3-16 Datenträger (hohe Netto-Kapazität und Lesegeschwindigkeit; komplexe Initialisierung, langsames Schreiben)
+- `RAID 6`: Striping mit zweifachen Paritätsinformationen (Reed-Solomon-Code) über 4-16 Datenträger (Ausfallsicherheit zweier Speichermedien)
 - `RAID 10`: Striping und Mirroring über min. 4 Datenträger
 - `RAID 50`: Striping, Mirroring und Parität über min. 6 Datenträger
 - `RAID 60`: Striping, Mirroring und doppelte Parität über min. 8 Datenträger
@@ -884,7 +933,6 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > **ToDo:**
 >
-> - Compiler vs. Interpreter
 > - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
@@ -905,6 +953,23 @@ Archivspeicher ╱     offline    ╲ sec - min
 - **M**odel: Daten
 - **V**iew: Darstellung der Daten des Modells, Realisierung der Benutzerinteraktionen
 - **C**ontroller: verwaltet Model und View, realisiert Geschäftslogik (Algorithmen)
+
+## Compiler vs. Interpreter
+
+**Compiler**
+
+- Übersetzung des gesamten Quellcodes in hardwarespezifischen Maschinencode
+- Beispiele: `C`, `C++`, `C#`
+- Vorteil: keine Hardwarebindung, hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
+- Nachteil: aufwändiger hardwarespezifischer Compile-Prozess
+
+**Interpreter**
+
+- befehlsweise Verarbeitung auf einer abstrakten Maschine zur Laufzeit
+- Interpreter parst Programm $\rightarrow$ lässt es auf Basis-System laufen
+- Beispiele: `Python`, `Ruby`
+- Vorteil: keine Hardwarebindung
+- Nachteil: beschränkte Optimierungsmöglichkeiten, Zusatzaufwand für abstrakte Maschine, keine Spezialisierung für Hardware möglich
 
 ## XML
 
@@ -944,7 +1009,6 @@ Archivspeicher ╱     offline    ╲ sec - min
 > **ToDo:**
 >
 > - *Was ist das wichtigste Flag in Rechensystemen + Wieso? (Overflow-Flag)*
-> - *Was ist Pipelining?*
 
 ## RISC vs. CISC
 
@@ -957,6 +1021,20 @@ parallele Verarbeitung              | sequenzielle Verarbeitung
 -> aber: Synchronisationsaufwand    |
 komplexer Compile-Schritt           | Befehle werden als Microcode ausgeführt
 Pipelining möglich                  | Pipelining schwierig
+```
+
+## Pipelining
+
+Die einzelnen Phasen der Befehlsausführung werden sequenziell parallel versetzt ausgeführt $\rightarrow$ Erhöhung des Befehlsdurchsatzes
+
+```text
+             ┌─────────────┬───────────────┬──────────────────┐
+Befehl 1:    │  Hol-Phase  │ Decodierphase │ Ausführungsphase │
+             └─────────────┼───────────────┼──────────────────┼──────────────────┐
+Befehl 2:                  │   Hol-Phase   │   Decodierphase  │ Ausführungsphase │
+                           └───────────────┼──────────────────┼──────────────────┼─────┐
+Befehl 3:                                  │    Hol-Phase     │   Decodierphase  │ ... │
+                                           └──────────────────┴──────────────────┴─────┘
 ```
 
 ----------------------------------------------------------------------------------------------------------------------
