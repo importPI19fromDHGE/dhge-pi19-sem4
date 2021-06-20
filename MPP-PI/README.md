@@ -1,4 +1,4 @@
-MMP1 - Themenkatalog
+MPP1 - Themenkatalog
 ====================
 
 # Präambel
@@ -23,12 +23,7 @@ MMP1 - Themenkatalog
 
 > **ToDo:**
 >
-> - Harvard-Architekur (im Vgl. zu Neumann)
-> - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
 > - Struktogramm?
-> - Statisches vs Dynamisches Binden
-> - Umrechnen von Zahlensystemen
-> - Gleitpunktverfahren
 
 ## Von-Neumann-Architektur
 
@@ -55,6 +50,13 @@ MMP1 - Themenkatalog
 - Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
 - **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
 
+## Harvard-Architektur
+
+- Separation von Befehls- und Datenspeicher
+- kein gemeinsamer Bus für Programme und Daten (aktive und passive Daten)
+- $\rightarrow$ Mitigation des von-Neumann-Flaschenhalses
+- im Betrieb (während der Programmausführung) ist Programmspeicher read-only
+
 ## Befehlsverarbeitung
 
 ```text
@@ -79,7 +81,7 @@ STOP
 ## Einordnung von Programmiersprachen
 
 | Maschinenorientierte Sprachen                                                 | Problemorientierte Sprachen                                           |
-|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | orientieren sich am Befehlssatz der zugrundeliegenden Hardware                | Sprache orientiert sich an den zu lösenden Problemstellungen          |
 | Programmierung für einen spezifischen Prozessor (nicht plattformübergreifend) | Bsp.: imperative, funktionale, logische o. deskriptive Programmierung |
 | sehr einfache Befehle $\rightarrow$ Komplexe Programmierung                   | auch "höhere Programmiersprachen"                                     |
@@ -142,6 +144,73 @@ STOP
 
 - `Call by Value`: Übergabe der Kopie eines Parameters bei Funktionsaufruf (z.B. `int`, `char` in `C`; Kopie existiert nur innerhalb der Funktion)
 - `Call by Reference`: Übergabe der Referenz auf einen Parameter bei Funktionsaufruf (z.B. `*` in `C`; Änderungen bleiben nach Verlassen der Funktion erhalten)
+
+## Unterschied Java, JavaScript, C#, C++
+
+| Java                        | JavaScript                  | C#                 | C++                                      |
+| --------------------------- | --------------------------- | ------------------ | ---------------------------------------- |
+| (optimierter) Interpreter   | Interpreter                 | Compiler           | Compiler                                 |
+| plattformunabhängig         | plattformunabhängig         | plattformabhängig  | plattformabhängig                        |
+| statically typed            | dynamically typed           | statically typed   | statically typed                         |
+| Server-Anwendungen, Android | Web- und Server-Anwendungen | Desktop-Awendungen | Low-Level / High-Performance-Anwendungen |
+
+## Statisches vs. dynamisches Linking
+
+**statisches Binden**
+
+- inkludierter Code wird in-place ersetzt
+- größere Binary
+- gute Portabilität
+
+**dynamisches Binden**
+
+- Laden einer DLL (Bibliothek) zur Laufzeit
+- kleinere Binary
+- ohne DLL/SO nicht lauffähig
+- Austausch einer DLL einfach
+- "schlechte" Portabilität
+
+## Gleitpunktverfahren
+
+**eine Gleitkommazahl setzt sich zusammen aus:**
+
+- Vorzeichenbit: Vorzeichen der Mantisse
+- Mantisse: auf $0.$ formatierte Zahl
+  - 25 Stellen (bei 32-Bit Zahl)
+- Exponent: Anzahl Stellen, um die das Komma der Mantisse verschoben wurde
+  - 6 Stellen (bei 32-Bit Zahl)
+- Bias: konstanter Wert, der vom Exponenten abgezogen wird, um negative Exponenten darstellen zu können ($\text{Exponent} - \text{Bias} = \text{tatsächlicher Exponent}$)
+  - üblicherweise 32
+
+## Umrechnen von Zahlensystemen
+
+### Dezimal zu X
+
+**Divisionsrestmethode**
+
+- bsp.: 160 zu Basis 7
+
+$$
+\begin{matrix}
+160 / 7 & = 22 &  R 6 \\
+22 / 7 & = 3 & R 1 \\
+3 / 7 & = 0 & R 3 \\
+\end{matrix}
+
+\uparrow
+
+\\
+\Rightarrow 316_7
+
+$$
+
+### X zu Dezimal
+
+$316_7$ zu dezimal
+
+$$
+6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
+$$
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -821,7 +890,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 ## ISO/OSI-Referenzmodell
 
 | Schicht                | Funktion                                                     | Protokolle |
-|------------------------|--------------------------------------------------------------|------------|
+| ---------------------- | ------------------------------------------------------------ | ---------- |
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
 | Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP |
 | Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   |
