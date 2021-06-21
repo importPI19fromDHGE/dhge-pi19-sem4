@@ -1520,7 +1520,8 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 **Künstliche Intelligenz (TODO)**
 
 - Überbegriff für Anwendungen, bei denen Maschinen menschenähnliche Intelligenzleistungen wie Lernen, Urteilen und Problemlösen erbringen
-- KI müssen trainiert werden, z.B. Belohnungssystem
+- geeignet für nicht-turing-vollständige Probleme
+- KI müssen trainiert werden, z.B. mit Belohnungssystem oder supervised learning
 - schwache KI: Experte auf einem Gebiet, Vorhersagen/Entscheidungen treffen
 - starke KI: System, das eigenständig entscheidet, anpassbar, quasi die Fähigkeiten (und darüber hinaus) eines Menschen in Software
 
