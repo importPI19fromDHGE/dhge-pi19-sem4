@@ -1423,10 +1423,6 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 # IT-Trends
 
-> **ToDo:**
->
-> - *Was sind IoT?*
-
 ## Cloud Computing
 
 - Nutzung der IT-Infrastruktur von externen Dienstleistern (Computerressourcen als Dienstleistung)
@@ -1459,3 +1455,12 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 - Objekterkennung (in Bildern)
 - Autonomes Fahren
 
+## Internet of Things (IoT)
+
+> - *Was sind IoT?*
+
+- (alltägliche) Gegenstände sind Teil des Internets
+- bekommen ID, kommunizieren untereinander, empfangen Befehle, senden Daten
+- Aufgaben ohne Eingriffe von außen erledigen
+- Industriell vs privat
+- Vgl. Smart-Home, Wearables
