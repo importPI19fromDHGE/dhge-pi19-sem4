@@ -167,8 +167,7 @@ STOP
 **dynamisches Binden**
 
 - Laden einer DLL (Bibliothek) zur Laufzeit
-- kleinere Binary
-- ohne DLL/SO nicht lauffähig
+- kleinere Binary, aber ohne DLL/SO nicht lauffähig
 - Austausch einer DLL einfach
 - "schlechte" Portabilität
 
