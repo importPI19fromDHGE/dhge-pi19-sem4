@@ -1072,6 +1072,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 **Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?**
 
+- Routing im Internet (effizient) ermöglichen, Zusammengehöriges kommt in ein Sub-Netz
 - man möchte keine Broadcasts im Internet
 - MAC gilt nur in lokalen Netzen
 - privacy concerns
