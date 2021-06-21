@@ -1,4 +1,4 @@
-MMP1 - Themenkatalog
+MPP1 - Themenkatalog
 ====================
 
 # Präambel
@@ -23,12 +23,7 @@ MMP1 - Themenkatalog
 
 > **ToDo:**
 >
-> - Harvard-Architekur (im Vgl. zu Neumann)
-> - Unterschied Java, Javascript, C#, C++ (vlt. woanders einordnen?)
 > - Struktogramm?
-> - Statisches vs Dynamisches Binden
-> - Umrechnen von Zahlensystemen
-> - Gleitpunktverfahren
 
 ## Von-Neumann-Architektur
 
@@ -55,7 +50,16 @@ MMP1 - Themenkatalog
 - Kommunikation über BUS-Systeme (Daten-, Adress-, Steuer-, ...)
 - **Neumann-Flaschenhals:** Bussystem $\rightarrow$ ein Bus (und Speicher) für Programme und Daten
 
+## Harvard-Architektur
+
+- Separation von Befehls- und Datenspeicher
+- kein gemeinsamer Bus für Programme und Daten (aktive und passive Daten)
+- $\rightarrow$ Mitigation des von-Neumann-Flaschenhalses
+- im Betrieb (während der Programmausführung) ist Programmspeicher read-only
+
 ## Befehlsverarbeitung
+
+> *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
 
 ```text
        ┌──────────────────┒
@@ -79,7 +83,7 @@ STOP
 ## Einordnung von Programmiersprachen
 
 | Maschinenorientierte Sprachen                                                 | Problemorientierte Sprachen                                           |
-|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | orientieren sich am Befehlssatz der zugrundeliegenden Hardware                | Sprache orientiert sich an den zu lösenden Problemstellungen          |
 | Programmierung für einen spezifischen Prozessor (nicht plattformübergreifend) | Bsp.: imperative, funktionale, logische o. deskriptive Programmierung |
 | sehr einfache Befehle $\rightarrow$ Komplexe Programmierung                   | auch "höhere Programmiersprachen"                                     |
@@ -143,16 +147,69 @@ STOP
 - `Call by Value`: Übergabe der Kopie eines Parameters bei Funktionsaufruf (z.B. `int`, `char` in `C`; Kopie existiert nur innerhalb der Funktion)
 - `Call by Reference`: Übergabe der Referenz auf einen Parameter bei Funktionsaufruf (z.B. `*` in `C`; Änderungen bleiben nach Verlassen der Funktion erhalten)
 
+## Unterschied Java, JavaScript, C#, C++
+
+| Java                        | JavaScript                  | C#                 | C++                                      |
+| --------------------------- | --------------------------- | ------------------ | ---------------------------------------- |
+| (optimierter) Interpreter   | Interpreter                 | Compiler           | Compiler                                 |
+| plattformunabhängig         | plattformunabhängig         | plattformabhängig  | plattformabhängig                        |
+| statically typed            | dynamically typed           | statically typed   | statically typed                         |
+| Server-Anwendungen, Android | Web- und Server-Anwendungen | Desktop-Awendungen | Low-Level / High-Performance-Anwendungen |
+
+## Statisches vs. dynamisches Linking
+
+**statisches Binden**
+
+- inkludierter Code wird in-place ersetzt
+- größere Binary
+- gute Portabilität
+
+**dynamisches Binden**
+
+- Laden einer DLL (Bibliothek) zur Laufzeit
+- kleinere Binary, aber ohne DLL/SO nicht lauffähig
+- Austausch einer DLL einfach
+- "schlechte" Portabilität
+
+## Gleitpunktverfahren
+
+**eine Gleitkommazahl setzt sich zusammen aus:**
+
+- Vorzeichenbit: Vorzeichen der Mantisse
+- Mantisse: auf $0.$ formatierte Zahl
+  - 25 Stellen (bei 32-Bit Zahl)
+- Exponent: Anzahl Stellen, um die das Komma der Mantisse verschoben wurde
+  - 6 Stellen (bei 32-Bit Zahl)
+- Bias: konstanter Wert, der vom Exponenten abgezogen wird, um negative Exponenten darstellen zu können ($\text{Exponent} - \text{Bias} = \text{tatsächlicher Exponent}$)
+  - üblicherweise 32
+
+## Umrechnen von Zahlensystemen
+
+### Dezimal zu X
+
+**Divisionsrestmethode**
+
+- bsp.: 160 zu Basis 7
+
+$$\begin{matrix}
+160 / 7 & = 22 &  R 6 \\
+22 / 7 & = 3 & R 1 \\
+3 / 7 & = 0 & R 3 \\
+\end{matrix}
+\uparrow\\
+\Rightarrow 316_7$$
+
+### X zu Dezimal
+
+- bsp.: $316_7$ zu dezimal
+
+$$
+6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
+$$
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Digitaltechnik
-
-> **ToDo:**
->
-> - Prüfsumme vs Hamming-Codes(*Wie können Fehler bei der Signalübertragung erkannt werden?*)
->   - *Wie viele Bits um einen Fehler zu erkennen bzw. beheben?*
-> - KV-Diagramme, KNF/DNF (bzw. V-KNF / V-DNF)
-> - Arten von Kippgliedern
 
 ## Eigenschaften von Codes
 
@@ -231,6 +288,92 @@ Ziffer | Aiken-Code
    9   |   1111
 ```
 
+## Fehlererkennbare Codes
+
+> *Wie können Fehler bei der Signalübertragung erkannt werden?*
+> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+
+- Ziel: Erkennen einfacher Fehler $\rightarrow$ Verfälschung von `0` in `1` oder `1` in `0`
+- Methoden: Quersummenprüfung, gleichgewichtige Codes (gleiche Zahl mit `1` belegter Stellen)
+
+**Paritätsbit**
+
+- Zusätzliches Bit für Parität (XOR); ein Fehler erkennbar, Doppelfehler wird nicht erkannt
+
+```text
+Dezimal | 2^2 | 2^1 | 2^0 | Parität
+   0    |  0  |  0  |  0  |    0
+   1    |  0  |  0  |  1  |    1
+   2    |  0  |  1  |  0  |    1
+   3    |  0  |  1  |  1  |    0
+   4    |  1  |  0  |  0  |    1
+   5    |  1  |  0  |  1  |    0
+  ...
+```
+
+**Gleichgewichtige Codes**
+
+- einfach Fehler werden immer erkannt
+- Doppelfehler werden nur einseitig Erkannt (nur `0` zu `1` oder `1` zu `0`)
+- Dreifachfehler werden nur bei Verfälschung von `0` zu `1` erkennt
+- z.B. 2-aus-5-Code *(Achtung: Stellenwertigkeit gilt nicht für 0)*
+
+```text
+Dezimal | 7 | 4 | 2 | 1 | 0
+   0    | 1 | 1 | 0 | 0 | 0
+   1    | 0 | 0 | 0 | 1 | 1
+   2    | 0 | 0 | 1 | 0 | 1
+   3    | 0 | 0 | 1 | 1 | 0
+   4    | 0 | 1 | 0 | 0 | 1
+   5    | 0 | 1 | 0 | 1 | 0
+  ...
+```
+
+## Fehlerkorrigierbare Codes
+
+> *Wie viele Bits werden benötigt um einen Fehler zu erkennen bzw. beheben?*
+
+- Ziel: Fehlerkorrektur für übertragene Zeichen
+- Methoden: Rückfrageverfahren, automatische Fehlerkorrektur durch Empfänger bei Fehlererkennung (Block-Verfahren, Hamming-Codes)
+- Eigenschaften: Vergrößerung der Redundanz $\rightarrow$ Verringerung der Datenrate, Erhöhung Übertragungsdauer
+
+**Blockprüfung**
+
+- Blockbildung aus mehreren Codeworten $\rightarrow$ Prüfwort am Ende eines Blocks$\rightarrow$ Paritätsbit für jede Zeile/Spalte
+
+```text
+Dezimal | 2^3 | 2^2 | 2^1 | 2^0 | Parität
+   5    |  0  |  1  |  0  |  1  |    0
+   3    |  0  | *1* |  1  |  1  |    0 ← Fehler
+   1    |  0  |  0  |  0  |  1  |    1
+   6    |  0  |  1  |  1  |  0  |    0
+   8    |  1  |  0  |  0  |  0  |    1
+Prüfwort|  1  |  0  |  0  |  1  |    0
+                 ↑
+               Fehler
+```
+
+**Hamming-Codes**
+
+- Codes mit korrigierbaren Einzelzeichen $\rightarrow$ Überprüfung jedes Informationsbits mit zwei Prüfbits
+- Prinzip der Erkennung: ein Prüfbit falsch $\rightarrow$ Fehler im Prüfbit; zwei Prüfbit falsch $\rightarrow$ Fehler im Informationsbit
+- Prüfbits nebeneinander geschrieben ergeben die Stelle mit dem Fehler
+- z.B. 7-3-Hamming-Code:
+
+$$\begin{matrix}
+k_0 = m_3 + m_2 + m_0\\
+k_1 = m_3 + m_1 + m_0\\
+k_2 = m_2 + m_1 + m_0
+\end{matrix}$$
+
+```text
+Dezimal | k0 | k1 | m3 | k2 | m2 | m1 | m0
+   0    | 0  | 0  | 0  | 0  | 0  | 0  | 0
+   1    | 1  | 1  | 0  | 1  | 0  | 0  | 1
+   2    | 0  | 1  | 0  | 1  | 0  | 1  | 0
+   3    | 1  | 0  | 0  | 0  | 0  | 1  | 1
+```
+
 ## AD-Wandler
 
 - Umwandeln von analogen Signalen (Spannung) in digitale Signale (`0,1`)
@@ -255,6 +398,32 @@ cin ────────────│───┬─╯╘═══╝
                 │   =1 XOR╟─────────────── s
                 ╰───╯╘════╝
 ```
+
+## Konjunktive/Disjunktive-Normalform
+
+- Ausgangspunkt: Wahrheitstabelle (Darstellung aller Eingangskombinationen)
+
+```text
+ A  B  C |  Y
+ 0  0  0 |  0
+ 0  0  1 |  1
+ 0  1  0 |  1
+ 0  1  1 |  1
+ 1  0  0 |  0
+ 1  0  1 |  0
+ 1  1  0 |  0
+ 1  1  1 |  1
+```
+
+**Disjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv Verknüpft (OR)
+- $\rightarrow\; Y = \bar{A}\bar{B}C \lor \bar{A}B\bar{C} \lor \bar{A}BC \lor ABC$
+
+**Konjunktive Normalform**
+
+- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv Verknüpft (AND)
+- $\rightarrow\; Y = (\bar{A}\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor C) \land (A\lor B\lor\bar{C})$
 
 ## KV-Diagramme
 
@@ -288,6 +457,12 @@ NAND(a,b)
 Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 ```
 
+## Arten von Kippgliedern
+
+- **Bistabil:** zwei stabile Zustände
+- **Monostabil:** ein statischer Zustand und ein quasistatischer Zustand (zeitlich begrenzt)
+- **Astabil:** kein stabiler Zustand (toggelt)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Elektrotechnik
@@ -296,6 +471,39 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 >
 > - Kupferleiter (Widerstand & Kapazitiver Widerstand)
 > - RGB???
+
+## Grundlegende elektrische Bauteile
+
+**Kondensator**
+
+- Speichern von elektrischen Ladungen
+- Anwendung: Glättungskondensatoren, Datenspeicherung im flüchtigen Speicher
+
+**Ohmscher Widerstand**
+
+- begrenzt den Strom
+- Spannung ändert sich anhand des Ohmschen Gesetzes
+- Ohmsches Gesetz:$R=\frac{U}{I}$
+- Anwendung: Vorwiderstand, Spannungsteiler
+
+**Diode**
+
+- Halbleiterelement
+- in Abhängigkeit von Stromrichtung sperrt es
+- Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
+
+**Transistor**
+
+- Halbleiterelement
+- besteht aus: Kollektor, Emitter und Basis
+- Grundlage für heutige Rechentechnik
+- Anwendung: Verstärker, Schalter
+
+**Spule**
+
+- Transformation von Spannungen
+- erzeugen Magnetfelder / Induktivität
+- Anwendungen: Relais, Störfilter
 
 ## Flüchtiger RAM
 
@@ -307,7 +515,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 ## Signalübertragung Kabel
 
-> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?* ToDo
+> *Warum darf/kann ein Kabel für die Signalübertragung nicht unendlich lang sein?*
 
 - Signallaufzeit: Latenz
 - Abschwächung des Signals durch Störungen, Interferenz, elektrischer Widerstand (Google: Leitungsdämpfung)
@@ -315,19 +523,6 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 ----------------------------------------------------------------------------------------------------------------------
 
 # Algorithmen und Datenstrukturen
-
-> **ToDo:**
->
-> - Verschlüsselung
-> - symmetrische vs. asymmetrische Verschlüsselung (*Welche Schlüssel gibt es?*)
-> - Schutzziele von Verschlüsselung
-> - Hashing (Eigenschaften)
->   - *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
->   - *Wie kann sondiert werden?*
-> - Digitale Signatur
-> - Stack, Queue
-> - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
->   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
 
 ## Eigenschaften von Algorithmen
 
@@ -395,14 +590,80 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - worst case: $O(N log N)$
 - best = worst (immer optimale Teilung)
 
+## Verschlüsselung
+
+### Schutzziele
+
+- Klartext *so* transformieren, dass originale Informationen nicht mehr lesbar sind
+- Vertraulichkeit
+
+### symmetrisch vs. asymmetrisch
+
+**symmetrisch**
+
+- gleicher Schlüssel für Ver- und Entschlüsselung
+- hohe Performance
+- typische Schlüsselänge: >128bit
+- Problem: sicherer Schlüsseltausch
+- Implementierungen: AES-256 (Rijndael), DES (unsicher)
+
+**asymmetrisch**
+
+- unterschiedliche Schlüssel für Ver- und Entschlüsselung
+- vergleichsweise niedrige Performance
+- in der Regel:
+  - Verschlüsselung mit Public-Key des Empfängers
+  - Entschlüsselung mit Private-Key des Empfängers
+- privater Schlüssel muss sicher verwahrt werden
+- ermöglicht durch: Einsatz mathematischer Einwegfunktionen
+  - privater Schlüssel darf nicht aus öffentlichem ableitbar sein
+- Implementierungen: RSA
+
+**hybrides Verfahren**
+
+- Kombination von symmetrischen und asymmetrischen Verfahren
+  - asymmetrisches Verfahren für den sicheren Schlüsseltausch
+  - symmetrisches Verfahren für den Nutzdatenaustausch
+- Implementierungen: TLS/SSL
+
+## Hashing
+
+> *Wie kann man bei symmetrischer Verschlüsselung prüfen ob die originale Nachricht ankam?*
+>
+> *Wie kann sondiert werden?*
+
+- variable Eingangsgröße auf fixe Ausgangsgröße abbilden
+- Lawineneffekt (minimale Änderung im Eingang führt zu großen Änderungen im Ausgang)
+- Anwendungen: Speichern von Passwörtern, Integritätsüberprüfung
+- sichere/kryptografische Hashverfahren: SHA-256
+- verschiedene Sondierungsverfahren: lineares, quadratisches Sondieren
+
+## Digitale Signatur
+
+- Authentifizierung des Kommunikationspartners
+- Hash der Nachricht wird mit Private-Key des Absenders verschlüsselt
+- Funktionen wie Unterschrift: Abschlussfunktion, Identitätsfunktion, Echtheitsfunktion, Warnfunktion, Beweisfunktion
+
+## Stack und Queue
+
+- Queue: FIFO: First In, First Out
+  - auch Warteschlange
+  - Anwendung: Round-Robin-Verfahren
+- Stack: LIFO: Last In, First Out
+  - auch Kellerspeicher genannt
+  - Rechnen mit Postfix-Notation
+  - Anwendung: Funktionsaufrufe, Speicherung statischer Daten
+
+## Graphen
+
+> - *Was ist ein Graph?* Travelling Salesman-Problem, Minimal Spanning Tree, ...
+>   - Tiefen/Breitensuche; Adjazenzmatrix aufstellen können
+
+- Siehe: [Algo Cheatsheet](https://github.com/importPI19fromDHGE/dhge-pi19-sem2/blob/master/ALGO/ALGO-Cheatsheet.pdf)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Automaten und Sprachen
-
-> **ToDo:**
->
-> - Turingmaschine erklären können + Beispiel
-> - Prinzip der Automatenkonstruktion (NEA, DEA)
 
 ## Reguläre Ausdrücke
 
@@ -480,17 +741,48 @@ Einteilung von Grammatiken in vier Klassen:
 - Programm beginnt bei der mit 0 gekennzeichneten Anweisung, stoppt, wenn zu einer Marke verzweigt werden soll, die nicht im Programm enthalten ist
 - Konfigurationen = Momentaufnahmen des Zustandes der Register einer Registermaschine
 
+## Automatenkonstruktion
+
+**Nicht-deterministischer endlicher Automat**
+
+- Orakel bestimmt Folgezustand
+- gleiche Eingaben führen nicht immer zur gleichen Ausgabe
+- theoretisches Modell (Orakel technisch nicht vollumfänglich realisierbar)
+- z.B.:  $(ab \lor aba)^\ast$:
+
+```text
+   ╭←───a─────╮
+ ╭═╧╮        ╭┴─╮
+→╢q0╟───a───→┤q1│
+ ╰═╤╯        ╰┬─╯
+   ↑   ╭──╮   │
+   ╰─a─┤q2├←b─╯
+       ╰──╯
+```
+
+**deterministischer endlicher Automat**
+
+- gleiche Eingaben führen immer zur gleichen Ausgabe
+- tatsächlich von Computer ausführbar
+- z.B.:  $(ab \lor aba)^\ast$:
+
+```text
+               ╭←───────a──────────╮
+ ╭══╮        ╭─┴╮      ╭══╮       ╭╧═╮
+→╢q0╟───a───→┤q1├──b──→╢q2╟───a──→╢q2║
+ ╰═╤╯        ╰┬─╯      ╰╤╤╯       ╰═╤╯
+   │          a         │╰←───b─────╯
+   │          ↓         │
+   │         ╭┴─╮       │
+   ╰───b────→┤q4├←──b───╯
+             ╰┬┬╯
+              ↑a,b
+              ╰╯
+```
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Betriebssysteme
-
-> **ToDo:**
->
-> - Speicherzuweisungsstrategien
-> - *Wozu dienen Caches in Rechnersystemen?*
-> - *Wie erfolgt die Befehlsabarbeitung in einer CPU?*
-> - *Welche Betriebsmittel kennen Sie?*
-> - Dateisystemarten nennen können + Vor- und Nachteile
 
 ## Definition Betriebssystem
 
@@ -525,6 +817,15 @@ Einteilung von Grammatiken in vier Klassen:
 - *Nach Anzahl der gleichzeitigen Nutzer:* Einzel- oder Mehrbenutzerbetrieb
 - *Nach Anzahl der verwalteten Prozessoren:* Ein- oder Mehr-Prozessor-Betriebssystem
 
+## Betriebsmittel
+
+> *Welche Betriebsmittel kennen Sie?*
+
+- aktive Ressourcen verarbeiten passive Ressourcen
+- Einteilung in Klassen: Entziehbarkeit, Zuteilbarkeit, Wiederverwendbarkeit, Hard- oder Software Ressource
+- **aktive Ressourcen:** CPU, Netzwerk
+- **passive Ressourcen:** Festplatte, Arbeitsspeicher
+
 ## Thread/Prozess/Task
 
 - **Programm:** statische Beschreibung eines sequentiellen Algorithmus
@@ -544,6 +845,12 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - **Parallelität:** Die Anweisungen zweier Prozesse werden gleichtzeitig unabhängig voneinander ausgeführt (echte Parallelität $\rightarrow$ nur auf Multiprozessor-Systemen)
 - **Nebenläufigkeit:** Die Anweisungen zweier Prozesse werden unabhängig voneinander sequentiell ausgeführt (pseudo Parallelität $\rightarrow$ auf Monoprozessor-Systemen)
 
+## Dateisysteme
+
+> Dateisystemarten nennen können + Vor- und Nachteile
+
+- Beispiele: exFAT, ext4, NTFS, FAT32
+
 ## Virtueller Speicher
 
 - mehrere Fragmente müssen für das Programm so dargestellt werden, als ob sie aus einem kontinuierlichen Bereich stammen
@@ -560,7 +867,31 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Verwaltung der Adresse und des Zustand jeder Seite in einer Seitentabelle
 - Typische Größe eines Seitentabelleneintrags: 32 Bit (Zugriffsrechte, Informationsbits für Speicherverwaltung, Seitenrahmennummer)
 
-<!--Sollte man hier kurz was zu Paging sagen?-->
+<!--TODO: Sollte man hier kurz was zu Paging sagen?-->
+
+## Cache
+
+> *Wozu dienen Caches in Rechnersystemen?*
+
+- schneller Zwischenspeicher
+- dient Ausgleichung der Zugriffslücke
+- Größe ist aus Kostengründen meist begrenzt
+
+## Speicherzuweisungsstrategien
+
+**First fit**
+
+- Speicherverwaltung durchläuft Liste der Reihe nach, reserviert erstbesten Block
+- fängt immer wieder an Position 0 an
+
+**Next fit**
+
+- analog zu first fit
+- jedoch $\rightarrow$ fängt an Position d. letzten Treffers an
+
+**Best fit**
+
+- Suche nach dem Block, bei dem beim Einfügen der Werte die kleinste Fragmentierung auftritt
 
 ## Seitenersetzungsstrategien
 
@@ -703,16 +1034,14 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 >
 > - IPv4 vs. IPv6 (Aufbau und Vergleich)
 > - IP+Routing
-> - TCP/IP (inkl. TCP-Fast-Open)
-> - DHCP; *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
-> - DNS
+> - TCP/IP
+> - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
 > - SDSL/ADSL?
-> - Netzwerktopologien
 
 ## ISO/OSI-Referenzmodell
 
 | Schicht                | Funktion                                                     | Protokolle |
-|------------------------|--------------------------------------------------------------|------------|
+| ---------------------- | ------------------------------------------------------------ | ---------- |
 | Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
 | Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP |
 | Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   |
@@ -725,6 +1054,14 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 - Protokoll = Regeln zur Steuerung der Kommunikation
 - Dienst = durch Sicht erbrachte Funktionalität
+
+## Netzwerktopologien
+
+- Unterscheidung zwischen physikalischer und logischer Topologie:
+  - **Physikalische Topologie:** tatsächlich vorhandenen Netzwerkkomponenten und ihrer Verbindungen
+    - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
+  - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
+- SPOF im Netz $\rightarrow$ Ausfallsicherheit gering
 
 ## IPv4 vs IPv6
 
@@ -764,15 +1101,11 @@ ACK = Bestätigen der SeqNr
 
 - **SYN-Flooding** = hohes Datenaufkommen bei vielen halboffenen Verbindungen
 
-## DNS
+### TCP Fast-Open
 
-= Namensauflösung (Domain $\rightarrow$ IP)
-
-```text
-                       <-> 1. Root-DNS (/cache)
-- Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
-                       <-> 3. autoritativer NS (Resource-Record)
-```
+- Ziel: Latenz beim wiederholten Verbindungsaufbau reduzieren (3-Wege-Handshake vor Übermittlung von Anwendungsdaten)
+- Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
+- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
 ## TLS
 
@@ -783,6 +1116,16 @@ ACK = Bestätigen der SeqNr
 - sichert z.B. HTTP-Kommunikation (`https`) oder Schlüsseltausch bei OpenVPN
 - $\rightarrow$ großer Overhead zusammen mit TCP
 
+## DNS
+
+= Namensauflösung (Domain $\rightarrow$ IP)
+
+```text
+                       <-> 1. Root-DNS (/cache)
+- Resolver <-> ISP-DNS <-> 2. TLD-DNS (/cache)
+                       <-> 3. autoritativer NS (Resource-Record)
+```
+
 ## URL-Aufruf
 
 > *Was passiert bei einem Browseraufruf (URL)?*
@@ -790,6 +1133,15 @@ ACK = Bestätigen der SeqNr
 - Namensauflösung URL -> IP durch DNS
 - HTTP-Request
 - HTTP Response: Status Code, HTML-Page
+
+# DHCP
+
+- **D**ynamic **H**orst **C**onfiguration **P**rotocol ermöglicht die automatische Konfiguration von TCP/IP-Netzwerkinformationen für IPv4 und IPv6
+- `DISCOVER`: DHCP-Server im lokalen Netz suchen
+- `OFFER`: Server offerieren Basis-Konfiguration
+- `REQUEST`: Client bestätigt Konfiguration
+- `ACK`: Server bestätigt, optionale Konfiguration
+- Konfiguration: Default-Gateway, Subnetz, IP, (DNS), (Timeserver)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -1043,5 +1395,17 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 > **ToDo:**
 >
-> - Cloud Computing (Warum?, Vor- und Nachteile)
+> - Machine-Learning/KI
 > - *Was sind IoT?*
+
+## Cloud Computing
+
+- Nutzung der IT-Infrastruktur von externen Dienstleistern (Computerressourcen als Dienstleistung)
+- schnelles Deployment, hohe Verfügbarkeit, unabhängig von lokaler Infrastruktur $\rightarrow$ dynamisch skalierbar
+- *"Pay as you go"* $\rightarrow$ verschiedene Modelle: `IaaS`, `PaaS`, `SaaS`
+
+**Nachteile**
+
+- Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
+- Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
+- permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
