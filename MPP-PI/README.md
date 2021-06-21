@@ -1293,8 +1293,8 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > - *Motivation - Wieso Softwareengineering?* TODO
 
+- erste, zweite und dritte Softwarekrise
 - Definition: Entwicklung von Software, Organisation + Modellierung Datenstrukturen, Betrieb der Systeme
-erste, zweite und dritte Softwarekrise
 - Struktur in den Entwicklungsprozess bringen
 - Regeln definieren
 - feste Absprache in Verträgen
