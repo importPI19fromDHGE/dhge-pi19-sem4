@@ -1315,19 +1315,18 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > **ToDo:**
 >
-> - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
 > - UML
 
 ## OOP-Paradigmen
 
-<!--Das kann sich gerne nochmal jemand ansehen-->
-
-- Abstraktion: die Implementierung von Klassen bleibt verborgen, nur Schnittstellen sind nach außen sichtbar
-- Kapselung: Verbergen von Implementierungsdetails, kein Zugriff auf interne Strukturen
+- Abstraktion: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
+- Kapselung:
+  - Verbergen von Implementierungsdetails
+  - Ein Objekt hat eine Schnittstelle, die darüber bestimmt, auf welche Weise mit dem Objekt interagiert werden kann
 - Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
-- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
+- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
 - Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
 
 ## MVC-Architektur
