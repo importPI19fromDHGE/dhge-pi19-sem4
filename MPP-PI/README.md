@@ -1425,7 +1425,6 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 > **ToDo:**
 >
-> - Machine-Learning/KI
 > - *Was sind IoT?*
 
 ## Cloud Computing
@@ -1439,3 +1438,24 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 - Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
 - Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
 - permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
+
+## Machine-Learning und Künstliche Intelligenz
+
+**Künstliche Intelligenz (TODO)**
+
+- Überbegriff für Anwendungen, bei denen Maschinen menschenähnliche Intelligenzleistungen wie Lernen, Urteilen und Problemlösen erbringen
+- KI müssen trainiert werden, z.B. Belohnungssystem
+- schwache KI: Experte auf einem Gebiet, Vorhersagen/Entscheidungen treffen
+- starke KI: System, das eigenständig entscheidet, anpassbar, quasi die Fähigkeiten (und darüber hinaus) eines Menschen in Software 
+
+**Machine-Learning**
+
+- Teilbereich KI
+- Erkennen von Mustern in  Datenbeständen: in der Lage, eigenständig Lösungen für Probleme zu finden
+
+**Anwendung**
+
+- Mustererkennung in Daten
+- Objekterkennung (in Bildern)
+- Autonomes Fahren
+
