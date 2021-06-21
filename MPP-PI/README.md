@@ -751,7 +751,7 @@ Einteilung von Grammatiken in vier Klassen:
 - z.B.:  $(ab \lor aba)^\ast$:
 
 ```text
-   ╭←───a─────╮
+   ╭←───b─────╮
  ╭═╧╮        ╭┴─╮
 →╢q0╟───a───→┤q1│
  ╰═╤╯        ╰┬─╯
@@ -999,10 +999,6 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 # Betriebssystemverwaltung
 
-> **ToDo:**
->
-> - "Datensicherung"
-
 ## RAID
 
 - **R**edundant **A**rray of **I**ndependent **D**isks
@@ -1028,27 +1024,31 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 ----------------------------------------------------------------------------------------------------------------------
 
+## Datensicherung
+
+- unabhängige Datenkopien, getrennt vom Produktivsystem aufbewahren
+- 3-2-1 Regel
+  - 3 Datenstände
+  - 2 unterschiedliche Speichermedien
+  - 1 off-site
+- Online Backup $\rightarrow$ sofort verfügbar und immer online
+- Offline Backup $\rightarrow$ nicht immer verfügbar und online, braucht Zeit um eingesetzt werden zu können
+- Hot Backup $\rightarrow$ wird im laufenden Betrieb erstellt
+- Cold Backup $\rightarrow$ wird im ausgeschalteten Zustand erstellt (konsistenter Zustand wird gesichert)
+
 # Rechnernetze
 
-> **ToDo:**
->
-> - IPv4 vs. IPv6 (Aufbau und Vergleich)
-> - IP+Routing
-> - TCP/IP
-> - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
-> - SDSL/ADSL?
+## ISO/OSI-Referenzmodell und TCP/IP
 
-## ISO/OSI-Referenzmodell
-
-| Schicht                | Funktion                                                     | Protokolle |
-| ---------------------- | ------------------------------------------------------------ | ---------- |
-| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
-| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP |
-| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   |
-| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   |
-| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         |
-| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   |
-| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            |
+| Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
+| ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
+| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  | Anwendungungsschicht            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP | Anwendungungsschicht            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   | Anwendungungsschicht            |
+| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   | Transportschicht                |
+| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         | Internetschicht                 |
+| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
+| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
 - Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
 
@@ -1062,6 +1062,20 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
     - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
   - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
 - SPOF im Netz $\rightarrow$ Ausfallsicherheit gering
+
+## IP und Routing
+
+- Forwarding:
+  - beschreibt Entscheidungsprozess eines Netzknotens Über welchen Nachbarn eine Nachricht weitergeleitet werden soll
+- Routing:
+  - bestimmt den gesamten Weg eines Nachrichtenstroms durch das Netzwerk
+
+**Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?**
+
+- man möchte keine Broadcasts im Internet
+- MAC gilt nur in lokalen Netzen
+- privacy concerns
+- MAC hat nur kleinen Adressraum (48 Bit)
 
 ## IPv4 vs IPv6
 
@@ -1134,7 +1148,7 @@ ACK = Bestätigen der SeqNr
 - HTTP-Request
 - HTTP Response: Status Code, HTML-Page
 
-# DHCP
+## DHCP
 
 - **D**ynamic **H**orst **C**onfiguration **P**rotocol ermöglicht die automatische Konfiguration von TCP/IP-Netzwerkinformationen für IPv4 und IPv6
 - `DISCOVER`: DHCP-Server im lokalen Netz suchen
@@ -1145,6 +1159,15 @@ ACK = Bestätigen der SeqNr
 
 ----------------------------------------------------------------------------------------------------------------------
 
+## SDSL / ADSL
+
+- SDSL: Symmetric Digital Subscriber Line
+  - Upload und Download Speeds gleich
+  - teurer als ADSL $\rightarrow$ als Business-Leitung verkauft
+- ADSL: Asymmetric Digital Subscriber Line
+  - Upload und Download Speeds unterschiedlich (meist Upload Speed kleiner)
+- VDSL: Very-fast Digital Subscriber Line
+
 # Datenbanken
 
 > **ToDo:**
@@ -1153,6 +1176,13 @@ ACK = Bestätigen der SeqNr
 > - ERM
 > - *"SQL"*
 > - Transaktionen (Eigenschaften)
+
+## Datenbankentwurf
+
+- Anforderungsanalyse (requirements engineering)
+  - funktionale und nicht funktionale Anforderungen nennen
+- Modellierung der Sichten
+- TODO:
 
 ## ANSI-SPARC Drei-Ebenen-Konzept
 
