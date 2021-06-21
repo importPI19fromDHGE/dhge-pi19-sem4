@@ -1175,7 +1175,6 @@ ACK = Bestätigen der SeqNr
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
 > - ERM
 > - *"SQL"*
-> - Transaktionen (Eigenschaften)
 
 ## Datenbankentwurf
 
@@ -1287,7 +1286,6 @@ Archivspeicher ╱     offline    ╲ sec - min
 > - SCRUM
 > - *"agile Entwicklung"*
 > - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile)
-> - *Motivation - Wieso Softwareengineering?*
 > - *Welche Rolle spielt das Testen in der SE?*
 > - Aufwandsschätzung
 
@@ -1300,9 +1298,9 @@ erste, zweite und dritte Softwarekrise
 - Struktur in den Entwicklungsprozess bringen
 - Regeln definieren
 - feste Absprache in Verträgen
-- mehr Sicherheit für Kunden und Produzenten: Schätzung möglich
+- mehr Sicherheit für Kunden und Produzenten: Vorhersagen, Schätzung möglich
+- Dokumentation und Tests werden (oft) obligatorisch
 - Ziel: Verbesserung der Qualität, Standardisierung, Beschleunigung des Entwicklungsprozesses
-
 
 ## Lasten- und Pflichtenheft
 
@@ -1321,9 +1319,55 @@ erste, zweite und dritte Softwarekrise
 - tabellarische Übersicht der wichtigsten Daten
 - Belege, Ablaufpläne und Checklisten
 
-## V-Modell
+## Phasenmodelle
+
+> - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile) TODO
+
+### Wasserfallmodell (einfaches Phasenmodell)
+
+- Phasen stur nacheinander, keine Tests außer Abnahme
+- Wenn Fehler in vergangener Phase: Projekt fehlgeschlagen
+
+**Vorteile**
+
+- Gesamtkosten und Aufwand zu Beginn klar
+- Einzelabschnitte sind wenig komplex
+- Phasenpipelining möglich
+
+**Nachteile**
+
+- wenig Flexibilität bezüglich Änderungsmöglichkeiten
+- Testen nur am Ende
+- für komplexe Aufgaben oder große Teams ungeeignet
+- Kunde wird kaum involviert
+- Fail Early wird nicht unterstützt
+
+### Iteriertes Phasenmodell
+
+- Wasserfallmodell aber:
+- Phase kann bei Problemen wieder zurückgesetzt werden
+- Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
+  - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
+
+### Spiralenmodell
+
+- Weiterentwicklung Wasserfallmodell
+- Prototypen
+
+### V-Modell
 
 ![V-Modell](./assets/v-modell.png)<!--width=600px-->
+
+- klar definiert
+- Lasten-und Pflichtenheft
+- kein Reagieren auf neue Anforderungen
+- siehe auch [System-Analyse](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/blob/main/SWE-KASCHE/README.md)
+
+| Vorteile                                              | Nachteile                                                                                                         |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Analyse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
+| klare Test-Struktur vorgegeben                        | bezieht sich nur auf Entwicklung: Kein Betrieb, keine Wartung definiert                                           |
+| Iterationen bis alle Tests der Phase OK sind          | kein Rückspringen in vorherige Phase ohne Fehlerfall vorgesehen (siehe iteriertes Wasserfallmodell)               |
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -1478,7 +1522,7 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 - Überbegriff für Anwendungen, bei denen Maschinen menschenähnliche Intelligenzleistungen wie Lernen, Urteilen und Problemlösen erbringen
 - KI müssen trainiert werden, z.B. Belohnungssystem
 - schwache KI: Experte auf einem Gebiet, Vorhersagen/Entscheidungen treffen
-- starke KI: System, das eigenständig entscheidet, anpassbar, quasi die Fähigkeiten (und darüber hinaus) eines Menschen in Software 
+- starke KI: System, das eigenständig entscheidet, anpassbar, quasi die Fähigkeiten (und darüber hinaus) eines Menschen in Software
 
 **Machine-Learning**
 
