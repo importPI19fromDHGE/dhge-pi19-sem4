@@ -1284,13 +1284,25 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > **ToDo:**
 >
-> - V-Modell
 > - SCRUM
 > - *"agile Entwicklung"*
 > - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile)
 > - *Motivation - Wieso Softwareengineering?*
 > - *Welche Rolle spielt das Testen in der SE?*
 > - Aufwandsschätzung
+
+## Softwareengineering
+
+> - *Motivation - Wieso Softwareengineering?* TODO
+
+- Definition: Entwicklung von Software, Organisation + Modellierung Datenstrukturen, Betrieb der Systeme
+erste, zweite und dritte Softwarekrise
+- Struktur in den Entwicklungsprozess bringen
+- Regeln definieren
+- feste Absprache in Verträgen
+- mehr Sicherheit für Kunden und Produzenten: Schätzung möglich
+- Ziel: Verbesserung der Qualität, Standardisierung, Beschleunigung des Entwicklungsprozesses
+
 
 ## Lasten- und Pflichtenheft
 
@@ -1308,6 +1320,10 @@ Archivspeicher ╱     offline    ╲ sec - min
 - technische Struktur
 - tabellarische Übersicht der wichtigsten Daten
 - Belege, Ablaufpläne und Checklisten
+
+## V-Modell
+
+![V-Modell](./assets/v-modell.png)<!--width=600px-->
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -1348,7 +1364,7 @@ Archivspeicher ╱     offline    ╲ sec - min
 **Wofür?**
 
 - Immer komplexere Softwareprodukte
-- Architektur einer Software der Realität ähnlich abbilden 
+- Architektur einer Software der Realität ähnlich abbilden
 
 ## MVC-Architektur
 
