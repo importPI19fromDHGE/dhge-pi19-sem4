@@ -202,7 +202,7 @@ $$\begin{matrix}
 
 ### X zu Dezimal
 
-$316_7$ zu dezimal
+- bsp.: $316_7$ zu dezimal
 
 $$
 6\cdot 7^0 + 1 \cdot 7^1 + 3 \cdot 7^2 = 160_{10}
@@ -596,7 +596,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 ### Schutzziele
 
 - Klartext *so* transformieren, dass originale Informationen nicht mehr lesbar sind
-- Vertrauligkeit
+- Vertraulichkeit
 
 ### symmetrisch vs. asymmetrisch
 
@@ -610,7 +610,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 **asymmetrisch**
 
-- unterschiedliche Schlüssel für Ver-und Entschlüsselung
+- unterschiedliche Schlüssel für Ver- und Entschlüsselung
 - vergleichsweise niedrige Performance
 - in der Regel:
   - Verschlüsselung mit Public-Key des Empfängers
@@ -634,7 +634,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 > *Wie kann sondiert werden?*
 
 - variable Eingangsgröße auf fixe Ausgangsgröße abbilden
-- Lawineneffekt (minimale Änderungen im Eingang führt zu großen Änderungen im Ausgang)
+- Lawineneffekt (minimale Änderung im Eingang führt zu großen Änderungen im Ausgang)
 - Anwendungen: Speichern von Passwörtern, Integritätsüberprüfung
 - sichere/kryptografische Hashverfahren: SHA-256
 - verschiedene Sondierungsverfahren: lineares, quadratisches Sondieren
@@ -748,8 +748,8 @@ Einteilung von Grammatiken in vier Klassen:
 
 - Orakel bestimmt Folgezustand
 - gleiche Eingaben führen nicht immer zur gleichen Ausgabe
-- theoretisches Modell
-- (ab $\lor$ aba)*
+- theoretisches Modell (Orakel technisch nicht vollumfänglich realisierbar)
+- z.B.:  $(ab \lor aba)^\ast$:
 
 ```text
    ╭←───a─────╮
@@ -765,7 +765,7 @@ Einteilung von Grammatiken in vier Klassen:
 
 - gleiche Eingaben führen immer zur gleichen Ausgabe
 - tatsächlich von Computer ausführbar
-- (ab $\lor$ aba)*
+- z.B.:  $(ab \lor aba)^\ast$:
 
 ```text
                ╭←───────a──────────╮
@@ -822,17 +822,10 @@ Einteilung von Grammatiken in vier Klassen:
 
 > *Welche Betriebsmittel kennen Sie?*
 
-- aktive Resourcen verarbeitunge passive Resourcen
+- aktive Ressourcen verarbeiten passive Ressourcen
 - Einteilung in Klassen: Entziehbarkeit, Zuteilbarkeit, Wiederverwendbarkeit, Hard- oder Software Ressource
-
-**aktive Ressourcen**
-
-- CPU
-- Netzwerk
-
-**passive Ressourcen**
-
-- Festplatte, Arbeitsspeicher
+- **aktive Ressourcen:** CPU, Netzwerk
+- **passive Ressourcen:** Festplatte, Arbeitsspeicher
 
 ## Thread/Prozess/Task
 
@@ -857,7 +850,7 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 > Dateisystemarten nennen können + Vor- und Nachteile
 
-- Beispiele: Exfat, ext4, NTFS, Fat32
+- Beispiele: exFAT, ext4, NTFS, FAT32
 
 ## Virtueller Speicher
 
@@ -1417,4 +1410,3 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 - Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
 - Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
 - permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
-
