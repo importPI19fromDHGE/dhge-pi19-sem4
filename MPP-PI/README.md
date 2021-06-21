@@ -1329,6 +1329,27 @@ Archivspeicher ╱     offline    ╲ sec - min
 - Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
 - Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
 
+> - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
+
+**Was ist OOP?**
+
+- siehe OOP-Paradigmen
+- Alles ist ein Objekt
+- Objekte sind Instanzen einer Klasse
+- etc..
+
+**Wieso?**
+
+- Wiederverwendbarkeit Entwurfstmuster
+  - steigert Produktivität der Programmierer
+  - vermeidet Fehler
+- Datenkapselung
+
+**Wofür?**
+
+- Immer komplexere Softwareprodukte
+- Architektur einer Software der Realität ähnlich abbilden 
+
 ## MVC-Architektur
 
 - **M**odel: Daten
