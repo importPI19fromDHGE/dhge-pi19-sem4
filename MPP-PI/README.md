@@ -751,7 +751,7 @@ Einteilung von Grammatiken in vier Klassen:
 - z.B.:  $(ab \lor aba)^\ast$:
 
 ```text
-   ╭←───a─────╮
+   ╭←───b─────╮
  ╭═╧╮        ╭┴─╮
 →╢q0╟───a───→┤q1│
  ╰═╤╯        ╰┬─╯
@@ -999,10 +999,6 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 # Betriebssystemverwaltung
 
-> **ToDo:**
->
-> - "Datensicherung"
-
 ## RAID
 
 - **R**edundant **A**rray of **I**ndependent **D**isks
@@ -1028,27 +1024,31 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 ----------------------------------------------------------------------------------------------------------------------
 
+## Datensicherung
+
+- unabhängige Datenkopien, getrennt vom Produktivsystem aufbewahren
+- 3-2-1 Regel
+  - 3 Datenstände
+  - 2 unterschiedliche Speichermedien
+  - 1 off-site
+- Online Backup $\rightarrow$ sofort verfügbar und immer online
+- Offline Backup $\rightarrow$ nicht immer verfügbar und online, braucht Zeit um eingesetzt werden zu können
+- Hot Backup $\rightarrow$ wird im laufenden Betrieb erstellt
+- Cold Backup $\rightarrow$ wird im ausgeschalteten Zustand erstellt (konsistenter Zustand wird gesichert)
+
 # Rechnernetze
 
-> **ToDo:**
->
-> - IPv4 vs. IPv6 (Aufbau und Vergleich)
-> - IP+Routing
-> - TCP/IP
-> - *Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?*
-> - SDSL/ADSL?
+## ISO/OSI-Referenzmodell und TCP/IP
 
-## ISO/OSI-Referenzmodell
-
-| Schicht                | Funktion                                                     | Protokolle |
-| ---------------------- | ------------------------------------------------------------ | ---------- |
-| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  |
-| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP |
-| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   |
-| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   |
-| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         |
-| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   |
-| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            |
+| Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
+| ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
+| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  | Anwendungungsschicht            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP | Anwendungungsschicht            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   | Anwendungungsschicht            |
+| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   | Transportschicht                |
+| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         | Internetschicht                 |
+| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
+| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
 - Protokolle der oberen 3 Schichten nicht eins zu eins zuordenbar
 
@@ -1062,6 +1062,21 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
     - z.B.: Ring, Voll- oder Teilvermaschtes Netz, Stern, Baum, Bus, Linie ("offener Ring")
   - **Logische Topologie:** Kommunikationsbeziehungen und Struktur des Datenflusse
 - SPOF im Netz $\rightarrow$ Ausfallsicherheit gering
+
+## IP und Routing
+
+- Forwarding:
+  - beschreibt Entscheidungsprozess eines Netzknotens Über welchen Nachbarn eine Nachricht weitergeleitet werden soll
+- Routing:
+  - bestimmt den gesamten Weg eines Nachrichtenstroms durch das Netzwerk
+
+**Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?**
+
+- Routing im Internet (effizient) ermöglichen, Zusammengehöriges kommt in ein Sub-Netz
+- man möchte keine Broadcasts im Internet
+- MAC gilt nur in lokalen Netzen
+- privacy concerns
+- MAC hat nur kleinen Adressraum (48 Bit)
 
 ## IPv4 vs IPv6
 
@@ -1134,7 +1149,7 @@ ACK = Bestätigen der SeqNr
 - HTTP-Request
 - HTTP Response: Status Code, HTML-Page
 
-# DHCP
+## DHCP
 
 - **D**ynamic **H**orst **C**onfiguration **P**rotocol ermöglicht die automatische Konfiguration von TCP/IP-Netzwerkinformationen für IPv4 und IPv6
 - `DISCOVER`: DHCP-Server im lokalen Netz suchen
@@ -1145,6 +1160,15 @@ ACK = Bestätigen der SeqNr
 
 ----------------------------------------------------------------------------------------------------------------------
 
+## SDSL / ADSL
+
+- SDSL: Symmetric Digital Subscriber Line
+  - Upload und Download Speeds gleich
+  - teurer als ADSL $\rightarrow$ als Business-Leitung verkauft
+- ADSL: Asymmetric Digital Subscriber Line
+  - Upload und Download Speeds unterschiedlich (meist Upload Speed kleiner)
+- VDSL: Very-fast Digital Subscriber Line
+
 # Datenbanken
 
 > **ToDo:**
@@ -1152,7 +1176,13 @@ ACK = Bestätigen der SeqNr
 > - Datenbankentwurf (einzelne Modelle, Formalitäten sind sehr wichtig!)
 > - ERM
 > - *"SQL"*
-> - Transaktionen (Eigenschaften)
+
+## Datenbankentwurf
+
+- Anforderungsanalyse (requirements engineering)
+  - funktionale und nicht funktionale Anforderungen nennen
+- Modellierung der Sichten
+- TODO:
 
 ## ANSI-SPARC Drei-Ebenen-Konzept
 
@@ -1254,13 +1284,24 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 > **ToDo:**
 >
-> - V-Modell
 > - SCRUM
 > - *"agile Entwicklung"*
 > - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile)
-> - *Motivation - Wieso Softwareengineering?*
 > - *Welche Rolle spielt das Testen in der SE?*
 > - Aufwandsschätzung
+
+## Softwareengineering
+
+> - *Motivation - Wieso Softwareengineering?* TODO
+
+- erste, zweite und dritte Softwarekrise
+- Definition: Entwicklung von Software, Organisation + Modellierung Datenstrukturen, Betrieb der Systeme
+- Struktur in den Entwicklungsprozess bringen
+- Regeln definieren
+- feste Absprache in Verträgen
+- mehr Sicherheit für Kunden und Produzenten: Vorhersagen, Schätzung möglich
+- Dokumentation und Tests werden (oft) obligatorisch
+- Ziel: Verbesserung der Qualität, Standardisierung, Beschleunigung des Entwicklungsprozesses
 
 ## Lasten- und Pflichtenheft
 
@@ -1279,26 +1320,96 @@ Archivspeicher ╱     offline    ╲ sec - min
 - tabellarische Übersicht der wichtigsten Daten
 - Belege, Ablaufpläne und Checklisten
 
+## Phasenmodelle
+
+> - *Welche Phasenmodelle gibt es und wie funktionieren diese?* (inkl. Vor- und Nachteile) TODO
+
+### Wasserfallmodell (einfaches Phasenmodell)
+
+- Phasen stur nacheinander, keine Tests außer Abnahme
+- Wenn Fehler in vergangener Phase: Projekt fehlgeschlagen
+
+**Vorteile**
+
+- Gesamtkosten und Aufwand zu Beginn klar
+- Einzelabschnitte sind wenig komplex
+- Phasenpipelining möglich
+
+**Nachteile**
+
+- wenig Flexibilität bezüglich Änderungsmöglichkeiten
+- Testen nur am Ende
+- für komplexe Aufgaben oder große Teams ungeeignet
+- Kunde wird kaum involviert
+- Fail Early wird nicht unterstützt
+
+### Iteriertes Phasenmodell
+
+- Wasserfallmodell aber:
+- Phase kann bei Problemen wieder zurückgesetzt werden
+- Prinzip: **P**lan, **D**o, **C**heck, **A**ct, *(zurück zu Plan)*
+  - kurze Planungszeit, schnell in das *Do* übergehen und nach kurzer Zeit prüfen
+
+### Spiralenmodell
+
+- Weiterentwicklung Wasserfallmodell
+- Prototypen
+
+### V-Modell
+
+![V-Modell](./assets/v-modell.png)<!--width=600px-->
+
+- klar definiert
+- Lasten-und Pflichtenheft
+- kein Reagieren auf neue Anforderungen
+- siehe auch [System-Analyse](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/blob/main/SWE-KASCHE/README.md)
+
+| Vorteile                                              | Nachteile                                                                                                         |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| klarer Ablauf (nächster Schritt bei Fehler wird klar) | Fehler in der Analyse-Phase erst sehr spät sichtbar (früher mehr Kommunikation mit dem Kunden und MVP als Lösung) |
+| klare Test-Struktur vorgegeben                        | bezieht sich nur auf Entwicklung: Kein Betrieb, keine Wartung definiert                                           |
+| Iterationen bis alle Tests der Phase OK sind          | kein Rückspringen in vorherige Phase ohne Fehlerfall vorgesehen (siehe iteriertes Wasserfallmodell)               |
+
 ----------------------------------------------------------------------------------------------------------------------
 
 # Systementwurf
 
 > **ToDo:**
 >
-> - OOP-Paradigmen
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 >   - Unterschied Klasse/Objekt/Interface/abstrakte Klasse
 > - UML
 
 ## OOP-Paradigmen
 
-<!--Das kann sich gerne nochmal jemand ansehen-->
-
-- Abstraktion: die Implementierung von Klassen bleibt verborgen, nur Schnittstellen sind nach außen sichtbar
-- Kapselung: Verbergen von Implementierungsdetails, kein Zugriff auf interne Strukturen
+- Abstraktion: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
+- Kapselung:
+  - Verbergen von Implementierungsdetails
+  - Ein Objekt hat eine Schnittstelle, die darüber bestimmt, auf welche Weise mit dem Objekt interagiert werden kann
 - Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
-- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen
+- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
 - Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+
+> - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
+
+**Was ist OOP?**
+
+- siehe OOP-Paradigmen
+- Alles ist ein Objekt
+- Objekte sind Instanzen einer Klasse
+- etc..
+
+**Wieso?**
+
+- Wiederverwendbarkeit Entwurfstmuster
+  - steigert Produktivität der Programmierer
+  - vermeidet Fehler
+- Datenkapselung
+
+**Wofür?**
+
+- Immer komplexere Softwareprodukte
+- Architektur einer Software der Realität ähnlich abbilden
 
 ## MVC-Architektur
 
@@ -1393,11 +1504,6 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 
 # IT-Trends
 
-> **ToDo:**
->
-> - Machine-Learning/KI
-> - *Was sind IoT?*
-
 ## Cloud Computing
 
 - Nutzung der IT-Infrastruktur von externen Dienstleistern (Computerressourcen als Dienstleistung)
@@ -1409,3 +1515,34 @@ Befehl 3:                                  │    Hol-Phase     │   Decodierph
 - Abhängigkeit von Dritten (Cloud-Anbieter) $\rightarrow$ Kosten können ggf. höher sein
 - Vertraulichkeit muss sichergestellt sein, Daten müssen sicher sein (z.B. DSGVO)
 - permanente Internetverbindung benötigt $\rightarrow$ Geschwindigkeit und Latenz
+
+## Machine-Learning und Künstliche Intelligenz
+
+**Künstliche Intelligenz (TODO)**
+
+- Überbegriff für Anwendungen, bei denen Maschinen menschenähnliche Intelligenzleistungen wie Lernen, Urteilen und Problemlösen erbringen
+- geeignet für nicht-turing-vollständige Probleme
+- KI müssen trainiert werden, z.B. mit Belohnungssystem oder supervised learning
+- schwache KI: Experte auf einem Gebiet, Vorhersagen/Entscheidungen treffen
+- starke KI: System, das eigenständig entscheidet, anpassbar, quasi die Fähigkeiten (und darüber hinaus) eines Menschen in Software
+
+**Machine-Learning**
+
+- Teilbereich KI
+- Erkennen von Mustern in  Datenbeständen: in der Lage, eigenständig Lösungen für Probleme zu finden
+
+**Anwendung**
+
+- Mustererkennung in Daten
+- Objekterkennung (in Bildern)
+- Autonomes Fahren
+
+## Internet of Things (IoT)
+
+> - *Was sind IoT?*
+
+- (alltägliche) Gegenstände sind Teil des Internets
+- bekommen ID, kommunizieren untereinander, empfangen Befehle, senden Daten
+- Aufgaben ohne Eingriffe von außen erledigen
+- Industriell vs privat
+- Vgl. Smart-Home, Wearables
