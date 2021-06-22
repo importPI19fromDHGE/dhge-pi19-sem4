@@ -1,3 +1,6 @@
+MPP1 - Themenkatalog
+====================
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -112,8 +115,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-MPP1 - Themenkatalog
-====================
+<!--pagebreak-->
 
 # Präambel
 
@@ -167,7 +169,7 @@ MPP1 - Themenkatalog
 ## Harvard-Architektur
 
 - Separation von Befehls- und Datenspeicher
-- kein gemeinsamer Bus für Programme und Daten (aktive und passive Daten)
+- getrennter Bus für Programme und Daten (aktive und passive Daten)
 - $\rightarrow$ Mitigation des von-Neumann-Flaschenhalses
 - im Betrieb (während der Programmausführung) ist Programmspeicher read-only
 
