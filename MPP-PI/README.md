@@ -263,10 +263,8 @@ STOP
 
 **Befehl**
 
-- kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
-- bezeichnen einzelne Arbeitsschritte
+- bezeichnen einzelne Arbeitsschritte $\rightarrow$ kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
 - bei problemorientierten Sprachen: Anweisung (oft keine einzelnen Schritte, sondern komplexere Abläufe)
-- nicht weiter zerlegbare Anweisung = elementare Answeisung
 - Befehl = Operationsteil + Adressteil
 
 ## `Call by Value` vs. `Call by Reference`
