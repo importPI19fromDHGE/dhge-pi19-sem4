@@ -965,7 +965,6 @@ Einteilung von Grammatiken in vier Klassen:
 - **Mehrprogrammbetrieb:** Verwaltung mehrerer Prozesse in einem Einprozessorsystem
 - **Mehrprozessorbetrieb:** Verwaltung mehrerer Prozesse in einem Mehrprozessorsystem
 - **Verteilte Verarbeitung:** Verwaltung mehrerer Prozesse auf mehreren Verteilten Computersystemen (Cluster)
-- **Grundlegender Bedeutung:** Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
 
 Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutzung von Ressourcen und Prozessorzeit
 
