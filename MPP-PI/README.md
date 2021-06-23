@@ -246,7 +246,7 @@ STOP
 **Prädikative Programmiersprachen**
 
 - Beweis in einem System aus Tatsachen und Regeln im Vordergrund (= Wissensbasis)
-- Benutzer formuliert Anfrage an das System, welches versucht diese mit "richtig" oder "falsch" zu beantworten
+- Benutzer formuliert Anfrage an das System, welches versucht, diese mit "richtig" oder "falsch" zu beantworten
 - Bsp.: Prolog
 
 **Objektorientierte Programmiersprachen**
