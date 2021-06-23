@@ -637,7 +637,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 > *Warum ist ein RAM-Speicher flüchtig?*
 
 - DRAM-Zelle besteht aus Kondensator und Transistor
--  Speicherung als Ladung im Kondensator
+- Speicherung als Ladung im Kondensator
   - Transistor-Leckströme machen Refresh nötig
   - Abschalten der Betriebsspannung: Entladung des Kondensators $\rightarrow$ flüchtig
 - SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
