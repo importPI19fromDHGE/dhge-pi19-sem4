@@ -235,7 +235,7 @@ STOP
 **Prädikative Programmiersprachen**
 
 - Beweis in einem System aus Tatsachen und Regeln im Vordergrund (= Wissensbasis)
-- Benutzer formuliert Anfrage an das System, die dieses versucht mit "richtig" oder "falsch" zu beantworten
+- Benutzer formuliert Anfrage an das System, welches versucht diese mit "richtig" oder "falsch" zu beantworten
 - Bsp.: Prolog
 
 **Objektorientierte Programmiersprachen**
@@ -533,12 +533,12 @@ cin ────────────│───┬─╯╘═══╝
 
 **Disjunktive Normalform**
 
-- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv Verknüpft (OR)
+- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv verknüpft (OR)
 - $\rightarrow\; Y = \bar{A}\bar{B}C \lor \bar{A}B\bar{C} \lor \bar{A}BC \lor ABC$
 
 **Konjunktive Normalform**
 
-- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv Verknüpft (AND)
+- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv verknüpft (AND)
 - $\rightarrow\; Y = (\bar{A}\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor C) \land (A\lor B\lor\bar{C})$
 
 ## KV-Diagramme
@@ -605,7 +605,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 **Diode**
 
 - Halbleiterelement
-- in Abhängigkeit von Stromrichtung sperrt es
+- sperrt in Abhängigkeit von Stromrichtung
 - Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
 
 **Transistor**
@@ -625,8 +625,10 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 > *Warum ist ein RAM-Speicher flüchtig?*
 
-- DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
-- Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
+- DRAM-Zelle besteht aus Kondensator und Transistor
+-  Speicherung als Ladung im Kondensator
+  - Transistor-Leckströme machen Refresh nötig
+  - Abschalten der Betriebsspannung: Entladung des Kondensators $\rightarrow$ flüchtig
 - SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
 
 ## Signalübertragung Kabel
