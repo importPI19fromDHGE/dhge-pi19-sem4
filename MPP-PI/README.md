@@ -1038,16 +1038,16 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 **Non-präemptive Scheduling**
 
-- First come first serve (FCFS / FIFO): Jobs werden bei Entstehen in Warteschlange eingefügt
-- Shortest-Job-First (SJF): Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
-- Highest response ratio next (HRN): Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
-- Prioritätsscheduling (PS): Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+- **First come first serve** (FCFS / FIFO): Jobs werden bei Entstehen in Warteschlange eingefügt
+- **Shortest-Job-First** (SJF): Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
+- **Highest response ratio next** (HRN): Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
+- **Prioritätsscheduling** (PS): Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
 
 **Präemptive Scheduling**
 
-- Round-Robin (RR): Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
-- Dynamic Priority Round Robin: Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
-- Shortest Remaining Time First: Variante von SJF $\rightarrow$ bevorzugt Jobs mit kleinster restlicher Bedienzeit
+- **Round-Robin** (RR): Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
+- **Dynamic Priority Round Robin**: Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
+- **Shortest Remaining Time First**: Variante von SJF $\rightarrow$ bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
 ## Adressierungsarten
 
