@@ -246,7 +246,7 @@ STOP
 **Prädikative Programmiersprachen**
 
 - Beweis in einem System aus Tatsachen und Regeln im Vordergrund (= Wissensbasis)
-- Benutzer formuliert Anfrage an das System, die dieses versucht mit "richtig" oder "falsch" zu beantworten
+- Benutzer formuliert Anfrage an das System, welches versucht, diese mit "richtig" oder "falsch" zu beantworten
 - Bsp.: Prolog
 
 **Objektorientierte Programmiersprachen**
@@ -263,10 +263,8 @@ STOP
 
 **Befehl**
 
-- kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
-- bezeichnen einzelne Arbeitsschritte
+- bezeichnen einzelne Arbeitsschritte $\rightarrow$ kleinste, nicht weiter zerlegbare Einheit einer Programmiersprache
 - bei problemorientierten Sprachen: Anweisung (oft keine einzelnen Schritte, sondern komplexere Abläufe)
-- nicht weiter zerlegbare Anweisung = elementare Answeisung
 - Befehl = Operationsteil + Adressteil
 
 ## `Call by Value` vs. `Call by Reference`
@@ -544,12 +542,12 @@ cin ────────────│───┬─╯╘═══╝
 
 **Disjunktive Normalform**
 
-- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv Verknüpft (OR)
+- alle Eingansbelegungen für die die Funktion den Wert `1` annimmt werden disjunktiv verknüpft (OR)
 - $\rightarrow\; Y = \bar{A}\bar{B}C \lor \bar{A}B\bar{C} \lor \bar{A}BC \lor ABC$
 
 **Konjunktive Normalform**
 
-- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv Verknüpft (AND)
+- alle Eingansbelegungen für die die Funktion den Wert `0` annimmt werden konjunktiv verknüpft (AND)
 - $\rightarrow\; Y = (\bar{A}\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor\bar{C}) \land (A\lor\bar{B}\lor C) \land (A\lor B\lor\bar{C})$
 
 ## KV-Diagramme
@@ -616,7 +614,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 **Diode**
 
 - Halbleiterelement
-- in Abhängigkeit von Stromrichtung sperrt es
+- sperrt in Abhängigkeit von Stromrichtung
 - Anwendung: Gleichrichter, LeuchtEmitterDiode (LED), Schutzdiode für Spulen
 
 **Transistor**
@@ -636,8 +634,10 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 
 > *Warum ist ein RAM-Speicher flüchtig?*
 
-- DRAM-Zelle besteht aus Kondensator und Transistor, Speicherung als Ladung im Kondensator
-- Transistor-Leckströme machen Refresh nötig, bei Abschalten der Betriebsspannung folgt Entladung des Kondensators -> flüchtig
+- DRAM-Zelle besteht aus Kondensator und Transistor
+- Speicherung als Ladung im Kondensator
+  - Transistor-Leckströme machen Refresh nötig
+  - Abschalten der Betriebsspannung: Entladung des Kondensators $\rightarrow$ flüchtig
 - SRAM-Zelle: Kein Refresh nötig aber gleiches Prinzip mit Spannung
 
 ## Signalübertragung Kabel
@@ -668,7 +668,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 **Eigenschaften von Sortierverfahren**
 
 - stabiles Sortieren: Reihenfolge gleicher Werte bleibt erhalten
-- Speicherbedarf: insitu (Array) oder exsitu (Liste)
+- Speicherbedarf: in situ (Array) oder ex situ (Liste)
 - Anzahl der Vergleiche/Tausche (best-/worst-case)
 
 ### Selection-Sort
@@ -676,7 +676,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - Idee: entferne jeweils das kleinste Element aus der Ausgangsfolge und füge es am Ende der Ergebnisfolge ein
 - Selection-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
 - $N-1$ Swaps, $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
-- insitu, kein stabiles Verfahren
+- in situ, kein stabiles Verfahren
 - Aufwandsabschätzung: $T_{worst}(n)=T_{best}(N)\rightarrow O(N^2)$
 
 ### Bubble-Sort
@@ -684,7 +684,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - Idee: Tausche benachbarte Schlüssel, wenn diese nicht in der gewünschten Reihenfolge sind
 - Bubble-Sort ist terminiert (sortierter Bereich wird in jedem Durchlauf vergrößert)
 - In jedem Durchlauf wandert das größte Element an die richtige Stelle
-- insitu, stabiles Suchverfahren (bei fast Vorsortierung trotzdem $n-1$ Durchläufe)
+- in situ, stabiles Suchverfahren (bei fast Vorsortierung trotzdem $n-1$ Durchläufe)
 - Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
 
 ### Insertion-Sort
@@ -693,7 +693,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
 - Insertion-Sort ist terminiert (Ausgangsfolge wird bei jedem Durchlauf um ein Element verringert)
 - $N-1$ Durchläufe (in jedem Durchlauf $i$ $N-i$ Vergleiche)
 - pro Durchlauf von Vorsortierung abhängige Anzahl von Vergleichen und Verschiebungen ($T_{worst}(n)\neq T_{best})
-- insitu, stabiles Verfahren
+- in situ, stabiles Verfahren
 - Aufwandsabschätzung: $T_{worst}(n)\rightarrow O(N^2); T_{best}(N)\rightarrow O(N); T_{avg}\rightarrow(N^2)$
 
 ### Quick-Sort
@@ -703,7 +703,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
   - sortiere beide Teilmengen mit Quick-Sort (Rekursion)
 - Auswahl des Pivot-Elements durch verschiedene Strategien $\rightarrow$ für höchste Effizienz teilen in zwei gleichgroße Teilmengen
 - Termination: bei Partitionierung entstehende Teilmengen sind immer kleiner als die Ausgangsmenge bis zur einelementigen Liste
-- insitu, kein stabiles Verfahren
+- in situ, kein stabiles Verfahren
 - worst-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen der Länge $1$ und $N-1$ ($T_{worst}\rightarrow O(N^2)$)
 - best-case: Conquer zerlegt eine Folge von $N$ Elementen rekursiv in 2 Folgen gleicher Länge ($T_{best}\rightarrow O(N log N)$)
 
@@ -713,7 +713,7 @@ Zur Überprüfung kann Wahrheitswerttabelle genutzt werden.
   - Mische jeweils 2 benachbarte Teilmengen, sortiere dabei die Elemente
 - Gut geeignet für Sortierung von Daten auf externen Medien
 - Termination: durch sukzessive Teilung der Folge bis zu einelementiger Folge gesichert
-- exsitu, stabiles Verfahren
+- ex situ, stabiles Verfahren
 - worst case: $O(N log N)$
 - best = worst (immer optimale Teilung)
 
@@ -845,7 +845,7 @@ Einteilung von Grammatiken in vier Klassen:
 
 ## Turing-Maschine
 
-- Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
+- Mathematisches Modell, das Berechenbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
 - unendlich langes Band : Bandalphabet
 - Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
 - Zustandsmenge
@@ -1048,16 +1048,16 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 
 **Non-präemptive Scheduling**
 
-- First come first serve (FCFS / FIFO): Jobs werden bei Entstehen in Warteschlange eingefügt
-- Shortest-Job-First (SJF): Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
-- Highest response ratio next (HRN): Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
-- Prioritätsscheduling (PS): Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
+- **First come first serve** (FCFS / FIFO): Jobs werden bei Entstehen in Warteschlange eingefügt
+- **Shortest-Job-First** (SJF): Prozesse mit (geschätzt) kürzester Ausführungzeit werden zuerst bedient
+- **Highest response ratio next** (HRN): Bearbeitet Jobs mit maximalem Verhältnis Antwortzeit zu Bedienzeit zuerst. (Zeiten liegen Schätzungen zugrunde)
+- **Prioritätsscheduling** (PS): Nächster Job, der in rechenbereit-Liste aufgenommen wird, wird in Warteschlange gemäß seiner Prioritäten einsortiert
 
 **Präemptive Scheduling**
 
-- Round-Robin (RR): Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
-- Dynamic Priority Round Robin: Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
-- Shortest Remaining Time First: Variante von SJF $\rightarrow$ bevorzugt Jobs mit kleinster restlicher Bedienzeit
+- **Round-Robin** (RR): Kombination aus der FCFS-Strategie und dem Zeitscheibenverfahren
+- **Dynamic Priority Round Robin**: Prioritäten der Prozesse in "rechenbereit"-Schlange erhöhen sich nach jeder sie nicht berücksichtigenden Zeitscheibe
+- **Shortest Remaining Time First**: Variante von SJF $\rightarrow$ bevorzugt Jobs mit kleinster restlicher Bedienzeit
 
 ## Adressierungsarten
 
@@ -1196,6 +1196,8 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Routing:
   - bestimmt den gesamten Weg eines Nachrichtenstroms durch das Netzwerk
 
+<!--> TODO: Wie funktioniert Routing eigentlich? (Grob) <--->
+
 **Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?**
 
 - Routing im Internet (effizient) ermöglichen, Zusammengehöriges kommt in ein Sub-Netz
@@ -1245,8 +1247,8 @@ ACK = Bestätigen der SeqNr
 ### TCP Fast-Open
 
 - Ziel: Latenz beim wiederholten Verbindungsaufbau reduzieren (3-Wege-Handshake vor Übermittlung von Anwendungsdaten)
-- Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
-- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
+- Grundprinzip: Client fragt beim ersten Verbindungsaufbau ein spezifisches TFO-Cookie an
+- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und das gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
 ## TLS
 
@@ -1508,13 +1510,13 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 ## OOP-Paradigmen
 
-- Abstraktion: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
-- Kapselung:
+- **Abstraktion**: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
+- **Kapselung**:
   - Verbergen von Implementierungsdetails
   - Ein Objekt hat eine Schnittstelle, die darüber bestimmt, auf welche Weise mit dem Objekt interagiert werden kann
-- Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
-- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
-- Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+- **Persistenz**: Objektvariablen existieren, solange die Objekte vorhanden sind
+- **Polymorphie**: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
+- **Vererbung**: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
 
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 
