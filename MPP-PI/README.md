@@ -1188,6 +1188,8 @@ Grundlegender Bedeutung: Kommunikation, Synchronisation zwischen Prozessen; Nutz
 - Routing:
   - bestimmt den gesamten Weg eines Nachrichtenstroms durch das Netzwerk
 
+<!--> TODO: Wie funktioniert Routing eigentlich? (Grob) <--->
+
 **Warum braucht man ne IP Adresse anstatt gleich mit MAC zu kommunizieren?**
 
 - Routing im Internet (effizient) ermöglichen, Zusammengehöriges kommt in ein Sub-Netz
@@ -1237,8 +1239,8 @@ ACK = Bestätigen der SeqNr
 ### TCP Fast-Open
 
 - Ziel: Latenz beim wiederholten Verbindungsaufbau reduzieren (3-Wege-Handshake vor Übermittlung von Anwendungsdaten)
-- Grundprinzip: Client fragt beim ersten Verbindungsaufbau eine spezifisches TFO-Cookie an
-- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und der gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
+- Grundprinzip: Client fragt beim ersten Verbindungsaufbau ein spezifisches TFO-Cookie an
+- Bei erneutem Verbindungsaufbau werden direkt mit dem ersten Segment Anwendungsdaten und das gespeicherte TFO-Cookie übermittelt (kein regulärer Drei-Wege-Handshake erforderlich)
 
 ## TLS
 
@@ -1500,13 +1502,13 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 ## OOP-Paradigmen
 
-- Abstraktion: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
-- Kapselung:
+- **Abstraktion**: Jedes Objekt im System kann als ein abstraktes Modell eines Akteurs betrachtet werden $\rightarrow$ Klassen oder Prototypen
+- **Kapselung**:
   - Verbergen von Implementierungsdetails
   - Ein Objekt hat eine Schnittstelle, die darüber bestimmt, auf welche Weise mit dem Objekt interagiert werden kann
-- Persistenz: Objektvariablen existieren, solange die Objekte vorhanden sind
-- Polymorphie: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
-- Vererbung: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
+- **Persistenz**: Objektvariablen existieren, solange die Objekte vorhanden sind
+- **Polymorphie**: Fähigkeit eines Bezeichners, abhängig von seiner Verwendung unterschiedliche Datentypen anzunehmen (vgl. virtual-Klassen)
+- **Vererbung**: abgeleitete Klasse erben die Methoden und Attribute der Basisklasse
 
 > - *Was ist OOP? Wieso wurde OOP eingeführt? Wofür wird OOP verwendet?*
 
