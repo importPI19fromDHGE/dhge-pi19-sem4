@@ -5,7 +5,6 @@ MPP1 - Themenkatalog
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [MPP1 - Themenkatalog](#mpp1---themenkatalog)
 - [Präambel](#pr%C3%A4ambel)
   - [Most Important Topics](#most-important-topics)
 - [Grundlagen der Informationsverarbeitung](#grundlagen-der-informationsverarbeitung)
@@ -81,9 +80,11 @@ MPP1 - Themenkatalog
 - [Betriebssystemverwaltung](#betriebssystemverwaltung)
   - [RAID](#raid)
   - [Pipes](#pipes)
+  - [Datensicherung](#datensicherung)
 - [Rechnernetze](#rechnernetze)
-  - [ISO/OSI-Referenzmodell](#isoosi-referenzmodell)
+  - [ISO/OSI-Referenzmodell und TCP/IP](#isoosi-referenzmodell-und-tcpip)
   - [Netzwerktopologien](#netzwerktopologien)
+  - [IP und Routing](#ip-und-routing)
   - [IPv4 vs IPv6](#ipv4-vs-ipv6)
   - [UDP vs TCP](#udp-vs-tcp)
   - [TCP-Handshake](#tcp-handshake)
@@ -91,8 +92,10 @@ MPP1 - Themenkatalog
   - [TLS](#tls)
   - [DNS](#dns)
   - [URL-Aufruf](#url-aufruf)
-- [DHCP](#dhcp)
+  - [DHCP](#dhcp)
+  - [SDSL / ADSL](#sdsl--adsl)
 - [Datenbanken](#datenbanken)
+  - [Datenbankentwurf](#datenbankentwurf)
   - [ANSI-SPARC Drei-Ebenen-Konzept](#ansi-sparc-drei-ebenen-konzept)
   - [Datenmodelle](#datenmodelle)
   - [Operationen im Relationalen Modell](#operationen-im-relationalen-modell)
@@ -101,7 +104,13 @@ MPP1 - Themenkatalog
   - [Constraints](#constraints)
   - [Speicherpyramide](#speicherpyramide)
 - [Systemanalyse](#systemanalyse)
+  - [Softwareengineering](#softwareengineering)
   - [Lasten- und Pflichtenheft](#lasten--und-pflichtenheft)
+  - [Phasenmodelle](#phasenmodelle)
+    - [Wasserfallmodell (einfaches Phasenmodell)](#wasserfallmodell-einfaches-phasenmodell)
+    - [Iteriertes Phasenmodell](#iteriertes-phasenmodell)
+    - [Spiralenmodell](#spiralenmodell)
+    - [V-Modell](#v-modell)
 - [Systementwurf](#systementwurf)
   - [OOP-Paradigmen](#oop-paradigmen)
   - [MVC-Architektur](#mvc-architektur)
@@ -112,6 +121,8 @@ MPP1 - Themenkatalog
   - [Pipelining](#pipelining)
 - [IT-Trends](#it-trends)
   - [Cloud Computing](#cloud-computing)
+  - [Machine-Learning und Künstliche Intelligenz](#machine-learning-und-k%C3%BCnstliche-intelligenz)
+  - [Internet of Things (IoT)](#internet-of-things-iot)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
