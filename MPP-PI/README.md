@@ -847,7 +847,7 @@ Einteilung von Grammatiken in vier Klassen:
 
 ## Turing-Maschine
 
-- Mathematisches Modell, das Berechnbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
+- Mathematisches Modell, das Berechenbarkeit definiert [Wikipedia](https://de.wikipedia.org/wiki/Turingmaschine#Formale_Definition)
 - unendlich langes Band : Bandalphabet
 - Lese-Schreibkopf kann Lesen, Schreiben, arbeitet auf Band : Eingabealphabet
 - Zustandsmenge
