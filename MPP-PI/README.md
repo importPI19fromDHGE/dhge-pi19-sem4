@@ -9,7 +9,6 @@ MPP1 - Themenkatalog
   - [Most Important Topics](#most-important-topics)
 - [Grundlagen der Informationsverarbeitung](#grundlagen-der-informationsverarbeitung)
   - [Von-Neumann-Architektur](#von-neumann-architektur)
-  - [Harvard-Architektur](#harvard-architektur)
   - [Befehlsverarbeitung](#befehlsverarbeitung)
   - [Einordnung von Programmiersprachen](#einordnung-von-programmiersprachen)
     - [Problemorientierte Programmiersprachen](#problemorientierte-programmiersprachen)
@@ -1551,7 +1550,7 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 - Übersetzung des gesamten Quellcodes in hardwarespezifischen Maschinencode
 - Beispiele: `C`, `C++`, `C#`
-- Vorteil: keine Hardwarebindung, hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
+- Vorteil: hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
 - Nachteil: aufwändiger hardwarespezifischer Compile-Prozess
 
 **Interpreter**
