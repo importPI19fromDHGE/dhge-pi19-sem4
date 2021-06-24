@@ -1551,7 +1551,7 @@ Archivspeicher ╱     offline    ╲ sec - min
 
 - Übersetzung des gesamten Quellcodes in hardwarespezifischen Maschinencode
 - Beispiele: `C`, `C++`, `C#`
-- Vorteil: keine Hardwarebindung, hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
+- Vorteil: hohe Ausführungsgeschwindigkeit, geringerer Speicherbedarf
 - Nachteil: aufwändiger hardwarespezifischer Compile-Prozess
 
 **Interpreter**
