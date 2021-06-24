@@ -9,6 +9,7 @@ MPP1 - Themenkatalog
   - [Most Important Topics](#most-important-topics)
 - [Grundlagen der Informationsverarbeitung](#grundlagen-der-informationsverarbeitung)
   - [Von-Neumann-Architektur](#von-neumann-architektur)
+  - [Harvard-Architektur](#harvard-architektur)
   - [Befehlsverarbeitung](#befehlsverarbeitung)
   - [Einordnung von Programmiersprachen](#einordnung-von-programmiersprachen)
     - [Problemorientierte Programmiersprachen](#problemorientierte-programmiersprachen)
