@@ -161,7 +161,7 @@ Allgemeine Betriebswirtschaftslehre
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigram*)
+- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
 - **Funktionales Management** = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
 
@@ -194,7 +194,7 @@ Gewinnmaximierung durch:
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
 
-- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
+- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
 ### Inhalt einer Stelle
@@ -368,7 +368,7 @@ $$\begin{matrix}&&\text{gegenwärtig vorhandene Stellen laut Ermittlungsmethode}
 
 **2. Ermittlung des Personalbestandes**
 
-$$\begin{matrix}&&\text{gegenwärtiger Persoalbestand}\\
+$$\begin{matrix}&&\text{gegenwärtiger Personalbestand}\\
 +&&\text{feststehende Personalzugänge}\\
 -&&\text{Personalabgänge}\\
 \hline\\
@@ -377,7 +377,7 @@ $$\begin{matrix}&&\text{gegenwärtiger Persoalbestand}\\
 
 **3. Ermittlung des Nettopersonalbedarfes**
 
-$$\begin{matrix}&&\text{Bruttopersoalbestand}\\
+$$\begin{matrix}&&\text{Bruttopersonalbestand}\\
 -&&\text{fortgeschriebener Personalbestand}\\
 \hline\\
 &&\text{Nettopersonalbedarf}\\
@@ -387,7 +387,7 @@ $$\begin{matrix}&&\text{Bruttopersoalbestand}\\
 
 ### Kennzahlmethode
 
-- Spekulation an die zu erartenden Kennzahlen
+- Spekulation an die zu erwartenden Kennzahlen
 - vorhandene Mitarbeiter pro Umsatz/Ertrag
 - Multipliziert mit zu erwartendem Umsatz/Ertrag
 
@@ -398,8 +398,8 @@ $$\begin{matrix}&&\text{Bruttopersoalbestand}\\
 
 ### Methods-Time-Measurement-Analysis
 
-- Teilen von Arbeitsabläufen in kleinste Arbeitschritte
-- Quotient aus Gesamtzeit und vereinbarter Arbeitszit ergibt notwendiges Material
+- Teilen von Arbeitsabläufen in kleinste Arbeitsschritte
+- Quotient aus Gesamtzeit und vereinbarter Arbeitszeit ergibt notwendiges Material
 - Vorsicht: wechselnde Menschliche Kondition; Urlaub, Pausen, Krankheit ($\rightarrow$ Ideal bei Industrierobotern)
 
 ### REFA
@@ -445,7 +445,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 - im Rahmen der Insolvenz
   - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
   - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
-  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ein Signal für Überschuldung
+  - wenn dieses Verhältnis in Schieflage gerät, ist die Bilanz ein Signal für Überschuldung
 - Entscheidungsanreizsystem
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
   - Gewinnentwicklung als Signal für Investoren
@@ -453,10 +453,10 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 ## Kriterien d. externen Rechnungswesens
 
 - **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
-- **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
+- **Ziel:** Vergangenheitsorientierte Dokumentation und Rechenschaftslegung
 - **gesetzliche Regelung:** beachten handels- und steuerrechtlicher Regelungen
 - **Objekt der erfassten Daten:** das ganze Unternehmen
-  - vom Einkauf bsi zum Verkauf wird alles erfasst
+  - vom Einkauf bis zum Verkauf wird alles erfasst
   - dazu Kontierungssystem vorhanden (Daten kommen in verschiedene Konten)
 - **Zeitraum der erfassten Daten:** ein Jahr (im Allgemeinen)
   - Ausnahme: Wechsel des Geschäftsjahres
@@ -475,6 +475,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - Anhang
   - ggf. ergänzt um Lagebericht
   - definiert in §244 HGB
+<!-- KapCoGes: offene Handelsgesellschaften und Kommanditgesellschaften-->
 - **kapitalmarktorientierte Kapitalgesellschaften, die nicht zur Aufstellung eines Konzernabschlusses verpflichtet sind:**
   - Bilanz
   - GuV
@@ -495,7 +496,7 @@ Bilanz:
 
 GuV:
 
-- Erträge werden den Aufwendungen gegeübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
+- Erträge werden den Aufwendungen gegenübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
 - beide Aufstellungen sind über doppelte Buchführung miteinander verbunden
 
 Anhang:
@@ -518,7 +519,7 @@ Eigenkapitalspiegel
 
 Segmentberichterstattung
 
-- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
+- Ergänzung der Rechnungslegung um disaggregiert finanzielle und nicht finanzielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
 - Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
 Lagebericht
@@ -560,7 +561,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 
 - **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
-- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
+- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibungen)
 - **Objekt der erfassten Daten:** von einzelnen Unternehmensbereichen bis zum Gesamtunternehmen
 - **Zeitraum der erfassten Daten:**
   - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
@@ -569,7 +570,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 
 ## Balance Score Card
 
-<!--3 Vor- und Nachteile müssen gewusste werden-->
+<!--3 Vor- und Nachteile müssen gewusst werden-->
 <!--TODO: von Folien übernehmen-->
 
 ## Kosten- Leistungsrechnung
