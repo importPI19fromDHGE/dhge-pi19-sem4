@@ -353,7 +353,7 @@ $$\begin{matrix}&&\text{Personalbestand aus entsprechenden Veränderungsentschei
 - **Reserve-Bedarf:** Ausfallbedarfe, befristeter Bedarf
 - **Nachhol-Bedarf:** Unbesetzte Kapazitäten, neue Aufgaben
 
-<!--ANMERKUNG: Berechnung Personalbedarf wahrscheinlich in Klausur-->
+> ANM: Berechnung Personalbedarf sehr wahrscheinlich in Klausur!
 
 ### Stellenplanmethode
 
@@ -384,7 +384,7 @@ $$\begin{matrix}&&\text{Bruttopersonalbestand}\\
 \end{matrix}$$
 
 <!--LKF: Warum können Bruttopersonalbedarf und fortgeschriebener Personalstand differieren?-->
-
+<!--Jonathan sagt: Wachstum/Schrumpfung des Unternehmens, d.h. Diskrepanz Stellen zu Personal-->
 ### Kennzahlmethode
 
 - Spekulation an die zu erwartenden Kennzahlen
