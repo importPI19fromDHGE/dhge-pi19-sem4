@@ -475,7 +475,9 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - Anhang
   - ggf. ergänzt um Lagebericht
   - definiert in §244 HGB
+
 <!-- KapCoGes: offene Handelsgesellschaften und Kommanditgesellschaften-->
+
 - **kapitalmarktorientierte Kapitalgesellschaften, die nicht zur Aufstellung eines Konzernabschlusses verpflichtet sind:**
   - Bilanz
   - GuV
@@ -588,6 +590,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 > 3 Vor- und Nachteile müssen gewusst werden
 
 Vorteile:
+
 - schneller, pointierter Blick auf wichtige Fakten
 - Flexibilität, Anpassung an jedes Unternehmen möglich durch Fülle an Kennzahlen
 - einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen
@@ -598,6 +601,7 @@ Vorteile:
 - Zielgrößen sind genau zu verfolgbar, was die Motivation stärkt
 
 Nachteile:
+
 - Anwender kann beliebige Kennzahlen und Interpretationen wählen, die seinen Zielen am Besten entsprechen
 - keine klare Führungsrichtung, wenn die Auswahl der Kennzahlen durch aktuelle Probleme geprägt ist
 - Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen
