@@ -134,7 +134,7 @@ Allgemeine Betriebswirtschaftslehre
 
 - **strategisches Ziel:** langfristige (\geq\geq 5y) Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
 - **Position des Unternehmens:** Strategieentwicklung und Positionierung; SWOT-Analyse $\rightarrow$ Platz am Markt bestimmen
-- **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlich räumlichen Rahmen
+- **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlichen und räumlichen Rahmen
 - **Ökologie des Unternehmens:** Lebenszykluskontrolle der Produkte und Dienstleistungen auf Basis ökologischer Notwendigkeiten
 - **Kundenorientierung:** Ermittlung des Nutzen für den Kunden der Produkte und Dienstleistungen im strategischen Zeitraum ("Kunden das Gefühl geben, wichtig zu sein")
 - **persönliche Entwicklung:** permanente Entwicklung der unternehmerischen Persönlichkeit
@@ -161,7 +161,7 @@ Allgemeine Betriebswirtschaftslehre
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
+- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
 - **Funktionales Management** = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
 
@@ -425,11 +425,11 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 
 - Bilanz
   - für alle Unternehmen
-- Erfolgsrechnung (für große Unternehmen)
+- Erfolgsrechnung
   - für große Unternehmen
 - Einschätzung und Ausblick des Unternehmens (Lagebericht)
-  - wie entwickelt sich das Unternehmen
-  - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
+  - Wie entwickelt sich das Unternehmen?
+  - ist aufgrund branchenspezifischer Konjunktur schwieriger geworden
 
 ## Funktionen des externen Rechnungswesens
 
@@ -444,7 +444,7 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - z.B. Dividende bei Aktiengesellschaften
 - im Rahmen der Insolvenz
   - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
-  - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
+  - Verpflichtungen ggü. Lieferanten und Forderungen und Verbindlichkeiten ggü. Kunden
   - wenn dieses Verhältnis in Schieflage gerät, ist die Bilanz ein Signal für Überschuldung
 - Entscheidungsanreizsystem
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
@@ -452,9 +452,9 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 
 ## Kriterien d. externen Rechnungswesens
 
-- **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
+- **Entscheidungsgrundlage** für Unternehmensexterne, Top-Management, Betriebsrat
 - **Ziel:** Vergangenheitsorientierte Dokumentation und Rechenschaftslegung
-- **gesetzliche Regelung:** beachten handels- und steuerrechtlicher Regelungen
+- **gesetzliche Regelung:** Beachtung handels- und steuerrechtlicher Regelungen
 - **Objekt der erfassten Daten:** das ganze Unternehmen
   - vom Einkauf bis zum Verkauf wird alles erfasst
   - dazu Kontierungssystem vorhanden (Daten kommen in verschiedene Konten)
@@ -519,7 +519,7 @@ Eigenkapitalspiegel
 
 Segmentberichterstattung
 
-- Ergänzung der Rechnungslegung um disaggregiert finanzielle und nicht finanzielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
+- Ergänzung der Rechnungslegung um disaggregierte finanzielle und nicht finanzielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
 - Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
 Lagebericht
