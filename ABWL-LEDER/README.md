@@ -570,8 +570,41 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 
 ## Balance Score Card
 
-<!--3 Vor- und Nachteile müssen gewusst werden-->
-<!--TODO: von Folien übernehmen-->
+- Konzept zur Messung, Dokumentation und Steuerung der Aktivitäten
+- Darstellung von Abhängigkeiten
+- Vier Perspektiven:
+  - Finanzperspektive
+  - Prozessperspektive
+  - Potenzialperspektive
+  - Kundenperspektive
+- Je Perspektive auszufüllen:
+  - Ziel
+  - Kennzahl
+  - Vorgabe
+  - Maßnahme
+
+<!--TODO: Tabelle aus den Notizen machen?-->
+
+> 3 Vor- und Nachteile müssen gewusst werden
+
+Vorteile:
+- schneller, pointierter Blick auf wichtige Fakten
+- Flexibilität, Anpassung an jedes Unternehmen möglich durch Fülle an Kennzahlen
+- einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen
+- Unternehmensführung wird erleichtert, durch die Informationsverdichtung sinkt die Komplexität
+- klar und verständlich für Jeden, ohne weiteren Erklärungsbedarf werden Informationen übermittelt
+- transparente Entscheidungswege fördern die Akzeptanz aller Mitarbeiter
+- Erkennung von Abweichungen und Schwachstellen bei regelmäßiger Erfassung
+- Zielgrößen sind genau zu verfolgbar, was die Motivation stärkt
+
+Nachteile:
+- Anwender kann beliebige Kennzahlen und Interpretationen wählen, die seinen Zielen am Besten entsprechen
+- keine klare Führungsrichtung, wenn die Auswahl der Kennzahlen durch aktuelle Probleme geprägt ist
+- Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen
+- Kennzahleninflation, bei Bildung zu vieler Kennzahlen steht der Nutzen nicht mehr in Relation zum Erstellungsaufwand
+- Quantitativ messbare Größen können leicht bedeutsamer wirken als qualitative Größen
+- Einseitige Sichtweise (Dinge wie Umweltschutz bleiben außen vor)
+- Abhängigkeit von Informationssystemen, bei schlecht geführter EDV sind die Kennzahlen zu alt, um aussagefähig zu bleiben
 
 ## Kosten- Leistungsrechnung
 
