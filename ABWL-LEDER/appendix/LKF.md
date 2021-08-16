@@ -14,15 +14,31 @@
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
 
-- TODO
+- Verantwortung: Aufgabenerfüllung, Herr Maier hat Aufgabe ABX zu bewältigen, er ist dafür verantwortlich.
+- Kompetenz: Befugnis, Frau Müller darf Herr Maier anweisen, stattdessen Aufgabe XC3 zu priorisieren.
+  -  Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
 
 #### Sie beherrschen den Überblick über die Organisationsformen
 
+- Aufbau / Struktur
+- Instanzen: Stellen mit Leitungsfunktion
+- Hierarchien
+
+Formelle Beziehungen:
+
+- Organisationsienheiten: Stelle, Team, Referate, Abteilung
+- Zentral / Dezentral
+- Tätigkeiten
+- Aufgabenträger
+- Informationswege
+- Aufgaben / Kompetenz / Verantwortung
 - TODO
 
 #### Sie kennen die drei Linienorganisationen
 
-- TODO
+- Einliniensystem: Verrichtungszentralisation, Einfachunterstellung, Vollkompetenz (= Fachkompetenz + disziplinarische Kompetenz)
+- Mehrliniensystem: Verrichtungszentralisation, Mehrfachunterstellung, Voll- und Teilkompetenzen
+- Stabsliniensystem: Verrichtungszentralisation, Einfachunterstellung, Voll- und Teilkompetenzen
 
 #### Sie beherrschen die Darstellung und Erläuterung folgender Formen
 
@@ -41,15 +57,17 @@
 
 ### Personalplanung, –Bedarf, – Deckung, –Entwicklung
 
-- TODO
-
 #### Sie kennen die grundsätzlichen Inhalte der Personalplanung
 
 - TODO
 
 #### Sie kennen die Planungszeiträume und die Auswirkungen auf andere Pläne
 
-- TODO
+- strategisch: > 5 Jahre; langfristig, grundlegende Ziele
+- taktisch: > 1 bis 5 Jahre; mittelfristig, Teilziele (Ausbildung)
+- operativ: kurzfristig; Prozesssteuerung (Urlaubsplan)
+
+je länger der Planungshorizont umso weniger Planungssicherheiten
 
 #### Sie können die Gründe des quantitativen Personaleinsatzes unterscheiden
 
@@ -125,11 +143,15 @@
 
 #### Sie kennen den Unterschied des externen und internen Rechnungswesen und können dessen Zusammenhang erläutern
 
-- TODO
+- externes Rechnungswesen ist alles, was das Unternehmen nach außen hin verlässt z.B. Nachweise über den Erfolg des Unternehmens
+- beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über Schnittstellen zusammen mit dem externen Rechnungswesen
+  -  Kosten-Leistungsrechnung (KLAR)
+  -  Selbstkosten der Produkte und Dienstleistungen
 
 #### Sie kennen die Funktionen des Externen Rechnungswesen
 
-- TODO
+- Entscheidungsgrundlage für Unternehmensexterne, Top-Management, Betriebsrat
+- Ziel: Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
