@@ -134,7 +134,7 @@ Allgemeine Betriebswirtschaftslehre
 
 - **strategisches Ziel:** langfristige (\geq\geq 5y) Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
 - **Position des Unternehmens:** Strategieentwicklung und Positionierung; SWOT-Analyse $\rightarrow$ Platz am Markt bestimmen
-- **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlich räumlichen Rahmen
+- **Koordination der Ressourcen:** Koordination von HR+MR+FR in zeitlichen und räumlichen Rahmen
 - **Ökologie des Unternehmens:** Lebenszykluskontrolle der Produkte und Dienstleistungen auf Basis ökologischer Notwendigkeiten
 - **Kundenorientierung:** Ermittlung des Nutzen für den Kunden der Produkte und Dienstleistungen im strategischen Zeitraum ("Kunden das Gefühl geben, wichtig zu sein")
 - **persönliche Entwicklung:** permanente Entwicklung der unternehmerischen Persönlichkeit
@@ -161,7 +161,7 @@ Allgemeine Betriebswirtschaftslehre
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-gruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigram*)
+- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
 - **Funktionales Management** = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
 
@@ -194,7 +194,7 @@ Gewinnmaximierung durch:
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
 
-- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugniss)/Verantwortung(Aufgabenerfüllung)
+- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
 ### Inhalt einer Stelle
@@ -353,7 +353,7 @@ $$\begin{matrix}&&\text{Personalbestand aus entsprechenden Veränderungsentschei
 - **Reserve-Bedarf:** Ausfallbedarfe, befristeter Bedarf
 - **Nachhol-Bedarf:** Unbesetzte Kapazitäten, neue Aufgaben
 
-<!--ANMERKUNG: Berechnung Personalbedarf wahrscheinlich in Klausur-->
+> ANM: Berechnung Personalbedarf sehr wahrscheinlich in Klausur!
 
 ### Stellenplanmethode
 
@@ -368,7 +368,7 @@ $$\begin{matrix}&&\text{gegenwärtig vorhandene Stellen laut Ermittlungsmethode}
 
 **2. Ermittlung des Personalbestandes**
 
-$$\begin{matrix}&&\text{gegenwärtiger Persoalbestand}\\
+$$\begin{matrix}&&\text{gegenwärtiger Personalbestand}\\
 +&&\text{feststehende Personalzugänge}\\
 -&&\text{Personalabgänge}\\
 \hline\\
@@ -377,17 +377,17 @@ $$\begin{matrix}&&\text{gegenwärtiger Persoalbestand}\\
 
 **3. Ermittlung des Nettopersonalbedarfes**
 
-$$\begin{matrix}&&\text{Bruttopersoalbestand}\\
+$$\begin{matrix}&&\text{Bruttopersonalbestand}\\
 -&&\text{fortgeschriebener Personalbestand}\\
 \hline\\
 &&\text{Nettopersonalbedarf}\\
 \end{matrix}$$
 
 <!--LKF: Warum können Bruttopersonalbedarf und fortgeschriebener Personalstand differieren?-->
-
+<!--Jonathan sagt: Wachstum/Schrumpfung des Unternehmens, d.h. Diskrepanz Stellen zu Personal-->
 ### Kennzahlmethode
 
-- Spekulation an die zu erartenden Kennzahlen
+- Spekulation an die zu erwartenden Kennzahlen
 - vorhandene Mitarbeiter pro Umsatz/Ertrag
 - Multipliziert mit zu erwartendem Umsatz/Ertrag
 
@@ -398,8 +398,8 @@ $$\begin{matrix}&&\text{Bruttopersoalbestand}\\
 
 ### Methods-Time-Measurement-Analysis
 
-- Teilen von Arbeitsabläufen in kleinste Arbeitschritte
-- Quotient aus Gesamtzeit und vereinbarter Arbeitszit ergibt notwendiges Material
+- Teilen von Arbeitsabläufen in kleinste Arbeitsschritte
+- Quotient aus Gesamtzeit und vereinbarter Arbeitszeit ergibt notwendiges Material
 - Vorsicht: wechselnde Menschliche Kondition; Urlaub, Pausen, Krankheit ($\rightarrow$ Ideal bei Industrierobotern)
 
 ### REFA
@@ -425,11 +425,11 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 
 - Bilanz
   - für alle Unternehmen
-- Erfolgsrechnung (für große Unternehmen)
+- Erfolgsrechnung
   - für große Unternehmen
 - Einschätzung und Ausblick des Unternehmens (Lagebericht)
-  - wie entwickelt sich das Unternehmen
-  - ist schwieriger geworden, aufgrund branchenspezifischer Konjunktur
+  - Wie entwickelt sich das Unternehmen?
+  - ist aufgrund branchenspezifischer Konjunktur schwieriger geworden
 
 ## Funktionen des externen Rechnungswesens
 
@@ -444,19 +444,19 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - z.B. Dividende bei Aktiengesellschaften
 - im Rahmen der Insolvenz
   - am Markt immer Risiko vorhanden, welches abgeschätzt werden muss
-  - Verpflichtungen ggü. Lieferanden und Forderungen und Verbindlichkeiten ggü. Kunden
-  - wenn dieses Verhältnis in Schieflage gerät ist die Bilanz ein Signal für Überschuldung
+  - Verpflichtungen ggü. Lieferanten und Forderungen und Verbindlichkeiten ggü. Kunden
+  - wenn dieses Verhältnis in Schieflage gerät, ist die Bilanz ein Signal für Überschuldung
 - Entscheidungsanreizsystem
   - gute Bilanz kann Entscheidungsgrundlage für Investoren sein
   - Gewinnentwicklung als Signal für Investoren
 
 ## Kriterien d. externen Rechnungswesens
 
-- **Entscheidungsgrundlage für** Unternehmensexterne, Top-Management, Betriebsrat
-- **Ziel:** Vergangenheitsorientierte Dokumentation und Rechensschaftslegung
-- **gesetzliche Regelung:** beachten handels- und steuerrechtlicher Regelungen
+- **Entscheidungsgrundlage** für Unternehmensexterne, Top-Management, Betriebsrat
+- **Ziel:** Vergangenheitsorientierte Dokumentation und Rechenschaftslegung
+- **gesetzliche Regelung:** Beachtung handels- und steuerrechtlicher Regelungen
 - **Objekt der erfassten Daten:** das ganze Unternehmen
-  - vom Einkauf bsi zum Verkauf wird alles erfasst
+  - vom Einkauf bis zum Verkauf wird alles erfasst
   - dazu Kontierungssystem vorhanden (Daten kommen in verschiedene Konten)
 - **Zeitraum der erfassten Daten:** ein Jahr (im Allgemeinen)
   - Ausnahme: Wechsel des Geschäftsjahres
@@ -475,6 +475,9 @@ Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
   - Anhang
   - ggf. ergänzt um Lagebericht
   - definiert in §244 HGB
+
+<!-- KapCoGes: offene Handelsgesellschaften und Kommanditgesellschaften-->
+
 - **kapitalmarktorientierte Kapitalgesellschaften, die nicht zur Aufstellung eines Konzernabschlusses verpflichtet sind:**
   - Bilanz
   - GuV
@@ -495,7 +498,7 @@ Bilanz:
 
 GuV:
 
-- Erträge werden den Aufwendungen gegeübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
+- Erträge werden den Aufwendungen gegenübergestellt und ergeben so den Gewinn oder Verlust des Berichtsjahres
 - beide Aufstellungen sind über doppelte Buchführung miteinander verbunden
 
 Anhang:
@@ -518,7 +521,7 @@ Eigenkapitalspiegel
 
 Segmentberichterstattung
 
-- Ergänzung der Rechnungslegung um dissaggierte finanzielle und nicht finazielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
+- Ergänzung der Rechnungslegung um disaggregierte finanzielle und nicht finanzielle Daten zu Geschäftsfeldern, Regionen und anderen Kriterien
 - Einblick in die Chancen und Risiken der einzelnen Geschäftsfelder wird verbessert
 
 Lagebericht
@@ -560,7 +563,7 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 
 - **Entscheidungsgrundlage für** Unternehmensinterne, Management, Betriebsrat, Mitarbeiter
 - **Ziel:** Planung und Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
-- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstelllung (z.B. Abschreibungen)
+- **gesetzliche Regelung:** Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibungen)
 - **Objekt der erfassten Daten:** von einzelnen Unternehmensbereichen bis zum Gesamtunternehmen
 - **Zeitraum der erfassten Daten:**
   - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
@@ -569,8 +572,43 @@ beschreibt Steuerung und Regelung der Prozesse im Unternehmen und hängt über S
 
 ## Balance Score Card
 
-<!--3 Vor- und Nachteile müssen gewusste werden-->
-<!--TODO: von Folien übernehmen-->
+- Konzept zur Messung, Dokumentation und Steuerung der Aktivitäten
+- Darstellung von Abhängigkeiten
+- Vier Perspektiven:
+  - Finanzperspektive
+  - Prozessperspektive
+  - Potenzialperspektive
+  - Kundenperspektive
+- Je Perspektive auszufüllen:
+  - Ziel
+  - Kennzahl
+  - Vorgabe
+  - Maßnahme
+
+<!--TODO: Tabelle aus den Notizen machen?-->
+
+> 3 Vor- und Nachteile müssen gewusst werden
+
+Vorteile:
+
+- schneller, pointierter Blick auf wichtige Fakten
+- Flexibilität, Anpassung an jedes Unternehmen möglich durch Fülle an Kennzahlen
+- einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen
+- Unternehmensführung wird erleichtert, durch die Informationsverdichtung sinkt die Komplexität
+- klar und verständlich für Jeden, ohne weiteren Erklärungsbedarf werden Informationen übermittelt
+- transparente Entscheidungswege fördern die Akzeptanz aller Mitarbeiter
+- Erkennung von Abweichungen und Schwachstellen bei regelmäßiger Erfassung
+- Zielgrößen sind genau zu verfolgbar, was die Motivation stärkt
+
+Nachteile:
+
+- Anwender kann beliebige Kennzahlen und Interpretationen wählen, die seinen Zielen am Besten entsprechen
+- keine klare Führungsrichtung, wenn die Auswahl der Kennzahlen durch aktuelle Probleme geprägt ist
+- Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen
+- Kennzahleninflation, bei Bildung zu vieler Kennzahlen steht der Nutzen nicht mehr in Relation zum Erstellungsaufwand
+- Quantitativ messbare Größen können leicht bedeutsamer wirken als qualitative Größen
+- Einseitige Sichtweise (Dinge wie Umweltschutz bleiben außen vor)
+- Abhängigkeit von Informationssystemen, bei schlecht geführter EDV sind die Kennzahlen zu alt, um aussagefähig zu bleiben
 
 ## Kosten- Leistungsrechnung
 
