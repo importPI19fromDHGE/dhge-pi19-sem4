@@ -1,4 +1,4 @@
-Embedded Systems - Prüfungsaufgaben
+Systementwicklung - Prüfungsaufgaben
 ===================================
 
 # Prüfungsleistung 2021
