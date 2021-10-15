@@ -240,6 +240,22 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
+## Instrumente der Aufbauorganisation
+
+- **Organigramm**
+  - Hierarchie
+    - Beziehungen
+    - Aufgabenverteilung
+    - Unterstellung
+- **Informationsfluss**
+  - Kommunikation
+    - Top-Down
+    - Bottom-Up
+- **Stellenbeschreibung**
+  - Anforderungen
+    - Aufgabenbeschreibung
+    - Anforderungsprofil
+
 ### Inhalt einer Stelle
 
 - Ausführungsfunktion
@@ -273,9 +289,17 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - Anforderungsprofil: fachlich, methodisch, persönlich
 - Aufgabenbeschreibung: Bezeichnung, Über-/Unterstellung, wesentliche Aufgaben, Ziele, Befugnisse, Verantwortung, Vertretung
 
+- **Nutzen der Stellenbeschreibung:**
+
+- Personalbedarf: Quantität und Qualität der Mitarbeiter; Stellenanzeige
+- Personalauswahl: Maßstab der Erfüllung
+- Personalbeurteilung: Maßstab der Leistung der Mitarbeiter
+- Personalentwicklung: Maßstab der Mitarbeiter-Entwicklung
+
 ### Organigramm
 
 - Hierarchische Unterstellung oder Aufgabenverteilung (Beziehungen)
+- Funktionalität
 
 ### Informationsfluss
 
@@ -283,6 +307,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Top-Down: Entscheidung/Ziel/Aufgabe wird weitergegeben
 - Bottom-Up: Informationen kommen vom Arbeitsplatz
+- Beides zusammen: "Gegenstromverfahren"
 
 **Informelle Wege**
 
@@ -306,13 +331,38 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 > Hier müsste Einiges noch aus den Folien übernommen werden.
 >
 
-### Linienorganisation
+### Linienorganisation/Liniensysteme
+
+> alle drei Systeme sind zentral organisiert
 
 - **Einliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Vollkompetenz (= Fachkompetenz + disziplinarische Kompetenz)
 - **Mehrliniensystem:** Verrichtungszentralisation, Mehrfachunterstellung, Voll- und Teilkompetenzen
 - **Stabsliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Voll- und Teilkompetenzen
 
+### Organisationsformen (Primärorganisation)
+
+- Sektoral-Organisation
+- Funktional-Organisation
+- Sparten-Organisation
+- Matrix-Organisation
+- Tensor-Organisation
+
+### Organisationsformen (Sekundärorganisation)
+
+- Center-Organisation
+- Holding-Organisation
+- SGE-Management
+- Produkt-Management
+- Prozess-Management
+- Kunden-Management
+- Projekt-Management
+
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
+
+## Qualitative und quantitative Personalplanung
+
+- qualitativ $\rightarrow$ Einsatz $\rightarrow$ Kosten $\rightarrow$ Entwicklung
+- quantitativ $\rightarrow$ Recruiting $\rightarrow$ Kosten $\rightarrow$ Anpassung
 
 ## Personalbedarfsplanung
 
