@@ -14,18 +14,23 @@ Allgemeine Betriebswirtschaftslehre
 - [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
   - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
+    - [Definition eines Unternehmens](#definition-eines-unternehmens)
   - [Wirtschaftliches System](#wirtschaftliches-system)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
   - [Einflussfaktoren](#einflussfaktoren)
   - [Unternehmensführung](#unternehmensf%C3%BChrung)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
+  - [Leitbild eines Unternehmens](#leitbild-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
+    - [Management-Kreislauf](#management-kreislauf)
+    - [PDCA](#pdca)
   - [Kontrolle vs Controlling](#kontrolle-vs-controlling)
   - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensf%C3%BChrung)
   - [Führung und Leitung](#f%C3%BChrung-und-leitung)
   - [Organisationsformen](#organisationsformen)
+  - [Instrumente der Aufbauorganisation](#instrumente-der-aufbauorganisation)
     - [Inhalt einer Stelle](#inhalt-einer-stelle)
     - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
       - [Zentralität](#zentralit%C3%A4t)
@@ -36,8 +41,11 @@ Allgemeine Betriebswirtschaftslehre
     - [Informationsfluss](#informationsfluss)
     - [Umsetzung von Verantwortung](#umsetzung-von-verantwortung)
   - [Systemeinteilung](#systemeinteilung)
-    - [Linienorganisation](#linienorganisation)
+    - [Linienorganisation/Liniensysteme](#linienorganisationliniensysteme)
+    - [Organisationsformen (Primärorganisation)](#organisationsformen-prim%C3%A4rorganisation)
+    - [Organisationsformen (Sekundärorganisation)](#organisationsformen-sekund%C3%A4rorganisation)
 - [Personalplanung, -Bedarf, -Deckung, -Entwicklung](#personalplanung--bedarf--deckung--entwicklung)
+  - [Qualitative und quantitative Personalplanung](#qualitative-und-quantitative-personalplanung)
   - [Personalbedarfsplanung](#personalbedarfsplanung)
     - [Bedingungen](#bedingungen)
     - [Einordnung](#einordnung)
@@ -79,12 +87,21 @@ Allgemeine Betriebswirtschaftslehre
 
 ## Merkmale eines Unternehmens
 
+- rechtlich, wirtschaftliche und finanzielle organisierte Einheit
 - komplexes System aus Ressourcen (HR, MR, FR)
   - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
   - MR = Maschinen, Gebäude, Material, Lizenzen
   - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
 - weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
+
+### Definition eines Unternehmens
+
+- spezieller Betriebstyp
+- Marktwirtschaftliches System
+- Erwerbswirtschaftliches Prinzip
+- auf Basis des Privateigentums (ein rein staatliches Unternehmens entspricht **nicht** dieser Definition)
+- wirtschaftliche Autonomie
 
 ## Wirtschaftliches System
 
@@ -120,6 +137,7 @@ Allgemeine Betriebswirtschaftslehre
 - Politische Ordnung: Föderalismus
 - Wirtschaftsordnung: soziale Marktwirtschaft
 - Rechtsordnung: Verfassungs-, Straf-, Privat- und Öffentliches Recht
+  - muss wahrgenommen werden, "sonst passiert nichts"
 
 > Die Einflussfaktoren wirken gemeinsam auf die Unternehmenspolitik ein
 
@@ -139,12 +157,20 @@ Allgemeine Betriebswirtschaftslehre
 - **Kundenorientierung:** Ermittlung des Nutzen für den Kunden der Produkte und Dienstleistungen im strategischen Zeitraum ("Kunden das Gefühl geben, wichtig zu sein")
 - **persönliche Entwicklung:** permanente Entwicklung der unternehmerischen Persönlichkeit
 
+## Leitbild eines Unternehmens
+
+- das Unternehmen braucht eine Vision (bspw. "Wir bieten eine Dienstleistung an." oder "Wir entwickeln ein Produkt")
+- Unternehmenspolitik $\rightarrow$ *Wie* setzen wir die Vision um?
+- veröffentlichen der Unternehmenspolitik $\rightarrow$ Unternehmensleitbild
+
 > Leitbild = formuliert kurz und prägnant die strategischen Zieles und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
 
 - Unternehmenskultur stellt den Ist-Zustand dar
-  - Know-How: Forschung und Entwicklung; **KVP** (kontinuierlicher Verbesserungs-Prozess)
-  - Ökonomie: Verhältnis zw. Eigen- und Fremd-Kapital
+  - Know-How: Forschung und Entwicklung; **KVP** (kontinuierlicher Verbesserungs-Prozess) $\rightarrow$ erzwungen durch Markt und technisch-technologischen Fortschritt
+  - Ökonomie: Solides Unternehmen $\rightarrow$ Verhältnis zwischen Eigen- und Fremd-Kapital
+  - gesellschaftliche Verantwortung: Nachhaltigkeit (3-Säulen-Modell)
   - (positive) soziale Beziehungen: Kundengefühl; Mitarbeiter als Bestandteil der Leistungsfähigkeit
+- Unternehmensbild und Unternehmenskultur sollten möglichst gut übereinstimmen
 
 ### Kurzfristige Auffassungen (operativ)
 
@@ -163,7 +189,32 @@ Allgemeine Betriebswirtschaftslehre
 
 - **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
-- **Funktionales Management** = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
+- Funktionales Management = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
+
+### Management-Kreislauf
+
+gehört zum funktionellen Management. Beschreibt den Ablauf des Führens (Personen (Mitarbeiter), Prozessen).
+Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDHGE/dhge-pi19-sem5/tree/main/ABWL-LEDER#der-management-kreislauf-f%C3%BCr-neue-sachen)
+
+**Ablauf des Führens:**
+
+- **Aufgabe/Ziel**
+- **Planning:** Analyse und Planung $\rightarrow$ erfordert Aufgabe und Ziel
+  - Analyse von: HR, FR, MR
+  - Struktur für die Erfüllung von Aufgabe/Ziel
+- **Entscheidung/Koordination:** HR, FR, MR räumlich, zeitlich ordnen
+- **Doing/Realisierung**
+- **Controlling**
+
+### PDCA
+
+ist eng mit dem Management-Kreislauf verknüpft.
+
+- **Plan:** Aufgabe/Ziel, Analyse, Planen, Entscheiden
+- **Do:** Test, Ausprobieren, Daten sammeln
+- **Check:** Auswertung der Daten (bspw. Soll/ist-Vergleich), Festlegen von Standards
+- zwischen Do und Check wird gelooped, bis Soll==Ist
+- **Act:** vollständige Realisierung, Dokumentation, Daten $\rightarrow$ Wissen $\rightarrow$ Erfahrung $\rightarrow$ KVP
 
 ## Kontrolle vs Controlling
 
@@ -189,13 +240,29 @@ Gewinnmaximierung durch:
 
 - Aufbau/Struktur des Unternehmens
 - Instanzen: Stellen mit Leitungsfunktion
-- Hierarchien: Ebenen im Unternehmen mit gleichen oder ähnlichen Befugnissen
+- Hierarchien: Ebenen im Unternehmen mit gleichen oder ähnlichen Befugnissen (Hierarchieebenen werden auch als Leitungsebenen bezeichnet)
 - Formelle Beziehungen: <!--???-->
 
 Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
 
 - Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
 - Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+
+## Instrumente der Aufbauorganisation
+
+- **Organigramm**
+  - Hierarchie
+    - Beziehungen
+    - Aufgabenverteilung
+    - Unterstellung
+- **Informationsfluss**
+  - Kommunikation
+    - Top-Down
+    - Bottom-Up
+- **Stellenbeschreibung**
+  - Anforderungen
+    - Aufgabenbeschreibung
+    - Anforderungsprofil
 
 ### Inhalt einer Stelle
 
@@ -230,9 +297,17 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - Anforderungsprofil: fachlich, methodisch, persönlich
 - Aufgabenbeschreibung: Bezeichnung, Über-/Unterstellung, wesentliche Aufgaben, Ziele, Befugnisse, Verantwortung, Vertretung
 
+- **Nutzen der Stellenbeschreibung:**
+
+- Personalbedarf: Quantität und Qualität der Mitarbeiter; Stellenanzeige
+- Personalauswahl: Maßstab der Erfüllung
+- Personalbeurteilung: Maßstab der Leistung der Mitarbeiter
+- Personalentwicklung: Maßstab der Mitarbeiter-Entwicklung
+
 ### Organigramm
 
 - Hierarchische Unterstellung oder Aufgabenverteilung (Beziehungen)
+- Funktionalität
 
 ### Informationsfluss
 
@@ -240,6 +315,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 - Top-Down: Entscheidung/Ziel/Aufgabe wird weitergegeben
 - Bottom-Up: Informationen kommen vom Arbeitsplatz
+- Beides zusammen: "Gegenstromverfahren"
 
 **Informelle Wege**
 
@@ -263,13 +339,38 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 > Hier müsste Einiges noch aus den Folien übernommen werden.
 >
 
-### Linienorganisation
+### Linienorganisation/Liniensysteme
+
+> alle drei Systeme sind zentral organisiert
 
 - **Einliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Vollkompetenz (= Fachkompetenz + disziplinarische Kompetenz)
 - **Mehrliniensystem:** Verrichtungszentralisation, Mehrfachunterstellung, Voll- und Teilkompetenzen
 - **Stabsliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Voll- und Teilkompetenzen
 
+### Organisationsformen (Primärorganisation)
+
+- Sektoral-Organisation
+- Funktional-Organisation
+- Sparten-Organisation
+- Matrix-Organisation
+- Tensor-Organisation
+
+### Organisationsformen (Sekundärorganisation)
+
+- Center-Organisation
+- Holding-Organisation
+- SGE-Management
+- Produkt-Management
+- Prozess-Management
+- Kunden-Management
+- Projekt-Management
+
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
+
+## Qualitative und quantitative Personalplanung
+
+- qualitativ $\rightarrow$ Einsatz $\rightarrow$ Kosten $\rightarrow$ Entwicklung
+- quantitativ $\rightarrow$ Recruiting $\rightarrow$ Kosten $\rightarrow$ Anpassung
 
 ## Personalbedarfsplanung
 
