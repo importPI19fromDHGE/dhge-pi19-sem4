@@ -575,7 +575,7 @@ In der Klausur sind alle Werte vorgegeben.
 | Kommunikationspolitik | Distributionspolitik       | Preispolitik                     | Produktpolitik            |
 | --------------------- | -------------------------- | -------------------------------- | ------------------------- |
 | Stellenausschreibung  | Verteilung auf die Stellen | Lohne (Leistungen)/Gehalt (Zeit) | Kompetenz der Mitarbeiter |
-|                       | Einsatz                    | Entgeld                          |                           |
+|                       | Einsatz                    | Entgelt                          |                           |
 
 # Externes Rechnungswesen
 
