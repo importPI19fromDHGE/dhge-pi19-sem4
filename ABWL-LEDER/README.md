@@ -357,7 +357,8 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 ### Organisationsformen (Sekundärorganisation)
 
-- Center-Organisation
+- Center-Organisation (Formen (sind alle miteinander kombinierbar): Revenue-Center, Cost-Center, Profit-Center, Investment-Center)
+  - $\rightarrow$ ermöglicht Dezentralität; braucht Bereiche, die Entscheidungsfreiheit haben
 - Holding-Organisation
 - SGE-Management
 - Produkt-Management
@@ -370,6 +371,9 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ## Qualitative und quantitative Personalplanung
 
 - qualitativ $\rightarrow$ Einsatz $\rightarrow$ Kosten $\rightarrow$ Entwicklung
+  - fachliche, methodische, persönliche (individuelle/soziale) Kompetenzen
+  - Inhalte der Kompetenzen eines Mitarbeiters: Fähigkeiten, Fertigkeiten, Erfahrung, Wissen
+  - Fähigkeiten, Erfahrung und Wissen sind lernbar; Fähigkeiten können entwickelt werden
 - quantitativ $\rightarrow$ Recruiting $\rightarrow$ Kosten $\rightarrow$ Anpassung
 
 ## Personalbedarfsplanung
@@ -378,10 +382,14 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - **taktisch:** > 1 bis 5 Jahre; mittelfristig, Teilziele (Ausbildung)
 - **operativ:** kurzfristig; Prozesssteuerung (Urlaubsplan)
 - je länger der Planungshorizont umso weniger Planungssicherheiten
+- Kosten sind der Maßstab/die Verbindung zwischen Personalplanung und anderen Plänen
 
 ### Bedingungen
 
-- Dienstverhältnis $\rightarrow$ Arbeitsvertrag
+- Dienstverhältnis $\rightarrow$ Arbeitsvertrag (schriftlich, mündlich, schlüssiges Verfahren)
+  - mündlich, schlüssiges Verfahren $\rightarrow$ binnen eines Monats muss eine schriftliche Vereinbarung getroffen werden
+  - entweder als Zeit $\rightarrow$ Dienstvertrag §611 BGB oder:
+  - Werk (Leistung, Produkt) $\rightarrow$ Werksvertrag §631 BGB
 - Gewerbeordnung $\rightarrow$ z.B. Weisungsrecht
 - Arbeitszeitgesetz, Arbeitsschutzgesetz, Jugendschutzgesetz
 - Tarifverträge, Betriebsvereinbarung, ...
@@ -400,7 +408,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ### Verfahren der Personalplanung
 
 - **vergangenheitsorientiert:** Trendexploration
-- **Schätzmethoden:** Schätzverfahren
+- **Schätzmethoden:** Schätzverfahren ("Meiner Erfahrung nach, brauchen wir noch zwei Mitarbeiter.")
 - **organisatorisch:** Stellenplanmethode
 - **Personalbemessungsmethoden:** REFA-Methode (Zerlegung in Arbeitsschritte)
 
