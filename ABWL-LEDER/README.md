@@ -60,6 +60,9 @@ Allgemeine Betriebswirtschaftslehre
     - [Schätzmethode](#sch%C3%A4tzmethode)
     - [Methods-Time-Measurement-Analysis](#methods-time-measurement-analysis)
     - [REFA](#refa)
+    - [Qualitative Personalplanung](#qualitative-personalplanung)
+  - [Innerbetriebliche Personalentwicklung](#innerbetriebliche-personalentwicklung)
+    - [Mitarbeitermarketing](#mitarbeitermarketing)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
   - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
   - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
@@ -357,7 +360,8 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 
 ### Organisationsformen (Sekundärorganisation)
 
-- Center-Organisation
+- Center-Organisation (Formen (sind alle miteinander kombinierbar): Revenue-Center, Cost-Center, Profit-Center, Investment-Center)
+  - $\rightarrow$ ermöglicht Dezentralität; braucht Bereiche, die Entscheidungsfreiheit haben
 - Holding-Organisation
 - SGE-Management
 - Produkt-Management
@@ -370,6 +374,9 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ## Qualitative und quantitative Personalplanung
 
 - qualitativ $\rightarrow$ Einsatz $\rightarrow$ Kosten $\rightarrow$ Entwicklung
+  - fachliche, methodische, persönliche (individuelle/soziale) Kompetenzen
+  - Inhalte der Kompetenzen eines Mitarbeiters: Fähigkeiten, Fertigkeiten, Erfahrung, Wissen
+  - Fähigkeiten, Erfahrung und Wissen sind lernbar; Fähigkeiten können entwickelt werden
 - quantitativ $\rightarrow$ Recruiting $\rightarrow$ Kosten $\rightarrow$ Anpassung
 
 ## Personalbedarfsplanung
@@ -378,10 +385,14 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - **taktisch:** > 1 bis 5 Jahre; mittelfristig, Teilziele (Ausbildung)
 - **operativ:** kurzfristig; Prozesssteuerung (Urlaubsplan)
 - je länger der Planungshorizont umso weniger Planungssicherheiten
+- Kosten sind der Maßstab/die Verbindung zwischen Personalplanung und anderen Plänen
 
 ### Bedingungen
 
-- Dienstverhältnis $\rightarrow$ Arbeitsvertrag
+- Dienstverhältnis $\rightarrow$ Arbeitsvertrag (schriftlich, mündlich, schlüssiges Verfahren)
+  - mündlich, schlüssiges Verfahren $\rightarrow$ binnen eines Monats muss eine schriftliche Vereinbarung getroffen werden
+  - entweder als Zeit $\rightarrow$ Dienstvertrag §611 BGB oder:
+  - Werk (Leistung, Produkt) $\rightarrow$ Werksvertrag §631 BGB
 - Gewerbeordnung $\rightarrow$ z.B. Weisungsrecht
 - Arbeitszeitgesetz, Arbeitsschutzgesetz, Jugendschutzgesetz
 - Tarifverträge, Betriebsvereinbarung, ...
@@ -400,7 +411,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ### Verfahren der Personalplanung
 
 - **vergangenheitsorientiert:** Trendexploration
-- **Schätzmethoden:** Schätzverfahren
+- **Schätzmethoden:** Schätzverfahren (*"Meiner Erfahrung nach, brauchen wir noch zwei Mitarbeiter."*)
 - **organisatorisch:** Stellenplanmethode
 - **Personalbemessungsmethoden:** REFA-Methode (Zerlegung in Arbeitsschritte)
 
@@ -515,6 +526,56 @@ Unterscheidung in:
 - Durchlaufzeit = Gesamtzeit des Auftrages
 
 Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
+
+**Übung:**
+
+"Berechnen Sie den Nettopersonalbedarf. Betrachten Sie das Unternehmen in den nächsten 8 Jahren." $\rightarrow$ $t_8$
+In der Klausur sind alle Werte vorgegeben.
+
+| Bruttopersonalbedarf                                 | Personalbestand                                          | Nettopersonalbedarf             |
+| ---------------------------------------------------- | -------------------------------------------------------- | ------------------------------- |
+| **Stellen**                                          | **Mitarbeiter**                                          | **Mitarbeiter**                 |
+| $t_0 \textrm{Stellen} = 300$                         | $t_0 \textrm{MA}=280$                                    | $Bruttopersonalbedarf$          |
+| $t_0...t_8 \textrm{Stellen} + 200$                   | $t_0...t_8 \textrm{Ruhestand} - 20$                      | $-\text{Personalbestand } t_8$  |
+| $t_0...t_8 \textrm{Stellen} -50$                     | $t_0...t_8 \textrm{Kündigung} - 60$                      | $=\text{Netto Personalbestand}$ |
+|                                                      | $t_0...t_8 \textrm{Elternzeit} - 10$                     |                                 |
+|                                                      | $t_0...t_8 \textrm{Sabbatical} - 0$                      |                                 |
+|                                                      | $t_0...t_8 \textrm{übernommene Azubis} + 190$            |                                 |
+|                                                      | $t_0...t_8 \textrm{Elternzeit} + 8$                      |                                 |
+|                                                      | $t_0...t_8 \textrm{feste Verträge} + 12$                 | $450$                           |
+|                                                      | $t_0...t_8 \textrm{Sabbatical} + 2$                      | $-402$                          |
+| $t_8 \textrm{Stellen} = \underline{\underline{450}}$ | $t_8 \textrm{Mitarbeiter} = \underline{\underline{402}}$ | $=\underline{\underline{48}}$   |
+
+**Antwortsatz:** In den nächsten 8 Jahren müssen 48 Mitarbeiter zusätzlich eingestellt werden.
+
+### Qualitative Personalplanung
+
+- **Abgleich:** notwendiger, vorhandener und künftiger Kompetenzen
+- **Qualifikationsbedarf:**
+  - Kenntnis der Potentiale der Mitarbeiter $\rightarrow$ Definition vorhandener Potentiale der Mitarbeiter
+  - Anforderungsprofile für eine Stelle $\rightarrow$ Definition der notwendigen Anforderungen einer Stelle
+  - Abgleich des Bedarfs $\rightarrow$ Soll-Ist Vergleich
+
+## Innerbetriebliche Personalentwicklung
+
+- Erlangen der beruflichen Handlungsfähigkeit (Ausbildung)
+  - Inner-betriebliche (duale) Ausbildung
+  - Außer-betriebliche Ausbildung
+- betriebliche Qualifikation - Erhalt, Anpassung oder Erweiterung der betrieblichen Handlungsfähigkeit
+  - **Fortbildung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) im gleichen Beruf**
+  - **Weiterbildung**, Erweiterung der beruflichen Qualifikationen **ohne Abschluss im gleichen Beruf**
+  - **Umschulung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) in einem anderen Beruf**
+- innerbetriebliche Förderung
+  - Job-Enrichment
+  - Job-Enlargement
+  - Job-Rotation
+
+### Mitarbeitermarketing
+
+| Kommunikationspolitik | Distributionspolitik       | Preispolitik                     | Produktpolitik            |
+| --------------------- | -------------------------- | -------------------------------- | ------------------------- |
+| Stellenausschreibung  | Verteilung auf die Stellen | Lohne (Leistungen)/Gehalt (Zeit) | Kompetenz der Mitarbeiter |
+|                       | Einsatz                    | Entgelt                          |                           |
 
 # Externes Rechnungswesen
 
