@@ -411,7 +411,7 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 ### Verfahren der Personalplanung
 
 - **vergangenheitsorientiert:** Trendexploration
-- **Schätzmethoden:** Schätzverfahren ("Meiner Erfahrung nach, brauchen wir noch zwei Mitarbeiter.")
+- **Schätzmethoden:** Schätzverfahren (*"Meiner Erfahrung nach, brauchen wir noch zwei Mitarbeiter."*)
 - **organisatorisch:** Stellenplanmethode
 - **Personalbemessungsmethoden:** REFA-Methode (Zerlegung in Arbeitsschritte)
 
