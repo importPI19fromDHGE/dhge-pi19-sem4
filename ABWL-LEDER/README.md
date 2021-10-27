@@ -524,6 +524,56 @@ Unterscheidung in:
 
 Sollzeitanalyse = Vergleich der SOLL- und gemessenen IST-Zeiten
 
+**Übung:**
+
+"Berechnen Sie den Nettopersonalbedarf. Betrachten Sie das Unternehmen in den nächsten 8 Jahren." $\rightarrow$ $t_8$
+In der Klausur sind alle Werte vorgegeben.
+
+| Bruttopersonalbedarf                                 | Personalbestand                                          | Nettopersonalbedarf             |
+| ---------------------------------------------------- | -------------------------------------------------------- | ------------------------------- |
+| **Stellen**                                          | **Mitarbeiter**                                          | **Mitarbeiter**                 |
+| $t_0 \textrm{Stellen} = 300$                         | $t_0 \textrm{MA}=280$                                    | $Bruttopersonalbedarf$          |
+| $t_0...t_8 \textrm{Stellen} + 200$                   | $t_0...t_8 \textrm{Ruhestand} - 20$                      | $-\text{Personalbestand } t_8$  |
+| $t_0...t_8 \textrm{Stellen} -50$                     | $t_0...t_8 \textrm{Kündigung} - 60$                      | $=\text{Netto Personalbestand}$ |
+|                                                      | $t_0...t_8 \textrm{Elternzeit} - 10$                     |                                 |
+|                                                      | $t_0...t_8 \textrm{Sabbatical} - 0$                      |                                 |
+|                                                      | $t_0...t_8 \textrm{übernommene Azubis} + 190$            |                                 |
+|                                                      | $t_0...t_8 \textrm{Elternzeit} + 8$                      |                                 |
+|                                                      | $t_0...t_8 \textrm{feste Verträge} + 12$                 | $450$                           |
+|                                                      | $t_0...t_8 \textrm{Sabbatical} + 2$                      | $-402$                          |
+| $t_8 \textrm{Stellen} = \underline{\underline{450}}$ | $t_8 \textrm{Mitarbeiter} = \underline{\underline{402}}$ | $=\underline{\underline{48}}$   |
+
+**Antwortsatz:** In den nächsten 8 Jahren müssen 48 Mitarbeiter zusätzlich eingestellt werden.
+
+### Qualitative Personalplanung
+
+- **Abgleich:** notwendiger, vorhandener und künftiger Kompetenzen
+- **Qualifikationsbedarf:**
+  - Kenntnis der Potentiale der Mitarbeiter $\rightarrow$ Definition vorhandener Potentiale der Mitarbeiter
+  - Anforderungsprofile für eine Stelle $\rightarrow$ Definition der notwendigen Anforderungen einer Stelle
+  - Abgleich des Bedarfs $\rightarrow$ Soll-Ist Vergleich
+
+## Innerbetriebliche Personalentwicklung
+
+- Erlangen der beruflichen Handlungsfähigkeit (Ausbildung)
+  - Inner-betriebliche (duale) Ausbildung
+  - Außer-betriebliche Ausbildung
+- betriebliche Qualifikation - Erhalt, Anpassung oder Erweiterung der betrieblichen Handlungsfähigkeit
+  - **Fortbildung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) im gleichen Beruf**
+  - **Weiterbildung**, Erweiterung der beruflichen Qualifikationen **ohne Abschluss im gleichen Beruf**
+  - **Umschulung**, Erweiterung der beruflichen Qualifikation mit einem **Abschluss (Prüfung) in einem anderen Beruf**
+- innerbetriebliche Förderung
+  - Job-Enrichment
+  - Job-Enlargement
+  - Job-Rotation
+
+### Mitarbeitermarketing
+
+| Kommunikationspolitik | Distributionspolitik       | Preispolitik                     | Produktpolitik            |
+| --------------------- | -------------------------- | -------------------------------- | ------------------------- |
+| Stellenausschreibung  | Verteilung auf die Stellen | Lohne (Leistungen)/Gehalt (Zeit) | Kompetenz der Mitarbeiter |
+|                       | Einsatz                    | Entgeld                          |                           |
+
 # Externes Rechnungswesen
 
 - Personalführung selbst ist die individuelle Führung des Menschen und daher nicht digitalisierbar
