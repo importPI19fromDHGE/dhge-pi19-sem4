@@ -93,6 +93,7 @@ Allgemeine Betriebswirtschaftslehre
   - auf Basis des Privateigentums und wirtschaftlicher Autonomie
 
 ## grundlegende Merkmale
+
 Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums. Auf Basis dieser Grundlagen kann (und muss) die Unternehmensführung ihre Entscheidungen treffen.  
 
 ### erwerbswirtschaftliches Prinzip
@@ -351,10 +352,13 @@ Eine gute Aufbauorganisation ist dabei:
 - flexibel 
 
 ## Begrifflichkeiten
+
 ### Stelle
+
 Eine Stelle ist die **kleinste Einheit** der Ablauforganisation / des Unternehmens und enstpricht einem **Arbeitsplatz**. Ihr können eine Aufgabe, eine Teilaufgabe aber auch mehrere Aufgaben zugeordnet sein. Um diese Aufgaben zu spezifizieren dient die **Stellenbeschreibung** als Instrument der Aufbauorganisation. <!--TODO: Verlinkung-->
 
 ### Instanz
+
 Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichnet. Eine solche Instanz ist zusätzlich mit Kompetenzen ausgestattet. Diese können sein:
 
 - Weisungskompetenz
@@ -368,17 +372,21 @@ Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichne
 - Entscheidungskompetenz
 
 ### Hierarchien
+
 Die Aufbauorganisation wird vertikal in Hierarchieebenen unterteilt. Eine Hierarchieebene ist dabei eine Ebene im Unternehmen, der Stellen bzw. Instanzen mit gleichen oder ähnlichen Kompetenzen zugeordnet werden. 
 
 ### Abteilung
+
 Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von einer Abteilung. Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes 
 <!--TODO: Verlinkung zur Aufgabensynthese-->
 
-## Wie entsteht die Aufbauorganisation? 
+## Wie entsteht die Aufbauorganisation?
+
 Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n). 
 Die folgenden Schritte sind dabei notwendig: 
 
 ### Aufgabenanalyse
+
 In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufgaben umgewandelt. Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben. Diese werden nach folgenden Kriterien gegliedert: 
 
 **Verrichtung:** 
@@ -397,6 +405,7 @@ In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufg
 > zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabenanalyse
 
 ### Aufgabensynthese
+
 Im zweiten Schritt, der Aufgabensynthese werden diese vorab erstellten Aufgaben **organisatorisch sinnvoll** zu Aufgabenkomplexen zusammengefasst. Ziel der Aufgabensynthese ist die Bildung von Organisationseinheiten.
 Dabei kann nach folgendem Muster verfahren werden: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
 
@@ -408,6 +417,18 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 > zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabensynthese
 
 > Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg
+
+## Möglichkeiten der Führungshierarchie
+
+- **Zentralität:** von einer Stelle für alle Unternehmensteile verbindlich festgelegt
+  - schnelle, einheitliche Führung und Entscheidung; ohne Differenzierung auf individuelle Gegebenheiten; geringe Akzeptanz vor Ort
+  - **Vorteile:** einheitliche Vorgaben; gutes Controlling; geringer Aufwand der Umsetzung (autoritär)
+  - **Nachteile:** fehlende Berücksichtigung individueller Bedingungen; geringe Akzeptanz, Identifikation bei Mitarbeitern; Ausschluss individueller Stärken
+
+- **Dezentralität:** an der Stelle entschieden, die die höchste Kompetenz hat
+  - Führung und Entscheidung vor Ort \rightarrow\rightarrow hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit autonomer Gruppe- 
+  - **Vorteile:** Berücksichtigung individueller Bedingungen; hohe Akzeptanz, Identifikation bei Mitarbeitern; Nutzen individueller Stärken
+  - **Nachteile:** keine einheitlichen Vorgaben möglich; aufwendiges individuelles Controlling; hoher Aufwand der Umsetzung (kooperativ)
 
 ## Instrumente der Aufbauorganisation
 
@@ -432,23 +453,6 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
   - Anforderungen: fachliche, methodische, persönliche Kenntnisse
 - Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
 - Stellen mit gleicher Befugnis = Hierarchieebene
-
-### Möglichkeiten der Führungshierarchie
-
-- **Zentralität:** von einer Stelle für alle Unternehmensteile verbindlich festgelegt
-  - schnelle, einheitliche Führung und Entscheidung; ohne Differenzierung auf individuelle Gegebenheiten; geringe Akzeptanz vor Ort
-- **Dezentralität:** an der Stelle entschieden, die die höchste Kompetenz hat
-  - Führung und Entscheidung vor Ort \rightarrow\rightarrow hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit autonomer Gruppen
-
-#### Zentralität
-
-- **Vorteile:** einheitliche Vorgaben; gutes Controlling; geringer Aufwand der Umsetzung (autoritär)
-- **Nachteile:** fehlende Berücksichtigung individueller Bedingungen; geringe Akzeptanz, Identifikation bei Mitarbeitern; Ausschluss individueller Stärken
-
-#### Dezentralität
-
-- **Vorteile:** Berücksichtigung individueller Bedingungen; hohe Akzeptanz, Identifikation bei Mitarbeitern; Nutzen individueller Stärken
-- **Nachteile:** keine einheitlichen Vorgaben möglich; aufwendiges individuelles Controlling; hoher Aufwand der Umsetzung (kooperativ)
 
 ## Darstellung der Organisation
 
