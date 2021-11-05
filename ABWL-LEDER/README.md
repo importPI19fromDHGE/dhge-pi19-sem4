@@ -102,6 +102,9 @@ Allgemeine Betriebswirtschaftslehre
     - [Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)](#welche-instrumente-der-freisetzung-kennen-sie-personalanpassung)
 - [Marketing](#marketing)
   - [Skizzieren Sie das 4 Säulenmodell des Marketings!](#skizzieren-sie-das-4-s%C3%A4ulenmodell-des-marketings)
+  - [Skizzieren Sie das AIDA Prinzip!](#skizzieren-sie-das-aida-prinzip)
+  - [Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!](#unterscheiden-sie-die-marktforschung-in-prim%C3%A4re-und-sekund%C3%A4re-forschung)
+  - [Unterscheiden Sie Push- und Pullmarketing!](#unterscheiden-sie-push--und-pullmarketing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
