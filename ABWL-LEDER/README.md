@@ -92,9 +92,9 @@ Allgemeine Betriebswirtschaftslehre
 
 - rechtlich, wirtschaftliche und finanzielle organisierte Einheit
 - komplexes System aus Ressourcen (HR, MR, FR)
-  - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-  - MR = Maschinen, Gebäude, Material, Lizenzen
-  - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
+  - HR (Human Ressources) = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
+  - MR (Material Ressources) = Maschinen, Gebäude, Material, Lizenzen
+  - FR (Financial Ressources) = Finanzielle Mittel -> Eigen- und Fremdkapital
 - weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
