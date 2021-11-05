@@ -872,15 +872,17 @@ Corporate Image
 
 ### Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)
 
-| Ausrichtung                  | Änderung             | Beendigung                 |
-| ---------------------------- | -------------------- | -------------------------- |
-| **reaktive Freisetzung**     | Versetzung           | Entlassungen               |
-|                              | Überstundenabbau     | Aufhebungsverträge         |
-|                              | Kurzarbeit           | Outplacement               |
-| **antizipative Freisetzung** | Teilbeschäftigung    | Ausnutzung der Fluktuation |
-|                              | AZ-Flexibilisierung  | Auslaufen befristeter AV   |
-|                              | Urlaubsgestaltung    | Frühverrentung             |
-|                              | Strategische Planung | Outsourcing                |
-|                              |                      | Privatisierung             |
+| Ausrichtung                  | Änderung (AV bleibt bestehen) | Beendigung (AV wird beendet)    |
+| ---------------------------- | ----------------------------- | ------------------------------- |
+| **reaktive Freisetzung**     | Versetzung                    | Entlassungen (einseitig)        |
+|                              | Überstundenabbau              | Aufhebungsverträge (zweiseitig) |
+|                              | Kurzarbeit                    | Outplacement                    |
+| **antizipative Freisetzung** | Teilbeschäftigung             | Ausnutzung der Fluktuation      |
+|                              | AZ-Flexibilisierung           | Auslaufen befristeter AV        |
+|                              | Urlaubsgestaltung             | Frühverrentung                  |
+|                              | Strategische Planung          | Outsourcing                     |
+|                              |                               | Privatisierung                  |
+
+> in der Klausur würde je Ausrichtung und Art der Freisetzung **ein** Beispiel reichen
 
 # Marketing
