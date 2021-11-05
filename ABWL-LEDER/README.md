@@ -104,7 +104,7 @@ Allgemeine Betriebswirtschaftslehre
 - Marktwirtschaftliches System
 - Erwerbswirtschaftliches Prinzip
 - auf Basis des Privateigentums (ein rein staatliches Unternehmens entspricht **nicht** dieser Definition)
-- wirtschaftliche Autonomie
+- **führen zu:** wirtschaftlicher Autonomie
 
 ## Wirtschaftliches System
 
