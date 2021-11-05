@@ -130,7 +130,7 @@ Das Prinzip der Autonomie in **marktwirtschaftlichen Systemen** beschreibt, dass
 Das bedeutet, dass es dem Unternehmen selbst entscheiden kann, welche Produkte oder Dienstleistungen bereitgestellt werden und zu welchen Preisen diese angeboten werden.
 Auch hier existiert dieses Prinzip in einer Planwirtschaft nicht. Dort wird zentral entschieden, welche Güter durch welche Akteure angeboten und welche Preise dafür aufgerufen werden.
 
-Quelle: https://de.wikipedia.org/wiki/Autonomieprinzip
+Quelle: <https://de.wikipedia.org/wiki/Autonomieprinzip>
 
 Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. rechtlichen Bestimmungen entgegenstehen) festgelegt werden.
 Für die **Unternehmensführung** ergeben sich daraus folgende Aufgaben:
@@ -239,7 +239,7 @@ Dazu können die PESTEL-Faktoren einbezogen werden.
 
 Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken.
 
-> Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf
+> Quelle der folgenden Übersicht: <https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf>
 
 - **P**olitical / politische Faktoren:
   - Stand der Staatorganisation
@@ -340,6 +340,7 @@ Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDH
 
 **Ablauf des Führens:**
 <!-- TODO: Eventuell Abschnitt entfernen? Ist eher nichtssagend und scheint auch für Prüfung irrelevant. Kann auch aus den Folien nichts weiteres entnehmen.-->
+
 - **Aufgabe/Ziel**
 - **Planning:** Analyse und Planung $\rightarrow$ erfordert Aufgabe und Ziel
   - Analyse von: HR, FR, MR
@@ -366,7 +367,7 @@ ist eng mit dem Management-Kreislauf verknüpft.
 <!--Versuch, das ganze Thema nochmal übersichtlich darzustellen. Dabei https://zumfachwirt.de/aufbauorganisation/ zu Hilfe genommen,
 was btw erschreckend deckungsgleich zu dem ist, was in den Folien ist.-->
 
-> Zusätzliche Quellen: https://zumfachwirt.de/aufbauorganisation/ und https://de.wikipedia.org/wiki/Aufbauorganisation
+> Zusätzliche Quellen: <https://zumfachwirt.de/aufbauorganisation/> und <https://de.wikipedia.org/wiki/Aufbauorganisation>
 
 Im Gegensatz zur Darstellung der **Ablauforganisation**, bei welcher die Prozesse im Unternehmen dargestellt werden, legt die **Aufbauorganisation** fest, wie das Unternehmen strukturiert ist.
 D.h. welche betrieblichen Funktionen und Aufgabenbereiche es gibt und wie durch wen Entscheidungen weitergegeben werden können.
@@ -374,6 +375,7 @@ Dargestellt wird die Aufbauorganisation klassischerweise in einem **Organigramm*
 In diesem können sowohl **Stellen** als auch **Instanzen**, **Hierarchien** und **Beziehungen** illustriert werden.
 
 Eine gute Aufbauorganisation ist dabei:
+
 - zweckmäßig
 - wirtschaftlich
 - übersichtlich und transparent
@@ -415,7 +417,7 @@ Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von
 Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes.
 <!--TODO: Verlinkung zur Aufgabensynthese-->
 
-## Wie entsteht die Aufbauorganisation?
+## Erarbeitung der Aufbauorganisation
 
 Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n).
 Die folgenden Schritte sind dabei notwendig:
@@ -426,20 +428,20 @@ In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufg
 Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben.
 Diese werden nach folgenden Kriterien gegliedert:
 
-**Verrichtung:**
-- Gliederung nach Tätigkeit oder Arbeitsart
-- z.B. einkaufen, herstellen, montieren
-**Objekt:**
-- Gliederung nach Gegenstand oder Personengruppe an dem/der gearbeitet wird
-- z.B. Rohstoffe, Fertigprodukte, Senioren
-**Phase:**
-- Gliederung nach Planung, Realisierung und Kontrolle
-**Rang:**
-- Ausführungs- oder Entscheidungsaufgabe?
-**Zweckbeziehung:**
-- handelt es sich um einen Kernprozess (wie Produktion oder Vetrieb) oder um eine Supportaufgabe (Buchhaltung)?
+- **Verrichtung:**
+  - Gliederung nach Tätigkeit oder Arbeitsart
+  - z.B. einkaufen, herstellen, montieren
+- **Objekt:**
+  - Gliederung nach Gegenstand oder Personengruppe an dem/der gearbeitet wird
+  - z.B. Rohstoffe, Fertigprodukte, Senioren
+- **Phase:**
+  - Gliederung nach Planung, Realisierung und Kontrolle
+- **Rang:**
+  - Ausführungs- oder Entscheidungsaufgabe?
+- **Zweckbeziehung:**
+  - handelt es sich um einen Kernprozess (wie Produktion oder Vetrieb) oder um eine Supportaufgabe (Buchhaltung)?
 
-> zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabenanalyse
+> zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabenanalyse>
 
 ### Aufgabensynthese
 
@@ -453,9 +455,8 @@ Dazu zählen Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Inf
 Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese strukturiert.
 Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
-> zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabensynthese
-
-> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg
+> zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabensynthese>
+> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter <http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg>
 
 ## Möglichkeiten der Führungshierarchie
 
@@ -492,6 +493,7 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 ## Instrumente der Aufbauorganisation
 
 <!--TODO: Ab hier weiter überarbeiten-->
+
 - **Organigramm**
   - Hierarchie
     - Beziehungen
