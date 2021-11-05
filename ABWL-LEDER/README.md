@@ -126,15 +126,34 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
 
 ## Rechtsformen
 
+**Einzelunternehmen**
+
+- einzelne natürliche Person macht sich selbstständig 
+- auf eigene Rechnung und eigenes Risiko
+- Beispiel:
+  - Einzelkaufmann
+
 **Personengesellschaften**
 
+- Zusammenschluss mehrerer Personen zur Erreichung eines gemeinsamen Unternehmensziels
+- persönliche und unbegrenzte Haftung der Gesellschafter 
 - meist Eigentümer-geführte Unternehmen
-- Einzelkaufmann, GbR, OHG
+- Beispiele: 
+  - GbR - Gesellschaft bürgerlichen Rechts 
+  - OHG - Offene Handelsgesellschaft
 
 **Kapitalgesellschaften**
-
+- Zusammenschluss mehrerer Personen zur Erreichung einees Unternehmensziels
+- Kapitalgesellschaft wird zur selbstständigen juristischen Person $\rightarrow$ Haftung mit dem Vermögen der Gesellschaft
 - Eigentum und Geschäftsführung sind getrennt (Aktionäre <-> Vorstand)
-- GmbH, AG
+- Beispiele: 
+  - GmbH - Gesellschaft mit beschränkter Haftung 
+  - AG - Aktiengesellschaft
+
+**Andere Gesellschaftsformen**
+
+- Genossenschaft 
+- Stiftung
 
 ## Marktbeurteilung
 
