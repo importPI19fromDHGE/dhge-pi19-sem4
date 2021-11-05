@@ -295,9 +295,20 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
+- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*) und das Unternehmen führen
+  - z.B. Geschäftsführer, Leiter, Vorstand
+  - auch **Mitarbeiterführung**
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
-- Funktionales Management = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
+  - z.B. Aufgaben, Handlungen und Entscheidungen zum Managementkreislauf 
+  - auch **Prozessteuerung**
+- **Funktionales Management:** Kreislauf aus: 
+  - Planning : Analyse und Planung 
+  - Organizing: Wahl der Mittel, Prioritäten, Koordination
+  - Staffing: Personalwirtschaft
+    - Personaleinsatz
+    - Kombination von Organisation und Personal
+  - Directing: Mitarbeiterführung
+  - Controlling: Kontrolle, Steuerung, Regelung
 
 ### Management-Kreislauf
 
