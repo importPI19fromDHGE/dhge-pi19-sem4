@@ -120,9 +120,7 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
   - Anbieten von Ausbildungsplätzen 
   - Gleichberechtigung fördern 
 
-
-
-
+## Gesellschaftliche Einordnung
 
 ![Gesellschaftliche Einordnung](assets/wirtschaftseinheiten.png)<!--height=200px-->
 
