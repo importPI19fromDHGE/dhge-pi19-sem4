@@ -327,7 +327,7 @@ Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDH
   - **Controlling** hingegen beschreibt eine Einflussnahme auf einen Prozess und dessen Lenkung, Steuerung bzw. Regelung durch Rückkopplungen im laufenden Prozess
 
 ### PDCA
-
+<!--TODO: Prüfen, ob das hier nochmal reinmuss, oder Verlinkung auf PM reicht. Scheint unnötig redundant -->
 ist eng mit dem Management-Kreislauf verknüpft.
 
 - **Plan:** Aufgabe/Ziel, Analyse, Planen, Entscheiden
@@ -336,17 +336,78 @@ ist eng mit dem Management-Kreislauf verknüpft.
 - zwischen Do und Check wird gelooped, bis Soll==Ist
 - **Act:** vollständige Realisierung, Dokumentation, Daten $\rightarrow$ Wissen $\rightarrow$ Erfahrung $\rightarrow$ KVP
 
-## Organisationsformen
+# Aufbau von Organisationen
+<!--Versuch, das ganze Thema nochmal übersichtlich darzustellen. Dabei https://zumfachwirt.de/aufbauorganisation/ zu Hilfe genommen, was btw erschreckend deckungsgleich zu dem ist, was in den Folien ist. Copyright-Infringement, ick hör dir trapsen.-->
 
-- Aufbau/Struktur des Unternehmens
-- Instanzen: Stellen mit Leitungsfunktion
-- Hierarchien: Ebenen im Unternehmen mit gleichen oder ähnlichen Befugnissen (Hierarchieebenen werden auch als Leitungsebenen bezeichnet)
-- Formelle Beziehungen: <!--???-->
+> Zusätzliche Quellen: https://zumfachwirt.de/aufbauorganisation/ und https://de.wikipedia.org/wiki/Aufbauorganisation
 
-Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+Im Gegensatz zur Darstellung der **Ablauforganisation**, bei welcher die Prozesse im Unternehmen dargestellt werden, legt die **Aufbauorganisation** fest, wie das Unternehmen strukturiert ist, d.h. welche betrieblichen Funktionen und Aufgabenbereiche es gibt und wie durch wen Entscheidungen weitergegeben werden können. Dargestellt wird die Aufbauorganisation klassischerweise in einem **Organigramm**.
+In diesem können sowohl **Stellen** als auch **Instanzen**, **Hierarchien** und **Beziehungen** illustriert werden.
 
-- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
-- Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+Eine gute Aufbauorganisation ist dabei: 
+- zweckmäßig
+- wirtschaftlich 
+- übersichtlich und transparent
+- flexibel 
+
+## Begrifflichkeiten
+### Stelle
+Eine Stelle ist die **kleinste Einheit** der Ablauforganisation / des Unternehmens und enstpricht einem **Arbeitsplatz**. Ihr können eine Aufgabe, eine Teilaufgabe aber auch mehrere Aufgaben zugeordnet sein. Um diese Aufgaben zu spezifizieren dient die **Stellenbeschreibung** als Instrument der Aufbauorganisation. <!--TODO: Verlinkung-->
+
+### Instanz
+Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichnet. Eine solche Instanz ist zusätzlich mit Kompetenzen ausgestattet. Diese können sein:
+
+- Weisungskompetenz
+  - darf unterstellten Stellen Anweisungen geben
+- Verfügungskompetenz
+  - darf über betriebliche Mittel verfügen (Budgetentscheidungen, Zuweisung Dienstwagen)
+- Informationskompetenz
+  - darf auf nicht frei zugängliche Daten zugreifen
+- Vertretungskompetenz
+  - darf andere Mitarbeiter, wie zum Beispiel den Vorgesetzten vertreten und in dessen Namen Entscheidungen treffen
+- Entscheidungskompetenz
+
+### Hierarchien
+Die Aufbauorganisation wird vertikal in Hierarchieebenen unterteilt. Eine Hierarchieebene ist dabei eine Ebene im Unternehmen, der Stellen bzw. Instanzen mit gleichen oder ähnlichen Kompetenzen zugeordnet werden. 
+
+### Abteilung
+Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von einer Abteilung. Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes 
+<!--TODO: Verlinkung zur Aufgabensynthese-->
+
+## Wie entsteht die Aufbauorganisation? 
+Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n). 
+Die folgenden Schritte sind dabei notwendig: 
+
+### Aufgabenanalyse
+In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufgaben umgewandelt. Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben. Diese werden nach folgenden Kriterien gegliedert: 
+
+**Verrichtung:** 
+- Gliederung nach Tätigkeit oder Arbeitsart
+- z.B. einkaufen, herstellen, montieren
+**Objekt:**
+- Gliederung nach Gegenstand oder Personengruppe an dem/der gearbeitet wird
+- z.B. Rohstoffe, Fertigprodukte, Senioren
+**Phase:**
+- Gliederung nach Planung, Realisierung und Kontrolle
+**Rang:**
+- Ausführungs- oder Entscheidungsaufgabe? 
+**Zweckbeziehung:**
+- handelt es sich um einen Kernprozess (wie Produktion oder Vetrieb) oder um eine Supportaufgabe (Buchhaltung)?
+
+> zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabenanalyse
+
+### Aufgabensynthese
+Im zweiten Schritt, der Aufgabensynthese werden diese vorab erstellten Aufgaben **organisatorisch sinnvoll** zu Aufgabenkomplexen zusammengefasst. Ziel der Aufgabensynthese ist die Bildung von Organisationseinheiten.
+Dabei kann nach folgendem Muster verfahren werden: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+
+In diesem Schritt werden auch die **Strukturen der Aufbauorganisation** festgelegt. Dazu zählen Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
+
+Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese strukturiert.
+Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+
+> zusätzliche Quelle: https://de.wikipedia.org/wiki/Aufgabensynthese
+
+> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg
 
 ## Instrumente der Aufbauorganisation
 
