@@ -199,6 +199,7 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
   - OHG - Offene Handelsgesellschaft
 
 **Kapitalgesellschaften**
+
 - Zusammenschluss mehrerer Personen zur Erreichung einees Unternehmensziels
 - Kapitalgesellschaft wird zur selbstständigen juristischen Person $\rightarrow$ Haftung mit dem Vermögen der Gesellschaft
 - Eigentum und Geschäftsführung sind getrennt (Aktionäre <-> Vorstand)
