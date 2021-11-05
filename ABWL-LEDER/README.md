@@ -336,11 +336,6 @@ ist eng mit dem Management-Kreislauf verknüpft.
 - zwischen Do und Check wird gelooped, bis Soll==Ist
 - **Act:** vollständige Realisierung, Dokumentation, Daten $\rightarrow$ Wissen $\rightarrow$ Erfahrung $\rightarrow$ KVP
 
-## Kontrolle vs Controlling
-
-- **Kontrolle** der Aufgabe/Zielstellung
-- **Controlling:** Einflussnahme/Lenkung/Steuerung $\rightarrow$ Differenz zum erreichenden Ziel $\rightarrow$ Rückkoppelung zur Einflussnahme
-
 ## Organisationsformen
 
 - Aufbau/Struktur des Unternehmens
