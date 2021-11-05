@@ -108,9 +108,10 @@ Allgemeine Betriebswirtschaftslehre
 
 ## Wirtschaftliches System
 
-- Markt/Ökonomie: Input-/Output-Beziehungen = Kaufen + Verkaufen
-- Umwelt: Schonung der Ressourcen
-- Soziale Beziehungen: Gesellschaftliche Rahmenbedingungen
+Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch. Dabei sind jeweils verschiedene Aspekte relevant:  
+- **Markt/Ökonomie** $\leftrightarrow$ Input-/Output-Beziehungen = Kaufen $\leftrightarrow$ Verkaufen
+- **Umwelt** $\leftrightarrow$ Schonung der Ressourcen
+- **Gesellschaft** $\leftrightarrow$ Soziale Beziehungen, Gesellschaftliche Rahmenbedingungen
 
 > Drei Säulen der Nachhaltigkeit
 
