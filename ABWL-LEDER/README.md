@@ -94,12 +94,18 @@ Allgemeine Betriebswirtschaftslehre
 
 ## grundlegende Merkmale
 
-Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums. Auf Basis dieser Grundlagen kann (und muss) die Unternehmensführung ihre Entscheidungen treffen.  
+Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums.
+Auf Basis dieser Grundlagen kann (und muss) die
+Unternehmensführung ihre Entscheidungen treffen.
 
 ### erwerbswirtschaftliches Prinzip
 
-Im Kapitalismus gilt für (privat-)wirtschaftliche Unternehmen in den meisten Fällen das **erwerbswirtschaftliche Prinzip**. Das bedeutet, dass das Streben nach Gewinn oder eben auch die Minimierung der Verluste als Orientierung verwendet wird. Aufgabe der Unternehmensführung ist es, ebendies zu gewährleisten.
-In einem planwirtschaftlichen System würde demgegenüber das **Bedarfsdeckungsprinzip** stehen. Hier findet die Orientierung nicht an der Gewinnmaxmierung statt, sondern daran, die Bedarfe des Unternehmens (benötigte Produktionsmittel, Beelegschaft, etc.) zu erfüllen. Auch in staatlichen Betrieben, durch welche gemeinnützige Dienstleistungen angeboten werden, wird häufig nach Bedarfsdeckungsprinzip (in diesem Fall **Prinzip der Gemeinnützigkeit**) gearbeitet (Müllentsorgung, Wasser-/Abwasserwirtschaft)
+Im Kapitalismus gilt für (privat-)wirtschaftliche Unternehmen in den meisten Fällen das **erwerbswirtschaftliche Prinzip**.
+Das bedeutet, dass das Streben nach Gewinn oder eben auch die Minimierung der Verluste als Orientierung verwendet wird.
+Aufgabe der Unternehmensführung ist es, ebendies zu gewährleisten. In einem planwirtschaftlichen System würde demgegenüber das **Bedarfsdeckungsprinzip** stehen.
+Hier findet die Orientierung nicht an der Gewinnmaxmierung statt, sondern daran, die Bedarfe des Unternehmens (benötigte Produktionsmittel, Belegschaft, etc.) zu erfüllen.
+Auch in staatlichen Betrieben, durch welche gemeinnützige Dienstleistungen angeboten werden, wird häufig nach Bedarfsdeckungsprinzip gearbeitet.
+In diesem Fall wird es als **Prinzip der Gemeinnützigkeit** beschrieben (Müllentsorgung, Wasser-/Abwasserwirtschaft).
 
 Gewinnmaximierung kann sichergestellt werden durch:
 
@@ -113,11 +119,14 @@ Die Gewährleistung der Gewinnmaximierung ist Aufgabe der **Unternehmensführung
 
 ### Prinzip der Autonomie
 
-Das Prinzip der Autonomie in **marktwirtschaftlichen Systemen** beschreibt, dass Unternehmen autonom handeln können. Das bedeutet, dass es dem Unternehmen selbst entscheiden kann, welche Produkte oder Dienstleistungen bereitgestellt werden und zu welchen Preisen diese angeboten werden. 
-Auch hier existiert dieses Prinzip in eienr Planwirtschaft nicht. Dort wird zentral entschieden, welche Güter durch welche Akteure angeboten und welche Preise dafür aufgerufen werden. 
+Das Prinzip der Autonomie in **marktwirtschaftlichen Systemen** beschreibt, dass Unternehmen autonom handeln können.
+Das bedeutet, dass es dem Unternehmen selbst entscheiden kann, welche Produkte oder Dienstleistungen bereitgestellt werden und zu welchen Preisen diese angeboten werden.
+Auch hier existiert dieses Prinzip in einer Planwirtschaft nicht. Dort wird zentral entschieden, welche Güter durch welche Akteure angeboten und welche Preise dafür aufgerufen werden.
+
 Quelle: https://de.wikipedia.org/wiki/Autonomieprinzip
 
-Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. rechtlichen Bestimmungen entgegenstehen) festgelegt werden. Für die **Unternehmensführung** ergeben sich daraus folgende Aufgaben: 
+Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. rechtlichen Bestimmungen entgegenstehen) festgelegt werden.
+Für die **Unternehmensführung** ergeben sich daraus folgende Aufgaben:
 
 - Definition der betrieblichen Zielsetzung (SMART-Ziele)
 - Überwachung / Controlling ebendieser Zielsetzung
@@ -127,9 +136,10 @@ Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. 
 
 ### Prinzip des Privateigentums
 
-Das Prinzip des Privateigentums beschreibt, dass die Verfügungsrechte an den Produktionsmitteln und am Gewinn den Eigentümern zustehen. Daher werden sowohl Gewinne als auch Verluste von dem/den Eigentümer/n getragen $\rightarrow$ **unternehmerisches Risiko**
+Das Prinzip des Privateigentums beschreibt, dass die Verfügungsrechte an den Produktionsmitteln und am Gewinn den Eigentümern zustehen.
+Daher werden sowohl Gewinne als auch Verluste von dem/den Eigentümer/n getragen $\rightarrow$ **unternehmerisches Risiko**
 
-Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitliche Führung zu gewährleisten um der Verantwortung gegenüber den Angestellten und auch Aktionären gerecht zu werden. 
+Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitliche Führung zu gewährleisten um der Verantwortung gegenüber den Angestellten und auch Aktionären gerecht zu werden.
 
 ### (weitere) Merkmale eines Unternehmens
 
@@ -141,17 +151,20 @@ Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitli
 
 ## Wirtschaftliches System - Nachhaltigkeit
 
-Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch. Ursprünglich durch die EU im Vertrag von Amsterdam beschrieben, sind für eine positive gesellschaftliche Entwicklung jeweils verschiedene Aspekte relevant, die auch als die **drei Säulen der Nachhaltigkeit** beschrieben werden:  
+Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch.
+Ursprünglich durch die EU im Vertrag von Amsterdam beschrieben, sind für eine positive gesellschaftliche Entwicklung jeweils verschiedene Aspekte relevant.
+Diese werden auch als die **drei Säulen der Nachhaltigkeit** beschrieben:
+
 - **Ökonomische Nachhaltigkeit** $\leftrightarrow$ Input-/Output-Beziehungen = Kaufen $\leftrightarrow$ Verkaufen
   - Fokus nicht vollständig auf Gewinnmaximierung sondern auf Lebensqualität jetziger und zukünftiger Generationen
   - Fairer Handel, Förderung von Wissen und Lernmöglichkeiten (für uns z.B. Open-Source-Projekte als Teil der Arbeitszeit)
 - **Ökologische Nachhaltigkeit** $\leftrightarrow$ Schonung der Ressourcen
-  - Verzicht auf Raubbau an der Umwelt 
-  - Nutzung erneuerbarer Energien 
+  - Verzicht auf Raubbau an der Umwelt
+  - Nutzung erneuerbarer Energien
 - **Soziale Nachhaltigkeit** $\leftrightarrow$ Soziale Beziehungen, Gesellschaftliche Rahmenbedingungen
-  - Förderung von Weiterbildungen 
-  - Anbieten von Ausbildungsplätzen 
-  - Gleichberechtigung fördern 
+  - Förderung von Weiterbildungen
+  - Anbieten von Ausbildungsplätzen
+  - Gleichberechtigung fördern
 
 ## Gesellschaftliche Einordnung
 
@@ -159,11 +172,12 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
 
 ## Rechtsformen
 
-Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder der Haftung der Beteiligten, werden verschiedenen Rechtsformen unterschieden, welche (nicht komplett) im Folgenden aufgeführt sind
+Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder der Haftung der Beteiligten, werden verschiedenen Rechtsformen unterschieden.
+Diese werden (nicht komplett) im Folgenden aufgeführt:
 
 **Einzelunternehmen**
 
-- einzelne natürliche Person macht sich selbstständig 
+- einzelne natürliche Person macht sich selbstständig
 - auf eigene Rechnung und eigenes Risiko
 - Beispiel:
   - Einzelkaufmann
@@ -173,28 +187,28 @@ Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder de
 - Zusammenschluss mehrerer Personen zur Erreichung eines gemeinsamen Unternehmensziels
 - persönliche und unbegrenzte Haftung der Gesellschafter 
 - meist Eigentümer-geführte Unternehmen
-- Beispiele: 
-  - GbR - Gesellschaft bürgerlichen Rechts 
+- Beispiele:
+  - GbR - Gesellschaft bürgerlichen Rechts
   - OHG - Offene Handelsgesellschaft
 
 **Kapitalgesellschaften**
 - Zusammenschluss mehrerer Personen zur Erreichung einees Unternehmensziels
 - Kapitalgesellschaft wird zur selbstständigen juristischen Person $\rightarrow$ Haftung mit dem Vermögen der Gesellschaft
 - Eigentum und Geschäftsführung sind getrennt (Aktionäre <-> Vorstand)
-- Beispiele: 
+- Beispiele:
   - GmbH - Gesellschaft mit beschränkter Haftung 
   - AG - Aktiengesellschaft
 
 **Andere Gesellschaftsformen**
 
-- Genossenschaft 
+- Genossenschaft
 - Stiftung
 
 ## Marktbeurteilung
 
 - **Polypol:** viele Anbieter, viele Nachfrager
-  - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis 
-  - z.B. Börsenmarkt  
+  - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis
+  - z.B. Börsenmarkt
 - **Oligopol:** 
   - Angebotsoligopol: wenige Anbieter, viele Nachfrager
     - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt
@@ -202,49 +216,51 @@ Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder de
     - Beispiel: Mobilfunkmarkt, Strommarkt
   - Nachfragepoligopol: viele Anbieter, wenige Nachfrager
     - Beispiel Landwirtschaft: viele Getreideproduzenten, nur wenige Mühlen
-- **Monopol:** 
+- **Monopol:**
   - Angebotsmonopol: nur ein Anbieter für viele Nachfrager
-    - Anbieter kann den Preis nahezu frei bestimmen 
-    - Beispiele: 
+    - Anbieter kann den Preis nahezu frei bestimmen
+    - Beispiele:
       - Briefmonopol der Post bis 2007
-      - Quasimonopol der Telekom im Kommunikationsmarkt 
-  - Nachfragemonopol: nur ein Nachfrager für viele Anbieter 
-    - kommt selten vor, vor allem bei staatlichen Ausschreibungen 
+      - Quasimonopol der Telekom im Kommunikationsmarkt
+  - Nachfragemonopol: nur ein Nachfrager für viele Anbieter
+    - kommt selten vor, vor allem bei staatlichen Ausschreibungen
 
 ## Einflussfaktoren / PESTEL-Analyse
 
-Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert. Dazu können die PESTEL-Faktoren einbezogen werden, 
+Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert.
+Dazu können die PESTEL-Faktoren einbezogen werden.
 
-Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken. 
-Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf
+Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken.
 
-- **P**olitical / politische Faktoren: 
-  - Stand der Staatorganisation 
+> Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf
+
+- **P**olitical / politische Faktoren:
+  - Stand der Staatorganisation
     - politische Ordnung des Landes (demokratisch/totalitär)
     - Außenpolitik (Export, Einfuhrüberwachung)
-    - Stabilität des Systems 
-- **E**conomic / ökonomische Faktoren: 
+    - Stabilität des Systems
+- **E**conomic / ökonomische Faktoren:
   - Analyse der (volks-)wirtschaftlichen Entwicklung
-    - Wirtschaftswachstum 
-    - Bevölkerungszahl 
-    - Zinsniveau 
-- **S**ocial / soziokulturelle Faktoren 
-  - Gesellschaftliche Umwelt 
-    - Bevölkerungsstruktur 
-    - Bildungswesen 
+    - Wirtschaftswachstum
+    - Bevölkerungszahl
+    - Zinsniveau
+- **S**ocial / soziokulturelle Faktoren
+  - Gesellschaftliche Umwelt
+    - Bevölkerungsstruktur
+    - Bildungswesen
     - Kulturelle Besonderheiten
-- **T**echnological / technologische Faktoren 
-  - Analyse der technologischen Entwicklung 
-    - Stand und Entwicklung der Informations- und Kommunikationtechnologie 
+- **T**echnological / technologische Faktoren
+  - Analyse der technologischen Entwicklung
+    - Stand und Entwicklung der Informations- und Kommunikationtechnologie
     - Entwicklung der staatlichen und privaten Ausgaben für F&E (Forschung und Entwicklung)
-- **E**nvironmental / ökologisch-geographische Faktoren 
-  - marktspezifische Eckdaten zur Beschaffenheit udn Infrastruktur 
+- **E**nvironmental / ökologisch-geographische Faktoren
+  - marktspezifische Eckdaten zur Beschaffenheit und Infrastruktur
     - Standort (Klima, Topologie)
-    - Infrastruktur 
-    - natürliche Ressourcen 
-    - Emissionen 
-- **L**egal / rechtliche Einflussfaktoren 
-  - marktspezifische Rechtsorganisation 
+    - Infrastruktur
+    - natürliche Ressourcen
+    - Emissionen
+- **L**egal / rechtliche Einflussfaktoren
+  - marktspezifische Rechtsorganisation
     - Rechtssystem und Verfassung
     - Rechtsbewusstsein
     - Rechtsgebiete (Wettbewerbsrecht, Umweltrecht, ...)
@@ -294,10 +310,10 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
   - z.B. Geschäftsführer, Leiter, Vorstand
   - auch **Mitarbeiterführung**
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
-  - z.B. Aufgaben, Handlungen und Entscheidungen zum Managementkreislauf 
+  - z.B. Aufgaben, Handlungen und Entscheidungen zum Managementkreislauf
   - auch **Prozessteuerung**
-- **Funktionales Management:** Kreislauf aus: 
-  - Planning : Analyse und Planung 
+- **Funktionales Management:** Kreislauf aus:
+  - Planning : Analyse und Planung
   - Organizing: Wahl der Mittel, Prioritäten, Koordination
   - Staffing: Personalwirtschaft
     - Personaleinsatz
@@ -342,24 +358,31 @@ ist eng mit dem Management-Kreislauf verknüpft.
 
 > Zusätzliche Quellen: https://zumfachwirt.de/aufbauorganisation/ und https://de.wikipedia.org/wiki/Aufbauorganisation
 
-Im Gegensatz zur Darstellung der **Ablauforganisation**, bei welcher die Prozesse im Unternehmen dargestellt werden, legt die **Aufbauorganisation** fest, wie das Unternehmen strukturiert ist, d.h. welche betrieblichen Funktionen und Aufgabenbereiche es gibt und wie durch wen Entscheidungen weitergegeben werden können. Dargestellt wird die Aufbauorganisation klassischerweise in einem **Organigramm**.
+Im Gegensatz zur Darstellung der **Ablauforganisation**, bei welcher die Prozesse im Unternehmen dargestellt werden, legt die **Aufbauorganisation** fest, wie das Unternehmen strukturiert ist.
+D.h. welche betrieblichen Funktionen und Aufgabenbereiche es gibt und wie durch wen Entscheidungen weitergegeben werden können.
+Dargestellt wird die Aufbauorganisation klassischerweise in einem **Organigramm**.
 In diesem können sowohl **Stellen** als auch **Instanzen**, **Hierarchien** und **Beziehungen** illustriert werden.
 
-Eine gute Aufbauorganisation ist dabei: 
+Eine gute Aufbauorganisation ist dabei:
 - zweckmäßig
-- wirtschaftlich 
+- wirtschaftlich
 - übersichtlich und transparent
-- flexibel 
+- flexibel
 
 ## Begrifflichkeiten
 
 ### Stelle
 
-Eine Stelle ist die **kleinste Einheit** der Ablauforganisation / des Unternehmens und enstpricht einem **Arbeitsplatz**. Ihr können eine Aufgabe, eine Teilaufgabe aber auch mehrere Aufgaben zugeordnet sein. Um diese Aufgaben zu spezifizieren dient die **Stellenbeschreibung** als Instrument der Aufbauorganisation. <!--TODO: Verlinkung-->
+Eine Stelle ist die **kleinste Einheit** der Ablauforganisation / des Unternehmens und enstpricht einem **Arbeitsplatz**.
+Ihr können eine Aufgabe, eine Teilaufgabe aber auch mehrere Aufgaben zugeordnet sein.
+Um diese Aufgaben zu spezifizieren dient die **Stellenbeschreibung** als Instrument der Aufbauorganisation.
+<!--TODO: Verlinkung-->
 
 ### Instanz
 
-Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichnet. Eine solche Instanz ist zusätzlich mit Kompetenzen ausgestattet. Diese können sein:
+Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichnet. Eine solche Instanz ist zusätzlich mit Kompetenzen ausgestattet.
+
+Diese können sein:
 
 - Weisungskompetenz
   - darf unterstellten Stellen Anweisungen geben
@@ -373,23 +396,27 @@ Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichne
 
 ### Hierarchien
 
-Die Aufbauorganisation wird vertikal in Hierarchieebenen unterteilt. Eine Hierarchieebene ist dabei eine Ebene im Unternehmen, der Stellen bzw. Instanzen mit gleichen oder ähnlichen Kompetenzen zugeordnet werden. 
+Die Aufbauorganisation wird vertikal in Hierarchieebenen unterteilt.
+Eine Hierarchieebene ist dabei eine Ebene im Unternehmen, der Stellen bzw. Instanzen mit gleichen oder ähnlichen Kompetenzen zugeordnet werden.
 
 ### Abteilung
 
-Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von einer Abteilung. Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes 
+Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von einer Abteilung.
+Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes.
 <!--TODO: Verlinkung zur Aufgabensynthese-->
 
 ## Wie entsteht die Aufbauorganisation?
 
 Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n). 
-Die folgenden Schritte sind dabei notwendig: 
+Die folgenden Schritte sind dabei notwendig:
 
 ### Aufgabenanalyse
 
-In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufgaben umgewandelt. Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben. Diese werden nach folgenden Kriterien gegliedert: 
+In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufgaben umgewandelt.
+Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben.
+Diese werden nach folgenden Kriterien gegliedert:
 
-**Verrichtung:** 
+**Verrichtung:**
 - Gliederung nach Tätigkeit oder Arbeitsart
 - z.B. einkaufen, herstellen, montieren
 **Objekt:**
@@ -398,7 +425,7 @@ In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufg
 **Phase:**
 - Gliederung nach Planung, Realisierung und Kontrolle
 **Rang:**
-- Ausführungs- oder Entscheidungsaufgabe? 
+- Ausführungs- oder Entscheidungsaufgabe?
 **Zweckbeziehung:**
 - handelt es sich um einen Kernprozess (wie Produktion oder Vetrieb) oder um eine Supportaufgabe (Buchhaltung)?
 
@@ -406,10 +433,12 @@ In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufg
 
 ### Aufgabensynthese
 
-Im zweiten Schritt, der Aufgabensynthese werden diese vorab erstellten Aufgaben **organisatorisch sinnvoll** zu Aufgabenkomplexen zusammengefasst. Ziel der Aufgabensynthese ist die Bildung von Organisationseinheiten.
+Im zweiten Schritt, der Aufgabensynthese werden diese vorab erstellten Aufgaben **organisatorisch sinnvoll** zu Aufgabenkomplexen zusammengefasst.
+Ziel der Aufgabensynthese ist die Bildung von Organisationseinheiten.
 Dabei kann nach folgendem Muster verfahren werden: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
 
-In diesem Schritt werden auch die **Strukturen der Aufbauorganisation** festgelegt. Dazu zählen Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
+In diesem Schritt werden auch die **Strukturen der Aufbauorganisation** festgelegt.
+Dazu zählen Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung).
 
 Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese strukturiert.
 Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
@@ -420,32 +449,32 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 
 ## Möglichkeiten der Führungshierarchie
 
-- **Zentralität:** 
-  - **Merkmale:** 
+- **Zentralität:**
+  - **Merkmale:**
     - von einer Stelle für alle Unternehmensteile verbindlich festgelegt, Zusammenfassung von Aufgaben und Verantwortung
     - schnelle, einheitliche Führung und Entscheidung
     - Spezialisierung der einzelnen Stellen, da nur die konkrete Aufgabe von Belang ist
-  - **Vorteile:** 
+  - **Vorteile:**
     - einheitliche Vorgaben
     - gutes Controlling
     - geringer Aufwand der Umsetzung (autoritär)
-  - **Nachteile:** 
+  - **Nachteile:**
     - fehlende Berücksichtigung individueller Bedingungen
     - ggf. geringe Akzeptanz vor Ort
     - fehlende Identifikation bei Mitarbeitern
     - Ausschluss individueller Stärken
 
 - **Dezentralität:**
-  - **Merkmale:** 
+  - **Merkmale:**
     - an der Stelle entschieden, die die höchste Kompetenz hat
     - Führung und Entscheidung vor Ort 
     - autonom arbeitende Gruppen sind notwendig
     - Verantwortungs- und Aufgabenverteilung auf mehrere Stellen
-  - **Vorteile:** 
+  - **Vorteile:**
     - Berücksichtigung individueller Bedingungen
     - hohe Akzeptanz, Identifikation bei Mitarbeitern
     - Nutzen individueller Stärken
-  - **Nachteile:** 
+  - **Nachteile:**
     - keine einheitlichen Vorgaben möglich
     - aufwendiges individuelles Controlling
     - hoher Aufwand der Umsetzung (kooperativ)
