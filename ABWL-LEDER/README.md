@@ -269,9 +269,9 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
 
 - das Unternehmen braucht eine Vision (bspw. "Wir bieten eine Dienstleistung an." oder "Wir entwickeln ein Produkt")
 - Unternehmenspolitik $\rightarrow$ *Wie* setzen wir die Vision um?
-- veröffentlichen der Unternehmenspolitik $\rightarrow$ Unternehmensleitbild
+- Veröffentlichen der Unternehmenspolitik $\rightarrow$ Unternehmensleitbild
 
-> Leitbild = formuliert kurz und prägnant die strategischen Zieles und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
+> Leitbild = formuliert kurz und prägnant die strategischen Ziele und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
 
 - Unternehmenskultur stellt den Ist-Zustand dar
   - Know-How: Forschung und Entwicklung; **KVP** (kontinuierlicher Verbesserungs-Prozess) $\rightarrow$ erzwungen durch Markt und technisch-technologischen Fortschritt
