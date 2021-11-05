@@ -192,7 +192,7 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
 **Personengesellschaften**
 
 - Zusammenschluss mehrerer Personen zur Erreichung eines gemeinsamen Unternehmensziels
-- persönliche und unbegrenzte Haftung der Gesellschafter 
+- persönliche und unbegrenzte Haftung der Gesellschafter
 - meist Eigentümer-geführte Unternehmen
 - Beispiele:
   - GbR - Gesellschaft bürgerlichen Rechts
@@ -203,7 +203,7 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
 - Kapitalgesellschaft wird zur selbstständigen juristischen Person $\rightarrow$ Haftung mit dem Vermögen der Gesellschaft
 - Eigentum und Geschäftsführung sind getrennt (Aktionäre <-> Vorstand)
 - Beispiele:
-  - GmbH - Gesellschaft mit beschränkter Haftung 
+  - GmbH - Gesellschaft mit beschränkter Haftung
   - AG - Aktiengesellschaft
 
 **Andere Gesellschaftsformen**
@@ -216,7 +216,7 @@ Diese werden (nicht komplett) im Folgenden aufgeführt:
 - **Polypol:** viele Anbieter, viele Nachfrager
   - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis
   - z.B. Börsenmarkt
-- **Oligopol:** 
+- **Oligopol:**
   - Angebotsoligopol: wenige Anbieter, viele Nachfrager
     - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt
     - kann zu intensivem Wettbewerb zwischen den Anbietern, aber auch zu (illegalen) Preisabsprachen führen
@@ -351,6 +351,7 @@ Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDH
   - **Controlling** hingegen beschreibt eine Einflussnahme auf einen Prozess und dessen Lenkung, Steuerung bzw. Regelung durch Rückkopplungen im laufenden Prozess
 
 ### PDCA
+
 <!--TODO: Prüfen, ob das hier nochmal reinmuss, oder Verlinkung auf PM reicht. Scheint unnötig redundant -->
 ist eng mit dem Management-Kreislauf verknüpft.
 
@@ -361,7 +362,9 @@ ist eng mit dem Management-Kreislauf verknüpft.
 - **Act:** vollständige Realisierung, Dokumentation, Daten $\rightarrow$ Wissen $\rightarrow$ Erfahrung $\rightarrow$ KVP
 
 # Aufbau von Organisationen
-<!--Versuch, das ganze Thema nochmal übersichtlich darzustellen. Dabei https://zumfachwirt.de/aufbauorganisation/ zu Hilfe genommen, was btw erschreckend deckungsgleich zu dem ist, was in den Folien ist. Copyright-Infringement, ick hör dir trapsen.-->
+
+<!--Versuch, das ganze Thema nochmal übersichtlich darzustellen. Dabei https://zumfachwirt.de/aufbauorganisation/ zu Hilfe genommen,
+was btw erschreckend deckungsgleich zu dem ist, was in den Folien ist.-->
 
 > Zusätzliche Quellen: https://zumfachwirt.de/aufbauorganisation/ und https://de.wikipedia.org/wiki/Aufbauorganisation
 
@@ -414,7 +417,7 @@ Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist
 
 ## Wie entsteht die Aufbauorganisation?
 
-Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n). 
+Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n).
 Die folgenden Schritte sind dabei notwendig:
 
 ### Aufgabenanalyse
@@ -474,7 +477,7 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 - **Dezentralität:**
   - **Merkmale:**
     - an der Stelle entschieden, die die höchste Kompetenz hat
-    - Führung und Entscheidung vor Ort 
+    - Führung und Entscheidung vor Ort
     - autonom arbeitende Gruppen sind notwendig
     - Verantwortungs- und Aufgabenverteilung auf mehrere Stellen
   - **Vorteile:**
@@ -487,6 +490,7 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
     - hoher Aufwand der Umsetzung (kooperativ)
 
 ## Instrumente der Aufbauorganisation
+
 <!--TODO: Ab hier weiter überarbeiten-->
 - **Organigramm**
   - Hierarchie
