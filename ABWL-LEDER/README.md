@@ -158,8 +158,23 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
 ## Marktbeurteilung
 
 - **Polypol:** viele Anbieter, viele Nachfrager
-- **Oligopol:** wenige Anbieter bzw. wenige ein Nachfrager
-- **Monopol:** ein Anbieter bzw. ein Nachfrager
+  - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis 
+  - z.B. Börsenmarkt  
+- **Oligopol:** 
+  - Angebotsoligopol: wenige Anbieter, viele Nachfrager
+    - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt
+    - kann zu intensivem Wettbewerb zwischen den Anbietern, aber auch zu (illegalen) Preisabsprachen führen
+    - Beispiel: Mobilfunkmarkt, Strommarkt
+  - Nachfragepoligopol: viele Anbieter, wenige Nachfrager
+    - Beispiel Landwirtschaft: viele Getreideproduzenten, nur wenige Mühlen
+- **Monopol:** 
+  - Angebotsmonopol: nur ein Anbieter für viele Nachfrager
+    - Anbieter kann den Preis nahezu frei bestimmen 
+    - Beispiele: 
+      - Briefmonopol der Post bis 2007
+      - Quasimonopol der Telekom im Kommunikationsmarkt 
+  - Nachfragemonopol: nur ein Nachfrager für viele Anbieter 
+    - kommt selten vor, vor allem bei staatlichen Ausschreibungen 
 
 ## Einflussfaktoren
 
