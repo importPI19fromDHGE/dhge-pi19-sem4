@@ -992,3 +992,9 @@ Corporate Image
 > in der Klausur würde je Ausrichtung und Art der Freisetzung **ein** Beispiel reichen
 
 # Marketing
+
+## Skizzieren Sie das 4 Säulenmodell des Marketings!
+
+| Kommunikation | Preispolitik                                 | Distributionspolitik  |     |
+| ------------- | -------------------------------------------- | --------------------- | --- |
+| Werbung       | Preis abhängig vom Markt (Angebot/Nachfrage) | Absatz und Verteilung |     |
