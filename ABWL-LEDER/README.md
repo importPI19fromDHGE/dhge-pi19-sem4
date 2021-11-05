@@ -420,18 +420,38 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 
 ## Möglichkeiten der Führungshierarchie
 
-- **Zentralität:** von einer Stelle für alle Unternehmensteile verbindlich festgelegt
-  - schnelle, einheitliche Führung und Entscheidung; ohne Differenzierung auf individuelle Gegebenheiten; geringe Akzeptanz vor Ort
-  - **Vorteile:** einheitliche Vorgaben; gutes Controlling; geringer Aufwand der Umsetzung (autoritär)
-  - **Nachteile:** fehlende Berücksichtigung individueller Bedingungen; geringe Akzeptanz, Identifikation bei Mitarbeitern; Ausschluss individueller Stärken
+- **Zentralität:** 
+  - **Merkmale:** 
+    - von einer Stelle für alle Unternehmensteile verbindlich festgelegt, Zusammenfassung von Aufgaben und Verantwortung
+    - schnelle, einheitliche Führung und Entscheidung
+    - Spezialisierung der einzelnen Stellen, da nur die konkrete Aufgabe von Belang ist
+  - **Vorteile:** 
+    - einheitliche Vorgaben
+    - gutes Controlling
+    - geringer Aufwand der Umsetzung (autoritär)
+  - **Nachteile:** 
+    - fehlende Berücksichtigung individueller Bedingungen
+    - ggf. geringe Akzeptanz vor Ort
+    - fehlende Identifikation bei Mitarbeitern
+    - Ausschluss individueller Stärken
 
-- **Dezentralität:** an der Stelle entschieden, die die höchste Kompetenz hat
-  - Führung und Entscheidung vor Ort \rightarrow\rightarrow hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit autonomer Gruppe- 
-  - **Vorteile:** Berücksichtigung individueller Bedingungen; hohe Akzeptanz, Identifikation bei Mitarbeitern; Nutzen individueller Stärken
-  - **Nachteile:** keine einheitlichen Vorgaben möglich; aufwendiges individuelles Controlling; hoher Aufwand der Umsetzung (kooperativ)
+- **Dezentralität:**
+  - **Merkmale:** 
+    - an der Stelle entschieden, die die höchste Kompetenz hat
+    - Führung und Entscheidung vor Ort 
+    - autonom arbeitende Gruppen sind notwendig
+    - Verantwortungs- und Aufgabenverteilung auf mehrere Stellen
+  - **Vorteile:** 
+    - Berücksichtigung individueller Bedingungen
+    - hohe Akzeptanz, Identifikation bei Mitarbeitern
+    - Nutzen individueller Stärken
+  - **Nachteile:** 
+    - keine einheitlichen Vorgaben möglich
+    - aufwendiges individuelles Controlling
+    - hoher Aufwand der Umsetzung (kooperativ)
 
 ## Instrumente der Aufbauorganisation
-
+<!--TODO: Ab hier weiter überarbeiten-->
 - **Organigramm**
   - Hierarchie
     - Beziehungen
