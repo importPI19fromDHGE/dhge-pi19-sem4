@@ -106,14 +106,23 @@ Allgemeine Betriebswirtschaftslehre
 - auf Basis des Privateigentums (ein rein staatliches Unternehmens entspricht **nicht** dieser Definition)
 - **führen zu:** wirtschaftlicher Autonomie
 
-## Wirtschaftliches System
+## Wirtschaftliches System - Nachhaltigkeit
 
-Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch. Dabei sind jeweils verschiedene Aspekte relevant:  
-- **Markt/Ökonomie** $\leftrightarrow$ Input-/Output-Beziehungen = Kaufen $\leftrightarrow$ Verkaufen
-- **Umwelt** $\leftrightarrow$ Schonung der Ressourcen
-- **Gesellschaft** $\leftrightarrow$ Soziale Beziehungen, Gesellschaftliche Rahmenbedingungen
+Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch. Ursprünglich durch die EU im Vertrag von Amsterdam beschrieben, sind für eine positive gesellschaftliche Entwicklung jeweils verschiedene Aspekte relevant, die auch als die **drei Säulen der Nachhaltigkeit** beschrieben werden:  
+- **Ökonomische Nachhaltigkeit** $\leftrightarrow$ Input-/Output-Beziehungen = Kaufen $\leftrightarrow$ Verkaufen
+  - Fokus nicht vollständig auf Gewinnmaximierung sondern auf Lebensqualität jetziger und zukünftiger Generationen
+  - Fairer Handel, Förderung von Wissen und Lernmöglichkeiten (für uns z.B. Open-Source-Projekte als Teil der Arbeitszeit)
+- **Ökologische Nachhaltigkeit** $\leftrightarrow$ Schonung der Ressourcen
+  - Verzicht auf Raubbau an der Umwelt 
+  - Nutzung erneuerbarer Energien 
+- **Soziale Nachhaltigkeit** $\leftrightarrow$ Soziale Beziehungen, Gesellschaftliche Rahmenbedingungen
+  - Förderung von Weiterbildungen 
+  - Anbieten von Ausbildungsplätzen 
+  - Gleichberechtigung fördern 
 
-> Drei Säulen der Nachhaltigkeit
+
+
+
 
 ![Gesellschaftliche Einordnung](assets/wirtschaftseinheiten.png)<!--height=200px-->
 
