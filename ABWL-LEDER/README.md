@@ -788,4 +788,99 @@ Teilkostenrechnung
 
 # Protektionswirtschaft
 
+## Personalbedarf
+
+### Was gehört zum qualitativen Personalbedarf?
+
+- fachliche Kompetenz
+- methodische Kompetenz
+- persönliche Kompetenz
+
+$\rightarrow$ eine Stelle
+
+### Was gehört zum quantitativen Personalbedarf?
+
+- Menge der Mitarbeiter
+- Wo brauchen wir die Mitarbeiter? $\rightarrow$ Ort
+- zur richtigen Zeit
+
+### Unter welcher Bedingung muss der Personalbedarf erreichbar sein?
+
+Personalbedarf muss zu vertretbaren Kosten erreichbar sein.
+
+## Personalbeschaffung
+
+### Wofür steht CI?
+
+Corporate Image
+
+### Woraus setzt sich die CI zusammen?
+
+- Corporate Behaviour (Verhalten des Unternehmens) gegenüber den Mitarbeitern
+- Corporate Communication (Kommunikation) gegenüber den Mitarbeitern
+
+### Was muss einem Mitarbeiter geboten werden?
+
+- Betriebsklima / Integration in das Unternehmen
+- Chance zur persönlichen Entwicklung
+- gescheites Gehalt
+
+### Welche Einflussfaktoren wirken auf die Methode der Personalbeschaffung?
+
+- Arbeitsmarkt (Konjunkturlage)
+- Präferenz des Unternehmens (Womit hat das Unternehmen schon einmal gute Erfahrungen gemacht?)
+- Anforderungsprofil (Was für Qualifikationen werden für die Stelle benötigt?)
+- Unternehmensstandort (in Ballungsräumen/ländlichen Gebieten sind gewisse Qualifikationen leichter zu finden)
+- Budget
+- Zeit
+
+### Welche Methoden der Personalbeschaffung kennen Sie, was sind je ihre Voraussetzungen?
+
+- **durch Mitarbeiter:**
+  - Anreize (bspw. Prämie)
+  - gutes Betriebsklima
+- **initativ:**
+  - gutes Image
+  - gutes Betriebsklima
+- **Presse:**
+  - Kosten
+  - gutes Betriebsklima
+- **Funk/TV:**
+  - Kosten
+  - gutes Betriebsklima
+- **Website:**
+  - Website muss gebaut werden
+  - Kosten
+  - gutes Betriebsklima
+- **soziale Medien:**
+  - Vorteil: große Reichweite
+  - entweder Werbung (kostet) oder Posts (Häufigkeit ist wichtig)
+- **Personaldienstleister:**
+  - Kosten
+
+### Nennen Sie Vorteile der internen Personalbeschaffung!
+
+- Mitarbeiter ist bekannt
+- Mitarbeiter kennt uns
+- Werbekosten sind geringer
+
+### Nennen Sie Nachteile der internen Personalbeschaffung!
+
+- neue Vakanz entsteht
+- keine neues Wissen kommt ins Unternehmen
+- evtl. Betriebsblind
+
+### Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)
+
+| Ausrichtung                  | Änderung             | Beendigung                 |
+| ---------------------------- | -------------------- | -------------------------- |
+| **reaktive Freisetzung**     | Versetzung           | Entlassungen               |
+|                              | Überstundenabbau     | Aufhebungsverträge         |
+|                              | Kurzarbeit           | Outplacement               |
+| **antizipative Freisetzung** | Teilbeschäftigung    | Ausnutzung der Fluktuation |
+|                              | AZ-Flexibilisierung  | Auslaufen befristeter AV   |
+|                              | Urlaubsgestaltung    | Frühverrentung             |
+|                              | Strategische Planung | Outsourcing                |
+|                              |                      | Privatisierung             |
+
 # Marketing
