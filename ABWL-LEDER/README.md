@@ -250,12 +250,6 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
 
 > Die Einflussfaktoren wirken gemeinsam auf die Unternehmenspolitik ein
 
-## Führung und Leitung
-
-- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
-- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
-
-
 ## Aufgaben eines Unternehmens
 
 - **strategisches Ziel:** langfristige (\geq\geq 5y) Erarbeitung, Überarbeitung und Verankerung der Werte und der unternehmerischen Vision
@@ -315,15 +309,22 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
 gehört zum funktionellen Management. Beschreibt den Ablauf des Führens (Personen (Mitarbeiter), Prozessen).
 Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDHGE/dhge-pi19-sem5/tree/main/ABWL-LEDER#der-management-kreislauf-f%C3%BCr-neue-sachen)
 
-**Ablauf des Führens:**
+### Führung und Leitung
 
+- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
+- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
+
+**Ablauf des Führens:**
+<!-- TODO: Eventuell Abschnitt entfernen? Ist eher nichtssagend und scheint auch für Prüfung irrelevant. Kann auch aus den Folien nichts weiteres entnehmen.-->
 - **Aufgabe/Ziel**
 - **Planning:** Analyse und Planung $\rightarrow$ erfordert Aufgabe und Ziel
   - Analyse von: HR, FR, MR
   - Struktur für die Erfüllung von Aufgabe/Ziel
 - **Entscheidung/Koordination:** HR, FR, MR räumlich, zeitlich ordnen
 - **Doing/Realisierung**
-- **Controlling**
+- **Controlling** vs. **Kontrolle**
+  - für **Kontrolle** wird einfach nur kontrolliert, ob eine Aufgabe erfüllt wurde / das Ziel erreicht wurde
+  - **Controlling** hingegen beschreibt eine Einflussnahme auf einen Prozess und dessen Lenkung, Steuerung bzw. Regelung durch Rückkopplungen im laufenden Prozess
 
 ### PDCA
 
