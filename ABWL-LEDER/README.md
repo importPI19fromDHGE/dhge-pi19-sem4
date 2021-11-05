@@ -36,7 +36,7 @@ Allgemeine Betriebswirtschaftslehre
     - [Instanz](#instanz)
     - [Hierarchien](#hierarchien)
     - [Abteilung](#abteilung)
-  - [Wie entsteht die Aufbauorganisation?](#wie-entsteht-die-aufbauorganisation)
+  - [Erarbeitung der Aufbauorganisation](#erarbeitung-der-aufbauorganisation)
     - [Aufgabenanalyse](#aufgabenanalyse)
     - [Aufgabensynthese](#aufgabensynthese)
   - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
