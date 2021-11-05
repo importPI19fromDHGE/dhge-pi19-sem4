@@ -176,13 +176,43 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
   - Nachfragemonopol: nur ein Nachfrager für viele Anbieter 
     - kommt selten vor, vor allem bei staatlichen Ausschreibungen 
 
-## Einflussfaktoren
+## Einflussfaktoren / PESTEL-Analyse
 
-- Gesellschaftsordnung: Kapitalismus
-- Politische Ordnung: Föderalismus
-- Wirtschaftsordnung: soziale Marktwirtschaft
-- Rechtsordnung: Verfassungs-, Straf-, Privat- und Öffentliches Recht
-  - muss wahrgenommen werden, "sonst passiert nichts"
+Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert. Dazu können die PESTEL-Faktoren einbezogen werden, 
+
+Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken. 
+Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf
+
+- **P**olitical / politische Faktoren: 
+  - Stand der Staatorganisation 
+    - politische Ordnung des Landes (demokratisch/totalitär)
+    - Außenpolitik (Export, Einfuhrüberwachung)
+    - Stabilität des Systems 
+- **E**conomic / ökonomische Faktoren: 
+  - Analyse der (volks-)wirtschaftlichen Entwicklung
+    - Wirtschaftswachstum 
+    - Bevölkerungszahl 
+    - Zinsniveau 
+- **S**ocial / soziokulturelle Faktoren 
+  - Gesellschaftliche Umwelt 
+    - Bevölkerungsstruktur 
+    - Bildungswesen 
+    - Kulturelle Besonderheiten
+- **T**echnological / technologische Faktoren 
+  - Analyse der technologischen Entwicklung 
+    - Stand und Entwicklung der Informations- und Kommunikationtechnologie 
+    - Entwicklung der staatlichen und privaten Ausgaben für F&E (Forschung und Entwicklung)
+- **E**nvironmental / ökologisch-geographische Faktoren 
+  - marktspezifische Eckdaten zur Beschaffenheit udn Infrastruktur 
+    - Standort (Klima, Topologie)
+    - Infrastruktur 
+    - natürliche Ressourcen 
+    - Emissionen 
+- **L**egal / rechtliche Einflussfaktoren 
+  - marktspezifische Rechtsorganisationen 
+    - Rechtssystem und Verfassung
+    - Rechtsbewusstsein
+    - Rechtsgebiete (Wettbewerbsrecht, Umweltrecht, ...)
 
 > Die Einflussfaktoren wirken gemeinsam auf die Unternehmenspolitik ein
 
