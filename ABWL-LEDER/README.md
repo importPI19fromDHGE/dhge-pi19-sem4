@@ -866,7 +866,33 @@ Teilkostenrechnung
   - Umsetzung
   - Abnahme der Investition
 
+## Nennen Sie die Kriterien (Arten) der Finanzierung!
+
+- **Fristenbezogen**
+  - Unbefristet (Kontokorrent)
+  - Befristet (Kredit)
+- **Kapitalarten**
+  - Eigenkapital
+  - Fremdkapital
+- **Kapitalherkunft**
+  - Außenfinanzierung
+    - Beteiligungen
+    - Fremdfinanzierung
+  - Innenfinanzierung
+    - aus Erträgen
+    - Freisetzungen
+
 # Protektionswirtschaft
+
+## Nennen Sie die Funktionen/Ziele/Zwecke der Protektionswirtschaft (2)
+
+- Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
+- Förderungsfunktion: eigener Exportwirtschaft Vorteile auf dem internationalen Markt zu verschaffen
+
+## Welche handelspolitischen Maßnahmen in der Protektionswirtschaft kennen Sie? (2)
+
+- tarifäre (nach einer Gebührendverordnung, bspw. Zoll) Handelshemmnisse
+- nicht tarifäre (Sanktionen) Handelshemmnisse
 
 ## Personalbedarf
 
