@@ -593,6 +593,21 @@ In der Klausur sind alle Werte vorgegeben.
   - Wie entwickelt sich das Unternehmen?
   - ist aufgrund branchenspezifischer Konjunktur schwieriger geworden
 
+## Nennen Sie Ziele der Kennzahlen im externen Rechnungswesen
+
+- Problemerkennung
+- Situationsbewertung
+- Darstellung von Zusammenhängen und Abhängigkeiten
+- Grundlage für Entscheidungen
+- Kontrolle von Entscheidungen
+- Benchmark/Vergleich
+
+## Welche Kriterien müssen die Kennzahlen im externen Rechnungswesen erfüllen?
+
+- Vergleichbarkeit
+- Verständlichkeit
+- Benutzerfreundlichkeit
+
 ## Funktionen des externen Rechnungswesens
 
 - Informationsfunktion:
@@ -785,6 +800,71 @@ Teilkostenrechnung
 - Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten/ variable Kosten
 
 # Investition und Finanzierung
+
+## Wie teilen wir Investitionen allgemein ein? (5)
+
+- Objektbezug ("Wir kaufen eine neue Maschine")
+- Hierarchie/Entscheidungsebenen
+- Häufigkeit des Anfallens
+- Umfang (Größenordnung)
+- zu erzielende Wirkung
+
+## Wie ist die Einteilung objektbezogener Investitionen? (3)
+
+- **Sachinvestition:**
+  - Gebäude, Maschine, Roh- und Hilfsstoffe $\rightarrow$ Realinvestition
+  - Abschreibung auf dier Nutzungsdauer
+  - technische und wirtschaftliche Nutzungsdauer können differieren
+- **Finanzinvestition:**
+  - Bankguthaben, festverzinsliche Wertpapiere, gewährte Darlehn $\rightarrow$ Norminalinvestition
+  - Bewertung notewendig (Wertminderung)
+- **imaterielle Investitionen:**
+  - Software und Patente (Abschreibung auf die Nutzungsdauer)
+  - Ausbildung, Fortbildung
+  - Marketing $\rightarrow$ Bekanntheitsgrad
+
+## Wie werden Investitionen hierarchiebezogen eingeteilt?
+
+- strategisch $\rightarrow$ Top-Management
+- taktisch $\rightarrow$ Middle-Management
+- operativ $\rightarrow$ Low-Management
+
+## Wie werden Investitionen umfangsbezogen eingeteilt?
+
+- **Routine:**
+  - geringer Zeitaufwand
+  - Ersatz von Material
+  - GWG, Schreibmaterialbestellung
+- **Unternehmenspolitisch:**
+  - hoher Zeitaufwand
+  - Bedeutend für die Leistungsfähigkeit
+  - Ausrüstung
+
+## Wie werden Investitionen häufigkeitsbezogen eingeteilt?
+
+- einzelne
+- als Folge
+- als Kette
+
+## Wie werden Investitionen wirkungsbezogen eingeteilt?
+
+- Gründung
+- Erweiterung
+
+## Welche Schritte gehören zum Ablauf einer Finanzierung?
+
+- Marktanalyse
+  - SWOT-Analyse
+  - Notwendigkeitsprüfung
+- Entscheidung zur Investition
+  - Umfang und Art der Investition
+  - Notwendige Kapitalstruktur
+- Angebote
+  - LAstenheft und Ausschreibung
+  - Bereitstellung des Kapitals und Zuschlag
+- Realisierung
+  - Umsetzung
+  - Abnahme der Investition
 
 # Protektionswirtschaft
 
