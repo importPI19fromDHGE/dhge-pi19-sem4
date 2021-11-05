@@ -1021,6 +1021,29 @@ Corporate Image
 
 ## Skizzieren Sie das 4 Säulenmodell des Marketings!
 
-| Kommunikation | Preispolitik                                 | Distributionspolitik  |     |
-| ------------- | -------------------------------------------- | --------------------- | --- |
-| Werbung       | Preis abhängig vom Markt (Angebot/Nachfrage) | Absatz und Verteilung |     |
+| Kommunikation | Preispolitik                                 | Distributionspolitik  | Produktpolitik                 |
+| ------------- | -------------------------------------------- | --------------------- | ------------------------------ |
+| Werbung       | Preis abhängig vom Markt (Angebot/Nachfrage) | Absatz und Verteilung | Produktlebenszyklus            |
+|               |                                              |                       | $\rightarrow$ Produktportfolio |
+
+## Skizzieren Sie das AIDA Prinzip!
+
+| A                                                         | I                  | D                               | A                 |
+| --------------------------------------------------------- | ------------------ | ------------------------------- | ----------------- |
+| **Attention**                                             | **Interest**       | **Desire**                      | **Action**        |
+| Wecken von Aufmerksamkeit für Produkt oder Dienstleistung | Interesse Wecken   | Wunsch beim Kunden hervorrufen  | Kunde soll kaufen |
+| Werbung                                                   | Promotion, Werbung | Angebot, Image/Prestige, Bedarf | Vertrag           |
+
+## Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!
+
+- Primärforschung
+  - Beschaffung von noch nicht vorhandenen Daten (Befragungen)
+  - Analyse, Auswertung
+- Sekundärforschung
+  - Auswertung vorhandener Daten
+  - Bon-Analyse, Saisonale, ...
+
+## Unterscheiden Sie Push- und Pullmarketing!
+
+- Push: Entwicklung findet statt, wird auf den Markt geworfen
+- Pull: Entwicklung orientiert sich am Bedürfniss des Marktes
