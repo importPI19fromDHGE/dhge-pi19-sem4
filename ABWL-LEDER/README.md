@@ -87,24 +87,56 @@ Allgemeine Betriebswirtschaftslehre
 
 - **Betrieb:** Ort der Leistungserbringung
 - **Unternehmen:** ganzheitliche, rechtliche, finanzielle und wirtschaftliche Einheit des Betriebs
+  - spezieller Betriebstyp
+  - in einem marktwirtschaftlichen System
+  - nach erwerbswirtschaftlichen Prinzip
+  - auf Basis des Privateigentums und wirtschaftlicher Autonomie
 
-## Merkmale eines Unternehmens
+## grundlegende Merkmale
+Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums. Auf Basis dieser Grundlagen kann (und muss) die Unternehmensführung ihre Entscheidungen treffen.  
 
-- rechtlich, wirtschaftliche und finanzielle organisierte Einheit
+### erwerbswirtschaftliches Prinzip
+
+Im Kapitalismus gilt für (privat-)wirtschaftliche Unternehmen in den meisten Fällen das **erwerbswirtschaftliche Prinzip**. Das bedeutet, dass das Streben nach Gewinn oder eben auch die Minimierung der Verluste als Orientierung verwendet wird. Aufgabe der Unternehmensführung ist es, ebendies zu gewährleisten.
+In einem planwirtschaftlichen System würde demgegenüber das **Bedarfsdeckungsprinzip** stehen. Hier findet die Orientierung nicht an der Gewinnmaxmierung statt, sondern daran, die Bedarfe des Unternehmens (benötigte Produktionsmittel, Beelegschaft, etc.) zu erfüllen. Auch in staatlichen Betrieben, durch welche gemeinnützige Dienstleistungen angeboten werden, wird häufig nach Bedarfsdeckungsprinzip (in diesem Fall **Prinzip der Gemeinnützigkeit**) gearbeitet (Müllentsorgung, Wasser-/Abwasserwirtschaft)
+
+Gewinnmaximierung kann sichergestellt werden durch:
+
+- Liquidität: Erwirtschaften von Financial Resources
+- Nachfrage: Bedarf für Produkte/Dienstleistungen
+- Absatz: Verkauf der Produkte/Dienstleistungen
+- Wachstum: kontinuierliche Verbesserung
+- Beschäftigung: Sicherung von Arbeitsplätzen, inkl. Arbeitsmoral
+
+Die Gewährleistung der Gewinnmaximierung ist Aufgabe der **Unternehmensführung**
+
+### Prinzip der Autonomie
+
+Das Prinzip der Autonomie in **marktwirtschaftlichen Systemen** beschreibt, dass Unternehmen autonom handeln können. Das bedeutet, dass es dem Unternehmen selbst entscheiden kann, welche Produkte oder Dienstleistungen bereitgestellt werden und zu welchen Preisen diese angeboten werden. 
+Auch hier existiert dieses Prinzip in eienr Planwirtschaft nicht. Dort wird zentral entschieden, welche Güter durch welche Akteure angeboten und welche Preise dafür aufgerufen werden. 
+Quelle: https://de.wikipedia.org/wiki/Autonomieprinzip
+
+Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. rechtlichen Bestimmungen entgegenstehen) festgelegt werden. Für die **Unternehmensführung** ergeben sich daraus folgende Aufgaben: 
+
+- Definition der betrieblichen Zielsetzung (SMART-Ziele)
+- Überwachung / Controlling ebendieser Zielsetzung
+- Tragen der Entscheidungskompetenz: Führen und Leiten des Unternehmens
+
+> Begriffsdefinition Führung/Leitung folgt später
+
+### Prinzip des Privateigentums
+
+Das Prinzip des Privateigentums beschreibt, dass die Verfügungsrechte an den Produktionsmitteln und am Gewinn den Eigentümern zustehen. Daher werden sowohl Gewinne als auch Verluste von dem/den Eigentümer/n getragen $\rightarrow$ **unternehmerisches Risiko**
+
+Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitliche Führung zu gewährleisten um der Verantwortung gegenüber den Angestellten und auch Aktionären gerecht zu werden. 
+
+### (weitere) Merkmale eines Unternehmens
+
 - komplexes System aus Ressourcen (HR, MR, FR)
   - HR (Human Ressources) = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
   - MR (Material Ressources) = Maschinen, Gebäude, Material, Lizenzen
   - FR (Financial Ressources) = Finanzielle Mittel -> Eigen- und Fremdkapital
-- weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
-
-### Definition eines Unternehmens
-
-- spezieller Betriebstyp
-- Marktwirtschaftliches System
-- Erwerbswirtschaftliches Prinzip
-- auf Basis des Privateigentums (ein rein staatliches Unternehmens entspricht **nicht** dieser Definition)
-- **führen zu:** wirtschaftlicher Autonomie
 
 ## Wirtschaftliches System - Nachhaltigkeit
 
@@ -125,6 +157,8 @@ Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen
 ![Gesellschaftliche Einordnung](assets/wirtschaftseinheiten.png)<!--height=200px-->
 
 ## Rechtsformen
+
+Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder der Haftung der Beteiligten, werden verschiedenen Rechtsformen unterschieden, welche (nicht komplett) im Folgenden aufgeführt sind
 
 **Einzelunternehmen**
 
@@ -209,19 +243,18 @@ Quelle der folgenden Übersicht: https://www.management-monitor.de/de/infothek/w
     - natürliche Ressourcen 
     - Emissionen 
 - **L**egal / rechtliche Einflussfaktoren 
-  - marktspezifische Rechtsorganisationen 
+  - marktspezifische Rechtsorganisation 
     - Rechtssystem und Verfassung
     - Rechtsbewusstsein
     - Rechtsgebiete (Wettbewerbsrecht, Umweltrecht, ...)
 
 > Die Einflussfaktoren wirken gemeinsam auf die Unternehmenspolitik ein
 
-## Unternehmensführung
+## Führung und Leitung
 
-- Kapitalismus -> langfristige Gewinnmaximierung (**erwerbswirtschaftliches Prinzip**)
-- einheitliche Führung notwendig (Prinzip des Privateigentums)
-- Hauptaufgabe: Definition und Überwachung (Controlling) der betrieblichen Zielsetzungen (Gewinn) = **Autonomieprinzip**
-- Führen als Entscheidungskonzept der Organisation
+- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
+- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
+
 
 ## Aufgaben eines Unternehmens
 
@@ -295,21 +328,6 @@ ist eng mit dem Management-Kreislauf verknüpft.
 
 - **Kontrolle** der Aufgabe/Zielstellung
 - **Controlling:** Einflussnahme/Lenkung/Steuerung $\rightarrow$ Differenz zum erreichenden Ziel $\rightarrow$ Rückkoppelung zur Einflussnahme
-
-## Teilaufgaben der Unternehmensführung
-
-Gewinnmaximierung durch:
-
-- Liquidität: Erwirtschaften von Financial Resources
-- Nachfrage: Bedarf für Produkte/Dienstleistungen
-- Absatz: Verkauf der Produkte/Dienstleistungen
-- Wachstum: kontinuierliche Verbesserung
-- Beschäftigung: Sicherung von Arbeitsplätzen, inkl. Arbeitsmoral
-
-## Führung und Leitung
-
-- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
-- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
 
 ## Organisationsformen
 
