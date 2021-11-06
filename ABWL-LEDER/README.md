@@ -646,7 +646,7 @@ Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem,
   - ggf. Verantwortungsdiffusion 
   - Redundante Kommunikation (An wen muss ich mich wenden?)
 
-#### Stabsliniensystem
+#### Sonderform Stabsliniensystem
 
 - Sonderform des Liniensystems, können bei allen Organisationsformen auftreten
 - beratende Funktion ohne Entscheidungsgewalt
@@ -656,24 +656,149 @@ Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem,
   - **Spezialist**: Fachliche Unterstützung (Rechtsabteilung, Projektorganisation)
 - lt. Folien:**Verrichtungszentralisation**, **Voll- und Teilkompetenzen**, **Einfachunterstellung**
 
+- **Vorteile:**
+  - Entlastung der Linienorganisation
+  - Einsatz von Spezialisten
+- **Nachteile:**
+  - Konfliktpotential
+  - u.U. schlechtes Image -> Mischen sich nur ein
+  - Stabsstelle kann unbefriedigend sein, wenn Empfehlungen nicht umgesetzt werden
+
 ### Organisationsformen (Primärorganisation)
 
-- Sektoral-Organisation
-- Funktional-Organisation
-- Sparten-Organisation
-- Matrix-Organisation
-- Tensor-Organisation
+#### Sektoral-Organisation
+
+Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
+
+> in der VL nicht weiter betrachtet
+
+#### Funktional-Organisation
+
+- es gilt Verrichtungsprinzip: 
+  - Vereinigung möglichst gleichartiger Tätigkeiten 
+- meist als Einlinienorganisation
+- vor allem für kleine bis mittlere Unternehmen geeignet
+- bei größeren Unternehmen Überlastung der Unternehmensspitze möglich
+- **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+
+**Beispiel:**
+(Einrückung der Stichpunkte als Hierarchiebene)
+
+- Geschäftsführung
+  - Verwaltung
+    - Buchhaltung
+    - Personalwesen
+    - IT
+  - Beschaffung
+    - Einkauf
+    - Wareneingang
+    - Lager (Wareneingang)
+  - Produktion
+    - Fertigungsplanung/Steuerung
+    - Fertigung/Montage
+    - Produktionsservice
+  - Vertrieb
+    - Marketing
+    - Verkauf
+    - Lager (Warenausgang)
+
+#### Sparten-Organisation
+
+- auch: Divisionale Organisation
+- Gliederung nach Objekten auf der zweiten (bzw. den oberen) Managementebene(n)
+  - Unterteilung in Sparten
+  - mögliche Objekte, anhand derer die Trennung vollzogen wird:
+    - Produkte $\rightarrow$ Produktorganisation
+    - Regionen $\rightarrow$ Regionalorganisation
+    - Kunden $\rightarrow$ Kundenorganisation
+- Untere Ebenen dann häufig wieder funktional unterteilt
+
+- **Objektdezentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+
+**Beispiel Produktorganisation:**
+(Einrückung der Stichpunkte als Hierarchiebene)
+
+- Geschäftsleitung
+  - Sparte Produkt A
+    - Verwaltung
+    - Einkauf
+    - Verkauf
+    - Produktion
+  - Sparte Produkt B
+    - Verwaltung
+    - Einkauf
+    - Verkauf
+    - Produktion
+  - Sparte Produkt C
+    - ...
+
+|Vorteile|Nachteile|
+|---|---|
+|Sparten sind flexibler und erreichen größere Marktnähe|Informations-, Know-How- und Erfahrungsaustausch zwischen den Sparten schwierig|
+|geringerer Koordinationsaufwand für Unternehmensspitze|Mögliche Synergien zu wenig genutzt|
+|höhere Motivation durch höhere Verantwortung|höherer Bedarf an Führungskräften|
+|höhere Identifikation der Mitarbeiter mit dem Unternehmen/Bereich|Verselbstständigung der einzelnen Sparten und Vernachlässigung übergeordneter Ziele (Spartenegoismus)|
+|bessere Zuordnung von Erfolgen und Misserfolgen||
+
+#### Matrix-Organisation
+
+- Mehrliniensystem, welches sowohl funktional als auch objektorientiert organisiert ist
+- funktionale Organisation dabei häufig die Liniendimension (vertikale Aufteilung)
+- objektorientierte Organisation hingegen für horizontale Einteilung
+- Merkmale: **Zentrale und dezentrale Abteilungen**, **Doppelunterstellung**, **Voll- und Teilkompetenzen**
+- schnelle Kommunikation möglich
+- Gefahr von Kompetenzgerangel und administrativer Redundanz
+
+#### Tensor-Organisation
+
+> nicht weiter in VL behandelt
+
+- Weiterentwicklung der Matrixorganisation
+- weiteres Gliederungsprinzip (z.B. Region) erhöht Flexibilität, aber auch Unübersichtlichkeit
 
 ### Organisationsformen (Sekundärorganisation)
 
-- Center-Organisation (Formen (sind alle miteinander kombinierbar): Revenue-Center, Cost-Center, Profit-Center, Investment-Center)
-  - $\rightarrow$ ermöglicht Dezentralität; braucht Bereiche, die Entscheidungsfreiheit haben
+- sind aus den Grundformen abgeleitete Organisationsformen, welche für spezielle Handlungsfelder geeignet sind
+- die Verbindung der Stellen untereinander wird hier auf besondere Gegebenheiten der Handlungsfelder angepasst
+
+**Formen:**
+
+- Center-Organisation
 - Holding-Organisation
-- SGE-Management
-- Produkt-Management
-- Prozess-Management
-- Kunden-Management
-- Projekt-Management
+- SGE-Organisation
+- Produktmanagement
+- Prozessmanagement
+- Kundenmanagement
+- Projektmanagement
+
+#### Center-Organsiation
+
+- von der Spartenorganisation abgeleitete Form
+- Erfolgsverantwortung wird an die Center delegiert
+- bereichsübergreifende Aufgabenwahrnehmung (Leistungen für interne Kunden)
+- Objekte der Unterteilung sind für die Center-Organisation hierfür definierte Kenngrößen:
+  - Profit-Center $\rightarrow$ Erfolgsorientierte Sparte (Kenngröße = Gewinn)
+  - Cost-Center $\rightarrow$ Kostenorientierte Sparte (Kenngröße = Kostenminimierung)
+  - Revenue-Center $\rightarrow$ Umsatzorientierte Sparte (Kenngröße = Umsatz)
+  - Investment-Center $\rightarrow$ Gewinnverwendende Sparte (Kenngröße = Return on Investment)
+
+## Lernziele
+
+- Sie kennen die Instrumente zur Erstellung einer Ablauforganisation.
+  - **Kommentar: wahrscheinlich ist Aufbauorganisation gemeint?**
+- Sie können Aufgabenanalyse und -synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern.
+  - **Kommentar: ebenso?**
+- Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
+- Sie beherrschen den Überblick über die Organisationsformen
+- Sie kennen die drei Linienorganisationen
+- Sie beherrschen die Darstellung und Erläuterung folgender Formen:
+  - Funktionalorganisation
+  - Spartenorganisation
+  - Matrixorganisation
+  - Centerorganisation
+- Sie können Vor- und Nachteile aus den Strukturen ableiten
+
+<!--TODO: Vorangegangenes nochmal danach durchsehen, ob die Beantwortung der Fragen daraus abgleitet werden kann. Zudem Typo-Check-->
 
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
 
