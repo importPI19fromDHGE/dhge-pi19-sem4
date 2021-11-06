@@ -582,6 +582,17 @@ So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mita
 - Häufig bei horizontaler Kommunikation
 - hierzu zählen "Tür- und Angelgespräche", "Buschfunk" und der "kleine Dienstweg"
 
+#### Informationsmittel
+
+- Schwarzes Brett
+- Geschäftsbericht
+- Mitarbeiterbroschüre
+- Intranet / Internet
+- Personal-Informationen
+- Belehrungs-Unterlagen
+- Brief der Geschäftsführung
+- Mitarbeiterzeitung
+
 ## Umsetzung von Verantwortung
 
 - **Definition:** Übergabe durch den Vorgesetzten $\rightarrow$ Übernahme durch den Mitarbeiter $\rightarrow$ Pflicht der Aufgabe/Ziel (Erfüllung) = Verantwortung
