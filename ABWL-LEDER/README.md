@@ -796,7 +796,6 @@ Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
   - Revenue-Center $\rightarrow$ Umsatzorientierte Sparte (Kenngröße = Umsatz)
   - Investment-Center $\rightarrow$ Gewinnverwendende Sparte (Kenngröße = Return on Investment)
 
-
 <!--TODO: Vorangegangenes nochmal danach durchsehen, ob die Beantwortung der Fragen daraus abgleitet werden kann. Zudem Typo-Check-->
 
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
