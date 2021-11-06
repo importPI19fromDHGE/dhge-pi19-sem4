@@ -507,7 +507,7 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 
 ## Instrumente der Aufbauorganisation
 
-### Organigramm 
+### Organigramm
 
 > zusätzliche Quellen für diesen Abschnitt: <https://de.wikipedia.org/wiki/Organigramm>
 
@@ -544,10 +544,10 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
   - **Vertretungskompetenzen**
 - **Anforderungsprofil**
   - **Fachlich:** Welche Qualifikation wird benötigt?
-  - **Methodisch:** 
-    - Wie sollen Aufgaben erledigt werden? 
-    - Wie soll geführt werden? 
-  - **Persönlich:** 
+  - **Methodisch:**
+    - Wie sollen Aufgaben erledigt werden?
+    - Wie soll geführt werden?
+  - **Persönlich:**
     - Individuelle Kompetenzen
     - Soziale Kompetenzen
 
@@ -557,7 +557,7 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
 
 - Vermeidung von Kompetenzüberschreitungen und Doppelarbeit: Stellen sind voneinander genau abgegrenzt
 - Dauerhafte Aufgaben sind klar geregelt: Vorgesetzte werden entlastet
-- Basis von Personalplanung und Personalentwicklung: 
+- Basis von Personalplanung und Personalentwicklung:
   - Personalbedarf kann genau bestimmt werden (Quantität und Qualität der MA)
   - Grundlage für Stellenanzeigen und MA-Auswahl
   - Wurde die Stellenbeschreibung durch den MA gut ausgefüllt?
@@ -567,7 +567,7 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
 ### Informationsfluss
 
 Um eine optimale Kommunikation in der Organisation zu gewährleisten, sollte für die Aufbauorganisation auch die Effizienz des Informationsflusses betrachtet werden.
-So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mitarbeiter erreichen, ohne in der Vielzahl der Eindrücke im Arbeitsalltag unterzugehen. 
+So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mitarbeiter erreichen, ohne in der Vielzahl der Eindrücke im Arbeitsalltag unterzugehen.
 
 #### Einteilung nach Richtung der Kommunikation
 
@@ -629,6 +629,7 @@ Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem,
 
 - alle drei Systeme sind zentral organisiert
 - auch als Leitungssysteme bezeichnet
+
 > zusätzliche Quellen: <http://www.online-lehrbuch-bwl.de/lehrbuch/kap3/trad_aufb/trad_aufb.PDF> und <https://de.wikipedia.org/wiki/Prim%C3%A4rorganisation>
 
 #### Einliniensystem
@@ -657,7 +658,7 @@ Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem,
   - Entlastung der Vorgesetzten
   - kürzere Informationswege
 - **Nachteile:**
-  - ggf. Verantwortungsdiffusion 
+  - ggf. Verantwortungsdiffusion
   - Redundante Kommunikation (An wen muss ich mich wenden?)
 
 #### Sonderform Stabsliniensystem
@@ -688,8 +689,8 @@ Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
 
 #### Funktional-Organisation
 
-- es gilt Verrichtungsprinzip: 
-  - Vereinigung möglichst gleichartiger Tätigkeiten 
+- es gilt Verrichtungsprinzip:
+  - Vereinigung möglichst gleichartiger Tätigkeiten
 - meist als Einlinienorganisation
 - vor allem für kleine bis mittlere Unternehmen geeignet
 - bei größeren Unternehmen Überlastung der Unternehmensspitze möglich
