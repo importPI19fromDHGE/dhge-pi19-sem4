@@ -64,7 +64,6 @@ Allgemeine Betriebswirtschaftslehre
       - [Tensor-Organisation](#tensor-organisation)
     - [Organisationsformen (Sekundärorganisation)](#organisationsformen-sekund%C3%A4rorganisation)
       - [Center-Organsiation](#center-organsiation)
-  - [Lernziele](#lernziele)
 - [Personalplanung, -Bedarf, -Deckung, -Entwicklung](#personalplanung--bedarf--deckung--entwicklung)
   - [Qualitative und quantitative Personalplanung](#qualitative-und-quantitative-personalplanung)
   - [Personalbedarfsplanung](#personalbedarfsplanung)
