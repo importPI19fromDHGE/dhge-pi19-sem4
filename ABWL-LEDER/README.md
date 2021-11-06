@@ -493,13 +493,28 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 
 ## Instrumente der Aufbauorganisation
 
-<!--TODO: Ab hier weiter überarbeiten-->
+### Organigramm 
 
-- **Organigramm**
-  - Hierarchie
-    - Beziehungen
-    - Aufgabenverteilung
-    - Unterstellung
+> zusätzliche Quellen für diesen Abschnitt: <https://de.wikipedia.org/wiki/Organigramm>
+
+Um die Beziehungen und Hierarchien innerhalb der Aufbauorganisation darzustellen werden häufig Organigramme benutzt.
+Ein übersichtlich erstelltes Organigramm kann viele Überlegungen bezüglich der Organisationsstruktur erleichtern.
+Es schafft einen Überblick, um Personal- und Ressourcenplanung zu erleichtern und kann neuen Mitarbeitern dabei helfen, sich zu orientieren.
+
+**Inhalt des Organigramms:**
+
+- Verteilung betrieblicher Aufgaben auf Stellen und Abteilungen
+- hierarchische Struktur der Aufbau- bzw. Leitungsorganisation und der Weisungsbeziehungen
+- Einordnung von Leitungshilfsstellen
+- Personelle Besetzung
+
+![Beispiel für Organigramm](https://upload.wikimedia.org/wikipedia/commons/2/22/Organigramm_2.png)<!--height=200px-->
+> Quelle: <https://commons.wikimedia.org/wiki/File:Organigramm_2.png>
+
+### Stellenbeschreibung 
+
+### Informationsfluss
+
 - **Informationsfluss**
   - Kommunikation
     - Top-Down
@@ -532,10 +547,6 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 - Personalbeurteilung: Maßstab der Leistung der Mitarbeiter
 - Personalentwicklung: Maßstab der Mitarbeiter-Entwicklung
 
-### Organigramm
-
-- Hierarchische Unterstellung oder Aufgabenverteilung (Beziehungen)
-- Funktionalität
 
 ### Informationsfluss
 
