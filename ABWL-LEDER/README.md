@@ -593,11 +593,11 @@ So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mita
 - Brief der Geschäftsführung
 - Mitarbeiterzeitung
 
-## Umsetzung von Verantwortung
+### Umsetzung von Verantwortung
 
 - **Definition:** Übergabe durch den Vorgesetzten $\rightarrow$ Übernahme durch den Mitarbeiter $\rightarrow$ Pflicht der Aufgabe/Ziel (Erfüllung) = Verantwortung
 
-**Verantwortung in der Centerorganisation**
+#### Beispiel: Verantwortung in der Centerorganisation
 
 - = Betrachtung des Kapitalflusses
 - Investment-Center: RoI - Return on Investment
@@ -605,19 +605,56 @@ So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mita
 - Cost-Center: Verteilung von Kosten
 - Umsatz/Revenue-Center: Umsatz-Leistung
 
-## Systemeinteilung
+## Organisationsformen
 
->
-> Hier müsste Einiges noch aus den Folien übernommen werden.
->
+Für die Betrachtung der Organisationsformen können diese nach **Liniensystemen**, **Primärorganisation** und **Sekundärorganisation** eingeteilt werden.
+Nicht jede Organisationsform eignet sich dabei für jedes Unternehmen, sondern sollte anhand der Anforderungen entscheiden werden.
+Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem, wie feingranular die Betrachtung erfolgt.
 
 ### Linienorganisation/Liniensysteme
 
-> alle drei Systeme sind zentral organisiert
+- alle drei Systeme sind zentral organisiert
+- auch als Leitungssysteme bezeichnet
+> zusätzliche Quellen: <http://www.online-lehrbuch-bwl.de/lehrbuch/kap3/trad_aufb/trad_aufb.PDF> und <https://de.wikipedia.org/wiki/Prim%C3%A4rorganisation>
 
-- **Einliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Vollkompetenz (= Fachkompetenz + disziplinarische Kompetenz)
-- **Mehrliniensystem:** Verrichtungszentralisation, Mehrfachunterstellung, Voll- und Teilkompetenzen
-- **Stabsliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Voll- und Teilkompetenzen
+#### Einliniensystem
+
+- **Einfachunterstellung**: jeder Mitarbeiter hat *einen* direkten Vorgesetzten
+- er erhält daher nur von *einer* übergeordneten Stelle Anweisungen
+- dadurch entsteht der sogenannte (lange) **Dienstweg**
+- **Verrichtungszentralisation**: gleichartige Aufgaben werden in einer organisatorischen Einheit zusammengefasst
+- **Vollkompetenz** min jeder Hierarchieebene
+
+- **Vorteile:**
+  - Klare Befugnisse und Verantwortungen
+  - Eindeutiger Dienstweg
+- **Nachteile:**
+  - Längere Informationswege
+  - ggf. Überlastung der Vorgesetzten: alles über deren Tisch
+
+#### Mehrliniensystem
+
+- wie auch im Einliniensystem gibt es eine **Verrichtungszentralisation**
+- **Mehrfachunterstellung**: jeder Mitarbeiter hat mehrere Vorgesetzte, von denen er Aufträge erhält
+- Prinzip des kürzeren Wegs
+- sowohl **Vollkompetenz** als auch **Teilkompetenz**
+
+- **Vorteile:**
+  - Entlastung der Vorgesetzten
+  - kürzere Informationswege
+- **Nachteile:**
+  - ggf. Verantwortungsdiffusion 
+  - Redundante Kommunikation (An wen muss ich mich wenden?)
+
+#### Stabsliniensystem
+
+- Sonderform des Liniensystems, können bei allen Organisationsformen auftreten
+- beratende Funktion ohne Entscheidungsgewalt
+- sinnvoll bei Überforderung der Instanz durch fehlende Fachkenntnis oder Überhang an administrativer Tätigkeit
+- eine Stabsstelle wird als Unterstützung für Instanzen eingerichtet
+  - **Generalist**: Prinzipielle Unterstützung (Assistenz der Geschäftsführung)
+  - **Spezialist**: Fachliche Unterstützung (Rechtsabteilung, Projektorganisation)
+- lt. Folien:**Verrichtungszentralisation**, **Voll- und Teilkompetenzen**, **Einfachunterstellung**
 
 ### Organisationsformen (Primärorganisation)
 
