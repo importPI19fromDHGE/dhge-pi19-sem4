@@ -797,21 +797,6 @@ Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
   - Revenue-Center $\rightarrow$ Umsatzorientierte Sparte (Kenngröße = Umsatz)
   - Investment-Center $\rightarrow$ Gewinnverwendende Sparte (Kenngröße = Return on Investment)
 
-## Lernziele
-
-- Sie kennen die Instrumente zur Erstellung einer Ablauforganisation.
-  - **Kommentar: wahrscheinlich ist Aufbauorganisation gemeint?**
-- Sie können Aufgabenanalyse und -synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern.
-  - **Kommentar: ebenso?**
-- Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
-- Sie beherrschen den Überblick über die Organisationsformen
-- Sie kennen die drei Linienorganisationen
-- Sie beherrschen die Darstellung und Erläuterung folgender Formen:
-  - Funktionalorganisation
-  - Spartenorganisation
-  - Matrixorganisation
-  - Centerorganisation
-- Sie können Vor- und Nachteile aus den Strukturen ableiten
 
 <!--TODO: Vorangegangenes nochmal danach durchsehen, ob die Beantwortung der Fragen daraus abgleitet werden kann. Zudem Typo-Check-->
 
