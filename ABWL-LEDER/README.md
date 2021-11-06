@@ -538,6 +538,7 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
     - Soziale Kompetenzen
 
 #### Vorteile der Stellenbeschreibung
+
 > Quelle: <http://www.stellenbeschreibungen.info/was-ist-eine-stellenbeschreibung/> und Vorlesung
 
 - Vermeidung von Kompetenzüberschreitungen und Doppelarbeit: Stellen sind voneinander genau abgegrenzt
@@ -551,17 +552,37 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
 
 ### Informationsfluss
 
-**Formelle Wege**
+Um eine optimale Kommunikation in der Organisation zu gewährleisten, sollte für die Aufbauorganisation auch die Effizienz des Informationsflusses betrachtet werden.
+So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mitarbeiter erreichen, ohne in der Vielzahl der Eindrücke im Arbeitsalltag unterzugehen. 
 
-- Top-Down: Entscheidung/Ziel/Aufgabe wird weitergegeben
-- Bottom-Up: Informationen kommen vom Arbeitsplatz
-- Beides zusammen: "Gegenstromverfahren"
+#### Einteilung nach Richtung der Kommunikation
 
-**Informelle Wege**
+**Horizontale Kommunikation**
 
-- "Kleiner Dienstweg", "Buschfunk"
+- beschreibt die Kommunikation zwischen Stellen auf der selben Hierarchieebene
+- Beispiele:
+  - fachlicher Austausch unter Kollegen
+  - Kommunikation zur Prozesskoordination
 
-### Umsetzung von Verantwortung
+**Vertikale Kommunikation**
+
+- Kommunikationsfluss zwischen den Hierarchieebenen
+- soll Grundwerte des Unternehmens, Ziele und Philosophie vermitteln
+- ebenso zur Vermittlung von Anforderungen und Rückemldung zu Projektständen
+
+#### Einteilung nach Art der Kommunikation
+
+**Formelle Kommunikation**
+
+- vor allem bei vertikaler Kommunikation
+- entweder **Top-Down** (Vorgesetzte zu Mitarbeitern) oder **Bottom-Up** (Mitarbeiter zu Vorgesetzten) oder beides zusammen (**Gegenstromverfahren**)
+
+**Informelle Kommunikation**
+
+- Häufig bei horizontaler Kommunikation
+- hierzu zählen "Tür- und Angelgespräche", "Buschfunk" und der "kleine Dienstweg"
+
+## Umsetzung von Verantwortung
 
 - **Definition:** Übergabe durch den Vorgesetzten $\rightarrow$ Übernahme durch den Mitarbeiter $\rightarrow$ Pflicht der Aufgabe/Ziel (Erfüllung) = Verantwortung
 
