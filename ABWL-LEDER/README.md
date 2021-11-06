@@ -518,26 +518,26 @@ Zudem verliert es, wenn es nicht regelmäßig gepflegt wird, durch Mitarbeiterwe
 Ein weiteres wichtiges Element der Aufbauorganisation ist die Stellenbeschreibung.
 Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden durch die Stellenbeschreibung "mit Leben gefüllt".
 
-**Inhalt der Stellenbeschreibung:**
+#### Inhalt der Stellenbeschreibung
 
-- Aufgaben
-  - Bezeichnung: Bezeichnung der Stelle / Ordnungsnummer
-  - Über-/Unterstellung: Wo befindet sich die Stelle in der Hierarchie?
-  - Aufgaben: Formulierung der Hauptaufgaben (5-7)
-  - Ziele: nach SMART
-  - Befugnisse: Entscheidungskompetenzen
-  - Verantwortungskompetenzen
-  - Vertretungskompetenzen
-- Anforderungsprofil
-  - Fachlich: Welche Qualifikation wird benötigt?
-  - Methodisch: 
+- **Aufgaben**
+  - **Bezeichnung:** Bezeichnung der Stelle / Ordnungsnummer
+  - **Über-/Unterstellung:** Wo befindet sich die Stelle in der Hierarchie?
+  - **Aufgaben:** Formulierung der Hauptaufgaben (5-7)
+  - **Ziele:** nach SMART
+  - **Befugnisse:** Entscheidungskompetenzen
+  - **Verantwortungskompetenzen**
+  - **Vertretungskompetenzen**
+- **Anforderungsprofil**
+  - **Fachlich:** Welche Qualifikation wird benötigt?
+  - **Methodisch:** 
     - Wie sollen Aufgaben erledigt werden? 
     - Wie soll geführt werden? 
-  - Persönlich: 
+  - **Persönlich:** 
     - Individuelle Kompetenzen
     - Soziale Kompetenzen
 
-**Vorteile der Stellenbeschreibung**
+#### Vorteile der Stellenbeschreibung
 > Quelle: <http://www.stellenbeschreibungen.info/was-ist-eine-stellenbeschreibung/> und Vorlesung
 
 - Vermeidung von Kompetenzüberschreitungen und Doppelarbeit: Stellen sind voneinander genau abgegrenzt
@@ -548,41 +548,6 @@ Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden d
   - Wurde die Stellenbeschreibung durch den MA gut ausgefüllt?
     - Grundlage für Entwicklungsgespräche und Lohnverhandlungen
 - tragen zur Verbesserung des Betriebsklimas bei
-
-### Informationsfluss
-
-- **Informationsfluss**
-  - Kommunikation
-    - Top-Down
-    - Bottom-Up
-- **Stellenbeschreibung**
-  - Anforderungen
-    - Aufgabenbeschreibung
-    - Anforderungsprofil
-
-### Inhalt einer Stelle
-
-- Ausführungsfunktion
-- Leitungsfunktion: Zeit- und Selbstmanagement
-  - Anforderungen: fachliche, methodische, persönliche Kenntnisse
-- Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
-- Stellen mit gleicher Befugnis = Hierarchieebene
-
-## Darstellung der Organisation
-
-### Moderne Stellenbeschreibung
-
-- Rahmen für Mitarbeiter in der Organisation
-- Anforderungsprofil: fachlich, methodisch, persönlich
-- Aufgabenbeschreibung: Bezeichnung, Über-/Unterstellung, wesentliche Aufgaben, Ziele, Befugnisse, Verantwortung, Vertretung
-
-- **Nutzen der Stellenbeschreibung:**
-
-- Personalbedarf: Quantität und Qualität der Mitarbeiter; Stellenanzeige
-- Personalauswahl: Maßstab der Erfüllung
-- Personalbeurteilung: Maßstab der Leistung der Mitarbeiter
-- Personalentwicklung: Maßstab der Mitarbeiter-Entwicklung
-
 
 ### Informationsfluss
 
