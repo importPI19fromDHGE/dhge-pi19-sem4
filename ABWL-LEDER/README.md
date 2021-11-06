@@ -500,6 +500,8 @@ Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, S
 Um die Beziehungen und Hierarchien innerhalb der Aufbauorganisation darzustellen werden häufig Organigramme benutzt.
 Ein übersichtlich erstelltes Organigramm kann viele Überlegungen bezüglich der Organisationsstruktur erleichtern.
 Es schafft einen Überblick, um Personal- und Ressourcenplanung zu erleichtern und kann neuen Mitarbeitern dabei helfen, sich zu orientieren.
+Die Erstellung des Organigramms kann vor allem für größere Organisationen sehr zeitaufwändig sein.
+Zudem verliert es, wenn es nicht regelmäßig gepflegt wird, durch Mitarbeiterwechsel oder Umstrukturierungen schnell an Aktualität.
 
 **Inhalt des Organigramms:**
 
@@ -511,7 +513,41 @@ Es schafft einen Überblick, um Personal- und Ressourcenplanung zu erleichtern u
 ![Beispiel für Organigramm](https://upload.wikimedia.org/wikipedia/commons/2/22/Organigramm_2.png)<!--height=200px-->
 > Quelle: <https://commons.wikimedia.org/wiki/File:Organigramm_2.png>
 
-### Stellenbeschreibung 
+### Stellenbeschreibung
+
+Ein weiteres wichtiges Element der Aufbauorganisation ist die Stellenbeschreibung.
+Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden durch die Stellenbeschreibung "mit Leben gefüllt".
+
+**Inhalt der Stellenbeschreibung:**
+
+- Aufgaben
+  - Bezeichnung: Bezeichnung der Stelle / Ordnungsnummer
+  - Über-/Unterstellung: Wo befindet sich die Stelle in der Hierarchie?
+  - Aufgaben: Formulierung der Hauptaufgaben (5-7)
+  - Ziele: nach SMART
+  - Befugnisse: Entscheidungskompetenzen
+  - Verantwortungskompetenzen
+  - Vertretungskompetenzen
+- Anforderungsprofil
+  - Fachlich: Welche Qualifikation wird benötigt?
+  - Methodisch: 
+    - Wie sollen Aufgaben erledigt werden? 
+    - Wie soll geführt werden? 
+  - Persönlich: 
+    - Individuelle Kompetenzen
+    - Soziale Kompetenzen
+
+**Vorteile der Stellenbeschreibung**
+> Quelle: <http://www.stellenbeschreibungen.info/was-ist-eine-stellenbeschreibung/> und Vorlesung
+
+- Vermeidung von Kompetenzüberschreitungen und Doppelarbeit: Stellen sind voneinander genau abgegrenzt
+- Dauerhafte Aufgaben sind klar geregelt: Vorgesetzte werden entlastet
+- Basis von Personalplanung und Personalentwicklung: 
+  - Personalbedarf kann genau bestimmt werden (Quantität und Qualität der MA)
+  - Grundlage für Stellenanzeigen und MA-Auswahl
+  - Wurde die Stellenbeschreibung durch den MA gut ausgefüllt?
+    - Grundlage für Entwicklungsgespräche und Lohnverhandlungen
+- tragen zur Verbesserung des Betriebsklimas bei
 
 ### Informationsfluss
 
