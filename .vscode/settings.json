@@ -1,0 +1,12 @@
+{
+	"markdownlint.config": {
+		"default": true,
+		"MD003": false,
+		"MD036": false,
+		"MD041": false,
+		"MD025": false,
+		"MD026": false,
+		"MD013": false,
+		"MD029": { "style": "ordered" }
+	}
+}
