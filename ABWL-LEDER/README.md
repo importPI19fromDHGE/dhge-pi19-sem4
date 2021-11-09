@@ -847,7 +847,7 @@ Teilkostenrechnung
 - **Finanzinvestition:**
   - Bankguthaben, festverzinsliche Wertpapiere, gewährte Darlehn $\rightarrow$ Norminalinvestition
   - Bewertung notewendig (Wertminderung)
-- **imaterielle Investitionen:**
+- **immaterielle Investitionen:**
   - Software und Patente (Abschreibung auf die Nutzungsdauer)
   - Ausbildung, Fortbildung
   - Marketing $\rightarrow$ Bekanntheitsgrad
