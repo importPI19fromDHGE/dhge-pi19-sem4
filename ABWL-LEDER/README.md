@@ -470,7 +470,8 @@ Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese str
 Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
 > zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabensynthese>
-> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter <http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg>
+> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter
+![Übersicht zu Aufgabenanalyse und -synthese](http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg)<!--width=200px-->
 
 ## Möglichkeiten der Führungshierarchie
 
