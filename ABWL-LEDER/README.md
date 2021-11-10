@@ -842,11 +842,11 @@ Teilkostenrechnung
 
 - **Sachinvestition:**
   - Gebäude, Maschine, Roh- und Hilfsstoffe $\rightarrow$ Realinvestition
-  - Abschreibung auf dier Nutzungsdauer
+  - Abschreibung auf die Nutzungsdauer
   - technische und wirtschaftliche Nutzungsdauer können differieren
 - **Finanzinvestition:**
   - Bankguthaben, festverzinsliche Wertpapiere, gewährte Darlehn $\rightarrow$ Norminalinvestition
-  - Bewertung notewendig (Wertminderung)
+  - Bewertung notwendig (Wertminderung)
 - **immaterielle Investitionen:**
   - Software und Patente (Abschreibung auf die Nutzungsdauer)
   - Ausbildung, Fortbildung
