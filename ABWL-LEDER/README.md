@@ -64,6 +64,8 @@ Allgemeine Betriebswirtschaftslehre
   - [Innerbetriebliche Personalentwicklung](#innerbetriebliche-personalentwicklung)
     - [Mitarbeitermarketing](#mitarbeitermarketing)
 - [Externes Rechnungswesen](#externes-rechnungswesen)
+  - [Nennen Sie Ziele der Kennzahlen im externen Rechnungswesen](#nennen-sie-ziele-der-kennzahlen-im-externen-rechnungswesen)
+  - [Welche Kriterien müssen die Kennzahlen im externen Rechnungswesen erfüllen?](#welche-kriterien-m%C3%BCssen-die-kennzahlen-im-externen-rechnungswesen-erf%C3%BCllen)
   - [Funktionen des externen Rechnungswesens](#funktionen-des-externen-rechnungswesens)
   - [Kriterien d. externen Rechnungswesens](#kriterien-d-externen-rechnungswesens)
   - [Wer braucht was](#wer-braucht-was)
@@ -74,8 +76,35 @@ Allgemeine Betriebswirtschaftslehre
   - [Balance Score Card](#balance-score-card)
   - [Kosten- Leistungsrechnung](#kosten--leistungsrechnung)
 - [Investition und Finanzierung](#investition-und-finanzierung)
+  - [Wie teilen wir Investitionen allgemein ein? (5)](#wie-teilen-wir-investitionen-allgemein-ein-5)
+  - [Wie ist die Einteilung objektbezogener Investitionen? (3)](#wie-ist-die-einteilung-objektbezogener-investitionen-3)
+  - [Wie werden Investitionen hierarchiebezogen eingeteilt?](#wie-werden-investitionen-hierarchiebezogen-eingeteilt)
+  - [Wie werden Investitionen umfangsbezogen eingeteilt?](#wie-werden-investitionen-umfangsbezogen-eingeteilt)
+  - [Wie werden Investitionen häufigkeitsbezogen eingeteilt?](#wie-werden-investitionen-h%C3%A4ufigkeitsbezogen-eingeteilt)
+  - [Wie werden Investitionen wirkungsbezogen eingeteilt?](#wie-werden-investitionen-wirkungsbezogen-eingeteilt)
+  - [Welche Schritte gehören zum Ablauf einer Finanzierung?](#welche-schritte-geh%C3%B6ren-zum-ablauf-einer-finanzierung)
+  - [Nennen Sie die Kriterien (Arten) der Finanzierung!](#nennen-sie-die-kriterien-arten-der-finanzierung)
 - [Protektionswirtschaft](#protektionswirtschaft)
+  - [Nennen Sie die Funktionen/Ziele/Zwecke der Protektionswirtschaft (2)](#nennen-sie-die-funktionenzielezwecke-der-protektionswirtschaft-2)
+  - [Welche handelspolitischen Maßnahmen in der Protektionswirtschaft kennen Sie? (2)](#welche-handelspolitischen-ma%C3%9Fnahmen-in-der-protektionswirtschaft-kennen-sie-2)
+  - [Personalbedarf](#personalbedarf)
+    - [Was gehört zum qualitativen Personalbedarf?](#was-geh%C3%B6rt-zum-qualitativen-personalbedarf)
+    - [Was gehört zum quantitativen Personalbedarf?](#was-geh%C3%B6rt-zum-quantitativen-personalbedarf)
+    - [Unter welcher Bedingung muss der Personalbedarf erreichbar sein?](#unter-welcher-bedingung-muss-der-personalbedarf-erreichbar-sein)
+  - [Personalbeschaffung](#personalbeschaffung)
+    - [Wofür steht CI?](#wof%C3%BCr-steht-ci)
+    - [Woraus setzt sich die CI zusammen?](#woraus-setzt-sich-die-ci-zusammen)
+    - [Was muss einem Mitarbeiter geboten werden?](#was-muss-einem-mitarbeiter-geboten-werden)
+    - [Welche Einflussfaktoren wirken auf die Methode der Personalbeschaffung?](#welche-einflussfaktoren-wirken-auf-die-methode-der-personalbeschaffung)
+    - [Welche Methoden der Personalbeschaffung kennen Sie, was sind je ihre Voraussetzungen?](#welche-methoden-der-personalbeschaffung-kennen-sie-was-sind-je-ihre-voraussetzungen)
+    - [Nennen Sie Vorteile der internen Personalbeschaffung!](#nennen-sie-vorteile-der-internen-personalbeschaffung)
+    - [Nennen Sie Nachteile der internen Personalbeschaffung!](#nennen-sie-nachteile-der-internen-personalbeschaffung)
+    - [Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)](#welche-instrumente-der-freisetzung-kennen-sie-personalanpassung)
 - [Marketing](#marketing)
+  - [Skizzieren Sie das 4 Säulenmodell des Marketings!](#skizzieren-sie-das-4-s%C3%A4ulenmodell-des-marketings)
+  - [Skizzieren Sie das AIDA Prinzip!](#skizzieren-sie-das-aida-prinzip)
+  - [Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!](#unterscheiden-sie-die-marktforschung-in-prim%C3%A4re-und-sekund%C3%A4re-forschung)
+  - [Unterscheiden Sie Push- und Pullmarketing!](#unterscheiden-sie-push--und-pullmarketing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -593,6 +622,21 @@ In der Klausur sind alle Werte vorgegeben.
   - Wie entwickelt sich das Unternehmen?
   - ist aufgrund branchenspezifischer Konjunktur schwieriger geworden
 
+## Nennen Sie Ziele der Kennzahlen im externen Rechnungswesen
+
+- Problemerkennung
+- Situationsbewertung
+- Darstellung von Zusammenhängen und Abhängigkeiten
+- Grundlage für Entscheidungen
+- Kontrolle von Entscheidungen
+- Benchmark/Vergleich
+
+## Welche Kriterien müssen die Kennzahlen im externen Rechnungswesen erfüllen?
+
+- Vergleichbarkeit
+- Verständlichkeit
+- Benutzerfreundlichkeit
+
 ## Funktionen des externen Rechnungswesens
 
 - Informationsfunktion:
@@ -786,6 +830,223 @@ Teilkostenrechnung
 
 # Investition und Finanzierung
 
+## Wie teilen wir Investitionen allgemein ein? (5)
+
+- Objektbezug ("Wir kaufen eine neue Maschine")
+- Hierarchie/Entscheidungsebenen
+- Häufigkeit des Anfallens
+- Umfang (Größenordnung)
+- zu erzielende Wirkung
+
+## Wie ist die Einteilung objektbezogener Investitionen? (3)
+
+- **Sachinvestition:**
+  - Gebäude, Maschine, Roh- und Hilfsstoffe $\rightarrow$ Realinvestition
+  - Abschreibung auf die Nutzungsdauer
+  - technische und wirtschaftliche Nutzungsdauer können differieren
+- **Finanzinvestition:**
+  - Bankguthaben, festverzinsliche Wertpapiere, gewährte Darlehn $\rightarrow$ Norminalinvestition
+  - Bewertung notwendig (Wertminderung)
+- **immaterielle Investitionen:**
+  - Software und Patente (Abschreibung auf die Nutzungsdauer)
+  - Ausbildung, Fortbildung
+  - Marketing $\rightarrow$ Bekanntheitsgrad
+
+## Wie werden Investitionen hierarchiebezogen eingeteilt?
+
+- strategisch $\rightarrow$ Top-Management
+- taktisch $\rightarrow$ Middle-Management
+- operativ $\rightarrow$ Low-Management
+
+## Wie werden Investitionen umfangsbezogen eingeteilt?
+
+- **Routine:**
+  - geringer Zeitaufwand
+  - Ersatz von Material
+  - GWG, Schreibmaterialbestellung
+- **Unternehmenspolitisch:**
+  - hoher Zeitaufwand
+  - Bedeutend für die Leistungsfähigkeit
+  - Ausrüstung
+
+## Wie werden Investitionen häufigkeitsbezogen eingeteilt?
+
+- einzelne
+- als Folge
+- als Kette
+
+## Wie werden Investitionen wirkungsbezogen eingeteilt?
+
+- Gründung
+- Erweiterung
+
+## Welche Schritte gehören zum Ablauf einer Finanzierung?
+
+- Marktanalyse
+  - SWOT-Analyse
+  - Notwendigkeitsprüfung
+- Entscheidung zur Investition
+  - Umfang und Art der Investition
+  - Notwendige Kapitalstruktur
+- Angebote
+  - LAstenheft und Ausschreibung
+  - Bereitstellung des Kapitals und Zuschlag
+- Realisierung
+  - Umsetzung
+  - Abnahme der Investition
+
+## Nennen Sie die Kriterien (Arten) der Finanzierung!
+
+- **Fristenbezogen**
+  - Unbefristet (Kontokorrent)
+  - Befristet (Kredit)
+- **Kapitalarten**
+  - Eigenkapital
+  - Fremdkapital
+- **Kapitalherkunft**
+  - Außenfinanzierung
+    - Beteiligungen
+    - Fremdfinanzierung
+  - Innenfinanzierung
+    - aus Erträgen
+    - Freisetzungen
+
 # Protektionswirtschaft
 
+## Nennen Sie die Funktionen/Ziele/Zwecke der Protektionswirtschaft (2)
+
+- Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
+- Förderungsfunktion: eigener Exportwirtschaft Vorteile auf dem internationalen Markt zu verschaffen
+
+## Welche handelspolitischen Maßnahmen in der Protektionswirtschaft kennen Sie? (2)
+
+- tarifäre (nach einer Gebührendverordnung, bspw. Zoll) Handelshemmnisse
+- nicht tarifäre (Sanktionen) Handelshemmnisse
+
+## Personalbedarf
+
+### Was gehört zum qualitativen Personalbedarf?
+
+- fachliche Kompetenz
+- methodische Kompetenz
+- persönliche Kompetenz
+
+$\rightarrow$ eine Stelle
+
+### Was gehört zum quantitativen Personalbedarf?
+
+- Menge der Mitarbeiter
+- Wo brauchen wir die Mitarbeiter? $\rightarrow$ Ort
+- zur richtigen Zeit
+
+### Unter welcher Bedingung muss der Personalbedarf erreichbar sein?
+
+Personalbedarf muss zu vertretbaren Kosten erreichbar sein.
+
+## Personalbeschaffung
+
+### Wofür steht CI?
+
+Corporate Image
+
+### Woraus setzt sich die CI zusammen?
+
+- Corporate Behaviour (Verhalten des Unternehmens) gegenüber den Mitarbeitern
+- Corporate Communication (Kommunikation) gegenüber den Mitarbeitern
+
+### Was muss einem Mitarbeiter geboten werden?
+
+- Betriebsklima / Integration in das Unternehmen
+- Chance zur persönlichen Entwicklung
+- gescheites Gehalt
+
+### Welche Einflussfaktoren wirken auf die Methode der Personalbeschaffung?
+
+- Arbeitsmarkt (Konjunkturlage)
+- Präferenz des Unternehmens (Womit hat das Unternehmen schon einmal gute Erfahrungen gemacht?)
+- Anforderungsprofil (Was für Qualifikationen werden für die Stelle benötigt?)
+- Unternehmensstandort (in Ballungsräumen/ländlichen Gebieten sind gewisse Qualifikationen leichter zu finden)
+- Budget
+- Zeit
+
+### Welche Methoden der Personalbeschaffung kennen Sie, was sind je ihre Voraussetzungen?
+
+- **durch Mitarbeiter:**
+  - Anreize (bspw. Prämie)
+  - gutes Betriebsklima
+- **initativ:**
+  - gutes Image
+  - gutes Betriebsklima
+- **Presse:**
+  - Kosten
+  - gutes Betriebsklima
+- **Funk/TV:**
+  - Kosten
+  - gutes Betriebsklima
+- **Website:**
+  - Website muss gebaut werden
+  - Kosten
+  - gutes Betriebsklima
+- **soziale Medien:**
+  - Vorteil: große Reichweite
+  - entweder Werbung (kostet) oder Posts (Häufigkeit ist wichtig)
+- **Personaldienstleister:**
+  - Kosten
+
+### Nennen Sie Vorteile der internen Personalbeschaffung!
+
+- Mitarbeiter ist bekannt
+- Mitarbeiter kennt uns
+- Werbekosten sind geringer
+
+### Nennen Sie Nachteile der internen Personalbeschaffung!
+
+- neue Vakanz entsteht
+- keine neues Wissen kommt ins Unternehmen
+- evtl. Betriebsblind
+
+### Welche Instrumente der Freisetzung kennen Sie? (Personalanpassung)
+
+| Ausrichtung                  | Änderung (AV bleibt bestehen) | Beendigung (AV wird beendet)    |
+| ---------------------------- | ----------------------------- | ------------------------------- |
+| **reaktive Freisetzung**     | Versetzung                    | Entlassungen (einseitig)        |
+|                              | Überstundenabbau              | Aufhebungsverträge (zweiseitig) |
+|                              | Kurzarbeit                    | Outplacement                    |
+| **antizipative Freisetzung** | Teilbeschäftigung             | Ausnutzung der Fluktuation      |
+|                              | AZ-Flexibilisierung           | Auslaufen befristeter AV        |
+|                              | Urlaubsgestaltung             | Frühverrentung                  |
+|                              | Strategische Planung          | Outsourcing                     |
+|                              |                               | Privatisierung                  |
+
+> in der Klausur würde je Ausrichtung und Art der Freisetzung **ein** Beispiel reichen
+
 # Marketing
+
+## Skizzieren Sie das 4 Säulenmodell des Marketings!
+
+| Kommunikation | Preispolitik                                 | Distributionspolitik  | Produktpolitik                 |
+| ------------- | -------------------------------------------- | --------------------- | ------------------------------ |
+| Werbung       | Preis abhängig vom Markt (Angebot/Nachfrage) | Absatz und Verteilung | Produktlebenszyklus            |
+|               |                                              |                       | $\rightarrow$ Produktportfolio |
+
+## Skizzieren Sie das AIDA Prinzip!
+
+| A                                                         | I                  | D                               | A                 |
+| --------------------------------------------------------- | ------------------ | ------------------------------- | ----------------- |
+| **Attention**                                             | **Interest**       | **Desire**                      | **Action**        |
+| Wecken von Aufmerksamkeit für Produkt oder Dienstleistung | Interesse Wecken   | Wunsch beim Kunden hervorrufen  | Kunde soll kaufen |
+| Werbung                                                   | Promotion, Werbung | Angebot, Image/Prestige, Bedarf | Vertrag           |
+
+## Unterscheiden Sie die Marktforschung in primäre und sekundäre Forschung!
+
+- Primärforschung
+  - Beschaffung von noch nicht vorhandenen Daten (Befragungen)
+  - Analyse, Auswertung
+- Sekundärforschung
+  - Auswertung vorhandener Daten
+  - Bon-Analyse, Saisonale, ...
+
+## Unterscheiden Sie Push- und Pullmarketing!
+
+- Push: Entwicklung findet statt, wird auf den Markt geworfen
+- Pull: Entwicklung orientiert sich am Bedürfniss des Marktes
