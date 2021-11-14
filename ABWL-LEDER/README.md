@@ -470,8 +470,7 @@ Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese str
 Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
 
 > zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabensynthese>
-> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter
-![Übersicht zu Aufgabenanalyse und -synthese](http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg)<!--width=200px-->
+> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter <http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg>
 
 ## Möglichkeiten der Führungshierarchie
 
@@ -524,7 +523,6 @@ Zudem verliert es, wenn es nicht regelmäßig gepflegt wird, durch Mitarbeiterwe
 - Einordnung von Leitungshilfsstellen
 - Personelle Besetzung
 
-![Beispiel für Organigramm](https://upload.wikimedia.org/wikipedia/commons/2/22/Organigramm_2.png)<!--height=200px-->
 > Quelle: <https://commons.wikimedia.org/wiki/File:Organigramm_2.png>
 
 ### Stellenbeschreibung
