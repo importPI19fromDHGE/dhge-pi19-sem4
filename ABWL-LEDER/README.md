@@ -13,37 +13,57 @@ Allgemeine Betriebswirtschaftslehre
 
 - [Unternehmensführung - Produktionsfaktoren, betriebliche Funktionsbereiche](#unternehmensf%C3%BChrung---produktionsfaktoren-betriebliche-funktionsbereiche)
   - [Begriffe](#begriffe)
-  - [Merkmale eines Unternehmens](#merkmale-eines-unternehmens)
-    - [Definition eines Unternehmens](#definition-eines-unternehmens)
-  - [Wirtschaftliches System](#wirtschaftliches-system)
+  - [grundlegende Merkmale](#grundlegende-merkmale)
+    - [erwerbswirtschaftliches Prinzip](#erwerbswirtschaftliches-prinzip)
+    - [Prinzip der Autonomie](#prinzip-der-autonomie)
+    - [Prinzip des Privateigentums](#prinzip-des-privateigentums)
+    - [(weitere) Merkmale eines Unternehmens](#weitere-merkmale-eines-unternehmens)
+  - [Wirtschaftliches System - Nachhaltigkeit](#wirtschaftliches-system---nachhaltigkeit)
+  - [Gesellschaftliche Einordnung](#gesellschaftliche-einordnung)
   - [Rechtsformen](#rechtsformen)
   - [Marktbeurteilung](#marktbeurteilung)
-  - [Einflussfaktoren](#einflussfaktoren)
-  - [Unternehmensführung](#unternehmensf%C3%BChrung)
+  - [Einflussfaktoren / PESTEL-Analyse](#einflussfaktoren--pestel-analyse)
   - [Aufgaben eines Unternehmens](#aufgaben-eines-unternehmens)
   - [Leitbild eines Unternehmens](#leitbild-eines-unternehmens)
     - [Kurzfristige Auffassungen (operativ)](#kurzfristige-auffassungen-operativ)
   - [Management](#management)
     - [Management-Kreislauf](#management-kreislauf)
+    - [Führung und Leitung](#f%C3%BChrung-und-leitung)
     - [PDCA](#pdca)
-  - [Kontrolle vs Controlling](#kontrolle-vs-controlling)
-  - [Teilaufgaben der Unternehmensführung](#teilaufgaben-der-unternehmensf%C3%BChrung)
-  - [Führung und Leitung](#f%C3%BChrung-und-leitung)
-  - [Organisationsformen](#organisationsformen)
+- [Aufbau von Organisationen](#aufbau-von-organisationen)
+  - [Begrifflichkeiten](#begrifflichkeiten)
+    - [Stelle](#stelle)
+    - [Instanz](#instanz)
+    - [Hierarchien](#hierarchien)
+    - [Abteilung](#abteilung)
+  - [Erarbeitung der Aufbauorganisation](#erarbeitung-der-aufbauorganisation)
+    - [Aufgabenanalyse](#aufgabenanalyse)
+    - [Aufgabensynthese](#aufgabensynthese)
+  - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
   - [Instrumente der Aufbauorganisation](#instrumente-der-aufbauorganisation)
-    - [Inhalt einer Stelle](#inhalt-einer-stelle)
-    - [Möglichkeiten der Führungshierarchie](#m%C3%B6glichkeiten-der-f%C3%BChrungshierarchie)
-      - [Zentralität](#zentralit%C3%A4t)
-      - [Dezentralität](#dezentralit%C3%A4t)
-  - [Darstellung der Organisation](#darstellung-der-organisation)
-    - [Moderne Stellenbeschreibung](#moderne-stellenbeschreibung)
     - [Organigramm](#organigramm)
+    - [Stellenbeschreibung](#stellenbeschreibung)
+      - [Inhalt der Stellenbeschreibung](#inhalt-der-stellenbeschreibung)
+      - [Vorteile der Stellenbeschreibung](#vorteile-der-stellenbeschreibung)
     - [Informationsfluss](#informationsfluss)
+      - [Einteilung nach Richtung der Kommunikation](#einteilung-nach-richtung-der-kommunikation)
+      - [Einteilung nach Art der Kommunikation](#einteilung-nach-art-der-kommunikation)
+      - [Informationsmittel](#informationsmittel)
     - [Umsetzung von Verantwortung](#umsetzung-von-verantwortung)
-  - [Systemeinteilung](#systemeinteilung)
+      - [Beispiel: Verantwortung in der Centerorganisation](#beispiel-verantwortung-in-der-centerorganisation)
+  - [Organisationsformen](#organisationsformen)
     - [Linienorganisation/Liniensysteme](#linienorganisationliniensysteme)
+      - [Einliniensystem](#einliniensystem)
+      - [Mehrliniensystem](#mehrliniensystem)
+      - [Sonderform Stabsliniensystem](#sonderform-stabsliniensystem)
     - [Organisationsformen (Primärorganisation)](#organisationsformen-prim%C3%A4rorganisation)
+      - [Sektoral-Organisation](#sektoral-organisation)
+      - [Funktional-Organisation](#funktional-organisation)
+      - [Sparten-Organisation](#sparten-organisation)
+      - [Matrix-Organisation](#matrix-organisation)
+      - [Tensor-Organisation](#tensor-organisation)
     - [Organisationsformen (Sekundärorganisation)](#organisationsformen-sekund%C3%A4rorganisation)
+      - [Center-Organsiation](#center-organsiation)
 - [Personalplanung, -Bedarf, -Deckung, -Entwicklung](#personalplanung--bedarf--deckung--entwicklung)
   - [Qualitative und quantitative Personalplanung](#qualitative-und-quantitative-personalplanung)
   - [Personalbedarfsplanung](#personalbedarfsplanung)
@@ -116,69 +136,186 @@ Allgemeine Betriebswirtschaftslehre
 
 - **Betrieb:** Ort der Leistungserbringung
 - **Unternehmen:** ganzheitliche, rechtliche, finanzielle und wirtschaftliche Einheit des Betriebs
+  - spezieller Betriebstyp
+  - in einem marktwirtschaftlichen System
+  - nach erwerbswirtschaftlichen Prinzip
+  - auf Basis des Privateigentums und wirtschaftlicher Autonomie
 
-## Merkmale eines Unternehmens
+## grundlegende Merkmale
 
-- rechtlich, wirtschaftliche und finanzielle organisierte Einheit
+Bestimmende Merkmale von Unternehmen in marktwirtschaftlichen Systemen sind das erwerbswirtschaftliche Prinzip, das Prinzip der Autonomie und das Prinzip des Privateigentums.
+Auf Basis dieser Grundlagen kann (und muss) die
+Unternehmensführung ihre Entscheidungen treffen.
+
+### erwerbswirtschaftliches Prinzip
+
+Im Kapitalismus gilt für (privat-)wirtschaftliche Unternehmen in den meisten Fällen das **erwerbswirtschaftliche Prinzip**.
+Das bedeutet, dass das Streben nach Gewinn oder eben auch die Minimierung der Verluste als Orientierung verwendet wird.
+Aufgabe der Unternehmensführung ist es, ebendies zu gewährleisten. In einem planwirtschaftlichen System würde demgegenüber das **Bedarfsdeckungsprinzip** stehen.
+Hier findet die Orientierung nicht an der Gewinnmaxmierung statt, sondern daran, die Bedarfe des Unternehmens (benötigte Produktionsmittel, Belegschaft, etc.) zu erfüllen.
+Auch in staatlichen Betrieben, durch welche gemeinnützige Dienstleistungen angeboten werden, wird häufig nach Bedarfsdeckungsprinzip gearbeitet.
+In diesem Fall wird es als **Prinzip der Gemeinnützigkeit** beschrieben (Müllentsorgung, Wasser-/Abwasserwirtschaft).
+
+Gewinnmaximierung kann sichergestellt werden durch:
+
+- Liquidität: Erwirtschaften von Financial Resources
+- Nachfrage: Bedarf für Produkte/Dienstleistungen
+- Absatz: Verkauf der Produkte/Dienstleistungen
+- Wachstum: kontinuierliche Verbesserung
+- Beschäftigung: Sicherung von Arbeitsplätzen, inkl. Arbeitsmoral
+
+Die Gewährleistung der Gewinnmaximierung ist Aufgabe der **Unternehmensführung**
+
+### Prinzip der Autonomie
+
+Das Prinzip der Autonomie in **marktwirtschaftlichen Systemen** beschreibt, dass Unternehmen autonom handeln können.
+Das bedeutet, dass es dem Unternehmen selbst entscheiden kann, welche Produkte oder Dienstleistungen bereitgestellt werden und zu welchen Preisen diese angeboten werden.
+Auch hier existiert dieses Prinzip in einer Planwirtschaft nicht. Dort wird zentral entschieden, welche Güter durch welche Akteure angeboten und welche Preise dafür aufgerufen werden.
+
+Quelle: <https://de.wikipedia.org/wiki/Autonomieprinzip>
+
+Die Unternehmensziele können also weitestgehend autonom (sofern sie nicht z.B. rechtlichen Bestimmungen entgegenstehen) festgelegt werden.
+Für die **Unternehmensführung** ergeben sich daraus folgende Aufgaben:
+
+- Definition der betrieblichen Zielsetzung (SMART-Ziele)
+- Überwachung / Controlling ebendieser Zielsetzung
+- Tragen der Entscheidungskompetenz: Führen und Leiten des Unternehmens
+
+> Begriffsdefinition Führung/Leitung folgt später
+
+### Prinzip des Privateigentums
+
+Das Prinzip des Privateigentums beschreibt, dass die Verfügungsrechte an den Produktionsmitteln und am Gewinn den Eigentümern zustehen.
+Daher werden sowohl Gewinne als auch Verluste von dem/den Eigentümer/n getragen $\rightarrow$ **unternehmerisches Risiko**
+
+Daraus ergibt sich für die **Unternehmensführung** die Aufgabe, eine einheitliche Führung zu gewährleisten um der Verantwortung gegenüber den Angestellten und auch Aktionären gerecht zu werden.
+
+### (weitere) Merkmale eines Unternehmens
+
 - komplexes System aus Ressourcen (HR, MR, FR)
-  - HR = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
-  - MR = Maschinen, Gebäude, Material, Lizenzen
-  - FR = Finanzielle Mittel -> Eigen- und Fremdkapital
-- weitgehend autonome Festlegung von Zielen -> **Autonomieprinzip**
+  - HR (Human Ressources) = Mitarbeiter mit Fähigkeiten, Fertigkeiten, Wissen und Erfahrungen
+  - MR (Material Ressources) = Maschinen, Gebäude, Material, Lizenzen
+  - FR (Financial Ressources) = Finanzielle Mittel -> Eigen- und Fremdkapital
 - MA bilden **soziales System** (Gruppen, Teams, Abteilungen, ...) -> ausgerichtet auf Leistungserbringung (erwerbswirtschaftliches Prinzip), Austausch mit Unternehmensumwelt (Markt)
 
-### Definition eines Unternehmens
+## Wirtschaftliches System - Nachhaltigkeit
 
-- spezieller Betriebstyp
-- Marktwirtschaftliches System
-- Erwerbswirtschaftliches Prinzip
-- auf Basis des Privateigentums (ein rein staatliches Unternehmens entspricht **nicht** dieser Definition)
-- wirtschaftliche Autonomie
+Das Unternehmen steht als wirtschaftliches System mit anderen gesellschaftlichen Systemen in Austausch.
+Ursprünglich durch die EU im Vertrag von Amsterdam beschrieben, sind für eine positive gesellschaftliche Entwicklung jeweils verschiedene Aspekte relevant.
+Diese werden auch als die **drei Säulen der Nachhaltigkeit** beschrieben:
 
-## Wirtschaftliches System
+- **Ökonomische Nachhaltigkeit** $\leftrightarrow$ Input-/Output-Beziehungen = Kaufen $\leftrightarrow$ Verkaufen
+  - Fokus nicht vollständig auf Gewinnmaximierung sondern auf Lebensqualität jetziger und zukünftiger Generationen
+  - Fairer Handel, Förderung von Wissen und Lernmöglichkeiten (für uns z.B. Open-Source-Projekte als Teil der Arbeitszeit)
+- **Ökologische Nachhaltigkeit** $\leftrightarrow$ Schonung der Ressourcen
+  - Verzicht auf Raubbau an der Umwelt
+  - Nutzung erneuerbarer Energien
+- **Soziale Nachhaltigkeit** $\leftrightarrow$ Soziale Beziehungen, Gesellschaftliche Rahmenbedingungen
+  - Förderung von Weiterbildungen
+  - Anbieten von Ausbildungsplätzen
+  - Gleichberechtigung fördern
 
-- Markt/Ökonomie: Input-/Output-Beziehungen = Kaufen + Verkaufen
-- Umwelt: Schonung der Ressourcen
-- Soziale Beziehungen: Gesellschaftliche Rahmenbedingungen
-
-> Drei Säulen der Nachhaltigkeit
+## Gesellschaftliche Einordnung
 
 ![Gesellschaftliche Einordnung](assets/wirtschaftseinheiten.png)<!--height=200px-->
 
 ## Rechtsformen
 
+Je nach Anzahl der beteiligten Personen, dem Einbringen von Startkapital oder der Haftung der Beteiligten, werden verschiedenen Rechtsformen unterschieden.
+Diese werden (nicht komplett) im Folgenden aufgeführt:
+
+**Einzelunternehmen**
+
+- einzelne natürliche Person macht sich selbstständig
+- auf eigene Rechnung und eigenes Risiko
+- Beispiel:
+  - Einzelkaufmann
+
 **Personengesellschaften**
 
+- Zusammenschluss mehrerer Personen zur Erreichung eines gemeinsamen Unternehmensziels
+- persönliche und unbegrenzte Haftung der Gesellschafter
 - meist Eigentümer-geführte Unternehmen
-- Einzelkaufmann, GbR, OHG
+- Beispiele:
+  - GbR - Gesellschaft bürgerlichen Rechts
+  - OHG - Offene Handelsgesellschaft
 
 **Kapitalgesellschaften**
 
+- Zusammenschluss mehrerer Personen zur Erreichung einees Unternehmensziels
+- Kapitalgesellschaft wird zur selbstständigen juristischen Person $\rightarrow$ Haftung mit dem Vermögen der Gesellschaft
 - Eigentum und Geschäftsführung sind getrennt (Aktionäre <-> Vorstand)
-- GmbH, AG
+- Beispiele:
+  - GmbH - Gesellschaft mit beschränkter Haftung
+  - AG - Aktiengesellschaft
+
+**Andere Gesellschaftsformen**
+
+- Genossenschaft
+- Stiftung
 
 ## Marktbeurteilung
 
 - **Polypol:** viele Anbieter, viele Nachfrager
-- **Oligopol:** wenige Anbieter bzw. wenige ein Nachfrager
-- **Monopol:** ein Anbieter bzw. ein Nachfrager
+  - vollständige Konkurrenz, kein Marktteilnehmer allein sondern der Marktmechanismus bestimmt den Preis
+  - z.B. Börsenmarkt
+- **Oligopol:**
+  - Angebotsoligopol: wenige Anbieter, viele Nachfrager
+    - wenige große Anbieter besitzen großen Markanteil für ein Gut, welches hohe Nachfrage erfährt
+    - kann zu intensivem Wettbewerb zwischen den Anbietern, aber auch zu (illegalen) Preisabsprachen führen
+    - Beispiel: Mobilfunkmarkt, Strommarkt
+  - Nachfragepoligopol: viele Anbieter, wenige Nachfrager
+    - Beispiel Landwirtschaft: viele Getreideproduzenten, nur wenige Mühlen
+- **Monopol:**
+  - Angebotsmonopol: nur ein Anbieter für viele Nachfrager
+    - Anbieter kann den Preis nahezu frei bestimmen
+    - Beispiele:
+      - Briefmonopol der Post bis 2007
+      - Quasimonopol der Telekom im Kommunikationsmarkt
+  - Nachfragemonopol: nur ein Nachfrager für viele Anbieter
+    - kommt selten vor, vor allem bei staatlichen Ausschreibungen
 
-## Einflussfaktoren
+## Einflussfaktoren / PESTEL-Analyse
 
-- Gesellschaftsordnung: Kapitalismus
-- Politische Ordnung: Föderalismus
-- Wirtschaftsordnung: soziale Marktwirtschaft
-- Rechtsordnung: Verfassungs-, Straf-, Privat- und Öffentliches Recht
-  - muss wahrgenommen werden, "sonst passiert nichts"
+Bei der Betrachtung eines Unternehmens ist es unumgänglich, die externen Einflussfaktoren zu betrachten, da ein Unternehmen nicht im "luftleeren Raum" existiert.
+Dazu können die PESTEL-Faktoren einbezogen werden.
+
+Hinweis: PESTEL wurde in der VL nicht explizit erwähnt, macht sich aber gut um sich die Einflusssphären zu merken.
+
+> Quelle der folgenden Übersicht: <https://www.management-monitor.de/de/infothek/whitepaper_pestel_Analyse.pdf>
+
+- **P**olitical / politische Faktoren:
+  - Stand der Staatorganisation
+    - politische Ordnung des Landes (demokratisch/totalitär)
+    - Außenpolitik (Export, Einfuhrüberwachung)
+    - Stabilität des Systems
+- **E**conomic / ökonomische Faktoren:
+  - Analyse der (volks-)wirtschaftlichen Entwicklung
+    - Wirtschaftswachstum
+    - Bevölkerungszahl
+    - Zinsniveau
+- **S**ocial / soziokulturelle Faktoren
+  - Gesellschaftliche Umwelt
+    - Bevölkerungsstruktur
+    - Bildungswesen
+    - Kulturelle Besonderheiten
+- **T**echnological / technologische Faktoren
+  - Analyse der technologischen Entwicklung
+    - Stand und Entwicklung der Informations- und Kommunikationtechnologie
+    - Entwicklung der staatlichen und privaten Ausgaben für F&E (Forschung und Entwicklung)
+- **E**nvironmental / ökologisch-geographische Faktoren
+  - marktspezifische Eckdaten zur Beschaffenheit und Infrastruktur
+    - Standort (Klima, Topologie)
+    - Infrastruktur
+    - natürliche Ressourcen
+    - Emissionen
+- **L**egal / rechtliche Einflussfaktoren
+  - marktspezifische Rechtsorganisation
+    - Rechtssystem und Verfassung
+    - Rechtsbewusstsein
+    - Rechtsgebiete (Wettbewerbsrecht, Umweltrecht, ...)
 
 > Die Einflussfaktoren wirken gemeinsam auf die Unternehmenspolitik ein
-
-## Unternehmensführung
-
-- Kapitalismus -> langfristige Gewinnmaximierung (**erwerbswirtschaftliches Prinzip**)
-- einheitliche Führung notwendig (Prinzip des Privateigentums)
-- Hauptaufgabe: Definition und Überwachung (Controlling) der betrieblichen Zielsetzungen (Gewinn) = **Autonomieprinzip**
-- Führen als Entscheidungskonzept der Organisation
 
 ## Aufgaben eines Unternehmens
 
@@ -193,9 +330,9 @@ Allgemeine Betriebswirtschaftslehre
 
 - das Unternehmen braucht eine Vision (bspw. "Wir bieten eine Dienstleistung an." oder "Wir entwickeln ein Produkt")
 - Unternehmenspolitik $\rightarrow$ *Wie* setzen wir die Vision um?
-- veröffentlichen der Unternehmenspolitik $\rightarrow$ Unternehmensleitbild
+- Veröffentlichen der Unternehmenspolitik $\rightarrow$ Unternehmensleitbild
 
-> Leitbild = formuliert kurz und prägnant die strategischen Zieles und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
+> Leitbild = formuliert kurz und prägnant die strategischen Ziele und die wesentlichen Orientierungen für Art und Weise ihrer Umsetzung
 
 - Unternehmenskultur stellt den Ist-Zustand dar
   - Know-How: Forschung und Entwicklung; **KVP** (kontinuierlicher Verbesserungs-Prozess) $\rightarrow$ erzwungen durch Markt und technisch-technologischen Fortschritt
@@ -219,16 +356,33 @@ Allgemeine Betriebswirtschaftslehre
 
 > Management sind Personen, Organisationen oder Leitungsfunktionen, die die Funktionen der Planung, Organisation, Führung und Controlling in einem Unternehmen ausüben
 
-- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*)
+- **Institutionell:** Person(-engruppen) die in Rangfolge einer Organisation dargestellt werden (*Organigramm*) und das Unternehmen führen
+  - z.B. Geschäftsführer, Leiter, Vorstand
+  - auch **Mitarbeiterführung**
 - **Funktionell:** Handlung des Führens einer Organisation durch Zielsetzung, Planen, Organisieren, Realisieren und Controlling
-- Funktionales Management = Kreislauf aus: Planning, Organizing, Staffing, Directing, Controlling
+  - z.B. Aufgaben, Handlungen und Entscheidungen zum Managementkreislauf
+  - auch **Prozessteuerung**
+- **Funktionales Management:** Kreislauf aus:
+  - Planning : Analyse und Planung
+  - Organizing: Wahl der Mittel, Prioritäten, Koordination
+  - Staffing: Personalwirtschaft
+    - Personaleinsatz
+    - Kombination von Organisation und Personal
+  - Directing: Mitarbeiterführung
+  - Controlling: Kontrolle, Steuerung, Regelung
 
 ### Management-Kreislauf
 
 gehört zum funktionellen Management. Beschreibt den Ablauf des Führens (Personen (Mitarbeiter), Prozessen).
 Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDHGE/dhge-pi19-sem5/tree/main/ABWL-LEDER#der-management-kreislauf-f%C3%BCr-neue-sachen)
 
+### Führung und Leitung
+
+- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
+- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
+
 **Ablauf des Führens:**
+<!-- TODO: Eventuell Abschnitt entfernen? Ist eher nichtssagend und scheint auch für Prüfung irrelevant. Kann auch aus den Folien nichts weiteres entnehmen.-->
 
 - **Aufgabe/Ziel**
 - **Planning:** Analyse und Planung $\rightarrow$ erfordert Aufgabe und Ziel
@@ -236,10 +390,13 @@ Siehe auch: [Management-Kreislauf in Kaizen](https://github.com/importPI19fromDH
   - Struktur für die Erfüllung von Aufgabe/Ziel
 - **Entscheidung/Koordination:** HR, FR, MR räumlich, zeitlich ordnen
 - **Doing/Realisierung**
-- **Controlling**
+- **Controlling** vs. **Kontrolle**
+  - für **Kontrolle** wird einfach nur kontrolliert, ob eine Aufgabe erfüllt wurde / das Ziel erreicht wurde
+  - **Controlling** hingegen beschreibt eine Einflussnahme auf einen Prozess und dessen Lenkung, Steuerung bzw. Regelung durch Rückkopplungen im laufenden Prozess
 
 ### PDCA
 
+<!--TODO: Prüfen, ob das hier nochmal reinmuss, oder Verlinkung auf PM reicht. Scheint unnötig redundant -->
 ist eng mit dem Management-Kreislauf verknüpft.
 
 - **Plan:** Aufgabe/Ziel, Analyse, Planen, Entscheiden
@@ -248,116 +405,240 @@ ist eng mit dem Management-Kreislauf verknüpft.
 - zwischen Do und Check wird gelooped, bis Soll==Ist
 - **Act:** vollständige Realisierung, Dokumentation, Daten $\rightarrow$ Wissen $\rightarrow$ Erfahrung $\rightarrow$ KVP
 
-## Kontrolle vs Controlling
+# Aufbau von Organisationen
 
-- **Kontrolle** der Aufgabe/Zielstellung
-- **Controlling:** Einflussnahme/Lenkung/Steuerung $\rightarrow$ Differenz zum erreichenden Ziel $\rightarrow$ Rückkoppelung zur Einflussnahme
+<!--Versuch, das ganze Thema nochmal übersichtlich darzustellen. Dabei https://zumfachwirt.de/aufbauorganisation/ zu Hilfe genommen,
+was btw erschreckend deckungsgleich zu dem ist, was in den Folien ist.-->
 
-## Teilaufgaben der Unternehmensführung
+> Zusätzliche Quellen: <https://zumfachwirt.de/aufbauorganisation/> und <https://de.wikipedia.org/wiki/Aufbauorganisation>
 
-Gewinnmaximierung durch:
+Im Gegensatz zur Darstellung der **Ablauforganisation**, bei welcher die Prozesse im Unternehmen dargestellt werden, legt die **Aufbauorganisation** fest, wie das Unternehmen strukturiert ist.
+D.h. welche betrieblichen Funktionen und Aufgabenbereiche es gibt und wie durch wen Entscheidungen weitergegeben werden können.
+Dargestellt wird die Aufbauorganisation klassischerweise in einem **Organigramm**.
+In diesem können sowohl **Stellen** als auch **Instanzen**, **Hierarchien** und **Beziehungen** illustriert werden.
 
-- Liquidität: Erwirtschaften von Financial Resources
-- Nachfrage: Bedarf für Produkte/Dienstleistungen
-- Absatz: Verkauf der Produkte/Dienstleistungen
-- Wachstum: kontinuierliche Verbesserung
-- Beschäftigung: Sicherung von Arbeitsplätzen, inkl. Arbeitsmoral
+Eine gute Aufbauorganisation ist dabei:
 
-## Führung und Leitung
+- zweckmäßig
+- wirtschaftlich
+- übersichtlich und transparent
+- flexibel
 
-- **Führung:** Beeinflussung von Personen zur Erfüllung von Zielen und Aufgaben (personenbezogen $\rightarrow$ aktive Einflussnahme auf Handlungen von Personen)
-- **Leitung:** formelle Machtausübung zur Erfüllung von Aufgaben und Zielen (funktionsbezogen $\rightarrow$ reaktive und sachbezogene Einflussnahme auf Handlung von Personen)
+## Begrifflichkeiten
 
-## Organisationsformen
+### Stelle
 
-- Aufbau/Struktur des Unternehmens
-- Instanzen: Stellen mit Leitungsfunktion
-- Hierarchien: Ebenen im Unternehmen mit gleichen oder ähnlichen Befugnissen (Hierarchieebenen werden auch als Leitungsebenen bezeichnet)
-- Formelle Beziehungen: <!--???-->
+Eine Stelle ist die **kleinste Einheit** der Ablauforganisation / des Unternehmens und enstpricht einem **Arbeitsplatz**.
+Ihr können eine Aufgabe, eine Teilaufgabe aber auch mehrere Aufgaben zugeordnet sein.
+Um diese Aufgaben zu spezifizieren dient die **Stellenbeschreibung** als Instrument der Aufbauorganisation.
+<!--TODO: Verlinkung-->
 
-Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+### Instanz
 
-- Festlegung der Strukturen: Organisationseinheiten, Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung)
-- Arbeitsteilung (Beispiel): Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+Hat eine Stelle eine **Leitungsfunktion** inne, wird diese als Instanz bezeichnet. Eine solche Instanz ist zusätzlich mit Kompetenzen ausgestattet.
+
+Diese können sein:
+
+- Weisungskompetenz
+  - darf unterstellten Stellen Anweisungen geben
+- Verfügungskompetenz
+  - darf über betriebliche Mittel verfügen (Budgetentscheidungen, Zuweisung Dienstwagen)
+- Informationskompetenz
+  - darf auf nicht frei zugängliche Daten zugreifen
+- Vertretungskompetenz
+  - darf andere Mitarbeiter, wie zum Beispiel den Vorgesetzten vertreten und in dessen Namen Entscheidungen treffen
+- Entscheidungskompetenz
+
+### Hierarchien
+
+Die Aufbauorganisation wird vertikal in Hierarchieebenen unterteilt.
+Eine Hierarchieebene ist dabei eine Ebene im Unternehmen, der Stellen bzw. Instanzen mit gleichen oder ähnlichen Kompetenzen zugeordnet werden.
+
+### Abteilung
+
+Steht eine Instanz einer Gruppe von untergeordneten Stellen vor, spricht man von einer Abteilung.
+Ziel der Abteilungsbildung (welche in der Aufgabensynthese vorgenommen wird) ist die Schaffung eines von anderen Abteilungen abgegrenzten Aufgabenkomplexes.
+<!--TODO: Verlinkung zur Aufgabensynthese-->
+
+## Erarbeitung der Aufbauorganisation
+
+Basis der Strukturierung einer Aufbauorganisation ist die Betrachtung der zu Grunde liegenden Aufgabe(n).
+Die folgenden Schritte sind dabei notwendig:
+
+### Aufgabenanalyse
+
+In diesem ersten Schritt werden die Ziele der Organisation analyiert und in Aufgaben umgewandelt.
+Nach einer weiteren Unterteilung in kleinere Teilaufgaben ergibt sich so ein Paket aus den durch die Organisation zu erledigenden Aufgaben.
+Diese werden nach folgenden Kriterien gegliedert:
+
+- **Verrichtung:**
+  - Gliederung nach Tätigkeit oder Arbeitsart
+  - z.B. einkaufen, herstellen, montieren
+- **Objekt:**
+  - Gliederung nach Gegenstand oder Personengruppe an dem/der gearbeitet wird
+  - z.B. Rohstoffe, Fertigprodukte, Senioren
+- **Phase:**
+  - Gliederung nach Planung, Realisierung und Kontrolle
+- **Rang:**
+  - Ausführungs- oder Entscheidungsaufgabe?
+- **Zweckbeziehung:**
+  - handelt es sich um einen Kernprozess (wie Produktion oder Vetrieb) oder um eine Supportaufgabe (Buchhaltung)?
+
+> zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabenanalyse>
+
+### Aufgabensynthese
+
+Im zweiten Schritt, der Aufgabensynthese werden diese vorab erstellten Aufgaben **organisatorisch sinnvoll** zu Aufgabenkomplexen zusammengefasst.
+Ziel der Aufgabensynthese ist die Bildung von Organisationseinheiten.
+Dabei kann nach folgendem Muster verfahren werden: Stellen (AP) $\rightarrow$ Gruppen $\rightarrow$ Abteilungen $\rightarrow$ ...
+
+In diesem Schritt werden auch die **Strukturen der Aufbauorganisation** festgelegt.
+Dazu zählen Zentralisation/Dezentralisation, Tätigkeiten, Aufgabenträger, Informationswege, Aufgaben/Kompetenz(Befugnis)/Verantwortung(Aufgabenerfüllung).
+
+Ebenso wird die **Arbeitsteilung** durch die Entscheidungen bei der Synthese strukturiert.
+Beispiel: Planung, Einkauf, Vorfertigung, Montage, Kommissionierung, Vertrieb, Service
+
+> zusätzliche Quelle: <https://de.wikipedia.org/wiki/Aufgabensynthese>
+> Eine Übersicht zu Aufgabenanalyse und -synthese findet sich unter <http://www.bwl-betriebswirtschaft.de/gfx/aufbauorganisation-eines-unternehmens.jpg>
+
+## Möglichkeiten der Führungshierarchie
+
+- **Zentralität:**
+  - **Merkmale:**
+    - von einer Stelle für alle Unternehmensteile verbindlich festgelegt, Zusammenfassung von Aufgaben und Verantwortung
+    - schnelle, einheitliche Führung und Entscheidung
+    - Spezialisierung der einzelnen Stellen, da nur die konkrete Aufgabe von Belang ist
+  - **Vorteile:**
+    - einheitliche Vorgaben
+    - gutes Controlling
+    - geringer Aufwand der Umsetzung (autoritär)
+  - **Nachteile:**
+    - fehlende Berücksichtigung individueller Bedingungen
+    - ggf. geringe Akzeptanz vor Ort
+    - fehlende Identifikation bei Mitarbeitern
+    - Ausschluss individueller Stärken
+
+- **Dezentralität:**
+  - **Merkmale:**
+    - an der Stelle entschieden, die die höchste Kompetenz hat
+    - Führung und Entscheidung vor Ort
+    - autonom arbeitende Gruppen sind notwendig
+    - Verantwortungs- und Aufgabenverteilung auf mehrere Stellen
+  - **Vorteile:**
+    - Berücksichtigung individueller Bedingungen
+    - hohe Akzeptanz, Identifikation bei Mitarbeitern
+    - Nutzen individueller Stärken
+  - **Nachteile:**
+    - keine einheitlichen Vorgaben möglich
+    - aufwendiges individuelles Controlling
+    - hoher Aufwand der Umsetzung (kooperativ)
 
 ## Instrumente der Aufbauorganisation
 
-- **Organigramm**
-  - Hierarchie
-    - Beziehungen
-    - Aufgabenverteilung
-    - Unterstellung
-- **Informationsfluss**
-  - Kommunikation
-    - Top-Down
-    - Bottom-Up
-- **Stellenbeschreibung**
-  - Anforderungen
-    - Aufgabenbeschreibung
-    - Anforderungsprofil
-
-### Inhalt einer Stelle
-
-- Ausführungsfunktion
-- Leitungsfunktion: Zeit- und Selbstmanagement
-  - Anforderungen: fachliche, methodische, persönliche Kenntnisse
-- Kompetenz (Befugnisse) einer Stelle: Weisung, Entscheidung, Verfügung (Grundsätzliche Entscheidung), Vertretung, Information
-- Stellen mit gleicher Befugnis = Hierarchieebene
-
-### Möglichkeiten der Führungshierarchie
-
-- **Zentralität:** von einer Stelle für alle Unternehmensteile verbindlich festgelegt
-  - schnelle, einheitliche Führung und Entscheidung; ohne Differenzierung auf individuelle Gegebenheiten; geringe Akzeptanz vor Ort
-- **Dezentralität:** an der Stelle entschieden, die die höchste Kompetenz hat
-  - Führung und Entscheidung vor Ort \rightarrow\rightarrow hohe Akzeptanz; langsame Entscheidungsfindung; Notwendigkeit autonomer Gruppen
-
-#### Zentralität
-
-- **Vorteile:** einheitliche Vorgaben; gutes Controlling; geringer Aufwand der Umsetzung (autoritär)
-- **Nachteile:** fehlende Berücksichtigung individueller Bedingungen; geringe Akzeptanz, Identifikation bei Mitarbeitern; Ausschluss individueller Stärken
-
-#### Dezentralität
-
-- **Vorteile:** Berücksichtigung individueller Bedingungen; hohe Akzeptanz, Identifikation bei Mitarbeitern; Nutzen individueller Stärken
-- **Nachteile:** keine einheitlichen Vorgaben möglich; aufwendiges individuelles Controlling; hoher Aufwand der Umsetzung (kooperativ)
-
-## Darstellung der Organisation
-
-### Moderne Stellenbeschreibung
-
-- Rahmen für Mitarbeiter in der Organisation
-- Anforderungsprofil: fachlich, methodisch, persönlich
-- Aufgabenbeschreibung: Bezeichnung, Über-/Unterstellung, wesentliche Aufgaben, Ziele, Befugnisse, Verantwortung, Vertretung
-
-- **Nutzen der Stellenbeschreibung:**
-
-- Personalbedarf: Quantität und Qualität der Mitarbeiter; Stellenanzeige
-- Personalauswahl: Maßstab der Erfüllung
-- Personalbeurteilung: Maßstab der Leistung der Mitarbeiter
-- Personalentwicklung: Maßstab der Mitarbeiter-Entwicklung
-
 ### Organigramm
 
-- Hierarchische Unterstellung oder Aufgabenverteilung (Beziehungen)
-- Funktionalität
+> zusätzliche Quellen für diesen Abschnitt: <https://de.wikipedia.org/wiki/Organigramm>
+
+Um die Beziehungen und Hierarchien innerhalb der Aufbauorganisation darzustellen werden häufig Organigramme benutzt.
+Ein übersichtlich erstelltes Organigramm kann viele Überlegungen bezüglich der Organisationsstruktur erleichtern.
+Es schafft einen Überblick, um Personal- und Ressourcenplanung zu erleichtern und kann neuen Mitarbeitern dabei helfen, sich zu orientieren.
+Die Erstellung des Organigramms kann vor allem für größere Organisationen sehr zeitaufwändig sein.
+Zudem verliert es, wenn es nicht regelmäßig gepflegt wird, durch Mitarbeiterwechsel oder Umstrukturierungen schnell an Aktualität.
+
+**Inhalt des Organigramms:**
+
+- Verteilung betrieblicher Aufgaben auf Stellen und Abteilungen
+- hierarchische Struktur der Aufbau- bzw. Leitungsorganisation und der Weisungsbeziehungen
+- Einordnung von Leitungshilfsstellen
+- Personelle Besetzung
+
+> Quelle: <https://commons.wikimedia.org/wiki/File:Organigramm_2.png>
+
+### Stellenbeschreibung
+
+Ein weiteres wichtiges Element der Aufbauorganisation ist die Stellenbeschreibung.
+Die Stellen, welche während der Aufgabensynthese differenziert wurden, werden durch die Stellenbeschreibung "mit Leben gefüllt".
+
+#### Inhalt der Stellenbeschreibung
+
+- **Aufgaben**
+  - **Bezeichnung:** Bezeichnung der Stelle / Ordnungsnummer
+  - **Über-/Unterstellung:** Wo befindet sich die Stelle in der Hierarchie?
+  - **Aufgaben:** Formulierung der Hauptaufgaben (5-7)
+  - **Ziele:** nach SMART
+  - **Befugnisse:** Entscheidungskompetenzen
+  - **Verantwortungskompetenzen**
+  - **Vertretungskompetenzen**
+- **Anforderungsprofil**
+  - **Fachlich:** Welche Qualifikation wird benötigt?
+  - **Methodisch:**
+    - Wie sollen Aufgaben erledigt werden?
+    - Wie soll geführt werden?
+  - **Persönlich:**
+    - Individuelle Kompetenzen
+    - Soziale Kompetenzen
+
+#### Vorteile der Stellenbeschreibung
+
+> Quelle: <http://www.stellenbeschreibungen.info/was-ist-eine-stellenbeschreibung/> und Vorlesung
+
+- Vermeidung von Kompetenzüberschreitungen und Doppelarbeit: Stellen sind voneinander genau abgegrenzt
+- Dauerhafte Aufgaben sind klar geregelt: Vorgesetzte werden entlastet
+- Basis von Personalplanung und Personalentwicklung:
+  - Personalbedarf kann genau bestimmt werden (Quantität und Qualität der MA)
+  - Grundlage für Stellenanzeigen und MA-Auswahl
+  - Wurde die Stellenbeschreibung durch den MA gut ausgefüllt?
+    - Grundlage für Entwicklungsgespräche und Lohnverhandlungen
+- tragen zur Verbesserung des Betriebsklimas bei
 
 ### Informationsfluss
 
-**Formelle Wege**
+Um eine optimale Kommunikation in der Organisation zu gewährleisten, sollte für die Aufbauorganisation auch die Effizienz des Informationsflusses betrachtet werden.
+So soll sichergestellt werden, dass wichtige Informationen die betreffenden Mitarbeiter erreichen, ohne in der Vielzahl der Eindrücke im Arbeitsalltag unterzugehen.
 
-- Top-Down: Entscheidung/Ziel/Aufgabe wird weitergegeben
-- Bottom-Up: Informationen kommen vom Arbeitsplatz
-- Beides zusammen: "Gegenstromverfahren"
+#### Einteilung nach Richtung der Kommunikation
 
-**Informelle Wege**
+**Horizontale Kommunikation**
 
-- "Kleiner Dienstweg", "Buschfunk"
+- beschreibt die Kommunikation zwischen Stellen auf der selben Hierarchieebene
+- Beispiele:
+  - fachlicher Austausch unter Kollegen
+  - Kommunikation zur Prozesskoordination
+
+**Vertikale Kommunikation**
+
+- Kommunikationsfluss zwischen den Hierarchieebenen
+- soll Grundwerte des Unternehmens, Ziele und Philosophie vermitteln
+- ebenso zur Vermittlung von Anforderungen und Rückemldung zu Projektständen
+
+#### Einteilung nach Art der Kommunikation
+
+**Formelle Kommunikation**
+
+- vor allem bei vertikaler Kommunikation
+- entweder **Top-Down** (Vorgesetzte zu Mitarbeitern) oder **Bottom-Up** (Mitarbeiter zu Vorgesetzten) oder beides zusammen (**Gegenstromverfahren**)
+
+**Informelle Kommunikation**
+
+- Häufig bei horizontaler Kommunikation
+- hierzu zählen "Tür- und Angelgespräche", "Buschfunk" und der "kleine Dienstweg"
+
+#### Informationsmittel
+
+- Schwarzes Brett
+- Geschäftsbericht
+- Mitarbeiterbroschüre
+- Intranet / Internet
+- Personal-Informationen
+- Belehrungs-Unterlagen
+- Brief der Geschäftsführung
+- Mitarbeiterzeitung
 
 ### Umsetzung von Verantwortung
 
 - **Definition:** Übergabe durch den Vorgesetzten $\rightarrow$ Übernahme durch den Mitarbeiter $\rightarrow$ Pflicht der Aufgabe/Ziel (Erfüllung) = Verantwortung
 
-**Verantwortung in der Centerorganisation**
+#### Beispiel: Verantwortung in der Centerorganisation
 
 - = Betrachtung des Kapitalflusses
 - Investment-Center: RoI - Return on Investment
@@ -365,38 +646,185 @@ Bildung von Organisationseinheiten: Stellen (AP) $\rightarrow$ Gruppen $\rightar
 - Cost-Center: Verteilung von Kosten
 - Umsatz/Revenue-Center: Umsatz-Leistung
 
-## Systemeinteilung
+## Organisationsformen
 
->
-> Hier müsste Einiges noch aus den Folien übernommen werden.
->
+Für die Betrachtung der Organisationsformen können diese nach **Liniensystemen**, **Primärorganisation** und **Sekundärorganisation** eingeteilt werden.
+Nicht jede Organisationsform eignet sich dabei für jedes Unternehmen, sondern sollte anhand der Anforderungen entscheiden werden.
+Eine Organisation kann mehrere dieser Organisationsformen aufweisen, je nachdem, wie feingranular die Betrachtung erfolgt.
 
 ### Linienorganisation/Liniensysteme
 
-> alle drei Systeme sind zentral organisiert
+- alle drei Systeme sind zentral organisiert
+- auch als Leitungssysteme bezeichnet
 
-- **Einliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Vollkompetenz (= Fachkompetenz + disziplinarische Kompetenz)
-- **Mehrliniensystem:** Verrichtungszentralisation, Mehrfachunterstellung, Voll- und Teilkompetenzen
-- **Stabsliniensystem:** Verrichtungszentralisation, Einfachunterstellung, Voll- und Teilkompetenzen
+> zusätzliche Quellen: <http://www.online-lehrbuch-bwl.de/lehrbuch/kap3/trad_aufb/trad_aufb.PDF> und <https://de.wikipedia.org/wiki/Prim%C3%A4rorganisation>
+
+#### Einliniensystem
+
+- **Einfachunterstellung**: jeder Mitarbeiter hat *einen* direkten Vorgesetzten
+- er erhält daher nur von *einer* übergeordneten Stelle Anweisungen
+- dadurch entsteht der sogenannte (lange) **Dienstweg**
+- **Verrichtungszentralisation**: gleichartige Aufgaben werden in einer organisatorischen Einheit zusammengefasst
+- **Vollkompetenz** min jeder Hierarchieebene
+
+- **Vorteile:**
+  - Klare Befugnisse und Verantwortungen
+  - Eindeutiger Dienstweg
+- **Nachteile:**
+  - Längere Informationswege
+  - ggf. Überlastung der Vorgesetzten: alles über deren Tisch
+
+#### Mehrliniensystem
+
+- wie auch im Einliniensystem gibt es eine **Verrichtungszentralisation**
+- **Mehrfachunterstellung**: jeder Mitarbeiter hat mehrere Vorgesetzte, von denen er Aufträge erhält
+- Prinzip des kürzeren Wegs
+- sowohl **Vollkompetenz** als auch **Teilkompetenz**
+
+- **Vorteile:**
+  - Entlastung der Vorgesetzten
+  - kürzere Informationswege
+- **Nachteile:**
+  - ggf. Verantwortungsdiffusion
+  - Redundante Kommunikation (An wen muss ich mich wenden?)
+
+#### Sonderform Stabsliniensystem
+
+- Sonderform des Liniensystems, können bei allen Organisationsformen auftreten
+- beratende Funktion ohne Entscheidungsgewalt
+- sinnvoll bei Überforderung der Instanz durch fehlende Fachkenntnis oder Überhang an administrativer Tätigkeit
+- eine Stabsstelle wird als Unterstützung für Instanzen eingerichtet
+  - **Generalist**: Prinzipielle Unterstützung (Assistenz der Geschäftsführung)
+  - **Spezialist**: Fachliche Unterstützung (Rechtsabteilung, Projektorganisation)
+- lt. Folien:**Verrichtungszentralisation**, **Voll- und Teilkompetenzen**, **Einfachunterstellung**
+
+- **Vorteile:**
+  - Entlastung der Linienorganisation
+  - Einsatz von Spezialisten
+- **Nachteile:**
+  - Konfliktpotential
+  - u.U. schlechtes Image -> Mischen sich nur ein
+  - Stabsstelle kann unbefriedigend sein, wenn Empfehlungen nicht umgesetzt werden
 
 ### Organisationsformen (Primärorganisation)
 
-- Sektoral-Organisation
-- Funktional-Organisation
-- Sparten-Organisation
-- Matrix-Organisation
-- Tensor-Organisation
+#### Sektoral-Organisation
+
+Einteilung nach Sektoren (z.B. kaufmännisch oder technisch)
+
+> in der VL nicht weiter betrachtet
+
+#### Funktional-Organisation
+
+- es gilt Verrichtungsprinzip:
+  - Vereinigung möglichst gleichartiger Tätigkeiten
+- meist als Einlinienorganisation
+- vor allem für kleine bis mittlere Unternehmen geeignet
+- bei größeren Unternehmen Überlastung der Unternehmensspitze möglich
+- **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+
+**Beispiel:**
+(Einrückung der Stichpunkte als Hierarchiebene)
+
+- Geschäftsführung
+  - Verwaltung
+    - Buchhaltung
+    - Personalwesen
+    - IT
+  - Beschaffung
+    - Einkauf
+    - Wareneingang
+    - Lager (Wareneingang)
+  - Produktion
+    - Fertigungsplanung/Steuerung
+    - Fertigung/Montage
+    - Produktionsservice
+  - Vertrieb
+    - Marketing
+    - Verkauf
+    - Lager (Warenausgang)
+
+#### Sparten-Organisation
+
+- auch: Divisionale Organisation
+- Gliederung nach Objekten auf der zweiten (bzw. den oberen) Managementebene(n)
+  - Unterteilung in Sparten
+  - mögliche Objekte, anhand derer die Trennung vollzogen wird:
+    - Produkte $\rightarrow$ Produktorganisation
+    - Regionen $\rightarrow$ Regionalorganisation
+    - Kunden $\rightarrow$ Kundenorganisation
+- Untere Ebenen dann häufig wieder funktional unterteilt
+
+- **Objektdezentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+
+**Beispiel Produktorganisation:**
+(Einrückung der Stichpunkte als Hierarchiebene)
+
+- Geschäftsleitung
+  - Sparte Produkt A
+    - Verwaltung
+    - Einkauf
+    - Verkauf
+    - Produktion
+  - Sparte Produkt B
+    - Verwaltung
+    - Einkauf
+    - Verkauf
+    - Produktion
+  - Sparte Produkt C
+    - ...
+
+|Vorteile|Nachteile|
+|---|---|
+|Sparten sind flexibler und erreichen größere Marktnähe|Informations-, Know-How- und Erfahrungsaustausch zwischen den Sparten schwierig|
+|geringerer Koordinationsaufwand für Unternehmensspitze|Mögliche Synergien zu wenig genutzt|
+|höhere Motivation durch höhere Verantwortung|höherer Bedarf an Führungskräften|
+|höhere Identifikation der Mitarbeiter mit dem Unternehmen/Bereich|Verselbstständigung der einzelnen Sparten und Vernachlässigung übergeordneter Ziele (Spartenegoismus)|
+|bessere Zuordnung von Erfolgen und Misserfolgen||
+
+#### Matrix-Organisation
+
+- Mehrliniensystem, welches sowohl funktional als auch objektorientiert organisiert ist
+- funktionale Organisation dabei häufig die Liniendimension (vertikale Aufteilung)
+- objektorientierte Organisation hingegen für horizontale Einteilung
+- Merkmale: **Zentrale und dezentrale Abteilungen**, **Doppelunterstellung**, **Voll- und Teilkompetenzen**
+- schnelle Kommunikation möglich
+- Gefahr von Kompetenzgerangel und administrativer Redundanz
+
+#### Tensor-Organisation
+
+> nicht weiter in VL behandelt
+
+- Weiterentwicklung der Matrixorganisation
+- weiteres Gliederungsprinzip (z.B. Region) erhöht Flexibilität, aber auch Unübersichtlichkeit
 
 ### Organisationsformen (Sekundärorganisation)
 
-- Center-Organisation (Formen (sind alle miteinander kombinierbar): Revenue-Center, Cost-Center, Profit-Center, Investment-Center)
-  - $\rightarrow$ ermöglicht Dezentralität; braucht Bereiche, die Entscheidungsfreiheit haben
+- sind aus den Grundformen abgeleitete Organisationsformen, welche für spezielle Handlungsfelder geeignet sind
+- die Verbindung der Stellen untereinander wird hier auf besondere Gegebenheiten der Handlungsfelder angepasst
+
+**Formen:**
+
+- Center-Organisation
 - Holding-Organisation
-- SGE-Management
-- Produkt-Management
-- Prozess-Management
-- Kunden-Management
-- Projekt-Management
+- SGE-Organisation
+- Produktmanagement
+- Prozessmanagement
+- Kundenmanagement
+- Projektmanagement
+
+#### Center-Organsiation
+
+- von der Spartenorganisation abgeleitete Form
+- Erfolgsverantwortung wird an die Center delegiert
+- bereichsübergreifende Aufgabenwahrnehmung (Leistungen für interne Kunden)
+- Objekte der Unterteilung sind für die Center-Organisation hierfür definierte Kenngrößen:
+  - Profit-Center $\rightarrow$ Erfolgsorientierte Sparte (Kenngröße = Gewinn)
+  - Cost-Center $\rightarrow$ Kostenorientierte Sparte (Kenngröße = Kostenminimierung)
+  - Revenue-Center $\rightarrow$ Umsatzorientierte Sparte (Kenngröße = Umsatz)
+  - Investment-Center $\rightarrow$ Gewinnverwendende Sparte (Kenngröße = Return on Investment)
+
+<!--TODO: Vorangegangenes nochmal danach durchsehen, ob die Beantwortung der Fragen daraus abgleitet werden kann. Zudem Typo-Check-->
 
 # Personalplanung, -Bedarf, -Deckung, -Entwicklung
 
